@@ -48,6 +48,7 @@
     check: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
     gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
+    mute: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.5" height="14" rx="1.2"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.2"/></svg>',
     expand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>',
     shrink: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>',
@@ -651,9 +652,15 @@
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
           <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
           <span class="vb-time" id="vb-time">0:00 / ${videoTime(v.durationSeconds)}</span>
-          <button type="button" class="vb-btn vb-sub" id="vb-sub" aria-label="Altyazıyı kapat" aria-pressed="true">CC</button>
           <button type="button" class="vb-btn vb-cc" id="vb-cc" aria-label="Ayarlar" aria-expanded="false" aria-controls="cap-settings">${ICON.gear}</button>
-          <button type="button" class="vb-btn" id="vb-mute" aria-label="Sesi kapat" aria-pressed="false">${ICON.speak}</button>
+          <div class="vb-vol" id="vb-vol">
+            <button type="button" class="vb-btn" id="vb-mute" aria-label="Ses ayarı" aria-haspopup="true" aria-expanded="false" aria-controls="vol-pop">${ICON.speak}</button>
+            <div class="vol-pop" id="vol-pop" role="group" aria-label="Ses ayarı" hidden>
+              <div class="vol-row" id="vol-row"><input type="range" id="vol-range" min="0" max="100" step="1" value="100" aria-label="Ses düzeyi"><output id="vol-val">100%</output></div>
+              <button type="button" class="vol-mute" id="vol-mute" aria-pressed="false">Sesi kapat</button>
+              <p class="vol-note" id="vol-note" hidden>Bu cihazda ses düzeyi telefonun ses tuşlarıyla ayarlanır.</p>
+            </div>
+          </div>
           <button type="button" class="vb-btn" id="vb-fs" aria-label="Tam ekran">${ICON.expand}</button>
         </div>
         <div class="cap-settings" id="cap-settings" role="group" aria-label="Video ayarları" hidden>
@@ -689,7 +696,7 @@
     const next = document.getElementById("caption-next");
     const replay = document.getElementById("caption-replay");
     const status = document.getElementById("video-status");
-    let selected = 0, displayed = null, pendingSeek = null, disposed = false;
+    let selected = 0, displayed = null, pendingSeek = null, disposed = false, switching = null;
 
     function showCaption(index) {
       if (disposed || displayed === index) return;
@@ -711,7 +718,7 @@
     }
 
     function syncCaptions() {
-      if (disposed) return;
+      if (disposed || switching) return;
       const now = player.currentTime;
       showCaption(v.captions.findIndex((cue) => cue.start <= now && now < cue.end));
     }
@@ -778,14 +785,20 @@
     // custom controls (native controls cannot show our captions in fullscreen)
     const duration = () => (isFinite(player.duration) && player.duration > 0 ? player.duration : v.durationSeconds);
     function syncBar() {
-      const d = duration(), t = player.currentTime || 0;
+      const d = duration(), t = switching ? switching.at : (player.currentTime || 0);
       if (!seeking) vbSeek.value = String(Math.round((t / d) * 1000));
       vbTime.textContent = videoTime(t) + " / " + videoTime(d);
       vbPlay.innerHTML = player.paused ? ICON.play : ICON.pause;
       vbPlay.setAttribute("aria-label", player.paused ? "Oynat" : "Duraklat");
-      vbMute.setAttribute("aria-pressed", String(player.muted));
-      vbMute.setAttribute("aria-label", player.muted ? "Sesi aç" : "Sesi kapat");
-      vbMute.classList.toggle("is-muted", player.muted);
+      const silent = player.muted || (volumeSettable && player.volume === 0);
+      vbMute.innerHTML = silent ? ICON.mute : ICON.speak;
+      vbMute.setAttribute("aria-label", silent ? "Ses kapalı, ses ayarını aç" : "Ses ayarı");
+      vbMute.classList.toggle("is-muted", silent);
+      volMute.textContent = player.muted ? "Sesi aç" : "Sesi kapat";
+      volMute.setAttribute("aria-pressed", String(!!player.muted));
+      const level = player.muted ? 0 : Math.round(player.volume * 100);
+      if (document.activeElement !== volRange) volRange.value = String(level);
+      volVal.textContent = (volumeSettable ? level : (player.muted ? 0 : 100)) + "%";
     }
     function togglePlay() {
       if (!player.getAttribute("src")) { startVideo(); return; }
@@ -794,16 +807,14 @@
     const centerBtn = document.getElementById("video-center");
     function syncCenter() {
       const started = !!player.getAttribute("src");
-      centerBtn.hidden = !started || !player.paused;
-      centerBtn.setAttribute("aria-label", player.ended ? "Baştan oynat" : "Oynat");
+      centerBtn.hidden = !started;
+      centerBtn.classList.toggle("is-paused", started && player.paused);
+      centerBtn.setAttribute("aria-label", player.paused ? (player.ended ? "Baştan oynat" : "Oynat") : "Duraklat");
     }
     centerBtn.addEventListener("click", (ev) => { ev.stopPropagation(); togglePlay(); });
     ["play", "playing", "pause", "ended", "emptied", "loadedmetadata"].forEach((n) => player.addEventListener(n, syncCenter));
     vbPlay.addEventListener("click", togglePlay);
-    player.addEventListener("click", togglePlay);
-    // before the first start, a tap on the frame (not on a button) starts the film
-    document.getElementById("video-placeholder").addEventListener("click", (ev) => { if (!ev.target.closest("button")) startVideo(); });
-    vbMute.addEventListener("click", () => { player.muted = !player.muted; syncBar(); });
+
     vbSeek.addEventListener("input", () => {
       seeking = true;
       const at = (Number(vbSeek.value) / 1000) * duration();
@@ -838,24 +849,37 @@
         if (!q || q === curQ) return;
         curQ = q; prefs.vq = q.label; savePrefs();
         if (!player.getAttribute("src")) return; // not started yet: used on start
-        const at = player.currentTime, resume = !player.paused && !player.ended;
+        // keep the exact position and play state across the source switch
+        const at = switching ? switching.at : (player.currentTime || 0);
+        const resume = switching ? switching.resume : (!player.paused && !player.ended);
+        const token = {};
+        switching = { at, resume, token };
         status.textContent = "Kalite değişiyor: " + q.label + "…";
-        const onMeta = () => {
-          player.removeEventListener("loadedmetadata", onMeta);
-          if (disposed) return;
-          try { player.currentTime = at; } catch (err) { /* seek once data arrives */ }
+        const restore = () => {
+          if (disposed || !switching || switching.token !== token) return;
+          if (Math.abs((player.currentTime || 0) - at) > 1) { try { player.currentTime = at; } catch (err) { /* retried on canplay */ } }
+        };
+        const finish = () => {
+          player.removeEventListener("loadedmetadata", restore);
+          player.removeEventListener("canplay", finish);
+          if (disposed || !switching || switching.token !== token) return;
+          restore();
+          switching = null;
           if (resume) { const r = player.play(); if (r && r.catch) r.catch(() => {}); }
           status.textContent = "Görüntü kalitesi: " + q.label;
+          syncCaptions(); syncBar();
         };
-        player.addEventListener("loadedmetadata", onMeta);
-        player.src = q.url;
+        player.addEventListener("loadedmetadata", restore);
+        player.addEventListener("canplay", finish);
+        player.preload = "auto"; // also load while paused so the frame and position are ready
+        player.src = at > 0.5 ? q.url + "#t=" + at.toFixed(2) : q.url;
       });
     }
 
     // subtitle size + background opacity (remembered per device)
     const CAP_SCALES = [0.7, 0.85, 1, 1.2, 1.45, 1.8];
     const capPrefs = Object.assign({ scale: 1, alpha: 72, on: true }, prefs.cap || {});
-    const csOn = document.getElementById("cs-on"), vbSub = document.getElementById("vb-sub");
+    const csOn = document.getElementById("cs-on");
     const capPanel = document.getElementById("cap-settings");
     const capBtns = [document.getElementById("vb-cc"), document.getElementById("cap-settings-btn")];
     const csAlpha = document.getElementById("cs-alpha");
@@ -871,8 +895,6 @@
       stage.classList.toggle("captions-off", !capPrefs.on);
       csOn.setAttribute("aria-checked", String(capPrefs.on));
       csOn.querySelector(".cs-switch-label").textContent = capPrefs.on ? "Açık" : "Kapalı";
-      vbSub.setAttribute("aria-pressed", String(capPrefs.on));
-      vbSub.setAttribute("aria-label", capPrefs.on ? "Altyazıyı kapat" : "Altyazıyı aç");
       ["cs-smaller", "cs-bigger", "cs-alpha"].forEach((id) => { if (!capPrefs.on) document.getElementById(id).disabled = true; });
       document.getElementById("cs-smaller").disabled = CAP_SCALES.indexOf(capPrefs.scale) === 0;
       document.getElementById("cs-bigger").disabled = CAP_SCALES.indexOf(capPrefs.scale) === CAP_SCALES.length - 1;
@@ -894,8 +916,44 @@
     document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true); });
     const toggleCaptions = () => { capPrefs.on = !capPrefs.on; Tip.hide(); applyCap(true); };
     csOn.addEventListener("click", toggleCaptions);
-    vbSub.addEventListener("click", toggleCaptions);
     applyCap(false);
+
+    // volume: popover with slider + mute (phones that lock the volume only get mute)
+    const volPop = document.getElementById("vol-pop"), volRange = document.getElementById("vol-range");
+    const volVal = document.getElementById("vol-val"), volMute = document.getElementById("vol-mute");
+    let volumeSettable = true;
+    try {
+      const keep = player.volume; player.volume = keep === 0.5 ? 0.4 : 0.5; volumeSettable = player.volume !== keep; player.volume = keep;
+    } catch (err) { volumeSettable = false; }
+    document.getElementById("vol-row").hidden = !volumeSettable;
+    document.getElementById("vol-note").hidden = volumeSettable;
+    function applyStoredVolume() {
+      if (volumeSettable && typeof prefs.vol === "number") player.volume = Math.min(1, Math.max(0, prefs.vol));
+      player.muted = !!prefs.muted;
+    }
+    function setVolPop(open) {
+      volPop.hidden = !open;
+      vbMute.setAttribute("aria-expanded", String(open));
+      if (open && !capPanel.hidden) setCapPanel(false);
+    }
+    vbMute.addEventListener("click", (ev) => { ev.stopPropagation(); setVolPop(volPop.hidden); });
+    volPop.addEventListener("click", (ev) => ev.stopPropagation());
+    function onDocClickVol() { if (!volPop.hidden) setVolPop(false); }
+    document.addEventListener("click", onDocClickVol);
+    volRange.addEventListener("input", () => {
+      const level = Number(volRange.value) / 100;
+      player.volume = level;
+      player.muted = level === 0;
+      prefs.vol = level; prefs.muted = player.muted; savePrefs();
+      syncBar();
+    });
+    volMute.addEventListener("click", () => {
+      player.muted = !player.muted;
+      if (!player.muted && volumeSettable && player.volume === 0) player.volume = 0.5;
+      prefs.muted = player.muted; if (volumeSettable) prefs.vol = player.volume; savePrefs();
+      syncBar();
+    });
+    capBtns.forEach((b) => b.addEventListener("click", () => setVolPop(false)));
 
     function startVideo(at) {
       if (!navigator.onLine) {
@@ -903,7 +961,8 @@
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar(); syncCenter();
+        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; applyStoredVolume(); syncBar(); syncCenter();
+        if (stage.scrollIntoView && !isFs()) stage.scrollIntoView({ block: "nearest", behavior: "smooth" });
         document.getElementById("video-placeholder").hidden = true;
       }
       if (typeof at === "number") {
@@ -946,6 +1005,7 @@
       document.removeEventListener("webkitfullscreenchange", syncFsUi);
       document.removeEventListener("keydown", onEscape);
       document.removeEventListener("click", onDocClickCap);
+      document.removeEventListener("click", onDocClickVol);
       exitFs(); document.body.classList.remove("video-fs-open"); document.body.appendChild(Tip.el);
     };
   }
