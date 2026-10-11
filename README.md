@@ -52,7 +52,7 @@ Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGEN
 
 11 Ekim 2026 güncellemesi: Kullanıcının isteğiyle üç kitap özeti ve ayrı **Kitap Özetleri** bölümü kaldırıldı. Hikâyeler ve Makaleler ayrı koleksiyonlar olarak devam ediyor. Mevcut Dracula ve Frankenstein hikâye uyarlamaları korunuyor; Dönüşüm uyarlaması `drafts/` altında, çakışma düzeltmesi bekleyen taslak olarak saklanıyor ve yayımlanmıyor. Yukarıdaki yedi hikâye plan listesinde kalıyor.
 
-Sonraki arayüz görevi: **Kitaplığım** sekmesi ve kişisel hikâye/makale kayıtları. Bu çalışma yeni hikâye, makale veya kitap özeti eklemiyor; doğrulama ve yayın sonucu HANDOFF.md ve HOSTING.md'de kaydedilecek.
+Bu sürümde **Kitaplığım** sekmesi ve kişisel hikâye/makale kayıtları eklendi; kısaltılmış klasikler en fazla üç kartlık Önerilenler bölümüne alındı. Yeni hikâye, makale veya kitap özeti yazılmadı. 212 tarayıcı kontrolü geçti; yayın kaydı için HANDOFF.md ve HOSTING.md'ye bak.
 
 **Site:** https://lantern-english.github.io/ (herkese açık). Yayın ve güncelleme adımları için [HOSTING.md](HOSTING.md).
 
