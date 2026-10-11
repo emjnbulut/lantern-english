@@ -117,6 +117,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance
 .g-romance { --c: var(--g-romance); } .g-scifi { --c: var(--g-scifi); } .g-fable { --c: var(--g-fable); } .g-drama { --c: var(--g-drama); }
 
 /* ---------- home ---------- */
+.hero > * { min-width: 0; }
 .hero { display: grid; grid-template-columns: 1.05fr 1fr; gap: 48px; align-items: center; padding-top: 16px; }
 .hero h1 { font-size: clamp(36px, 5vw, 56px); letter-spacing: -.01em; }
 .hero h1 em { font-style: normal; color: var(--accent); }
@@ -134,7 +135,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance
 .stat span { font-size: 13px; color: var(--fg-3); }
 
 .ladder { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; align-items: end; }
-.step { --h: 0; text-decoration: none; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; border: 1px solid var(--line); border-top: 3px solid var(--lc); background: var(--bg-2); border-radius: 8px; padding: 14px; min-height: calc(110px + var(--h) * 22px); transition: transform .15s, background .15s; }
+.step { --h: 0; text-decoration: none; display: flex; flex-direction: column; justify-content: flex-end; gap: 4px; border: 1px solid var(--line); border-top: 3px solid var(--lc); background: var(--bg-2); border-radius: 8px; padding: 14px; min-height: calc(104px + var(--h) * 12px); transition: transform .15s, background .15s; }
 .step:hover { transform: translateY(-3px); background: var(--bg-3); }
 .step b { font: 400 26px/1 var(--f-display); color: var(--lc); }
 .step .name { font-weight: 600; font-size: 14px; }
