@@ -477,3 +477,28 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 /* idle frame: keep the start button and note above the subtitle strip */
 .video-stage .video-placeholder { justify-content: flex-start; min-height: 360px; aspect-ratio: 16 / 9; padding: 28px 20px 120px; }
 @media (max-width: 600px) { .video-stage .video-placeholder { min-height: 330px; padding: 22px 16px 104px; } }
+
+/* video frame, custom controls and in-page fullscreen */
+.video-frame { position: relative; width: 100%; }
+.video-stage video { cursor: pointer; }
+.video-bar { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; display: flex; align-items: center; gap: 8px; padding: 18px 10px calc(8px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to top, rgba(8, 10, 15, .92), rgba(8, 10, 15, 0)); }
+.video-bar[hidden] { display: none; }
+.vb-btn { flex: 0 0 auto; width: 40px; height: 40px; display: inline-grid; place-items: center; border: 0; border-radius: 8px; background: transparent; color: #fff; cursor: pointer; }
+.vb-btn:hover { background: rgba(255, 255, 255, .14); }
+.vb-btn svg { width: 22px; height: 22px; }
+.vb-btn.is-muted { opacity: .55; }
+.vb-time { flex: 0 0 auto; font-size: 13px; color: #e9ecf3; font-variant-numeric: tabular-nums; min-width: 6.4em; text-align: center; }
+#vb-seek { flex: 1 1 auto; min-width: 0; height: 28px; accent-color: var(--accent); cursor: pointer; background: transparent; }
+.video-stage .video-captions { bottom: 58px; }
+.video-stage.pseudo-fs { position: fixed; inset: 0; z-index: 90; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 0; background: #000; }
+.video-stage:fullscreen .video-frame, .video-stage:-webkit-full-screen .video-frame, .video-stage.pseudo-fs .video-frame { width: min(100vw, calc(100vh * 16 / 9)); width: min(100vw, calc(100dvh * 16 / 9)); }
+.video-stage:fullscreen video, .video-stage:-webkit-full-screen video, .video-stage.pseudo-fs video { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.video-stage.pseudo-fs .video-captions p { font-size: clamp(18px, 3vw, 32px); }
+.video-stage.pseudo-fs .video-captions, .video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 64px; }
+body.video-fs-open { overflow: hidden; }
+@media (max-width: 600px) { .vb-time { display: none; } .video-stage .video-captions { bottom: 54px; } }
+
+/* subtitle strip sits above the 66px control bar */
+.video-stage .video-captions { bottom: 72px; }
+.video-stage.pseudo-fs .video-captions, .video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 78px; }
+@media (max-width: 600px) { .video-stage .video-captions { bottom: 70px; } .video-stage.pseudo-fs .video-captions { bottom: 70px; } }

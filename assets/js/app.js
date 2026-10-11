@@ -47,6 +47,9 @@
     stop: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>',
     check: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
+    pause: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.5" height="14" rx="1.2"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.2"/></svg>',
+    expand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>',
+    shrink: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>',
     dice: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/></svg>',
     bookmark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
     bookmarkFill: '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
@@ -638,10 +641,17 @@
       <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
         <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
         <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
-      <div class="video-stage" id="video-stage"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
+      <div class="video-stage" id="video-stage"><div class="video-frame" id="video-frame"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
-        <video id="video-player" controls playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
-        <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div></div>
+        <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
+        <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <div class="video-bar" id="video-bar" hidden>
+          <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
+          <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
+          <span class="vb-time" id="vb-time">0:00 / ${videoTime(v.durationSeconds)}</span>
+          <button type="button" class="vb-btn" id="vb-mute" aria-label="Sesi kapat" aria-pressed="false">${ICON.speak}</button>
+          <button type="button" class="vb-btn" id="vb-fs" aria-label="Tam ekran">${ICON.expand}</button>
+        </div></div></div>
       <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazı videonun üzerinde görünür; bir kelimeye dokununca anlamı açılır.</p>
       <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
         <p class="sub" id="caption-help">Altyazı videonun üzerinde görünür. Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır; oynat düğmesiyle devam edebilirsin.</p>
@@ -701,25 +711,84 @@
 
     const stage = document.getElementById("video-stage");
     const fsBtn = document.getElementById("video-fullscreen");
+    const bar = document.getElementById("video-bar");
+    const vbPlay = document.getElementById("vb-play"), vbSeek = document.getElementById("vb-seek"), vbTime = document.getElementById("vb-time");
+    const vbMute = document.getElementById("vb-mute"), vbFs = document.getElementById("vb-fs");
     const requestFs = stage.requestFullscreen || stage.webkitRequestFullscreen;
     const fsElement = () => document.fullscreenElement || document.webkitFullscreenElement || null;
-    const exitFs = () => { const f = document.exitFullscreen || document.webkitExitFullscreen; if (f && fsElement()) { const r = f.call(document); if (r && r.catch) r.catch(() => {}); } };
-    if (requestFs) player.setAttribute("controlslist", "nofullscreen"); else fsBtn.hidden = true;
+    let pseudoFs = false, seeking = false;
     player.setAttribute("disablepictureinpicture", "");
-    function onFullscreenChange() {
-      const inFs = fsElement() === stage;
+    const isFs = () => pseudoFs || fsElement() === stage;
+    function syncFsUi() {
+      const on = isFs();
       // the dictionary tooltip must live inside the fullscreen element to be visible
-      (inFs ? stage : document.body).appendChild(Tip.el);
+      (on ? stage : document.body).appendChild(Tip.el);
       Tip.hide();
-      fsBtn.textContent = inFs ? "Tam ekrandan çık" : "Tam ekran";
+      stage.classList.toggle("pseudo-fs", pseudoFs);
+      document.body.classList.toggle("video-fs-open", on);
+      fsBtn.textContent = on ? "Tam ekrandan çık" : "Tam ekran";
+      vbFs.innerHTML = on ? ICON.shrink : ICON.expand;
+      vbFs.setAttribute("aria-label", on ? "Tam ekrandan çık" : "Tam ekran");
     }
-    document.addEventListener("fullscreenchange", onFullscreenChange);
-    document.addEventListener("webkitfullscreenchange", onFullscreenChange);
-    fsBtn.addEventListener("click", () => {
-      if (fsElement() === stage) { exitFs(); return; }
-      const r = requestFs.call(stage);
-      if (r && r.catch) r.catch(() => { status.textContent = "Tam ekran bu cihazda açılamadı."; });
+    function lockLandscape() {
+      try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock("landscape").catch(() => {}); } catch (e) { /* not supported */ }
+    }
+    function unlockOrientation() {
+      try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) { /* not supported */ }
+    }
+    function enterPseudoFs() { pseudoFs = true; syncFsUi(); }
+    function enterFs() {
+      // real fullscreen where the browser allows it (not on iPhone); otherwise fill the page
+      if (!requestFs) { enterPseudoFs(); return; }
+      let r;
+      try { r = requestFs.call(stage); } catch (e) { enterPseudoFs(); return; }
+      if (r && r.then) r.then(lockLandscape, enterPseudoFs); else lockLandscape();
+    }
+    function exitFs() {
+      if (pseudoFs) { pseudoFs = false; syncFsUi(); }
+      const f = document.exitFullscreen || document.webkitExitFullscreen;
+      if (f && fsElement()) { const r = f.call(document); if (r && r.catch) r.catch(() => {}); }
+      unlockOrientation();
+    }
+    const toggleFs = () => { if (isFs()) exitFs(); else enterFs(); };
+    document.addEventListener("fullscreenchange", syncFsUi);
+    document.addEventListener("webkitfullscreenchange", syncFsUi);
+    fsBtn.addEventListener("click", toggleFs);
+    vbFs.addEventListener("click", toggleFs);
+    const onEscape = (ev) => { if (ev.key === "Escape" && pseudoFs) exitFs(); };
+    document.addEventListener("keydown", onEscape);
+
+    // custom controls (native controls cannot show our captions in fullscreen)
+    const duration = () => (isFinite(player.duration) && player.duration > 0 ? player.duration : v.durationSeconds);
+    function syncBar() {
+      const d = duration(), t = player.currentTime || 0;
+      if (!seeking) vbSeek.value = String(Math.round((t / d) * 1000));
+      vbTime.textContent = videoTime(t) + " / " + videoTime(d);
+      vbPlay.innerHTML = player.paused ? ICON.play : ICON.pause;
+      vbPlay.setAttribute("aria-label", player.paused ? "Oynat" : "Duraklat");
+      vbMute.setAttribute("aria-pressed", String(player.muted));
+      vbMute.setAttribute("aria-label", player.muted ? "Sesi aç" : "Sesi kapat");
+      vbMute.classList.toggle("is-muted", player.muted);
+    }
+    function togglePlay() {
+      if (!player.getAttribute("src")) { startVideo(); return; }
+      if (player.paused) { const r = player.play(); if (r && r.catch) r.catch(() => {}); } else player.pause();
+    }
+    vbPlay.addEventListener("click", togglePlay);
+    player.addEventListener("click", togglePlay);
+    vbMute.addEventListener("click", () => { player.muted = !player.muted; syncBar(); });
+    vbSeek.addEventListener("input", () => {
+      seeking = true;
+      const at = (Number(vbSeek.value) / 1000) * duration();
+      vbTime.textContent = videoTime(at) + " / " + videoTime(duration());
     });
+    vbSeek.addEventListener("change", () => {
+      const at = (Number(vbSeek.value) / 1000) * duration();
+      seeking = false;
+      if (player.readyState >= 1) player.currentTime = at; else pendingSeek = at;
+      syncCaptions(); syncBar();
+    });
+    ["timeupdate", "play", "pause", "volumechange", "loadedmetadata", "seeked", "ended"].forEach((n) => player.addEventListener(n, syncBar));
 
     function startVideo(at) {
       if (!navigator.onLine) {
@@ -727,7 +796,7 @@
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false;
+        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar();
         document.getElementById("video-placeholder").hidden = true;
       }
       if (typeof at === "number") {
@@ -738,7 +807,7 @@
       const request = player.play();
       if (request && request.catch) request.catch(() => {
         if (!document.contains(player)) return;
-        status.textContent = player.error ? "Video yüklenemedi. İnternetini kontrol et veya aşağıdaki resmî sayfada izle bağlantısını kullan." : "Oynatmak için video üzerindeki oynat düğmesine basabilirsin.";
+        status.textContent = player.error ? "Video yüklenemedi. İnternetini kontrol et veya aşağıdaki resmî sayfada izle bağlantısını kullan." : "Oynatmak için kontrol çubuğundaki oynat düğmesine basabilirsin.";
       });
     }
 
@@ -766,9 +835,10 @@
     bindText(captions, v); showCaption(0);
     videoCleanup = () => {
       disposed = true; player.pause(); player.removeAttribute("src"); player.load();
-      document.removeEventListener("fullscreenchange", onFullscreenChange);
-      document.removeEventListener("webkitfullscreenchange", onFullscreenChange);
-      exitFs(); document.body.appendChild(Tip.el);
+      document.removeEventListener("fullscreenchange", syncFsUi);
+      document.removeEventListener("webkitfullscreenchange", syncFsUi);
+      document.removeEventListener("keydown", onEscape);
+      exitFs(); document.body.classList.remove("video-fs-open"); document.body.appendChild(Tip.el);
     };
   }
 

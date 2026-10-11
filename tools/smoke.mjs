@@ -512,7 +512,7 @@ try {
   await evaluate("document.querySelector('a.video-card').click()");
   await waitFor(videoReady);
   assert(await evaluate("document.querySelector('#video-view h1').textContent === 'Sintel' && document.querySelector('#video-view .lvl').textContent === 'B1' && document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "Sintel details must show the B1 level and video navigation.");
-  const unloadedPlayer = "(() => { const p = document.getElementById('video-player'); return p instanceof HTMLVideoElement && p.controls && p.playsInline && p.preload === 'none' && !p.hasAttribute('src') && !p.hasAttribute('poster') && !p.querySelector('source'); })()";
+  const unloadedPlayer = "(() => { const p = document.getElementById('video-player'); return p instanceof HTMLVideoElement && !p.controls && !!document.getElementById('video-bar') && p.playsInline && p.preload === 'none' && !p.hasAttribute('src') && !p.hasAttribute('poster') && !p.querySelector('source'); })()";
   assert(await evaluate(unloadedPlayer), "Opening a video must leave its native player unloaded with no media source or remote poster.");
   const fallbackUrl = trialVideo.source.watchUrl || trialVideo.source.url;
   assert(await evaluate(`(() => { const a = document.getElementById('video-source'); return a.href === ${JSON.stringify(fallbackUrl)} && a.target === '_blank' && a.relList.contains('noopener'); })()`), "The official watch fallback must be an HTTPS link with a safe new-tab target.");
