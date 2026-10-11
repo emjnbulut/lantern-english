@@ -66,6 +66,7 @@ tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 2
 - Verification at checkpoint: content validation and editorial review passed; headless browser checks passed (21 checks, desktop and mobile). Generated `data/` bundles match the complete source content.
 
 ## Ideas backlog
+- User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
 - Optional Turkish sentence translation on demand.
 - Export/import of the vocabulary notebook (JSON).

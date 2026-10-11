@@ -6,7 +6,7 @@
 
 Dracula (Bram Stoker), Dönüşüm (Franz Kafka), Hayvan Çiftliği (George Orwell) ve Frankenstein (Mary Shelley) için İngilizce, yaklaşık **30–40 dakikalık** özgün özetler; seviyeyi AI seçebilir. Astra tercih edildi, üç Astra ajanı paralel çalıştı. Dördü siteye eklenmeli; son kullanıcı talebi bu işi şimdilik durdurup devretmek.
 
-Kullanıcı ayrıca A2–B1 için Pinokyo ve Ömer Seyfettin benzeri eserler **yalnızca önerilsin** dedi; bu eserleri yazmak/eklemek yetkilendirilmedi. A2–B1 yeni içerik dosyaları oluşturulmadı. Öneri adayları: sadeleştirilmiş İngilizceyle Pinokyo A2, Oz Büyücüsü A2, Alice Harikalar Diyarında B1, Define Adası B1, Gizli Bahçe B1; Ömer Seyfettin'den Kaşağı B1, Forsa A2/B1, Yüksek Ökçeler A2/B1. Bunlar orijinal kitapların CEFR dereceleri değil, düşünülen uyarlama düzeyleridir.
+Kullanıcı ayrıca A2–B1 için Pinokyo ve Ömer Seyfettin benzeri eserler **yalnızca önerilsin** dedi. Sonraki isteğiyle Ömer Seyfettin'den üç, Dede Korkut'tan üç eser ve Pinokyo **GitHub'daki eklenecek hikâyeler listesine** kaydedildi; güncel seçimler, hedef seviyeler ve kaynaklar [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) bölümünde. Bu son görev listeyi kaydetmekle sınırlıdır; yeni hikâye metinleri yazılmadı veya siteye eklenmedi. Önceki Oz Büyücüsü, Alice Harikalar Diyarında, Define Adası, Gizli Bahçe, Forsa ve Yüksek Ökçeler önerileri seçilen yedi eserin dışında kalır. Seviyeler özgün kitapların CEFR dereceleri değil, düşünülen İngilizce uyarlama düzeyleridir.
 
 ## Hazır metinler
 
