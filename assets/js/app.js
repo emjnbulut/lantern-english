@@ -8,6 +8,7 @@
   const STORIES = LIB.filter((t) => t.type === "story");
   const ARTICLES = LIB.filter((t) => t.type === "article");
   const SUMMARIES = LIB.filter((t) => t.type === "summary");
+  const FEATURED = window.LANTERN_FEATURED || {};
   const BY_ID = Object.fromEntries(LIB.map((t) => [t.id, t]));
   const $main = document.getElementById("main");
 
@@ -335,7 +336,8 @@
         if (!this.active) return;
         if (i >= blocks.length) { this.stop(); return; }
         onBlock(blocks[i]);
-        const parts = blocks[i].textContent.split(/(?<=[.!?][”’"]?)\s+/).filter((x) => x.trim());
+        // sentence split without lookbehind (older mobile WebViews reject that syntax at parse time)
+        const parts = (blocks[i].textContent.match(/[^.!?]+[.!?]*["”’']?\s*|[.!?]+["”’']?\s*/g) || []).filter((x) => x.trim());
         parts.forEach((part, j) => {
           const u = this.utter(part, prefs.rate || 0.92);
           if (j === parts.length - 1) u.onend = () => run(i + 1);
@@ -379,20 +381,21 @@
     if (p.f > 0.03) return `<span class="state">%${Math.round(p.f * 100)}</span>`;
     return "";
   }
-  function card(t) {
+  function card(t, why) {
     const p = progress[t.id];
     const bar = p && !p.done && p.f > 0.03 ? `<div class="bar"><span style="width:${Math.round(p.f * 100)}%"></span></div>` : "";
     const by = t.type === "summary" ? `${esc(t.work.author)} · Kitap özeti` : t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
-    return `<a class="card${t.type === "story" ? "" : " " + t.type}" href="#s.${t.id}">
+    return `<a class="card${t.type === "story" ? "" : " " + t.type}${why ? " rec" : ""}" href="#s.${t.id}">
       <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${stateOf(t)}</div>
       <h3>${esc(t.title)}</h3>
       <div class="by">${by}</div>
+      ${why ? `<p class="why">${ICON.starFill}<span>${esc(why)}</span></p>` : ""}
       <p class="teaser">${esc(t.summaryTr)}</p>
       ${bar}
       <div class="meta"><span>${LENGTHS[t.length]}</span><span>·</span><span>${fmt(t.words)} kelime</span><span>·</span><span>~${minutes(t)} dk</span></div>
     </a>`;
   }
-  const grid = (items) => items.length ? `<div class="grid">${items.map(card).join("")}</div>` : "";
+  const grid = (items) => items.length ? `<div class="grid">${items.map((t) => card(t)).join("")}</div>` : "";
 
   // ---------- views ----------
   const DEMO = {
@@ -535,7 +538,25 @@
         filters.sort === "title" ? (a, b) => a.title.localeCompare(b.title) :
         (a, b) => lv(a) - lv(b) || a.words - b.words);
       document.getElementById("count").textContent = `${list.length} ${label}`;
-      document.getElementById("results").innerHTML = grid(list) || `<div class="empty"><h3>Bu filtrelerle ${label} yok</h3><p>Bir filtreyi kaldırmayı veya aramayı temizlemeyi dene.</p></div>`;
+      // "Önerilenler": editorial picks of each selected level go first (stories only)
+      let recs = [];
+      if (kind === "story") {
+        const inList = new Set(list.map((t) => t.id));
+        for (const lvl of LEVELS.map((l) => l.id).filter((id) => filters.level.includes(id))) {
+          const picks = FEATURED[lvl] || [];
+          // a level needs more stories than picks, otherwise the whole level would be "recommended"
+          if (!picks.length || collection.filter((t) => t.level === lvl).length <= picks.length) continue;
+          for (const p of picks) if (BY_ID[p.id] && inList.has(p.id)) recs.push({ t: BY_ID[p.id], why: p.why });
+        }
+      }
+      const recIds = new Set(recs.map((r) => r.t.id));
+      const rest = list.filter((t) => !recIds.has(t.id));
+      const recHtml = recs.length
+        ? `<section class="recs" aria-labelledby="recs-h"><div class="recs-head"><h2 id="recs-h">${ICON.starFill}Önerilenler</h2><p>${filters.level.length > 1 ? "Seçtiğin seviyelerde" : "Bu seviyede"} önce bunlarla başla.</p></div>
+            <div class="grid">${recs.map((r) => card(r.t, r.why)).join("")}</div></section>
+            ${rest.length ? `<h2 class="rest-h">Diğer ${label}ler</h2>` : ""}`
+        : "";
+      document.getElementById("results").innerHTML = (recHtml + grid(rest)) || `<div class="empty"><h3>Bu filtrelerle ${label} yok</h3><p>Bir filtreyi kaldırmayı veya aramayı temizlemeyi dene.</p></div>`;
     };
     $main.querySelector(".filters").addEventListener("click", (ev) => {
       const b = ev.target.closest(".chip");
@@ -791,6 +812,14 @@
       <h2>Kaynaklar ve telif</h2>
       <p>Klasik metinler ABD'de kamu malıdır ve <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>'den kısaltılmadan alınmıştır. “Lantern Original” imzalı hikâyeler ve tüm makaleler Lantern English için özgün olarak yazılmıştır. Sözlük maddeleri Lantern English için hazırlanmıştır.</p>
       ${pd.length ? `<ul>${pd.map((s) => `<li>${esc(s.author)}, <em>${esc(s.title)}</em>${s.year ? " (" + s.year + ")" : ""} · <a href="${esc(s.source.url)}" target="_blank" rel="noopener">${esc(s.source.name)}</a></li>`).join("")}</ul>` : ""}
+      <h2>Uygulama gibi kullan</h2>
+      <p>Lantern English telefonda uygulama gibi çalışır, mağazadan indirmen gerekmez.</p>
+      <ul>
+        <li><strong>iPhone / iPad (Safari):</strong> Paylaş düğmesi → <em>Ana Ekrana Ekle</em>.</li>
+        <li><strong>Android (Chrome):</strong> Menü → <em>Uygulamayı yükle</em> ya da <em>Ana ekrana ekle</em>.</li>
+        <li><strong>Bilgisayar (Chrome / Edge):</strong> adres çubuğundaki yükle simgesi.</li>
+      </ul>
+      <p>Bir kez açtıktan sonra daha önce okuduğun hikâyeler internet olmadan da açılır.</p>
       <h2>Verilerin</h2>
       <p>Kelime defterin ve okuma ilerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen bunlar da silinir.</p>
     </div>`;
@@ -827,6 +856,26 @@
     const t = h.startsWith("s.") && BY_ID[h.slice(2)];
     document.title = t ? `${t.title} · Lantern English` : "Lantern English";
     window.scrollTo(0, 0);
+  }
+
+  // ---------- installable app (PWA) ----------
+  const $install = document.getElementById("install");
+  let installEvt = null;
+  window.addEventListener("beforeinstallprompt", (ev) => {
+    ev.preventDefault(); installEvt = ev;
+    if ($install) $install.hidden = false;
+  });
+  if ($install) $install.addEventListener("click", () => {
+    if (!installEvt) return;
+    installEvt.prompt();
+    const done = () => { installEvt = null; $install.hidden = true; };
+    if (installEvt.userChoice && installEvt.userChoice.then) installEvt.userChoice.then(done, done); else done();
+  });
+  window.addEventListener("appinstalled", () => { if ($install) $install.hidden = true; toast("Uygulama yüklendi"); });
+  if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    window.addEventListener("load", () => {
+      try { navigator.serviceWorker.register("sw.js").catch(() => {}); } catch (e) { /* unsupported frame */ }
+    });
   }
 
   window.addEventListener("hashchange", route);

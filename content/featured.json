@@ -1,0 +1,26 @@
+{
+  "A1": [
+    { "id": "pasha-knows-everything", "why": "Her şeyi tekrarlayan bir papağan ve patronla felaket bir akşam yemeği" },
+    { "id": "cave-under-the-fig-tree", "why": "Yasak bir mağara, yükselen deniz ve gülümseten bir son" }
+  ],
+  "A2": [
+    { "id": "seven-minutes-past-six", "why": "Arkadaşını kurtarmak için son bir sabahı kalan küçük bir robot" },
+    { "id": "page-213", "why": "Vapurda son sayfaları eksik bir kitap ve tatlı bir sürpriz" },
+    { "id": "the-piano-at-two-oclock", "why": "Kilitli salonda her gece saat ikide çalan piyanonun sırrı" }
+  ],
+  "B1": [
+    { "id": "the-man-who-pointed", "why": "Zaman yolculuğu, ünlü bir fotoğraf ve çekilmez bir turist" },
+    { "id": "where-the-river-sleeps", "why": "Bir kemandan çıkan harita, İstanbul'dan Kapadokya'ya bir kovalamaca" },
+    { "id": "a-table-for-mr-costa", "why": "Ünlü bir eleştirmen sanılan adam ve paniğe kapılan bir restoran" }
+  ],
+  "B2": [
+    { "id": "the-monkeys-paw", "why": "Üç dilek veren uğursuz bir pençe; gerilim son satıra kadar sürüyor" },
+    { "id": "the-open-window", "why": "Sakin bir kır ziyareti, açık bir pencere ve ürpertici bir hikâye" },
+    { "id": "the-necklace", "why": "Tek bir balo için ödünç alınan kolye, bir ömrü değiştiriyor" }
+  ],
+  "C1": [
+    { "id": "the-tell-tale-heart", "why": "Deli olmadığına sizi ikna etmeye çalışan bir anlatıcının itirafı" },
+    { "id": "the-red-headed-league", "why": "Kızıl saçlılara para ödeyen tuhaf bir dernek ve Holmes'un zekâsı" },
+    { "id": "to-build-a-fire", "why": "Yukon'un ölümcül soğuğunda nefes kesen bir hayatta kalma mücadelesi" }
+  ]
+}

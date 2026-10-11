@@ -38,3 +38,29 @@ $env:TAR_OPTIONS = '--force-local'
 `--force-local`, GNU tar'ın `C:\...` arşiv yolunu uzak sunucu olarak yorumlamasını önler. Helper `tty: true` ile başlatılıp gizli stdin JSON alır; `commands` ve `archivePath` Sites skill sözleşmesine göre verilir. Arşivi git deposunun dışında tut.
 
 Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak bu yayının bir parçası değildi.
+
+## Herkese açık yayın ve mobil uygulama (Claude oturumu, 11 Ekim 2026)
+
+**Durum:** ChatGPT Sites yayını owner-private kalıyor; GitHub deposu private. Herkese açık yayın için aşağıdaki yol hazırlandı ama kullanıcı onayı olmadan **uygulanmadı**.
+
+### Mobil uygulama / WebView uyumu
+- `manifest.webmanifest` + `sw.js` + `assets/icons/`: site Android/iOS/masaüstünde ana ekrana eklenebilir (PWA), daha önce açılan sayfalar çevrimdışı çalışır. Service worker yalnızca `http(s)` altında kaydedilir; `file://` ve gömülü WebView'larda sessizce atlanır.
+- Eski iOS/Android WebView'larını kıran sözdizimi (regex lookbehind) kaldırıldı; `color-mix`/`backdrop-filter` için yedek değerler var; güvenli alan (`env(safe-area-inset-*)`), `100dvh`, 16 px arama alanı (iOS yakınlaştırma yok), dokunmatik hedef boyutları ayarlandı.
+- Yerel kabuk (Capacitor/Cordova/WebView) için `node tools/make-site.mjs` çıktısındaki `site/` klasörünü `webDir` olarak kullan; tüm yollar göreli.
+- Mobil kontrol betiği: `tools/smoke.mjs` (masaüstü+375 px) ve oturum notlarındaki 390 px CDP kontrolü.
+
+### Temiz site paketi
+`node tools/make-site.mjs [dir]` → `site/` (index.html, assets/, data/, manifest, sw.js, LICENSE, `.nojekyll`). `content/`, `drafts/`, `tools/` ve devir notları **dahil değildir**. `sw.js` içeriğe göre sürüm damgası alır.
+
+### Önerilen herkese açık yayın (onay bekliyor)
+Kaynak depo private kalır; yalnızca derlenmiş site ayrı bir **public** depoya gider:
+```
+gh repo create emjnbulut/lantern-english-site --public
+node tools/build.mjs
+node tools/publish-site.mjs https://github.com/emjnbulut/lantern-english-site.git
+gh api -X POST repos/emjnbulut/lantern-english-site/pages -f "source[branch]=main" -f "source[path]=/"
+```
+Adres: `https://emjnbulut.github.io/lantern-english-site/`. Güncelleme: build + `publish-site.mjs`. Ücretsiz GitHub hesabında private depodan Pages yoktur; bu yüzden ayrı public depo kullanılır.
+
+### Koruma gerçeği
+Statik siteyi herkes tarayıcısından görüp kaydedebilir; teknik olarak kopyalanmasını engellemek mümkün değildir. Alınan önlemler: kaynak/taslak/geçmiş yayınlanmaz, `LICENSE` ile telif bildirimi, sayfada "created by emjn" imzası. Kamu malı klasikler (Gutenberg) zaten serbesttir; özgün metinler telif kapsamındadır.

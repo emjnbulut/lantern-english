@@ -90,5 +90,34 @@ export function loadAll() {
     if (ids.has(t.id)) errors.push(`duplicate id ${t.id}`);
     ids.add(t.id);
   }
-  return { stories, articles, summaries, dict, errors };
+  return { stories, articles, summaries, dict, featured: loadFeatured(stories, errors), errors };
+}
+
+// content/featured.json: { "A1": [ { "id": "story-id", "why": "kısa Türkçe gerekçe" }, ... ], ... }
+// Editorial "Önerilenler" picks shown first when a level is selected in the story list.
+function loadFeatured(stories, errors) {
+  const file = path.join(ROOT, "content/featured.json");
+  if (!fs.existsSync(file)) return {};
+  let raw;
+  try { raw = JSON.parse(fs.readFileSync(file, "utf8").replace(/^﻿/, "")); }
+  catch (e) { errors.push(`content/featured.json: invalid JSON: ${e.message}`); return {}; }
+  const byId = new Map(stories.map((s) => [s.id, s]));
+  const out = {};
+  for (const [level, picks] of Object.entries(raw)) {
+    const e = (m) => errors.push(`content/featured.json [${level}]: ${m}`);
+    if (!LEVELS.includes(level)) { e("unknown level"); continue; }
+    if (!Array.isArray(picks) || picks.length < 1 || picks.length > 3) { e("needs 1–3 picks"); continue; }
+    const seen = new Set();
+    out[level] = [];
+    for (const p of picks) {
+      const s = p && byId.get(p.id);
+      if (!s) { e(`unknown story id "${p && p.id}"`); continue; }
+      if (s.level !== level) e(`"${p.id}" is level ${s.level}, not ${level}`);
+      if (seen.has(p.id)) e(`duplicate pick "${p.id}"`);
+      seen.add(p.id);
+      if (typeof p.why !== "string" || !p.why.trim() || p.why.length > 90) e(`"${p.id}" needs a short Turkish "why" (<= 90 chars)`);
+      else out[level].push({ id: p.id, why: p.why.trim() });
+    }
+  }
+  return out;
 }
