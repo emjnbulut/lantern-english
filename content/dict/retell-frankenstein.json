@@ -1,0 +1,90 @@
+{
+  "acorn": {
+    "pos": "isim",
+    "tr": "meşe palamudu"
+  },
+  "alchemist": {
+    "pos": "isim",
+    "tr": "simyacı"
+  },
+  "antelope": {
+    "pos": "isim",
+    "tr": "antilop, ceylan"
+  },
+  "banish": {
+    "pos": "fiil",
+    "tr": "kovmak, sürgün etmek, yok etmek"
+  },
+  "berry": {
+    "pos": "isim",
+    "tr": "dut, böğürtlen gibi küçük meyve"
+  },
+  "cottager": {
+    "pos": "isim",
+    "tr": "kulübe sakini, köy evinde yaşayan kişi"
+  },
+  "dissect": {
+    "pos": "fiil",
+    "tr": "(kadavra) kesip incelemek, teşrih etmek"
+  },
+  "dreary": {
+    "pos": "sıfat",
+    "tr": "kasvetli, iç karartıcı"
+  },
+  "eternal": {
+    "pos": "sıfat",
+    "tr": "sonsuz, ebedi"
+  },
+  "everlasting": {
+    "pos": "sıfat",
+    "tr": "sonsuz, hiç bitmeyen"
+  },
+  "execute": {
+    "pos": "fiil",
+    "tr": "idam etmek; uygulamak, yürütmek"
+  },
+  "gigantic": {
+    "pos": "sıfat",
+    "tr": "devasa, kocaman"
+  },
+  "graveyard": {
+    "pos": "isim",
+    "tr": "mezarlık"
+  },
+  "hovel": {
+    "pos": "isim",
+    "tr": "derme çatma kulübe, baraka"
+  },
+  "lieutenant": {
+    "pos": "isim",
+    "tr": "teğmen; (gemide) ikinci kaptan"
+  },
+  "papa": {
+    "pos": "isim",
+    "tr": "baba (çocuk dilinde)"
+  },
+  "raft": {
+    "pos": "isim",
+    "tr": "sal"
+  },
+  "slaughterhouse": {
+    "pos": "isim",
+    "tr": "mezbaha, kesimhane"
+  },
+  "stump": {
+    "pos": "isim",
+    "tr": "kütük, ağaç kütüğü"
+  },
+  "superhuman": {
+    "pos": "sıfat",
+    "tr": "insanüstü"
+  },
+  "ugliness": {
+    "pos": "isim",
+    "tr": "çirkinlik"
+  },
+  "watery": {
+    "pos": "sıfat",
+    "tr": "sulu, ıslak; (göz) sulanmış, donuk"
+  }
+}
