@@ -386,7 +386,7 @@
     const bar = p && !p.done && p.f > 0.03 ? `<div class="bar"><span style="width:${Math.round(p.f * 100)}%"></span></div>` : "";
     const by = t.type === "summary" ? `${esc(t.work.author)} · Kitap özeti` : t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
     return `<a class="card${t.type === "story" ? "" : " " + t.type}${why ? " rec" : ""}" href="#s.${t.id}">
-      <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${stateOf(t)}</div>
+      <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${t.abridged ? '<span class="abr">Kısaltılmış klasik</span>' : ""}${stateOf(t)}</div>
       <h3>${esc(t.title)}</h3>
       <div class="by">${by}</div>
       ${why ? `<p class="why">${ICON.starFill}<span>${esc(why)}</span></p>` : ""}
@@ -598,7 +598,7 @@
           <div class="tags"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}" style="display:inline-flex;align-items:center;gap:6px"><span class="dot"></span>${genreName(t.genre)}</span>
             <span class="sep">|</span><span>${LENGTHS[t.length]}</span><span class="sep">|</span><span>${fmt(t.words)} kelime</span><span class="sep">|</span><span>~${minutes(t)} dk</span></div>
           <div class="teaser-box">${esc(t.summaryTr)}</div>
-          ${isSummary ? '<p class="spoiler-note"><b>Kitap özeti</b> · Eserin sonu dahil olaylar anlatılır. Okuma süresi seviyeye göre tahminidir.</p>' : ""}
+          ${t.abridged ? '<p class="spoiler-note"><b>Kısaltılmış klasik</b> · Kitabın olay örgüsü ve sonu sırasıyla korunarak sadeleştirilmiş, kısaltılmış anlatımdır. Spoiler içerir; yaklaşık okuma süresi seviyeye göre tahminidir.</p>' : ""}${isSummary ? '<p class="spoiler-note"><b>Kitap özeti</b> · Eserin sonu dahil olaylar anlatılır. Okuma süresi seviyeye göre tahminidir.</p>' : ""}
         </header>
         <div class="toolbar" role="toolbar" aria-label="Okuma ayarları">
           <button class="btn sm" id="listen">${ICON.play} Dinle</button>

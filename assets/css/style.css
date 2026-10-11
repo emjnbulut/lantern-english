@@ -389,3 +389,6 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
   .filters .chip, .collection-switch a { flex-shrink: 0; white-space: nowrap; }
   .recs { padding: 14px; }
 }
+
+/* abridged classics badge */
+.abr { font-size: 11px; font-weight: 700; letter-spacing: .03em; color: var(--accent-2); border: 1px solid rgba(241, 182, 95, .45); border-radius: 99px; padding: 2px 8px; white-space: nowrap; }
