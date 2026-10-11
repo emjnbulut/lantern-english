@@ -1,0 +1,150 @@
+{
+  "id": "cave-under-the-fig-tree",
+  "type": "story",
+  "title": "The Cave Under the Fig Tree",
+  "author": "Lantern Original",
+  "level": "A1",
+  "genre": "adventure",
+  "summaryTr": "Dedenin tek bir kuralı var: Mavi Mağara'ya asla girmeyin. Eleni ve kuzeni Niko kurala uyar mı? Deniz geri gelmeden önce yalnızca on dakikaları var.",
+  "paragraphs": [
+    "Eleni's grandfather lived in a white house by the sea. Every summer, Eleni stayed with him. Her little cousin Niko stayed there, too.",
+    "Grandpa had one rule.",
+    "\"Never go to the Blue Cave,\" he said. \"The tide comes in fast. Do you understand?\"",
+    "\"Yes, Grandpa,\" said Eleni.",
+    "Niko said nothing. He was looking at the rocks.",
+    "On Tuesday morning, Grandpa went out early. Niko ran to Eleni.",
+    "\"Let's go to the Blue Cave,\" he said.",
+    "\"No. Grandpa said no.\"",
+    "\"The sea is very low today. Look! We go in, we look, we come out. Ten minutes.\"",
+    "Eleni looked at the sea. It really was low. She loved adventures more than rules.",
+    "\"Ten minutes,\" she said.",
+    "They walked over the wet rocks to the cave. Inside, it was dark, but the walls were blue. Light came up through the water. It was beautiful.",
+    "\"Wow,\" said Niko.",
+    "Then he saw something on the floor. It was shining.",
+    "\"Eleni! A coin! A gold coin!\"",
+    "It was old and heavy. Niko held it up like a king.",
+    "\"There are more,\" he said. He looked behind every rock, and Eleni helped him. They forgot the time.",
+    "Then Eleni heard a sound. Whoosh.",
+    "She turned. Water was running into the cave. The door of the cave was already half under water.",
+    "\"It's the tide!\" she said. \"The sea is coming back!\"",
+    "They ran to the door. The water was up to their knees. A big wave hit them and they fell.",
+    "\"Back!\" shouted Eleni. \"Go back!\"",
+    "They climbed the rocks inside the cave and sat on a high stone. The water came up, and up, and up.",
+    "Niko began to cry. \"I want to go home! I want Grandpa!\" He shouted so loudly that the walls shook.",
+    "\"Where is your phone?\" Eleni asked.",
+    "\"At home. Where is yours?\"",
+    "\"At home.\"",
+    "It was cold. It was dark. The water was now very near their feet.",
+    "Eleni looked up. Then she saw it: a thin line of light, high above her head. A small hole!",
+    "\"Niko, stop shouting. Look!\"",
+    "\"Where?\"",
+    "\"There!\"",
+    "She climbed. The rock was wet and her hands were cold. Two times she almost fell. Niko came behind her, still crying a little.",
+    "At the top, a flat stone covered the hole. Eleni pushed it with both hands. Nothing. She pushed again. The stone moved.",
+    "Sun! Green leaves! And the smell of coffee.",
+    "She pulled herself out, and then she pulled Niko out. They lay on the grass, wet and shaking. Above them was a big old tree. It was the fig tree in Grandpa's garden.",
+    "And there, at the table under the tree, sat Grandpa. He had a cup of coffee in his hand. Next to him on the table was a long rope.",
+    "He did not look up.",
+    "\"One hour,\" he said. \"Not bad. Your mother needed two.\"",
+    "\"You knew?\" said Eleni.",
+    "\"Of course I knew. I heard Niko. The whole island heard Niko.\"",
+    "Niko's face went red.",
+    "\"But you said never!\" said Eleni.",
+    "\"Yes.\" Grandpa drank his coffee. \"If I say 'go', children stay at home. If I say 'never', they go. My father did the same to me.\"",
+    "Niko held up the coin. \"And this?\"",
+    "\"Ah.\" Grandpa smiled. \"I put it there this morning at five o'clock.\"",
+    "Niko's mouth opened, but no words came out.",
+    "\"One coin for each child, every summer,\" said Grandpa. He stood up and put the rope over his shoulder. \"Now go and dry your clothes.\"",
+    "\"Can we go again tomorrow?\" asked Niko.",
+    "\"No,\" said Grandpa. \"Tomorrow I make a new rule.\"",
+    "\"What rule?\"",
+    "Grandpa looked at the old boat on the beach. \"Never, ever touch that boat.\"",
+    "Eleni looked at Niko. Niko looked at Eleni. They smiled."
+  ],
+  "glossary": {
+    "tide": "gelgit (deniz seviyesinin inip kalkması)",
+    "fig": "incir",
+    "rope": "ip, halat",
+    "rule": "kural"
+  },
+  "phrases": [
+    {
+      "en": "Do you understand?",
+      "tr": "Anladın mı?"
+    },
+    {
+      "en": "look up",
+      "tr": "yukarı bakmak"
+    },
+    {
+      "en": "come in",
+      "tr": "içeri gelmek (deniz için: kabarmak)"
+    },
+    {
+      "en": "the whole island",
+      "tr": "bütün ada"
+    },
+    {
+      "en": "forget the time",
+      "tr": "zamanı unutmak"
+    },
+    {
+      "en": "hold up",
+      "tr": "havaya kaldırmak"
+    },
+    {
+      "en": "go again",
+      "tr": "tekrar gitmek"
+    },
+    {
+      "en": "Not bad.",
+      "tr": "Fena değil."
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is Grandpa's rule?",
+      "options": [
+        "Do not swim at night.",
+        "Do not touch the boat.",
+        "Never go to the Blue Cave.",
+        "Never climb the fig tree."
+      ],
+      "answer": 2,
+      "explainTr": "Dede, çocuklara Mavi Mağara'ya asla gitmemelerini söyler."
+    },
+    {
+      "q": "What does Niko find in the cave?",
+      "options": [
+        "A gold coin",
+        "A key",
+        "A map",
+        "A phone"
+      ],
+      "answer": 0,
+      "explainTr": "Niko mağarada eski, altın bir madeni para bulur."
+    },
+    {
+      "q": "How do Eleni and Niko get out?",
+      "options": [
+        "They swim to the beach.",
+        "Grandpa pulls them out.",
+        "They walk out of the cave door.",
+        "Through a hole under the fig tree."
+      ],
+      "answer": 3,
+      "explainTr": "Mağaranın tepesindeki delikten çıkarlar; delik, dedenin bahçesindeki incir ağacının altındadır."
+    },
+    {
+      "q": "Who put the coin in the cave?",
+      "options": [
+        "Niko",
+        "Grandpa",
+        "Eleni's mother",
+        "A pirate"
+      ],
+      "answer": 1,
+      "explainTr": "Dede parayı sabah saat beşte oraya kendisi koymuştur."
+    }
+  ]
+}
