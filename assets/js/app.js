@@ -757,7 +757,8 @@
     const bar = document.getElementById("video-bar");
     const vbPlay = document.getElementById("vb-play"), vbSeek = document.getElementById("vb-seek"), vbTime = document.getElementById("vb-time");
     const vbMute = document.getElementById("vb-mute"), vbFs = document.getElementById("vb-fs");
-    const requestFs = stage.requestFullscreen || stage.webkitRequestFullscreen;
+    const fsAllowed = document.fullscreenEnabled !== false && document.webkitFullscreenEnabled !== false;
+    const requestFs = fsAllowed ? (stage.requestFullscreen || stage.webkitRequestFullscreen) : null;
     const fsElement = () => document.fullscreenElement || document.webkitFullscreenElement || null;
     let pseudoFs = false, seeking = false;
     player.setAttribute("disablepictureinpicture", "");
@@ -768,16 +769,23 @@
     // portrait fullscreen without a landscape lock: turn the picture so it fills the screen (touch devices only)
     function syncRotate() {
       const portrait = window.innerHeight > window.innerWidth;
-      const want = isFs() && portrait && isTouch && !lockedLandscape;
+      // decided from the real screen shape (locks are ignored by some foldables/tablets); phones only
+      const want = isFs() && portrait && isTouch && Math.min(window.innerWidth, window.innerHeight) < 600;
+      const host = want ? frameEl : (isFs() ? stage : document.body);
+      const same = stage.classList.contains("rot90") === want && Tip.el.parentElement === host;
+      const hintEl = document.getElementById("fs-hint");
+      if (hintEl && !portrait) hintEl.hidden = true;
+      if (same) return; // e.g. the mobile address bar showing/hiding must not close a pinned tooltip
       stage.classList.toggle("rot90", want);
       Tip.rotFrame = want ? frameEl : null;
       Tip.el.style.position = want ? "absolute" : "";
       // the dictionary tooltip must live inside the fullscreen element (and the rotated frame) to be visible
-      (want ? frameEl : (isFs() ? stage : document.body)).appendChild(Tip.el);
+      host.appendChild(Tip.el);
       Tip.hide();
     }
     window.addEventListener("resize", syncRotate);
     function syncFsUi() {
+      if (fsElement() === stage) pseudoFs = false; // real fullscreen arrived after the fallback fired
       const on = isFs();
       syncRotate();
       stage.classList.toggle("pseudo-fs", pseudoFs);
@@ -837,9 +845,10 @@
       if (!requestFs) { enterPseudoFs(); return; }
       let r;
       try { r = requestFs.call(stage); } catch (e) { enterPseudoFs(); return; }
-      if (r && r.then) r.then(lockLandscape, enterPseudoFs); else lockLandscape();
+      let settled = false;
+      if (r && r.then) r.then(() => { settled = true; lockLandscape(); }, () => { settled = true; enterPseudoFs(); }); else lockLandscape();
       // some in-app browsers accept the call and silently do nothing: fall back to the in-page mode
-      setTimeout(() => { if (!disposed && !isFs()) enterPseudoFs(); }, 700);
+      setTimeout(() => { if (!disposed && !settled && !isFs()) enterPseudoFs(); }, 900);
     }
     function exitFs() {
       if (pseudoFs) { pseudoFs = false; syncFsUi(); }
@@ -876,6 +885,7 @@
       if (!controlsPinned()) hideTimer = setTimeout(hideControls, 3000);
     }
     ["pointermove", "pointerdown", "touchstart", "keydown", "focusin"].forEach((n) => stage.addEventListener(n, showControls, { passive: true }));
+    stage.addEventListener("pointercancel", () => { lastTap = null; });
     ["play", "playing", "pause", "ended"].forEach((n) => player.addEventListener(n, showControls));
 
     // custom controls (native controls cannot show our captions in fullscreen)
@@ -929,13 +939,19 @@
     const onVideoKey = (ev) => {
       if (ev.defaultPrevented || ev.ctrlKey || ev.altKey || ev.metaKey) return;
       const t = ev.target;
+      if (ev.key !== "ArrowLeft" && ev.key !== "ArrowRight" && ev.key !== " " && ev.code !== "Space") return;
+      if (ev.repeat && (ev.key === " " || ev.code === "Space")) { ev.preventDefault(); return; }
+      // ignore keys while the page shows something else of the video view, e.g. the player is scrolled away
+      if (!isFs()) { const r = stage.getBoundingClientRect(); if (r.bottom < 0 || r.top > window.innerHeight) return; }
+      const panelOpen = !document.getElementById("cap-settings").hidden || !document.getElementById("vol-pop").hidden;
       const tag = t && t.tagName;
       if (tag === "TEXTAREA" || tag === "SELECT" || (t && t.isContentEditable)) return;
       if (tag === "INPUT" && t.type !== "button" && t.id !== "vb-seek") return; // sliders keep their own arrow keys
       if (ev.key === "ArrowLeft" || ev.key === "ArrowRight") {
+        if (panelOpen) return;
         if (seekBy(ev.key === "ArrowLeft" ? -SEEK_STEP : SEEK_STEP)) ev.preventDefault();
       } else if (ev.key === " " || ev.code === "Space") {
-        if (t && t.closest && t.closest("button, a, summary")) return; // let a focused button handle its own Space
+        if (t && t.closest && t.closest("button, a, summary, [role=button]")) return; // let a focused control handle its own Space
         ev.preventDefault();
         togglePlay();
         showControls();
@@ -945,7 +961,7 @@
     let lastTap = null;
     frameEl.addEventListener("pointerup", (ev) => {
       if (ev.pointerType !== "touch" || !player.getAttribute("src")) return;
-      if (ev.target.closest && ev.target.closest(".video-captions p, .video-bar, .cap-settings, .vol-pop, button, input, select, a")) { lastTap = null; return; }
+      if (ev.target.closest && ev.target.closest(".video-captions p, .video-bar, .cap-settings, .vol-pop, .tip, button, input, select, a")) { lastTap = null; return; }
       const rect = frameEl.getBoundingClientRect();
       // when the frame is rotated, the picture's horizontal axis runs down the screen
       const frac = stage.classList.contains("rot90") ? (ev.clientY - rect.top) / rect.height : (ev.clientX - rect.left) / rect.width;
@@ -999,7 +1015,8 @@
         status.textContent = "Kalite değişiyor: " + q.label + "…";
         const restore = () => {
           if (disposed || !switching || switching.token !== token) return;
-          if (Math.abs((player.currentTime || 0) - at) > 1) { try { player.currentTime = at; } catch (err) { /* retried on canplay */ } }
+          const target = switching && switching.token === token ? switching.at : at;
+          if (Math.abs((player.currentTime || 0) - target) > 1) { try { player.currentTime = target; } catch (err) { /* retried on canplay */ } }
         };
         const abort = () => {
           player.removeEventListener("loadedmetadata", restore);
@@ -1103,6 +1120,7 @@
     }
     function setVolPop(open) {
       if (open) Tip.hide();
+      stage.classList.toggle("vol-open", open);
       volPop.hidden = !open;
       vbMute.setAttribute("aria-expanded", String(open));
       if (open && !capPanel.hidden) setCapPanel(false);

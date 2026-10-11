@@ -575,8 +575,8 @@ body.video-fs-open { overflow: hidden; }
 }
 /* phones held sideways: keep the picture within the visible height */
 @media (orientation: landscape) and (max-height: 520px) {
-  .video-stage:not(.pseudo-fs) .video-frame { width: min(100%, calc((100vh - 84px) * 16 / 9)); margin: 0 auto; }
-  .video-stage:not(.pseudo-fs) { background: #080a0f; }
+  .video-stage:not(.pseudo-fs):not(.real-fs) .video-frame { width: min(100%, calc((100vh - 84px) * 16 / 9)); margin: 0 auto; }
+  .video-stage:not(.pseudo-fs):not(.real-fs) { background: #080a0f; }
 }
 
 /* volume popover */
@@ -599,7 +599,7 @@ body.video-fs-open { overflow: hidden; }
   .video-view > .caption-panel { order: 3; }
   .video-view > .reader-head { order: 4; margin-top: 20px; }
   .video-view > .video-credit { order: 5; }
-  .video-stage:not(.pseudo-fs) .video-frame { width: min(100%, calc((100vh - 100px) * 16 / 9)); margin: 0 auto; }
+  .video-stage:not(.pseudo-fs):not(.real-fs) .video-frame { width: min(100%, calc((100vh - 100px) * 16 / 9)); margin: 0 auto; }
   main { padding-top: 12px; }
 }
 
@@ -625,7 +625,7 @@ body.video-fs-open { overflow: hidden; }
 }
 @supports (height: 100dvh) {
   @media (orientation: landscape) and (max-height: 520px) {
-    .video-stage:not(.pseudo-fs) .video-frame { width: min(100%, calc((100dvh - 100px) * 16 / 9)); }
+    .video-stage:not(.pseudo-fs):not(.real-fs) .video-frame { width: min(100%, calc((100dvh - 100px) * 16 / 9)); }
     .cap-settings { max-height: calc(100dvh - 16px); }
   }
 }
@@ -642,10 +642,6 @@ body.video-fs-open { overflow: hidden; }
 .video-bar { transition: opacity .25s ease; }
 .video-stage.controls-hidden .video-bar { opacity: 0; pointer-events: none; }
 .video-stage.controls-hidden .video-bar > * { pointer-events: none; }
-.video-stage .video-captions { transition: bottom .2s ease; }
-.video-stage.controls-hidden .video-captions,
-.video-stage.controls-hidden.pseudo-fs .video-captions,
-.video-stage.controls-hidden.real-fs .video-captions { bottom: 16px; }
 .video-stage.controls-hidden { cursor: none; }
 .cs-row #cs-inpage-fs { font-size: 13px; height: auto; min-height: 38px; padding: 6px 12px; text-align: left; border-radius: 12px; }
 
@@ -685,10 +681,26 @@ body.video-fs-open { overflow: hidden; }
 .video-stage.rot90 video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
 .video-stage.rot90.video-fill video { object-fit: cover; }
 .video-stage.rot90 { --cap-w: min(100vh, calc(100vw * 16 / 9)); }
-.video-frame { touch-action: manipulation; }
+.video-stage, .video-frame { touch-action: manipulation; }
 .seek-flash { position: absolute; top: 50%; z-index: 6; transform: translateY(-50%); min-width: 76px; padding: 12px 16px; border-radius: 99px; background: rgba(8, 10, 15, .72); color: #fff; font: 700 15px var(--f-ui); text-align: center; pointer-events: none; }
 .seek-flash[hidden] { display: none; }
 .seek-back { left: 8%; }
 .seek-fwd { right: 8%; }
 .seek-flash.on { animation: seekPop .65s ease-out; }
 @keyframes seekPop { 0% { opacity: 0; transform: translateY(-50%) scale(.85); } 20% { opacity: 1; transform: translateY(-50%) scale(1); } 100% { opacity: 0; transform: translateY(-50%) scale(1.05); } }
+
+/* review round 2 */
+.video-stage.rot90.video-fill .video-frame, .video-stage.rot90.video-fill.pseudo-fs .video-frame, .video-stage.rot90.video-fill.real-fs .video-frame {
+  width: 100vh; width: 100dvh; height: 100vw;
+}
+.video-stage.vol-open .video-bar { z-index: 6; }
+@media (orientation: portrait) { .video-stage.video-fill:not(.rot90) video { object-fit: contain; } }
+/* safe areas (notch, home indicator) in fullscreen */
+.video-stage.real-fs .video-bar, .video-stage.pseudo-fs .video-bar {
+  padding-left: max(10px, env(safe-area-inset-left, 0px));
+  padding-right: max(10px, env(safe-area-inset-right, 0px));
+}
+.video-stage.rot90 .video-bar {
+  /* the frame is turned 90deg: its bottom edge is the screen's left, its right edge the screen's bottom */
+  padding: 18px max(10px, env(safe-area-inset-bottom, 0px)) max(8px, env(safe-area-inset-left, 0px)) max(10px, env(safe-area-inset-top, 0px));
+}
