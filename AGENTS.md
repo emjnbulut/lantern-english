@@ -71,7 +71,7 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - Known editorial notes (not fixed): `fables-from-aesop` is labelled A2 but uses Victorian vocabulary (C1-ish); `the-piano-at-two-oclock` has an unexplained pipe-smoke clue; `where-the-river-sleeps` leaves how the instruments reached Cappadocia unexplained; "The Star" keeps period ethnic terms (see dictionary notes).
 - Editorial deviations from Gutenberg sources: a racial slur was replaced in "The Ransom of Red Chief" ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious Gutenberg typos were fixed.
 - Verification: `node tools/validate.mjs` OK; `node tools/smoke.mjs` 45 browser checks OK; 390 px mobile QA (overflow, tooltips, Önerilenler, PWA wiring) OK.
-- Repository: `emjnbulut/lantern-english`, private, branch `main`. Owner-private Sites deployment (ChatGPT): `https://lantern-english.copperlion512.chatgpt.site` (not updated by this session). Public hosting is prepared but NOT executed — see HOSTING.md "Herkese açık yayın".
+- Source repo: `emjnbulut/lantern-english` (private). **Public site: https://lantern-english.github.io/** (repo `lantern-english/lantern-english.github.io`, built output only; update with `tools/publish-site.mjs`, see HOSTING.md). Old owner-private ChatGPT Sites copy is outdated.
 
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.

@@ -49,7 +49,7 @@ Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGEN
 
 11 Ekim 2026 kontrol noktası: 28 hikâye, 16 makale, 4 kitap özeti, 7.533 sözlük maddesi.
 
-**Site:** [Lantern English](https://lantern-english.copperlion512.chatgpt.site). Sites üzerinde yayında; erişim şu anda sahibinin ChatGPT hesabıyla sınırlı. Yayın ayarları ve sonraki güncellemeler için [HOSTING.md](HOSTING.md).
+**Site:** https://lantern-english.github.io/ (herkese açık). Yayın ve güncelleme adımları için [HOSTING.md](HOSTING.md).
 
 Kitap özetleri (Dracula, Dönüşüm, Hayvan Çiftliği, Frankenstein) tamamlandı ve bağımsız olarak gözden geçirildi. Önerilenler, mobil uygulama (PWA) ve imza eklendi; herkese açık yayın için [HOSTING.md](HOSTING.md).
 

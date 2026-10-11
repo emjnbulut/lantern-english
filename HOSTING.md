@@ -41,7 +41,7 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 
 ## Herkese açık yayın ve mobil uygulama (Claude oturumu, 11 Ekim 2026)
 
-**Durum:** ChatGPT Sites yayını owner-private kalıyor; GitHub deposu private. Herkese açık yayın için aşağıdaki yol hazırlandı ama kullanıcı onayı olmadan **uygulanmadı**.
+**Durum:** Herkese açık site GitHub Pages'te yayında (aşağıya bak). ChatGPT Sites kopyası owner-private ve eski sürümde kalır; kaynak GitHub deposu private.
 
 ### Mobil uygulama / WebView uyumu
 - `manifest.webmanifest` + `sw.js` + `assets/icons/`: site Android/iOS/masaüstünde ana ekrana eklenebilir (PWA), daha önce açılan sayfalar çevrimdışı çalışır. Service worker yalnızca `http(s)` altında kaydedilir; `file://` ve gömülü WebView'larda sessizce atlanır.
@@ -52,15 +52,17 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 ### Temiz site paketi
 `node tools/make-site.mjs [dir]` → `site/` (index.html, assets/, data/, manifest, sw.js, LICENSE, `.nojekyll`). `content/`, `drafts/`, `tools/` ve devir notları **dahil değildir**. `sw.js` içeriğe göre sürüm damgası alır.
 
-### Önerilen herkese açık yayın (onay bekliyor)
-Kaynak depo private kalır; yalnızca derlenmiş site ayrı bir **public** depoya gider:
-```
-gh repo create emjnbulut/lantern-english-site --public
-node tools/build.mjs
-node tools/publish-site.mjs https://github.com/emjnbulut/lantern-english-site.git
-gh api -X POST repos/emjnbulut/lantern-english-site/pages -f "source[branch]=main" -f "source[path]=/"
-```
-Adres: `https://emjnbulut.github.io/lantern-english-site/`. Güncelleme: build + `publish-site.mjs`. Ücretsiz GitHub hesabında private depodan Pages yoktur; bu yüzden ayrı public depo kullanılır.
+### Herkese açık yayın (YAYINDA, 11 Ekim 2026)
+- **Adres:** https://lantern-english.github.io/ — GitHub organizasyonu `lantern-english` (kullanıcı oluşturdu; adres kişisel ad içermez).
+- **Depo:** `lantern-english/lantern-english.github.io` (**public**; yalnızca derlenmiş site, tek commit, geçmiş yok). Kaynak depo `emjnbulut/lantern-english` **private** kalır.
+- **Güncelleme:**
+  ```
+  node tools/validate.mjs && node tools/build.mjs
+  node tools/publish-site.mjs https://github.com/lantern-english/lantern-english.github.io.git main
+  ```
+  (Pages `main` / kök klasörden sunar; yayın birkaç dakika sürer. `sw.js` sürüm damgası değişir, kurulu kopyalar yenilenir.)
+- **Doğrulama:** canlı adreste 390 px mobil kontrol (ipucu, Önerilenler, manifest, service worker, çevrimdışı önbellek) geçti.
+- Ücretsiz GitHub hesabında private depodan Pages yoktur; bu yüzden ayrı public site deposu kullanılır.
 
 ### Koruma gerçeği
 Statik siteyi herkes tarayıcısından görüp kaydedebilir; teknik olarak kopyalanmasını engellemek mümkün değildir. Alınan önlemler: kaynak/taslak/geçmiş yayınlanmaz, `LICENSE` ile telif bildirimi, sayfada "created by emjn" imzası. Kamu malı klasikler (Gutenberg) zaten serbesttir; özgün metinler telif kapsamındadır.
