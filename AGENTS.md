@@ -34,6 +34,7 @@ tools/build.mjs         validate + generate data/library.js and data/dict.js
 tools/vocab.mjs         list words in content that the dictionary can't resolve
 tools/review-content.mjs editorial checks for changed extended original texts
 tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 22)
+tools/translation-overlap.mjs  n-gram overlap of a story vs a reference translation (keep the reference outside the repo)
 tools/make-site.mjs     writes ./site: only the visitor-facing files (no content/, drafts/, notes)
 tools/publish-site.mjs  legacy publisher; uses --force, so do not use for site updates (see HOSTING.md)
 manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offline cache
@@ -68,7 +69,7 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 ## Current change (2026-10-11)
 - The owner requested a Kitaplığım tab. Add `#my-library` to the top navigation, Kaydet/Kaydedildi controls to story and article cards, and Kitaplığıma ekle/Kitaplığımdan çıkar in the reader. No new content is part of this interface task; run browser checks before publication.
 - The three book-summary source files and their build/schema support were removed at the owner's request. The site has story and article collections only.
-- Preserve the published Dracula and Frankenstein abridged stories and dictionaries. They are story sources, not the removed summaries. Commit `8960ce3` completed the other AI's Frankenstein edits/dictionary and moved the Kafka retelling to `drafts/the-metamorphosis-abridged.json` pending an overlap fix; this draft is excluded from the website. Build the release from a clean committed checkout.
+- Preserve the published Dracula and Frankenstein abridged stories and dictionaries. They are story sources, not the removed summaries. The Kafka retelling (`content/stories/the-metamorphosis-abridged.json`, C1) was first parked in drafts/ because 18.9% of its words overlapped (5-grams) a copyrighted English translation; it was then re-rendered from the German original and now measures 0 overlaps of 5+ words (`tools/translation-overlap.mjs`). Re-check any new retelling of a foreign-language classic the same way. Build the release from a clean committed checkout.
 - The seven planned adaptations in README remain a backlog; this interface task does not authorize writing them.
 - Run the build and browser checks after the bookshelf changes; previous check counts describe an older snapshot.
 

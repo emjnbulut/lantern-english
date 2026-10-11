@@ -1,0 +1,290 @@
+{
+  "deliverance": {
+    "pos": "isim",
+    "tr": "kurtuluş, özgürleşme"
+  },
+  "revulsion": {
+    "pos": "isim",
+    "tr": "tiksinti, iğrenme"
+  },
+  "scramble": {
+    "pos": "fiil",
+    "tr": "tırmanmak, telaşla hareket etmek; çırpmak"
+  },
+  "unquiet": {
+    "pos": "sıfat",
+    "tr": "huzursuz, sakin olmayan"
+  },
+  "arch": {
+    "pos": "fiil/isim",
+    "tr": "kemerlenmek, kavis yapmak; kemer"
+  },
+  "bulk": {
+    "pos": "isim",
+    "tr": "hacim, iri cüsse; çoğunluk"
+  },
+  "populate": {
+    "pos": "fiil",
+    "tr": "yerleşmek, doldurmak"
+  },
+  "shirk": {
+    "pos": "fiil",
+    "tr": "kaçınmak, savsaklamak"
+  },
+  "unwell": {
+    "pos": "sıfat",
+    "tr": "rahatsız, hasta"
+  },
+  "ravenous": {
+    "pos": "sıfat",
+    "tr": "kurt gibi aç, doymak bilmez"
+  },
+  "smear": {
+    "pos": "fiil/isim",
+    "tr": "sürmek, bulaştırmak; leke"
+  },
+  "syllable": {
+    "pos": "isim",
+    "tr": "hece"
+  },
+  "implore": {
+    "pos": "fiil",
+    "tr": "yalvarmak, rica etmek"
+  },
+  "occupational": {
+    "pos": "sıfat",
+    "tr": "mesleki, işe bağlı"
+  },
+  "ceaseless": {
+    "pos": "sıfat",
+    "tr": "durmaksızın, aralıksız"
+  },
+  "jut": {
+    "pos": "fiil",
+    "tr": "dışarı çıkmak, fırlamak"
+  },
+  "heave": {
+    "pos": "fiil",
+    "tr": "güçlükle kaldırmak, çekmek; inleyerek soluk almak"
+  },
+  "untrue": {
+    "pos": "sıfat",
+    "tr": "doğru olmayan, yalan"
+  },
+  "frantic": {
+    "pos": "sıfat",
+    "tr": "çılgın, telaşlı"
+  },
+  "giddiness": {
+    "pos": "isim",
+    "tr": "baş dönmesi"
+  },
+  "giddy": {
+    "pos": "sıfat",
+    "tr": "başı dönen, sersem"
+  },
+  "conspicuous": {
+    "pos": "sıfat",
+    "tr": "göze çarpan, belirgin"
+  },
+  "amiss": {
+    "pos": "sıfat/zarf",
+    "tr": "ters, yanlış (giden)"
+  },
+  "prop": {
+    "pos": "fiil/isim",
+    "tr": "dayamak, desteklemek; destek"
+  },
+  "billow": {
+    "pos": "fiil/isim",
+    "tr": "kabarmak, dalgalanmak; büyük dalga"
+  },
+  "composure": {
+    "pos": "isim",
+    "tr": "soğukkanlılık, sakinlik"
+  },
+  "flank": {
+    "pos": "isim",
+    "tr": "yan, böğür, kenar"
+  },
+  "sweeten": {
+    "pos": "fiil",
+    "tr": "tatlandırmak"
+  },
+  "scuttle": {
+    "pos": "fiil",
+    "tr": "tıpış tıpış koşmak, hızla kaçmak"
+  },
+  "assortment": {
+    "pos": "isim",
+    "tr": "çeşit, karışık takım"
+  },
+  "uneatable": {
+    "pos": "sıfat",
+    "tr": "yenmez, yenemeyecek kadar kötü"
+  },
+  "contentment": {
+    "pos": "isim",
+    "tr": "memnuniyet, hoşnutluk"
+  },
+  "gobble": {
+    "pos": "fiil",
+    "tr": "oburca yemek, çabucak yutmak"
+  },
+  "thrift": {
+    "pos": "isim",
+    "tr": "tutumluluk"
+  },
+  "absorption": {
+    "pos": "isim",
+    "tr": "emilim; kendini kaptırma, dalgınlık"
+  },
+  "smack": {
+    "pos": "fiil/isim",
+    "tr": "şaplak atmak, şapırdatmak; şamar"
+  },
+  "frail": {
+    "pos": "sıfat",
+    "tr": "zayıf, narin"
+  },
+  "muddle": {
+    "pos": "fiil/isim",
+    "tr": "karıştırmak, şaşırtmak; karışıklık"
+  },
+  "girlish": {
+    "pos": "sıfat",
+    "tr": "kızsı, kız çocuğuna özgü"
+  },
+  "plight": {
+    "pos": "isim",
+    "tr": "kötü durum, çıkmaz"
+  },
+  "indispensable": {
+    "pos": "sıfat",
+    "tr": "vazgeçilmez, şart"
+  },
+  "unsure": {
+    "pos": "sıfat",
+    "tr": "emin olmayan, kararsız"
+  },
+  "clad": {
+    "pos": "sıfat",
+    "tr": "giyinmiş (clothe'un geçmişi)"
+  },
+  "enrage": {
+    "pos": "fiil",
+    "tr": "öfkelendirmek, çileden çıkarmak"
+  },
+  "crutch": {
+    "pos": "isim",
+    "tr": "koltuk değneği"
+  },
+  "pelt": {
+    "pos": "fiil",
+    "tr": "yağdırmak; (taş, yağmur) ardı ardına atmak"
+  },
+  "onward": {
+    "pos": "zarf",
+    "tr": "ileriye doğru"
+  },
+  "chemise": {
+    "pos": "isim",
+    "tr": "kadın iç gömleği"
+  },
+  "embed": {
+    "pos": "fiil",
+    "tr": "gömmek, saplamak"
+  },
+  "loathsome": {
+    "pos": "sıfat",
+    "tr": "iğrenç, tiksindirici"
+  },
+  "lamplit": {
+    "pos": "sıfat",
+    "tr": "lamba ışığıyla aydınlanmış"
+  },
+  "salesgirl": {
+    "pos": "isim",
+    "tr": "tezgâhtar kız, satış görevlisi"
+  },
+  "chore": {
+    "pos": "isim",
+    "tr": "günlük ev işi, angarya"
+  },
+  "nudge": {
+    "pos": "fiil/isim",
+    "tr": "dirsekle dürtmek, hafifçe itmek"
+  },
+  "flick": {
+    "pos": "fiil/isim",
+    "tr": "fiske vurmak, hızla çevirmek"
+  },
+  "untasted": {
+    "pos": "sıfat",
+    "tr": "tadılmamış"
+  },
+  "presumably": {
+    "pos": "zarf",
+    "tr": "muhtemelen, sanırım"
+  },
+  "herald": {
+    "pos": "isim/fiil",
+    "tr": "müjdeci; haber vermek, müjdelemek"
+  },
+  "stickler": {
+    "pos": "isim",
+    "tr": "ayrıntıya titizlik gösteren kimse"
+  },
+  "superfluous": {
+    "pos": "sıfat",
+    "tr": "gereksiz, fazlalık"
+  },
+  "clutter": {
+    "pos": "isim/fiil",
+    "tr": "dağınıklık; dağıtmak, doldurmak"
+  },
+  "outing": {
+    "pos": "isim",
+    "tr": "gezinti, gezi"
+  },
+  "overdid": {
+    "pos": "fiil",
+    "tr": "abarttı, fazla yaptı (overdo'nun geçmişi)"
+  },
+  "immaculate": {
+    "pos": "sıfat",
+    "tr": "tertemiz, kusursuz"
+  },
+  "probe": {
+    "pos": "fiil/isim",
+    "tr": "araştırmak, yoklamak; sonda"
+  },
+  "confide": {
+    "pos": "fiil",
+    "tr": "sır vermek, güvenip anlatmak"
+  },
+  "whatsoever": {
+    "pos": "zarf",
+    "tr": "hiç, hiçbir şekilde"
+  },
+  "chime": {
+    "pos": "fiil/isim",
+    "tr": "(saat, zil) çalmak; zil sesi"
+  },
+  "jab": {
+    "pos": "fiil/isim",
+    "tr": "dürtmek, saplamak; dürtme"
+  },
+  "livery": {
+    "pos": "isim",
+    "tr": "uşak/hizmetli üniforması"
+  },
+  "plume": {
+    "pos": "isim",
+    "tr": "tüy; (duman) kıvrım"
+  },
+  "flounce": {
+    "pos": "fiil",
+    "tr": "hışımla çıkmak, öfkeyle savrulmak"
+  }
+}
