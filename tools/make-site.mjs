@@ -9,6 +9,10 @@ import { ROOT } from "./lib.mjs";
 
 const out = path.resolve(process.argv[2] || path.join(ROOT, "site"));
 if (out === ROOT || ROOT.startsWith(out + path.sep)) throw new Error("outDir must not contain the project root");
+// Check bundles before replacing a previous package. External movie files stay at their source.
+for (const bundle of ["data/library.js", "data/dict.js", "data/videos.js"]) {
+  if (!fs.existsSync(path.join(ROOT, bundle))) throw new Error(`${bundle} is missing; run node tools/build.mjs first`);
+}
 fs.rmSync(out, { recursive: true, force: true });
 
 const FILES = ["index.html", "manifest.webmanifest", "sw.js", "LICENSE"];

@@ -1,5 +1,7 @@
 # Lantern English · Hikâyelerle İngilizce
 
+Tek video denemesi: **Sintel · B1 (İngilizce altyazı destekli tahmini seviye)**, [Videolar](https://lantern-english.github.io/#videos) bölümünde. Resmî CC BY 3.0 film, tam jenerikle dış kaynaktan oynatılır; İngilizce altyazı kelimelerine dokununca Türkçe sözlük açılır ve video durur. Konuşmalar arasında geçiş ve tekrar dinleme vardır. Video oynatma internet gerektirir. Kaynaklar ve lisans: `content/videos/sintel.json`.
+
 Türkçe konuşanlar için, seviyeli hikâyelerle İngilizce öğreten koyu temalı statik bir web sitesi.
 Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı çıkar.
 

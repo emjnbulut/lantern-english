@@ -56,9 +56,14 @@ try {
   let serial = 0;
   const pending = new Map();
   const browserErrors = [];
+  const externalRequests = [];
   socket.addEventListener("message", ({ data }) => {
     const message = JSON.parse(String(data));
     if (message.method === "Runtime.exceptionThrown") browserErrors.push(message.params.exceptionDetails.text + ": " + (message.params.exceptionDetails.exception?.description || ""));
+    if (message.method === "Network.requestWillBeSent") {
+      const url = message.params.request.url;
+      if (/^https?:\/\//.test(url) && !url.startsWith(origin + "/")) externalRequests.push(url);
+    }
     if (message.id && pending.has(message.id)) {
       const { resolve, reject, timer } = pending.get(message.id);
       pending.delete(message.id); clearTimeout(timer);
@@ -75,8 +80,8 @@ try {
   const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
   const page = (method, params) => send(method, params, sessionId);
   await page("Runtime.enable"); await page("Page.enable");
-  const evaluate = async (expression) => {
-    const result = await page("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true });
+  const evaluate = async (expression, options = {}) => {
+    const result = await page("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true, ...options });
     if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
     return result.result.value;
   };
@@ -104,6 +109,8 @@ try {
   const storyIds = new Set(stories.map((s) => s.id));
   const articleIds = new Set(articles.map((a) => a.id));
   const myLibraryReady = "document.querySelector('main h1')?.textContent === 'Kitaplığım'";
+  const videoCollectionReady = "location.hash === '#videos' && document.querySelectorAll('a.video-card').length === 1";
+  const videoReady = "document.getElementById('video-view')?.dataset.id === 'sintel' && !!document.getElementById('video-player')";
   const bookmarkIds = async () => evaluate("JSON.parse(localStorage.getItem('lantern.bookmarks') || '[]')");
   const clickBookmark = async (id, scope = "") => evaluate(`document.querySelector(${JSON.stringify(scope + '[data-bookmark="' + id + '"]')}).click()`);
   const clickReaderBookmark = async () => evaluate("document.getElementById('reader-bookmark').click()");
@@ -279,18 +286,22 @@ try {
   await waitFor("location.hash === '#home' && !!document.querySelector('.collection-grid')");
   assert(await evaluate("location.hash === '#home'"), "A second back action must return to the previous home route.");
 
-  const checkDirectBack = async (hash, fallback) => {
-    const { targetId: directTarget } = await send("Target.createTarget", { url: origin + "/index.html#" + hash });
+  const checkDirectBack = async (hash, fallback, ready = readerReady) => {
+    const { targetId: directTarget } = await send("Target.createTarget", { url: "about:blank" });
     try {
       const { sessionId: directSession } = await send("Target.attachToTarget", { targetId: directTarget, flatten: true });
       await send("Runtime.enable", {}, directSession);
+      await send("Network.enable", {}, directSession);
+      // Block remote media before navigating even if a future regression accidentally loads it early.
+      await send("Network.setBlockedURLs", { urls: ["https://*"] }, directSession);
+      await send("Page.navigate", { url: origin + "/index.html#" + hash }, directSession);
       const directEvaluate = async (expression) => {
         const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true }, directSession);
         if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
         return result.result.value;
       };
-      for (let i = 0; i < 100; i++) { if (await directEvaluate(readerReady)) break; await pause(100); }
-      assert(await directEvaluate("!!document.getElementById('text') && !document.getElementById('nav-back').disabled"), "Direct-entry readers must have an enabled back button.");
+      for (let i = 0; i < 100; i++) { if (await directEvaluate(ready)) break; await pause(100); }
+      assert(await directEvaluate(`(${ready}) && !document.getElementById('nav-back').disabled`), "Direct-entry views must have an enabled back button.");
       await directEvaluate("document.getElementById('nav-back').click()");
       for (let i = 0; i < 100; i++) { if (await directEvaluate(`location.hash === '#${fallback}'`)) break; await pause(100); }
       assert(await directEvaluate(`location.hash === '#${fallback}' && location.origin === ${JSON.stringify(origin)}`), `Direct-entry ${hash} must return safely to #${fallback}.`);
@@ -487,6 +498,72 @@ try {
   await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
   await clickBookmark(bookmarkArticle.id, "#results ");
 
+  // Video requests are blocked before entry: the normal suite never downloads remote media.
+  await page("Network.enable");
+  await page("Network.setBlockedURLs", { urls: ["https://*"] });
+  const beforeVideoState = await evaluate("[localStorage.getItem('lantern.bookmarks'), localStorage.getItem('lantern.progress')]");
+  const beforeVideoRequests = externalRequests.length;
+  await evaluate("document.querySelector('[data-nav=\"videos\"]').click()");
+  await waitFor(videoCollectionReady);
+  const trialVideo = await evaluate("window.LANTERN_VIDEOS[0]");
+  assert(await evaluate("window.LANTERN_VIDEOS.length === 1 && window.LANTERN_VIDEOS[0].id === 'sintel' && window.LANTERN_VIDEOS[0].level === 'B1' && document.querySelector('a.video-card').hash === '#v.sintel'"), "The video trial must contain exactly one Sintel B1 card.");
+  assert(await evaluate("document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "The video collection must have active navigation.");
+  await screenshot("videos-desktop");
+  await evaluate("document.querySelector('a.video-card').click()");
+  await waitFor(videoReady);
+  assert(await evaluate("document.querySelector('#video-view h1').textContent === 'Sintel' && document.querySelector('#video-view .lvl').textContent === 'B1' && document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "Sintel details must show the B1 level and video navigation.");
+  const unloadedPlayer = "(() => { const p = document.getElementById('video-player'); return p instanceof HTMLVideoElement && p.controls && p.playsInline && p.preload === 'none' && !p.hasAttribute('src') && !p.hasAttribute('poster') && !p.querySelector('source'); })()";
+  assert(await evaluate(unloadedPlayer), "Opening a video must leave its native player unloaded with no media source or remote poster.");
+  const fallbackUrl = trialVideo.source.watchUrl || trialVideo.source.url;
+  assert(await evaluate(`(() => { const a = document.getElementById('video-source'); return a.href === ${JSON.stringify(fallbackUrl)} && a.target === '_blank' && a.relList.contains('noopener'); })()`), "The official watch fallback must be an HTTPS link with a safe new-tab target.");
+  assert(await evaluate(`Array.from(document.querySelectorAll('.video-credit a')).some(a => a.href === ${JSON.stringify(trialVideo.source.licenseUrl)}) && document.querySelector('.video-credit').textContent.includes(${JSON.stringify(trialVideo.creator)})`), "Video credits must include the creator and the source's Creative Commons license.");
+  assert(await evaluate(`document.querySelectorAll('#caption-select option').length === ${trialVideo.captions.length} && document.getElementById('video-captions').dataset.cue === '0' && document.getElementById('caption-prev').disabled`), "Every licensed caption must be selectable, with the first cue previewed initially.");
+  const captionText = async () => evaluate("document.getElementById('video-captions').textContent.replace(/\\s+/g, ' ').trim()");
+  assert(await captionText() === trialVideo.captions[0].text.replace(/\s+/g, " ").trim(), "The initial caption preview must preserve the source dialogue.");
+  await evaluate("document.getElementById('caption-next').click()");
+  assert(await evaluate("document.getElementById('video-captions').dataset.cue === '1'"), "Next must preview the next dialogue without activating media.");
+  await evaluate("document.getElementById('caption-prev').click()");
+  assert(await evaluate("document.getElementById('video-captions').dataset.cue === '0'"), "Previous must return to the earlier dialogue.");
+  await evaluate("(() => { const s = document.getElementById('caption-select'); s.selectedIndex = 1; s.dispatchEvent(new Event('change', { bubbles: true })); })()");
+  assert(await captionText() === trialVideo.captions[1].text.replace(/\s+/g, " ").trim() && await evaluate(unloadedPlayer), "Selecting a caption before playback must only change its offline preview.");
+
+  const liveTime = (trialVideo.captions[1].start + trialVideo.captions[1].end) / 2;
+  const gapTime = (trialVideo.captions[0].end + trialVideo.captions[1].start) / 2;
+  await evaluate(`(() => { const p = document.getElementById('video-player'); Object.defineProperty(p, 'currentTime', { configurable: true, writable: true, value: ${liveTime} }); p.dispatchEvent(new Event('timeupdate')); })()`);
+  assert(await evaluate("document.getElementById('video-captions').dataset.cue === '1'"), "A time update inside a dialogue must display its synchronized caption.");
+  await evaluate(`document.getElementById('video-player').currentTime = ${gapTime}; document.getElementById('video-player').dispatchEvent(new Event('timeupdate'))`);
+  assert(await evaluate("document.getElementById('video-captions').dataset.cue === '-1' && !document.querySelector('#video-captions .w')"), "Silent gaps must clear the dialogue instead of retaining the previous caption.");
+  await evaluate("delete document.getElementById('video-player').currentTime; (() => { const s = document.getElementById('caption-select'); s.selectedIndex = 0; s.dispatchEvent(new Event('change', { bubbles: true })); })()");
+  await evaluate("(() => { const p = document.getElementById('video-player'); const pause = p.pause.bind(p); window.__videoPauseCount = 0; p.pause = function () { window.__videoPauseCount++; pause(); }; const w = document.querySelector('#video-captions .w'); w.focus(); w.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter', bubbles: true })); })()");
+  assert(await evaluate("window.__videoPauseCount > 0 && !document.getElementById('tip').hidden && !!document.querySelector('#tip .tip-tr')?.textContent.trim() && document.querySelector('#video-captions .w').tabIndex === 0"), "Caption words must pause playback and open Turkish meanings through the keyboard.");
+  const captionLemma = await evaluate("document.querySelector('#video-captions .w').textContent.toLowerCase()");
+  await evaluate("document.querySelector('#tip [data-act=\"save\"]').click()");
+  assert(await evaluate(`!!JSON.parse(localStorage.getItem('lantern.words'))[${JSON.stringify(captionLemma)}]?.tr`), "A caption word must save to the existing vocabulary notebook.");
+  await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true })); window.__videoPauseCount = 0; document.querySelector('#video-captions .w').click()");
+  assert(await evaluate("window.__videoPauseCount > 0 && !document.getElementById('tip').hidden"), "Clicking or tapping a caption word must pause playback before showing its tooltip.");
+  await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))");
+  await pause(250);
+  assert(externalRequests.length === beforeVideoRequests && await evaluate(unloadedPlayer), "Entering videos and inspecting captions must not request external media before explicit playback.");
+  await screenshot("video-preview-desktop");
+  await evaluate("document.getElementById('video-start').click()");
+  await waitFor(`document.getElementById('video-player').getAttribute('src') === ${JSON.stringify(trialVideo.videoUrl)}`);
+  assert(await evaluate(`document.querySelectorAll('video').length === 1 && document.getElementById('video-player').src === ${JSON.stringify(trialVideo.videoUrl)} && !document.getElementById('video-player').hidden`), "Explicit playback must activate exactly one player using the configured official MP4.");
+  await evaluate("document.getElementById('video-player').dispatchEvent(new Event('error'))");
+  assert(await evaluate("document.getElementById('video-status').textContent.includes('yüklenemedi')") && await isVisible("#video-source"), "A blocked/offline media failure must provide meaningful status and retain the official fallback.");
+  await evaluate("document.getElementById('caption-replay').click(); document.getElementById('video-player').pause()");
+  assert(await evaluate(`document.getElementById('video-player').getAttribute('src') === ${JSON.stringify(trialVideo.videoUrl)}`), "Replaying a selected dialogue must reuse the single configured video source.");
+  await screenshot("video-player-desktop");
+  await evaluate("window.__discardedVideo = document.getElementById('video-player')");
+  await evaluate("document.getElementById('nav-back').click()");
+  await waitFor(videoCollectionReady);
+  assert(await evaluate("!document.getElementById('video-player')"), "Back from a video must return to its collection and remove the active player.");
+  const afterVideoCleanup = await evaluate("document.getElementById('main').innerHTML");
+  await evaluate("window.__discardedVideo.dispatchEvent(new Event('timeupdate')); window.__discardedVideo.dispatchEvent(new Event('loadedmetadata'))");
+  assert(await evaluate("document.getElementById('main').innerHTML") === afterVideoCleanup && browserErrors.length === 0, "Late events from a discarded player must not mutate the next view or throw errors.");
+  await checkDirectBack("v.sintel", "videos", videoReady);
+  await checkDirectBack("videos", "home", videoCollectionReady);
+  assert(JSON.stringify(await evaluate("[localStorage.getItem('lantern.bookmarks'), localStorage.getItem('lantern.progress')]")) === JSON.stringify(beforeVideoState), "Video playback and caption tools must leave reading bookmarks and story progress unchanged.");
+
   await page("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
   await navigate("home", "!!document.querySelector('.collection-grid')");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile home must fit the viewport.");
@@ -513,6 +590,50 @@ try {
     await evaluate("document.querySelector('[data-nav=\"my-library\"]').scrollIntoView({ block: 'nearest', inline: 'nearest' })");
     assert(await evaluate("(() => { const r = document.querySelector('[data-nav=\"my-library\"]').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px personal-library navigation must be reachable in the header.`);
     await screenshot("my-library-mobile-" + width);
+    await navigate("videos", videoCollectionReady);
+    assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('a.video-card').length === 1"), `${width}px video collection must fit and contain only the trial film.`);
+    await screenshot("videos-mobile-" + width);
+    await evaluate("document.querySelector('a.video-card').click()");
+    await waitFor(videoReady);
+    assert(await evaluate(unloadedPlayer) && await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && Array.from(document.querySelectorAll('.video-stage, .caption-controls')).every(e => { const r = e.getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })"), `${width}px video details and caption controls must fit without loading media.`);
+    await evaluate("document.querySelector('#video-captions .w').click()");
+    assert(await evaluate("!document.getElementById('tip').hidden && (() => { const r = document.getElementById('tip').getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px caption word translations must remain within the viewport.`);
+    await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))");
+    await screenshot("video-preview-mobile-" + width);
+    await evaluate("document.getElementById('video-start').click()");
+    assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && (() => { const r = document.getElementById('video-player').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px activated video controls must stay within the viewport.`);
+    await screenshot("video-player-mobile-" + width);
+  }
+  if (process.argv.includes("--online-video")) {
+    // This opt-in check is a single bounded media attempt, never part of ordinary offline smoke.
+    await navigate("videos", videoCollectionReady);
+    await evaluate("document.querySelector('a.video-card').click()");
+    await waitFor(videoReady);
+    await page("Network.setBlockedURLs", { urls: [] });
+    await page("Network.emulateNetworkConditions", { offline: false, latency: 50, downloadThroughput: 196608, uploadThroughput: 65536, connectionType: "cellular3g" });
+    let playable = false;
+    let mediaResult;
+    try {
+      await evaluate("document.getElementById('caption-replay').click()", { userGesture: true });
+      const attemptStarted = Date.now();
+      let advancingFrom = null;
+      for (let i = 0; i < 150; i++) {
+        mediaResult = await evaluate("(() => { const p = document.getElementById('video-player'); return { readyState: p.readyState, currentTime: p.currentTime, paused: p.paused, error: p.error && { code: p.error.code, message: p.error.message } }; })()");
+        if (mediaResult.error) break;
+        if (!mediaResult.paused && mediaResult.readyState >= 2 && mediaResult.currentTime >= trialVideo.captions[0].start) {
+          if (advancingFrom === null) advancingFrom = mediaResult.currentTime;
+          if (mediaResult.currentTime >= advancingFrom + 2) { playable = true; break; }
+        }
+        if (Date.now() - attemptStarted >= 15000) break;
+        await pause(100);
+      }
+    } finally {
+      await evaluate("document.getElementById('video-player').pause(); document.getElementById('video-player').removeAttribute('src'); document.getElementById('video-player').load()");
+      await page("Network.setBlockedURLs", { urls: ["https://*"] });
+      await page("Network.emulateNetworkConditions", { offline: false, latency: 0, downloadThroughput: -1, uploadThroughput: -1 });
+    }
+    console.log("Online video probe: " + JSON.stringify({ playable, ...mediaResult }));
+    assert(playable, "The opt-in online video check could not verify two seconds of playback in its single bounded attempt.");
   }
   assert(browserErrors.length === 0, "Uncaught browser errors: " + browserErrors.join("\n"));
   console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles.`);

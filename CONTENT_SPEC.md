@@ -65,6 +65,55 @@ Existing abridged stories use `type: "story"` in `content/stories/` and remain a
 
 For any adaptation, verify the original work and the specific source edition. Attribute the source and identify the English text as our own adaptation; do not copy protected modern translations or assume that every free online edition is public domain. Preserve source events and avoid importing film details.
 
+## Videos — `content/videos/<id>.json`
+
+Videos are a separate collection, bundled as `window.LANTERN_VIDEOS` in `data/videos.js`.
+They do not enter the story/article library, reading counts, recommendations or `lantern.bookmarks`.
+The initial trial contains one video; the schema does not impose a permanent one-video limit.
+If `content/videos/` is absent, the build emits an empty video array.
+
+```json
+{
+  "id": "sintel",
+  "type": "video",
+  "title": "Sintel",
+  "creator": "Blender Foundation",
+  "year": 2010,
+  "level": "B1",
+  "durationSeconds": 888,
+  "genre": "fantasy",
+  "summaryTr": "Kısa, Türkçe ve spoilersız tanıtım.",
+  "levelNoteTr": "B1, Lantern English'in dinleme için tahmini seviyesidir.",
+  "advisoryTr": "Fantastik şiddet ve üzücü sahneler içerir.",
+  "videoUrl": "https://example.org/official-video.mp4",
+  "source": {
+    "name": "Official film source",
+    "url": "https://example.org/film/",
+    "license": "Verified reuse license",
+    "licenseUrl": "https://example.org/license/",
+    "credit": "Required creator attribution"
+  },
+  "subtitleSource": {
+    "name": "Official English subtitles",
+    "url": "https://example.org/subtitles/en.srt",
+    "license": "Verified subtitle reuse license"
+  },
+  "captions": [
+    { "start": 15, "end": 18.5, "text": "Plain English caption text." }
+  ],
+  "glossary": { "dragon": "ejderha" }
+}
+```
+
+Rules:
+- Replace example URLs with verified official sources. All source/media URLs must use HTTPS; direct media must be an MP4 file. Keep external video files out of the repository and release package.
+- Verify the film and subtitle reuse permissions separately and retain required attribution/license information. A freely viewable video does not by itself grant permission to copy its subtitles.
+- Level is A1/A2/B1/B2/C1/C2 and must include a Turkish editorial explanation; it is not an official CEFR certification. Genres also allow fantasy/documentary/education alongside the story genres.
+- `captions` contains English plain text and numeric seconds from the start of the complete video. Strip SRT markup and formatting tags. Cues must be non-empty, chronological and non-overlapping, with `0 <= start < end`; they may not exceed `durationSeconds` by more than one second.
+- `source` fields shown above are required. `subtitleSource.licenseUrl` is optional. `glossary` is optional and uses lowercase word keys with Turkish meanings.
+- Caption words use the existing English–Turkish dictionary/tooltip behavior. Site-owned timed captions are separate from native player captions, allowing taps and dictionary lookup.
+- The service worker caches the app and caption bundle for revisits. Playback still needs access to the external video host; no offline movie download is provided.
+
 ## Dictionary — `content/dict/<chunk>.json`
 
 ```json

@@ -1,4 +1,4 @@
-/* Lantern English — single-page app. Routes: #home #library #articles #my-library #words #about #s.<id> */
+/* Lantern English — single-page app. Routes: #home #library #articles #videos #my-library #words #about #s.<id> #v.<id> */
 (function () {
   "use strict";
 
@@ -8,6 +8,8 @@
   const STORIES = LIB.filter((t) => t.type === "story");
   const ARTICLES = LIB.filter((t) => t.type === "article");
   const FEATURED = window.LANTERN_FEATURED || {};
+  const VIDEOS = window.LANTERN_VIDEOS || [];
+  const VIDEO_BY_ID = Object.fromEntries(VIDEOS.map((v) => [v.id, v]));
   const BY_ID = Object.fromEntries(LIB.map((t) => [t.id, t]));
   const $main = document.getElementById("main");
 
@@ -563,6 +565,7 @@
         <div class="collection-grid">
           <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · ${STORIES.length} hikâye</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
           <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · ${ARTICLES.length} makale</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
+          ${VIDEOS.length ? `<a class="collection-link videos-link" href="#videos"><span class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</span><h2>Videolar</h2><p>İngilizce kısa film izle. Altyazıdaki kelimelere dokun, Türkçe anlamlarını gör.</p><span class="link">Deneme videosunu izle →</span></a>` : ""}
         </div>
       </section>
 
@@ -609,6 +612,136 @@
 
   function viewArticles() {
     viewCollection("article");
+  }
+
+  // Videos have their own collection and never become reading bookmarks.
+  const videoTime = (seconds) => Math.floor(seconds / 60) + ":" + String(Math.floor(seconds % 60)).padStart(2, "0");
+
+  function viewVideos() {
+    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren · Deneme</p><h1>Videolar</h1>
+      <p class="lead">İngilizce kısa filmler. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div></div>
+      <div class="video-grid">${VIDEOS.map((v) => `<a class="video-card" href="#v.${esc(v.id)}">
+        <div class="video-art" aria-hidden="true">${ICON.play}<span>Kısa film</span></div>
+        <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
+          <h2>${esc(v.title)}</h2><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><span class="link">İzlemeye başla →</span></div>
+      </a>`).join("") || '<div class="empty"><h3>Henüz video yok</h3></div>'}</div>`;
+  }
+
+  function viewVideo(id) {
+    const v = VIDEO_BY_ID[id];
+    if (!v) {
+      $main.innerHTML = '<div class="empty"><h3>Video bulunamadı</h3><a class="btn" href="#videos">Videolara dön</a></div>';
+      return;
+    }
+    $main.innerHTML = `<article class="video-view" id="video-view" data-id="${esc(v.id)}">
+      <nav class="crumbs" aria-label="İçerik yolu"><a href="#videos">Videolar</a><span>›</span><span>${esc(v.title)}</span></nav>
+      <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
+        <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
+        <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
+      <div class="video-stage"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
+        <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
+        <video id="video-player" controls playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video></div>
+      <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazıdaki ilk konuşmayı aşağıda inceleyebilirsin.</p>
+      <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
+        <p class="sub" id="caption-help">Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır. Oynat düğmesiyle devam edebilirsin.</p>
+        <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <div class="caption-controls"><button class="btn sm" id="caption-prev" type="button" aria-label="Önceki altyazı">← Önceki</button>
+          <label for="caption-select">Konuşma <select id="caption-select">${v.captions.map((c, i) => `<option value="${i}">${i + 1} / ${v.captions.length} · ${videoTime(c.start)}</option>`).join("")}</select></label>
+          <button class="btn sm" id="caption-next" type="button" aria-label="Sonraki altyazı">Sonraki →</button>
+          <button class="btn sm" id="caption-replay" type="button">${ICON.play} Bu konuşmayı dinle</button></div>
+      </section>
+      <p class="video-credit">Film ve İngilizce altyazı: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
+        ${esc(v.source.credit)} · <a href="${esc(v.source.licenseUrl)}" target="_blank" rel="noopener">${esc(v.source.license)}</a>.
+        <a href="${esc(v.subtitleSource.url)}" target="_blank" rel="noopener">Altyazı kaynağı</a>. Film, kapanış jeneriğiyle birlikte oynatılır. Türkçe öğrenme açıklamaları Lantern English tarafından hazırlanmıştır.</p>
+    </article>`;
+    const player = document.getElementById("video-player");
+    const captions = document.getElementById("video-captions");
+    const select = document.getElementById("caption-select");
+    const prev = document.getElementById("caption-prev");
+    const next = document.getElementById("caption-next");
+    const replay = document.getElementById("caption-replay");
+    const status = document.getElementById("video-status");
+    let selected = 0, displayed = null, pendingSeek = null, disposed = false;
+
+    function showCaption(index) {
+      if (disposed || displayed === index) return;
+      Tip.hide(); displayed = index; captions.dataset.cue = String(index);
+      const cue = v.captions[index];
+      if (cue) {
+        selected = index; select.value = String(index);
+        captions.innerHTML = `<p>${renderInline(cue.text, [])}</p>`;
+        captions.querySelectorAll(".w").forEach((word) => {
+          word.tabIndex = 0; word.setAttribute("role", "button"); word.setAttribute("aria-label", word.textContent + " · Türkçe anlamını gör");
+        });
+        document.getElementById("caption-time").textContent = videoTime(cue.start) + "–" + videoTime(cue.end);
+        markSaved(captions);
+      } else {
+        captions.innerHTML = '<p class="caption-gap" lang="tr">Bu sahnede konuşma yok.</p>';
+        document.getElementById("caption-time").textContent = "";
+      }
+      prev.disabled = selected === 0; next.disabled = selected === v.captions.length - 1;
+    }
+
+    function syncCaptions() {
+      if (disposed) return;
+      const now = player.currentTime;
+      showCaption(v.captions.findIndex((cue) => cue.start <= now && now < cue.end));
+    }
+
+    function seekCaption(index) {
+      if (index < 0 || index >= v.captions.length) return;
+      showCaption(index);
+      if (player.getAttribute("src")) {
+        const at = v.captions[index].start;
+        if (player.readyState >= 1) player.currentTime = at;
+        else pendingSeek = at;
+      }
+    }
+
+    function startVideo(at) {
+      if (!navigator.onLine) {
+        status.textContent = "Çevrimdışısın. Altyazıyı inceleyebilirsin; video için internete bağlan.";
+        return;
+      }
+      if (!player.getAttribute("src")) {
+        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false;
+        document.getElementById("video-placeholder").hidden = true;
+      }
+      if (typeof at === "number") {
+        if (player.readyState >= 1) player.currentTime = at;
+        else pendingSeek = at;
+      }
+      status.textContent = "Video yükleniyor…";
+      const request = player.play();
+      if (request && request.catch) request.catch(() => {
+        if (!document.contains(player)) return;
+        status.textContent = player.error ? "Video yüklenemedi. İnternetini kontrol et veya aşağıdaki resmî sayfada izle bağlantısını kullan." : "Oynatmak için video üzerindeki oynat düğmesine basabilirsin.";
+      });
+    }
+
+    document.getElementById("video-start").addEventListener("click", () => startVideo());
+    select.addEventListener("change", () => seekCaption(Number(select.value)));
+    prev.addEventListener("click", () => seekCaption(selected - 1));
+    next.addEventListener("click", () => seekCaption(selected + 1));
+    replay.addEventListener("click", () => startVideo(v.captions[selected].start));
+    player.addEventListener("loadedmetadata", () => {
+      if (disposed) return;
+      if (pendingSeek !== null) { player.currentTime = pendingSeek; pendingSeek = null; }
+      syncCaptions();
+    });
+    player.addEventListener("timeupdate", syncCaptions);
+    player.addEventListener("seeking", syncCaptions);
+    player.addEventListener("play", () => { Tip.hide(); Speech.stop(); });
+    player.addEventListener("playing", () => { status.textContent = "Altyazı konuşmayla birlikte ilerler. Anlamına bakmak için bir kelimeye dokun."; });
+    player.addEventListener("error", () => { status.textContent = "Video yüklenemedi. İnternetini kontrol et veya aşağıdaki resmî sayfada izle bağlantısını kullan."; });
+    player.addEventListener("ended", () => { status.textContent = "Film bitti. Konuşma seçicisinden bir sahneyi yeniden dinleyebilirsin."; });
+    // Pause before the existing dictionary handler pins its tooltip.
+    captions.addEventListener("click", (ev) => { if (ev.target.closest(".w")) player.pause(); });
+    captions.addEventListener("keydown", (ev) => {
+      if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".w")) { ev.preventDefault(); ev.target.click(); }
+    });
+    bindText(captions, v); showCaption(0);
+    videoCleanup = () => { disposed = true; player.pause(); player.removeAttribute("src"); player.load(); };
   }
 
   function viewMyLibrary() {
@@ -1049,7 +1182,7 @@
   }
 
   // ---------- router ----------
-  let readerScroll = null, readerFlush = null;
+  let readerScroll = null, readerFlush = null, videoCleanup = null;
   const $back = document.getElementById("nav-back");
   const initialDepth = history.state && history.state.lanternDepth;
   let navigationDepth = Number.isInteger(initialDepth) && initialDepth >= 0 ? initialDepth : 0;
@@ -1061,7 +1194,7 @@
     if (navigationDepth > 0) { history.back(); return; }
     const h = location.hash.slice(1);
     const text = h.startsWith("s.") && BY_ID[h.slice(2)];
-    const fallback = text ? COLLECTIONS[text.type].route : h.startsWith("s.") ? "library" : "home";
+    const fallback = text ? COLLECTIONS[text.type].route : h.startsWith("s.") ? "library" : h.startsWith("v.") ? "videos" : "home";
     // Direct links have no proven in-app predecessor; stay inside Lantern.
     history.replaceState(Object.assign({}, history.state, { lanternDepth: 0 }), "", "#" + fallback);
     route();
@@ -1088,11 +1221,12 @@
     history.replaceState(Object.assign({}, history.state, { lanternDepth: navigationDepth }), "", "#" + h);
     $back.disabled = h === "home" && navigationDepth === 0;
     if (readerFlush) readerFlush();
+    if (videoCleanup) { videoCleanup(); videoCleanup = null; }
     Speech.stop(); Tip.hide();
     readerScroll = null; readerFlush = null; cardKeys = null; shelfDraw = null;
     jumpScroll(0);
     document.querySelector("#progress span").style.width = "0";
-    const section = h.startsWith("s.") ? (COLLECTIONS[BY_ID[h.slice(2)]?.type]?.route || "library") : h;
+    const section = h.startsWith("s.") ? (COLLECTIONS[BY_ID[h.slice(2)]?.type]?.route || "library") : h.startsWith("v.") ? "videos" : h;
     document.querySelectorAll("[data-nav]").forEach((a) => { if (a.dataset.nav === section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     const activeNav = document.querySelector(".nav [aria-current='page']");
     if (activeNav) {
@@ -1101,14 +1235,17 @@
       else if (item.right > bounds.right) nav.scrollLeft += item.right - bounds.right;
     }
     if (h.startsWith("s.")) viewReader(h.slice(2));
+    else if (h.startsWith("v.")) viewVideo(h.slice(2));
     else if (h === "library") viewLibrary();
     else if (h === "articles") viewArticles();
+    else if (h === "videos") viewVideos();
     else if (h === "my-library") viewMyLibrary();
     else if (h === "words") viewWords();
     else if (h === "about") viewAbout();
     else viewHome();
     const t = h.startsWith("s.") && BY_ID[h.slice(2)];
-    document.title = t ? `${t.title} · Lantern English` : h === "my-library" ? "Kitaplığım · Lantern English" : "Lantern English";
+    const video = h.startsWith("v.") && VIDEO_BY_ID[h.slice(2)];
+    document.title = video ? `${video.title} · Lantern English` : h === "videos" ? "Videolar · Lantern English" : t ? `${t.title} · Lantern English` : h === "my-library" ? "Kitaplığım · Lantern English" : "Lantern English";
   }
 
   // ---------- installable app (PWA) ----------
