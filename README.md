@@ -23,7 +23,9 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 ## Geliştirme
 Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGENTS.md) (yapay zekâ asistanları için devir rehberi) ve [CONTENT_SPEC.md](CONTENT_SPEC.md) (içerik formatı).
 
-11 Ekim 2026 kontrol noktası: 27 tamamlanmış hikâye, 16 makale ve 6.687 sözlük maddesi. Yarım metinler `drafts/` içinde saklanır ve siteye eklenmez. Canlı yayın henüz kurulmadı.
+11 Ekim 2026 kontrol noktası: 27 tamamlanmış hikâye, 16 makale ve 6.687 sözlük maddesi. Yarım metinler `drafts/` içinde saklanır ve siteye eklenmez.
+
+**Site:** [Lantern English](https://lantern-english.copperlion512.chatgpt.site). Sites üzerinde yayında; erişim şu anda sahibinin ChatGPT hesabıyla sınırlı. Yayın ayarları ve sonraki güncellemeler için [HOSTING.md](HOSTING.md).
 
 ```bash
 node tools/validate.mjs   # içeriği doğrula

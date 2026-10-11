@@ -60,7 +60,7 @@ tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 2
   ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious
   Gutenberg typos were fixed. "The Star" keeps period ethnic terms; their dictionary entries note
   they are archaic/offensive.
-- Repository: `emjnbulut/lantern-english`, private, branch `main`. No public deployment or custom domain was created in this session. GitHub Pages is not configured; the old private Claude artifact is not a public site URL.
+- Repository: `emjnbulut/lantern-english`, private, branch `main`. Owner-private Sites deployment: `https://lantern-english.copperlion512.chatgpt.site`. No custom domain was bought or configured. GitHub Pages is not configured. Read `HOSTING.md` before publishing or changing access; reuse the project_id in `.openai/hosting.json`.
 - Verification at checkpoint: content validation and editorial review passed; headless browser checks passed (21 checks, desktop and mobile). Generated `data/` bundles match the complete source content.
 
 ## Ideas backlog

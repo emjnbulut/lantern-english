@@ -1,6 +1,6 @@
 # Lantern English — AI devir notu
 
-Son kontrol noktası: **11 Ekim 2026**. Kullanıcı çalışmaya ara verilmesini, mevcut ilerlemenin GitHub'a kaydedilmesini ve başka bir AI ile devam edebilmesini istedi. Yeni içerik üretimi durduruldu; tamamlanmış metinler, arayüz değişiklikleri, üretilmiş veri paketleri ve yarım hikâye taslağı birlikte saklandı.
+Son kontrol noktası: **11 Ekim 2026**. Kullanıcı çalışmaya ara verilmesini, mevcut ilerlemenin GitHub'a kaydedilmesini ve başka bir AI ile devam edebilmesini istedi. Yeni içerik üretimi durduruldu; tamamlanmış metinler, arayüz değişiklikleri, üretilmiş veri paketleri ve yarım hikâye taslağı birlikte saklandı. Ardından kullanıcı site bağlantısını istedi ve tamamlanmış sürüm Sites üzerinde yayınlandı: **https://lantern-english.copperlion512.chatgpt.site**. Erişim şu anda sahibinin ChatGPT hesabıyla sınırlı; ayrıntılar `HOSTING.md` içinde.
 
 ## Kullanıcının isteği
 
@@ -9,7 +9,7 @@ Son kontrol noktası: **11 Ekim 2026**. Kullanıcı çalışmaya ara verilmesini
 - Astra kullanarak özgün, eski özgün metinlerden daha uzun hikâyeler ve makaleler eklemek; ileri seviyeleri de genişletmek.
 - Mevcut canlı bağlantı yoksa canlı yayın oluşturmak.
 
-Depo zaten `emjnbulut/lantern-english` adını taşıyor. Arayüzde marka **Lantern English** olarak düzeltildi. Canlı adres oluşturulmadığı için adres isteği henüz tamamlanmadı. Kullanıcı ücretli alan adı satın alınmasını istemedi.
+Depo zaten `emjnbulut/lantern-english` adını taşıyor. Arayüzde marka **Lantern English** olarak düzeltildi. Canlı adresin site adı `lantern-english` olarak oluşturuldu. Kullanıcı ücretli alan adı satın alınmasını istemedi.
 
 ## Depo ve çalışma ortamı
 
@@ -62,7 +62,7 @@ Toplam site: **27 hikâye ve 16 makale**; A1 3, A2 6, B1 6, B2 6, C1 5, C2 1 hik
 1. **Sözlüğü tamamla.** `content/dict/extended-originals.json` 111 yeni madde ekliyor; toplam 6.687. Son `node tools/vocab.mjs` sonucu **451 çözümlenemeyen biçim**, ayrıca 249 yalnızca büyük harfle geçen biçim atlandı. Bazıları isim veya eski metinlerin tek harfli parçaları; birçok gerçek yeni kelime de hâlâ çeviri bekliyor. Öne çıkanlar: beaver, cassette, archive, catalogue, conversion, caption, beacon, valve, actuator, scanning, technician, inference. Aynı kavram için kök ve çekim biçimlerini lemmatizer davranışına göre ele al; bağlamsal anlam için metnin glossary alanını kullan. `Bas` bir karakter adı olabilir; eski klasiklerde küçük harfli Fransızca `bas` da geçtiğinden global karşılığı isimle ezme. Eski `s`, `l`, `à` parçaları için lemmatizer değişikliği gerekebilir; önce bağlamı kontrol et. Önceki %98,5 kapsama iddiası yeni metinler için doğrulanmış değil.
 2. **Greyhaven taslağını tamamla.** Aşağıdaki bölümde plan var. Bitmeden `content/stories/` içine taşıma.
 3. **İkinci C2 hikâyeyi yaz.** Kullanıcının üst seviye isteğini genişletmek için ek bir C2 drama planlandı; henüz dosya oluşturulmadı. Öneri aşağıda, zorunlu olay örgüsü değil.
-4. **Canlı yayın kur.** Depoyu private tut. Bu oturumda yayın yapılmadı ve repo görünürlüğü değiştirilmedi. Yayın yöntemini seçip yayın sonrası gerçek URL'yi doğrula.
+4. **Yayın erişimini koru.** Tamamlanmış sürüm Sites üzerinde yayınlandı; yalnızca sahibinin ChatGPT hesabıyla açılıyor. Kullanıcı başka kişilerin erişmesini isterse mevcut sitenin erişim politikasını değiştir; yeni Site oluşturma. GitHub deposu private kalmalı.
 5. İçerik ve veri paketlerini birlikte doğrulayıp GitHub'a kaydet. Sayıları README/AGENTS içinde güncelle.
 
 ## Greyhaven: tamamlanmamış C1 macera
@@ -88,9 +88,9 @@ Henüz dosya yok. Öneri: **The Meal He Was Asked to Make**, id `the-meal-he-was
 
 ## Yayın durumu
 
-GitHub API incelemesinde depo private, `homepage` boş, `has_pages=false`; Pages adresi henüz yok (Pages API 404). Yerel `.openai/hosting.json` yok, Sites proje listesi boş. Eski AGENTS'ta bahsedilen Claude artifact yalnızca özel önizleme; bir public yayın bağlantısı değil.
+İlk GitHub API incelemesinde depo private, `homepage` boş, `has_pages=false`; Pages adresi yoktu (Pages API 404). Eski AGENTS'ta bahsedilen Claude artifact özel önizlemeydi. Sonraki kullanıcı isteği üzerine yeni bir Sites yayını tamamlandı; `.openai/hosting.json` artık gerçek Site kimliğini taşıyor.
 
-GitHub Pages'in private depodaki kullanılabilirliğini hesap planına göre doğrula veya uygun bir başka yayın hizmeti kullan. Kullanıcı canlı yayın yapılmasına izin verdi; depoyu public yapmak veya ücretli alan adı almak için izin vermedi. Yayın adı/slug mümkünse `lantern-english` olmalı. Sites kullanılacaksa ilgili Sites skill dosyasını okuyup gerçek yayın URL'sini doğrula; GitHub kaynaklarını bu depoda tut.
+Sites yayın adresi: **https://lantern-english.copperlion512.chatgpt.site**. Native deployment sonucu `succeeded` olarak doğrulandı. Yayın owner-private; GitHub görünürlüğü değiştirilmedi. Güncelleme için Sites skill ve `HOSTING.md` okunmalı, mevcut proje kimliği yeniden kullanılmalı. GitHub kaynakları bu depoda tutuluyor.
 
 ## Bu kontrol noktasındaki doğrulamalar
 
@@ -116,4 +116,4 @@ node tools/smoke.mjs
 git diff --check
 ```
 
-Bu kontrol noktası canlı yayın değildir. Tamamlanmış kaynaklar ve üretilmiş paketler birlikte saklandı; yarım taslak yayına karıştırılmadı.
+Bu sürüm Sites üzerinde yayınlandı. Tamamlanmış kaynaklar ve üretilmiş paketler birlikte saklandı; yarım taslak yayına karıştırılmadı. Sözlük ve ek içerik işleri yukarıdaki gibi devam ediyor.
