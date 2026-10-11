@@ -14,3 +14,27 @@ Classic texts reproduced on the site (see the Sources list on the "Nasıl Çalı
 page, each with a link) come from Project Gutenberg and are in the public domain.
 The editorial material added around them (summaries, glossaries, phrases, quizzes)
 is covered by the notice above.
+
+External films and subtitles
+---------------------------
+The restrictions above do not apply to the externally licensed films or their
+English caption text. Each video retains its own attribution and source links:
+  - Sintel and Tears of Steel: Blender Foundation, CC BY 3.0.
+  - Elephants Dream: Blender Foundation / Netherlands Media Art Institute,
+    CC BY 2.5 (https://orange.blender.org/blog/creative-commons-license-2/).
+  - Cosmos Laundromat: Blender Foundation, CC BY 3.0
+    (https://gooseberry.blender.org/license/).
+  - Sprite Fright and its official English captions: Blender Foundation,
+    CC BY 1.0 (https://studio.blender.org/projects/sprite-fright/pages/about/).
+
+Elephants Dream and Cosmos Laundromat English captions are credited to
+Wikimedia Commons contributors and distributed under CC BY-SA 4.0:
+https://creativecommons.org/licenses/by-sa/4.0/
+https://commons.wikimedia.org/wiki/TimedText:Elephants_Dream.ogv.en.srt
+https://commons.wikimedia.org/wiki/TimedText:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm.en-gb.srt
+Authors are listed in the linked pages' revision histories. Caption words are
+retained; formatting is stripped and timings converted to seconds. Three
+Elephants Dream cue endings are clipped by 3-9 milliseconds to remove overlap.
+These captions, including this formatting/timing conversion, remain under
+CC BY-SA 4.0, separately from Lantern's original code and editorial material.
+The films are played unchanged from Blender's external host, including credits.

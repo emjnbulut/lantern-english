@@ -1,0 +1,378 @@
+{
+  "id": "cosmos-laundromat",
+  "type": "video",
+  "title": "Cosmos Laundromat: First Cycle",
+  "creator": "Blender Foundation",
+  "year": 2015,
+  "level": "B2",
+  "durationSeconds": 730,
+  "genre": "fantasy",
+  "summaryTr": "Issız bir adada yaşayan Franck, hayatını değiştirebileceğini söyleyen sıra dışı bir satıcıyla karşılaşır. İmalı konuşmaları, ikna dilini ve günlük deyimleri takip et.",
+  "levelNoteTr": "B2, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Günlük ifadelerin yanında ima, alay, mecaz ve satış konuşması vardır. Aksanlar, eksiltili cümleler ve birkaç teknik ifade dinlemeyi zorlaştırır; ilk konuşma yaklaşık 2:20’de başlar.",
+  "advisoryTr": "İntihar düşüncesi ve girişimi, ağır küfür ve karanlık temalar içerir. Hassas izleyiciler için uygun olmayabilir; yapımcı hedef kitleyi 13+ olarak belirtir.",
+  "videoUrl": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-720.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-240.mp4",
+      "sizeMB": 43
+    },
+    {
+      "label": "360p",
+      "url": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-360.mp4",
+      "sizeMB": 76
+    },
+    {
+      "label": "480p",
+      "url": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-480.mp4",
+      "sizeMB": 110
+    },
+    {
+      "label": "720p",
+      "url": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-720.mp4",
+      "sizeMB": 201
+    },
+    {
+      "label": "1080p",
+      "url": "https://video.blender.org/object-storage/web_videos/f507dfdc-e73e-45a4-9778-d758cbe1ce96-804.mp4",
+      "sizeMB": 230
+    }
+  ],
+  "source": {
+    "name": "Blender Foundation — Cosmos Laundromat: First Cycle",
+    "url": "https://gooseberry.blender.org/",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+    "credit": "(CC) Blender Foundation | gooseberry.blender.org",
+    "licenseSourceUrl": "https://gooseberry.blender.org/license/",
+    "watchUrl": "https://video.blender.org/videos/watch/f507dfdc-e73e-45a4-9778-d758cbe1ce96",
+    "creditNoteTr": "Film, kapanış jeneriğiyle birlikte resmî Blender kaynağından değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText:Cosmos_Laundromat_-_First_Cycle_-_Official_Blender_Foundation_release.webm.en-gb.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar kaynak sayfasının geçmişinde)",
+    "changeNoteTr": "Altyazı sözleri korunmuş; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür."
+  },
+  "glossary": {
+    "franck": "Franck (karakter adı)",
+    "victor": "Victor (karakter adı)",
+    "hector": "Hector (yanlış söylenen ad)",
+    "casper": "Casper (yanlış söylenen ad)",
+    "hooves": "toynaklar",
+    "sheepy": "koyuna ait; burada koyunluk işleri",
+    "fucking": "lanet olası (ağır küfür)",
+    "tumble": "tamburda döndürme",
+    "spin": "sıkma, dönme",
+    "variable": "değişken, ayarlanabilir",
+    "squeaky": "gıcırdayan; squeaky clean: tertemiz",
+    "hehehe": "he he he (gülme sesi)",
+    "eh": "ee, hey (ünlem)",
+    "ho": "hop, hey (ünlem)",
+    "err": "ee, şey (duraksama)"
+  },
+  "captions": [
+    {
+      "start": 140,
+      "end": 141.3,
+      "text": "Excuse me?"
+    },
+    {
+      "start": 141.8,
+      "end": 143,
+      "text": "Excuse me, sir?"
+    },
+    {
+      "start": 144,
+      "end": 145.5,
+      "text": "Excuse me?"
+    },
+    {
+      "start": 147,
+      "end": 149,
+      "text": "Oh, come on."
+    },
+    {
+      "start": 150,
+      "end": 152,
+      "text": "Do you have a moment, sir?"
+    },
+    {
+      "start": 152,
+      "end": 157.05,
+      "text": "I'm kind of in the middle of something here."
+    },
+    {
+      "start": 157.05,
+      "end": 158.95,
+      "text": "I've come a long way for you, Franck."
+    },
+    {
+      "start": 169,
+      "end": 171,
+      "text": "My name is Victor."
+    },
+    {
+      "start": 172,
+      "end": 174,
+      "text": "Hi."
+    },
+    {
+      "start": 174,
+      "end": 176,
+      "text": "And you are...."
+    },
+    {
+      "start": 178,
+      "end": 179.5,
+      "text": "You are Franck."
+    },
+    {
+      "start": 180.5,
+      "end": 184,
+      "text": "You are so much more than just a sheep, aren't you?"
+    },
+    {
+      "start": 185,
+      "end": 188,
+      "text": "Oh yeah? How would you know?"
+    },
+    {
+      "start": 190,
+      "end": 192.9,
+      "text": "Look at you. You're an adventurer, Franck."
+    },
+    {
+      "start": 192.9,
+      "end": 197,
+      "text": "Just like me, you're... a lone wolf."
+    },
+    {
+      "start": 198,
+      "end": 202,
+      "text": "Tell me, does one choose to be alone?"
+    },
+    {
+      "start": 203,
+      "end": 205,
+      "text": "No, one doesn't."
+    },
+    {
+      "start": 205,
+      "end": 207.6,
+      "text": "One doesn’t even choose to be a wolf."
+    },
+    {
+      "start": 210,
+      "end": 212,
+      "text": "Or does one?"
+    },
+    {
+      "start": 215,
+      "end": 218.8,
+      "text": "Well, mister... err... Hector."
+    },
+    {
+      "start": 218.8,
+      "end": 220,
+      "text": "Victor. Victor."
+    },
+    {
+      "start": 220,
+      "end": 226,
+      "text": "I don’t know what you’re on about but I'm just"
+    },
+    {
+      "start": 226,
+      "end": 228.6,
+      "text": "And I suggest you do the same."
+    },
+    {
+      "start": 228.6,
+      "end": 232,
+      "text": "No. No no no, Franck. Wait wait wait."
+    },
+    {
+      "start": 232,
+      "end": 235,
+      "text": "No. This is not... the way."
+    },
+    {
+      "start": 235,
+      "end": 238.5,
+      "text": "Just give me one minute of your precious time."
+    },
+    {
+      "start": 238.5,
+      "end": 241.5,
+      "text": "Precious time? Hehehe."
+    },
+    {
+      "start": 241.5,
+      "end": 243.5,
+      "text": "Yeah just give me one minute."
+    },
+    {
+      "start": 243.5,
+      "end": 246.5,
+      "text": "You would have one more minute, wouldn't you?"
+    },
+    {
+      "start": 248,
+      "end": 251,
+      "text": "Okay half. Half a minute."
+    },
+    {
+      "start": 265.1,
+      "end": 269.3,
+      "text": "I knew it."
+    },
+    {
+      "start": 269.3,
+      "end": 272,
+      "text": "You will not regret this."
+    },
+    {
+      "start": 272,
+      "end": 275,
+      "text": "The adventures you will have."
+    },
+    {
+      "start": 275,
+      "end": 278.5,
+      "text": "All the lives you've ever wanted."
+    },
+    {
+      "start": 278.5,
+      "end": 281.7,
+      "text": "All you’ve been missing."
+    },
+    {
+      "start": 281.7,
+      "end": 286,
+      "text": "Here. This is... the best product we have... in store."
+    },
+    {
+      "start": 286,
+      "end": 290,
+      "text": "Variable spin speed, excellent tumble performance..."
+    },
+    {
+      "start": 290,
+      "end": 294,
+      "text": "...in one... handy... device. Squeaky clean."
+    },
+    {
+      "start": 297,
+      "end": 301,
+      "text": "Well this... this better be good."
+    },
+    {
+      "start": 301,
+      "end": 304,
+      "text": "Took me ages to tie that rope."
+    },
+    {
+      "start": 305,
+      "end": 307,
+      "text": "With my fucking hooves."
+    },
+    {
+      "start": 307,
+      "end": 309,
+      "text": "No more need for hooves."
+    },
+    {
+      "start": 309,
+      "end": 311,
+      "text": "No more sheepy business."
+    },
+    {
+      "start": 312,
+      "end": 314.5,
+      "text": "Ho! Time flies."
+    },
+    {
+      "start": 314.5,
+      "end": 316.7,
+      "text": "Wait wait wait wait wait wait."
+    },
+    {
+      "start": 316.7,
+      "end": 318.5,
+      "text": "How does this thing work?"
+    },
+    {
+      "start": 318.5,
+      "end": 321,
+      "text": "I mean, how do I make it work?"
+    },
+    {
+      "start": 321,
+      "end": 322.5,
+      "text": "No you don't."
+    },
+    {
+      "start": 322.5,
+      "end": 324,
+      "text": "I just turned it on for you."
+    },
+    {
+      "start": 326,
+      "end": 327,
+      "text": "When can I go?"
+    },
+    {
+      "start": 329,
+      "end": 330,
+      "text": "Where can I go?"
+    },
+    {
+      "start": 330,
+      "end": 333,
+      "text": "We will pick you up. Don't worry, just stay here."
+    },
+    {
+      "start": 333,
+      "end": 335,
+      "text": "In this exact place."
+    },
+    {
+      "start": 335,
+      "end": 337,
+      "text": "Don't move. Just wait."
+    },
+    {
+      "start": 338,
+      "end": 340,
+      "text": "That's it?"
+    },
+    {
+      "start": 341,
+      "end": 342,
+      "text": "Hey!"
+    },
+    {
+      "start": 342.5,
+      "end": 344,
+      "text": "Hey!"
+    },
+    {
+      "start": 344,
+      "end": 345.5,
+      "text": "Wait, mister!"
+    },
+    {
+      "start": 345.5,
+      "end": 348.9,
+      "text": "Eh, Casper!"
+    },
+    {
+      "start": 348.9,
+      "end": 351,
+      "text": "Hector whatever!"
+    }
+  ]
+}

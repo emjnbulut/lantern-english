@@ -1,0 +1,470 @@
+{
+  "id": "sprite-fright",
+  "type": "video",
+  "title": "Sprite Fright",
+  "creator": "Blender Foundation",
+  "year": 2021,
+  "level": "B2",
+  "durationSeconds": 630,
+  "genre": "horror",
+  "summaryTr": "Doğa gezisine çıkan bir öğrenci grubu, ormanın küçük sakinleriyle karşılaşır. İngiliz aksanları, hızlı grup konuşmaları ve kelime oyunları içeren bir korku komedisi.",
+  "levelNoteTr": "B2, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Hızlı İngiliz İngilizcesi, argo, kısaltılmış söyleyişler ve kelime oyunları vardır. Latince tür adları ve doğa terimleri kelime desteği gerektirebilir.",
+  "advisoryTr": "Kanlı çizgi film şiddeti, ölüm, korku sahneleri, zorbalık, alkol ve ağır argo/küfür içerir. Yapımcı 13+ olarak belirtir; küçük çocuklar için uygun değildir.",
+  "videoUrl": "https://video.blender.org/object-storage/web_videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-720.mp4",
+  "qualities": [
+    {
+      "label": "720p",
+      "url": "https://video.blender.org/object-storage/web_videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-720.mp4",
+      "sizeMB": 102
+    },
+    {
+      "label": "1080p",
+      "url": "https://video.blender.org/object-storage/web_videos/a69d68a5-a0e0-4a80-9d66-49f093c97aaf-804.mp4",
+      "sizeMB": 111
+    }
+  ],
+  "source": {
+    "name": "Blender Foundation — Sprite Fright",
+    "url": "https://studio.blender.org/projects/sprite-fright/",
+    "license": "CC BY 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+    "credit": "(CC) Blender Foundation | studio.blender.org",
+    "licenseSourceUrl": "https://studio.blender.org/projects/sprite-fright/pages/about/",
+    "watchUrl": "https://video.blender.org/videos/watch/a69d68a5-a0e0-4a80-9d66-49f093c97aaf",
+    "creditNoteTr": "Film, kapanış jeneriğiyle birlikte resmî Blender kaynağından değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Blender Studio — resmî İngilizce WebVTT altyazısı",
+    "url": "https://video.blender.org/object-storage/captions/541aac20-a387-4d4b-be46-fd722b33fe58-en.vtt",
+    "license": "CC BY 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/1.0/",
+    "changeNoteTr": "Altyazı sözleri korunmuş; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür."
+  },
+  "glossary": {
+    "cornu": "Cornu aspersum: bir kara salyangozu türü",
+    "aspersum": "Cornu aspersum: bir kara salyangozu türü",
+    "motacilla": "Motacilla flava: sarı kuyruksallayan kuşu",
+    "flava": "Motacilla flava: sarı kuyruksallayan kuşu",
+    "fungis": "mantarlar; fun guys (eğlenceli tipler) kelime oyunu",
+    "dorkwad": "aptal, ezik (aşağılayıcı argo)",
+    "innit": "öyle değil mi? (isn’t it, İngiliz argosu)",
+    "oy": "hey! (seslenme)",
+    "phil": "Phil (karakter adı)",
+    "bbq": "barbekü, mangal",
+    "piss": "işemek (kaba); piss break: tuvalet molası",
+    "shagged": "cinsel ilişkiye girmiş (kaba argo)",
+    "sprite": "orman perisi; burada yaratıkların adı/kelime oyunu",
+    "sprites": "orman perileri; filmdeki yaratıklar",
+    "psycho": "psikopat, kaçık (argo)",
+    "bitches": "sürtükler (ağır hakaret)",
+    "bastards": "alçaklar (ağır hakaret)",
+    "geezer": "herif, adam (İngiliz argosu)",
+    "weenie": "ödlek, pısırık (argo)",
+    "wagtail": "kuyruksallayan kuşu",
+    "ribbing": "takılma, alay etme",
+    "wasted": "sarhoş, kafası iyi (argo)",
+    "buns": "çörekler; Sugar Buns: tatlım (hitap)",
+    "cakes": "kekler; Sweet cakes: tatlım (hitap)",
+    "muffin": "muffin; Love muffin: sevgilim (hitap)",
+    "punks": "serseriler",
+    "aaaah": "aaa! (çığlık)",
+    "nuh": "hayır (nuh-uh: olumsuzluk ünlemi)",
+    "uh": "ee (duraksama)",
+    "mtv": "MTV (müzik televizyon kanalı)",
+    "c'mon": "haydi, hadi (come on)",
+    "dilly": "dilly-dally: oyalanmak",
+    "outta": "out of: içinden, dışarı (konuşma dili)"
+  },
+  "captions": [
+    {
+      "start": 17.375,
+      "end": 19.458,
+      "text": "Hello, Mr.Snail!"
+    },
+    {
+      "start": 19.458,
+      "end": 22.333,
+      "text": "Aw, you cute little cornu aspersum."
+    },
+    {
+      "start": 22.333,
+      "end": 25.125,
+      "text": "Latin name bonus-points!"
+    },
+    {
+      "start": 28.375,
+      "end": 30.833,
+      "text": "Can’t believe we got stuck with the tree hugger."
+    },
+    {
+      "start": 30.833,
+      "end": 34.667,
+      "text": "If I have to hear the latin name for one more animal, I swear I'm gonna kill her."
+    },
+    {
+      "start": 34.667,
+      "end": 39.542,
+      "text": "Relax, Sugar Buns. While she does all the work we’ll have all the fun."
+    },
+    {
+      "start": 39.542,
+      "end": 42.583,
+      "text": "Yeah! And get wasted out of our minds!"
+    },
+    {
+      "start": 42.583,
+      "end": 44.25,
+      "text": "Way ahead of you, man."
+    },
+    {
+      "start": 44.25,
+      "end": 48.625,
+      "text": "C’mon, team! We mustn’t dilly-dally when there’s so much nature to see!"
+    },
+    {
+      "start": 48.625,
+      "end": 53.667,
+      "text": "I was thinking we should call our class project, “Fungis in a Forest!”"
+    },
+    {
+      "start": 53.667,
+      "end": 56.167,
+      "text": "Get it? Because we’re a group of fun guys."
+    },
+    {
+      "start": 56.167,
+      "end": 57.667,
+      "text": "And also fungis which-"
+    },
+    {
+      "start": 57.667,
+      "end": 62.458,
+      "text": "Shush! That’s a yellow wagtail. And she’s in distress!"
+    },
+    {
+      "start": 62.75,
+      "end": 66.333,
+      "text": "There, there, my little motacilla flava."
+    },
+    {
+      "start": 67.792,
+      "end": 70.042,
+      "text": "Oh! Look at her go!"
+    },
+    {
+      "start": 70.375,
+      "end": 71.5,
+      "text": "Wow!"
+    },
+    {
+      "start": 71.5,
+      "end": 74.417,
+      "text": "Out of the way, dorkwad! We're camping here."
+    },
+    {
+      "start": 74.417,
+      "end": 77.5,
+      "text": "Finally! Time to get that BBQ burning."
+    },
+    {
+      "start": 78.417,
+      "end": 80.167,
+      "text": "Oh. Oh, dear."
+    },
+    {
+      "start": 87.333,
+      "end": 88.875,
+      "text": "Gross!"
+    },
+    {
+      "start": 90.833,
+      "end": 95.458,
+      "text": "Oh. Easy, guys. We’re supposed to be studying nature, not wrecking it."
+    },
+    {
+      "start": 95.458,
+      "end": 97.958,
+      "text": "Piss break!"
+    },
+    {
+      "start": 100.708,
+      "end": 104.667,
+      "text": "Oy, fungus freak! Make yourself useful and fix the tent."
+    },
+    {
+      "start": 104.667,
+      "end": 108.917,
+      "text": "Oh, a bit of friendly campsite ribbing. Fun."
+    },
+    {
+      "start": 109.875,
+      "end": 112.583,
+      "text": "She wouldn't survive 5 minutes alone in these woods."
+    },
+    {
+      "start": 112.583,
+      "end": 116.792,
+      "text": "Yeah. She's a real weenie that one, innit?"
+    },
+    {
+      "start": 116.792,
+      "end": 119,
+      "text": "Oy, Phil! How those sausages coming?"
+    },
+    {
+      "start": 119,
+      "end": 122.458,
+      "text": "Almost ready! Just need a bit more salt..."
+    },
+    {
+      "start": 156.333,
+      "end": 159.208,
+      "text": "It's incredible. It's a new species."
+    },
+    {
+      "start": 159.208,
+      "end": 161.875,
+      "text": "What the bloody hell are those things?"
+    },
+    {
+      "start": 161.875,
+      "end": 164.542,
+      "text": "It's like a gnome shagged a mushroom."
+    },
+    {
+      "start": 177.375,
+      "end": 179.583,
+      "text": "They’re absolutely adorable."
+    },
+    {
+      "start": 179.583,
+      "end": 182,
+      "text": "Yeah, absolutely bloody adorable."
+    },
+    {
+      "start": 182,
+      "end": 185.625,
+      "text": "And I bet we’ll make a fortune if we catch one of those things."
+    },
+    {
+      "start": 185.625,
+      "end": 186.958,
+      "text": "We'd be famous!"
+    },
+    {
+      "start": 186.958,
+      "end": 188.292,
+      "text": "Get on MTV."
+    },
+    {
+      "start": 188.292,
+      "end": 189.875,
+      "text": "I wonder what they taste like."
+    },
+    {
+      "start": 189.875,
+      "end": 192.5,
+      "text": "We really shouldn't disrupt their habitat."
+    },
+    {
+      "start": 192.5,
+      "end": 195.917,
+      "text": "Right. Sure, sure."
+    },
+    {
+      "start": 195.917,
+      "end": 197.5,
+      "text": "Greetings."
+    },
+    {
+      "start": 197.5,
+      "end": 199,
+      "text": "Welcome, friends."
+    },
+    {
+      "start": 199,
+      "end": 201.208,
+      "text": "I'll be right down."
+    },
+    {
+      "start": 206.25,
+      "end": 208.75,
+      "text": "Could I interest you in some peppermint tea?"
+    },
+    {
+      "start": 208.75,
+      "end": 210.667,
+      "text": "What are you guys?"
+    },
+    {
+      "start": 210.667,
+      "end": 214.417,
+      "text": "We are Sprites. We sprite balance to the forest."
+    },
+    {
+      "start": 214.417,
+      "end": 219.667,
+      "text": "We take care of the animals, plants, birds, moss..."
+    },
+    {
+      "start": 221,
+      "end": 223.917,
+      "text": "Guys? Guys, I..."
+    },
+    {
+      "start": 226.583,
+      "end": 231.542,
+      "text": "Hey, uh, little mushroom geezer, you cool with us camping here for the night?"
+    },
+    {
+      "start": 231.542,
+      "end": 236.333,
+      "text": "Absolutely. A friend of the forest is a friend of the sprites."
+    },
+    {
+      "start": 237.708,
+      "end": 241.375,
+      "text": "Maybe it was just ketchup... or something... like..."
+    },
+    {
+      "start": 241.375,
+      "end": 249.125,
+      "text": "Red paint? Yeah, maybe they were just painting their little hats or... something..."
+    },
+    {
+      "start": 255.5,
+      "end": 257.04200000000003,
+      "text": "Guys?"
+    },
+    {
+      "start": 260.08299999999997,
+      "end": 261.625,
+      "text": "Guys?"
+    },
+    {
+      "start": 262.41700000000003,
+      "end": 263.95799999999997,
+      "text": "Guys, this isn't funny."
+    },
+    {
+      "start": 265.08299999999997,
+      "end": 266.625,
+      "text": "Guys?"
+    },
+    {
+      "start": 287.20799999999997,
+      "end": 290.16700000000003,
+      "text": "We were just gonna catch one! But they’re psycho!"
+    },
+    {
+      "start": 290.16700000000003,
+      "end": 292.95799999999997,
+      "text": "You gotta get me outta these! Hurry! They’re gonna kill us!"
+    },
+    {
+      "start": 295.66700000000003,
+      "end": 296.58299999999997,
+      "text": "Hurry!"
+    },
+    {
+      "start": 296.58299999999997,
+      "end": 299.45799999999997,
+      "text": "Right foot, left foot, leaf and stone."
+    },
+    {
+      "start": 299.45799999999997,
+      "end": 303.583,
+      "text": "You picked the wrong camping spot, bitches."
+    },
+    {
+      "start": 303.583,
+      "end": 305.292,
+      "text": "Sprite them!"
+    },
+    {
+      "start": 305.833,
+      "end": 307.542,
+      "text": "Run!!!"
+    },
+    {
+      "start": 330.25,
+      "end": 332.08299999999997,
+      "text": "Aaaah! My eyes!"
+    },
+    {
+      "start": 357.625,
+      "end": 359.625,
+      "text": "Sugar Buns?! Help me!"
+    },
+    {
+      "start": 367.125,
+      "end": 368.875,
+      "text": "Sweet cakes!"
+    },
+    {
+      "start": 371.292,
+      "end": 373.208,
+      "text": "Love muffin..."
+    },
+    {
+      "start": 374.167,
+      "end": 375.667,
+      "text": "Huh?"
+    },
+    {
+      "start": 400.04200000000003,
+      "end": 403.45799999999997,
+      "text": "No, no, no! I can’t swim!"
+    },
+    {
+      "start": 415.08299999999997,
+      "end": 416.875,
+      "text": "Yes!"
+    },
+    {
+      "start": 418.29200000000003,
+      "end": 419.70799999999997,
+      "text": "No!"
+    },
+    {
+      "start": 432.833,
+      "end": 436.20799999999997,
+      "text": "I don’t want to hurt you! Just keep your distance!"
+    },
+    {
+      "start": 437.20799999999997,
+      "end": 441.125,
+      "text": "All right, then. Eat salt, you little green bastards!"
+    },
+    {
+      "start": 476.83299999999997,
+      "end": 478.54200000000003,
+      "text": "Nuh-uh-uh."
+    },
+    {
+      "start": 478.54200000000003,
+      "end": 483.333,
+      "text": "Those punks treated the world as their own personal rubbish bin."
+    },
+    {
+      "start": 483.333,
+      "end": 485.625,
+      "text": "And you set them free!"
+    },
+    {
+      "start": 485.625,
+      "end": 487.833,
+      "text": "Now you'll join them!"
+    },
+    {
+      "start": 525.875,
+      "end": 529.167,
+      "text": "I’ll give you that one, Brother Bird!"
+    },
+    {
+      "start": 530,
+      "end": 535.417,
+      "text": "Alright sprites, let’s burn the bodies and have some peppermint tea."
+    }
+  ]
+}

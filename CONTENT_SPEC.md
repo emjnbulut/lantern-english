@@ -112,6 +112,7 @@ Rules:
 - `captions` contains English plain text and numeric seconds from the start of the complete video. Strip SRT markup and formatting tags. Cues must be non-empty, chronological and non-overlapping, with `0 <= start < end`; they may not exceed `durationSeconds` by more than one second.
 - `source` fields shown above are required. `subtitleSource.licenseUrl` is optional. `glossary` is optional and uses lowercase word keys with Turkish meanings.
 - Optional `qualities`: `[{ "label": "720p", "url": "https://…-720.mp4", "sizeMB": 225 }, …]` (≥2 HTTPS MP4 files, `videoUrl` must be one of them). The player offers them in Ayarlar; the choice is remembered (`lantern.prefs.vq`). `videoUrl` is the default (720p).
+- Optional subtitle attribution: subtitleSource.credit names contributors and subtitleSource.changeNoteTr discloses formatting/timing edits. When subtitles have a separate license, include subtitleSource.licenseUrl; the player displays it independently from the film license. ShareAlike subtitle text remains under its stated license, separately from application code.
 - Caption words use the existing English–Turkish dictionary/tooltip behavior. Site-owned timed captions are separate from native player captions, allowing taps and dictionary lookup.
 - The service worker caches the app and caption bundle for revisits. Playback still needs access to the external video host; no offline movie download is provided.
 

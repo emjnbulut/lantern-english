@@ -703,9 +703,9 @@
           <button class="btn sm" id="video-fullscreen" type="button" disabled>Tam ekran</button>
           <button class="btn sm" id="cap-settings-btn" type="button" aria-expanded="false" aria-controls="cap-settings">${ICON.gear} Ayarlar</button></div>
       </section>
-      <p class="video-credit">Film ve İngilizce altyazı: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
+      <p class="video-credit">Film: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
         ${esc(v.source.credit)} · <a href="${esc(v.source.licenseUrl)}" target="_blank" rel="noopener">${esc(v.source.license)}</a>.
-        <a href="${esc(v.subtitleSource.url)}" target="_blank" rel="noopener">Altyazı kaynağı</a>. Film, kapanış jeneriğiyle birlikte oynatılır. Türkçe öğrenme açıklamaları Lantern English tarafından hazırlanmıştır.</p>
+        <a href="${esc(v.subtitleSource.url)}" target="_blank" rel="noopener">${esc(v.subtitleSource.name)}</a> · ${v.subtitleSource.licenseUrl ? `<a href="${esc(v.subtitleSource.licenseUrl)}" target="_blank" rel="noopener">${esc(v.subtitleSource.license)}</a>` : esc(v.subtitleSource.license)}. ${v.subtitleSource.credit ? esc(v.subtitleSource.credit) + ". " : ""}${v.subtitleSource.changeNoteTr ? esc(v.subtitleSource.changeNoteTr) + " " : ""}Film, kapanış jeneriğiyle birlikte oynatılır. Türkçe öğrenme açıklamaları Lantern English tarafından hazırlanmıştır.</p>
     </article>`;
     const player = document.getElementById("video-player");
     const captions = document.getElementById("video-captions");

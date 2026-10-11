@@ -66,6 +66,11 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - `sw.js` is stamped by `tools/make-site.mjs`; registration is skipped on `file://`.
 - Footer credit "created by emjn" and `LICENSE` are owner requirements; keep them.
 
+## Current video additions (2026-10-12)
+- The owner authorized three NEW videos: Elephants Dream (B1 with subtitle support), Cosmos Laundromat: First Cycle (B2), Sprite Fright (B2). Five videos total; preserve Sintel and Tears of Steel. Levels are editorial listening estimates, not certifications.
+- Official complete Blender MP4 files include end credits and default to 720p. Sprite Fright uses the official English VTT; the other two use Wikimedia Commons contributor captions under CC BY-SA 4.0, credited and linked separately from the film licenses. Caption formatting is stripped; three Elephants Dream overlaps are clipped by 3–9 ms and disclosed.
+- Validate new caption vocabulary with node tools/video-vocab.mjs elephants-dream cosmos-laundromat sprite-fright; do not alter unrelated content or undo the other AI’s player/fullscreen/network-first service-worker changes. Build from a clean committed worktree and follow HOSTING.md.
+
 ## Current change (2026-10-11)
 - The owner then authorized exactly one trial video, Sintel (B1 with English subtitle support, an editorial estimate). `#videos` and `#v.sintel` are separate from reading collections and bookmarks. Its verified official CC BY 3.0 English SRT has 26 timed cues; the complete external film includes credits. `content/videos/` builds into `data/videos.js`. Do not add further videos without a new request. Words in the separate subtitle area use the existing dictionary; tapping pauses playback. Video media loads only after a play action and requires internet.
 - The owner requested the final bookshelf correction: all records must remain available beyond three, and every story needs an explicit "Kitaplığıma ekle" checkbox instead of automatic saving on entry. Keep the existing card save buttons; reader check/uncheck adds/removes only that text. Verify more than three records across reloads and that entering an unsaved story does not save it. No new content is part of this interface task.

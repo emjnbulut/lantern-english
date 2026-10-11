@@ -505,11 +505,11 @@ try {
   const beforeVideoRequests = externalRequests.length;
   await evaluate("document.querySelector('[data-nav=\"videos\"]').click()");
   await waitFor(videoCollectionReady);
-  const trialVideo = await evaluate("window.LANTERN_VIDEOS[0]");
-  assert(await evaluate("window.LANTERN_VIDEOS.length >= 1 && window.LANTERN_VIDEOS[0].id === 'sintel' && window.LANTERN_VIDEOS[0].level === 'B1' && document.querySelector('a.video-card').hash === '#v.sintel'"), "The video trial must contain exactly one Sintel B1 card.");
+  const trialVideo = await evaluate("window.LANTERN_VIDEOS.find(v => v.id === 'sintel')");
+  assert(await evaluate("window.LANTERN_VIDEOS.some(v => v.id === 'sintel' && v.level === 'B1') && document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length"), "The collection must retain Sintel B1 and display every video.");
   assert(await evaluate("document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "The video collection must have active navigation.");
   await screenshot("videos-desktop");
-  await evaluate("document.querySelector('a.video-card').click()");
+  await evaluate("document.querySelector('a.video-card[href=\"#v.sintel\"]').click()");
   await waitFor(videoReady);
   assert(await evaluate("document.querySelector('#video-view h1').textContent === 'Sintel' && document.querySelector('#video-view .lvl').textContent === 'B1' && document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "Sintel details must show the B1 level and video navigation.");
   const unloadedPlayer = "(() => { const p = document.getElementById('video-player'); return p instanceof HTMLVideoElement && !p.controls && !!document.getElementById('video-bar') && p.playsInline && p.preload === 'none' && !p.hasAttribute('src') && !p.hasAttribute('poster') && !p.querySelector('source'); })()";
@@ -564,6 +564,21 @@ try {
   const afterVideoCleanup = await evaluate("document.getElementById('main').innerHTML");
   await evaluate("window.__discardedVideo.dispatchEvent(new Event('timeupdate')); window.__discardedVideo.dispatchEvent(new Event('loadedmetadata'))");
   assert(await evaluate("document.getElementById('main').innerHTML") === afterVideoCleanup && browserErrors.length === 0, "Late events from a discarded player must not mutate the next view or throw errors.");
+  const addedVideos = await evaluate("window.LANTERN_VIDEOS.filter(v => ['elephants-dream', 'cosmos-laundromat', 'sprite-fright'].includes(v.id))");
+  assert(addedVideos.length === 3 && addedVideos.filter(v => v.level === "B2").length === 2 && addedVideos.filter(v => v.level === "B1").length === 1, "The three additions must contain two B2 films and one B1 film.");
+  for (const v of addedVideos) {
+    await navigate("v." + v.id, `document.getElementById("video-view")?.dataset.id === ${JSON.stringify(v.id)}`);
+    assert(await evaluate(unloadedPlayer), v.id + ": media must remain unloaded on entry.");
+    assert(await evaluate(`document.querySelector("#video-view h1").textContent === ${JSON.stringify(v.title)} && document.querySelector("#video-view .lvl").textContent === ${JSON.stringify(v.level)} && document.querySelectorAll("#caption-select option").length === ${v.captions.length}`), v.id + ": title, level and complete captions must be available.");
+    assert(await evaluate(`Array.from(document.querySelectorAll(".video-credit a")).some(a => a.href === ${JSON.stringify(v.subtitleSource.licenseUrl)})`), v.id + ": subtitle license must be linked separately.");
+    for (let i = 0; i < v.captions.length; i++) {
+      await evaluate(`(() => { const s=document.getElementById("caption-select"); s.value="${i}"; s.dispatchEvent(new Event("change")); })()`);
+      assert(await captionText() === v.captions[i].text.replace(/\s+/g, " ").trim(), v.id + ": caption " + (i+1) + " must retain the source text.");
+    }
+    await evaluate("document.querySelector('#video-captions .w').click()");
+    assert(await evaluate("!document.getElementById('tip').hidden && !!document.querySelector('#tip .tip-tr')?.textContent.trim()"), v.id + ": caption tap must open a Turkish meaning.");
+    await screenshot("video-added-" + v.id);
+  }
   await checkDirectBack("v.sintel", "videos", videoReady);
   await checkDirectBack("videos", "home", videoCollectionReady);
   assert(JSON.stringify(await evaluate("[localStorage.getItem('lantern.bookmarks'), localStorage.getItem('lantern.progress')]")) === JSON.stringify(beforeVideoState), "Video playback and caption tools must leave reading bookmarks and story progress unchanged.");
@@ -957,7 +972,7 @@ try {
     await navigate("videos", videoCollectionReady);
     assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length"), `${width}px video collection must fit and list every video.`);
     await screenshot("videos-mobile-" + width);
-    await evaluate("document.querySelector('a.video-card').click()");
+    await evaluate("document.querySelector('a.video-card[href=\"#v.sintel\"]').click()");
     await waitFor(videoReady);
     assert(await evaluate(unloadedPlayer) && await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && Array.from(document.querySelectorAll('.video-stage, .caption-controls')).every(e => { const r = e.getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })"), `${width}px video details and caption controls must fit without loading media.`);
     await evaluate("document.querySelector('#video-captions .w').click()");
@@ -971,7 +986,7 @@ try {
   if (process.argv.includes("--online-video")) {
     // This opt-in check is a single bounded media attempt, never part of ordinary offline smoke.
     await navigate("videos", videoCollectionReady);
-    await evaluate("document.querySelector('a.video-card').click()");
+    await evaluate("document.querySelector('a.video-card[href=\"#v.sintel\"]').click()");
     await waitFor(videoReady);
     await page("Network.setBlockedURLs", { urls: [] });
     await page("Network.emulateNetworkConditions", { offline: false, latency: 50, downloadThroughput: 196608, uploadThroughput: 65536, connectionType: "cellular3g" });

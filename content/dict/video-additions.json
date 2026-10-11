@@ -1,0 +1,42 @@
+{
+  "snail": {
+    "pos": "isim",
+    "tr": "salyangoz"
+  },
+  "shush": {
+    "pos": "ünlem/fiil",
+    "tr": "şş, sus; susturmak"
+  },
+  "gross": {
+    "pos": "sıfat",
+    "tr": "iğrenç, tiksindirici; brüt"
+  },
+  "fungus": {
+    "pos": "isim",
+    "tr": "mantar"
+  },
+  "campsite": {
+    "pos": "isim",
+    "tr": "kamp yeri"
+  },
+  "bloody": {
+    "pos": "sıfat/zarf",
+    "tr": "kanlı; lanet olası (İngiliz argosu)"
+  },
+  "gnome": {
+    "pos": "isim",
+    "tr": "cüce, bahçe cücesi"
+  },
+  "adorable": {
+    "pos": "sıfat",
+    "tr": "çok sevimli, tatlı"
+  },
+  "peppermint": {
+    "pos": "isim",
+    "tr": "nane, bahçe nanesi"
+  },
+  "ketchup": {
+    "pos": "isim",
+    "tr": "ketçap"
+  }
+}

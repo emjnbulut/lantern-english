@@ -1,0 +1,496 @@
+{
+  "id": "elephants-dream",
+  "type": "video",
+  "title": "Elephants Dream",
+  "creator": "Blender Foundation",
+  "year": 2006,
+  "level": "B1",
+  "durationSeconds": 654,
+  "genre": "scifi",
+  "summaryTr": "Emo ve Proog, tuhaf makinelerle dolu bir dünyada yol alırken gördükleri şeyler konusunda anlaşamaz. Kısa sorular, yön tarifleri ve tekrarlanan günlük ifadelerle dinleme pratiği yap.",
+  "levelNoteTr": "B1, İngilizce altyazı ve kelime desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Konuşmalar çoğunlukla kısa, yavaş ve tekrarlıdır. Soyut olay örgüsünü yorumlamak ve birkaç mecazı anlamak daha ileri düzeyde olabilir; uzun sessiz sahneler vardır.",
+  "advisoryTr": "Karanlık ve gerçeküstü görüntüler, tehdit ve fiziksel şiddet içerir; küçük çocuklar için uygun olmayabilir.",
+  "videoUrl": "https://video.blender.org/object-storage/web_videos/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5-720.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://video.blender.org/object-storage/web_videos/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5-240.mp4",
+      "sizeMB": 31
+    },
+    {
+      "label": "360p",
+      "url": "https://video.blender.org/object-storage/web_videos/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5-360.mp4",
+      "sizeMB": 50
+    },
+    {
+      "label": "480p",
+      "url": "https://video.blender.org/object-storage/web_videos/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5-480.mp4",
+      "sizeMB": 70
+    },
+    {
+      "label": "720p",
+      "url": "https://video.blender.org/object-storage/web_videos/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5-720.mp4",
+      "sizeMB": 117
+    }
+  ],
+  "source": {
+    "name": "Blender Foundation — Elephants Dream",
+    "url": "https://orange.blender.org/",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5/",
+    "credit": "(CC) Blender Foundation / Netherlands Media Art Institute | orange.blender.org",
+    "licenseSourceUrl": "https://orange.blender.org/blog/creative-commons-license-2/",
+    "watchUrl": "https://video.blender.org/videos/watch/cccc3e60-0291-4ecc-aa56-39b2e2c7d0d5",
+    "creditNoteTr": "Film, kapanış jeneriğiyle birlikte resmî Blender kaynağından değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText:Elephants_Dream.ogv.en.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar kaynak sayfasının geçmişinde)",
+    "changeNoteTr": "Altyazı sözleri korunmuş; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür. Üç küçük zaman çakışmasının bitişleri en fazla 0,009 saniye kısaltılmıştır."
+  },
+  "glossary": {
+    "emo": "Emo (karakter adı)",
+    "proog": "Proog (karakter adı)",
+    "snarlers": "hırlayan şeyler; filmde hayalî makine adı",
+    "pulp": "posa; burada ezilmiş bir kütle",
+    "ground": "ezilmiş, öğütülmüş",
+    "sick": "hasta; burada rahatsız, dengesiz",
+    "babylon": "Babil",
+    "colossus": "dev heykel",
+    "rhodes": "Rodos",
+    "clockwork": "saat mekanizması; kusursuz işleyiş",
+    "hah": "hah! (ünlem)",
+    "b": "but kelimesinde kekeleme (ama)",
+    "n": "no kelimesinde kekeleme (hayır)"
+  },
+  "captions": [
+    {
+      "start": 15,
+      "end": 18.13,
+      "text": "At the left we can see…"
+    },
+    {
+      "start": 18.13,
+      "end": 20.5,
+      "text": "At the right we can see the—"
+    },
+    {
+      "start": 20.5,
+      "end": 21.98,
+      "text": "…the head-snarlers."
+    },
+    {
+      "start": 21.98,
+      "end": 24.55,
+      "text": "Everything is safe… Perfectly safe."
+    },
+    {
+      "start": 24.55,
+      "end": 25.77,
+      "text": "Emo?"
+    },
+    {
+      "start": 26.12,
+      "end": 27.22,
+      "text": "Emo?"
+    },
+    {
+      "start": 28.62,
+      "end": 30.104,
+      "text": "Watch out!"
+    },
+    {
+      "start": 46.56,
+      "end": 48.26,
+      "text": "Are you hurt?"
+    },
+    {
+      "start": 51.99,
+      "end": 54.2,
+      "text": "I don’t think so. You?"
+    },
+    {
+      "start": 55.52,
+      "end": 57.09,
+      "text": "I’m OK."
+    },
+    {
+      "start": 57.09,
+      "end": 61.11,
+      "text": "Get up, Emo! It’s not safe here."
+    },
+    {
+      "start": 62.03,
+      "end": 63.22,
+      "text": "Let’s go."
+    },
+    {
+      "start": 63.22,
+      "end": 65.19,
+      "text": "What’s next?"
+    },
+    {
+      "start": 65.19,
+      "end": 66.96,
+      "text": "You’ll see!"
+    },
+    {
+      "start": 67.68,
+      "end": 68.84,
+      "text": "You’ll see!"
+    },
+    {
+      "start": 76.03,
+      "end": 78.48,
+      "text": "Emo! This way."
+    },
+    {
+      "start": 94.22999999999999,
+      "end": 95.47999999999999,
+      "text": "Follow me!"
+    },
+    {
+      "start": 131.1,
+      "end": 132.52100000000002,
+      "text": "Hurry, Emo!"
+    },
+    {
+      "start": 168.438,
+      "end": 170.063,
+      "text": "You’re not paying attention!"
+    },
+    {
+      "start": 170.063,
+      "end": 174.31,
+      "text": "I–I just want to answer the phone."
+    },
+    {
+      "start": 174.31,
+      "end": 177.04,
+      "text": "Emo, look… I mean, listen."
+    },
+    {
+      "start": 179.14,
+      "end": 182,
+      "text": "You have to learn to listen."
+    },
+    {
+      "start": 183.14,
+      "end": 185.04,
+      "text": "This is not some game."
+    },
+    {
+      "start": 185.04,
+      "end": 189.18,
+      "text": "You… I mean, we. We could easily die out here."
+    },
+    {
+      "start": 190.01,
+      "end": 194.39600000000002,
+      "text": "Listen… Listen to the sounds of the machine."
+    },
+    {
+      "start": 198.05,
+      "end": 200,
+      "text": "Listen to your breathing."
+    },
+    {
+      "start": 266.646,
+      "end": 269.313,
+      "text": "Well, don’t you ever get tired of this?"
+    },
+    {
+      "start": 269.313,
+      "end": 271.09,
+      "text": "Tired?!"
+    },
+    {
+      "start": 271.09,
+      "end": 273.31,
+      "text": "Emo, the machine is like…"
+    },
+    {
+      "start": 273.31,
+      "end": 275.26,
+      "text": "Like clockwork!"
+    },
+    {
+      "start": 275.26,
+      "end": 277.063,
+      "text": "One move out of place…"
+    },
+    {
+      "start": 277.063,
+      "end": 279.12,
+      "text": "…and you’re ground to a pulp."
+    },
+    {
+      "start": 280.95,
+      "end": 282.104,
+      "text": "But isn’t it—"
+    },
+    {
+      "start": 282.104,
+      "end": 286.03,
+      "text": "Pulp, Emo! Is that what you want? Pulp?"
+    },
+    {
+      "start": 287.104,
+      "end": 290.42,
+      "text": "Emo, your goal in life…"
+    },
+    {
+      "start": 290.44,
+      "end": 291.95,
+      "text": "…pulp?!"
+    },
+    {
+      "start": 341.31,
+      "end": 343.42,
+      "text": "Emo, close your eyes."
+    },
+    {
+      "start": 344.15,
+      "end": 345.396,
+      "text": "–Why?\n–Now!"
+    },
+    {
+      "start": 351.15,
+      "end": 351.97,
+      "text": "OK."
+    },
+    {
+      "start": 353.11,
+      "end": 354.68,
+      "text": "Good."
+    },
+    {
+      "start": 359.42,
+      "end": 362.1,
+      "text": "What do you see at your left side, Emo?"
+    },
+    {
+      "start": 364.02,
+      "end": 366,
+      "text": "–Nothing.\n–Really?"
+    },
+    {
+      "start": 366,
+      "end": 367.58,
+      "text": "No, nothing at all."
+    },
+    {
+      "start": 367.58,
+      "end": 371.98,
+      "text": "Really? A–And at your right? What do you see at your right side, Emo?"
+    },
+    {
+      "start": 373.31,
+      "end": 376.84,
+      "text": "The same, Proog. Exactly the same…"
+    },
+    {
+      "start": 376.84,
+      "end": 379.896,
+      "text": "–…nothing!\n–Great."
+    },
+    {
+      "start": 399.97,
+      "end": 402.72,
+      "text": "Listen, Proog! Do you hear that?"
+    },
+    {
+      "start": 403.44,
+      "end": 404.56,
+      "text": "Can we go here?"
+    },
+    {
+      "start": 405.063,
+      "end": 406.56,
+      "text": "–There?\n–Yeah!"
+    },
+    {
+      "start": 406.58,
+      "end": 408.188,
+      "text": "It isn’t safe, Emo."
+    },
+    {
+      "start": 409.14,
+      "end": 412.01,
+      "text": "–B–But…\n–Trust me, it’s not."
+    },
+    {
+      "start": 413.02,
+      "end": 414.17,
+      "text": "Well, maybe I could…"
+    },
+    {
+      "start": 414.17,
+      "end": 415.146,
+      "text": "No."
+    },
+    {
+      "start": 417.1,
+      "end": 418.82,
+      "text": "–But…\n–No!"
+    },
+    {
+      "start": 418.82,
+      "end": 420.24,
+      "text": "No!"
+    },
+    {
+      "start": 420.771,
+      "end": 423.05,
+      "text": "Any further questions, Emo?"
+    },
+    {
+      "start": 423.97,
+      "end": 425.09,
+      "text": "N–No."
+    },
+    {
+      "start": 429.05,
+      "end": 430.08,
+      "text": "Emo?"
+    },
+    {
+      "start": 431.14,
+      "end": 433.08,
+      "text": "Emo, why?!"
+    },
+    {
+      "start": 433.08,
+      "end": 435.36,
+      "text": "Emo, why…?"
+    },
+    {
+      "start": 435.36,
+      "end": 438.84,
+      "text": "Why can’t you see the beauty of this place?"
+    },
+    {
+      "start": 438.84,
+      "end": 440.646,
+      "text": "The way it works."
+    },
+    {
+      "start": 440.646,
+      "end": 443.92,
+      "text": "How… How perfect it is."
+    },
+    {
+      "start": 443.92,
+      "end": 447.04,
+      "text": "No, Proog, I don’t see."
+    },
+    {
+      "start": 447.04,
+      "end": 449.97,
+      "text": "I don’t see because there’s nothing there."
+    },
+    {
+      "start": 451.05,
+      "end": 455.24,
+      "text": "And why should I trust my life to something that isn’t there?"
+    },
+    {
+      "start": 455.24,
+      "end": 456.6,
+      "text": "Well, can you tell me that?"
+    },
+    {
+      "start": 456.6,
+      "end": 457.38,
+      "text": "Emo…"
+    },
+    {
+      "start": 457.38,
+      "end": 458.92,
+      "text": "Answer me!"
+    },
+    {
+      "start": 462.97,
+      "end": 464,
+      "text": "Proog…"
+    },
+    {
+      "start": 465.05,
+      "end": 466.854,
+      "text": "…you’re a sick man!"
+    },
+    {
+      "start": 466.854,
+      "end": 468.90999999999997,
+      "text": "Stay away from me!"
+    },
+    {
+      "start": 472.188,
+      "end": 474.854,
+      "text": "No! Emo! It’s a trap!"
+    },
+    {
+      "start": 475.42,
+      "end": 476.979,
+      "text": "Hah, “it’s a trap!”"
+    },
+    {
+      "start": 476.979,
+      "end": 481.229,
+      "text": "At the left side you can see the Hanging Gardens of Babylon!"
+    },
+    {
+      "start": 481.96,
+      "end": 483.95,
+      "text": "How’s that for a trap?"
+    },
+    {
+      "start": 485.72,
+      "end": 486.92,
+      "text": "No, Emo."
+    },
+    {
+      "start": 489,
+      "end": 492.64,
+      "text": "At the right side you can see—well guess what…"
+    },
+    {
+      "start": 492.64,
+      "end": 494.66,
+      "text": "…the Colossus of Rhodes!"
+    },
+    {
+      "start": 495.32,
+      "end": 496.39,
+      "text": "No!"
+    },
+    {
+      "start": 496.396,
+      "end": 500.16,
+      "text": "The Colossus of Rhodes! And it is here just for you, Proog."
+    },
+    {
+      "start": 500.16,
+      "end": 501.688,
+      "text": "Just for you!"
+    },
+    {
+      "start": 531,
+      "end": 533.021,
+      "text": "It is there…"
+    },
+    {
+      "start": 533.021,
+      "end": 536.04,
+      "text": "I’m telling you, Emo…"
+    },
+    {
+      "start": 537,
+      "end": 539.86,
+      "text": "…it is… there…"
+    }
+  ]
+}
