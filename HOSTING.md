@@ -2,6 +2,8 @@
 
 **Güncel adres:** https://lantern-english.github.io/ — GitHub Pages. Aşağıdaki ChatGPT Sites kaydı eski, owner-private kopyaya aittir. Güncel siteyi ayrı public depo üzerinden, Git geçmişini koruyan normal commit/push ile güncelle; ayrıntılar bu dosyanın GitHub Pages bölümünde.
 
+**Son doğrulanmış yayın (11 Ekim 2026):** Üç kitap özeti kaldırıldı; sol üstte geri düğmesi ve tüm hikâyelerde sayfalama yayımlandı. Paket kaynak commiti `52f0f74`, public yayın commiti `0db053e13ab47d2180b609896c1ddd0daa545cb1`, service worker sürümü `4273b54adf`. Temiz pakette 30 hikâye, 16 makale ve 0 kitap özeti var; 159 tarayıcı kontrolü geçti. Canlı `index.html`, `assets/js/app.js`, `assets/css/style.css`, `data/library.js` ve `sw.js` dosyalarının SHA-256 değerleri doğrulanmış paketle eşleşti. Public depo geçmişi normal push ile korundu. Ana çalışma klasöründeki commit edilmemiş Frankenstein/Kafka düzenlemeleri bu yayına dahil edilmedi.
+
 - URL: **https://lantern-english.copperlion512.chatgpt.site**
 - Hizmet: Sites; durum **succeeded** (11 Ekim 2026).
 - Erişim: **owner-private**, sahibinin ChatGPT hesabıyla. Başka kişilere açılması henüz istenmedi. Mevcut erişimi kullanıcı talebi olmadan değiştirme.
