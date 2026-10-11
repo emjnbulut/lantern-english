@@ -15,8 +15,8 @@
     { id: "A1", name: "Başlangıç", desc: "Basit cümleler, günlük kelimeler" },
     { id: "A2", name: "Temel", desc: "Geçmiş zaman, kısa diyaloglar" },
     { id: "B1", name: "Orta", desc: "Akıcı anlatım, bağlaçlar" },
-    { id: "B2", name: "Orta üstü", desc: "Klasik kısa öyküler" },
-    { id: "C1", name: "İleri", desc: "Zengin kelime, eski üslup" },
+    { id: "B2", name: "Orta üstü", desc: "Klasikler ve özgün öyküler" },
+    { id: "C1", name: "İleri", desc: "Zengin kelime, yoğun anlatım" },
     { id: "C2", name: "Ustalık", desc: "Edebî ve akademik dil" },
   ];
   const GENRES = {
@@ -26,7 +26,7 @@
     adventure: { name: "Macera", desc: "Doğayla ve kendinle mücadele" },
     romance: { name: "Romantik", desc: "Aşk, fedakârlık, sürpriz sonlar" },
     scifi: { name: "Bilim Kurgu", desc: "Yarının ve uzayın hikâyeleri" },
-    fable: { name: "Fabl", desc: "Kısa, hayvanlı, hikmetli" },
+    fable: { name: "Fabl", desc: "Hayvanlar, seçimler ve dersler" },
     drama: { name: "Dram", desc: "İnsan halleri, gurur ve kader" },
   };
   const LENGTHS = { short: "Kısa", medium: "Orta", long: "Uzun" };
@@ -56,6 +56,7 @@
   let progress = S.load("progress", {});
   const prefs = Object.assign({ size: 19, mode: "hover", last: null }, S.load("prefs", {}));
   const filt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("filters", {}));
+  const articleFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("articleFilters", {}));
   const saveWords = () => { S.save("words", words); updateBadge(); };
   const saveProgress = () => S.save("progress", progress);
   const savePrefs = () => S.save("prefs", prefs);
@@ -397,9 +398,13 @@
   function viewHome() {
     const reading = Object.entries(progress)
       .filter(([id, p]) => BY_ID[id] && !p.done && p.f > 0.03)
-      .sort((a, b) => (b[1].at || 0) - (a[1].at || 0)).slice(0, 3).map(([id]) => BY_ID[id]);
+      .sort((a, b) => (b[1].at || 0) - (a[1].at || 0)).map(([id]) => BY_ID[id]);
+    const readingStories = reading.filter((t) => t.type === "story").slice(0, 3);
+    const readingArticles = reading.filter((t) => t.type === "article").slice(0, 3);
     const featured = LEVELS.map((lv) => STORIES.find((s) => s.level === lv.id && !(progress[s.id] && progress[s.id].done)) || STORIES.find((s) => s.level === lv.id)).filter(Boolean);
-    const levelCount = (id) => LIB.filter((t) => t.level === id).length;
+    const advanced = STORIES.filter((s) => ["B2", "C1", "C2"].includes(s.level) && s.author === "Lantern Original")
+      .sort((a, b) => LEVELS.findIndex((l) => l.id === b.level) - LEVELS.findIndex((l) => l.id === a.level)).slice(0, 5);
+    const levelCount = (id) => STORIES.filter((t) => t.level === id).length;
     const genreCount = (g) => STORIES.filter((t) => t.genre === g).length;
     $main.innerHTML = `
       <section class="hero">
@@ -408,7 +413,7 @@
           <h1>Okudukça öğren. <em>Her kelime</em> bir dokunuş uzağında.</h1>
           <p class="lead">Seviyene uygun hikâyeleri oku; anlamını bilmediğin kelimenin üzerine gel, Türkçesi hemen çıksın. Beğendiklerini defterine kaydet, kartlarla tekrar et.</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#library">Kütüphaneye göz at</a>
+            <a class="btn primary" href="#library">Hikâyelere göz at</a>
             <button class="btn" id="random">${ICON.dice} Bana bir hikâye seç</button>
           </div>
           <div class="stats">
@@ -425,29 +430,44 @@
         </div>
       </section>
 
-      ${reading.length ? `<section class="section"><div class="section-head"><h2>Okumaya devam et</h2></div>${grid(reading)}</section>` : ""}
+      <section class="section" aria-label="Okuma bölümleri">
+        <div class="collection-grid">
+          <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · ${STORIES.length} hikâye</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
+          <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · ${ARTICLES.length} makale</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
+        </div>
+      </section>
+
+      ${readingStories.length ? `<section class="section"><div class="section-head"><h2>Hikâyene devam et</h2><a class="link" href="#library">Hikâyeler</a></div>${grid(readingStories)}</section>` : ""}
+      ${readingArticles.length ? `<section class="section"><div class="section-head"><h2>Makalene devam et</h2><a class="link" href="#articles">Makaleler</a></div>${grid(readingArticles)}</section>` : ""}
 
       <section class="section">
-        <div class="section-head"><h2>Seviyeni seç</h2><a class="link" href="#about">Hangi seviyedeyim?</a></div>
+        <div class="section-head"><h2>Hikâye seviyeni seç</h2><a class="link" href="#about">Hangi seviyedeyim?</a></div>
         <div class="ladder">
           ${LEVELS.map((lv, i) => `<a class="step lvl-${lv.id}" style="--h:${i}" href="#library" data-level="${lv.id}">
-            <b>${lv.id}</b><span class="name">${lv.name}</span><span class="count">${levelCount(lv.id)} metin · ${lv.desc}</span></a>`).join("")}
+            <b>${lv.id}</b><span class="name">${lv.name}</span><span class="count">${levelCount(lv.id)} hikâye · ${lv.desc}</span></a>`).join("")}
         </div>
       </section>
 
       <section class="section">
-        <div class="section-head"><h2>Türler</h2></div>
+        <div class="section-head"><h2>Hikâye türleri</h2></div>
         <div class="genre-grid">
           ${Object.entries(GENRES).map(([g, v]) => `<a class="genre-tile g-${g}" href="#library" data-genre="${g}">
             <span class="gname"><span class="dot"></span>${v.name}</span><span class="gdesc">${v.desc} · ${genreCount(g)} hikâye</span></a>`).join("")}
         </div>
       </section>
 
+      ${advanced.length ? `<section class="section"><div class="section-head"><h2>İleri seviye özgün hikâyeler</h2><button class="btn sm" id="advanced-stories">B2–C2 hikâyelerini gör</button></div>${grid(advanced)}</section>` : ""}
+
       <section class="section">
         <div class="section-head"><h2>Her seviyeden bir hikâye</h2><a class="link" href="#library">Tümünü gör</a></div>
         ${grid(featured) || `<div class="empty"><h3>Kütüphane hazırlanıyor</h3><p>Hikâyeler eklendiğinde burada görünecek.</p></div>`}
       </section>`;
     bindText(document.getElementById("demo-text"), DEMO);
+    const advancedButton = document.getElementById("advanced-stories");
+    if (advancedButton) advancedButton.addEventListener("click", () => {
+      filt.level = ["B2", "C1", "C2"]; filt.genre = []; filt.length = []; filt.q = "";
+      saveFilt(); location.hash = "library";
+    });
     document.getElementById("random").addEventListener("click", () => {
       const pool = STORIES.filter((s) => !(progress[s.id] && progress[s.id].done));
       const pick = (pool.length ? pool : STORIES)[Math.floor(Math.random() * (pool.length || STORIES.length))];
@@ -456,63 +476,66 @@
   }
 
   function viewLibrary() {
+    viewCollection("story");
+  }
+
+  function viewArticles() {
+    viewCollection("article");
+  }
+
+  function viewCollection(kind) {
+    const isArticle = kind === "article";
+    const collection = isArticle ? ARTICLES : STORIES;
+    const filters = isArticle ? articleFilt : filt;
+    const saveFilters = () => S.save(isArticle ? "articleFilters" : "filters", filters);
+    const label = isArticle ? "makale" : "hikâye";
+    const levels = isArticle ? LEVELS.filter((l) => ["B2", "C1", "C2"].includes(l.id)) : LEVELS;
     const chip = (group, val, label, extra) =>
-      `<button class="chip${extra || ""}" data-f="${group}" data-v="${val}" aria-pressed="${filt[group].includes(val)}">${label}</button>`;
+      `<button class="chip${extra || ""}" data-f="${group}" data-v="${val}" aria-pressed="${filters[group].includes(val)}">${label}</button>`;
     $main.innerHTML = `
+      <nav class="collection-switch" aria-label="Okuma bölümleri"><a href="#library"${!isArticle ? ' aria-current="page"' : ""}>Hikâyeler <span>${STORIES.length}</span></a><a href="#articles"${isArticle ? ' aria-current="page"' : ""}>Makaleler <span>${ARTICLES.length}</span></a></nav>
       <div class="lib-head">
-        <div><p class="eyebrow">Kütüphane</p><h1>Ne okumak istersin?</h1></div>
-        <label class="search">${ICON.search}<input id="q" type="search" placeholder="Başlık ya da yazar ara" value="${esc(filt.q)}" aria-label="Ara"></label>
+        <div><p class="eyebrow">${isArticle ? "Denemeler · B2–C2" : "Hikâye kütüphanesi · A1–C2"}</p><h1>${isArticle ? "Makaleler" : "Hikâyeler"}</h1><p class="lead">${isArticle ? "Edebiyat, türler ve anlatı üzerine özgün denemeler. Seviyene ve ilgini çeken konuya göre bir makale seç." : "Klasikler ve özgün hikâyeler. Seviyene, türe ve okuma uzunluğuna göre seç."}</p></div>
+        <label class="search">${ICON.search}<input id="q" type="search" placeholder="${isArticle ? "Makale" : "Hikâye"} başlığı ya da yazar ara" value="${esc(filters.q)}" aria-label="${isArticle ? "Makale" : "Hikâye"} ara"></label>
       </div>
       <div class="filters">
-        <div class="filter-row"><span>Seviye</span><div class="chips">${LEVELS.map((l) => chip("level", l.id, `<span class="lvl lvl-${l.id}">${l.id}</span> ${l.name}`)).join("")}</div></div>
+        <div class="filter-row"><span>Seviye</span><div class="chips">${levels.map((l) => chip("level", l.id, `<span class="lvl lvl-${l.id}">${l.id}</span> ${l.name}`)).join("")}</div></div>
         <div class="filter-row"><span>Tür</span><div class="chips">${Object.entries(GENRES).map(([g, v]) => chip("genre", g, `<span class="dot"></span>${v.name}`, " g-" + g)).join("")}</div></div>
-        <div class="filter-row"><span>Uzunluk</span><div class="chips">${chip("length", "short", "Kısa · 5–10 dk")}${chip("length", "medium", "Orta · 10–30 dk")}${chip("length", "long", "Uzun · 30 dk+")}</div></div>
+        <div class="filter-row"><span>Uzunluk</span><div class="chips">${chip("length", "short", "Kısa · 1.200 kelimeden az")}${chip("length", "medium", "Orta · 1.200–3.500 kelime")}${chip("length", "long", "Uzun · 3.500 kelimeden fazla")}</div></div>
       </div>
-      <div class="result-line"><span id="count"></span>
+      <div class="result-line"><span id="count" aria-live="polite"></span><button class="btn sm ghost" id="clear">Filtreleri temizle</button>
         <label>Sırala <select id="sort"><option value="level">Seviye</option><option value="short">En kısa</option><option value="long">En uzun</option><option value="title">Başlık</option></select></label>
       </div>
       <div id="results"></div>`;
-    document.getElementById("sort").value = filt.sort;
+    document.getElementById("sort").value = filters.sort;
     const draw = () => {
-      const q = filt.q.trim().toLocaleLowerCase("tr");
-      let list = STORIES.filter((t) =>
-        (!filt.level.length || filt.level.includes(t.level)) &&
-        (!filt.genre.length || filt.genre.includes(t.genre)) &&
-        (!filt.length.length || filt.length.includes(t.length)) &&
+      const q = filters.q.trim().toLocaleLowerCase("tr");
+      let list = collection.filter((t) =>
+        (!filters.level.length || filters.level.includes(t.level)) &&
+        (!filters.genre.length || filters.genre.includes(t.genre)) &&
+        (!filters.length.length || filters.length.includes(t.length)) &&
         (!q || (t.title + " " + t.author + " " + t.summaryTr).toLocaleLowerCase("tr").includes(q)));
       const lv = (t) => LEVELS.findIndex((l) => l.id === t.level);
       list = list.slice().sort(
-        filt.sort === "short" ? (a, b) => a.words - b.words :
-        filt.sort === "long" ? (a, b) => b.words - a.words :
-        filt.sort === "title" ? (a, b) => a.title.localeCompare(b.title) :
+        filters.sort === "short" ? (a, b) => a.words - b.words :
+        filters.sort === "long" ? (a, b) => b.words - a.words :
+        filters.sort === "title" ? (a, b) => a.title.localeCompare(b.title) :
         (a, b) => lv(a) - lv(b) || a.words - b.words);
-      document.getElementById("count").textContent = `${list.length} hikâye`;
-      const arts = ARTICLES.filter((a) => filt.genre.includes(a.genre));
-      document.getElementById("results").innerHTML =
-        (grid(list) || `<div class="empty"><h3>Bu filtrelerle hikâye yok</h3><p>Bir filtreyi kaldırmayı dene.</p><button class="btn" id="clear">Filtreleri temizle</button></div>`) +
-        (arts.length ? `<section class="section"><div class="section-head"><h2>Bu tür hakkında makaleler</h2><a class="link" href="#articles">Tüm makaleler</a></div>${grid(arts)}</section>` : "");
-      const clr = document.getElementById("clear");
-      if (clr) clr.addEventListener("click", () => { filt.level = []; filt.genre = []; filt.length = []; filt.q = ""; saveFilt(); viewLibrary(); });
+      document.getElementById("count").textContent = `${list.length} ${label}`;
+      document.getElementById("results").innerHTML = grid(list) || `<div class="empty"><h3>Bu filtrelerle ${label} yok</h3><p>Bir filtreyi kaldırmayı veya aramayı temizlemeyi dene.</p></div>`;
     };
     $main.querySelector(".filters").addEventListener("click", (ev) => {
       const b = ev.target.closest(".chip");
       if (!b) return;
-      const arr = filt[b.dataset.f], v = b.dataset.v, i = arr.indexOf(v);
+      const arr = filters[b.dataset.f], v = b.dataset.v, i = arr.indexOf(v);
       if (i >= 0) arr.splice(i, 1); else arr.push(v);
       b.setAttribute("aria-pressed", i < 0);
-      saveFilt(); draw();
+      saveFilters(); draw();
     });
-    document.getElementById("q").addEventListener("input", (ev) => { filt.q = ev.target.value; saveFilt(); draw(); });
-    document.getElementById("sort").addEventListener("change", (ev) => { filt.sort = ev.target.value; saveFilt(); draw(); });
+    document.getElementById("q").addEventListener("input", (ev) => { filters.q = ev.target.value; saveFilters(); draw(); });
+    document.getElementById("sort").addEventListener("change", (ev) => { filters.sort = ev.target.value; saveFilters(); draw(); });
+    document.getElementById("clear").addEventListener("click", () => { filters.level = []; filters.genre = []; filters.length = []; filters.q = ""; saveFilters(); viewCollection(kind); });
     draw();
-  }
-
-  function viewArticles() {
-    const byGenre = Object.keys(GENRES).map((g) => [g, ARTICLES.filter((a) => a.genre === g)]).filter(([, a]) => a.length);
-    $main.innerHTML = `
-      <div class="lib-head"><div><p class="eyebrow">Makaleler · B2–C2</p><h1>Hikâyenin arkasındaki fikirler</h1>
-      <p class="lead">İleri seviye okurlar için her türe özel denemeler: korkunun psikolojisi, dedektif romanının doğuşu, fabllar neden ölmez… Hepsinde kelime ipuçları ve anlama soruları var.</p></div></div>
-      ${byGenre.length ? grid(ARTICLES.slice().sort((a, b) => Object.keys(GENRES).indexOf(a.genre) - Object.keys(GENRES).indexOf(b.genre))) : `<div class="empty"><h3>Makaleler hazırlanıyor</h3></div>`}`;
   }
 
   function viewReader(id) {
@@ -522,9 +545,8 @@
     const p = progress[id] || (progress[id] = { f: 0 });
     p.at = Date.now(); saveProgress();
     const isArt = t.type === "article";
-    const article = !isArt && ARTICLES.find((a) => a.genre === t.genre);
     const lvIdx = LEVELS.findIndex((l) => l.id === t.level);
-    const next = STORIES.filter((s) => s.id !== id && !(progress[s.id] && progress[s.id].done))
+    const next = (isArt ? ARTICLES : STORIES).filter((s) => s.id !== id && !(progress[s.id] && progress[s.id].done))
       .map((s) => ({ s, score: Math.abs(LEVELS.findIndex((l) => l.id === s.level) - lvIdx) * 2 + (s.genre === t.genre ? 0 : 1) }))
       .sort((a, b) => a.score - b.score).slice(0, 3).map((x) => x.s);
     const src = t.source
@@ -533,7 +555,7 @@
 
     $main.innerHTML = `
       <article class="reader">
-        <nav class="crumbs"><a href="#home">Ana sayfa</a><span>/</span><a href="${isArt ? "#articles" : "#library"}">${isArt ? "Makaleler" : "Kütüphane"}</a></nav>
+        <nav class="crumbs"><a href="#home">Ana sayfa</a><span>/</span><a href="${isArt ? "#articles" : "#library"}">${isArt ? "Makaleler" : "Hikâyeler"}</a></nav>
         <header class="reader-head">
           <h1>${esc(t.title)}</h1>
           <div class="by">${t.author.startsWith("Lantern") ? (isArt ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? ", " + t.year : "")}</div>
@@ -555,8 +577,7 @@
           ${t.phrases && t.phrases.length ? `<section class="panel"><h2>Bu metindeki ifadeler</h2><p class="sub">Metinde kesik çizgiyle işaretlenenler. Üzerine gelince de görürsün.</p>
             <dl class="phrases">${t.phrases.map((ph) => `<div><dt>${esc(ph.en)}</dt><dd>${esc(ph.tr)}</dd></div>`).join("")}</dl></section>` : ""}
           ${t.quiz && t.quiz.length ? `<section class="panel"><h2>Ne kadar anladın?</h2><p class="sub">${t.quiz.length} soru. Cevabını seçince açıklaması görünür.</p><div class="quiz" id="quiz"></div></section>` : ""}
-          ${article ? `<section><div class="section-head"><h2>Bu türü daha yakından tanı</h2></div>${grid([article])}</section>` : ""}
-          ${next.length ? `<section><div class="section-head"><h2>Sıradaki okuma</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
+          ${next.length ? `<section><div class="section-head"><h2>${isArt ? "Diğer makaleler" : "Sıradaki hikâyeler"}</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
           <p class="source">${src}</p>
         </div>
       </article>`;
@@ -742,17 +763,17 @@
       <h2>Hangi seviyedeyim?</h2>
       <p>Seviyeler Avrupa Ortak Dil Çerçevesi'ne (CEFR) göredir. Bir hikâyede sayfa başına beşten fazla kelimeye bakıyorsan bir alt seviyeyi dene; hiç bakmıyorsan bir üste çık.</p>
       <div class="table-wrap"><table class="cefr"><thead><tr><th>Seviye</th><th>Ne okuyabilirsin</th><th>Lantern'de</th></tr></thead><tbody>
-        <tr><td><span class="lvl lvl-A1">A1</span></td><td>Kısa, basit cümleler; günlük konular.</td><td>Özgün kısa hikâyeler</td></tr>
+        <tr><td><span class="lvl lvl-A1">A1</span></td><td>Kısa, basit cümleler; günlük konular.</td><td>Özgün hikâyeler</td></tr>
         <tr><td><span class="lvl lvl-A2">A2</span></td><td>Geçmiş zamanlı anlatılar, basit diyaloglar.</td><td>Özgün hikâyeler, Aisopos fablları</td></tr>
-        <tr><td><span class="lvl lvl-B1">B1</span></td><td>Akıcı olay örgüsü, bağlaçlar, birkaç deyim.</td><td>Özgün korku, bilim kurgu, macera</td></tr>
-        <tr><td><span class="lvl lvl-B2">B2</span></td><td>Klasik kısa öyküler, ironi, eski üsluplu ifadeler.</td><td>O. Henry, Saki, Maupassant, Jacobs</td></tr>
-        <tr><td><span class="lvl lvl-C1">C1</span></td><td>Yoğun betimleme, uzun cümleler, nadir kelimeler.</td><td>Poe, Conan Doyle, Jack London, H. G. Wells</td></tr>
-        <tr><td><span class="lvl lvl-C2">C2</span></td><td>Akademik ve edebî metinler, ince anlam farkları.</td><td>Tür makaleleri</td></tr>
+        <tr><td><span class="lvl lvl-B1">B1</span></td><td>Akıcı olay örgüsü, bağlaçlar, birkaç deyim.</td><td>Macera, korku, bilim kurgu, romantik ve dram hikâyeleri</td></tr>
+        <tr><td><span class="lvl lvl-B2">B2</span></td><td>Klasik kısa öyküler, ironi, eski üsluplu ifadeler.</td><td>O. Henry, Saki, Maupassant, Jacobs ve özgün gizem</td></tr>
+        <tr><td><span class="lvl lvl-C1">C1</span></td><td>Yoğun betimleme, uzun cümleler, nadir kelimeler.</td><td>Poe, Conan Doyle, Jack London, H. G. Wells ve özgün korku</td></tr>
+        <tr><td><span class="lvl lvl-C2">C2</span></td><td>Akademik ve edebî metinler, ince anlam farkları.</td><td>Özgün bilim kurgu ve tür makaleleri</td></tr>
       </tbody></table></div>
       <h2>Kısayollar</h2>
       <p><kbd>Esc</kbd> ipucu kutusunu kapatır. Kartlarda <kbd>Boşluk</kbd> kartı çevirir, <kbd>1</kbd> tekrar, <kbd>2</kbd> biliyorum.</p>
       <h2>Kaynaklar ve telif</h2>
-      <p>Klasik metinler ABD'de kamu malıdır ve <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>'den kısaltılmadan alınmıştır. A1–B1 hikâyeleri ve tüm makaleler Lantern için özgün olarak yazılmıştır. Sözlük maddeleri Lantern için hazırlanmıştır.</p>
+      <p>Klasik metinler ABD'de kamu malıdır ve <a href="https://www.gutenberg.org" target="_blank" rel="noopener">Project Gutenberg</a>'den kısaltılmadan alınmıştır. “Lantern Original” imzalı hikâyeler ve tüm makaleler Lantern English için özgün olarak yazılmıştır. Sözlük maddeleri Lantern English için hazırlanmıştır.</p>
       ${pd.length ? `<ul>${pd.map((s) => `<li>${esc(s.author)}, <em>${esc(s.title)}</em>${s.year ? " (" + s.year + ")" : ""} · <a href="${esc(s.source.url)}" target="_blank" rel="noopener">${esc(s.source.name)}</a></li>`).join("")}</ul>` : ""}
       <h2>Verilerin</h2>
       <p>Kelime defterin ve okuma ilerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen bunlar da silinir.</p>

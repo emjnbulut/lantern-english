@@ -1,4 +1,4 @@
-# Lantern — Content Spec
+# Lantern English — Content Spec
 
 All content lives in `content/` as **JSON** (UTF-8). `node tools/build.mjs` validates it and
 generates the browser bundles in `data/` (never edit `data/` by hand).
@@ -49,8 +49,8 @@ Rules
 Same shape as a story, with these differences:
 - `"type": "article"`, `"author": "Lantern Editorial"`.
 - `level` is B2, C1 or C2.
-- `genre` = the story genre the article is about (links articles to the genre pages).
-- Use `## ` headings to structure the article (3–6 sections). 700–1400 words.
+- `genre` = the literary genre the article is about (used by the article topic filters). Article cards stay in the article collection, not the story results.
+- Use `## ` headings to structure the article (3–6 sections). Existing articles are 700–1400 words; new extended original articles target 1700–2100 words. Add developed arguments and concrete examples rather than padding.
 - `quiz` and `phrases` are required as for stories (phrases = academic collocations / useful expressions).
 
 ## Dictionary — `content/dict/<chunk>.json`
