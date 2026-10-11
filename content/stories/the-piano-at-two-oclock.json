@@ -5,13 +5,13 @@
   "author": "Lantern Original",
   "level": "A2",
   "genre": "mystery",
-  "summaryTr": "Eski bir dağ otelinde, boş balo salonunun kapısı kilitliyken her gece saat tam ikide piyano çalıyor. Anahtar gece resepsiyonisti Ines'in cebinde ve otel müdürü ona cumaya kadar süre veriyor.",
+  "summaryTr": "Eski bir dağ otelinde, boş balo salonunun kapısı kilitliyken her gece saat tam ikide piyano çalıyor. Anahtar gece resepsiyonisti Ines'in cebinde; otel sahibi ise sırrı çözmesi için ona bir hafta süre veriyor.",
   "paragraphs": [
     "At two o'clock every night, the piano in the ballroom began to play.",
-    "Nobody was in the ballroom. The door was locked, and the only key was in Ines's pocket.",
+    "Nobody could be in the ballroom. The door was locked, and the only key was in Ines's pocket.",
     "Ines was the night receptionist at the Hotel Alpenrose, a big old hotel high in the mountains. She did not believe in ghosts. But in one week, six guests left early.",
     "\"I can't sleep with that music,\" one woman told her. \"It sounds like someone is crying.\"",
-    "On Monday morning, Mr. Brandt, the manager, called Ines to his office. He was a thin man who never smiled.",
+    "On Monday morning, Mr. Brandt, the owner, called Ines to his office. He was a thin man who never smiled.",
     "\"Ines, I'm going to be honest,\" he said. \"If more guests leave, I will close the hotel and sell it.\"",
     "\"It's only an old piano, Mr. Brandt.\"",
     "\"Then find out why it plays. You have one week.\"",
@@ -19,21 +19,21 @@
     "She ran to the ballroom, took out her key and opened the door. The room was dark and cold. The music stopped.",
     "She looked behind the curtains and under the tables. Nothing. The windows were closed and locked. But the lid of the piano was open, and the piano stool was still turning, very slowly, as if someone had just stood up.",
     "\"Somebody is playing a trick on me,\" she said quietly.",
-    "Ines thought of Jamal, the young porter. He worked at night, too, and he often disappeared for an hour.",
+    "Ines thought of Jamal, the young porter. He worked at night, too, and he often disappeared for an hour. Maybe he knew another way in.",
     "The next night, she asked him to sit with her in the lobby.",
     "\"Why?\" asked Jamal.",
     "\"Because I want to know where you are at two o'clock.\"",
     "Jamal laughed and opened a sandwich. At two o'clock exactly, the music began. Jamal dropped his sandwich.",
-    "\"It wasn't me,\" he whispered. \"I swear it wasn't me!\"",
+    "\"It wasn't me,\" he whispered. \"I only go to the storeroom to sleep! I swear it wasn't me!\"",
     "\"I know,\" said Ines. Now she was frightened, too. \"I believe you.\"",
     "On Wednesday, she went into the ballroom in the daytime. She looked at everything carefully. The keys of the piano were clean. There was dust on every table and chair, but there was no dust on the keys. There was also a smell in the room: pipe smoke. In a locked room!",
-    "Then she saw something on the floor near the big bookcase. Two curved lines in the dust, like half a circle.",
+    "Then she saw something on the floor near the big bookcase. Two curved marks, like half a circle.",
     "\"Like a door,\" she said slowly. \"A door that opens.\"",
     "She pushed the bookcase. Nothing. She pulled it. Nothing. Then she moved one heavy red book on the middle shelf, and she heard a click. The bookcase swung open. Behind it, a narrow stair went down into the dark.",
     "Ines did not go down. She did not want to follow the ghost. She wanted to catch it.",
-    "On Friday night, she locked the ballroom door from the inside and hid behind a long curtain. She waited. The clock said 1:50. Then 1:55.",
+    "On Wednesday night, she locked the ballroom door from the inside and hid behind a long curtain. She waited. The clock said 1:50. Then 1:55.",
     "At two minutes to two, she heard a soft click.",
-    "The bookcase opened. A small light came out, and behind it came a very old man in a long coat. His hair was white. He carried a little lamp and a piece of music. He did not look around. He walked straight to the piano like a man walking into his own kitchen. He sat down, took a deep breath, and began to play.",
+    "The bookcase opened. A small light came out, and behind it came a very old man in a long coat. His hair was white. He carried a little lamp and a piece of music, and he had a pipe in his mouth. Ines smelled the smoke. So that was the smell in the ballroom! He did not look around. He walked straight to the piano like a man walking into his own kitchen. He put his pipe away, sat down, took a deep breath, and began to play.",
     "It was the most beautiful music Ines had ever heard. It was slow and sad, but it was not frightening at all.",
     "When he finished, Ines came out from behind the curtain.",
     "\"Good evening,\" she said.",
@@ -41,8 +41,8 @@
     "\"Who are you?\"",
     "\"My name is Anton Weiss. I was the pianist here for forty years. I played in this room every evening, and my wife sat at the table by the window and listened.\" He looked at the empty table. \"She died three weeks ago.\"",
     "Ines said nothing.",
-    "\"Mr. Brandt stopped the music years ago. He said it cost too much. But I know the old back stairs, because my father was the cook here. So now I come at two o'clock, when everyone is asleep. I play for her. I didn't know I was frightening people.\"",
-    "Ines looked at the table by the window. Then she had an idea.",
+    "\"Last year, Mr. Brandt stopped the music. He said it cost too much. But I know the old back stairs, because my father was the cook here. So now I come at two o'clock, when everyone is asleep. I play for her. I didn't know I was frightening people.\"",
+    "Ines looked at the table by the window. Then she had an idea. She talked to Anton for a long time.",
     "The next morning, she went to Mr. Brandt's office.",
     "\"Did you find the ghost?\" he asked.",
     "\"Yes. He plays beautifully. Tonight he is going to play at nine o'clock, in the ballroom, for all the guests.\"",
@@ -59,7 +59,8 @@
     "lid": "kapak (piyanonun)",
     "stool": "tabure",
     "porter": "otel hamalı (bavulları taşıyan görevli)",
-    "lobby": "otel girişi, lobi"
+    "lobby": "otel girişi, lobi",
+    "pipe": "pipo (tütün içmek için kullanılan)"
   },
   "phrases": [
     {
@@ -71,7 +72,7 @@
       "tr": "öğrenmek, keşfetmek"
     },
     {
-      "en": "play a trick on someone",
+      "en": "playing a trick on",
       "tr": "birine oyun/şaka yapmak"
     },
     {
@@ -83,15 +84,15 @@
       "tr": "polisi aramak"
     },
     {
-      "en": "hide behind",
+      "en": "hid behind",
       "tr": "-in arkasına saklanmak"
     },
     {
-      "en": "leave early",
+      "en": "left early",
       "tr": "erken ayrılmak"
     },
     {
-      "en": "have an idea",
+      "en": "had an idea",
       "tr": "aklına bir fikir gelmek"
     }
   ],
@@ -127,7 +128,7 @@
         "Through the kitchen door"
       ],
       "answer": 1,
-      "explainTr": "Anton, kitaplığın arkasındaki gizli kapıdan ve eski hizmetçi merdivenlerinden girer."
+      "explainTr": "Anton, kitaplığın arkasındaki gizli kapıdan ve eski arka merdivenlerden girer."
     },
     {
       "q": "Who does Anton play for at two o'clock?",
@@ -139,6 +140,17 @@
       ],
       "answer": 3,
       "explainTr": "Anton, üç hafta önce ölen karısı için çalar."
+    },
+    {
+      "q": "What does Ines smell in the locked ballroom?",
+      "options": [
+        "Fresh flowers",
+        "Pipe smoke",
+        "Hot soup",
+        "Old paint"
+      ],
+      "answer": 1,
+      "explainTr": "Ines kilitli balo salonunda pipo dumanı kokusu alır. Bu koku Anton'un piposundan gelir."
     }
   ]
 }
