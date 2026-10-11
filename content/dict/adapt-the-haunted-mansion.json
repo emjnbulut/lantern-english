@@ -1,0 +1,7 @@
+{
+  "watchman": { "pos": "isim", "tr": "bekçi, gözcü" },
+  "tenant": { "pos": "isim", "tr": "kiracı" },
+  "lira": { "pos": "isim", "tr": "lira (para birimi)" },
+  "talker": { "pos": "isim", "tr": "konuşan kimse, lafı yayan kişi" },
+  "nightgown": { "pos": "isim", "tr": "gecelik" }
+}

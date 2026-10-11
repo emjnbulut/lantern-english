@@ -1,0 +1,12 @@
+{
+  "scabbard": { "pos": "isim", "tr": "kın, kılıç kılıfı" },
+  "peri": { "pos": "isim", "tr": "peri (masallarda kanatlı güzel ruh)" },
+  "ram": { "pos": "isim/fiil", "tr": "koç (erkek koyun); çarpmak, toslamak" },
+  "reed": { "pos": "isim", "tr": "saz, kamış" },
+  "grassland": { "pos": "isim", "tr": "otlak, çayır, bozkır" },
+  "cub": { "pos": "isim", "tr": "yavru (aslan, ayı, kurt vb.)" },
+  "overjoyed": { "pos": "sıfat", "tr": "çok sevinmiş, sevinçten havalara uçan" },
+  "eyelid": { "pos": "isim", "tr": "göz kapağı" },
+  "greasy": { "pos": "sıfat", "tr": "yağlı, kaygan" },
+  "upside": { "pos": "isim", "tr": "üst taraf; 'upside down': baş aşağı, ters" }
+}

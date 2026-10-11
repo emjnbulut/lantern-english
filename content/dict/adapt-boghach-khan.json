@@ -1,0 +1,11 @@
+{
+  "khan": { "pos": "isim", "tr": "han, hükümdar" },
+  "bull": { "pos": "isim", "tr": "boğa" },
+  "camel": { "pos": "isim", "tr": "deve" },
+  "kumis": { "pos": "isim", "tr": "kımız (kısrak sütünden içki)" },
+  "kopuz": { "pos": "isim", "tr": "kopuz (telli eski Türk çalgısı)" },
+  "rein": { "pos": "isim", "tr": "dizgin, gem" },
+  "caravan": { "pos": "isim", "tr": "kervan; karavan" },
+  "shady": { "pos": "sıfat", "tr": "gölgeli; şüpheli" },
+  "boga": { "pos": "isim", "tr": "boğa (eski Türkçe)" }
+}
