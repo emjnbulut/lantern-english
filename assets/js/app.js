@@ -224,6 +224,19 @@
     place() {
       if (!this.span || this.el.hidden) return;
       const r = this.span.getBoundingClientRect();
+      if (this.rotFrame) {
+        // the frame is rotated 90deg clockwise about the viewport centre
+        const f = this.rotFrame, W = f.offsetWidth, H = f.offsetHeight;
+        const dx = r.left + r.width / 2 - window.innerWidth / 2, dy = r.top + r.height / 2 - window.innerHeight / 2;
+        const cxl = W / 2 + dy, cyl = H / 2 - dx, hl = r.width;
+        const tw2 = this.el.offsetWidth, th2 = this.el.offsetHeight;
+        const l2 = Math.min(Math.max(8, cxl - tw2 / 2), Math.max(8, W - tw2 - 8));
+        let t2 = cyl - hl / 2 - th2 - 10;
+        if (t2 < 8) t2 = cyl + hl / 2 + 10;
+        t2 = Math.min(Math.max(8, t2), Math.max(8, H - th2 - 8));
+        this.el.style.left = l2 + "px"; this.el.style.top = t2 + "px";
+        return;
+      }
       const tw = this.el.offsetWidth, th = this.el.offsetHeight;
       const left = Math.min(Math.max(8, r.left + r.width / 2 - tw / 2), window.innerWidth - tw - 8);
       let top = r.top - th - 10;
@@ -647,8 +660,9 @@
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
         <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
         <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <div class="seek-flash seek-back" id="seek-back" hidden aria-hidden="true">−5 sn</div>
+        <div class="seek-flash seek-fwd" id="seek-fwd" hidden aria-hidden="true">+5 sn</div>
         <div class="fs-hint" id="fs-hint" hidden>Daha büyük görüntü için telefonu yan çevir</div>
-        <button type="button" class="video-center" id="video-center" aria-label="Oynat" hidden>${ICON.play}</button>
         <div class="video-bar" id="video-bar" hidden>
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
           <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
@@ -668,7 +682,9 @@
           <div class="cs-title">Ayarlar</div>
           <div class="cs-row" id="cs-quality-row" hidden><label for="cs-quality">Görüntü</label><select id="cs-quality"></select></div>
           <p class="cs-hint" id="cs-quality-note" hidden></p>
-          <div class="cs-row" id="cs-inpage-row" hidden><span>Tam ekran</span><button type="button" class="cs-switch" id="cs-inpage-fs">Sayfa içi (kelimeye dokununca anlam)</button></div>
+          <div class="cs-row" id="cs-inpage-row" hidden><span>Tam ekran</span><button type="button" class="cs-switch" id="cs-inpage-fs">Cihazın kendi oynatıcısı (altyazıya dokunulamaz)</button></div>
+          <div class="cs-row" id="cs-fit-row"><span>Görüntü</span><button type="button" class="cs-switch" id="cs-fit" role="switch" aria-label="Ekranı kapla" aria-checked="false"><span class="cs-knob"></span><span class="cs-switch-label">Sığdır</span></button></div>
+          <p class="cs-hint" id="cs-fit-note">Tam ekranda kenarlardaki siyah boşluğu kaldırır; görüntünün üst-alt kenarlarından biraz kırpar.</p>
           <div class="cs-sep" role="separator"></div>
           <div class="cs-sub">Altyazı</div>
           <div class="cs-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-on" role="switch" aria-label="Altyazı" aria-checked="true"><span class="cs-knob"></span><span class="cs-switch-label">Açık</span></button></div>
@@ -746,11 +762,24 @@
     let pseudoFs = false, seeking = false;
     player.setAttribute("disablepictureinpicture", "");
     const isFs = () => pseudoFs || fsElement() === stage;
+    const frameEl = document.getElementById("video-frame");
+    let lockedLandscape = false;
+    const isTouch = !!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+    // portrait fullscreen without a landscape lock: turn the picture so it fills the screen (touch devices only)
+    function syncRotate() {
+      const portrait = window.innerHeight > window.innerWidth;
+      const want = isFs() && portrait && isTouch && !lockedLandscape;
+      stage.classList.toggle("rot90", want);
+      Tip.rotFrame = want ? frameEl : null;
+      Tip.el.style.position = want ? "absolute" : "";
+      // the dictionary tooltip must live inside the fullscreen element (and the rotated frame) to be visible
+      (want ? frameEl : (isFs() ? stage : document.body)).appendChild(Tip.el);
+      Tip.hide();
+    }
+    window.addEventListener("resize", syncRotate);
     function syncFsUi() {
       const on = isFs();
-      // the dictionary tooltip must live inside the fullscreen element to be visible
-      (on ? stage : document.body).appendChild(Tip.el);
-      Tip.hide();
+      syncRotate();
       stage.classList.toggle("pseudo-fs", pseudoFs);
       stage.classList.toggle("real-fs", fsElement() === stage);
       if (!on) unlockOrientation();
@@ -761,14 +790,20 @@
       const hint = document.getElementById("fs-hint");
       clearTimeout(syncFsUi.hintTimer);
       if (on && window.matchMedia && window.matchMedia("(orientation: portrait)").matches) {
+        hint.textContent = stage.classList.contains("rot90") ? "Telefonu yan çevirirsen görüntü dik durur" : "Daha büyük görüntü için telefonu yan çevir";
         hint.hidden = false;
         syncFsUi.hintTimer = setTimeout(() => { hint.hidden = true; }, 4500);
       } else hint.hidden = true;
     }
     function lockLandscape() {
-      try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock("landscape").catch(() => {}); } catch (e) { /* not supported */ }
+      try {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock("landscape").then(() => { lockedLandscape = true; syncRotate(); }, () => { lockedLandscape = false; syncRotate(); });
+        } else syncRotate();
+      } catch (e) { syncRotate(); }
     }
     function unlockOrientation() {
+      lockedLandscape = false;
       try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) { /* not supported */ }
     }
     function enterPseudoFs() { pseudoFs = true; syncFsUi(); }
@@ -794,10 +829,11 @@
     const onNativeEnd = () => { const t = player.querySelector("track"); if (t) t.track.mode = "hidden"; syncBar(); };
     player.addEventListener("webkitbeginfullscreen", onNativeBegin);
     player.addEventListener("webkitendfullscreen", onNativeEnd);
+    function enterNativeFs() {
+      if (!nativeFs || !player.getAttribute("src")) { enterPseudoFs(); return; }
+      try { const tr = ensureTrack(); tr.track.mode = "showing"; player.webkitEnterFullscreen(); } catch (e) { enterPseudoFs(); }
+    }
     function enterFs() {
-      if (nativeFs && player.getAttribute("src")) {
-        try { const tr = ensureTrack(); tr.track.mode = "showing"; player.webkitEnterFullscreen(); return; } catch (e) { enterPseudoFs(); return; }
-      }
       if (!requestFs) { enterPseudoFs(); return; }
       let r;
       try { r = requestFs.call(stage); } catch (e) { enterPseudoFs(); return; }
@@ -865,16 +901,60 @@
       if (!player.getAttribute("src")) { startVideo(); return; }
       if (player.paused) { const r = player.play(); if (r && r.catch) r.catch(() => {}); } else player.pause();
     }
-    const centerBtn = document.getElementById("video-center");
-    function syncCenter() {
-      const started = !!player.getAttribute("src");
-      centerBtn.hidden = !started;
-      centerBtn.classList.toggle("is-paused", started && player.paused);
-      centerBtn.setAttribute("aria-label", player.paused ? (player.ended ? "Baştan oynat" : "Oynat") : "Duraklat");
-    }
-    centerBtn.addEventListener("click", (ev) => { ev.stopPropagation(); togglePlay(); });
-    ["play", "playing", "pause", "ended", "emptied", "loadedmetadata"].forEach((n) => player.addEventListener(n, syncCenter));
     vbPlay.addEventListener("click", togglePlay);
+
+    // ±5 s: arrow keys / double tap on the left or right half of the picture
+    const SEEK_STEP = 5;
+    const flashEls = { back: document.getElementById("seek-back"), fwd: document.getElementById("seek-fwd") };
+    function flashSeek(dir, text) {
+      const el = dir < 0 ? flashEls.back : flashEls.fwd;
+      el.textContent = text;
+      el.hidden = false;
+      el.classList.remove("on"); void el.offsetWidth; el.classList.add("on");
+      clearTimeout(el._t);
+      el._t = setTimeout(() => { el.hidden = true; el.classList.remove("on"); }, 650);
+    }
+    function seekBy(delta) {
+      if (!player.getAttribute("src")) return false;
+      const d = duration();
+      const base = switching ? switching.at : (player.currentTime || 0);
+      const at = Math.min(Math.max(0, base + delta), Math.max(0, d - 0.05));
+      if (switching) switching.at = at;
+      else if (player.readyState >= 1) { try { player.currentTime = at; } catch (err) { pendingSeek = at; } }
+      else pendingSeek = at;
+      syncCaptions(); syncBar(); showControls();
+      flashSeek(delta < 0 ? -1 : 1, (delta < 0 ? "−" : "+") + Math.abs(delta) + " sn");
+      return true;
+    }
+    const onVideoKey = (ev) => {
+      if (ev.defaultPrevented || ev.ctrlKey || ev.altKey || ev.metaKey) return;
+      const t = ev.target;
+      const tag = t && t.tagName;
+      if (tag === "TEXTAREA" || tag === "SELECT" || (t && t.isContentEditable)) return;
+      if (tag === "INPUT" && t.type !== "button" && t.id !== "vb-seek") return; // sliders keep their own arrow keys
+      if (ev.key === "ArrowLeft" || ev.key === "ArrowRight") {
+        if (seekBy(ev.key === "ArrowLeft" ? -SEEK_STEP : SEEK_STEP)) ev.preventDefault();
+      } else if (ev.key === " " || ev.code === "Space") {
+        if (t && t.closest && t.closest("button, a, summary")) return; // let a focused button handle its own Space
+        ev.preventDefault();
+        togglePlay();
+        showControls();
+      }
+    };
+    document.addEventListener("keydown", onVideoKey);
+    let lastTap = null;
+    frameEl.addEventListener("pointerup", (ev) => {
+      if (ev.pointerType !== "touch" || !player.getAttribute("src")) return;
+      if (ev.target.closest && ev.target.closest(".video-captions p, .video-bar, .cap-settings, .vol-pop, button, input, select, a")) { lastTap = null; return; }
+      const rect = frameEl.getBoundingClientRect();
+      // when the frame is rotated, the picture's horizontal axis runs down the screen
+      const frac = stage.classList.contains("rot90") ? (ev.clientY - rect.top) / rect.height : (ev.clientX - rect.left) / rect.width;
+      const now = Date.now();
+      if (lastTap && now - lastTap.t < 380 && Math.abs(ev.clientX - lastTap.x) < 90 && Math.abs(ev.clientY - lastTap.y) < 90) {
+        lastTap = null;
+        seekBy(frac < 0.5 ? -SEEK_STEP : SEEK_STEP);
+      } else lastTap = { t: now, x: ev.clientX, y: ev.clientY };
+    });
 
     vbSeek.addEventListener("input", () => {
       seeking = true;
@@ -990,7 +1070,20 @@
     document.getElementById("cs-smaller").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.max(0, CAP_SCALES.indexOf(capPrefs.scale) - 1)]; applyCap(true); });
     document.getElementById("cs-bigger").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.min(CAP_SCALES.length - 1, CAP_SCALES.indexOf(capPrefs.scale) + 1)]; applyCap(true); });
     csAlpha.addEventListener("input", () => { capPrefs.alpha = Number(csAlpha.value); applyCap(true); });
-    document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true); });
+    const csFit = document.getElementById("cs-fit");
+    let videoFill = typeof prefs.videoFill === "boolean" ? prefs.videoFill : isTouch;
+    function applyFit(save) {
+      stage.classList.toggle("video-fill", videoFill);
+      csFit.setAttribute("aria-checked", String(videoFill));
+      csFit.querySelector(".cs-switch-label").textContent = videoFill ? "Ekranı kapla" : "Sığdır";
+      if (save) { prefs.videoFill = videoFill; savePrefs(); }
+    }
+    csFit.addEventListener("click", () => { videoFill = !videoFill; applyFit(true); });
+    applyFit(false);
+    document.getElementById("cs-reset").addEventListener("click", () => {
+      capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true);
+      videoFill = isTouch; applyFit(true);
+    });
     const toggleCaptions = () => { capPrefs.on = !capPrefs.on; Tip.hide(); applyCap(true); };
     csOn.addEventListener("click", toggleCaptions);
     applyCap(false);
@@ -1034,7 +1127,7 @@
     });
     capBtns.forEach((b) => b.addEventListener("click", () => setVolPop(false)));
     document.getElementById("cs-inpage-row").hidden = !nativeFs;
-    document.getElementById("cs-inpage-fs").addEventListener("click", () => { setCapPanel(false); enterPseudoFs(); });
+    document.getElementById("cs-inpage-fs").addEventListener("click", () => { setCapPanel(false); enterNativeFs(); });
 
     function startVideo(at) {
       if (!navigator.onLine && !player.getAttribute("src")) {
@@ -1042,7 +1135,7 @@
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; applyStoredVolume(); syncBar(); syncCenter();
+        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; applyStoredVolume(); syncBar();
         if (stage.scrollIntoView && !isFs()) stage.scrollIntoView({ block: "nearest", behavior: "smooth" });
         document.getElementById("video-placeholder").hidden = true;
       }
@@ -1086,6 +1179,9 @@
       document.removeEventListener("fullscreenchange", syncFsUi);
       document.removeEventListener("webkitfullscreenchange", syncFsUi);
       document.removeEventListener("keydown", onEscape);
+      document.removeEventListener("keydown", onVideoKey);
+      window.removeEventListener("resize", syncRotate);
+      Tip.rotFrame = null; Tip.el.style.position = "";
       document.removeEventListener("click", onDocClickCap);
       document.removeEventListener("click", onDocClickVol);
       clearTimeout(hideTimer);

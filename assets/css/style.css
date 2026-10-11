@@ -560,11 +560,6 @@ body.video-fs-open { overflow: hidden; }
 
 .cap-settings { background: #141822; }
 
-/* centre play indicator: tap the picture to pause / resume */
-.video-center { position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%, -50%); width: 72px; height: 72px; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(8, 10, 15, .62); color: #fff; cursor: pointer; box-shadow: 0 0 0 2px rgba(255, 255, 255, .25); }
-.video-center[hidden] { display: none; }
-.video-center svg { width: 34px; height: 34px; margin-left: 4px; }
-.video-center:hover { background: rgba(8, 10, 15, .8); }
 .video-placeholder { cursor: pointer; }
 .video-placeholder button { cursor: pointer; }
 
@@ -608,14 +603,6 @@ body.video-fs-open { overflow: hidden; }
   main { padding-top: 12px; }
 }
 
-/* only the middle of the picture toggles play/pause: a modest centred zone, transparent while playing */
-.video-stage video { cursor: default; }
-.video-center { --hit: clamp(72px, 12vw, 128px); width: var(--hit); height: var(--hit); background: transparent; box-shadow: none; color: transparent; }
-.video-center svg { width: 42%; height: 42%; margin-left: 3%; opacity: 0; }
-.video-center.is-paused { background: rgba(8, 10, 15, .62); box-shadow: 0 0 0 2px rgba(255, 255, 255, .25); color: #fff; }
-.video-center.is-paused svg { opacity: 1; }
-.video-center.is-paused:hover { background: rgba(8, 10, 15, .8); }
-.video-placeholder { cursor: default; }
 
 /* sideways phones: the idle frame must not be taller than the picture it replaces */
 @media (orientation: landscape) and (max-height: 520px) {
@@ -660,7 +647,6 @@ body.video-fs-open { overflow: hidden; }
 .video-stage.controls-hidden.pseudo-fs .video-captions,
 .video-stage.controls-hidden.real-fs .video-captions { bottom: 16px; }
 .video-stage.controls-hidden { cursor: none; }
-.video-stage.controls-hidden .video-center, .video-stage.controls-hidden .video-captions p { cursor: pointer; }
 .cs-row #cs-inpage-fs { font-size: 13px; height: auto; min-height: 38px; padding: 6px 12px; text-align: left; border-radius: 12px; }
 
 /* idle frame: never wider than its container (aspect-ratio + min-height used to widen it past the screen) */
@@ -685,3 +671,24 @@ body.video-fs-open { overflow: hidden; }
 /* portrait fullscreen hint */
 .fs-hint { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 6; max-width: calc(100% - 24px); padding: 8px 14px; border-radius: 99px; background: rgba(8, 10, 15, .78); color: #fff; font: 600 13px var(--f-ui); text-align: center; pointer-events: none; }
 .fs-hint[hidden] { display: none; }
+
+/* fullscreen: fill the screen (no side bars), rotate in portrait, double-tap seek feedback */
+.video-stage.video-fill.real-fs .video-frame,
+.video-stage.video-fill.pseudo-fs .video-frame { width: 100%; height: 100%; }
+.video-stage.video-fill.real-fs video,
+.video-stage.video-fill.pseudo-fs video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
+.video-stage.rot90.pseudo-fs .video-frame, .video-stage.rot90.real-fs .video-frame {
+  position: absolute; top: 50%; left: 50%; margin: 0;
+  width: 100vh; width: 100dvh; height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.video-stage.rot90 video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
+.video-stage.rot90.video-fill video { object-fit: cover; }
+.video-stage.rot90 { --cap-w: min(100vh, calc(100vw * 16 / 9)); }
+.video-frame { touch-action: manipulation; }
+.seek-flash { position: absolute; top: 50%; z-index: 6; transform: translateY(-50%); min-width: 76px; padding: 12px 16px; border-radius: 99px; background: rgba(8, 10, 15, .72); color: #fff; font: 700 15px var(--f-ui); text-align: center; pointer-events: none; }
+.seek-flash[hidden] { display: none; }
+.seek-back { left: 8%; }
+.seek-fwd { right: 8%; }
+.seek-flash.on { animation: seekPop .65s ease-out; }
+@keyframes seekPop { 0% { opacity: 0; transform: translateY(-50%) scale(.85); } 20% { opacity: 1; transform: translateY(-50%) scale(1); } 100% { opacity: 0; transform: translateY(-50%) scale(1.05); } }

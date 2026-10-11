@@ -92,6 +92,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 
 - Service worker is **network-first** (fresh code on every online visit, cached copy only when offline or after a 4 s timeout); when a new worker takes over the page reloads once (after a playing video pauses / on the next navigation). Don't go back to stale-while-revalidate: installed phones kept showing old versions.
 
+- Video fullscreen model: real Fullscreen API on #video-stage (Android/desktop) → in-page fullscreen (class pseudo-fs) when the API is missing or silently ignored (iPhone Safari, in-app browsers). Touch devices default to "Ekranı kapla" (class video-fill, object-fit: cover, no side bars); portrait without a landscape lock rotates the frame 90° (class rot90, tooltip lives inside #video-frame, Tip.rotFrame). The old centre tap-to-pause zone was removed on purpose (it blocked subtitle taps). Shortcuts: ArrowLeft/Right ±5 s, Space play/pause; touch: double tap left/right half ±5 s. iPhone's native player is opt-in (Ayarlar → "Cihazın kendi oynatıcısı") because its subtitles cannot be tapped.
+
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
