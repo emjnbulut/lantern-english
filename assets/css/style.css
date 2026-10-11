@@ -462,3 +462,18 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 
 /* abridged classics badge */
 .abr { font-size: 11px; font-weight: 700; letter-spacing: .03em; color: var(--accent-2); border: 1px solid rgba(241, 182, 95, .45); border-radius: 99px; padding: 2px 8px; white-space: nowrap; }
+
+/* video subtitles on the picture (clickable words) */
+.video-stage { position: relative; }
+.video-stage .video-captions { position: absolute; left: 0; right: 0; bottom: 56px; z-index: 3; min-height: 0; margin: 0; padding: 0 12px; text-align: center; pointer-events: none; font-family: var(--f-ui); }
+.video-stage .video-captions p { display: inline-block; max-width: min(100%, 46em); margin: 0; padding: .3em .7em .35em; border-radius: 8px; background: rgba(8, 10, 15, .8); color: #fff; font-size: clamp(15px, 2.3vw, 22px); font-weight: 500; line-height: 1.45; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); pointer-events: auto; }
+.video-stage .video-captions .w { cursor: pointer; padding: 0 1px; }
+.video-stage .video-captions .w:hover, .video-stage .video-captions .w.on { background: rgba(241, 182, 95, .38); }
+.video-stage:fullscreen, .video-stage:-webkit-full-screen { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 0; border-radius: 0; background: #000; }
+.video-stage:fullscreen video, .video-stage:-webkit-full-screen video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
+.video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 72px; }
+.video-stage:fullscreen .video-captions p, .video-stage:-webkit-full-screen .video-captions p { font-size: clamp(20px, 3vw, 34px); }
+@media (max-width: 600px) { .video-stage .video-captions { bottom: 48px; padding: 0 8px; } .video-stage .video-captions p { font-size: 15px; } }
+/* idle frame: keep the start button and note above the subtitle strip */
+.video-stage .video-placeholder { justify-content: flex-start; min-height: 360px; aspect-ratio: 16 / 9; padding: 28px 20px 120px; }
+@media (max-width: 600px) { .video-stage .video-placeholder { min-height: 330px; padding: 22px 16px 104px; } }

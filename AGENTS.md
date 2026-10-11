@@ -86,6 +86,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - Verification: `node tools/validate.mjs` OK; `node tools/smoke.mjs` 45 browser checks OK; 390 px mobile QA (overflow, tooltips, Önerilenler, PWA wiring) OK.
 - Source repo: `emjnbulut/lantern-english` (private). **Public site: https://lantern-english.github.io/** (repo `lantern-english/lantern-english.github.io`, built output only). Follow HOSTING.md: copy a verified clean package into the normal public checkout, then commit and push while preserving history. Do not use the force-pushing `tools/publish-site.mjs`. Old owner-private ChatGPT Sites copy is outdated.
 
+- Video captions are an overlay inside `#video-stage` (clickable words → tooltip, video pauses). The stage, not the `<video>`, goes fullscreen so captions and the dictionary tooltip stay visible; the tooltip element is moved into the stage while fullscreen. Native fullscreen/PiP are disabled for that reason (iPhone Safari keeps its native player).
+
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.

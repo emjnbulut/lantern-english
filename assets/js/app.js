@@ -638,17 +638,18 @@
       <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
         <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
         <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
-      <div class="video-stage"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
+      <div class="video-stage" id="video-stage"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
-        <video id="video-player" controls playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video></div>
-      <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazıdaki ilk konuşmayı aşağıda inceleyebilirsin.</p>
+        <video id="video-player" controls playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
+        <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div></div>
+      <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazı videonun üzerinde görünür; bir kelimeye dokununca anlamı açılır.</p>
       <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
-        <p class="sub" id="caption-help">Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır. Oynat düğmesiyle devam edebilirsin.</p>
-        <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <p class="sub" id="caption-help">Altyazı videonun üzerinde görünür. Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır; oynat düğmesiyle devam edebilirsin.</p>
         <div class="caption-controls"><button class="btn sm" id="caption-prev" type="button" aria-label="Önceki altyazı">← Önceki</button>
           <label for="caption-select">Konuşma <select id="caption-select">${v.captions.map((c, i) => `<option value="${i}">${i + 1} / ${v.captions.length} · ${videoTime(c.start)}</option>`).join("")}</select></label>
           <button class="btn sm" id="caption-next" type="button" aria-label="Sonraki altyazı">Sonraki →</button>
-          <button class="btn sm" id="caption-replay" type="button">${ICON.play} Bu konuşmayı dinle</button></div>
+          <button class="btn sm" id="caption-replay" type="button">${ICON.play} Bu konuşmayı dinle</button>
+          <button class="btn sm" id="video-fullscreen" type="button" disabled>Tam ekran</button></div>
       </section>
       <p class="video-credit">Film ve İngilizce altyazı: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
         ${esc(v.source.credit)} · <a href="${esc(v.source.licenseUrl)}" target="_blank" rel="noopener">${esc(v.source.license)}</a>.
@@ -676,8 +677,8 @@
         document.getElementById("caption-time").textContent = videoTime(cue.start) + "–" + videoTime(cue.end);
         markSaved(captions);
       } else {
-        captions.innerHTML = '<p class="caption-gap" lang="tr">Bu sahnede konuşma yok.</p>';
-        document.getElementById("caption-time").textContent = "";
+        captions.innerHTML = "";
+        document.getElementById("caption-time").textContent = "Bu sahnede konuşma yok";
       }
       prev.disabled = selected === 0; next.disabled = selected === v.captions.length - 1;
     }
@@ -698,13 +699,35 @@
       }
     }
 
+    const stage = document.getElementById("video-stage");
+    const fsBtn = document.getElementById("video-fullscreen");
+    const requestFs = stage.requestFullscreen || stage.webkitRequestFullscreen;
+    const fsElement = () => document.fullscreenElement || document.webkitFullscreenElement || null;
+    const exitFs = () => { const f = document.exitFullscreen || document.webkitExitFullscreen; if (f && fsElement()) { const r = f.call(document); if (r && r.catch) r.catch(() => {}); } };
+    if (requestFs) player.setAttribute("controlslist", "nofullscreen"); else fsBtn.hidden = true;
+    player.setAttribute("disablepictureinpicture", "");
+    function onFullscreenChange() {
+      const inFs = fsElement() === stage;
+      // the dictionary tooltip must live inside the fullscreen element to be visible
+      (inFs ? stage : document.body).appendChild(Tip.el);
+      Tip.hide();
+      fsBtn.textContent = inFs ? "Tam ekrandan çık" : "Tam ekran";
+    }
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", onFullscreenChange);
+    fsBtn.addEventListener("click", () => {
+      if (fsElement() === stage) { exitFs(); return; }
+      const r = requestFs.call(stage);
+      if (r && r.catch) r.catch(() => { status.textContent = "Tam ekran bu cihazda açılamadı."; });
+    });
+
     function startVideo(at) {
       if (!navigator.onLine) {
         status.textContent = "Çevrimdışısın. Altyazıyı inceleyebilirsin; video için internete bağlan.";
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false;
+        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false;
         document.getElementById("video-placeholder").hidden = true;
       }
       if (typeof at === "number") {
@@ -741,7 +764,12 @@
       if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".w")) { ev.preventDefault(); ev.target.click(); }
     });
     bindText(captions, v); showCaption(0);
-    videoCleanup = () => { disposed = true; player.pause(); player.removeAttribute("src"); player.load(); };
+    videoCleanup = () => {
+      disposed = true; player.pause(); player.removeAttribute("src"); player.load();
+      document.removeEventListener("fullscreenchange", onFullscreenChange);
+      document.removeEventListener("webkitfullscreenchange", onFullscreenChange);
+      exitFs(); document.body.appendChild(Tip.el);
+    };
   }
 
   function viewMyLibrary() {
