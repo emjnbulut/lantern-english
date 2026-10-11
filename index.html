@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lantern English</title>
+<meta name="description" content="Hikâyelerle İngilizce: seviyene göre hikâyeler, her kelimede Türkçe anlam, kelime defteri ve tekrar kartları.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Young+Serif&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+<div class="progress" id="progress" aria-hidden="true"><span></span></div>
+
+<header class="topbar">
+  <div class="topbar-in">
+    <a class="brand" href="#home" aria-label="Lantern ana sayfa">
+      <svg class="brand-mark" viewBox="0 0 24 32" aria-hidden="true">
+        <path d="M9 2h6M12 2v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        <path d="M7 7h10l2 4v13l-2 4H7l-2-4V11z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        <ellipse class="flame" cx="12" cy="18" rx="2.6" ry="4.2"/>
+      </svg>
+      <span class="brand-name">Lantern</span>
+    </a>
+    <nav class="nav" aria-label="Ana menü">
+      <a href="#library" data-nav="library">Kütüphane</a>
+      <a href="#articles" data-nav="articles">Makaleler</a>
+      <a href="#words" data-nav="words">Kelime Defterim <span class="badge" id="due-badge" hidden></span></a>
+      <a href="#about" data-nav="about">Nasıl Çalışır</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="foot">
+  <p>Lantern · Klasik metinler kamu malıdır (Project Gutenberg). Özgün hikâye ve makaleler Lantern için yazılmıştır.</p>
+</footer>
+
+<div class="tip" id="tip" role="tooltip" hidden></div>
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="assets/js/lemmatize.js"></script>
+<script src="data/dict.js"></script>
+<script src="data/library.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
