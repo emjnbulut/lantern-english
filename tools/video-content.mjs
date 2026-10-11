@@ -31,6 +31,20 @@ export function validateVideo(d, file, errors) {
   if (!httpsUrl(d.videoUrl)) e("videoUrl must be an HTTPS URL without credentials");
   else if (!/\.mp4$/i.test(new URL(d.videoUrl).pathname)) e("videoUrl must point to an MP4 file");
 
+  if (d.qualities !== undefined) {
+    if (!Array.isArray(d.qualities) || d.qualities.length < 2) e("qualities must list at least two options");
+    else {
+      const labels = new Set();
+      d.qualities.forEach((q, i) => {
+        if (!object(q) || !plainText(q.label) || !httpsUrl(q.url) || !/\.mp4$/i.test(new URL(q.url).pathname)) { e(`quality ${i} needs a label and an HTTPS MP4 url`); return; }
+        if (labels.has(q.label)) e(`quality ${i} repeats label ${q.label}`);
+        labels.add(q.label);
+        if (q.sizeMB !== undefined && !(Number.isFinite(q.sizeMB) && q.sizeMB > 0)) e(`quality ${i} sizeMB must be a positive number`);
+      });
+      if (!d.qualities.some((q) => object(q) && q.url === d.videoUrl)) e("videoUrl must be one of the qualities");
+    }
+  }
+
   for (const [key, texts, urls] of [
     ["source", ["name", "license", "credit"], ["url", "licenseUrl"]],
     ["subtitleSource", ["name", "license"], ["url"]],

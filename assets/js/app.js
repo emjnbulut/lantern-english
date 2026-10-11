@@ -47,6 +47,7 @@
     stop: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>',
     check: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
+    gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.5" height="14" rx="1.2"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.2"/></svg>',
     expand: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>',
     shrink: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 4v5H4M15 4v5h5M9 20v-5H4M15 20v-5h5"/></svg>',
@@ -649,25 +650,32 @@
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
           <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
           <span class="vb-time" id="vb-time">0:00 / ${videoTime(v.durationSeconds)}</span>
-          <button type="button" class="vb-btn vb-cc" id="vb-cc" aria-label="Altyazı ayarları" aria-expanded="false" aria-controls="cap-settings">Aa</button>
+          <button type="button" class="vb-btn vb-sub" id="vb-sub" aria-label="Altyazıyı kapat" aria-pressed="true">CC</button>
+          <button type="button" class="vb-btn vb-cc" id="vb-cc" aria-label="Ayarlar" aria-expanded="false" aria-controls="cap-settings">${ICON.gear}</button>
           <button type="button" class="vb-btn" id="vb-mute" aria-label="Sesi kapat" aria-pressed="false">${ICON.speak}</button>
           <button type="button" class="vb-btn" id="vb-fs" aria-label="Tam ekran">${ICON.expand}</button>
         </div>
-        <div class="cap-settings" id="cap-settings" role="group" aria-label="Altyazı ayarları" hidden>
-          <div class="cs-row"><span>Boyut</span><div class="cs-size"><button type="button" id="cs-smaller" aria-label="Altyazıyı küçült">A−</button><output id="cs-size-val">100%</output><button type="button" id="cs-bigger" aria-label="Altyazıyı büyüt">A+</button></div></div>
+        <div class="cap-settings" id="cap-settings" role="group" aria-label="Video ayarları" hidden>
+          <div class="cs-title">Ayarlar</div>
+          <div class="cs-row" id="cs-quality-row" hidden><label for="cs-quality">Görüntü</label><select id="cs-quality"></select></div>
+          <p class="cs-hint" id="cs-quality-note" hidden></p>
+          <div class="cs-sep" role="separator"></div>
+          <div class="cs-sub">Altyazı</div>
+          <div class="cs-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-on" role="switch" aria-checked="true"><span class="cs-knob"></span><span class="cs-switch-label">Açık</span></button></div>
+          <div class="cs-row"><span>Yazı boyutu</span><div class="cs-size"><button type="button" id="cs-smaller" aria-label="Altyazıyı küçült">A−</button><output id="cs-size-val">100%</output><button type="button" id="cs-bigger" aria-label="Altyazıyı büyüt">A+</button></div></div>
           <div class="cs-row"><label for="cs-alpha">Arka plan</label><input type="range" id="cs-alpha" min="0" max="100" step="5"><output id="cs-alpha-val">72%</output></div>
           <p class="cs-hint">Sola çekince arka plan saydamlaşır, görüntü öne çıkar.</p>
           <button type="button" class="cs-reset" id="cs-reset">Varsayılana dön</button>
         </div></div></div>
       <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazı videonun üzerinde görünür; bir kelimeye dokununca anlamı açılır.</p>
       <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
-        <p class="sub" id="caption-help">Altyazı videonun üzerinde görünür. Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır; oynat düğmesiyle devam edebilirsin.</p>
+        <p class="sub" id="caption-help">Altyazı videonun üzerinde görünür. Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır; oynat düğmesiyle devam edebilirsin. Görüntü kalitesi ve altyazı görünümü için Ayarlar düğmesini kullan.</p>
         <div class="caption-controls"><button class="btn sm" id="caption-prev" type="button" aria-label="Önceki altyazı">← Önceki</button>
           <label for="caption-select">Konuşma <select id="caption-select">${v.captions.map((c, i) => `<option value="${i}">${i + 1} / ${v.captions.length} · ${videoTime(c.start)}</option>`).join("")}</select></label>
           <button class="btn sm" id="caption-next" type="button" aria-label="Sonraki altyazı">Sonraki →</button>
           <button class="btn sm" id="caption-replay" type="button">${ICON.play} Bu konuşmayı dinle</button>
           <button class="btn sm" id="video-fullscreen" type="button" disabled>Tam ekran</button>
-          <button class="btn sm" id="cap-settings-btn" type="button" aria-expanded="false" aria-controls="cap-settings">Altyazı boyutu ve arka plan</button></div>
+          <button class="btn sm" id="cap-settings-btn" type="button" aria-expanded="false" aria-controls="cap-settings">${ICON.gear} Ayarlar</button></div>
       </section>
       <p class="video-credit">Film ve İngilizce altyazı: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
         ${esc(v.source.credit)} · <a href="${esc(v.source.licenseUrl)}" target="_blank" rel="noopener">${esc(v.source.license)}</a>.
@@ -798,9 +806,45 @@
     });
     ["timeupdate", "play", "pause", "volumechange", "loadedmetadata", "seeked", "ended"].forEach((n) => player.addEventListener(n, syncBar));
 
+    // picture quality: user-selectable, remembered; keeps position and play state when switched
+    const QUALS = Array.isArray(v.qualities) ? v.qualities : [];
+    const qRow = document.getElementById("cs-quality-row");
+    const qSel = document.getElementById("cs-quality");
+    const qNote = document.getElementById("cs-quality-note");
+    const saveData = !!(navigator.connection && navigator.connection.saveData);
+    let curQ = QUALS.find((q) => q.url === v.videoUrl) || QUALS[0] || null;
+    const wanted = QUALS.find((q) => q.label === prefs.vq) || (saveData && QUALS.find((q) => q.label === "360p")) || null;
+    if (wanted) curQ = wanted;
+    const currentSrc = () => (curQ ? curQ.url : v.videoUrl);
+    if (QUALS.length > 1) {
+      qSel.innerHTML = QUALS.slice().reverse().map((q) => `<option value="${esc(q.label)}">${esc(q.label)}${q.sizeMB ? " · ~" + q.sizeMB + " MB" : ""}</option>`).join("");
+      qSel.value = curQ.label;
+      qRow.hidden = false;
+      qNote.hidden = false;
+      qNote.textContent = "Yüksek kalite daha net görüntü, düşük kalite daha az veri demektir. Kalite değişince video kaldığı yerden devam eder.";
+      qSel.addEventListener("change", () => {
+        const q = QUALS.find((x) => x.label === qSel.value);
+        if (!q || q === curQ) return;
+        curQ = q; prefs.vq = q.label; savePrefs();
+        if (!player.getAttribute("src")) return; // not started yet: used on start
+        const at = player.currentTime, resume = !player.paused && !player.ended;
+        status.textContent = "Kalite değişiyor: " + q.label + "…";
+        const onMeta = () => {
+          player.removeEventListener("loadedmetadata", onMeta);
+          if (disposed) return;
+          try { player.currentTime = at; } catch (err) { /* seek once data arrives */ }
+          if (resume) { const r = player.play(); if (r && r.catch) r.catch(() => {}); }
+          status.textContent = "Görüntü kalitesi: " + q.label;
+        };
+        player.addEventListener("loadedmetadata", onMeta);
+        player.src = q.url;
+      });
+    }
+
     // subtitle size + background opacity (remembered per device)
     const CAP_SCALES = [0.7, 0.85, 1, 1.2, 1.45, 1.8];
-    const capPrefs = Object.assign({ scale: 1, alpha: 72 }, prefs.cap || {});
+    const capPrefs = Object.assign({ scale: 1, alpha: 72, on: true }, prefs.cap || {});
+    const csOn = document.getElementById("cs-on"), vbSub = document.getElementById("vb-sub");
     const capPanel = document.getElementById("cap-settings");
     const capBtns = [document.getElementById("vb-cc"), document.getElementById("cap-settings-btn")];
     const csAlpha = document.getElementById("cs-alpha");
@@ -812,9 +856,18 @@
       document.getElementById("cs-size-val").textContent = Math.round(capPrefs.scale * 100) + "%";
       document.getElementById("cs-alpha-val").textContent = capPrefs.alpha + "%";
       csAlpha.value = String(capPrefs.alpha);
+      capPrefs.on = capPrefs.on !== false;
+      stage.classList.toggle("captions-off", !capPrefs.on);
+      csOn.setAttribute("aria-checked", String(capPrefs.on));
+      csOn.querySelector(".cs-switch-label").textContent = capPrefs.on ? "Açık" : "Kapalı";
+      vbSub.setAttribute("aria-pressed", String(capPrefs.on));
+      vbSub.setAttribute("aria-label", capPrefs.on ? "Altyazıyı kapat" : "Altyazıyı aç");
+      ["cs-smaller", "cs-bigger", "cs-alpha"].forEach((id) => { if (!capPrefs.on) document.getElementById(id).disabled = true; });
       document.getElementById("cs-smaller").disabled = CAP_SCALES.indexOf(capPrefs.scale) === 0;
       document.getElementById("cs-bigger").disabled = CAP_SCALES.indexOf(capPrefs.scale) === CAP_SCALES.length - 1;
-      if (save) { prefs.cap = { scale: capPrefs.scale, alpha: capPrefs.alpha }; savePrefs(); }
+      csAlpha.disabled = false;
+      if (!capPrefs.on) { document.getElementById("cs-smaller").disabled = true; document.getElementById("cs-bigger").disabled = true; csAlpha.disabled = true; }
+      if (save) { prefs.cap = { scale: capPrefs.scale, alpha: capPrefs.alpha, on: capPrefs.on }; savePrefs(); }
     }
     function setCapPanel(open) {
       capPanel.hidden = !open;
@@ -827,7 +880,10 @@
     document.getElementById("cs-smaller").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.max(0, CAP_SCALES.indexOf(capPrefs.scale) - 1)]; applyCap(true); });
     document.getElementById("cs-bigger").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.min(CAP_SCALES.length - 1, CAP_SCALES.indexOf(capPrefs.scale) + 1)]; applyCap(true); });
     csAlpha.addEventListener("input", () => { capPrefs.alpha = Number(csAlpha.value); applyCap(true); });
-    document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; applyCap(true); });
+    document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true); });
+    const toggleCaptions = () => { capPrefs.on = !capPrefs.on; Tip.hide(); applyCap(true); };
+    csOn.addEventListener("click", toggleCaptions);
+    vbSub.addEventListener("click", toggleCaptions);
     applyCap(false);
 
     function startVideo(at) {
@@ -836,7 +892,7 @@
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = v.videoUrl; player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar();
+        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar();
         document.getElementById("video-placeholder").hidden = true;
       }
       if (typeof at === "number") {

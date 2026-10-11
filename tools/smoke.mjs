@@ -109,7 +109,7 @@ try {
   const storyIds = new Set(stories.map((s) => s.id));
   const articleIds = new Set(articles.map((a) => a.id));
   const myLibraryReady = "document.querySelector('main h1')?.textContent === 'Kitaplığım'";
-  const videoCollectionReady = "location.hash === '#videos' && document.querySelectorAll('a.video-card').length === 1";
+  const videoCollectionReady = "location.hash === '#videos' && !!window.LANTERN_VIDEOS && window.LANTERN_VIDEOS.length > 0 && document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length";
   const videoReady = "document.getElementById('video-view')?.dataset.id === 'sintel' && !!document.getElementById('video-player')";
   const bookmarkIds = async () => evaluate("JSON.parse(localStorage.getItem('lantern.bookmarks') || '[]')");
   const clickBookmark = async (id, scope = "") => evaluate(`document.querySelector(${JSON.stringify(scope + '[data-bookmark="' + id + '"]')}).click()`);
@@ -506,7 +506,7 @@ try {
   await evaluate("document.querySelector('[data-nav=\"videos\"]').click()");
   await waitFor(videoCollectionReady);
   const trialVideo = await evaluate("window.LANTERN_VIDEOS[0]");
-  assert(await evaluate("window.LANTERN_VIDEOS.length === 1 && window.LANTERN_VIDEOS[0].id === 'sintel' && window.LANTERN_VIDEOS[0].level === 'B1' && document.querySelector('a.video-card').hash === '#v.sintel'"), "The video trial must contain exactly one Sintel B1 card.");
+  assert(await evaluate("window.LANTERN_VIDEOS.length >= 1 && window.LANTERN_VIDEOS[0].id === 'sintel' && window.LANTERN_VIDEOS[0].level === 'B1' && document.querySelector('a.video-card').hash === '#v.sintel'"), "The video trial must contain exactly one Sintel B1 card.");
   assert(await evaluate("document.querySelector('[data-nav=\"videos\"]').getAttribute('aria-current') === 'page'"), "The video collection must have active navigation.");
   await screenshot("videos-desktop");
   await evaluate("document.querySelector('a.video-card').click()");
@@ -520,6 +520,7 @@ try {
   assert(await evaluate(`document.querySelectorAll('#caption-select option').length === ${trialVideo.captions.length} && document.getElementById('video-captions').dataset.cue === '0' && document.getElementById('caption-prev').disabled`), "Every licensed caption must be selectable, with the first cue previewed initially.");
   assert(await evaluate("!!document.querySelector('#video-stage #video-captions') && !document.querySelector('.caption-panel #video-captions') && getComputedStyle(document.getElementById('video-captions')).position === 'absolute'"), "Video captions must be an overlay inside the video frame.");
   assert(await evaluate("(() => { document.getElementById('cap-settings-btn').click(); const open = !document.getElementById('cap-settings').hidden; document.getElementById('cs-bigger').click(); const scale = getComputedStyle(document.getElementById('video-stage')).getPropertyValue('--cap-scale').trim(); document.getElementById('cs-reset').click(); document.getElementById('cap-settings-btn').click(); return open && scale === '1.2' && document.getElementById('cap-settings').hidden; })()"), "Subtitle size/background settings must open and change the caption scale.");
+  assert(await evaluate("(() => { const q = document.getElementById('cs-quality'); const on = document.getElementById('cs-on'); const row = document.getElementById('cs-quality-row'); const had = !row.hidden && q.options.length >= 2; on.click(); const off = getComputedStyle(document.getElementById('video-captions')).display === 'none'; on.click(); const back = getComputedStyle(document.getElementById('video-captions')).display !== 'none'; return had && off && back; })()"), "Subtitles must be switchable off and picture quality must be selectable in the unified settings.");
   const captionText = async () => evaluate("document.getElementById('video-captions').textContent.replace(/\\s+/g, ' ').trim()");
   assert(await captionText() === trialVideo.captions[0].text.replace(/\s+/g, " ").trim(), "The initial caption preview must preserve the source dialogue.");
   await evaluate("document.getElementById('caption-next').click()");
@@ -593,7 +594,7 @@ try {
     assert(await evaluate("(() => { const r = document.querySelector('[data-nav=\"my-library\"]').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px personal-library navigation must be reachable in the header.`);
     await screenshot("my-library-mobile-" + width);
     await navigate("videos", videoCollectionReady);
-    assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('a.video-card').length === 1"), `${width}px video collection must fit and contain only the trial film.`);
+    assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length"), `${width}px video collection must fit and list every video.`);
     await screenshot("videos-mobile-" + width);
     await evaluate("document.querySelector('a.video-card').click()");
     await waitFor(videoReady);

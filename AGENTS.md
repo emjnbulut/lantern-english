@@ -88,6 +88,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 
 - Video captions are an overlay inside `#video-stage` (clickable words → tooltip, video pauses). The stage, not the `<video>`, goes fullscreen so captions and the dictionary tooltip stay visible; the tooltip element is moved into the stage while fullscreen. Native fullscreen/PiP are disabled for that reason (iPhone Safari keeps its native player).
 
+- Video player: own control bar; one **Ayarlar** (gear) panel holds picture quality (from `qualities`), subtitle on/off, size and background opacity; choices live in `lantern.prefs` (`vq`, `cap`). Phones get the panel as a bottom sheet. Videos so far: Sintel and Tears of Steel (both CC BY 3.0, official English SRT, 720p default).
+
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.

@@ -537,3 +537,28 @@ body.video-fs-open { overflow: hidden; }
 .cs-row input[type="range"] { flex: 1 1 auto; min-width: 0; height: 28px; accent-color: var(--accent); cursor: pointer; }
 .cs-hint { margin: 0 0 10px; font-size: 12px; color: #9aa1b2; line-height: 1.45; }
 .cs-reset { border: 0; background: transparent; color: var(--accent); font: 600 13px var(--f-ui); cursor: pointer; padding: 4px 0; }
+
+/* unified video settings (picture quality + subtitles) */
+.vb-cc { width: 40px; min-width: 40px; padding: 0; }
+.vb-cc svg { width: 22px; height: 22px; }
+.cs-title { font: 600 15px var(--f-display); margin-bottom: 10px; color: #fff; }
+.cs-sub { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; color: #9aa1b2; margin: 2px 0 8px; font-weight: 600; }
+.cs-sep { height: 1px; background: #343b4e; margin: 12px 0; }
+.cs-row select { flex: 1 1 auto; min-width: 0; height: 38px; padding: 0 10px; border: 1px solid #3a4258; border-radius: 8px; background: #1d222d; color: #fff; font: 500 14px var(--f-ui); }
+.cap-settings { max-height: min(70vh, 420px); overflow-y: auto; }
+#cap-settings-btn svg { width: 16px; height: 16px; vertical-align: -3px; margin-right: 4px; }
+
+/* subtitles on/off */
+.video-stage.captions-off .video-captions { display: none; }
+.vb-sub { font: 800 12px var(--f-ui); letter-spacing: .04em; border: 1.5px solid #fff; border-radius: 6px; width: 34px; height: 26px; align-self: center; }
+.vb-sub[aria-pressed="false"] { opacity: .5; border-color: transparent; text-decoration: line-through; }
+.cs-switch { display: inline-flex; align-items: center; gap: 10px; height: 38px; padding: 0 12px 0 6px; border: 1px solid #3a4258; border-radius: 99px; background: #1d222d; color: #fff; font: 600 14px var(--f-ui); cursor: pointer; }
+.cs-knob { width: 26px; height: 26px; border-radius: 50%; background: #5b6275; transition: background .15s, transform .15s; }
+.cs-switch[aria-checked="true"] .cs-knob { background: var(--accent); transform: translateX(2px); }
+
+/* phones: settings open as a bottom sheet (the picture frame is too small to hold them) */
+@media (max-width: 700px) {
+  .cap-settings { position: fixed; left: 8px; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); width: auto; max-height: min(72vh, 460px); z-index: 120; }
+}
+
+.cap-settings { background: #141822; }

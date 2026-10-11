@@ -10,7 +10,34 @@
   "summaryTr": "Sintel, yaralı bir yavru ejderhayla dost olur. Dostunu aramak için çıktığı yolculuk, onu uzak ve tehlikeli topraklara götürür.",
   "levelNoteTr": "B1, Lantern English'in İngilizce altyazı desteğiyle izleme için yaptığı tahmini değerlendirmedir; resmî bir CEFR derecesi değildir. Kısa diyaloglar ve görsel anlatım takibi kolaylaştırır. Bazı fantastik kelimeler ve mecazlar sözlük desteği gerektirebilir.",
   "advisoryTr": "Fantastik çatışma, yaralanma ve ölüm içeren üzücü sahneler bulunur.",
-  "videoUrl": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-480.mp4",
+  "videoUrl": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-720.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-240.mp4",
+      "sizeMB": 49
+    },
+    {
+      "label": "360p",
+      "url": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-360.mp4",
+      "sizeMB": 84
+    },
+    {
+      "label": "480p",
+      "url": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-480.mp4",
+      "sizeMB": 120
+    },
+    {
+      "label": "720p",
+      "url": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-720.mp4",
+      "sizeMB": 200
+    },
+    {
+      "label": "1080p",
+      "url": "https://video.blender.org/object-storage/web_videos/0eb052d0-fd51-43e6-aa33-ecdbf77a5d40-818.mp4",
+      "sizeMB": 239
+    }
+  ],
   "source": {
     "name": "Blender Foundation — Sintel / Durian Open Movie Project",
     "url": "https://durian.blender.org/download/",
@@ -40,31 +67,135 @@
     "shhh": "şşşt, sessiz ol"
   },
   "captions": [
-    { "start": 107.25, "end": 110.5, "text": "This blade has a dark past." },
-    { "start": 111.8, "end": 115.8, "text": "It has shed much innocent blood." },
-    { "start": 118, "end": 121.45, "text": "You're a fool for traveling alone,\nso completely unprepared." },
-    { "start": 121.75, "end": 124.8, "text": "You're lucky your blood's still flowing." },
-    { "start": 125.25, "end": 126.3, "text": "Thank you." },
-    { "start": 127.5, "end": 129, "text": "So..." },
-    { "start": 129.4, "end": 133.8, "text": "What brings you to\nthe land of the gatekeepers?" },
-    { "start": 135, "end": 137.5, "text": "I'm searching for someone." },
-    { "start": 138, "end": 142.2, "text": "Someone very dear?\nA kindred spirit?" },
-    { "start": 143.4, "end": 145, "text": "A dragon." },
-    { "start": 148.85, "end": 151.75, "text": "A dangerous quest for a lone hunter." },
-    { "start": 152.95, "end": 155.87, "text": "I've been alone for\nas long as I can remember." },
-    { "start": 207.25, "end": 210.5, "text": "We're almost done. Shhh..." },
-    { "start": 210.75, "end": 213.5, "text": "Hey, sit still." },
-    { "start": 228.25, "end": 232.25, "text": "Good night, Scales." },
-    { "start": 250.35, "end": 253.85, "text": "Get him, Scales! Come on!" },
-    { "start": 265.25, "end": 268.25, "text": "Scales?" },
-    { "start": 304, "end": 307.5, "text": "Yeah! Come on!" },
-    { "start": 338.75, "end": 342, "text": "Scales!" },
-    { "start": 445.85, "end": 447.5, "text": "I have failed." },
-    { "start": 452.8, "end": 456.5, "text": "You've only failed to see..." },
-    { "start": 457.8, "end": 460.5, "text": "These are dragon lands, Sintel." },
-    { "start": 460.85, "end": 464, "text": "You are closer than you know." },
-    { "start": 557.6, "end": 559.5, "text": "Scales!" },
-    { "start": 621.6, "end": 624, "text": "Scales?" },
-    { "start": 626.2, "end": 629.8, "text": "Scales..." }
+    {
+      "start": 107.25,
+      "end": 110.5,
+      "text": "This blade has a dark past."
+    },
+    {
+      "start": 111.8,
+      "end": 115.8,
+      "text": "It has shed much innocent blood."
+    },
+    {
+      "start": 118,
+      "end": 121.45,
+      "text": "You're a fool for traveling alone,\nso completely unprepared."
+    },
+    {
+      "start": 121.75,
+      "end": 124.8,
+      "text": "You're lucky your blood's still flowing."
+    },
+    {
+      "start": 125.25,
+      "end": 126.3,
+      "text": "Thank you."
+    },
+    {
+      "start": 127.5,
+      "end": 129,
+      "text": "So..."
+    },
+    {
+      "start": 129.4,
+      "end": 133.8,
+      "text": "What brings you to\nthe land of the gatekeepers?"
+    },
+    {
+      "start": 135,
+      "end": 137.5,
+      "text": "I'm searching for someone."
+    },
+    {
+      "start": 138,
+      "end": 142.2,
+      "text": "Someone very dear?\nA kindred spirit?"
+    },
+    {
+      "start": 143.4,
+      "end": 145,
+      "text": "A dragon."
+    },
+    {
+      "start": 148.85,
+      "end": 151.75,
+      "text": "A dangerous quest for a lone hunter."
+    },
+    {
+      "start": 152.95,
+      "end": 155.87,
+      "text": "I've been alone for\nas long as I can remember."
+    },
+    {
+      "start": 207.25,
+      "end": 210.5,
+      "text": "We're almost done. Shhh..."
+    },
+    {
+      "start": 210.75,
+      "end": 213.5,
+      "text": "Hey, sit still."
+    },
+    {
+      "start": 228.25,
+      "end": 232.25,
+      "text": "Good night, Scales."
+    },
+    {
+      "start": 250.35,
+      "end": 253.85,
+      "text": "Get him, Scales! Come on!"
+    },
+    {
+      "start": 265.25,
+      "end": 268.25,
+      "text": "Scales?"
+    },
+    {
+      "start": 304,
+      "end": 307.5,
+      "text": "Yeah! Come on!"
+    },
+    {
+      "start": 338.75,
+      "end": 342,
+      "text": "Scales!"
+    },
+    {
+      "start": 445.85,
+      "end": 447.5,
+      "text": "I have failed."
+    },
+    {
+      "start": 452.8,
+      "end": 456.5,
+      "text": "You've only failed to see..."
+    },
+    {
+      "start": 457.8,
+      "end": 460.5,
+      "text": "These are dragon lands, Sintel."
+    },
+    {
+      "start": 460.85,
+      "end": 464,
+      "text": "You are closer than you know."
+    },
+    {
+      "start": 557.6,
+      "end": 559.5,
+      "text": "Scales!"
+    },
+    {
+      "start": 621.6,
+      "end": 624,
+      "text": "Scales?"
+    },
+    {
+      "start": 626.2,
+      "end": 629.8,
+      "text": "Scales..."
+    }
   ]
 }

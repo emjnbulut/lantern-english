@@ -1,0 +1,13 @@
+{
+  "awesome": { "pos": "sıfat", "tr": "harika, muhteşem" },
+  "robotic": { "pos": "sıfat", "tr": "robot gibi, robotlara ait" },
+  "ass": { "pos": "isim", "tr": "(argo) kıç, popo; eşek" },
+  "eh": { "pos": "ünlem", "tr": "ha?, değil mi?, ee" },
+  "ad-lib": { "pos": "fiil/isim", "tr": "doğaçlama söylemek; doğaçlama söz" },
+  "lib": { "pos": "kısaltma", "tr": "ad-lib'in kısaltması: doğaçlama" },
+  "whoa": { "pos": "ünlem", "tr": "vay!, dur! (şaşkınlık)" },
+  "could'a": { "pos": "kısaltma", "tr": "could have: ...ebilirdi" },
+  "dick": { "pos": "isim", "tr": "(argo, kaba) aptal, ahmak herif" },
+  "thom": { "pos": "özel isim", "tr": "Thom (filmdeki karakter)" },
+  "celia": { "pos": "özel isim", "tr": "Celia (filmdeki karakter)" }
+}
