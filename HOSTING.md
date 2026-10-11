@@ -75,3 +75,12 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 
 ### Koruma gerçeği
 Statik siteyi herkes tarayıcısından görüp kaydedebilir; teknik olarak kopyalanmasını engellemek mümkün değildir. Alınan önlemler: kaynak/taslak/geçmiş yayınlanmaz, `LICENSE` ile telif bildirimi, sayfada "created by emjn" imzası. Kamu malı klasikler (Gutenberg) zaten serbesttir; özgün metinler telif kapsamındadır.
+
+### Özel alan adı (.com) — hazırlık notu (satın alma kullanıcıdadır)
+`.com` ücretsiz değildir (yıllık ücret; GitHub Pages özel alan adını ücretsiz bağlar). Adresi satın alma ve ödeme **kullanıcı** tarafından yapılır; hiçbir kimlik/ödeme bilgisi AI'a verilmez. 11 Ekim 2026 RDAP sorgusunda boş görünenler: `lantern-english.com`, `lantern-reads.com`, `lanternspeak.com`, `lanternenglishstories.com` (`lanternenglish.com` dolu). Satın almadan önce WHOIS gizliliğinin açık olduğundan emin olun (ad görünmesin).
+
+Alan adı alındıktan sonra:
+1. DNS (apex): `A` kayıtları `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`; `www` için `CNAME` → `lantern-english.github.io`.
+2. Public depoya kök dizinde `CNAME` dosyası ekle (içeriği yalnızca alan adı) — `tools/make-site.mjs` bu dosyayı otomatik üretmediği için public depoda normal commit ile korunmalı. Pages'te özel alan adını ayarla: `gh api -X PUT repos/lantern-english/lantern-english.github.io/pages -f cname=<alan-adı>`; DNS doğrulanınca `-F https_enforced=true`.
+3. **Uyarı:** `localStorage` kaynak (origin) başınadır. Alan adı değişince kelime defteri, kitaplık ve ilerleme yeni adreste boş başlar; eski adres GitHub tarafından yeni adrese yönlendirilir ama veri taşınmaz. Taşımadan önce "Anki için kopyala" ile kelimeleri dışa aktarın veya dışa/içe aktarma özelliğini ekleyin.
+4. `sw.js`/manifest göreli yollar kullandığı için kod değişikliği gerekmez; kurulu PWA'lar yeniden kurulmalıdır.
