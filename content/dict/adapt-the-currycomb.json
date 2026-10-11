@@ -1,0 +1,17 @@
+{
+  "chestnut": { "pos": "isim", "tr": "kestane, kestane ağacı" },
+  "groom": { "pos": "isim/fiil", "tr": "seyis, damat; (atı) tımar etmek" },
+  "hoof": { "pos": "isim", "tr": "toynak, tırnak (atın)" },
+  "foal": { "pos": "isim", "tr": "tay (atın yavrusu)" },
+  "currycomb": { "pos": "isim", "tr": "kaşağı (at tımar aleti)" },
+  "tik": { "pos": "isim", "tr": "tık (hafif, kuru ses)" },
+  "hoyt": { "pos": "ünlem", "tr": "höyt! (ata seslenme sesi)" },
+  "rump": { "pos": "isim", "tr": "sağrı, kıç (hayvanın arka kısmı)" },
+  "blunt": { "pos": "sıfat/fiil", "tr": "kör, keskin olmayan; körleştirmek" },
+  "trough": { "pos": "isim", "tr": "yalak, tekne (hayvan suluğu)" },
+  "shameless": { "pos": "sıfat", "tr": "utanmaz, arsız" },
+  "tread": { "pos": "fiil/isim", "tr": "basmak, çiğnemek; adım" },
+  "diphtheria": { "pos": "isim", "tr": "difteri, kuşpalazı" },
+  "sickroom": { "pos": "isim", "tr": "hasta odası" },
+  "imam": { "pos": "isim", "tr": "imam (namaz kıldıran din görevlisi)" }
+}
