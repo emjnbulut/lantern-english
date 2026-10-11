@@ -69,7 +69,7 @@
 
   function undouble(stem) {
     const n = stem.length;
-    if (n > 2 && stem[n - 1] === stem[n - 2] && isCons(stem[n - 1]) && !"lsz".includes(stem[n - 1])) {
+    if (n > 2 && stem[n - 1] === stem[n - 2] && isCons(stem[n - 1])) {
       return stem.slice(0, -1);
     }
     return null;
