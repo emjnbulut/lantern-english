@@ -4,7 +4,7 @@ import path from "node:path";
 import os from "node:os";
 import http from "node:http";
 import { spawn } from "node:child_process";
-import { ROOT, loadAll, wordCount } from "./lib.mjs";
+import { ROOT, loadAll, wordCount, Lemma } from "./lib.mjs";
 
 const { stories, articles, summaries, errors } = loadAll();
 if (errors.length) throw new Error(errors.join("\n"));
@@ -124,7 +124,7 @@ try {
   assert(JSON.stringify(await ids()) === JSON.stringify(horrorStoryIds), "Story filters must survive switching to articles.");
   await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
   assert(JSON.stringify(await ids()) === JSON.stringify(horrorArticleIds), "Article filters must survive switching to stories.");
-  await evaluate(`const q = document.getElementById('q'); q.value = 'zzzx-nonexistent-title'; q.dispatchEvent(new Event('input', { bubbles: true }));`);
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'zzzx-nonexistent-title'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
   assert((await ids()).length === 0 && await evaluate("document.querySelector('.empty h3').textContent.includes('makale')"), "Empty article searches must use article-specific messaging.");
   await evaluate("document.getElementById('clear').click()");
   assert((await ids()).length === articles.length, "Clearing article filters must restore every article.");
@@ -148,22 +148,24 @@ try {
   assert(["dracula", "the-metamorphosis", "animal-farm", "frankenstein"].every((id) => summaryIds.has(id)), "The four requested classic book summaries must be available.");
   await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
   assert((await ids()).length === summaries.length && (await ids()).every((id) => summaryIds.has(id)), "Book summaries must have their own collection.");
-  await evaluate(`const q = document.getElementById('q'); q.value = 'Franz Kafka'; q.dispatchEvent(new Event('input', { bubbles: true }));`);
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'Franz Kafka'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
   assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summaries must be searchable by original author.");
   await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
   assert((await ids()).length === articles.length, "Book summary searches must not change article filters.");
   await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
   assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summary search must survive collection switching.");
-  await evaluate(`const q = document.getElementById('q'); q.value = 'Dönüşüm'; q.dispatchEvent(new Event('input', { bubbles: true }));`);
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'Dönüşüm'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
   assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Turkish work titles must be searchable.");
   await evaluate("document.getElementById('clear').click()");
   await screenshot("summaries-desktop");
   for (const summary of summaries) {
     await navigate("s." + summary.id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
     const count = wordCount(summary.paragraphs);
+    // chapter headings are rendered with hoverable words too, but are not part of the reading-time count
+    const rendered = count + (summary.paragraphs.filter((p) => p.startsWith("## ")).join(" ").match(Lemma.WORD_RE)?.length || 0);
     const mins = Math.round(count / ({ B2: 130, C1: 150, C2: 170 }[summary.level] || 130));
     assert(mins >= 30 && mins <= 40 && await evaluate(`document.querySelector('.reader-head .tags').textContent.includes('~${mins} dk')`), `${summary.id} must display a 30–40 minute reading estimate.`);
-    assert(await evaluate(`document.querySelector('#text').querySelectorAll('.w').length === ${count}`), `${summary.id} must render all summary text.`);
+    assert(await evaluate(`document.querySelector('#text').querySelectorAll('.w').length === ${rendered}`), `${summary.id} must render all summary text.`);
     assert(await evaluate(`document.querySelector('.reader-head .by').textContent.includes(${JSON.stringify(summary.work.author)}) && !!document.querySelector('.spoiler-note') && document.querySelector('.crumbs a:last-child').hash === '#summaries' && document.querySelector('[data-nav="summaries"]').getAttribute('aria-current') === 'page'`), `${summary.id} must show original author, spoiler notice, and correct navigation.`);
     const recommendations = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
     assert(recommendations.every((id) => summaryIds.has(id)), "Summary readers must recommend book summaries only.");
