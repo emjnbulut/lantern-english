@@ -480,7 +480,7 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 
 /* video frame, custom controls and in-page fullscreen */
 .video-frame { position: relative; width: 100%; }
-.video-stage video { cursor: pointer; }
+.video-stage video { cursor: default; }
 .video-bar { position: absolute; left: 0; right: 0; bottom: 0; z-index: 4; display: flex; align-items: center; gap: 8px; padding: 18px 10px calc(8px + env(safe-area-inset-bottom, 0px)); background: linear-gradient(to top, rgba(8, 10, 15, .92), rgba(8, 10, 15, 0)); }
 .video-bar[hidden] { display: none; }
 .vb-btn { flex: 0 0 auto; width: 40px; height: 40px; display: inline-grid; place-items: center; border: 0; border-radius: 8px; background: transparent; color: #fff; cursor: pointer; }

@@ -927,7 +927,7 @@
     function seekBy(delta) {
       if (!player.getAttribute("src")) return false;
       const d = duration();
-      const base = switching ? switching.at : (player.currentTime || 0);
+      const base = switching ? switching.at : (pendingSeek !== null ? pendingSeek : (player.currentTime || 0));
       const at = Math.min(Math.max(0, base + delta), Math.max(0, d - 0.05));
       if (switching) switching.at = at;
       else if (player.readyState >= 1) { try { player.currentTime = at; } catch (err) { pendingSeek = at; } }
