@@ -662,3 +662,22 @@ body.video-fs-open { overflow: hidden; }
 .video-stage.controls-hidden { cursor: none; }
 .video-stage.controls-hidden .video-center, .video-stage.controls-hidden .video-captions p { cursor: pointer; }
 .cs-row #cs-inpage-fs { font-size: 13px; height: auto; min-height: 38px; padding: 6px 12px; text-align: left; border-radius: 12px; }
+
+/* idle frame: never wider than its container (aspect-ratio + min-height used to widen it past the screen) */
+.video-stage .video-placeholder { width: 100%; min-width: 0; box-sizing: border-box; }
+.video-placeholder > * { max-width: 100%; }
+.video-placeholder p { overflow-wrap: anywhere; }
+
+/* touch comfort for small inline links (breadcrumbs, "tümünü gör", credits) */
+@media (pointer: coarse) {
+  .crumbs a, a.link, .video-credit a, .source a, .prose a { display: inline-block; padding: 7px 3px; margin: -7px -3px; }
+  .brand { padding: 8px 6px; margin: -8px -6px; }
+}
+
+/* tour fixes (phones): full-width search, balanced stats, scroll hint on chip rows, calmer idle video frame */
+@media (max-width: 600px) {
+  .search { flex: 1 1 100%; width: 100%; }
+  .stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; }
+  .filters .chips { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent); padding-right: 36px; }
+  .video-stage .video-placeholder { min-height: 352px; padding: 20px 16px 124px; }
+}
