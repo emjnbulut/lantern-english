@@ -1,0 +1,14 @@
+{
+  "amen": { "pos": "ünlem", "tr": "amin" },
+  "bey": { "pos": "isim", "tr": "bey (Türk boy ve oba önderi, soylu)" },
+  "bridal": { "pos": "sıfat", "tr": "gelinle ilgili, düğünle ilgili" },
+  "bridegroom": { "pos": "isim", "tr": "damat, güvey" },
+  "deli": { "pos": "isim", "tr": "şarküteri (hikâyede Türkçe 'deli': çılgın)" },
+  "drummer": { "pos": "isim", "tr": "davulcu, davul çalan kişi" },
+  "ford": { "pos": "isim/fiil", "tr": "(nehirde) sığ geçit; sığ yerden geçmek" },
+  "mare": { "pos": "isim", "tr": "kısrak, dişi at" },
+  "minstrel": { "pos": "isim", "tr": "ozan, gezgin şarkıcı-şair" },
+  "neigh": { "pos": "fiil", "tr": "kişnemek (at)" },
+  "piper": { "pos": "isim", "tr": "gayda veya kaval çalan kişi" },
+  "yalancı": { "pos": "isim", "tr": "yalancı (Türkçe sözcük; İngilizcesi 'liar')" }
+}

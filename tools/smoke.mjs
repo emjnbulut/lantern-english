@@ -65,15 +65,15 @@ try {
       if (/^https?:\/\//.test(url) && !url.startsWith(origin + "/")) externalRequests.push(url);
     }
     if (message.id && pending.has(message.id)) {
-      const { resolve, reject, timer } = pending.get(message.id);
+      const { resolve, reject, timer, method } = pending.get(message.id);
       pending.delete(message.id); clearTimeout(timer);
-      if (message.error) reject(new Error(message.error.message)); else resolve(message.result);
+      if (message.error) reject(new Error(`${message.error.message} (${method})`)); else resolve(message.result);
     }
   });
   send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
     const id = ++serial;
     const timer = setTimeout(() => { pending.delete(id); reject(new Error(`Timed out: ${method}`)); }, 15000);
-    pending.set(id, { resolve, reject, timer });
+    pending.set(id, { resolve, reject, timer, method });
     socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
   });
   const { targetId } = await send("Target.createTarget", { url: "about:blank" });
@@ -81,7 +81,7 @@ try {
   const page = (method, params) => send(method, params, sessionId);
   await page("Runtime.enable"); await page("Page.enable");
   const evaluate = async (expression, options = {}) => {
-    const result = await page("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true, ...options });
+    const result = await page("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true, ...options }).catch((error) => { throw new Error(`${error.message} while evaluating: ${String(expression).slice(0, 160)}`); });
     if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
     return result.result.value;
   };
@@ -881,7 +881,6 @@ try {
   const barResize = await tipBox();
   assert(barResize.parent === "video-frame" && tipInside(barResize) && (await stageState()).rot, "A small viewport change in portrait (browser bar showing or hiding) must keep rotated fullscreen and a pinned tooltip.");
   await resizeTo(390, 844, true);
-  await evaluate("document.querySelector('#video-captions .w').click()");
   await evaluate("document.body.click()");
   await vreset(cue0Mid);
   await settleFrame();
@@ -920,6 +919,14 @@ try {
   const portraitExit = await stageState();
   assert(!portraitExit.pseudo && !portraitExit.rot && !portraitExit.bodyOpen && portraitExit.transform === "none" && (await tipBox()).parent === "BODY", "Leaving rotated fullscreen must remove rot90 and return #tip to document.body.");
 
+  // A touch tablet (short side of 600 px or more) is not rotated in portrait: only phones get rot90.
+  await resizeTo(768, 1024, true);
+  await evaluate("document.getElementById('vb-fs').click()");
+  const tabletFs = await stageState();
+  assert(tabletFs.pseudo && !tabletFs.rot && tabletFs.transform === "none", "A touch tablet in portrait fullscreen must not rotate the picture (rot90 is for phones).");
+  await evaluate("document.getElementById('vb-fs').click()");
+  assert(!(await stageState()).pseudo, "Leaving fullscreen on a tablet must restore the page.");
+
   // Restore the shared browser state for the checks that follow.
   await page("Emulation.setTouchEmulationEnabled", { enabled: false });
   await page("Page.removeScriptToEvaluateOnNewDocument", { identifier: noFullscreenApi });
@@ -927,6 +934,30 @@ try {
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
   await reload(videoReady);
   assert(await evaluate("!!Element.prototype.requestFullscreen && document.getElementById('cs-inpage-row').hidden && !document.getElementById('video-center')"), "On a browser with the Fullscreen API the device-player settings row must stay hidden.");
+  await evaluate("window.__origReqFs = Element.prototype.requestFullscreen; window.__origFsEnabled = Object.getOwnPropertyDescriptor(Document.prototype, 'fullscreenEnabled'); HTMLVideoElement.prototype.webkitEnterFullscreen = function () {};");
+  await navigate("videos", videoCollectionReady);
+  await navigate("v.sintel", videoReady);
+  assert(await evaluate("document.getElementById('cs-inpage-row').hidden"), "When the page has requestFullscreen the device-player row stays hidden even if the video element offers webkitEnterFullscreen (iPad/desktop Safari).");
+  // A refused, never-answered or disabled Fullscreen API request must still end in the in-page mode.
+  const fsFallbacks = [
+    ["refused", "Element.prototype.requestFullscreen = function () { window.__fsCalls++; return Promise.reject(new Error('denied')); };"],
+    ["ignored", "Element.prototype.requestFullscreen = function () { window.__fsCalls++; return new Promise(function () {}); };"],
+  ];
+  for (const [label, setup] of fsFallbacks) {
+    await navigate("videos", videoCollectionReady);
+    await evaluate("window.__fsCalls = 0; " + setup);
+    await navigate("v.sintel", videoReady);
+    await evaluate("document.getElementById('vb-fs').click()");
+    await waitFor("document.getElementById('video-stage').classList.contains('pseudo-fs')");
+    assert(await evaluate("window.__fsCalls === 1 && document.body.classList.contains('video-fs-open')"), `A ${label} requestFullscreen call must fall back to the in-page fullscreen mode.`);
+  }
+  await navigate("videos", videoCollectionReady);
+  await evaluate("window.__fsCalls = 0; Element.prototype.requestFullscreen = function () { window.__fsCalls++; return Promise.resolve(); }; Object.defineProperty(Document.prototype, 'fullscreenEnabled', { configurable: true, get() { return false; } }); void 0;");
+  await navigate("v.sintel", videoReady);
+  await evaluate("document.getElementById('vb-fs').click()");
+  assert(await evaluate("window.__fsCalls === 0 && document.getElementById('video-stage').classList.contains('pseudo-fs')"), "When the document disallows fullscreen (document.fullscreenEnabled is false) the in-page mode must be used without calling requestFullscreen.");
+  await navigate("videos", videoCollectionReady);
+  await evaluate("Element.prototype.requestFullscreen = window.__origReqFs; Object.defineProperty(Document.prototype, 'fullscreenEnabled', window.__origFsEnabled); delete HTMLVideoElement.prototype.webkitEnterFullscreen; void 0;");
 
   await page("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
   await navigate("home", "!!document.querySelector('.collection-grid')");

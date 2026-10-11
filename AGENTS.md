@@ -94,6 +94,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 
 - Video fullscreen model: real Fullscreen API on #video-stage (Android/desktop) → in-page fullscreen (class pseudo-fs) when the API is missing or silently ignored (iPhone Safari, in-app browsers). Touch devices default to "Ekranı kapla" (class video-fill, object-fit: cover, no side bars); portrait without a landscape lock rotates the frame 90° (class rot90, tooltip lives inside #video-frame, Tip.rotFrame). The old centre tap-to-pause zone was removed on purpose (it blocked subtitle taps). Shortcuts: ArrowLeft/Right ±5 s, Space play/pause; touch: double tap left/right half ±5 s. iPhone's native player is opt-in (Ayarlar → "Cihazın kendi oynatıcısı") because its subtitles cannot be tapped.
 
+- Adapted classics (12 Oct 2026): The Currycomb, The Haunted Mansion, The Pink Pearl Kaftan (Ömer Seyfettin), Boghach Khan, Bamsi Beyrek, Basat and the One-Eyed Giant (Book of Dede Korkut) are written from the Turkish originals (no English translations used). **Pinocchio (A2) is still missing** — write `content/stories/pinocchio-retold.json` from the Italian original (Gutenberg #52484), then `node tools/validate.mjs`, `node tools/build.mjs`, `node tools/smoke.mjs`. Lemmatizer fix: silent-e stems (rides→ride, hated→hate) via a CVC rule in assets/js/lemmatize.js.
+
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
