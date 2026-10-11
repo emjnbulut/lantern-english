@@ -1,0 +1,54 @@
+{
+  "landlady": {
+    "pos": "isim",
+    "tr": "ev sahibesi, han/otel sahibi kadın"
+  },
+  "bead": {
+    "pos": "isim",
+    "tr": "boncuk, tespih tanesi"
+  },
+  "lizard": {
+    "pos": "isim",
+    "tr": "kertenkele"
+  },
+  "hateful": {
+    "pos": "sıfat",
+    "tr": "nefret uyandıran, iğrenç"
+  },
+  "schoolteacher": {
+    "pos": "isim",
+    "tr": "okul öğretmeni"
+  },
+  "lunatic": {
+    "pos": "isim/sıfat",
+    "tr": "deli; (lunatic asylum) akıl hastanesi"
+  },
+  "homeland": {
+    "pos": "isim",
+    "tr": "vatan, anavatan, memleket"
+  },
+  "unclean": {
+    "pos": "sıfat",
+    "tr": "kirli, murdar, lekeli"
+  },
+  "panther": {
+    "pos": "isim",
+    "tr": "panter, pars"
+  },
+  "banknote": {
+    "pos": "isim",
+    "tr": "kâğıt para, banknot"
+  },
+  "hypnotise": {
+    "pos": "fiil",
+    "tr": "hipnotize etmek, hipnotizma etmek"
+  },
+  "heath": {
+    "pos": "isim",
+    "tr": "fundalık, çalılık açık arazi"
+  },
+  "szgany": {
+    "pos": "özel isim",
+    "tr": "Szgany (romanda Dracula'ya hizmet eden Roman grubu)"
+  }
+}
