@@ -469,10 +469,10 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 .video-stage .video-captions p { display: inline-block; max-width: min(100%, 46em); margin: 0; padding: .3em .7em .35em; border-radius: 8px; background: rgba(8, 10, 15, .8); color: #fff; font-size: clamp(15px, 2.3vw, 22px); font-weight: 500; line-height: 1.45; text-shadow: 0 1px 2px rgba(0, 0, 0, .6); pointer-events: auto; }
 .video-stage .video-captions .w { cursor: pointer; padding: 0 1px; }
 .video-stage .video-captions .w:hover, .video-stage .video-captions .w.on { background: rgba(241, 182, 95, .38); }
-.video-stage:fullscreen, .video-stage:-webkit-full-screen { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 0; border-radius: 0; background: #000; }
-.video-stage:fullscreen video, .video-stage:-webkit-full-screen video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
-.video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 72px; }
-.video-stage:fullscreen .video-captions p, .video-stage:-webkit-full-screen .video-captions p { font-size: clamp(20px, 3vw, 34px); }
+.video-stage.real-fs { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; border: 0; border-radius: 0; background: #000; }
+.video-stage.real-fs video{ width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
+.video-stage.real-fs .video-captions{ bottom: 72px; }
+.video-stage.real-fs .video-captions p{ font-size: clamp(20px, 3vw, 34px); }
 @media (max-width: 600px) { .video-stage .video-captions { bottom: 48px; padding: 0 8px; } .video-stage .video-captions p { font-size: 15px; } }
 /* idle frame: keep the start button and note above the subtitle strip */
 .video-stage .video-placeholder { justify-content: flex-start; min-height: 360px; aspect-ratio: 16 / 9; padding: 28px 20px 120px; }
@@ -491,28 +491,27 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 #vb-seek { flex: 1 1 auto; min-width: 0; height: 28px; accent-color: var(--accent); cursor: pointer; background: transparent; }
 .video-stage .video-captions { bottom: 58px; }
 .video-stage.pseudo-fs { position: fixed; inset: 0; z-index: 90; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; border: 0; border-radius: 0; background: #000; }
-.video-stage:fullscreen .video-frame, .video-stage:-webkit-full-screen .video-frame, .video-stage.pseudo-fs .video-frame { width: min(100vw, calc(100vh * 16 / 9)); width: min(100vw, calc(100dvh * 16 / 9)); }
-.video-stage:fullscreen video, .video-stage:-webkit-full-screen video, .video-stage.pseudo-fs video { width: 100%; height: auto; aspect-ratio: 16 / 9; }
+.video-stage.real-fs .video-frame, .video-stage.pseudo-fs .video-frame { width: min(100vw, calc(100vh * 16 / 9)); width: min(100vw, calc(100dvh * 16 / 9)); }
+.video-stage.real-fs video, .video-stage.pseudo-fs video { width: 100%; height: auto; aspect-ratio: 16 / 9; }
 .video-stage.pseudo-fs .video-captions p { font-size: clamp(18px, 3vw, 32px); }
-.video-stage.pseudo-fs .video-captions, .video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 64px; }
+.video-stage.pseudo-fs .video-captions, .video-stage.real-fs .video-captions{ bottom: 64px; }
 body.video-fs-open { overflow: hidden; }
 @media (max-width: 600px) { .vb-time { display: none; } .video-stage .video-captions { bottom: 54px; } }
 
 /* subtitle strip sits above the 66px control bar */
 .video-stage .video-captions { bottom: 72px; }
-.video-stage.pseudo-fs .video-captions, .video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 78px; }
+.video-stage.pseudo-fs .video-captions, .video-stage.real-fs .video-captions{ bottom: 78px; }
 @media (max-width: 600px) { .video-stage .video-captions { bottom: 70px; } .video-stage.pseudo-fs .video-captions { bottom: 70px; } }
 
 /* subtitle size follows the picture width (small phones get small, readable text) and is user-adjustable */
 .video-stage { --cap-scale: 1; --cap-alpha: .72; --cap-w: min(100vw, 900px); --cap-base: clamp(12px, calc(var(--cap-w) * .021), 22px); }
-.video-stage.pseudo-fs, .video-stage:fullscreen, .video-stage:-webkit-full-screen { --cap-w: min(100vw, calc(100vh * 16 / 9)); --cap-base: clamp(12px, calc(var(--cap-w) * .024), 36px); }
+.video-stage.pseudo-fs, .video-stage.real-fs { --cap-w: min(100vw, calc(100vh * 16 / 9)); --cap-base: clamp(12px, calc(var(--cap-w) * .024), 36px); }
 @supports (height: 100dvh) {
-  .video-stage.pseudo-fs, .video-stage:fullscreen, .video-stage:-webkit-full-screen { --cap-w: min(100vw, calc(100dvh * 16 / 9)); }
+  .video-stage.pseudo-fs, .video-stage.real-fs { --cap-w: min(100vw, calc(100dvh * 16 / 9)); }
 }
 .video-stage .video-captions p,
 .video-stage.pseudo-fs .video-captions p,
-.video-stage:fullscreen .video-captions p,
-.video-stage:-webkit-full-screen .video-captions p {
+.video-stage.real-fs .video-captions p {
   font-size: calc(var(--cap-base) * var(--cap-scale));
   line-height: 1.4;
   padding: .22em .55em .26em;
@@ -627,3 +626,27 @@ body.video-fs-open { overflow: hidden; }
 
 /* scrolling the picture into view must stop below the sticky header */
 .video-stage { scroll-margin-top: 80px; scroll-margin-bottom: 16px; }
+
+/* review fixes: captions above the centre zone, bar does not swallow caption taps, safe area only when full */
+.video-stage .video-captions { z-index: 5; }
+.video-bar { pointer-events: none; padding-bottom: 8px; }
+.video-bar > * { pointer-events: auto; }
+.video-stage.real-fs .video-bar, .video-stage.pseudo-fs .video-bar { padding-bottom: calc(8px + env(safe-area-inset-bottom, 0px)); }
+.cap-settings { max-height: calc(100% - 84px); }
+@media (orientation: landscape) and (max-height: 520px) {
+  .cap-settings { position: fixed; left: auto; right: 8px; bottom: calc(8px + env(safe-area-inset-bottom, 0px)); width: min(320px, calc(100vw - 16px)); max-height: calc(100vh - 16px); z-index: 120; }
+}
+@supports (height: 100dvh) {
+  @media (orientation: landscape) and (max-height: 520px) {
+    .video-stage:not(.pseudo-fs) .video-frame { width: min(100%, calc((100dvh - 100px) * 16 / 9)); }
+    .cap-settings { max-height: calc(100dvh - 16px); }
+  }
+}
+@media (max-width: 360px) { .vol-pop { width: 180px; } }
+
+/* final word on caption offsets: always clear of the 66px control bar */
+.video-stage .video-captions { bottom: 72px; }
+.video-stage.pseudo-fs .video-captions, .video-stage.real-fs .video-captions { bottom: 78px; }
+@media (max-width: 600px) {
+  .video-stage .video-captions, .video-stage.pseudo-fs .video-captions, .video-stage.real-fs .video-captions { bottom: 72px; }
+}

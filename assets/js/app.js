@@ -669,7 +669,7 @@
           <p class="cs-hint" id="cs-quality-note" hidden></p>
           <div class="cs-sep" role="separator"></div>
           <div class="cs-sub">Altyazı</div>
-          <div class="cs-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-on" role="switch" aria-checked="true"><span class="cs-knob"></span><span class="cs-switch-label">Açık</span></button></div>
+          <div class="cs-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-on" role="switch" aria-label="Altyazı" aria-checked="true"><span class="cs-knob"></span><span class="cs-switch-label">Açık</span></button></div>
           <div class="cs-row"><span>Yazı boyutu</span><div class="cs-size"><button type="button" id="cs-smaller" aria-label="Altyazıyı küçült">A−</button><output id="cs-size-val">100%</output><button type="button" id="cs-bigger" aria-label="Altyazıyı büyüt">A+</button></div></div>
           <div class="cs-row"><label for="cs-alpha">Arka plan</label><input type="range" id="cs-alpha" min="0" max="100" step="5"><output id="cs-alpha-val">72%</output></div>
           <p class="cs-hint">Sola çekince arka plan saydamlaşır, görüntü öne çıkar.</p>
@@ -725,6 +725,7 @@
 
     function seekCaption(index) {
       if (index < 0 || index >= v.captions.length) return;
+      if (switching) switching.at = v.captions[index].start;
       showCaption(index);
       if (player.getAttribute("src")) {
         const at = v.captions[index].start;
@@ -749,6 +750,8 @@
       (on ? stage : document.body).appendChild(Tip.el);
       Tip.hide();
       stage.classList.toggle("pseudo-fs", pseudoFs);
+      stage.classList.toggle("real-fs", fsElement() === stage);
+      if (!on) unlockOrientation();
       document.body.classList.toggle("video-fs-open", on);
       fsBtn.textContent = on ? "Tam ekrandan çık" : "Tam ekran";
       vbFs.innerHTML = on ? ICON.shrink : ICON.expand;
@@ -779,7 +782,13 @@
     document.addEventListener("webkitfullscreenchange", syncFsUi);
     fsBtn.addEventListener("click", toggleFs);
     vbFs.addEventListener("click", toggleFs);
-    const onEscape = (ev) => { if (ev.key === "Escape" && pseudoFs) exitFs(); };
+    const onEscape = (ev) => {
+      if (ev.key !== "Escape") return;
+      const panel = document.getElementById("cap-settings"), vp = document.getElementById("vol-pop");
+      if (panel && !panel.hidden) { panel.hidden = true; document.getElementById("vb-cc").setAttribute("aria-expanded", "false"); document.getElementById("cap-settings-btn").setAttribute("aria-expanded", "false"); document.getElementById("vb-cc").focus(); return; }
+      if (vp && !vp.hidden) { vp.hidden = true; document.getElementById("vb-mute").setAttribute("aria-expanded", "false"); document.getElementById("vb-mute").focus(); return; }
+      if (pseudoFs) exitFs();
+    };
     document.addEventListener("keydown", onEscape);
 
     // custom controls (native controls cannot show our captions in fullscreen)
@@ -788,6 +797,7 @@
       const d = duration(), t = switching ? switching.at : (player.currentTime || 0);
       if (!seeking) vbSeek.value = String(Math.round((t / d) * 1000));
       vbTime.textContent = videoTime(t) + " / " + videoTime(d);
+      vbSeek.setAttribute("aria-valuetext", vbTime.textContent);
       vbPlay.innerHTML = player.paused ? ICON.play : ICON.pause;
       vbPlay.setAttribute("aria-label", player.paused ? "Oynat" : "Duraklat");
       const silent = player.muted || (volumeSettable && player.volume === 0);
@@ -847,8 +857,9 @@
       qSel.addEventListener("change", () => {
         const q = QUALS.find((x) => x.label === qSel.value);
         if (!q || q === curQ) return;
-        curQ = q; prefs.vq = q.label; savePrefs();
-        if (!player.getAttribute("src")) return; // not started yet: used on start
+        const previousQ = curQ;
+        curQ = q;
+        if (!player.getAttribute("src")) { prefs.vq = q.label; savePrefs(); return; } // not started yet: used on start
         // keep the exact position and play state across the source switch
         const at = switching ? switching.at : (player.currentTime || 0);
         const resume = switching ? switching.resume : (!player.paused && !player.ended);
@@ -859,10 +870,22 @@
           if (disposed || !switching || switching.token !== token) return;
           if (Math.abs((player.currentTime || 0) - at) > 1) { try { player.currentTime = at; } catch (err) { /* retried on canplay */ } }
         };
-        const finish = () => {
+        const abort = () => {
           player.removeEventListener("loadedmetadata", restore);
           player.removeEventListener("canplay", finish);
           if (disposed || !switching || switching.token !== token) return;
+          switching = null;
+          curQ = previousQ; qSel.value = previousQ.label;
+          status.textContent = "Bu kalite yüklenemedi; önceki kaliteye dönüldü.";
+          player.src = previousQ.url + (at > 0.5 ? "#t=" + at.toFixed(2) : "");
+          syncCaptions(); syncBar();
+        };
+        const finish = () => {
+          player.removeEventListener("loadedmetadata", restore);
+          player.removeEventListener("canplay", finish);
+          player.removeEventListener("error", abort);
+          if (disposed || !switching || switching.token !== token) return;
+          prefs.vq = q.label; savePrefs();
           restore();
           switching = null;
           if (resume) { const r = player.play(); if (r && r.catch) r.catch(() => {}); }
@@ -871,6 +894,7 @@
         };
         player.addEventListener("loadedmetadata", restore);
         player.addEventListener("canplay", finish);
+        player.addEventListener("error", abort, { once: true });
         player.preload = "auto"; // also load while paused so the frame and position are ready
         player.src = at > 0.5 ? q.url + "#t=" + at.toFixed(2) : q.url;
       });
@@ -903,6 +927,7 @@
       if (save) { prefs.cap = { scale: capPrefs.scale, alpha: capPrefs.alpha, on: capPrefs.on }; savePrefs(); }
     }
     function setCapPanel(open) {
+      if (open) Tip.hide();
       capPanel.hidden = !open;
       capBtns.forEach((b) => b.setAttribute("aria-expanded", String(open)));
     }
@@ -932,6 +957,7 @@
       player.muted = !!prefs.muted;
     }
     function setVolPop(open) {
+      if (open) Tip.hide();
       volPop.hidden = !open;
       vbMute.setAttribute("aria-expanded", String(open));
       if (open && !capPanel.hidden) setCapPanel(false);
@@ -956,7 +982,7 @@
     capBtns.forEach((b) => b.addEventListener("click", () => setVolPop(false)));
 
     function startVideo(at) {
-      if (!navigator.onLine) {
+      if (!navigator.onLine && !player.getAttribute("src")) {
         status.textContent = "Çevrimdışısın. Altyazıyı inceleyebilirsin; video için internete bağlan.";
         return;
       }
@@ -971,7 +997,8 @@
       }
       status.textContent = "Video yükleniyor…";
       const request = player.play();
-      if (request && request.catch) request.catch(() => {
+      if (request && request.catch) request.catch((err) => {
+        if (err && err.name === "AbortError") return;
         if (!document.contains(player)) return;
         status.textContent = player.error ? "Video yüklenemedi. İnternetini kontrol et veya aşağıdaki resmî sayfada izle bağlantısını kullan." : "Oynatmak için kontrol çubuğundaki oynat düğmesine basabilirsin.";
       });
