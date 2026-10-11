@@ -274,7 +274,7 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance
 .wrow .wtr { color: var(--fg); }
 .wrow .wctx { color: var(--fg-3); font-size: 13px; font-family: var(--f-read); font-style: italic; margin-top: 4px; }
 .wrow .wctx a { color: var(--fg-2); font-style: normal; font-family: var(--f-ui); }
-.wrow .wact { display: flex; gap: 6px; }
+.wrow .wact { display: flex; gap: 6px; align-items: center; }
 .box-pill { font-size: 11px; color: var(--fg-3); border: 1px solid var(--line); border-radius: 99px; padding: 2px 8px; white-space: nowrap; }
 
 .flash-wrap { max-width: 560px; margin: 0 auto; display: grid; gap: 16px; }

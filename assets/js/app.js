@@ -206,6 +206,7 @@
       if (pin) {
         h += `<div class="tip-actions">`;
         if (hit || ctx) h += `<button class="btn sm${saved ? "" : " primary"}" data-act="save">${saved ? ICON.starFill + " Defterde" : ICON.star + " Deftere ekle"}</button>`;
+        if (phrase) h += `<button class="btn sm" data-act="savePhrase">${words[phrase.en.toLowerCase()] ? ICON.starFill + " İfade defterde" : ICON.star + " İfadeyi ekle"}</button>`;
         h += `<a class="btn sm ghost" href="https://tureng.com/tr/turkce-ingilizce/${encodeURIComponent(lemma)}" target="_blank" rel="noopener">${ICON.ext} Tureng</a></div>`;
       } else {
         h += `<div class="tip-hint">${hoverDevice ? "Kaydetmek için tıkla" : ""}</div>`;
@@ -279,6 +280,18 @@
     ev.stopPropagation();
     if (b.dataset.act === "speak") Speech.say(Tip.span.textContent);
     if (b.dataset.act === "save") { toggleSave(Tip.span, Tip.text); Tip.show(Tip.span, Tip.text, true); }
+    if (b.dataset.act === "savePhrase") {
+      const ph = Tip.text.phrases[+Tip.span.closest(".ph").dataset.ph];
+      const key = ph.en.toLowerCase();
+      if (words[key]) { delete words[key]; toast(`“${ph.en}” defterden çıkarıldı`); }
+      else {
+        words[key] = { w: key, form: ph.en, pos: "ifade", tr: ph.tr, src: BY_ID[Tip.text.id] ? Tip.text.id : null,
+          ctx: sentenceAround(Tip.span), added: Date.now(), box: 1, due: Date.now() };
+        toast(`“${ph.en}” deftere eklendi`);
+      }
+      saveWords();
+      Tip.show(Tip.span, Tip.text, true);
+    }
   });
   document.addEventListener("click", (ev) => { if (Tip.pinned && !Tip.el.contains(ev.target)) Tip.hide(); });
   document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") Tip.hide(); });
