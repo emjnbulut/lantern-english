@@ -1,0 +1,118 @@
+{
+  "id": "the-pleasure-of-fear",
+  "type": "article",
+  "title": "The Pleasure of Fear: Why We Choose to Be Frightened",
+  "author": "Lantern Editorial",
+  "level": "C1",
+  "genre": "horror",
+  "summaryTr": "İnsanlar neden korku hikâyelerini isteyerek okur? Yazı; Aristoteles'in katarsisinden Freud'un 'tekinsiz' kavramına, Poe'nun güvenilmez anlatıcısından Jacobs'un ima gücüne uzanan bir yolculuk sunuyor.",
+  "paragraphs": [
+    "Nobody forces us to read horror. We choose it, usually in the evening, preferably with the lights turned low, and we are rewarded with a racing pulse and a restless night. If fear is an unpleasant emotion, shaped by evolution to make us flee from danger, why do we seek it out for entertainment? Philosophers call this puzzle the paradox of horror, and it is considerably older than the genre itself.",
+    "## The paradox of safe danger",
+    "Aristotle already observed in the Poetics that audiences of tragedy experience pity and fear, and he suggested that the experience ends in catharsis, a purging or clarification of those emotions. Whatever precisely he meant, and scholars still debate the term, the idea has proved remarkably durable: we may turn to frightening stories in order to discharge anxieties that everyday life gives us no opportunity to express. Modern psychologists offer a complementary explanation. Fear in fiction produces the physical symptoms of arousal, such as a faster heartbeat, tense muscles and heightened attention, but because the reader knows that he is safe, the brain can interpret that arousal as excitement rather than terror. When the story ends, the relief that follows may be intensely pleasurable. Some researchers describe this process as excitation transfer. A roller coaster works on the same principle: the danger is real enough to thrill and unreal enough to enjoy.",
+    "## The familiar made strange",
+    "In 1919 Sigmund Freud published an essay on the uncanny (in German, das Unheimliche), the peculiar dread we feel when something familiar becomes disturbingly strange. His examples included doubles, dolls that seem to be alive, and the return of things we believed we had left behind. The concept explains why so much of the best horror is domestic. The most chilling settings are not remote castles but ordinary rooms, family dinners and well-known faces that have changed in some small, terrible way.",
+    "W. W. Jacobs's \"The Monkey's Paw\" (1902) is a model of this strategy. Its setting is a comfortable English house on a stormy night, where a father, a mother and their grown-up son sit by the fire, playing chess and talking. The supernatural enters in the form of a withered object brought home by a visiting sergeant-major, and what follows is horrifying precisely because the family's desires are so ordinary and so understandable. Jacobs was better known as a humorous writer about sailors and dockside life, and perhaps that experience taught him how thin the line between comedy and dread can be. He understood, at any rate, that the reader's sympathy is the true source of fear: we are frightened for the family, not by the paw.",
+    "## A mind we cannot trust",
+    "Another resource of horror is the unreliable narrator, a storyteller whose account the reader has reason to doubt. The term was popularised by the critic Wayne C. Booth in The Rhetoric of Fiction (1961), but the technique is far older. Edgar Allan Poe's \"The Tell-Tale Heart\" (1843) remains one of the most economical examples ever written. The narrator opens by insisting that he is not mad, and then proceeds to describe, with painstaking pride in his own calmness, how he murdered an old man whose pale eye disturbed him. The more he argues that a madman could never have acted so cautiously, the more convincingly he demonstrates the opposite.",
+    "The effect depends on a gap between what the narrator says and what the reader understands, a kind of dramatic irony turned inward. We are placed inside a consciousness and forced to witness its distortions from within. This is more disturbing than any external monster, because it suggests that the instrument we use to understand reality, the mind, can fail. First-person narration also removes the safety of distance: the speaker's obsession becomes the lens through which everything is seen, and we must struggle to detect what is truly happening beneath his account. Even the sound that finally destroys him, the beating of a heart, may exist only in his guilty imagination, or may be the throbbing of his own pulse; the text never tells us which.",
+    "## What we do not see",
+    "Horror writers are frequently advised, and frequently ignore the advice, that suggestion is more powerful than display. H. P. Lovecraft, in his survey Supernatural Horror in Literature (written in the 1920s), argued that the oldest and strongest kind of fear is fear of the unknown, a claim that later writers have often treated as a rule of craft. By withholding the details of the threat, the author forces the reader's imagination to supply the details, and the imagination, being personal, will usually find the most disturbing possibility available. In \"The Monkey's Paw\" the climax takes place largely in darkness, behind a closed door, and the story closes on nothing more than an empty road.",
+    "## Fear as a mirror of its age",
+    "Horror also reflects the anxieties of the culture that produces it. The Gothic novel emerged in the eighteenth century, and Horace Walpole's The Castle of Otranto (1764) is conventionally regarded as its first example. Mary Shelley conceived Frankenstein in the summer of 1816, when a group of friends, among them Lord Byron, challenged one another to invent ghost stories beside Lake Geneva; the novel, published in 1818, was to give imaginative form to fears about science and responsibility. Later horror translated dread of disease, war and social upheaval into monsters of every kind. We should be cautious about simple one-to-one allegories, but the pattern is persistent: what a society cannot discuss directly, it often learns to whisper as a ghost story.",
+    "In the end, the pleasure of horror may lie in a paradoxical form of control. By choosing fear, rehearsing it and surviving it to the final page, we practise facing the unknown on terms that we have set ourselves. The lights come back on, the book closes, and the world looks, for a moment at least, slightly more manageable."
+  ],
+  "glossary": {
+    "catharsis": "katarsis, duygusal arınma",
+    "uncanny": "tekinsiz; tanıdık olanın ürkütücü biçimde yabancılaşması",
+    "unreliable narrator": "güvenilmez anlatıcı",
+    "gothic": "Gotik; karanlık, ürpertici ortamlar ve doğaüstü öğelerle ilişkili edebi tür",
+    "withered": "kurumuş, büzüşmüş",
+    "sergeant-major": "başçavuş",
+    "arousal": "uyarılma, fizyolojik heyecan hali"
+  },
+  "phrases": [
+    {
+      "en": "the paradox of horror",
+      "tr": "korku paradoksu (hoşlanmadığımız bir duyguyu isteyerek aramamız)"
+    },
+    {
+      "en": "discharge anxieties",
+      "tr": "kaygıları boşaltmak, kaygılardan arınmak"
+    },
+    {
+      "en": "heightened attention",
+      "tr": "artmış dikkat"
+    },
+    {
+      "en": "in the form of",
+      "tr": "... biçiminde, ... şeklinde"
+    },
+    {
+      "en": "precisely because",
+      "tr": "tam da ... olduğu için"
+    },
+    {
+      "en": "a gap between",
+      "tr": "... arasındaki boşluk, uyumsuzluk"
+    },
+    {
+      "en": "from within",
+      "tr": "içeriden"
+    },
+    {
+      "en": "give imaginative form to",
+      "tr": "hayal gücüyle biçimlendirmek, ... e hayali bir biçim vermek"
+    },
+    {
+      "en": "supply the details",
+      "tr": "ayrıntıları tamamlamak"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is 'the paradox of horror' as it is presented in the article?",
+      "options": [
+        "Horror stories are frightening even when they have happy endings",
+        "People deliberately seek out an emotion that is normally unpleasant",
+        "The best horror writers are usually comic writers",
+        "Fear is stronger in fiction than in real life"
+      ],
+      "answer": 1,
+      "explainTr": "Paradoks, normalde hoş olmayan bir duygu olan korkuyu eğlence olarak isteyerek aramamızdır."
+    },
+    {
+      "q": "Why is \"The Monkey's Paw\" described as horrifying 'precisely because' of the family's ordinary desires?",
+      "options": [
+        "The paw is described in great physical detail",
+        "The family is rich and powerful",
+        "The reader feels sympathy for the family, so their fate becomes frightening",
+        "The story is set in a remote castle"
+      ],
+      "answer": 2,
+      "explainTr": "Aile sıradan ve anlaşılır arzular taşıdığı için okur onlarla özdeşleşir; korku, ailenin başına gelenlerden doğar."
+    },
+    {
+      "q": "What makes the narrator of \"The Tell-Tale Heart\" unreliable?",
+      "options": [
+        "He tells the story many years after the events",
+        "He changes the order of events on purpose",
+        "He forgets important details of the crime",
+        "His claim to be sane is contradicted by the behaviour he describes"
+      ],
+      "answer": 3,
+      "explainTr": "Anlatıcı akıl sağlığının yerinde olduğunu ısrarla savunur; ancak anlattığı davranışlar bunun tersini gösterir."
+    },
+    {
+      "q": "According to the article, why do many writers prefer suggestion to display?",
+      "options": [
+        "Readers' imaginations tend to produce more disturbing images than the author could describe",
+        "Detailed descriptions are too expensive to publish",
+        "Suggestion is easier for foreign readers to understand",
+        "Readers dislike stories with too many characters"
+      ],
+      "answer": 0,
+      "explainTr": "Tehdidin ayrıntıları saklandığında okurun hayal gücü kişisel olarak en rahatsız edici ihtimali kendisi üretir."
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "why-we-laugh",
+  "type": "article",
+  "title": "Why We Laugh: How Comic Stories Work",
+  "author": "Lantern Editorial",
+  "level": "B2",
+  "genre": "comedy",
+  "summaryTr": "Kahkahanın ardındaki mekanizmayı inceleyen bu yazı; beklenti ile gerçek arasındaki uçurumu, komik zamanlamayı ve ironinin üç türünü Saki ve O. Henry'nin öyküleri üzerinden anlatıyor.",
+  "paragraphs": [
+    "Explain a joke and it dies. Anyone who has tried to describe why something is funny knows this small tragedy: the laughter itself lasts a fraction of a second, but the machinery behind it is surprisingly complicated. Nevertheless, if we look closely at comic fiction, the same few patterns appear again and again. Once we recognise them, we become better readers of stories such as Saki's \"The Open Window\" or O. Henry's \"The Ransom of Red Chief\", and we also learn something about how English behaves when it is trying to be playful.",
+    "## The gap between expectation and reality",
+    "Philosophers have tried to explain laughter for more than two thousand years, and no single theory has won universal agreement. For readers of fiction, however, the most useful idea is probably incongruity. According to this view, we laugh when something does not fit the pattern we were expecting. A joke creates a small, reasonable expectation in our minds and then breaks it, and the sudden gap between what we predicted and what actually happens can give rise to amusement. A short story can do the same thing across several pages instead of a single sentence.",
+    "Consider \"The Open Window\" by Saki, the pen name of Hector Hugh Munro, who was killed in the First World War in 1916. A nervous visitor named Framton Nuttel arrives at a country house hoping to calm his nerves. While he waits for the lady of the house, her young niece, Vera, tells him a haunting story about a family tragedy and a window that is left open every evening. We expect a ghost story, and for a while the text seems to offer one. The comedy comes from the discovery that Vera is not a messenger from the world of the dead but a brilliant improviser who enjoys deceiving strangers. Saki never explains the joke. He simply lets the distance between the visitor's terror and the reader's growing suspicion do the work.",
+    "## Three old explanations of laughter",
+    "Older theories help us to see why the same situation can be funny in different ways. Aristotle noted that comedy imitates people who are somewhat worse than average, but only in ways that are ridiculous rather than painful. Centuries later, the English philosopher Thomas Hobbes suggested that laughter expresses a sudden sense of superiority over other people, or over our own earlier selves. A third tradition, associated with Herbert Spencer and later with Sigmund Freud, treats laughter as a release of nervous energy: we laugh when a tension, often connected with something forbidden or frightening, is suddenly allowed to escape. Finally, the French philosopher Henri Bergson argued in his book Laughter (1900) that we laugh when a living person behaves like a machine, repeating the same rigid action even though the situation has changed.",
+    "Each of these ideas fits \"The Ransom of Red Chief\". Two small-time criminals kidnap a boy in order to demand money from his father, but the child is so energetic, noisy and violent that the kidnappers end up paying the father to take him back. Hobbes would point to our pleasure at seeing arrogant schemers defeated by a child. Spencer and Freud would remind us that many readers secretly enjoy a fantasy of total disorder in which no adult can control the situation. Bergson would notice that the criminals keep following their rigid plan long after reality has made it ridiculous.",
+    "## Timing on the page",
+    "We usually associate comic timing with stage performers, who can pause for exactly the right length of time before a punchline. A writer has no voice or face, yet the same control is possible through sentence structure. The simplest technique is delay: the writer holds back the surprising word until the end of the sentence, so that the reader has no chance to guess it in advance. Another technique is the rule of three. Two examples establish a pattern, and the third one breaks it. A further trick is contrast of length, in which a long, elegant, carefully balanced sentence is followed by a very short one that collapses everything the reader has just been told.",
+    "Understatement works in a similar way. When a narrator describes a disaster in calm, polite language, the gap between the event and the tone becomes funny in itself. Much of Saki's humour depends on this kind of polished, drawing-room politeness, while O. Henry often prefers a talkative narrator who inflates small matters with enormous vocabulary and then deflates them with a slangy phrase. In both cases, the effect is partly a matter of rhythm. Read a comic passage aloud, or even silently in your head, and you will often feel the beat before you understand it.",
+    "## Irony: saying one thing and meaning another",
+    "Irony is the engine inside most comic fiction, and it comes in three main forms. Verbal irony occurs when words mean the opposite of what they say, as when a narrator calls a terrible plan \"sensible\". Situational irony occurs when events turn out the reverse of what the characters intended: the kidnappers in O. Henry's story set out to make a profit and finish by paying to escape their victim. Dramatic irony occurs when the reader knows something that a character does not. In \"The Open Window\" we gradually understand that Vera is inventing her story, while poor Mr Nuttel remains completely convinced. Because we know more than he does, we feel like secret partners of the storyteller.",
+    "This partnership is important. Dramatic irony flatters the reader. It says, in effect, \"you are clever enough to see what this character cannot.\" Consequently, comic fiction depends on a very particular kind of trust between author and audience: the writer must give us enough clues to notice the joke without explaining it, and we must be willing to read between the lines.",
+    "## Why comedy deserves respect",
+    "Comic stories are sometimes treated as light entertainment, but they perform serious work. They deflate pretension, they allow us to look at fear, failure and embarrassment from a safe distance, and they build social bonds, since laughing together proves that two people share the same assumptions. A comic story also tests whether we are really paying attention. Missing one small detail can mean missing the entire joke.",
+    "For learners of English, humour is therefore one of the most demanding forms of reading, because it depends on tone, cultural knowledge and wordplay as well as vocabulary. However, it is also among the most rewarding. When a funny line finally clicks in a foreign language, it shows a depth of understanding that no vocabulary test can measure. Here is a practical tip: when you cannot see why a passage is funny, ask yourself what the writer wanted you to expect, and what you were given instead. The answer is almost always hidden in that gap."
+  ],
+  "glossary": {
+    "incongruity": "uyumsuzluk, beklenenle gerçekleşen arasındaki çelişki",
+    "irony": "ironi, söylenenle kastedilenin (ya da beklenenle olanın) birbirine zıt olması",
+    "understatement": "olduğundan az gösterme, hafife alarak anlatma",
+    "punchline": "fıkranın son vuruşu, komik asıl cümle",
+    "improviser": "doğaçlama yapan kişi",
+    "kidnap": "kaçırmak (fidye için)"
+  },
+  "phrases": [
+    {
+      "en": "give rise to",
+      "tr": "yol açmak, doğurmak"
+    },
+    {
+      "en": "sense of superiority",
+      "tr": "üstünlük duygusu"
+    },
+    {
+      "en": "the rule of three",
+      "tr": "üçlü kural (üçüncü öğenin beklentiyi bozması)"
+    },
+    {
+      "en": "read between the lines",
+      "tr": "satır aralarını okumak, ima edileni anlamak"
+    },
+    {
+      "en": "from a safe distance",
+      "tr": "güvenli bir mesafeden"
+    },
+    {
+      "en": "set out to",
+      "tr": "bir amaçla yola çıkmak, -meyi amaçlamak"
+    },
+    {
+      "en": "end up",
+      "tr": "sonunda ... durumunda kalmak"
+    },
+    {
+      "en": "in effect",
+      "tr": "aslında, fiilen"
+    },
+    {
+      "en": "a matter of",
+      "tr": "-e bağlı bir şey, ... meselesi"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "According to the incongruity theory described in the article, why do we laugh?",
+      "options": [
+        "Because we feel nervous about forbidden subjects",
+        "Because something breaks the pattern we were expecting",
+        "Because a person behaves like a machine",
+        "Because we want to hide our embarrassment"
+      ],
+      "answer": 1,
+      "explainTr": "Uyumsuzluk (incongruity) kuramına göre beklediğimiz kalıp bozulduğunda, beklenenle gerçekleşen arasındaki boşluk bizi güldürür."
+    },
+    {
+      "q": "What creates dramatic irony in Saki's \"The Open Window\"?",
+      "options": [
+        "The narrator speaks directly to the reader",
+        "Mr Nuttel secretly knows that Vera is a ghost",
+        "The reader gradually realises that Vera is inventing her story while Mr Nuttel believes it",
+        "The lady of the house tells two different versions of the same event"
+      ],
+      "answer": 2,
+      "explainTr": "Dramatik ironi, okurun karakterden daha fazlasını bilmesidir. Okur Vera'nın hikâyeyi uydurduğunu sezerken Bay Nuttel ona inanır."
+    },
+    {
+      "q": "Which technique is described as holding back the surprising word until the end of the sentence?",
+      "options": [
+        "Delay",
+        "Understatement",
+        "Verbal irony",
+        "The rule of three"
+      ],
+      "answer": 0,
+      "explainTr": "Metin, şaşırtıcı sözcüğü cümlenin sonuna saklamayı 'delay' (geciktirme) olarak anlatır."
+    },
+    {
+      "q": "What can we infer about the article's view of humour in a foreign language?",
+      "options": [
+        "It is too difficult for learners and should be avoided",
+        "It depends mainly on vocabulary, so a dictionary is enough",
+        "It is mostly universal and needs no cultural knowledge",
+        "It is demanding to understand but gives a deep sense of achievement"
+      ],
+      "answer": 3,
+      "explainTr": "Yazar mizahı hem zor (ton, kültür, kelime oyunu gerektirir) hem de çok tatmin edici bulur; bu yüzden doğru seçenek sonuncusudur."
+    }
+  ]
+}

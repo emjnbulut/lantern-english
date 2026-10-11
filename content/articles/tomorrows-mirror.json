@@ -1,0 +1,117 @@
+{
+  "id": "tomorrows-mirror",
+  "type": "article",
+  "title": "Tomorrow's Mirror: Science Fiction and the Anxieties of Its Age",
+  "author": "Lantern Editorial",
+  "level": "C2",
+  "genre": "scifi",
+  "summaryTr": "Bilimkurgu geleceği değil, kendi çağının korkularını yansıtır. Yazı; Shelley ve Wells'ten Soğuk Savaş paranoyasına, distopyalardan yapay zekâya uzanarak türün 'ayna' işlevini tartışıyor.",
+  "paragraphs": [
+    "Science fiction has a reputation for predicting the future, and it is a reputation the genre has never quite deserved. Its celebrated hits, the satellite, the hand-held computer, the surveillance state, are remembered precisely because they are rare; the countless misses have been politely forgotten. What the genre does with remarkable consistency is something rather different. It takes the worries of its own present, enlarges them, projects them into an imaginary tomorrow and holds up a mirror to the result. The future, in other words, is a disguise worn by the present. Ursula K. Le Guin made a similar point when she insisted that science fiction is descriptive rather than predictive.",
+    "## A monster for the machine age",
+    "Many scholars trace the genre to Mary Shelley's Frankenstein (1818), written when electricity was still a startling mystery and the boundary between life and death seemed newly negotiable. Shelley's creature is less a prophecy than a question: what does a creator owe to what he has created? The industrial nineteenth century supplied the raw material for the genre's later flourishing, and in the 1890s H. G. Wells, who had studied biology under T. H. Huxley, turned scientific ideas into parables. The Time Machine (1895) projects class division so far into the future that the working poor and the idle rich have evolved into separate species, Victorian inequality made literal. The War of the Worlds (1898) opens with a pointed comparison: Wells reminds his readers of the fate of the Tasmanians at European hands, and invites them to imagine what it feels like to be on the receiving end of a technologically superior empire.",
+    "\"The Star\" (1897) shows Wells at his most coolly devastating. A massive body from deep space plunges towards the sun, and the Earth is shaken by heat, floods and upheaval, yet the narration remains almost clinical. The closing pages shift to a vantage point from which the catastrophe is only a minor astronomical incident, and the scale of human tragedy shrinks to nothing. It is a vertigo peculiar to the late nineteenth century, when, arguably, Darwin and the new astronomy had together dislodged humanity from the centre of creation.",
+    "## Atomic dread and Cold War paranoia",
+    "After 1945 the genre acquired a darker palette. Science fiction of the 1950s was saturated with invasion narratives, and later critics have often read them as projections of Cold War suspicion. Jack Finney's novel The Body Snatchers (serialised in 1954), and the 1956 film adapted from it, in which neighbours are quietly replaced by emotionless duplicates, have been interpreted, depending on the critic, as an allegory of communist infiltration or, conversely, of the enforced conformity of McCarthyism. The very elasticity of the allegory is revealing. In Japan, the film Godzilla (1954) turned the memory of nuclear catastrophe into a monster awakened by atomic testing, a case in point of how a nation's trauma can acquire a body and a roar.",
+    "Meanwhile, the dystopian tradition, represented by Yevgeny Zamyatin's We (written in the early 1920s), Aldous Huxley's Brave New World (1932) and George Orwell's Nineteen Eighty-Four (1949), asked what might happen if the political and technological tendencies of the twentieth century were pushed to their logical conclusion. Orwell's novel is sometimes mistaken for a forecast, but its enduring force lies in its diagnosis of how language and propaganda corrode the very idea of truth. The title is often said to be an inversion of 1948, the year in which he finished the manuscript.",
+    "## Estrangement: how the mirror works",
+    "Why does the genre need distant planets and alien species at all? Why not simply write about contemporary politics? The critic Darko Suvin offered an influential answer in Metamorphoses of Science Fiction (1979): the genre operates through cognitive estrangement, making the familiar strange while keeping the strangeness plausible and rationally explored. By transplanting a social problem to a distant planet, an author disarms the reflex defences that direct political argument provokes. Readers who would bristle at a lecture on prejudice may absorb the same insight when it arrives at one remove, wearing the skin of an alien species. Le Guin's The Left Hand of Darkness (1969), set on a world whose inhabitants have no fixed gender, invited readers to examine their assumptions about masculinity and femininity in a way that a realist novel of the time could scarcely have managed.",
+    "## From robots to algorithms",
+    "Each decade's technology supplies new imagery, but the underlying anxieties tend to recur. The word robot entered English through Karel Čapek's play R.U.R. (1920), which dramatised the fear that mass production might reduce human beings to mere labour; the Czech word robota refers to forced work. Cyberpunk, whose defining text is William Gibson's Neuromancer (1984), answered the dawn of the computer age and the growing power of corporations, and Gibson did much to popularise the word cyberspace. Today's fiction wrestles with machine intelligence, climate collapse and the quiet harvesting of personal data. The questions, however, remain stubbornly familiar: who controls the technology, who is excluded from its benefits, and what, in the end, remains distinctively human?",
+    "This is why old science fiction can stand the test of time even when its science has become obsolete. A story about a Martian invasion no longer persuades us about Mars, but it still tells us a great deal about empire. A tale of a runaway star no longer teaches astronomy, but it still captures a Victorian vertigo before an indifferent universe. The best science fiction fails as prophecy and succeeds as testimony. To read it well is to ask not \"Did it come true?\" but \"What was the author afraid of, and what are we afraid of now?\" The mirror, after all, shows whoever happens to be standing in front of it."
+  ],
+  "glossary": {
+    "dystopia": "distopya; baskıcı ve kötü bir toplum düzeni kurgusu",
+    "allegory": "alegori, soyut bir düşüncenin hikâye aracılığıyla mecazi anlatımı",
+    "cognitive estrangement": "bilişsel yabancılaştırma; tanıdık olanı mantıklı biçimde yabancı göstermek",
+    "parable": "ibretlik hikâye, mesel",
+    "cyberpunk": "siberpunk; teknoloji ve şirket gücü temalı bilimkurgu alt türü",
+    "vertigo": "baş dönmesi, boşluk karşısındaki sersemlik duygusu",
+    "clinical": "soğukkanlı, duygudan arınmış (klinik)",
+    "obsolete": "miadını doldurmuş, modası geçmiş"
+  },
+  "phrases": [
+    {
+      "en": "on the receiving end of",
+      "tr": "-in hedefi olan, -in mağduru durumunda"
+    },
+    {
+      "en": "a case in point",
+      "tr": "buna iyi bir örnek"
+    },
+    {
+      "en": "pushed to their logical conclusion",
+      "tr": "mantıksal sonucuna kadar götürülmüş"
+    },
+    {
+      "en": "at one remove",
+      "tr": "dolaylı biçimde, bir adım uzaktan"
+    },
+    {
+      "en": "stand the test of time",
+      "tr": "zamanın sınavına dayanmak"
+    },
+    {
+      "en": "lies in",
+      "tr": "-de yatar, -e dayanır"
+    },
+    {
+      "en": "scarcely have managed",
+      "tr": "güçlükle başarabilirdi"
+    },
+    {
+      "en": "in other words",
+      "tr": "başka bir deyişle"
+    },
+    {
+      "en": "bristle at",
+      "tr": "-e karşı tüyleri diken diken olmak, öfkelenmek"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is the central claim of the article about science fiction?",
+      "options": [
+        "It mainly reflects the anxieties of its own age rather than accurately predicting the future",
+        "It has been proved right about most technological developments",
+        "It should be judged only by the accuracy of its science",
+        "It was invented in the twentieth century to describe the atomic age"
+      ],
+      "answer": 0,
+      "explainTr": "Yazar, bilimkurgunun geleceği tahmin etmekten çok kendi çağının kaygılarını büyütüp yansıttığını savunur."
+    },
+    {
+      "q": "Why does the article mention the Tasmanians in connection with The War of the Worlds?",
+      "options": [
+        "Wells wanted to explain how Martians travelled to Earth",
+        "Wells used their fate to help readers imagine being the victims of a superior power",
+        "Wells set part of the novel in Tasmania",
+        "Wells wanted to criticise Australian science"
+      ],
+      "answer": 1,
+      "explainTr": "Wells, Avrupalıların Tasmanyalılara yaptıklarını hatırlatarak okuru üstün bir gücün hedefi olmanın nasıl bir şey olduğunu düşünmeye çağırır."
+    },
+    {
+      "q": "How does the concept of 'cognitive estrangement' explain the use of aliens and distant planets?",
+      "options": [
+        "It shows that readers prefer to avoid thinking about real problems",
+        "It proves that science fiction must be written by scientists",
+        "Setting a problem at a distance lowers readers' defences so they can absorb a difficult idea",
+        "It argues that alien characters are always symbols of the same political group"
+      ],
+      "answer": 2,
+      "explainTr": "Sorun uzak bir gezegene taşındığında okurun savunma refleksi zayıflar; böylece zor bir fikir daha kolay kabul edilir."
+    },
+    {
+      "q": "What does the final paragraph imply about reading older science fiction today?",
+      "options": [
+        "Such stories are useless once their science is outdated",
+        "Their main value is as a record of the fears of their time and a mirror for our own",
+        "They should be rewritten with accurate science",
+        "They are valuable only to historians of astronomy"
+      ],
+      "answer": 1,
+      "explainTr": "Son paragraf, eski bilimkurgunun bilimi eskise de dönemin korkularına tanıklık ettiğini ve bizim korkularımızı da yansıttığını söyler."
+    }
+  ]
+}

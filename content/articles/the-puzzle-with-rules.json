@@ -1,0 +1,120 @@
+{
+  "id": "the-puzzle-with-rules",
+  "type": "article",
+  "title": "The Puzzle with Rules: How Detective Fiction Learned to Play Fair",
+  "author": "Lantern Editorial",
+  "level": "C1",
+  "genre": "mystery",
+  "summaryTr": "Dedektif öyküsünün Poe ile doğuşunu, Sherlock Holmes'un yükselişini ve okurla yazar arasındaki 'adil oyun' sözleşmesini inceleyen bir deneme.",
+  "paragraphs": [
+    "Every detective story contains a small act of aggression against the reader. Somewhere in the first few pages, the author hides the truth, and for the remainder of the book dares us to find it. What makes the dare acceptable, even delicious, is an unwritten agreement: the author may mislead, but must not cheat. The history of mystery fiction is, to a large extent, the history of how that agreement was negotiated.",
+    "## An invention of the modern city",
+    "Crime stories are ancient, but the detective story, in which the interest lies less in the crime itself than in the reasoning that uncovers it, is a surprisingly recent invention. Most scholars date its emergence to 1841, when Edgar Allan Poe published \"The Murders in the Rue Morgue\" and introduced C. Auguste Dupin, an eccentric Parisian amateur who solves an apparently impossible killing through observation and logic. Poe himself described such narratives as tales of ratiocination, a term that foregrounds the intellectual process rather than the violence. It may be no coincidence that the form appeared when large cities, anonymous crowds and newly organised police forces (London's Metropolitan Police had been founded in 1829) were transforming how people thought about order and risk.",
+    "A generation later, Wilkie Collins's novel The Moonstone (1868), built around a stolen Indian diamond, demonstrated that the puzzle could sustain a full-length narrative with several narrators and a professional investigator, Sergeant Cuff. Many critics regard it as the first English detective novel, although such judgements remain open to debate.",
+    "## Holmes and the cult of method",
+    "It was Arthur Conan Doyle, however, who turned the detective into a popular hero. Sherlock Holmes first appeared in the novel A Study in Scarlet (1887), but his true celebrity began in 1891, when The Strand Magazine started to publish short stories about him. Doyle, a trained physician, is said to have modelled Holmes's analytical manner partly on one of his Edinburgh teachers, Joseph Bell, who was famous for deducing details about patients from minute observations. The short-story format suited the character perfectly: a self-contained puzzle, a dazzling explanation and a satisfying conclusion, all within a single sitting.",
+    "\"The Red-Headed League\" (1891) shows the formula at its most elegant. The premise is deliberately absurd: a London pawnbroker is offered well-paid work that requires nothing of him except that he copy out an encyclopaedia, and the offer is open only to men with red hair. The reader is invited to ask what could possibly lie behind so strange an arrangement, and the pleasure of the story consists in discovering that the absurdity conceals a perfectly rational design. Holmes's solution, moreover, rests on small physical and circumstantial details that have been set before us in plain sight, though we did not grasp their significance at the time.",
+    "## A contract with the reader",
+    "As the genre matured, writers and critics began to ask what obligations the author owed the audience. The so-called Golden Age of the puzzle mystery, roughly the 1920s and 1930s, produced several attempts to codify the rules. In 1928 the American writer S. S. Van Dine, the pen name of Willard Huntington Wright, published a list of twenty rules, and in 1929 the English priest and crime novelist Ronald Knox proposed ten commandments, among them the requirement that no accident should ever help the detective. In 1930 a group of British authors, including Agatha Christie and Dorothy L. Sayers, founded the Detection Club, whose members took a playfully solemn oath to solve their fictional crimes by wit rather than by supernatural help, coincidence or other cheap devices.",
+    "The principle behind all these codes was fair play: every clue available to the detective should also be available to the reader. Agatha Christie tested the limits of that principle in The Murder of Roger Ackroyd (1926), whose solution depends on a bold manipulation of the way the story is narrated. Some critics accused her of breaking the contract; others replied that she had honoured its letter while exploiting the reader's unexamined assumptions. The argument has never been settled, which is perhaps the best evidence that the contract genuinely matters.",
+    "## Two stories in one",
+    "In an essay published in 1966, the structuralist critic Tzvetan Todorov observed that a detective novel always contains two stories: the story of the crime, which is complete but hidden, and the story of the investigation, which is visible and which gradually reconstructs the first. Skilful authors exploit the tension between these two timelines. The first story ends before the book begins; the second ends only on the final page. Much of the reader's pleasure derives from their slow convergence, and from the moment when a detail that seemed irrelevant is suddenly revealed as the hinge of the whole structure.",
+    "The red herring, a false clue deliberately planted to lead the reader astray, belongs to the same art of controlled misdirection. It is legitimate precisely because it is built from genuine information that the reader chooses to interpret wrongly. The author lies by arrangement, never by assertion, and that distinction is the moral foundation of the entire genre.",
+    "## Why we keep solving",
+    "Psychologists would probably say that mysteries satisfy a deep human appetite for closure. An unexplained event produces discomfort; an explanation relieves it. The detective story intensifies this cycle by delaying relief, and by promising that the universe, however disordered it appears in the first chapter, is ultimately intelligible. It is tempting to connect the popularity of the Golden Age, which flourished between two world wars, with a society anxious to believe that disorder could be traced, named and removed.",
+    "Not everyone was persuaded by this comforting vision. In his essay \"The Simple Art of Murder\" (1944), Raymond Chandler argued that the polite drawing-room puzzle was artificial, and he championed the harder tradition of Dashiell Hammett, in which violence grows out of corruption in the street rather than from a clever plot. The tension between the cerebral puzzle and the morally ambiguous city continues to animate crime fiction today. What remains constant is the bargain at the heart of the form: the author promises a solution, the reader promises to play, and both agree, in the end, to be surprised."
+  ],
+  "glossary": {
+    "ratiocination": "akıl yürütme, mantıksal çıkarım",
+    "red herring": "yanıltıcı ipucu, dikkat dağıtan sahte iz",
+    "pawnbroker": "rehinci, ödünç karşılığı eşya alan tefeci",
+    "deduce": "çıkarım yapmak, akıl yürüterek sonuca varmak",
+    "codify": "kurallara bağlamak, sistemleştirmek",
+    "closure": "kapanış, belirsizliğin giderilmesi duygusu",
+    "misdirection": "yanlış yöne çekme, dikkati başka yere çevirme"
+  },
+  "phrases": [
+    {
+      "en": "to a large extent",
+      "tr": "büyük ölçüde"
+    },
+    {
+      "en": "open to debate",
+      "tr": "tartışmaya açık, tartışmalı"
+    },
+    {
+      "en": "in plain sight",
+      "tr": "gözün önünde, açıkça ortada"
+    },
+    {
+      "en": "lead the reader astray",
+      "tr": "okuru yanlış yola sürüklemek"
+    },
+    {
+      "en": "it may be no coincidence that",
+      "tr": "belki de tesadüf değildir ki"
+    },
+    {
+      "en": "fair play",
+      "tr": "adil oyun, kurallara uygun davranış"
+    },
+    {
+      "en": "grows out of",
+      "tr": "-den doğmak, -den kaynaklanmak"
+    },
+    {
+      "en": "the hinge of",
+      "tr": "-in dayanak noktası, kilit nokta"
+    },
+    {
+      "en": "derives from",
+      "tr": "-den kaynaklanır, -e dayanır"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "According to the article, what distinguishes the detective story from earlier crime stories?",
+      "options": [
+        "It is set in large modern cities",
+        "It focuses on the reasoning that uncovers the crime",
+        "It always features a professional police officer",
+        "It avoids violence entirely"
+      ],
+      "answer": 1,
+      "explainTr": "Makale, dedektif öyküsünde ilginin suçun kendisinden çok onu açığa çıkaran akıl yürütmede olduğunu vurgular."
+    },
+    {
+      "q": "What does the principle of 'fair play' require of the author?",
+      "options": [
+        "That the detective must be an amateur",
+        "That the criminal is caught by accident",
+        "That every clue the detective has is also available to the reader",
+        "That the narrator never describes the crime"
+      ],
+      "answer": 2,
+      "explainTr": "Adil oyun ilkesi, dedektifin elindeki her ipucunun okurun da elinde olması demektir."
+    },
+    {
+      "q": "In Todorov's view, what are the 'two stories' contained in a detective novel?",
+      "options": [
+        "The story of the crime and the story of the investigation",
+        "The story of the detective and the story of his assistant",
+        "The story of the victim and the story of the police",
+        "The story of the clues and the story of the reader"
+      ],
+      "answer": 0,
+      "explainTr": "Todorov'a göre biri gizli kalan suç öyküsü, diğeri bu öyküyü adım adım yeniden kuran soruşturma öyküsüdür."
+    },
+    {
+      "q": "Why did Raymond Chandler criticise the Golden Age puzzle?",
+      "options": [
+        "He believed it contained too much violence",
+        "He found it too difficult for ordinary readers",
+        "He thought it was dishonest about the identity of the criminal",
+        "He considered it artificial compared with a more realistic, harder tradition"
+      ],
+      "answer": 3,
+      "explainTr": "Chandler nazik salon bulmacasını yapay bulmuş ve sokaktaki yozlaşmayı anlatan, daha sert ve gerçekçi Hammett geleneğini savunmuştur."
+    }
+  ]
+}
