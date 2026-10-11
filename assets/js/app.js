@@ -649,8 +649,15 @@
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
           <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
           <span class="vb-time" id="vb-time">0:00 / ${videoTime(v.durationSeconds)}</span>
+          <button type="button" class="vb-btn vb-cc" id="vb-cc" aria-label="Altyazı ayarları" aria-expanded="false" aria-controls="cap-settings">Aa</button>
           <button type="button" class="vb-btn" id="vb-mute" aria-label="Sesi kapat" aria-pressed="false">${ICON.speak}</button>
           <button type="button" class="vb-btn" id="vb-fs" aria-label="Tam ekran">${ICON.expand}</button>
+        </div>
+        <div class="cap-settings" id="cap-settings" role="group" aria-label="Altyazı ayarları" hidden>
+          <div class="cs-row"><span>Boyut</span><div class="cs-size"><button type="button" id="cs-smaller" aria-label="Altyazıyı küçült">A−</button><output id="cs-size-val">100%</output><button type="button" id="cs-bigger" aria-label="Altyazıyı büyüt">A+</button></div></div>
+          <div class="cs-row"><label for="cs-alpha">Arka plan</label><input type="range" id="cs-alpha" min="0" max="100" step="5"><output id="cs-alpha-val">72%</output></div>
+          <p class="cs-hint">Sola çekince arka plan saydamlaşır, görüntü öne çıkar.</p>
+          <button type="button" class="cs-reset" id="cs-reset">Varsayılana dön</button>
         </div></div></div>
       <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazı videonun üzerinde görünür; bir kelimeye dokununca anlamı açılır.</p>
       <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
@@ -659,7 +666,8 @@
           <label for="caption-select">Konuşma <select id="caption-select">${v.captions.map((c, i) => `<option value="${i}">${i + 1} / ${v.captions.length} · ${videoTime(c.start)}</option>`).join("")}</select></label>
           <button class="btn sm" id="caption-next" type="button" aria-label="Sonraki altyazı">Sonraki →</button>
           <button class="btn sm" id="caption-replay" type="button">${ICON.play} Bu konuşmayı dinle</button>
-          <button class="btn sm" id="video-fullscreen" type="button" disabled>Tam ekran</button></div>
+          <button class="btn sm" id="video-fullscreen" type="button" disabled>Tam ekran</button>
+          <button class="btn sm" id="cap-settings-btn" type="button" aria-expanded="false" aria-controls="cap-settings">Altyazı boyutu ve arka plan</button></div>
       </section>
       <p class="video-credit">Film ve İngilizce altyazı: <a id="video-source" href="${esc(v.source.watchUrl || v.source.url)}" target="_blank" rel="noopener">${esc(v.source.name)} · Resmî sayfada izle</a>.
         ${esc(v.source.credit)} · <a href="${esc(v.source.licenseUrl)}" target="_blank" rel="noopener">${esc(v.source.license)}</a>.
@@ -790,6 +798,38 @@
     });
     ["timeupdate", "play", "pause", "volumechange", "loadedmetadata", "seeked", "ended"].forEach((n) => player.addEventListener(n, syncBar));
 
+    // subtitle size + background opacity (remembered per device)
+    const CAP_SCALES = [0.7, 0.85, 1, 1.2, 1.45, 1.8];
+    const capPrefs = Object.assign({ scale: 1, alpha: 72 }, prefs.cap || {});
+    const capPanel = document.getElementById("cap-settings");
+    const capBtns = [document.getElementById("vb-cc"), document.getElementById("cap-settings-btn")];
+    const csAlpha = document.getElementById("cs-alpha");
+    function applyCap(save) {
+      if (CAP_SCALES.indexOf(capPrefs.scale) < 0) capPrefs.scale = 1;
+      capPrefs.alpha = Math.min(100, Math.max(0, Math.round(Number(capPrefs.alpha) || 0)));
+      stage.style.setProperty("--cap-scale", String(capPrefs.scale));
+      stage.style.setProperty("--cap-alpha", String(capPrefs.alpha / 100));
+      document.getElementById("cs-size-val").textContent = Math.round(capPrefs.scale * 100) + "%";
+      document.getElementById("cs-alpha-val").textContent = capPrefs.alpha + "%";
+      csAlpha.value = String(capPrefs.alpha);
+      document.getElementById("cs-smaller").disabled = CAP_SCALES.indexOf(capPrefs.scale) === 0;
+      document.getElementById("cs-bigger").disabled = CAP_SCALES.indexOf(capPrefs.scale) === CAP_SCALES.length - 1;
+      if (save) { prefs.cap = { scale: capPrefs.scale, alpha: capPrefs.alpha }; savePrefs(); }
+    }
+    function setCapPanel(open) {
+      capPanel.hidden = !open;
+      capBtns.forEach((b) => b.setAttribute("aria-expanded", String(open)));
+    }
+    capBtns.forEach((b) => b.addEventListener("click", (ev) => { ev.stopPropagation(); setCapPanel(capPanel.hidden); }));
+    capPanel.addEventListener("click", (ev) => ev.stopPropagation());
+    function onDocClickCap() { if (!capPanel.hidden) setCapPanel(false); }
+    document.addEventListener("click", onDocClickCap);
+    document.getElementById("cs-smaller").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.max(0, CAP_SCALES.indexOf(capPrefs.scale) - 1)]; applyCap(true); });
+    document.getElementById("cs-bigger").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.min(CAP_SCALES.length - 1, CAP_SCALES.indexOf(capPrefs.scale) + 1)]; applyCap(true); });
+    csAlpha.addEventListener("input", () => { capPrefs.alpha = Number(csAlpha.value); applyCap(true); });
+    document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; applyCap(true); });
+    applyCap(false);
+
     function startVideo(at) {
       if (!navigator.onLine) {
         status.textContent = "Çevrimdışısın. Altyazıyı inceleyebilirsin; video için internete bağlan.";
@@ -838,6 +878,7 @@
       document.removeEventListener("fullscreenchange", syncFsUi);
       document.removeEventListener("webkitfullscreenchange", syncFsUi);
       document.removeEventListener("keydown", onEscape);
+      document.removeEventListener("click", onDocClickCap);
       exitFs(); document.body.classList.remove("video-fs-open"); document.body.appendChild(Tip.el);
     };
   }

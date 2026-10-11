@@ -502,3 +502,38 @@ body.video-fs-open { overflow: hidden; }
 .video-stage .video-captions { bottom: 72px; }
 .video-stage.pseudo-fs .video-captions, .video-stage:fullscreen .video-captions, .video-stage:-webkit-full-screen .video-captions { bottom: 78px; }
 @media (max-width: 600px) { .video-stage .video-captions { bottom: 70px; } .video-stage.pseudo-fs .video-captions { bottom: 70px; } }
+
+/* subtitle size follows the picture width (small phones get small, readable text) and is user-adjustable */
+.video-stage { --cap-scale: 1; --cap-alpha: .72; --cap-w: min(100vw, 900px); --cap-base: clamp(12px, calc(var(--cap-w) * .021), 22px); }
+.video-stage.pseudo-fs, .video-stage:fullscreen, .video-stage:-webkit-full-screen { --cap-w: min(100vw, calc(100vh * 16 / 9)); --cap-base: clamp(12px, calc(var(--cap-w) * .024), 36px); }
+@supports (height: 100dvh) {
+  .video-stage.pseudo-fs, .video-stage:fullscreen, .video-stage:-webkit-full-screen { --cap-w: min(100vw, calc(100dvh * 16 / 9)); }
+}
+.video-stage .video-captions p,
+.video-stage.pseudo-fs .video-captions p,
+.video-stage:fullscreen .video-captions p,
+.video-stage:-webkit-full-screen .video-captions p {
+  font-size: calc(var(--cap-base) * var(--cap-scale));
+  line-height: 1.4;
+  padding: .22em .55em .26em;
+  border-radius: .35em;
+  background: rgba(8, 10, 15, var(--cap-alpha));
+  text-shadow: 0 0 3px rgba(0, 0, 0, .95), 0 1px 2px rgba(0, 0, 0, .9);
+}
+@media (max-width: 600px) {
+  .video-stage .video-captions { padding: 0 6px; bottom: 62px; }
+  .video-stage.pseudo-fs .video-captions { bottom: 60px; }
+}
+.vb-cc { width: auto; min-width: 40px; padding: 0 6px; font: 700 14px var(--f-ui); letter-spacing: .02em; }
+
+.cap-settings { position: absolute; right: 8px; bottom: 72px; z-index: 6; width: min(300px, calc(100% - 16px)); padding: 12px 14px; border: 1px solid #3a4258; border-radius: 12px; background: rgba(20, 24, 34, .96); color: #e9ecf3; box-shadow: 0 10px 30px rgba(0, 0, 0, .5); font-size: 14px; }
+.cap-settings[hidden] { display: none; }
+.cs-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+.cs-row > span, .cs-row > label { flex: 0 0 72px; color: #c9cedb; }
+.cs-size { display: flex; align-items: center; gap: 8px; flex: 1 1 auto; }
+.cs-size button { width: 44px; height: 38px; border: 1px solid #3a4258; border-radius: 8px; background: #1d222d; color: #fff; font: 700 15px var(--f-ui); cursor: pointer; }
+.cs-size button:disabled { opacity: .4; cursor: default; }
+.cs-size output, .cs-row output { min-width: 3.2em; text-align: center; font-variant-numeric: tabular-nums; }
+.cs-row input[type="range"] { flex: 1 1 auto; min-width: 0; height: 28px; accent-color: var(--accent); cursor: pointer; }
+.cs-hint { margin: 0 0 10px; font-size: 12px; color: #9aa1b2; line-height: 1.45; }
+.cs-reset { border: 0; background: transparent; color: var(--accent); font: 600 13px var(--f-ui); cursor: pointer; padding: 4px 0; }
