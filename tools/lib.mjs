@@ -40,6 +40,12 @@ function validateText(item, kind, file, errors) {
   for (const k of ["title", "author", "summaryTr"]) if (typeof d[k] !== "string" || !d[k].trim()) e(`missing ${k}`);
   if (!LEVELS.includes(d.level)) e(`level must be one of ${LEVELS}`);
   if (kind === "article" && !["B2", "C1", "C2"].includes(d.level)) e("article level must be B2/C1/C2");
+  if (kind === "summary") {
+    if (d.author !== "Lantern Editorial") e("book summaries must credit Lantern Editorial as the summary author");
+    for (const k of ["title", "titleTr", "author"]) if (typeof d.work?.[k] !== "string" || !d.work[k].trim()) e(`summary needs work.${k}`);
+    if (!Number.isInteger(d.work?.year)) e("summary needs the original work publication year");
+    if (!d.source?.name || !d.source?.url || !d.source?.license) e("summary needs an attributed source {name,url,license}");
+  }
   if (!GENRES.includes(d.genre)) e(`genre must be one of ${GENRES}`);
   if (!Array.isArray(d.paragraphs) || d.paragraphs.length < 3) e("paragraphs must be an array (>=3)");
   else d.paragraphs.forEach((p, i) => {
@@ -61,8 +67,8 @@ function validateText(item, kind, file, errors) {
 
 export function loadAll() {
   const errors = [];
-  const stories = [], articles = [];
-  for (const [dir, kind, list] of [["content/stories", "story", stories], ["content/articles", "article", articles]]) {
+  const stories = [], articles = [], summaries = [];
+  for (const [dir, kind, list] of [["content/stories", "story", stories], ["content/articles", "article", articles], ["content/summaries", "summary", summaries]]) {
     for (const { file, data, error } of readJsonDir(dir)) {
       if (error) { errors.push(`${file}: ${error}`); continue; }
       validateText(data, kind, file, errors);
@@ -80,9 +86,9 @@ export function loadAll() {
     }
   }
   const ids = new Set();
-  for (const t of [...stories, ...articles]) {
+  for (const t of [...stories, ...articles, ...summaries]) {
     if (ids.has(t.id)) errors.push(`duplicate id ${t.id}`);
     ids.add(t.id);
   }
-  return { stories, articles, dict, errors };
+  return { stories, articles, summaries, dict, errors };
 }

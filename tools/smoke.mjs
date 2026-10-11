@@ -4,9 +4,9 @@ import path from "node:path";
 import os from "node:os";
 import http from "node:http";
 import { spawn } from "node:child_process";
-import { ROOT, loadAll } from "./lib.mjs";
+import { ROOT, loadAll, wordCount } from "./lib.mjs";
 
-const { stories, articles, errors } = loadAll();
+const { stories, articles, summaries, errors } = loadAll();
 if (errors.length) throw new Error(errors.join("\n"));
 const binaries = [
   "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
@@ -93,6 +93,7 @@ try {
   const ids = async () => evaluate(`Array.from(document.querySelectorAll('#results .card')).map(a => a.hash.slice(3))`);
   const storyIds = new Set(stories.map((s) => s.id));
   const articleIds = new Set(articles.map((a) => a.id));
+  const summaryIds = new Set(summaries.map((s) => s.id));
 
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
   await navigate("home", "!!document.querySelector('.collection-grid')");
@@ -144,6 +145,32 @@ try {
   await navigate("s." + articles[0].id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
   const nextArticles = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
   assert(nextArticles.every((id) => articleIds.has(id)), "Article readers must recommend articles only.");
+  assert(["dracula", "the-metamorphosis", "animal-farm", "frankenstein"].every((id) => summaryIds.has(id)), "The four requested classic book summaries must be available.");
+  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
+  assert((await ids()).length === summaries.length && (await ids()).every((id) => summaryIds.has(id)), "Book summaries must have their own collection.");
+  await evaluate(`const q = document.getElementById('q'); q.value = 'Franz Kafka'; q.dispatchEvent(new Event('input', { bubbles: true }));`);
+  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summaries must be searchable by original author.");
+  await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
+  assert((await ids()).length === articles.length, "Book summary searches must not change article filters.");
+  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
+  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summary search must survive collection switching.");
+  await evaluate(`const q = document.getElementById('q'); q.value = 'Dönüşüm'; q.dispatchEvent(new Event('input', { bubbles: true }));`);
+  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Turkish work titles must be searchable.");
+  await evaluate("document.getElementById('clear').click()");
+  await screenshot("summaries-desktop");
+  for (const summary of summaries) {
+    await navigate("s." + summary.id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
+    const count = wordCount(summary.paragraphs);
+    const mins = Math.round(count / ({ B2: 130, C1: 150, C2: 170 }[summary.level] || 130));
+    assert(mins >= 30 && mins <= 40 && await evaluate(`document.querySelector('.reader-head .tags').textContent.includes('~${mins} dk')`), `${summary.id} must display a 30–40 minute reading estimate.`);
+    assert(await evaluate(`document.querySelector('#text').querySelectorAll('.w').length === ${count}`), `${summary.id} must render all summary text.`);
+    assert(await evaluate(`document.querySelector('.reader-head .by').textContent.includes(${JSON.stringify(summary.work.author)}) && !!document.querySelector('.spoiler-note') && document.querySelector('.crumbs a:last-child').hash === '#summaries' && document.querySelector('[data-nav="summaries"]').getAttribute('aria-current') === 'page'`), `${summary.id} must show original author, spoiler notice, and correct navigation.`);
+    const recommendations = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
+    assert(recommendations.every((id) => summaryIds.has(id)), "Summary readers must recommend book summaries only.");
+  }
+  for (const [i, q] of summaries.at(-1).quiz.entries()) await evaluate(`document.querySelector('#quiz .q[data-i="${i}"] .opt[data-j="${q.answer}"]').click()`);
+  assert(await evaluate("document.querySelector('#score b').textContent === '5/5'"), "Book summary quiz scoring must work.");
+  await screenshot("summary-reader-desktop");
   await page("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
   await navigate("home", "!!document.querySelector('.collection-grid')");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile home must fit the viewport.");
@@ -151,8 +178,11 @@ try {
   await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile article collection must fit the viewport.");
   await screenshot("articles-mobile");
+  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
+  assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile summary collection must fit the viewport.");
+  await screenshot("summaries-mobile");
   assert(browserErrors.length === 0, "Uncaught browser errors: " + browserErrors.join("\n"));
-  console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles.`);
+  console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles, ${summaries.length} book summaries.`);
   console.log(`Screenshots: ${runDir}`);
 } finally {
   if (send && socket?.readyState === WebSocket.OPEN) { try { await send("Browser.close"); } catch {} }

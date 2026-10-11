@@ -27,6 +27,8 @@ Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGEN
 
 **Site:** [Lantern English](https://lantern-english.copperlion512.chatgpt.site). Sites üzerinde yayında; erişim şu anda sahibinin ChatGPT hesabıyla sınırlı. Yayın ayarları ve sonraki güncellemeler için [HOSTING.md](HOSTING.md).
 
+Sonraki çalışma kontrol noktası: Dracula, Dönüşüm ve Frankenstein için üç özgün İngilizce özet ve ayrı Kitap Özetleri bölümü kaynaklara eklendi. Bu güncelleme henüz canlı siteye aktarılmadı; Hayvan Çiftliği ve son kontroller bekliyor. Devam edecek AI için [BOOK_SUMMARIES_HANDOFF.md](BOOK_SUMMARIES_HANDOFF.md).
+
 ```bash
 node tools/validate.mjs   # içeriği doğrula
 node tools/vocab.mjs      # sözlükte eksik kelimeleri listele

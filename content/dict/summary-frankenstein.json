@@ -1,0 +1,450 @@
+{
+  "abandonment": {
+    "pos": "isim",
+    "tr": "terk etme, terk edilme"
+  },
+  "acceptance": {
+    "pos": "isim",
+    "tr": "kabul, benimseme"
+  },
+  "accomplish": {
+    "pos": "fiil",
+    "tr": "başarmak, tamamlamak"
+  },
+  "accountability": {
+    "pos": "isim",
+    "tr": "hesap verme sorumluluğu"
+  },
+  "accusation": {
+    "pos": "isim",
+    "tr": "suçlama, itham"
+  },
+  "adjoin": {
+    "pos": "fiil",
+    "tr": "bitişik olmak"
+  },
+  "adversary": {
+    "pos": "isim",
+    "tr": "rakip, hasım"
+  },
+  "affectionate": {
+    "pos": "sıfat",
+    "tr": "sevecen, şefkatli"
+  },
+  "alchemy": {
+    "pos": "isim",
+    "tr": "simya"
+  },
+  "alongside": {
+    "pos": "edat/zarf",
+    "tr": "yanında, birlikte"
+  },
+  "ambitious": {
+    "pos": "sıfat",
+    "tr": "hırslı, iddialı"
+  },
+  "anguish": {
+    "pos": "isim/fiil",
+    "tr": "derin acı, ıstırap; acı çekmek"
+  },
+  "assess": {
+    "pos": "fiil",
+    "tr": "değerlendirmek"
+  },
+  "bereavement": {
+    "pos": "isim",
+    "tr": "yakınını kaybetme, ölüm acısı"
+  },
+  "betrayal": {
+    "pos": "isim",
+    "tr": "ihanet"
+  },
+  "biological": {
+    "pos": "sıfat",
+    "tr": "biyolojik"
+  },
+  "cancellation": {
+    "pos": "isim",
+    "tr": "iptal"
+  },
+  "certainty": {
+    "pos": "isim",
+    "tr": "kesinlik, emin olma"
+  },
+  "characterise": {
+    "pos": "fiil",
+    "tr": "nitelemek, belirgin özelliği olmak"
+  },
+  "coercion": {
+    "pos": "isim",
+    "tr": "zorlama, baskıyla yaptırma"
+  },
+  "companionship": {
+    "pos": "isim",
+    "tr": "arkadaşlık, yoldaşlık"
+  },
+  "completion": {
+    "pos": "isim",
+    "tr": "tamamlama, tamamlanma"
+  },
+  "complexity": {
+    "pos": "isim",
+    "tr": "karmaşıklık"
+  },
+  "condemnation": {
+    "pos": "isim",
+    "tr": "kınama, mahkûm etme"
+  },
+  "confession": {
+    "pos": "isim",
+    "tr": "itiraf"
+  },
+  "confinement": {
+    "pos": "isim",
+    "tr": "kapatılma, alıkonma"
+  },
+  "consistent": {
+    "pos": "sıfat",
+    "tr": "tutarlı, uyumlu"
+  },
+  "contradict": {
+    "pos": "fiil",
+    "tr": "çelişmek, tersini söylemek"
+  },
+  "contradiction": {
+    "pos": "isim",
+    "tr": "çelişki"
+  },
+  "conversion": {
+    "pos": "isim",
+    "tr": "dönüşüm, fikir veya inanç değiştirme"
+  },
+  "convict": {
+    "pos": "fiil/isim",
+    "tr": "suçlu bulmak; hükümlü"
+  },
+  "cousinship": {
+    "pos": "isim",
+    "tr": "kuzenlik"
+  },
+  "deathbed": {
+    "pos": "isim",
+    "tr": "ölüm döşeği"
+  },
+  "defy": {
+    "pos": "fiil",
+    "tr": "karşı gelmek, meydan okumak"
+  },
+  "demonstration": {
+    "pos": "isim",
+    "tr": "gösterme, kanıtlama, gösteri"
+  },
+  "dependent": {
+    "pos": "sıfat",
+    "tr": "bağımlı, muhtaç"
+  },
+  "destructive": {
+    "pos": "sıfat",
+    "tr": "yıkıcı"
+  },
+  "detach": {
+    "pos": "fiil",
+    "tr": "ayırmak, koparmak"
+  },
+  "detached": {
+    "pos": "sıfat",
+    "tr": "tarafsız, mesafeli, ayrı"
+  },
+  "deteriorate": {
+    "pos": "fiil",
+    "tr": "kötüleşmek, bozulmak"
+  },
+  "deterioration": {
+    "pos": "isim",
+    "tr": "kötüleşme, bozulma"
+  },
+  "disclosure": {
+    "pos": "isim",
+    "tr": "açıklama, açığa vurma"
+  },
+  "dismissal": {
+    "pos": "isim",
+    "tr": "reddetme, önemsememe, işten çıkarma"
+  },
+  "distraction": {
+    "pos": "isim",
+    "tr": "dikkat dağıtan şey, oyalanma"
+  },
+  "disturbance": {
+    "pos": "isim",
+    "tr": "rahatsızlık, huzursuzluk"
+  },
+  "documentary": {
+    "pos": "sıfat/isim",
+    "tr": "belgelere dayalı; belgesel"
+  },
+  "educational": {
+    "pos": "sıfat",
+    "tr": "eğitimle ilgili, eğitici"
+  },
+  "eloquence": {
+    "pos": "isim",
+    "tr": "etkili ve güzel konuşma"
+  },
+  "eloquent": {
+    "pos": "sıfat",
+    "tr": "etkili konuşan, anlamlı"
+  },
+  "encouragement": {
+    "pos": "isim",
+    "tr": "cesaretlendirme, teşvik"
+  },
+  "entangle": {
+    "pos": "fiil",
+    "tr": "dolaştırmak, iç içe geçirmek"
+  },
+  "equivalent": {
+    "pos": "sıfat/isim",
+    "tr": "eşdeğer, denk; karşılık"
+  },
+  "ethical": {
+    "pos": "sıfat",
+    "tr": "etik, ahlaki"
+  },
+  "ethically": {
+    "pos": "zarf",
+    "tr": "etik açıdan, ahlaken"
+  },
+  "exceptional": {
+    "pos": "sıfat",
+    "tr": "olağanüstü, istisnai"
+  },
+  "exclusion": {
+    "pos": "isim",
+    "tr": "dışlama, dışlanma"
+  },
+  "execution": {
+    "pos": "isim",
+    "tr": "idam, uygulama, yerine getirme"
+  },
+  "exile": {
+    "pos": "isim/fiil",
+    "tr": "sürgün; sürgüne göndermek"
+  },
+  "fixation": {
+    "pos": "isim",
+    "tr": "saplantı, takıntı"
+  },
+  "foster": {
+    "pos": "sıfat/fiil",
+    "tr": "koruyucu aileye ait; desteklemek"
+  },
+  "glacier": {
+    "pos": "isim",
+    "tr": "buzul"
+  },
+  "harden": {
+    "pos": "fiil",
+    "tr": "sertleşmek, katılaşmak"
+  },
+  "humane": {
+    "pos": "sıfat",
+    "tr": "insancıl, merhametli"
+  },
+  "imbalance": {
+    "pos": "isim",
+    "tr": "dengesizlik"
+  },
+  "imperfect": {
+    "pos": "sıfat",
+    "tr": "kusurlu, eksik"
+  },
+  "incapable": {
+    "pos": "sıfat",
+    "tr": "yapamayan, yetersiz"
+  },
+  "inhuman": {
+    "pos": "sıfat",
+    "tr": "insanlık dışı, insan olmayan"
+  },
+  "innocence": {
+    "pos": "isim",
+    "tr": "masumiyet, suçsuzluk"
+  },
+  "intensive": {
+    "pos": "sıfat",
+    "tr": "yoğun"
+  },
+  "interchangeable": {
+    "pos": "sıfat",
+    "tr": "birbirinin yerine kullanılabilir"
+  },
+  "irresistible": {
+    "pos": "sıfat",
+    "tr": "karşı konulamaz"
+  },
+  "justification": {
+    "pos": "isim",
+    "tr": "gerekçe, haklı çıkarma"
+  },
+  "loneliness": {
+    "pos": "isim",
+    "tr": "yalnızlık"
+  },
+  "magistrate": {
+    "pos": "isim",
+    "tr": "yargıç, adli görevli"
+  },
+  "mastery": {
+    "pos": "isim",
+    "tr": "ustalık, hâkimiyet"
+  },
+  "negotiation": {
+    "pos": "isim",
+    "tr": "müzakere, görüşme"
+  },
+  "nobleman": {
+    "pos": "isim",
+    "tr": "soylu erkek"
+  },
+  "omission": {
+    "pos": "isim",
+    "tr": "atlama, eksik bırakma"
+  },
+  "organism": {
+    "pos": "isim",
+    "tr": "organizma, canlı"
+  },
+  "outrun": {
+    "pos": "fiil",
+    "tr": "geride bırakmak, aşmak"
+  },
+  "overwhelm": {
+    "pos": "fiil",
+    "tr": "bunaltmak, alt etmek"
+  },
+  "perseverance": {
+    "pos": "isim",
+    "tr": "azim, sebat"
+  },
+  "portrayal": {
+    "pos": "isim",
+    "tr": "tasvir, betimleme"
+  },
+  "predispose": {
+    "pos": "fiil",
+    "tr": "yatkın hâle getirmek"
+  },
+  "productive": {
+    "pos": "sıfat",
+    "tr": "verimli, üretken"
+  },
+  "progressively": {
+    "pos": "zarf",
+    "tr": "giderek, aşamalı olarak"
+  },
+  "prolong": {
+    "pos": "fiil",
+    "tr": "uzatmak"
+  },
+  "promisingly": {
+    "pos": "zarf",
+    "tr": "umut verici biçimde"
+  },
+  "protagonist": {
+    "pos": "isim",
+    "tr": "başkahraman"
+  },
+  "reconnect": {
+    "pos": "fiil",
+    "tr": "yeniden bağlantı kurmak"
+  },
+  "recruit": {
+    "pos": "fiil/isim",
+    "tr": "katılmaya çağırmak; yeni katılan kişi"
+  },
+  "redirect": {
+    "pos": "fiil",
+    "tr": "yönünü değiştirmek, yönlendirmek"
+  },
+  "rejection": {
+    "pos": "isim",
+    "tr": "reddetme, reddedilme"
+  },
+  "repellent": {
+    "pos": "sıfat/isim",
+    "tr": "itici, tiksindirici; kovucu madde"
+  },
+  "reproduce": {
+    "pos": "fiil",
+    "tr": "yeniden üretmek, aktarmak, çoğalmak"
+  },
+  "reproducible": {
+    "pos": "sıfat",
+    "tr": "tekrarlanabilir, yeniden üretilebilir"
+  },
+  "resentment": {
+    "pos": "isim",
+    "tr": "kırgınlık, içerleme, kin"
+  },
+  "restorative": {
+    "pos": "sıfat",
+    "tr": "iyileştirici, güç kazandıran"
+  },
+  "resume": {
+    "pos": "fiil",
+    "tr": "yeniden başlamak, sürdürmek"
+  },
+  "retrospective": {
+    "pos": "sıfat",
+    "tr": "geçmişe dönük"
+  },
+  "sensitivity": {
+    "pos": "isim",
+    "tr": "duyarlılık, hassasiyet"
+  },
+  "shameful": {
+    "pos": "sıfat",
+    "tr": "utanç verici"
+  },
+  "strangulation": {
+    "pos": "isim",
+    "tr": "boğazı sıkarak boğma"
+  },
+  "suicide": {
+    "pos": "isim",
+    "tr": "intihar"
+  },
+  "torment": {
+    "pos": "isim/fiil",
+    "tr": "eziyet, azap; eziyet etmek"
+  },
+  "unavoidable": {
+    "pos": "sıfat",
+    "tr": "kaçınılmaz"
+  },
+  "unfold": {
+    "pos": "fiil",
+    "tr": "açılmak, gelişmek, ortaya çıkmak"
+  },
+  "unjustly": {
+    "pos": "zarf",
+    "tr": "haksız yere"
+  },
+  "unsuccessfully": {
+    "pos": "zarf",
+    "tr": "başarısızlıkla, sonuç alamadan"
+  },
+  "verify": {
+    "pos": "fiil",
+    "tr": "doğrulamak"
+  },
+  "vulnerability": {
+    "pos": "isim",
+    "tr": "savunmasızlık, kırılganlık"
+  },
+  "wholly": {
+    "pos": "zarf",
+    "tr": "tamamen, bütünüyle"
+  }
+}

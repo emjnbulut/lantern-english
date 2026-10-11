@@ -1,7 +1,7 @@
 # AGENTS.md — handoff guide for AI assistants
 
 Lantern English is a static, dependency-free website that teaches English to Turkish speakers through
-graded stories. Read this file, `HANDOFF.md` and `CONTENT_SPEC.md` before changing anything.
+graded stories. Read this file, `HANDOFF.md`, `BOOK_SUMMARIES_HANDOFF.md` and `CONTENT_SPEC.md` before changing anything.
 
 ## Product brief (the owner's vision)
 - Dark, calm UI — neither bare nor busy. UI language is **Turkish**; content is **English**.
@@ -24,6 +24,7 @@ assets/js/lemmatize.js  shared lemmatizer (browser + node tools)
 assets/js/app.js        the single-page app (hash routing: #home #library #articles #words #about #s.<id>)
 content/stories/*.json  story sources        ┐ edit THESE
 content/articles/*.json article sources      │ (format: CONTENT_SPEC.md)
+content/summaries/*.json original book summaries and reading guides
 content/dict/*.json     EN→TR dictionary     ┘
 drafts/                unfinished content; NOT included in browser bundles
 data/                   GENERATED bundles — never edit by hand
@@ -47,11 +48,12 @@ tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 2
 - No frameworks, no build step beyond `tools/build.mjs`, no npm dependencies. Node ≥ 18 for tools.
 - User state lives in `localStorage` under the `lantern.` prefix (saved words, progress, prefs);
   always wrap storage access in try/catch.
-- Stories and articles have separate routes, filter state (`filters` / `articleFilters`), results and reader recommendations. Home level counts include stories only.
+- Stories, articles and book summaries have separate routes (`#library`, `#articles`, `#summaries`), filter state (`filters` / `articleFilters` / `summaryFilters`), results and reader recommendations. Home level counts include stories only. Three book summaries are saved but not yet published; Animal Farm and final QA are pending (BOOK_SUMMARIES_HANDOFF.md).
 - Public-domain texts are reproduced exactly (no abridging/modernising); record the source URL.
 - Turkish copy uses proper characters (ç ğ ı İ ö ş ü) and a friendly, plain tone.
 
 ## Content status (2026-10-11)
+- Latest stopped task: three ready book summaries (Dracula B2, Frankenstein C1, The Metamorphosis C1); Animal Farm not written. Current generated dictionary has 6,852 entries. Editorial review/build passed for the three summaries; new browser QA and publication are pending. The following numbers describe the preceding live checkpoint; see BOOK_SUMMARIES_HANDOFF.md first.
 - Saved checkpoint: 27 complete stories: A1 ×3, A2 ×6 (incl. Aesop), B1 ×6, B2 ×6, C1 ×5, C2 ×1 — 10 public-domain classics + 17 originals.
 - 16 articles (two per genre, B2–C2). This update adds 8 complete stories and 8 articles written by Astra.
 - Dictionary: 6,687 entries. `node tools/vocab.mjs` reports 451 unresolved forms and skips 249 capitalized-only forms; additional translations are pending. Do not reuse the previous coverage percentage.

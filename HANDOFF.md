@@ -1,5 +1,7 @@
 # Lantern English — AI devir notu
 
+**En son görev / durdurma:** 30–40 dakikalık dört kitap özeti çalışması kullanıcı limit nedeniyle durdurdu. Üç özet ve ayrı koleksiyonun kaynak kodu kaydedildi; canlı siteye bu güncelleme aktarılmadı. Önce **[BOOK_SUMMARIES_HANDOFF.md](BOOK_SUMMARIES_HANDOFF.md)** oku; aşağıdaki notlar önceki yayın ve içerik kontrol noktasını anlatır.
+
 Son kontrol noktası: **11 Ekim 2026**. Kullanıcı çalışmaya ara verilmesini, mevcut ilerlemenin GitHub'a kaydedilmesini ve başka bir AI ile devam edebilmesini istedi. Yeni içerik üretimi durduruldu; tamamlanmış metinler, arayüz değişiklikleri, üretilmiş veri paketleri ve yarım hikâye taslağı birlikte saklandı. Ardından kullanıcı site bağlantısını istedi ve tamamlanmış sürüm Sites üzerinde yayınlandı: **https://lantern-english.copperlion512.chatgpt.site**. Erişim şu anda sahibinin ChatGPT hesabıyla sınırlı; ayrıntılar `HOSTING.md` içinde.
 
 ## Kullanıcının isteği

@@ -1,0 +1,214 @@
+{
+  "asylum": {
+    "pos": "isim",
+    "tr": "sığınma, barınak, akıl hastanesi"
+  },
+  "burial": {
+    "pos": "isim",
+    "tr": "defin, gömme"
+  },
+  "carrier": {
+    "pos": "isim",
+    "tr": "taşıyıcı, nakliyeci"
+  },
+  "churchyard": {
+    "pos": "isim",
+    "tr": "kilise avlusu ve mezarlığı"
+  },
+  "confrontation": {
+    "pos": "isim",
+    "tr": "yüzleşme, çatışma"
+  },
+  "contribution": {
+    "pos": "isim",
+    "tr": "katkı"
+  },
+  "conventional": {
+    "pos": "sıfat",
+    "tr": "geleneksel, alışılmış"
+  },
+  "correspond": {
+    "pos": "fiil",
+    "tr": "yazışmak, örtüşmek"
+  },
+  "courtesy": {
+    "pos": "isim",
+    "tr": "nezaket, incelik"
+  },
+  "crucifix": {
+    "pos": "isim",
+    "tr": "üzerinde İsa tasviri bulunan haç"
+  },
+  "deliberate": {
+    "pos": "sıfat/fiil",
+    "tr": "kasıtlı, dikkatlice düşünmek"
+  },
+  "dependence": {
+    "pos": "isim",
+    "tr": "bağımlılık"
+  },
+  "directory": {
+    "pos": "isim",
+    "tr": "rehber, dizin"
+  },
+  "episode": {
+    "pos": "isim",
+    "tr": "olay, bölüm"
+  },
+  "epistolary": {
+    "pos": "sıfat",
+    "tr": "mektuplardan oluşan, mektupla ilgili"
+  },
+  "escort": {
+    "pos": "isim/fiil",
+    "tr": "refakatçi, eşlik etmek"
+  },
+  "fiancée": {
+    "pos": "isim",
+    "tr": "nişanlı kadın"
+  },
+  "handwritten": {
+    "pos": "sıfat",
+    "tr": "elle yazılmış"
+  },
+  "horseback": {
+    "pos": "isim/zarf",
+    "tr": "at sırtı, at üzerinde"
+  },
+  "hostility": {
+    "pos": "isim",
+    "tr": "düşmanlık"
+  },
+  "hypnosis": {
+    "pos": "isim",
+    "tr": "hipnoz"
+  },
+  "hypnotic": {
+    "pos": "sıfat",
+    "tr": "hipnozla ilgili, büyüleyici"
+  },
+  "incomplete": {
+    "pos": "sıfat",
+    "tr": "eksik, tamamlanmamış"
+  },
+  "innkeeper": {
+    "pos": "isim",
+    "tr": "hancı, küçük otel işletmecisi"
+  },
+  "intervention": {
+    "pos": "isim",
+    "tr": "müdahale"
+  },
+  "kukri": {
+    "pos": "isim",
+    "tr": "içe kıvrık ağızlı büyük Nepal bıçağı"
+  },
+  "participation": {
+    "pos": "isim",
+    "tr": "katılım"
+  },
+  "phonograph": {
+    "pos": "isim",
+    "tr": "fonograf, eski ses kayıt ve çalma cihazı"
+  },
+  "procedure": {
+    "pos": "isim",
+    "tr": "işlem, yöntem"
+  },
+  "protective": {
+    "pos": "sıfat",
+    "tr": "koruyucu"
+  },
+  "pursuer": {
+    "pos": "isim",
+    "tr": "takip eden, peşinden giden"
+  },
+  "reconsider": {
+    "pos": "fiil",
+    "tr": "yeniden değerlendirmek"
+  },
+  "recording": {
+    "pos": "isim",
+    "tr": "ses veya görüntü kaydı"
+  },
+  "removal": {
+    "pos": "isim",
+    "tr": "kaldırma, çıkarma, taşıma"
+  },
+  "restriction": {
+    "pos": "isim",
+    "tr": "kısıtlama, sınırlama"
+  },
+  "revisit": {
+    "pos": "fiil",
+    "tr": "yeniden ziyaret etmek, yeniden ele almak"
+  },
+  "schoolmistress": {
+    "pos": "isim",
+    "tr": "kadın öğretmen (eski kullanım)"
+  },
+  "secrecy": {
+    "pos": "isim",
+    "tr": "gizlilik"
+  },
+  "shawl": {
+    "pos": "isim",
+    "tr": "şal"
+  },
+  "shorten": {
+    "pos": "fiil",
+    "tr": "kısaltmak, kısalmak"
+  },
+  "shorthand": {
+    "pos": "isim",
+    "tr": "stenografi, hızlı not yazma yöntemi"
+  },
+  "sleepwalk": {
+    "pos": "fiil",
+    "tr": "uyurgezerlik yapmak, uykuda yürümek"
+  },
+  "spoiler": {
+    "pos": "isim",
+    "tr": "eserin sürprizlerini açıklayan bilgi"
+  },
+  "swollen": {
+    "pos": "sıfat",
+    "tr": "şişmiş"
+  },
+  "territory": {
+    "pos": "isim",
+    "tr": "bölge, toprak, alan"
+  },
+  "transfusion": {
+    "pos": "isim",
+    "tr": "kan nakli"
+  },
+  "unavailable": {
+    "pos": "sıfat",
+    "tr": "mevcut olmayan, erişilemeyen"
+  },
+  "unfamiliar": {
+    "pos": "sıfat",
+    "tr": "tanıdık olmayan, yabancı"
+  },
+  "unsettling": {
+    "pos": "sıfat",
+    "tr": "huzursuz edici, tedirgin edici"
+  },
+  "unsuitable": {
+    "pos": "sıfat",
+    "tr": "uygunsuz, elverişsiz"
+  },
+  "unusable": {
+    "pos": "sıfat",
+    "tr": "kullanılamaz"
+  },
+  "vampire": {
+    "pos": "isim",
+    "tr": "vampir"
+  },
+  "wafer": {
+    "pos": "isim",
+    "tr": "gofret, ayinde kullanılan ince ekmek"
+  }
+}

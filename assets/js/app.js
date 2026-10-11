@@ -1,4 +1,4 @@
-/* Lantern — single-page app. Routes: #home #library #articles #words #about #s.<id> */
+/* Lantern English — single-page app. Routes: #home #library #articles #summaries #words #about #s.<id> */
 (function () {
   "use strict";
 
@@ -7,6 +7,7 @@
   const DICT = window.LANTERN_DICT || {};
   const STORIES = LIB.filter((t) => t.type === "story");
   const ARTICLES = LIB.filter((t) => t.type === "article");
+  const SUMMARIES = LIB.filter((t) => t.type === "summary");
   const BY_ID = Object.fromEntries(LIB.map((t) => [t.id, t]));
   const $main = document.getElementById("main");
 
@@ -57,6 +58,12 @@
   const prefs = Object.assign({ size: 19, mode: "hover", last: null }, S.load("prefs", {}));
   const filt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("filters", {}));
   const articleFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("articleFilters", {}));
+  const summaryFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("summaryFilters", {}));
+  const COLLECTIONS = {
+    story: { items: STORIES, filters: filt, key: "filters", route: "library", title: "Hikâyeler", label: "hikâye", search: "Hikâye", eyebrow: "Hikâye kütüphanesi · A1–C2", lead: "Klasikler ve özgün hikâyeler. Seviyene, türe ve okuma uzunluğuna göre seç." },
+    article: { items: ARTICLES, filters: articleFilt, key: "articleFilters", route: "articles", title: "Makaleler", label: "makale", search: "Makale", eyebrow: "Denemeler · B2–C2", lead: "Edebiyat, türler ve anlatı üzerine özgün denemeler. Seviyene ve ilgini çeken konuya göre bir makale seç." },
+    summary: { items: SUMMARIES, filters: summaryFilt, key: "summaryFilters", route: "summaries", title: "Kitap Özetleri", label: "kitap özeti", search: "Kitap", eyebrow: "Klasikler · 30–40 dakikalık okumalar", lead: "Ünlü eserlerin seviyene uygun İngilizce özetleri ve edebî incelemeleri. Metinler kitabın sonunu da anlatır; süreler okuma hızına göre yaklaşık hesaplanır." },
+  };
   const saveWords = () => { S.save("words", words); updateBadge(); };
   const saveProgress = () => S.save("progress", progress);
   const savePrefs = () => S.save("prefs", prefs);
@@ -375,8 +382,8 @@
   function card(t) {
     const p = progress[t.id];
     const bar = p && !p.done && p.f > 0.03 ? `<div class="bar"><span style="width:${Math.round(p.f * 100)}%"></span></div>` : "";
-    const by = t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
-    return `<a class="card${t.type === "article" ? " article" : ""}" href="#s.${t.id}">
+    const by = t.type === "summary" ? `${esc(t.work.author)} · Kitap özeti` : t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
+    return `<a class="card${t.type === "story" ? "" : " " + t.type}" href="#s.${t.id}">
       <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${stateOf(t)}</div>
       <h3>${esc(t.title)}</h3>
       <div class="by">${by}</div>
@@ -401,6 +408,7 @@
       .sort((a, b) => (b[1].at || 0) - (a[1].at || 0)).map(([id]) => BY_ID[id]);
     const readingStories = reading.filter((t) => t.type === "story").slice(0, 3);
     const readingArticles = reading.filter((t) => t.type === "article").slice(0, 3);
+    const readingSummaries = reading.filter((t) => t.type === "summary").slice(0, 3);
     const featured = LEVELS.map((lv) => STORIES.find((s) => s.level === lv.id && !(progress[s.id] && progress[s.id].done)) || STORIES.find((s) => s.level === lv.id)).filter(Boolean);
     const advanced = STORIES.filter((s) => ["B2", "C1", "C2"].includes(s.level) && s.author === "Lantern Original")
       .sort((a, b) => LEVELS.findIndex((l) => l.id === b.level) - LEVELS.findIndex((l) => l.id === a.level)).slice(0, 5);
@@ -419,6 +427,7 @@
           <div class="stats">
             <div class="stat"><b>${STORIES.length}</b><span>hikâye</span></div>
             <div class="stat"><b>${ARTICLES.length}</b><span>makale</span></div>
+            <div class="stat"><b>${SUMMARIES.length}</b><span>kitap özeti</span></div>
             <div class="stat"><b>${fmt(Object.keys(DICT).length)}</b><span>sözlük maddesi</span></div>
             <div class="stat"><b>${Object.keys(words).length}</b><span>defterindeki kelime</span></div>
           </div>
@@ -434,11 +443,15 @@
         <div class="collection-grid">
           <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · ${STORIES.length} hikâye</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
           <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · ${ARTICLES.length} makale</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
+          <a class="collection-link summaries-link" href="#summaries"><span class="eyebrow">30–40 dakika · ${SUMMARIES.length} kitap özeti</span><h2>Kitap Özetleri</h2><p>Dracula, Dönüşüm, Hayvan Çiftliği ve Frankenstein. Olayları ve temel fikirleri İngilizce keşfet.</p><span class="link">Kitap özetlerine git →</span></a>
         </div>
       </section>
 
       ${readingStories.length ? `<section class="section"><div class="section-head"><h2>Hikâyene devam et</h2><a class="link" href="#library">Hikâyeler</a></div>${grid(readingStories)}</section>` : ""}
       ${readingArticles.length ? `<section class="section"><div class="section-head"><h2>Makalene devam et</h2><a class="link" href="#articles">Makaleler</a></div>${grid(readingArticles)}</section>` : ""}
+      ${readingSummaries.length ? `<section class="section"><div class="section-head"><h2>Kitap özetine devam et</h2><a class="link" href="#summaries">Kitap Özetleri</a></div>${grid(readingSummaries)}</section>` : ""}
+
+      ${SUMMARIES.length ? `<section class="section" id="classic-summaries"><div class="section-head"><h2>Klasikler: 30–40 dakikalık özetler</h2><a class="link" href="#summaries">Tüm kitap özetleri</a></div>${grid(SUMMARIES)}</section>` : ""}
 
       <section class="section">
         <div class="section-head"><h2>Hikâye seviyeni seç</h2><a class="link" href="#about">Hangi seviyedeyim?</a></div>
@@ -484,19 +497,19 @@
   }
 
   function viewCollection(kind) {
-    const isArticle = kind === "article";
-    const collection = isArticle ? ARTICLES : STORIES;
-    const filters = isArticle ? articleFilt : filt;
-    const saveFilters = () => S.save(isArticle ? "articleFilters" : "filters", filters);
-    const label = isArticle ? "makale" : "hikâye";
-    const levels = isArticle ? LEVELS.filter((l) => ["B2", "C1", "C2"].includes(l.id)) : LEVELS;
+    const config = COLLECTIONS[kind];
+    const collection = config.items;
+    const filters = config.filters;
+    const saveFilters = () => S.save(config.key, filters);
+    const label = config.label;
+    const levels = kind === "story" ? LEVELS : LEVELS.filter((l) => ["B2", "C1", "C2"].includes(l.id));
     const chip = (group, val, label, extra) =>
       `<button class="chip${extra || ""}" data-f="${group}" data-v="${val}" aria-pressed="${filters[group].includes(val)}">${label}</button>`;
     $main.innerHTML = `
-      <nav class="collection-switch" aria-label="Okuma bölümleri"><a href="#library"${!isArticle ? ' aria-current="page"' : ""}>Hikâyeler <span>${STORIES.length}</span></a><a href="#articles"${isArticle ? ' aria-current="page"' : ""}>Makaleler <span>${ARTICLES.length}</span></a></nav>
+      <nav class="collection-switch" aria-label="Okuma bölümleri">${Object.entries(COLLECTIONS).map(([key, c]) => `<a href="#${c.route}"${key === kind ? ' aria-current="page"' : ""}>${c.title} <span>${c.items.length}</span></a>`).join("")}</nav>
       <div class="lib-head">
-        <div><p class="eyebrow">${isArticle ? "Denemeler · B2–C2" : "Hikâye kütüphanesi · A1–C2"}</p><h1>${isArticle ? "Makaleler" : "Hikâyeler"}</h1><p class="lead">${isArticle ? "Edebiyat, türler ve anlatı üzerine özgün denemeler. Seviyene ve ilgini çeken konuya göre bir makale seç." : "Klasikler ve özgün hikâyeler. Seviyene, türe ve okuma uzunluğuna göre seç."}</p></div>
-        <label class="search">${ICON.search}<input id="q" type="search" placeholder="${isArticle ? "Makale" : "Hikâye"} başlığı ya da yazar ara" value="${esc(filters.q)}" aria-label="${isArticle ? "Makale" : "Hikâye"} ara"></label>
+        <div><p class="eyebrow">${config.eyebrow}</p><h1>${config.title}</h1><p class="lead">${config.lead}</p></div>
+        <label class="search">${ICON.search}<input id="q" type="search" placeholder="${config.search} başlığı ya da yazar ara" value="${esc(filters.q)}" aria-label="${config.search} ara"></label>
       </div>
       <div class="filters">
         <div class="filter-row"><span>Seviye</span><div class="chips">${levels.map((l) => chip("level", l.id, `<span class="lvl lvl-${l.id}">${l.id}</span> ${l.name}`)).join("")}</div></div>
@@ -514,7 +527,7 @@
         (!filters.level.length || filters.level.includes(t.level)) &&
         (!filters.genre.length || filters.genre.includes(t.genre)) &&
         (!filters.length.length || filters.length.includes(t.length)) &&
-        (!q || (t.title + " " + t.author + " " + t.summaryTr).toLocaleLowerCase("tr").includes(q)));
+        (!q || [t.title, t.author, t.summaryTr, t.work?.titleTr, t.work?.author].filter(Boolean).join(" ").toLocaleLowerCase("tr").includes(q)));
       const lv = (t) => LEVELS.findIndex((l) => l.id === t.level);
       list = list.slice().sort(
         filters.sort === "short" ? (a, b) => a.words - b.words :
@@ -545,8 +558,10 @@
     const p = progress[id] || (progress[id] = { f: 0 });
     p.at = Date.now(); saveProgress();
     const isArt = t.type === "article";
+    const isSummary = t.type === "summary";
+    const collection = COLLECTIONS[t.type];
     const lvIdx = LEVELS.findIndex((l) => l.id === t.level);
-    const next = (isArt ? ARTICLES : STORIES).filter((s) => s.id !== id && !(progress[s.id] && progress[s.id].done))
+    const next = collection.items.filter((s) => s.id !== id && !(progress[s.id] && progress[s.id].done))
       .map((s) => ({ s, score: Math.abs(LEVELS.findIndex((l) => l.id === s.level) - lvIdx) * 2 + (s.genre === t.genre ? 0 : 1) }))
       .sort((a, b) => a.score - b.score).slice(0, 3).map((x) => x.s);
     const src = t.source
@@ -555,13 +570,14 @@
 
     $main.innerHTML = `
       <article class="reader">
-        <nav class="crumbs"><a href="#home">Ana sayfa</a><span>/</span><a href="${isArt ? "#articles" : "#library"}">${isArt ? "Makaleler" : "Hikâyeler"}</a></nav>
+        <nav class="crumbs"><a href="#home">Ana sayfa</a><span>/</span><a href="#${collection.route}">${collection.title}</a></nav>
         <header class="reader-head">
           <h1>${esc(t.title)}</h1>
-          <div class="by">${t.author.startsWith("Lantern") ? (isArt ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? ", " + t.year : "")}</div>
+          <div class="by">${isSummary ? `${esc(t.work.author)} · ${esc(t.work.titleTr)} (${t.work.year})<br><span class="summary-credit">Lantern English için özgün İngilizce özet ve inceleme</span>` : t.author.startsWith("Lantern") ? (isArt ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? ", " + t.year : "")}</div>
           <div class="tags"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}" style="display:inline-flex;align-items:center;gap:6px"><span class="dot"></span>${genreName(t.genre)}</span>
             <span class="sep">|</span><span>${LENGTHS[t.length]}</span><span class="sep">|</span><span>${fmt(t.words)} kelime</span><span class="sep">|</span><span>~${minutes(t)} dk</span></div>
           <div class="teaser-box">${esc(t.summaryTr)}</div>
+          ${isSummary ? '<p class="spoiler-note"><b>Kitap özeti</b> · Eserin sonu dahil olaylar anlatılır. Okuma süresi seviyeye göre tahminidir.</p>' : ""}
         </header>
         <div class="toolbar" role="toolbar" aria-label="Okuma ayarları">
           <button class="btn sm" id="listen">${ICON.play} Dinle</button>
@@ -577,7 +593,7 @@
           ${t.phrases && t.phrases.length ? `<section class="panel"><h2>Bu metindeki ifadeler</h2><p class="sub">Metinde kesik çizgiyle işaretlenenler. Üzerine gelince de görürsün.</p>
             <dl class="phrases">${t.phrases.map((ph) => `<div><dt>${esc(ph.en)}</dt><dd>${esc(ph.tr)}</dd></div>`).join("")}</dl></section>` : ""}
           ${t.quiz && t.quiz.length ? `<section class="panel"><h2>Ne kadar anladın?</h2><p class="sub">${t.quiz.length} soru. Cevabını seçince açıklaması görünür.</p><div class="quiz" id="quiz"></div></section>` : ""}
-          ${next.length ? `<section><div class="section-head"><h2>${isArt ? "Diğer makaleler" : "Sıradaki hikâyeler"}</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
+          ${next.length ? `<section><div class="section-head"><h2>${isSummary ? "Diğer kitap özetleri" : isArt ? "Diğer makaleler" : "Sıradaki hikâyeler"}</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
           <p class="source">${src}</p>
         </div>
       </article>`;
@@ -799,11 +815,12 @@
     Speech.stop(); Tip.hide();
     readerScroll = null; cardKeys = null;
     document.querySelector("#progress span").style.width = "0";
-    const section = h.startsWith("s.") ? (BY_ID[h.slice(2)] && BY_ID[h.slice(2)].type === "article" ? "articles" : "library") : h;
+    const section = h.startsWith("s.") ? (COLLECTIONS[BY_ID[h.slice(2)]?.type]?.route || "library") : h;
     document.querySelectorAll("[data-nav]").forEach((a) => { if (a.dataset.nav === section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     if (h.startsWith("s.")) viewReader(h.slice(2));
     else if (h === "library") viewLibrary();
     else if (h === "articles") viewArticles();
+    else if (h === "summaries") viewCollection("summary");
     else if (h === "words") viewWords();
     else if (h === "about") viewAbout();
     else viewHome();
