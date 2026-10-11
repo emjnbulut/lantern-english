@@ -41,7 +41,7 @@
     overcame: "overcome", overtook: "overtake", overtaken: "overtake", foresaw: "foresee",
     foreseen: "foresee", beheld: "behold", bade: "bid", bidden: "bid", forsook: "forsake",
     forsaken: "forsake", slain: "slay", slew: "slay", strewn: "strew", trod: "tread", trodden: "tread",
-    could: "can", would: "will", should: "shall", might: "may", "'d": "would",
+    used: "use", using: "use", could: "can", would: "will", should: "shall", might: "may", "'d": "would",
     // irregular nouns
     children: "child", men: "man", women: "woman", feet: "foot", teeth: "tooth", geese: "goose",
     mice: "mouse", people: "person", oxen: "ox", lives: "life", wives: "wife", knives: "knife",
@@ -66,6 +66,9 @@
     if (w && w.length > 1 && !list.includes(w)) list.push(w);
     else if (w && w.length === 1 && (w === "a" || w === "i") && !list.includes(w)) list.push(w);
   }
+
+  // consonant-vowel-consonant stems (rid, mak, hat, car): the silent-e form (ride, make, hate, care) is the likelier base
+  const cvc = (t) => /[^aeiou][aeiou][^aeiouwxy]$/.test(t);
 
   function undouble(stem) {
     const n = stem.length;
@@ -98,17 +101,21 @@
     if (L > 4 && s.endsWith("ies")) rules.push(s.slice(0, -3) + "y");
     if (L > 4 && s.endsWith("ves")) { rules.push(s.slice(0, -3) + "f"); rules.push(s.slice(0, -3) + "fe"); }
     if (L > 3 && s.endsWith("men")) rules.push(s.slice(0, -3) + "man");
-    if (L > 3 && s.endsWith("es")) { rules.push(s.slice(0, -2)); rules.push(s.slice(0, -1)); }
+    if (L > 3 && s.endsWith("es")) {
+      const b = s.slice(0, -2);
+      if (/(x|z|ch|sh|ss|o)$/.test(b)) { rules.push(b); rules.push(s.slice(0, -1)); }
+      else { rules.push(s.slice(0, -1)); rules.push(b); } // rides -> ride (not rid), bases -> base
+    }
     if (L > 3 && s.endsWith("s") && !s.endsWith("ss")) rules.push(s.slice(0, -1));
     if (L > 4 && s.endsWith("ied")) rules.push(s.slice(0, -3) + "y");
     if (L > 3 && s.endsWith("ed")) {
       const st = s.slice(0, -2);
-      rules.push(st); rules.push(s.slice(0, -1));
+      if (cvc(st)) { rules.push(s.slice(0, -1)); rules.push(st); } else { rules.push(st); rules.push(s.slice(0, -1)); }
       const u = undouble(st); if (u) rules.push(u);
     }
     if (L > 4 && s.endsWith("ing")) {
       const st = s.slice(0, -3);
-      rules.push(st); rules.push(st + "e");
+      if (cvc(st)) { rules.push(st + "e"); rules.push(st); } else { rules.push(st); rules.push(st + "e"); }
       const u = undouble(st); if (u) rules.push(u);
       if (st.endsWith("y")) rules.push(st.slice(0, -1) + "ie"); // lying -> lie
     }
@@ -116,12 +123,12 @@
     if (L > 5 && s.endsWith("iest")) rules.push(s.slice(0, -4) + "y");
     if (L > 3 && s.endsWith("er")) {
       const st = s.slice(0, -2);
-      rules.push(st); rules.push(s.slice(0, -1));
+      if (cvc(st)) { rules.push(s.slice(0, -1)); rules.push(st); } else { rules.push(st); rules.push(s.slice(0, -1)); }
       const u = undouble(st); if (u) rules.push(u);
     }
     if (L > 4 && s.endsWith("est")) {
       const st = s.slice(0, -3);
-      rules.push(st); rules.push(s.slice(0, -2));
+      if (cvc(st)) { rules.push(s.slice(0, -2)); rules.push(st); } else { rules.push(st); rules.push(s.slice(0, -2)); }
       const u = undouble(st); if (u) rules.push(u);
     }
     if (L > 5 && s.endsWith("ily")) rules.push(s.slice(0, -3) + "y");
