@@ -46,6 +46,17 @@ tools/vocab.mjs         list words in content that the dictionary can't resolve
 - Public-domain texts are reproduced exactly (no abridging/modernising); record the source URL.
 - Turkish copy uses proper characters (ç ğ ı İ ö ş ü) and a friendly, plain tone.
 
+## Content status (2026-10-11)
+- 19 stories: A1 ×2, A2 ×4 (incl. Aesop), B1 ×4, B2 ×5, C1 ×4 — 10 public-domain classics + 9 originals.
+- 8 articles (one per genre, B2–C2). No C2 stories yet.
+- Dictionary: 6,576 entries; 98.5% of all word tokens resolve (the rest are character names).
+- Editorial deviations from Gutenberg sources: a racial slur was replaced in "The Ransom of Red Chief"
+  ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious
+  Gutenberg typos were fixed. "The Star" keeps period ethnic terms; their dictionary entries note
+  they are archaic/offensive.
+- Live preview (private): published as a claude.ai artifact from a copy of index.html without
+  the doctype/html/head/body tags, plus `assets/` and `data/` as supporting files.
+
 ## Ideas backlog
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
 - Optional Turkish sentence translation on demand.
