@@ -41,14 +41,17 @@ Kaynak ve yazım notları:
 - Eski özgün metinlerden bağımsız İngilizce anlatımlar hazırlanacak; kullanılan eser, kaynak sürümü ve uyarlama niteliği belirtilecek. Modern sadeleştirmelerin, çevirilerin, açıklamaların ve görsellerin serbest olduğu varsayılmayacak.
 - Bu kayıt yalnızca içerik planıdır. Hikâye metinleri, quizler ve sözlük girdileri bu görevde oluşturulmadı; yazım ve yayın sonraki çalışma kapsamındadır.
 
+## Mobil uygulama
+Telefonda tarayıcıdan açıp **Ana ekrana ekle** (iOS) / **Uygulamayı yükle** (Android) dediğinde uygulama gibi çalışır; okuduğun sayfalar çevrimdışı da açılır. Mobil WebView içine gömmek için `node tools/make-site.mjs` çıktısındaki `site/` klasörünü kullan. Ayrıntı: [HOSTING.md](HOSTING.md).
+
 ## Geliştirme
 Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGENTS.md) (yapay zekâ asistanları için devir rehberi) ve [CONTENT_SPEC.md](CONTENT_SPEC.md) (içerik formatı).
 
-11 Ekim 2026 kontrol noktası: 27 tamamlanmış hikâye, 16 makale ve 6.687 sözlük maddesi. Yarım metinler `drafts/` içinde saklanır ve siteye eklenmez.
+11 Ekim 2026 kontrol noktası: 28 hikâye, 16 makale, 4 kitap özeti, 7.533 sözlük maddesi.
 
 **Site:** [Lantern English](https://lantern-english.copperlion512.chatgpt.site). Sites üzerinde yayında; erişim şu anda sahibinin ChatGPT hesabıyla sınırlı. Yayın ayarları ve sonraki güncellemeler için [HOSTING.md](HOSTING.md).
 
-Sonraki çalışma kontrol noktası: Dracula, Dönüşüm ve Frankenstein için üç özgün İngilizce özet ve ayrı Kitap Özetleri bölümü kaynaklara eklendi. Bu güncelleme henüz canlı siteye aktarılmadı; Hayvan Çiftliği ve son kontroller bekliyor. Devam edecek AI için [BOOK_SUMMARIES_HANDOFF.md](BOOK_SUMMARIES_HANDOFF.md).
+Kitap özetleri (Dracula, Dönüşüm, Hayvan Çiftliği, Frankenstein) tamamlandı ve bağımsız olarak gözden geçirildi. Önerilenler, mobil uygulama (PWA) ve imza eklendi; herkese açık yayın için [HOSTING.md](HOSTING.md).
 
 ```bash
 node tools/validate.mjs   # içeriği doğrula

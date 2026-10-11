@@ -1,0 +1,382 @@
+{
+  "headland": {
+    "pos": "isim",
+    "tr": "burun, denize uzanan yüksek kara parçası"
+  },
+  "ramp": {
+    "pos": "isim",
+    "tr": "rampa, eğimli yol"
+  },
+  "pontoon": {
+    "pos": "isim",
+    "tr": "yüzer iskele, duba"
+  },
+  "bulletin": {
+    "pos": "isim",
+    "tr": "bülten, duyuru"
+  },
+  "boatyard": {
+    "pos": "isim",
+    "tr": "tersane, tekne yapım ve onarım yeri"
+  },
+  "ledger": {
+    "pos": "isim",
+    "tr": "hesap defteri, kayıt defteri"
+  },
+  "wheelhouse": {
+    "pos": "isim",
+    "tr": "kaptan köşkü, dümen dairesi"
+  },
+  "scalpel": {
+    "pos": "isim",
+    "tr": "neşter"
+  },
+  "regional": {
+    "pos": "sıfat",
+    "tr": "bölgesel"
+  },
+  "outbound": {
+    "pos": "sıfat",
+    "tr": "dışarıya giden, çıkış yönündeki"
+  },
+  "checkpoint": {
+    "pos": "isim",
+    "tr": "kontrol noktası"
+  },
+  "seasonal": {
+    "pos": "sıfat",
+    "tr": "mevsimlik, sezonluk"
+  },
+  "pending": {
+    "pos": "sıfat",
+    "tr": "beklemede olan, askıda kalan"
+  },
+  "nameplate": {
+    "pos": "isim",
+    "tr": "isim plakası, tabela"
+  },
+  "whiteboard": {
+    "pos": "isim",
+    "tr": "beyaz tahta"
+  },
+  "tramway": {
+    "pos": "isim",
+    "tr": "tramvay hattı, tramvay yolu"
+  },
+  "ditch": {
+    "pos": "isim",
+    "tr": "hendek, su kanalı"
+  },
+  "digitise": {
+    "pos": "fiil",
+    "tr": "sayısallaştırmak, dijital ortama aktarmak"
+  },
+  "correspondence": {
+    "pos": "isim",
+    "tr": "yazışma, mektuplaşma"
+  },
+  "cinder": {
+    "pos": "isim",
+    "tr": "kömür külü, cüruf"
+  },
+  "padlock": {
+    "pos": "isim/fiil",
+    "tr": "asma kilit; asma kilitle kapatmak"
+  },
+  "packer": {
+    "pos": "isim",
+    "tr": "paketleyici, ambalajcı"
+  },
+  "stow": {
+    "pos": "fiil",
+    "tr": "yerleştirmek, istiflemek"
+  },
+  "lee": {
+    "pos": "isim",
+    "tr": "rüzgâr altı, rüzgârdan korunan taraf"
+  },
+  "withheld": {
+    "pos": "fiil",
+    "tr": "esirgenmiş, alıkonmuş (withhold'un geçmiş biçimi)"
+  },
+  "thirtieth": {
+    "pos": "sayı",
+    "tr": "otuzuncu"
+  },
+  "fifteenth": {
+    "pos": "sayı",
+    "tr": "on beşinci"
+  },
+  "fuse": {
+    "pos": "isim/fiil",
+    "tr": "sigorta; kaynaşmak, birleşmek"
+  },
+  "weatherproof": {
+    "pos": "sıfat",
+    "tr": "hava koşullarına dayanıklı"
+  },
+  "logo": {
+    "pos": "isim",
+    "tr": "logo, amblem"
+  },
+  "rebuild": {
+    "pos": "fiil",
+    "tr": "yeniden inşa etmek, yeniden yapmak"
+  },
+  "handlebar": {
+    "pos": "isim",
+    "tr": "bisiklet gidonu"
+  },
+  "unofficial": {
+    "pos": "sıfat",
+    "tr": "gayriresmî, resmî olmayan"
+  },
+  "conservator": {
+    "pos": "isim",
+    "tr": "koruma uzmanı, restoratör"
+  },
+  "unidentified": {
+    "pos": "sıfat",
+    "tr": "kimliği belirsiz, tanımlanmamış"
+  },
+  "electrician": {
+    "pos": "isim",
+    "tr": "elektrikçi"
+  },
+  "corrugated": {
+    "pos": "sıfat",
+    "tr": "oluklu, dalgalı"
+  },
+  "tighten": {
+    "pos": "fiil",
+    "tr": "sıkmak, sıkılaştırmak"
+  },
+  "commission": {
+    "pos": "isim/fiil",
+    "tr": "sipariş, görev; komisyon; görevlendirmek"
+  },
+  "engrave": {
+    "pos": "fiil",
+    "tr": "kazımak, oymak, gravür yapmak"
+  },
+  "acquisition": {
+    "pos": "isim",
+    "tr": "edinme, satın alma"
+  },
+  "custodian": {
+    "pos": "isim",
+    "tr": "koruyucu, emanetçi, sorumlu kişi"
+  },
+  "successive": {
+    "pos": "sıfat",
+    "tr": "ardışık, art arda gelen"
+  },
+  "printing": {
+    "pos": "isim",
+    "tr": "baskı, basım"
+  },
+  "uphill": {
+    "pos": "zarf",
+    "tr": "yokuş yukarı"
+  },
+  "diagnose": {
+    "pos": "fiil",
+    "tr": "teşhis etmek, tanı koymak"
+  },
+  "evacuate": {
+    "pos": "fiil",
+    "tr": "tahliye etmek, boşaltmak"
+  },
+  "ungainly": {
+    "pos": "sıfat",
+    "tr": "hantal, biçimsiz"
+  },
+  "stowage": {
+    "pos": "isim",
+    "tr": "yük istifi, yük yerleştirme"
+  },
+  "unload": {
+    "pos": "fiil",
+    "tr": "boşaltmak, yükünü indirmek"
+  },
+  "urgency": {
+    "pos": "isim",
+    "tr": "aciliyet, acele"
+  },
+  "unhelpful": {
+    "pos": "sıfat",
+    "tr": "yardımcı olmayan, işe yaramayan"
+  },
+  "concentration": {
+    "pos": "isim",
+    "tr": "dikkat, yoğunlaşma; yoğunluk"
+  },
+  "dedicated": {
+    "pos": "sıfat",
+    "tr": "kendini adamış; özel olarak ayrılmış"
+  },
+  "passable": {
+    "pos": "sıfat",
+    "tr": "geçilebilir; idare eder"
+  },
+  "reload": {
+    "pos": "fiil",
+    "tr": "yeniden yüklemek"
+  },
+  "repack": {
+    "pos": "fiil",
+    "tr": "yeniden paketlemek"
+  },
+  "numerical": {
+    "pos": "sıfat",
+    "tr": "sayısal, sayıyla ilgili"
+  },
+  "shuffle": {
+    "pos": "fiil",
+    "tr": "karıştırmak; ayaklarını sürümek"
+  },
+  "ward": {
+    "pos": "isim",
+    "tr": "hastane koğuşu; vesayet altındaki kişi"
+  },
+  "oversight": {
+    "pos": "isim",
+    "tr": "gözden kaçırma, dikkatsizlik; gözetim"
+  },
+  "arithmetic": {
+    "pos": "isim",
+    "tr": "aritmetik, hesap"
+  },
+  "tar": {
+    "pos": "isim/fiil",
+    "tr": "katran; katranlamak"
+  },
+  "twine": {
+    "pos": "isim",
+    "tr": "ince ip, sicim"
+  },
+  "whitewash": {
+    "pos": "isim/fiil",
+    "tr": "badana; badanalamak"
+  },
+  "winch": {
+    "pos": "isim",
+    "tr": "vinç, bocurgat"
+  },
+  "handrail": {
+    "pos": "isim",
+    "tr": "tırabzan, korkuluk"
+  },
+  "centimetre": {
+    "pos": "isim",
+    "tr": "santimetre"
+  },
+  "stretcher": {
+    "pos": "isim",
+    "tr": "sedye"
+  },
+  "granite": {
+    "pos": "isim",
+    "tr": "granit"
+  },
+  "stubby": {
+    "pos": "sıfat",
+    "tr": "kısa ve kalın, bodur"
+  },
+  "slick": {
+    "pos": "sıfat",
+    "tr": "kaygan, ıslak ve parlak"
+  },
+  "davit": {
+    "pos": "isim",
+    "tr": "tekne indirme vinci"
+  },
+  "outboard": {
+    "pos": "sıfat",
+    "tr": "tekne dışına takılan (motor)"
+  },
+  "shackle": {
+    "pos": "isim/fiil",
+    "tr": "kelepçe, bağlantı halkası; bağlamak"
+  },
+  "foredeck": {
+    "pos": "isim",
+    "tr": "baş güverte"
+  },
+  "polythene": {
+    "pos": "isim",
+    "tr": "polietilen, naylon"
+  },
+  "undignified": {
+    "pos": "sıfat",
+    "tr": "vakarsız, yakışıksız"
+  },
+  "coil": {
+    "pos": "fiil/isim",
+    "tr": "sarmak, kangal yapmak; kangal"
+  },
+  "amidships": {
+    "pos": "zarf",
+    "tr": "geminin ortasında"
+  },
+  "slat": {
+    "pos": "isim",
+    "tr": "ince tahta şerit, çıta"
+  },
+  "duckboard": {
+    "pos": "isim",
+    "tr": "ıslak zeminde yürüme tahtası"
+  },
+  "tarpaulin": {
+    "pos": "isim",
+    "tr": "muşamba, çadır bezi"
+  },
+  "manifest": {
+    "pos": "isim",
+    "tr": "yük bildirimi, yük listesi"
+  },
+  "countersign": {
+    "pos": "fiil",
+    "tr": "ikinci imzayı atmak, onaylamak"
+  },
+  "baton": {
+    "pos": "isim",
+    "tr": "değnek, cop; orkestra çubuğu"
+  },
+  "lifeboat": {
+    "pos": "isim",
+    "tr": "can filikası, cankurtaran botu"
+  },
+  "slant": {
+    "pos": "fiil/isim",
+    "tr": "eğmek, eğik olmak; eğim"
+  },
+  "indifference": {
+    "pos": "isim",
+    "tr": "kayıtsızlık, ilgisizlik"
+  },
+  "superstition": {
+    "pos": "isim",
+    "tr": "batıl inanç"
+  },
+  "pence": {
+    "pos": "isim",
+    "tr": "peni (İngiliz kuruşu, çoğul)"
+  },
+  "blotter": {
+    "pos": "isim",
+    "tr": "kurutma kâğıdı"
+  },
+  "mug": {
+    "pos": "isim",
+    "tr": "kupa, büyük fincan"
+  },
+  "optimism": {
+    "pos": "isim",
+    "tr": "iyimserlik"
+  },
+  "slot": {
+    "pos": "isim",
+    "tr": "boşluk, aralık; zaman dilimi"
+  }
+}

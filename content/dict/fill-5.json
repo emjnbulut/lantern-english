@@ -1,0 +1,6 @@
+{
+  "windmill": { "pos": "isim", "tr": "yel değirmeni" },
+  "satire": { "pos": "isim", "tr": "taşlama, hiciv, yergi" },
+  "scapegoat": { "pos": "isim", "tr": "günah keçisi" },
+  "cue": { "pos": "isim/fiil", "tr": "işaret, ipucu; sinyal vermek" }
+}

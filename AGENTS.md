@@ -25,6 +25,7 @@ assets/js/app.js        the single-page app (hash routing: #home #library #artic
 content/stories/*.json  story sources        ┐ edit THESE
 content/articles/*.json article sources      │ (format: CONTENT_SPEC.md)
 content/summaries/*.json original book summaries and reading guides
+content/featured.json  editorial "Önerilenler" picks per level (ids + short Turkish why)
 content/dict/*.json     EN→TR dictionary     ┘
 drafts/                unfinished content; NOT included in browser bundles
 data/                   GENERATED bundles — never edit by hand
@@ -33,6 +34,9 @@ tools/build.mjs         validate + generate data/library.js and data/dict.js
 tools/vocab.mjs         list words in content that the dictionary can't resolve
 tools/review-content.mjs editorial checks for changed extended original texts
 tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 22)
+tools/make-site.mjs     writes ./site: only the visitor-facing files (no content/, drafts/, notes)
+tools/publish-site.mjs  pushes ./site to a separate public repo (e.g. GitHub Pages) — needs owner approval
+manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offline cache
 ```
 
 ## Workflow
@@ -52,22 +56,26 @@ tools/smoke.mjs         optional headless Edge/Chrome browser checks (Node ≥ 2
 - Public-domain texts are reproduced exactly (no abridging/modernising); record the source URL.
 - Turkish copy uses proper characters (ç ğ ı İ ö ş ü) and a friendly, plain tone.
 
-## Content status (2026-10-11)
-- Latest stopped task: three ready book summaries (Dracula B2, Frankenstein C1, The Metamorphosis C1); Animal Farm not written. Current generated dictionary has 6,852 entries. Editorial review/build passed for the three summaries; new browser QA and publication are pending. The following numbers describe the preceding live checkpoint; see BOOK_SUMMARIES_HANDOFF.md first.
-- Saved checkpoint: 27 complete stories: A1 ×3, A2 ×6 (incl. Aesop), B1 ×6, B2 ×6, C1 ×5, C2 ×1 — 10 public-domain classics + 17 originals.
-- 16 articles (two per genre, B2–C2). This update adds 8 complete stories and 8 articles written by Astra.
-- Dictionary: 6,687 entries. `node tools/vocab.mjs` reports 451 unresolved forms and skips 249 capitalized-only forms; additional translations are pending. Do not reuse the previous coverage percentage.
-- `drafts/last-crossing-of-greyhaven.json` is an unfinished C1 adventure (3,697 words); it must not be included in `content/stories/` until its ending and quiz are reviewed. An additional C2 drama is planned but has no file yet. See `HANDOFF.md` for continuation details.
-- Editorial deviations from Gutenberg sources: a racial slur was replaced in "The Ransom of Red Chief"
-  ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious
-  Gutenberg typos were fixed. "The Star" keeps period ethnic terms; their dictionary entries note
-  they are archaic/offensive.
-- Repository: `emjnbulut/lantern-english`, private, branch `main`. Owner-private Sites deployment: `https://lantern-english.copperlion512.chatgpt.site`. No custom domain was bought or configured. GitHub Pages is not configured. Read `HOSTING.md` before publishing or changing access; reuse the project_id in `.openai/hosting.json`.
-- Verification at checkpoint: content validation and editorial review passed; headless browser checks passed (21 checks, desktop and mobile). Generated `data/` bundles match the complete source content.
+## Mobile app / WebView rules
+- Keep JS syntax conservative for old WebViews: no regex lookbehind, no top-level await; add plain fallbacks before `color-mix()` / `backdrop-filter`.
+- Respect safe areas (`env(safe-area-inset-*)`), keep inputs ≥16 px, keep paths relative (the site is served from sub-paths and `file://`).
+- `sw.js` is stamped by `tools/make-site.mjs`; registration is skipped on `file://`.
+- Footer credit "created by emjn" and `LICENSE` are owner requirements; keep them.
+
+## Content status (2026-10-11, Claude session)
+- 28 stories (A1 ×3, A2 ×6, B1 ×6, B2 ×6, C1 ×6, C2 ×1): 10 public-domain classics + 18 originals. 16 articles (two per genre, B2–C2). 4 book summaries (Dracula B2, Animal Farm B2, Frankenstein C1, The Metamorphosis C1).
+- Dictionary: 7,533 entries; run `node tools/vocab.mjs` for the current gap list (remaining forms are character names, initials and fragments).
+- `content/featured.json` holds the editorial "Önerilenler" picks (2–3 per level, C2 has none because it has one story); `tools/validate.mjs` checks ids/levels.
+- `last-crossing-of-greyhaven` (C1 adventure) was finished and moved from drafts/ into content/stories/.
+- NOT done on purpose: the second C2 drama proposed in HANDOFF.md and the seven planned adaptations in README "Eklenecek hikâyeler" (the owner said not to touch the planned stories).
+- Known editorial notes (not fixed): `fables-from-aesop` is labelled A2 but uses Victorian vocabulary (C1-ish); `the-piano-at-two-oclock` has an unexplained pipe-smoke clue; `where-the-river-sleeps` leaves how the instruments reached Cappadocia unexplained; "The Star" keeps period ethnic terms (see dictionary notes).
+- Editorial deviations from Gutenberg sources: a racial slur was replaced in "The Ransom of Red Chief" ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious Gutenberg typos were fixed.
+- Verification: `node tools/validate.mjs` OK; `node tools/smoke.mjs` 45 browser checks OK; 390 px mobile QA (overflow, tooltips, Önerilenler, PWA wiring) OK.
+- Repository: `emjnbulut/lantern-english`, private, branch `main`. Owner-private Sites deployment (ChatGPT): `https://lantern-english.copperlion512.chatgpt.site` (not updated by this session). Public hosting is prepared but NOT executed — see HOSTING.md "Herkese açık yayın".
 
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
 - Optional Turkish sentence translation on demand.
 - Export/import of the vocabulary notebook (JSON).
-- GitHub Pages deploy (Settings → Pages → branch `main`, root).
+- Public hosting: see HOSTING.md (separate public site repo + Pages; waiting for owner approval).

@@ -4,7 +4,9 @@
 
 Son kontrol noktası: **11 Ekim 2026**. Kullanıcı çalışmaya ara verilmesini, mevcut ilerlemenin GitHub'a kaydedilmesini ve başka bir AI ile devam edebilmesini istedi. Yeni içerik üretimi durduruldu; tamamlanmış metinler, arayüz değişiklikleri, üretilmiş veri paketleri ve yarım hikâye taslağı birlikte saklandı. Ardından kullanıcı site bağlantısını istedi ve tamamlanmış sürüm Sites üzerinde yayınlandı: **https://lantern-english.copperlion512.chatgpt.site**. Erişim şu anda sahibinin ChatGPT hesabıyla sınırlı; ayrıntılar `HOSTING.md` içinde.
 
-## Kullanıcının isteği
+## Claude oturumu güncellemesi (11 Ekim 2026)
+Yapılanlar: kitap özetleri ve sözlük işleri tamamlandı (bkz. BOOK_SUMMARIES_HANDOFF.md); her seviye için **Önerilenler** (`content/featured.json`); mobil uygulama (PWA, WebView uyumu); "created by emjn" imzası; `LICENSE`; `tools/make-site.mjs` ve `tools/publish-site.mjs`. Greyhaven hikâyesi tamamlandı ve yayına alındı. Yapılmayanlar: ikinci C2 drama ve README'deki 7 planlı uyarlama (kullanıcı dokunmamamı istedi); herkese açık yayın kullanıcı onayını bekliyor.
+
 
 - GitHub hesabındaki Lantern English sitesini incelemek; site adresindeki adı `lantern-english` yapmak.
 - Hikâyeleri ve makaleleri açıkça ayırmak.
