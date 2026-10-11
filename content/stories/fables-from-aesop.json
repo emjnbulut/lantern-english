@@ -1,0 +1,158 @@
+{
+  "id": "fables-from-aesop",
+  "type": "story",
+  "title": "Fables from Aesop",
+  "author": "Aesop",
+  "level": "A2",
+  "genre": "fable",
+  "source": {
+    "name": "Project Gutenberg #21 (Three Hundred Aesop's Fables, translated by George Fyler Townsend)",
+    "url": "https://www.gutenberg.org/ebooks/21",
+    "license": "Public domain"
+  },
+  "summaryTr": "Aesop'un en ünlü masallarından sekizi: aslan ile fare, tavşan ile kaplumbağa, çoban çocuk ile kurt ve daha fazlası. Kısa hayvan hikâyeleri ve akılda kalan derslerle İngilizce okumaya başlamak için ideal.",
+  "paragraphs": [
+    "## The Lion and the Mouse",
+    "A Lion was awakened from sleep by a Mouse running over his face. Rising up angrily, he caught him and was about to kill him, when the Mouse piteously entreated, saying: “If you would only spare my life, I would be sure to repay your kindness.” The Lion laughed and let him go. It happened shortly after this that the Lion was caught by some hunters, who bound him by strong ropes to the ground. The Mouse, recognizing his roar, came and gnawed the rope with his teeth, and set him free, exclaiming:",
+    "“You ridiculed the idea of my ever being able to help you, not expecting to receive from me any repayment of your favour; now you know that it is possible for even a Mouse to confer benefits on a Lion.”",
+    "## The Ants and the Grasshopper",
+    "The Ants were spending a fine winter’s day drying grain collected in the summertime. A Grasshopper, perishing with famine, passed by and earnestly begged for a little food. The Ants inquired of him, “Why did you not treasure up food during the summer?” He replied, “I had not leisure enough. I passed the days in singing.” They then said in derision: “If you were foolish enough to sing all the summer, you must dance supperless to bed in the winter.”",
+    "## The Hare and the Tortoise",
+    "A Hare one day ridiculed the short feet and slow pace of the Tortoise, who replied, laughing: “Though you be swift as the wind, I will beat you in a race.” The Hare, believing her assertion to be simply impossible, assented to the proposal; and they agreed that the Fox should choose the course and fix the goal. On the day appointed for the race the two started together. The Tortoise never for a moment stopped, but went on with a slow but steady pace straight to the end of the course. The Hare, lying down by the wayside, fell fast asleep. At last waking up, and moving as fast as he could, he saw the Tortoise had reached the goal, and was comfortably dozing after her fatigue.",
+    "Slow but steady wins the race.",
+    "## The Shepherd’s Boy and the Wolf",
+    "A Shepherd-boy, who watched a flock of sheep near a village, brought out the villagers three or four times by crying out, “Wolf! Wolf!” and when his neighbors came to help him, laughed at them for their pains. The Wolf, however, did truly come at last. The Shepherd-boy, now really alarmed, shouted in an agony of terror: “Pray, do come and help me; the Wolf is killing the sheep;” but no one paid any heed to his cries, nor rendered any assistance. The Wolf, having no cause of fear, at his leisure lacerated or destroyed the whole flock.",
+    "There is no believing a liar, even when he speaks the truth.",
+    "## The Crow and the Pitcher",
+    "A Crow perishing with thirst saw a pitcher, and hoping to find water, flew to it with delight. When he reached it, he discovered to his grief that it contained so little water that he could not possibly get at it. He tried everything he could think of to reach the water, but all his efforts were in vain. At last he collected as many stones as he could carry and dropped them one by one with his beak into the pitcher, until he brought the water within his reach and thus saved his life.",
+    "Necessity is the mother of invention.",
+    "## The Fox and the Grapes",
+    "A famished Fox saw some clusters of ripe black grapes hanging from a trellised vine. She resorted to all her tricks to get at them, but wearied herself in vain, for she could not reach them. At last she turned away, hiding her disappointment and saying: “The Grapes are sour, and not ripe as I thought.”",
+    "## The Town Mouse and the Country Mouse",
+    "A Country Mouse invited a Town Mouse, an intimate friend, to pay him a visit and partake of his country fare. As they were on the bare plowlands, eating there wheat-stocks and roots pulled up from the hedgerow, the Town Mouse said to his friend, “You live here the life of the ants, while in my house is the horn of plenty. I am surrounded by every luxury, and if you will come with me, as I wish you would, you shall have an ample share of my dainties.” The Country Mouse was easily persuaded, and returned to town with his friend. On his arrival, the Town Mouse placed before him bread, barley, beans, dried figs, honey, raisins, and, last of all, brought a dainty piece of cheese from a basket. The Country Mouse, being much delighted at the sight of such good cheer, expressed his satisfaction in warm terms and lamented his own hard fate. Just as they were beginning to eat, someone opened the door, and they both ran off squeaking, as fast as they could, to a hole so narrow that two could only find room in it by squeezing. They had scarcely begun their repast again when someone else entered to take something out of a cupboard, whereupon the two Mice, more frightened than before, ran away and hid themselves. At last the Country Mouse, almost famished, said to his friend: “Although you have prepared for me so dainty a feast, I must leave you to enjoy it by yourself. It is surrounded by too many dangers to please me. I prefer my bare plowlands and roots from the hedgerow, where I can live in safety, and without fear.”",
+    "## The North Wind and the Sun",
+    "The North Wind and the Sun disputed as to which was the most powerful, and agreed that he should be declared the victor who could first strip a wayfaring man of his clothes. The North Wind first tried his power and blew with all his might, but the keener his blasts, the closer the Traveler wrapped his cloak around him, until at last, resigning all hope of victory, the Wind called upon the Sun to see what he could do. The Sun suddenly shone out with all his warmth. The Traveler no sooner felt his genial rays than he took off one garment after another, and at last, fairly overcome with heat, undressed and bathed in a stream that lay in his path.",
+    "Persuasion is better than Force."
+  ],
+  "glossary": {
+    "entreated": "yalvardı, rica etti",
+    "piteously": "acınası bir şekilde",
+    "ridiculed": "alay etti, dalga geçti",
+    "confer": "vermek, sağlamak",
+    "perishing": "(açlıktan/susuzluktan) ölmek üzere",
+    "famine": "açlık, kıtlık",
+    "famished": "açlıktan ölmek üzere",
+    "leisure": "boş zaman",
+    "supperless": "akşam yemeksiz",
+    "derision": "alay, küçümseme",
+    "assented": "kabul etti, razı oldu",
+    "lacerated": "parçaladı, yırttı",
+    "heed": "dikkat, aldırış",
+    "pitcher": "testi, sürahi",
+    "trellised": "çardağa sarılmış, asma çardaklı",
+    "partake": "(yemeğe) katılmak, paylaşmak",
+    "fare": "yiyecek, yemek",
+    "dainties": "lezzetli, özel yiyecekler",
+    "repast": "yemek, ziyafet",
+    "genial": "sıcak, ılık"
+  },
+  "phrases": [
+    {
+      "en": "slow but steady wins the race",
+      "tr": "yavaş ama sebatlı olan yarışı kazanır"
+    },
+    {
+      "en": "necessity is the mother of invention",
+      "tr": "ihtiyaç icadın anasıdır"
+    },
+    {
+      "en": "the grapes are sour",
+      "tr": "koruk, ekşi üzüm (ulaşamadığın şeyi küçümsemek)"
+    },
+    {
+      "en": "set free",
+      "tr": "serbest bırakmak, özgür kılmak"
+    },
+    {
+      "en": "in vain",
+      "tr": "boşuna, nafile"
+    },
+    {
+      "en": "fast asleep",
+      "tr": "derin uykuda"
+    },
+    {
+      "en": "one by one",
+      "tr": "birer birer, tek tek"
+    },
+    {
+      "en": "pay a visit",
+      "tr": "ziyaret etmek"
+    },
+    {
+      "en": "pay heed to",
+      "tr": "-e aldırış etmek, dikkate almak"
+    },
+    {
+      "en": "get at",
+      "tr": "ulaşmak, erişmek"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "How does the Mouse help the Lion?",
+      "options": [
+        "He shows the Lion the way home",
+        "He brings the Lion food",
+        "He cuts the ropes with his teeth",
+        "He calls the hunters"
+      ],
+      "answer": 2,
+      "explainTr": "Fare, aslanı bağlayan ipi dişleriyle kemirir ve onu kurtarır."
+    },
+    {
+      "q": "Why does the Hare lose the race?",
+      "options": [
+        "He falls asleep",
+        "He is too slow",
+        "He loses the way",
+        "He is afraid of the Tortoise"
+      ],
+      "answer": 0,
+      "explainTr": "Tavşan yol kenarında uzanıp uyur; kaplumbağa ise durmadan yürür ve yarışı kazanır."
+    },
+    {
+      "q": "Why does nobody help the Shepherd-boy when the Wolf really comes?",
+      "options": [
+        "The villagers are away",
+        "They do not hear him",
+        "They are afraid of the Wolf",
+        "They do not believe him because he lied before"
+      ],
+      "answer": 3,
+      "explainTr": "Çoban çocuk daha önce yalan söylediği için köylüler bu sefer ona inanmaz."
+    },
+    {
+      "q": "How does the Crow get the water in the pitcher?",
+      "options": [
+        "He breaks the pitcher",
+        "He drops stones into the pitcher",
+        "He asks a friend for help",
+        "He waits for the rain"
+      ],
+      "answer": 1,
+      "explainTr": "Karga testiye taş atar; su yükselir ve karga içebilir."
+    },
+    {
+      "q": "What does the Fox say about the grapes when she cannot reach them?",
+      "options": [
+        "They are too high",
+        "They belong to a farmer",
+        "They are sour",
+        "They are poisonous"
+      ],
+      "answer": 2,
+      "explainTr": "Tilki üzümlere ulaşamayınca onlara 'ekşi' der; bu söz 'koruk' deyiminin kaynağıdır."
+    }
+  ]
+}
