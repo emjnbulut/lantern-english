@@ -698,6 +698,7 @@ try {
   await clearFillPref();
   await page("Emulation.setTouchEmulationEnabled", { enabled: false });
   await page("Emulation.setDeviceMetricsOverride", { width: 1100, height: 820, deviceScaleFactor: 1, mobile: false });
+  await navigate("videos", videoCollectionReady);
   await reload(videoCollectionReady);
   await freshVideo();
   assert(await evaluate("!Element.prototype.requestFullscreen && !Element.prototype.webkitRequestFullscreen && typeof HTMLVideoElement.prototype.webkitEnterFullscreen === 'function' && !matchMedia('(pointer: coarse)').matches && innerWidth === 1100 && innerHeight === 820"), "The desktop gesture checks need a fine pointer, a 1100x820 window and an iPhone-like Fullscreen API (video-only).");
@@ -982,6 +983,15 @@ try {
     await evaluate("document.getElementById('video-start').click()");
     assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && (() => { const r = document.getElementById('video-player').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px activated video controls must stay within the viewport.`);
     await screenshot("video-player-mobile-" + width);
+    for (const v of addedVideos) {
+      await navigate("v." + v.id, `document.getElementById("video-view")?.dataset.id === ${JSON.stringify(v.id)}`);
+      const longest = v.captions.reduce((best, c, i, all) => c.text.length > all[best].text.length ? i : best, 0);
+      await evaluate(`(() => { const s = document.getElementById("caption-select"); s.value="${longest}"; s.dispatchEvent(new Event("change")); document.getElementById("video-stage").scrollIntoView({block:"center",behavior:"instant"}); })()`);
+      assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1 && (() => { const r=document.getElementById('video-captions').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), width + "px " + v.id + ": longest caption must fit on a phone.");
+      await evaluate("document.querySelector('#video-captions .w').click()");
+      assert(await evaluate("(() => { const t=document.getElementById('tip'),r=t.getBoundingClientRect(); return !t.hidden && r.left >= -1 && r.right <= innerWidth + 1; })()"), width + "px " + v.id + ": word tooltip must fit on a phone.");
+      await screenshot("video-added-" + v.id + "-" + width);
+    }
   }
   if (process.argv.includes("--online-video")) {
     // This opt-in check is a single bounded media attempt, never part of ordinary offline smoke.
