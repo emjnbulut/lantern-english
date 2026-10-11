@@ -1,5 +1,7 @@
 # Lantern English yayın kaydı
 
+**Güncel adres:** https://lantern-english.github.io/ — GitHub Pages. Aşağıdaki ChatGPT Sites kaydı eski, owner-private kopyaya aittir. Güncel siteyi ayrı public depo üzerinden, Git geçmişini koruyan normal commit/push ile güncelle; ayrıntılar bu dosyanın GitHub Pages bölümünde.
+
 - URL: **https://lantern-english.copperlion512.chatgpt.site**
 - Hizmet: Sites; durum **succeeded** (11 Ekim 2026).
 - Erişim: **owner-private**, sahibinin ChatGPT hesabıyla. Başka kişilere açılması henüz istenmedi. Mevcut erişimi kullanıcı talebi olmadan değiştirme.
@@ -54,13 +56,10 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 
 ### Herkese açık yayın (YAYINDA, 11 Ekim 2026)
 - **Adres:** https://lantern-english.github.io/ — GitHub organizasyonu `lantern-english` (kullanıcı oluşturdu; adres kişisel ad içermez).
-- **Depo:** `lantern-english/lantern-english.github.io` (**public**; yalnızca derlenmiş site, tek commit, geçmiş yok). Kaynak depo `emjnbulut/lantern-english` **private** kalır.
-- **Güncelleme:**
-  ```
-  node tools/validate.mjs && node tools/build.mjs
-  node tools/publish-site.mjs https://github.com/lantern-english/lantern-english.github.io.git main
-  ```
-  (Pages `main` / kök klasörden sunar; yayın birkaç dakika sürer. `sw.js` sürüm damgası değişir, kurulu kopyalar yenilenir.)
+- **Depo:** `lantern-english/lantern-english.github.io` (**public**; yalnızca derlenmiş site). Kaynak depo `emjnbulut/lantern-english` **private** kalır.
+- **Güncelleme:** Kaynak commitinden temiz bir worktree oluştur. Orada `node tools/validate.mjs`, `node tools/build.mjs` ve `node tools/smoke.mjs` çalıştır; üretilen veri paketlerini kaynak deposunda kaydet. Ardından `node tools/make-site.mjs` ile worktree içindeki `site/` klasörünü oluştur. Public depoyu normal olarak clone/fetch et; paketin ziyaretçi dosyalarını mevcut checkouta kopyala, `.git` ve varsa hosting ayarlarını koru. Diff'i incele, yalnızca site dosyalarını commit et ve normal `git push origin main` kullan. Kaynaklar, taslaklar ve devir notları public depoya kopyalanmaz.
+- **Geçmişi koru:** Mevcut `tools/publish-site.mjs` betiği yeni depo geçmişi oluşturup `--force` ile gönderir; güncellemelerde kullanma. Public yayın geçmişini normal commit/push ile sürdür.
+- Pages `main` / kök klasörden sunar; yayın birkaç dakika sürebilir. `sw.js` sürüm damgası değişir, kurulu kopyalar yenilenir. Push sonrasında canlı `index.html`, uygulama ve veri dosyalarının paketle eşleştiğini doğrula.
 - **Doğrulama:** canlı adreste 390 px mobil kontrol (ipucu, Önerilenler, manifest, service worker, çevrimdışı önbellek) geçti.
 - Ücretsiz GitHub hesabında private depodan Pages yoktur; bu yüzden ayrı public site deposu kullanılır.
 
