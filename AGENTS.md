@@ -63,10 +63,11 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - Footer credit "created by emjn" and `LICENSE` are owner requirements; keep them.
 
 ## Content status (2026-10-11, Claude session)
-- 28 stories (A1 ×3, A2 ×6, B1 ×6, B2 ×6, C1 ×6, C2 ×1): 10 public-domain classics + 18 originals. 16 articles (two per genre, B2–C2). 4 book summaries (Dracula B2, Animal Farm B2, Frankenstein C1, The Metamorphosis C1).
+- 28 stories (A1 ×3, A2 ×6, B1 ×6, B2 ×6, C1 ×6, C2 ×1): 10 public-domain classics + 18 originals. 16 articles (two per genre, B2–C2). 3 book guides (Dracula B2, Frankenstein C1, The Metamorphosis C1).
 - Dictionary: 7,533 entries; run `node tools/vocab.mjs` for the current gap list (remaining forms are character names, initials and fragments).
 - `content/featured.json` holds the editorial "Önerilenler" picks (2–3 per level, C2 has none because it has one story); `tools/validate.mjs` checks ids/levels.
 - `last-crossing-of-greyhaven` (C1 adventure) was finished and moved from drafts/ into content/stories/.
+- Animal Farm was REMOVED (owner decision, 2026-10-11): still under US copyright until 2040, so neither the guide nor a retelling is published. Do not re-add it without clearance.
 - NOT done on purpose: the second C2 drama proposed in HANDOFF.md and the seven planned adaptations in README "Eklenecek hikâyeler" (the owner said not to touch the planned stories).
 - Known editorial notes (not fixed): `fables-from-aesop` is labelled A2 but uses Victorian vocabulary (C1-ish); `the-piano-at-two-oclock` has an unexplained pipe-smoke clue; `where-the-river-sleeps` leaves how the instruments reached Cappadocia unexplained; "The Star" keeps period ethnic terms (see dictionary notes).
 - Editorial deviations from Gutenberg sources: a racial slur was replaced in "The Ransom of Red Chief" ("A rock the size of an egg") and in "To Build a Fire" ("a wide flat of tussocks"); obvious Gutenberg typos were fixed.

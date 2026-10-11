@@ -145,7 +145,7 @@ try {
   await navigate("s." + articles[0].id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
   const nextArticles = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
   assert(nextArticles.every((id) => articleIds.has(id)), "Article readers must recommend articles only.");
-  assert(["dracula", "the-metamorphosis", "animal-farm", "frankenstein"].every((id) => summaryIds.has(id)), "The four requested classic book summaries must be available.");
+  assert(["dracula", "the-metamorphosis", "frankenstein"].every((id) => summaryIds.has(id)), "The three classic book guides must be available (Animal Farm was removed for US copyright reasons).");
   await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
   assert((await ids()).length === summaries.length && (await ids()).every((id) => summaryIds.has(id)), "Book summaries must have their own collection.");
   await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'Franz Kafka'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);

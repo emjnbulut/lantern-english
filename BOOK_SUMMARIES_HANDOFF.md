@@ -3,7 +3,7 @@
 11 Ekim 2026. Kullanıcı limit nedeniyle **canlı siteye aktarımı yarıda bırakıp başka AI'a devretmemizi** istedi. Yeni yazım ve yayın durduruldu; eldeki dosyalar GitHub'a kaydediliyor. Bu görev için Sites yayını yapılmadı.
 
 ## Güncelleme (Claude oturumu, 11 Ekim 2026)
-**Tamamlandı:** Hayvan Çiftliği özeti yazıldı (`content/summaries/animal-farm.json`, B2, 4.897 kelime, özgün inceleme + kısa olay özeti); Dracula, Frankenstein ve Dönüşüm kaynak metinlerle bağımsız karşılaştırıldı ve küçük düzeltmeler yapıldı; Kafka ve diğer tüm sözlük boşlukları dolduruldu; `smoke.mjs` hatası (global `const q`, başlık kelimelerinin sayımı) düzeltildi ve **45 tarayıcı kontrolü geçti**. Dört özet de GitHub'da. ChatGPT Sites kopyası bu görevde güncellenmedi (Claude oturumunda o araç yok); sonraki AI `HOSTING.md`'ye göre yeniden yayınlayabilir.
+**Hayvan Çiftliği KALDIRILDI** (kullanıcı kararı): roman ABD'de 2040'a kadar telifli; rehber de kısaltma da yayınlanmadı, `animal-farm.json` silindi. **Tamamlandı:** Dracula, Frankenstein ve Dönüşüm kaynak metinlerle bağımsız karşılaştırıldı ve küçük düzeltmeler yapıldı; Kafka ve diğer tüm sözlük boşlukları dolduruldu; `smoke.mjs` hatası (global `const q`, başlık kelimelerinin sayımı) düzeltildi ve **45 tarayıcı kontrolü geçti**. Dört özet de GitHub'da. ChatGPT Sites kopyası bu görevde güncellenmedi (Claude oturumunda o araç yok); sonraki AI `HOSTING.md`'ye göre yeniden yayınlayabilir.
 Aşağıdaki "Hazır olmayan metin" ve "Devam sırası" bölümleri tarihsel kayıttır.
 
 ## Kullanıcının istediği ve kapsam
