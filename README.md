@@ -7,6 +7,8 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 
 ## Özellikler
 - **Hikâyeler:** A1–C2 için ayrı koleksiyon; tür (komedi, gizem, korku, macera, romantik, bilim kurgu, fabl, dram) ve uzunluk filtreleri, arama, sıralama.
+- **Kitaplığım:** hikâye ve makaleleri kartlardan veya okuyucudan kaydetme; kayıtlı listede arama, içerik türü filtresi ve sıralama. Okuma ilerlemesi ve kaldığın yerden devam korunur. Kayıtlar kullandığın cihazın tarayıcısında saklanır.
+- **Önerilenler:** mevcut filtrelere uygun en fazla üç hikâye; Dracula (B1) ve Frankenstein (B2) kısaltılmış klasikleri uygun seçimlerde önceliklidir.
 - **Kelime ipucu:** her kelimede Türkçe anlam, kök (ör. *went ← go*), metne özel anlam ve kalıp ifadeler. Tıklayınca kutu sabitlenir: sesli telaffuz, deftere ekleme, Tureng bağlantısı.
 - **Kelime Defterim:** kaydedilen kelimeler geçtikleri cümleyle saklanır; aralıklı tekrar kartları (Leitner) ve Anki'ye kopyalama.
 - **Okuma araçları:** hikâyelerde yaklaşık 450 kelimelik sayfalar, önceki/sonraki sayfa ve sayfa seçimi, kaldığın sayfadan devam, sesli okuma (paragraf vurgulu), yazı boyutu ve okuma ilerlemesi. Anlama soruları ve ifade listesi son sayfada; makaleler kesintisiz okunur.
@@ -48,7 +50,9 @@ Telefonda tarayıcıdan açıp **Ana ekrana ekle** (iOS) / **Uygulamayı yükle*
 ## Geliştirme
 Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGENTS.md) (yapay zekâ asistanları için devir rehberi) ve [CONTENT_SPEC.md](CONTENT_SPEC.md) (içerik formatı).
 
-11 Ekim 2026 güncellemesi: Kullanıcının isteğiyle üç kitap özeti ve ayrı **Kitap Özetleri** bölümü kaldırıldı. Hikâyeler ve Makaleler ayrı koleksiyonlar olarak devam ediyor. Mevcut Dracula ve Frankenstein hikâye uyarlamaları korunuyor; Dönüşüm uyarlamasının henüz kaydedilmemiş yerel çalışması bu arayüz yayınına dahil değil. Yukarıdaki yedi hikâye plan listesinde kalıyor.
+11 Ekim 2026 güncellemesi: Kullanıcının isteğiyle üç kitap özeti ve ayrı **Kitap Özetleri** bölümü kaldırıldı. Hikâyeler ve Makaleler ayrı koleksiyonlar olarak devam ediyor. Mevcut Dracula ve Frankenstein hikâye uyarlamaları korunuyor; Dönüşüm uyarlaması `drafts/` altında, çakışma düzeltmesi bekleyen taslak olarak saklanıyor ve yayımlanmıyor. Yukarıdaki yedi hikâye plan listesinde kalıyor.
+
+Sonraki arayüz görevi: **Kitaplığım** sekmesi ve kişisel hikâye/makale kayıtları. Bu çalışma yeni hikâye, makale veya kitap özeti eklemiyor; doğrulama ve yayın sonucu HANDOFF.md ve HOSTING.md'de kaydedilecek.
 
 **Site:** https://lantern-english.github.io/ (herkese açık). Yayın ve güncelleme adımları için [HOSTING.md](HOSTING.md).
 

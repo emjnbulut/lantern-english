@@ -1,4 +1,4 @@
-/* Lantern English — single-page app. Routes: #home #library #articles #words #about #s.<id> */
+/* Lantern English — single-page app. Routes: #home #library #articles #my-library #words #about #s.<id> */
 (function () {
   "use strict";
 
@@ -46,18 +46,28 @@
     check: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
     dice: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.2" fill="currentColor"/><circle cx="15" cy="15" r="1.2" fill="currentColor"/><circle cx="15" cy="9" r="1.2" fill="currentColor"/><circle cx="9" cy="15" r="1.2" fill="currentColor"/></svg>',
+    bookmark: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
+    bookmarkFill: '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4z"/></svg>',
   };
 
   // ---------- storage (per-browser conveniences) ----------
   const S = {
     load(k, d) { try { const v = localStorage.getItem("lantern." + k); return v ? JSON.parse(v) : d; } catch (e) { return d; } },
-    save(k, v) { try { localStorage.setItem("lantern." + k, JSON.stringify(v)); } catch (e) { /* storage unavailable */ } },
+    save(k, v) { try { localStorage.setItem("lantern." + k, JSON.stringify(v)); return true; } catch (e) { return false; } },
   };
   let words = S.load("words", {});
   let progress = S.load("progress", {});
+  const cleanBookmarks = (value) => Array.isArray(value) ? value.filter((id, i) => typeof id === "string" && Object.prototype.hasOwnProperty.call(BY_ID, id) && value.indexOf(id) === i) : [];
+  let bookmarks = cleanBookmarks(S.load("bookmarks", []));
+  let bookmarkStorageAvailable = true;
   const prefs = Object.assign({ size: 19, mode: "hover", last: null }, S.load("prefs", {}));
   const filt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("filters", {}));
   const articleFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("articleFilters", {}));
+  const shelfFilt = Object.assign({ type: "all", q: "", sort: "saved" }, S.load("myLibraryFilters", {}));
+  if (!["all", "story", "article"].includes(shelfFilt.type)) shelfFilt.type = "all";
+  if (typeof shelfFilt.q !== "string") shelfFilt.q = "";
+  if (!["saved", "recent", "level", "title"].includes(shelfFilt.sort)) shelfFilt.sort = "saved";
+  let shelfDraw = null;
   const COLLECTIONS = {
     story: { items: STORIES, filters: filt, key: "filters", route: "library", title: "Hikâyeler", label: "hikâye", search: "Hikâye", eyebrow: "Hikâye kütüphanesi · A1–C2", lead: "Klasikler ve özgün hikâyeler. Seviyene, türe ve okuma uzunluğuna göre seç." },
     article: { items: ARTICLES, filters: articleFilt, key: "articleFilters", route: "articles", title: "Makaleler", label: "makale", search: "Makale", eyebrow: "Denemeler · B2–C2", lead: "Edebiyat, türler ve anlatı üzerine özgün denemeler. Seviyene ve ilgini çeken konuya göre bir makale seç." },
@@ -397,6 +407,73 @@
     b.title = `${n} kelime tekrar bekliyor`;
   }
 
+  // ---------- personal reading shelf ----------
+  function bookmarkText(saved, reader) {
+    return reader ? (saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle") : (saved ? "Kaydedildi" : "Kaydet");
+  }
+  function bookmarkContent(saved, reader) {
+    return (saved ? ICON.bookmarkFill : ICON.bookmark) + `<span>${bookmarkText(saved, reader)}</span>`;
+  }
+  function bookmarkLabel(t, saved, reader) {
+    return `${bookmarkText(saved, reader)}${saved && !reader ? " · Kitaplığımdan çıkar" : ""}: ${t.title}`;
+  }
+  function bookmarkButton(t, reader) {
+    const saved = bookmarks.includes(t.id);
+    return `<button class="btn sm bookmark-btn" type="button" data-bookmark="${esc(t.id)}"${reader ? ' data-bookmark-reader="true"' : ""} aria-pressed="${saved}" aria-label="${esc(bookmarkLabel(t, saved, reader))}" title="${saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle"}">${bookmarkContent(saved, reader)}</button>`;
+  }
+  const bookmarkStorageNote = () => bookmarkStorageAvailable ? "Kitaplığın bu tarayıcıda saklanır." : "Kayıtların şu an yalnızca bu oturumda tutulabiliyor.";
+  function updateBookmarks() {
+    const badge = document.getElementById("library-badge");
+    badge.textContent = bookmarks.length; badge.hidden = bookmarks.length === 0;
+    badge.title = `${bookmarks.length} kayıt`;
+    document.querySelectorAll("[data-bookmark-count]").forEach((e) => { e.textContent = bookmarks.length; });
+    const note = $main.querySelector(".library-note");
+    if (note) note.textContent = bookmarkStorageNote();
+    $main.querySelectorAll("[data-bookmark]").forEach((b) => {
+      const t = BY_ID[b.dataset.bookmark];
+      if (!t) return;
+      const saved = bookmarks.includes(t.id), reader = b.dataset.bookmarkReader === "true";
+      b.setAttribute("aria-pressed", saved);
+      b.setAttribute("aria-label", bookmarkLabel(t, saved, reader));
+      b.title = saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle";
+      b.innerHTML = bookmarkContent(saved, reader);
+    });
+  }
+  function refreshShelf() {
+    if (!shelfDraw) return;
+    const active = document.activeElement;
+    const button = active.closest("#results [data-bookmark]");
+    const link = active.closest("#results a.card");
+    const id = button ? button.dataset.bookmark : link ? link.hash.slice(3) : null;
+    const shell = active.closest("#results .card-shell");
+    const neighbor = shell && (shell.nextElementSibling || shell.previousElementSibling);
+    const nextId = neighbor && neighbor.querySelector("[data-bookmark]")?.dataset.bookmark;
+    shelfDraw();
+    if (id) {
+      const controls = Array.from($main.querySelectorAll(button ? "#results [data-bookmark]" : "#results a.card"));
+      const controlId = (e) => button ? e.dataset.bookmark : e.hash.slice(3);
+      const next = controls.find((e) => controlId(e) === id) || controls.find((e) => controlId(e) === nextId) || controls[0];
+      (next || document.getElementById("q")).focus({ preventScroll: true });
+    }
+  }
+  $main.addEventListener("click", (ev) => {
+    const b = ev.target.closest("[data-bookmark]");
+    if (!b || !Object.prototype.hasOwnProperty.call(BY_ID, b.dataset.bookmark)) return;
+    ev.preventDefault();
+    // Read the latest list before editing so another tab's saves are retained.
+    if (bookmarkStorageAvailable) bookmarks = cleanBookmarks(S.load("bookmarks", bookmarks));
+    const id = b.dataset.bookmark, saved = bookmarks.includes(id);
+    bookmarks = saved ? bookmarks.filter((item) => item !== id) : [id, ...bookmarks];
+    bookmarkStorageAvailable = S.save("bookmarks", bookmarks); updateBookmarks(); refreshShelf();
+    toast((saved ? "Kitaplığından çıkarıldı" : "Kitaplığına eklendi") + (bookmarkStorageAvailable ? "" : " · Bu oturum için"));
+  });
+  window.addEventListener("storage", (ev) => {
+    if (!bookmarkStorageAvailable || (ev.key !== null && ev.key !== "lantern.bookmarks")) return;
+    bookmarks = cleanBookmarks(S.load("bookmarks", []));
+    updateBookmarks();
+    refreshShelf();
+  });
+
   // ---------- shared fragments ----------
   function stateOf(t) {
     const p = progress[t.id];
@@ -409,17 +486,18 @@
     const p = progress[t.id];
     const bar = p && !p.done && p.f > 0.03 ? `<div class="bar"><span style="width:${Math.round(p.f * 100)}%"></span></div>` : "";
     const by = t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
-    return `<a class="card${t.type === "story" ? "" : " " + t.type}${why ? " rec" : ""}" href="#s.${t.id}">
-      <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${t.abridged ? '<span class="abr">Kısaltılmış klasik</span>' : ""}${stateOf(t)}</div>
+    return `<div class="card-shell"><a class="card${t.type === "story" ? "" : " " + t.type}${why ? " rec" : ""}" href="#s.${t.id}">
+      <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${t.type === "article" ? '<span class="content-kind">Makale</span>' : ""}${t.abridged ? '<span class="abr">Kısaltılmış klasik</span>' : ""}${stateOf(t)}</div>
       <h3>${esc(t.title)}</h3>
       <div class="by">${by}</div>
       ${why ? `<p class="why">${ICON.starFill}<span>${esc(why)}</span></p>` : ""}
       <p class="teaser">${esc(t.summaryTr)}</p>
       ${bar}
       <div class="meta"><span>${LENGTHS[t.length]}</span><span>·</span><span>${fmt(t.words)} kelime</span><span>·</span><span>~${minutes(t)} dk</span></div>
-    </a>`;
+    </a><div class="card-actions">${bookmarkButton(t, false)}</div></div>`;
   }
   const grid = (items) => items.length ? `<div class="grid">${items.map((t) => card(t)).join("")}</div>` : "";
+  const collectionNav = (kind) => `<nav class="collection-switch" aria-label="Okuma bölümleri">${Object.entries(COLLECTIONS).map(([key, c]) => `<a href="#${c.route}"${key === kind ? ' aria-current="page"' : ""}>${c.title} <span>${c.items.length}</span></a>`).join("")}<a href="#my-library"${kind === "saved" ? ' aria-current="page"' : ""}>Kitaplığım <span data-bookmark-count>${bookmarks.length}</span></a></nav>`;
 
   // ---------- views ----------
   const DEMO = {
@@ -516,6 +594,50 @@
     viewCollection("article");
   }
 
+  function viewMyLibrary() {
+    const saveFilters = () => S.save("myLibraryFilters", shelfFilt);
+    $main.innerHTML = `
+      ${collectionNav("saved")}
+      <div class="lib-head">
+        <div><p class="eyebrow">Senin okuma listen</p><h1>Kitaplığım</h1><p class="lead">Kaydettiğin hikâye ve makaleler burada. Bir metin seç ve kaldığın yerden devam et.</p><p class="library-note">${bookmarkStorageNote()}</p></div>
+        <label class="search">${ICON.search}<input id="q" type="search" placeholder="Kitaplığında başlık ya da yazar ara" value="${esc(shelfFilt.q)}" aria-label="Kitaplığımda ara"></label>
+      </div>
+      <div class="bookshelf-types chips" role="group" aria-label="Kaydedilen metin türü">
+        ${[["all", "Tümü"], ["story", "Hikâyeler"], ["article", "Makaleler"]].map(([type, label]) => `<button class="chip" type="button" data-library-type="${type}" aria-pressed="${shelfFilt.type === type}">${label}</button>`).join("")}
+      </div>
+      <div class="result-line"><span id="count" aria-live="polite"></span><button class="btn sm ghost" id="clear">Filtreleri temizle</button>
+        <label>Sırala <select id="sort"><option value="saved">Son kaydedilen</option><option value="recent">Son okunan</option><option value="level">Seviye</option><option value="title">Başlık</option></select></label>
+      </div>
+      <div id="results"></div>`;
+    document.getElementById("sort").value = shelfFilt.sort;
+    shelfDraw = () => {
+      const q = shelfFilt.q.trim().toLocaleLowerCase("tr");
+      let list = bookmarks.map((id) => BY_ID[id]).filter((t) =>
+        (shelfFilt.type === "all" || t.type === shelfFilt.type) &&
+        (!q || [t.title, t.author, t.summaryTr].join(" ").toLocaleLowerCase("tr").includes(q)));
+      if (shelfFilt.sort === "title") list.sort((a, b) => a.title.localeCompare(b.title));
+      else if (shelfFilt.sort === "recent") list.sort((a, b) => (progress[b.id]?.at || 0) - (progress[a.id]?.at || 0));
+      else if (shelfFilt.sort === "level") list.sort((a, b) => LEVELS.findIndex((l) => l.id === a.level) - LEVELS.findIndex((l) => l.id === b.level) || a.words - b.words);
+      document.getElementById("count").textContent = `${list.length} kayıt · ${list.filter((t) => t.type === "story").length} hikâye · ${list.filter((t) => t.type === "article").length} makale`;
+      $main.querySelectorAll("[data-library-type]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.libraryType === shelfFilt.type));
+      document.getElementById("results").innerHTML = grid(list) || (bookmarks.length
+        ? '<div class="empty"><h3>Bu filtrelerle kayıt yok</h3><p>Bir filtreyi kaldırmayı veya aramayı temizlemeyi dene.</p></div>'
+        : '<div class="empty"><h3>Kitaplığın henüz boş</h3><p>Hikâye ve makalelerdeki “Kaydet” düğmesiyle okuma listeni oluştur.</p><div class="empty-actions"><a class="btn primary" href="#library">Hikâyelere göz at</a><a class="btn" href="#articles">Makalelere göz at</a></div></div>');
+    };
+    $main.querySelector(".bookshelf-types").addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-library-type]");
+      if (!b) return;
+      shelfFilt.type = b.dataset.libraryType; saveFilters(); shelfDraw();
+    });
+    document.getElementById("q").addEventListener("input", (ev) => { shelfFilt.q = ev.target.value; saveFilters(); shelfDraw(); });
+    document.getElementById("sort").addEventListener("change", (ev) => { shelfFilt.sort = ev.target.value; saveFilters(); shelfDraw(); });
+    document.getElementById("clear").addEventListener("click", () => {
+      shelfFilt.type = "all"; shelfFilt.q = ""; saveFilters();
+      document.getElementById("q").value = ""; shelfDraw();
+    });
+    shelfDraw();
+  }
+
   function viewCollection(kind) {
     const config = COLLECTIONS[kind];
     const collection = config.items;
@@ -526,7 +648,7 @@
     const chip = (group, val, label, extra) =>
       `<button class="chip${extra || ""}" data-f="${group}" data-v="${val}" aria-pressed="${filters[group].includes(val)}">${label}</button>`;
     $main.innerHTML = `
-      <nav class="collection-switch" aria-label="Okuma bölümleri">${Object.entries(COLLECTIONS).map(([key, c]) => `<a href="#${c.route}"${key === kind ? ' aria-current="page"' : ""}>${c.title} <span>${c.items.length}</span></a>`).join("")}</nav>
+      ${collectionNav(kind)}
       <div class="lib-head">
         <div><p class="eyebrow">${config.eyebrow}</p><h1>${config.title}</h1><p class="lead">${config.lead}</p></div>
         <label class="search">${ICON.search}<input id="q" type="search" placeholder="${config.search} başlığı ya da yazar ara" value="${esc(filters.q)}" aria-label="${config.search} ara"></label>
@@ -559,17 +681,19 @@
       let recs = [];
       if (kind === "story") {
         const inList = new Set(list.map((t) => t.id));
-        for (const lvl of LEVELS.map((l) => l.id).filter((id) => filters.level.includes(id))) {
+        for (const lvl of LEVELS.map((l) => l.id).filter((id) => !filters.level.length || filters.level.includes(id))) {
           const picks = FEATURED[lvl] || [];
           // a level needs more stories than picks, otherwise the whole level would be "recommended"
           if (!picks.length || collection.filter((t) => t.level === lvl).length <= picks.length) continue;
           for (const p of picks) if (BY_ID[p.id] && inList.has(p.id)) recs.push({ t: BY_ID[p.id], why: p.why });
         }
       }
+      // Keep the section compact and give abridged classics priority within the active filters.
+      recs = recs.sort((a, b) => Number(!!b.t.abridged) - Number(!!a.t.abridged)).slice(0, 3);
       const recIds = new Set(recs.map((r) => r.t.id));
       const rest = list.filter((t) => !recIds.has(t.id));
       const recHtml = recs.length
-        ? `<section class="recs" aria-labelledby="recs-h"><div class="recs-head"><h2 id="recs-h">${ICON.starFill}Önerilenler</h2><p>${filters.level.length > 1 ? "Seçtiğin seviyelerde" : "Bu seviyede"} önce bunlarla başla.</p></div>
+        ? `<section class="recs" aria-labelledby="recs-h"><div class="recs-head"><h2 id="recs-h">${ICON.starFill}Önerilenler</h2><p>${filters.level.length ? (filters.level.length > 1 ? "Seçtiğin seviyelerde önce bunlarla başla." : "Bu seviyede önce bunlarla başla.") : "Okumaya başlamak için birkaç öneri."}</p></div>
             <div class="grid">${recs.map((r) => card(r.t, r.why)).join("")}</div></section>
             ${rest.length ? `<h2 class="rest-h">Diğer ${label}ler</h2>` : ""}`
         : "";
@@ -623,6 +747,7 @@
             <span class="sep">|</span><span>${LENGTHS[t.length]}</span><span class="sep">|</span><span>${fmt(t.words)} kelime</span><span class="sep">|</span><span>~${minutes(t)} dk</span></div>
           <div class="teaser-box">${esc(t.summaryTr)}</div>
           ${t.abridged ? '<p class="spoiler-note"><b>Kısaltılmış klasik</b> · Kitabın olay örgüsü ve sonu sırasıyla korunarak sadeleştirilmiş, kısaltılmış anlatımdır. Spoiler içerir; yaklaşık okuma süresi seviyeye göre tahminidir.</p>' : ""}
+          <div class="reader-actions">${bookmarkButton(t, true)}<a class="link" href="#my-library">Kitaplığım →</a></div>
         </header>
         <div class="toolbar" role="toolbar" aria-label="Okuma ayarları">
           <button class="btn sm" id="listen">${ICON.play} ${isArt ? "Dinle" : "Sayfayı dinle"}</button>
@@ -898,7 +1023,8 @@
       </ul>
       <p>Bir kez açtıktan sonra daha önce okuduğun hikâyeler internet olmadan da açılır.</p>
       <h2>Verilerin</h2>
-      <p>Kelime defterin ve okuma ilerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen bunlar da silinir.</p>
+      <p>Hikâye ve makalelerdeki “Kaydet” düğmesiyle okuma listeni oluştur; <a href="#my-library">Kitaplığım</a> sekmesinden bu metinlere ulaşabilir, kaldığın yerden devam edebilirsin. Bir metni kitaplığından çıkarmak okuma ilerlemeni silmez.</p>
+      <p>Kitaplığın, kelime defterin ve okuma ilerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen bunlar da silinir.</p>
     </div>`;
   }
 
@@ -943,19 +1069,26 @@
     $back.disabled = h === "home" && navigationDepth === 0;
     if (readerFlush) readerFlush();
     Speech.stop(); Tip.hide();
-    readerScroll = null; readerFlush = null; cardKeys = null;
+    readerScroll = null; readerFlush = null; cardKeys = null; shelfDraw = null;
     jumpScroll(0);
     document.querySelector("#progress span").style.width = "0";
     const section = h.startsWith("s.") ? (COLLECTIONS[BY_ID[h.slice(2)]?.type]?.route || "library") : h;
     document.querySelectorAll("[data-nav]").forEach((a) => { if (a.dataset.nav === section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    const activeNav = document.querySelector(".nav [aria-current='page']");
+    if (activeNav) {
+      const nav = activeNav.parentElement, item = activeNav.getBoundingClientRect(), bounds = nav.getBoundingClientRect();
+      if (item.left < bounds.left) nav.scrollLeft -= bounds.left - item.left;
+      else if (item.right > bounds.right) nav.scrollLeft += item.right - bounds.right;
+    }
     if (h.startsWith("s.")) viewReader(h.slice(2));
     else if (h === "library") viewLibrary();
     else if (h === "articles") viewArticles();
+    else if (h === "my-library") viewMyLibrary();
     else if (h === "words") viewWords();
     else if (h === "about") viewAbout();
     else viewHome();
     const t = h.startsWith("s.") && BY_ID[h.slice(2)];
-    document.title = t ? `${t.title} · Lantern English` : "Lantern English";
+    document.title = t ? `${t.title} · Lantern English` : h === "my-library" ? "Kitaplığım · Lantern English" : "Lantern English";
   }
 
   // ---------- installable app (PWA) ----------
@@ -980,5 +1113,6 @@
 
   window.addEventListener("hashchange", route);
   updateBadge();
+  updateBookmarks();
   route();
 })();

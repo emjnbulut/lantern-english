@@ -84,6 +84,11 @@ try {
     for (let i = 0; i < 100; i++) { if (await evaluate(expression)) return; await pause(100); }
     throw new Error(`Page condition failed: ${expression}`);
   };
+  const reload = async (condition) => {
+    const timeOrigin = await evaluate("performance.timeOrigin");
+    await page("Page.reload");
+    await waitFor(`performance.timeOrigin !== ${timeOrigin} && (${condition})`);
+  };
   const navigate = async (hash, condition) => {
     await page("Page.navigate", { url: origin + "/index.html#" + hash });
     const text = hash.startsWith("s.") && [...stories, ...articles].find((t) => t.id === hash.slice(2));
@@ -95,8 +100,12 @@ try {
     fs.writeFileSync(path.join(runDir, name + ".png"), Buffer.from(data, "base64"));
   };
   const ids = async () => evaluate(`Array.from(document.querySelectorAll('#results .card')).map(a => a.hash.slice(3))`);
+  const recommendedIds = async () => evaluate("Array.from(document.querySelectorAll('#results .recs .card')).map(a => a.hash.slice(3))");
   const storyIds = new Set(stories.map((s) => s.id));
   const articleIds = new Set(articles.map((a) => a.id));
+  const myLibraryReady = "document.querySelector('main h1')?.textContent === 'Kitaplığım'";
+  const bookmarkIds = async () => evaluate("JSON.parse(localStorage.getItem('lantern.bookmarks') || '[]')");
+  const clickBookmark = async (id, scope = "") => evaluate(`document.querySelector(${JSON.stringify(scope + '[data-bookmark="' + id + '"]')}).click()`);
   const readerReady = "!!document.querySelector('#text .w')";
   const pageState = async () => evaluate("({ page: Number(document.getElementById('text').dataset.page), pages: Number(document.getElementById('text').dataset.pages) })");
   const readerParagraphs = async () => evaluate("Array.from(document.querySelectorAll('#text p, #text h2')).map(e => e.textContent)");
@@ -115,13 +124,44 @@ try {
   assert(await evaluate("(() => { const b = document.getElementById('nav-back').getBoundingClientRect(); const h = document.querySelector('header').getBoundingClientRect(); return b.width > 0 && b.left < innerWidth / 2 && b.top >= h.top && b.bottom <= h.bottom + 1; })()"), "The back button must be visible in the upper-left header.");
   assert(await evaluate("!!document.getElementById('advanced-stories')"), "Advanced original stories must be discoverable from home.");
   await screenshot("home-desktop");
+  assert(await evaluate("document.querySelector('[data-nav=\"my-library\"]')?.hash === '#my-library' && !!document.getElementById('library-badge')"), "Kitaplığım must be accessible from the main navigation with a saved-item badge.");
+  await evaluate("document.querySelector('[data-nav=\"my-library\"]').click()");
+  await waitFor(myLibraryReady);
+  assert((await ids()).length === 0 && await evaluate("!!document.querySelector('.empty a[href=\"#library\"]') && !!document.querySelector('.empty a[href=\"#articles\"]')"), "An empty personal library must offer both story and article collections.");
+  assert(await evaluate("document.querySelector('[data-nav=\"my-library\"]').getAttribute('aria-current') === 'page'"), "The personal library navigation must show the active route.");
+  await navigate("home", "!!document.querySelector('.collection-grid')");
   await evaluate("document.getElementById('advanced-stories').click()");
   await waitFor("document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
   assert((await ids()).every((id) => stories.find((s) => s.id === id && ["B2", "C1", "C2"].includes(s.level))), "Advanced shortcut must show only B2–C2 stories.");
   await evaluate("document.getElementById('clear').click()");
   assert((await ids()).length === stories.length && (await ids()).every((id) => storyIds.has(id)), "Story collection must include all stories and no articles.");
+  const defaultRecommendations = await recommendedIds();
+  assert(defaultRecommendations.length <= 3 && ["dracula-abridged", "frankenstein-abridged"].every((id) => defaultRecommendations.includes(id)), "Unfiltered story recommendations must prioritize Dracula and Frankenstein within three picks.");
+  assert(new Set(await ids()).size === stories.length, "Default recommendations must not duplicate stories in the remaining collection.");
   await evaluate(`document.querySelector('.chip[data-f="level"][data-v="C2"]').click()`);
   assert((await ids()).length === stories.filter((s) => s.level === "C2").length && (await ids()).length >= 1, "C2 story filter must include the new advanced stories.");
+  await evaluate("document.getElementById('clear').click()");
+  for (const [level, classicId] of [["B1", "dracula-abridged"], ["B2", "frankenstein-abridged"]]) {
+    await evaluate(`document.querySelector('.chip[data-f="level"][data-v="${level}"]').click()`);
+    const picks = await recommendedIds();
+    const filteredIds = await ids();
+    assert(picks.includes(classicId) && picks.length <= 3, `${classicId} must appear among at most three ${level} recommendations.`);
+    assert(filteredIds.length === stories.filter((s) => s.level === level).length && new Set(filteredIds).size === filteredIds.length, `${level} recommendations must preserve all filtered stories without duplicate cards.`);
+    await evaluate("document.getElementById('clear').click()");
+  }
+  for (const level of ["B1", "B2", "C1"]) await evaluate(`document.querySelector('.chip[data-f="level"][data-v="${level}"]').click()`);
+  const multipleLevelPicks = await recommendedIds();
+  assert(multipleLevelPicks.length <= 3 && ["dracula-abridged", "frankenstein-abridged"].every((id) => multipleLevelPicks.includes(id)), "Multiple selected levels must share at most three recommendations with abridged classics first.");
+  const multipleLevelIds = await ids();
+  assert(multipleLevelIds.length === stories.filter((s) => ["B1", "B2", "C1"].includes(s.level)).length && new Set(multipleLevelIds).size === multipleLevelIds.length, "Multi-level featured cards must stay unique and leave the complete filtered collection available.");
+  await evaluate("document.querySelector('.chip[data-f=\"genre\"][data-v=\"horror\"]').click()");
+  assert((await ids()).every((id) => stories.find((s) => s.id === id)?.genre === "horror") && (await recommendedIds()).every((id) => stories.find((s) => s.id === id)?.genre === "horror"), "Genre filters must apply to both featured cards and the remaining story list.");
+  const draculaTitle = stories.find((s) => s.id === "dracula-abridged").title;
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = ${JSON.stringify(draculaTitle)}; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  assert(JSON.stringify(await ids()) === JSON.stringify(["dracula-abridged"]) && JSON.stringify(await recommendedIds()) === JSON.stringify(["dracula-abridged"]), "Title search must narrow recommendations and results to the matching abridged classic.");
+  await evaluate("document.getElementById('clear').click()");
+  await evaluate("document.querySelector('.chip[data-f=\"length\"][data-v=\"short\"]').click()");
+  assert(await evaluate("Array.from(document.querySelectorAll('#results .card')).every(a => window.LANTERN_LIBRARY.find(t => t.id === a.hash.slice(3))?.length === 'short')") && (await recommendedIds()).length <= 3, "Length filters must apply to every displayed card while recommendations remain capped at three.");
   await evaluate("document.getElementById('clear').click()");
   await evaluate(`document.querySelector('.chip[data-f="genre"][data-v="horror"]').click()`);
   const horrorStoryIds = await ids();
@@ -256,6 +296,152 @@ try {
   await checkDirectBack("s." + resumeStory.id, "library");
   await checkDirectBack("s." + articles[0].id, "articles");
 
+  // Saved reading is independent of collection filters, vocabulary and reading progress.
+  const bookmarkStory = resumeStory;
+  const bookmarkArticle = articles[0];
+  const savedTexts = [bookmarkStory, bookmarkArticle, advancedStory];
+  await navigate("library", "document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
+  await evaluate("document.getElementById('clear').click()");
+  assert(await evaluate(`(() => { const button = document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]'); return !!button && !button.closest('a') && !!button.closest('.card-shell')?.querySelector('a.card') && button.getAttribute('aria-pressed') === 'false' && !!button.getAttribute('aria-label')?.trim(); })()`), "Story cards must expose an accessible save button separate from the reader link.");
+  await clickBookmark(bookmarkStory.id, "#results ");
+  assert(await evaluate(`location.hash === '#library' && document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'true' && document.getElementById('library-badge').textContent.trim() === '1'`), "Saving a story card must update its state and badge without opening the reader.");
+  await clickBookmark(bookmarkStory.id, "#results ");
+  await clickBookmark(bookmarkStory.id, "#results ");
+  assert(JSON.stringify(await bookmarkIds()) === JSON.stringify([bookmarkStory.id]), "Removing and saving a story again must keep exactly one bookmark ID.");
+
+  await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
+  await clickBookmark(bookmarkArticle.id, "#results ");
+  assert(await evaluate(`location.hash === '#articles' && document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').getAttribute('aria-pressed') === 'true'`), "Article cards must save independently without changing the collection route.");
+  await navigate("s." + advancedStory.id, readerReady);
+  assert(await evaluate(`!!document.querySelector('.reader-head [data-bookmark="${advancedStory.id}"]')`), "Reader headers must expose a save action for the current text.");
+  await clickBookmark(advancedStory.id, ".reader-head ");
+  assert(await evaluate(`location.hash === '#s.${advancedStory.id}' && document.querySelector('.reader-head [data-bookmark="${advancedStory.id}"]').getAttribute('aria-pressed') === 'true'`), "Saving from a reader must retain the current route and update its button.");
+  assert(JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(savedTexts.map((t) => t.id).sort()), "Personal bookmarks must contain exactly the saved story and article IDs.");
+
+  await navigate("my-library", myLibraryReady);
+  assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(savedTexts.map((t) => t.id).sort()), "Kitaplığım must list only saved texts across story and article types.");
+  assert(await evaluate(`!!document.querySelector('#results a[href="#s.${advancedStory.id}"] .state.done') && !!document.querySelector('#results a[href="#s.${bookmarkStory.id}"] .bar span')`), "Saved cards must retain completed and unfinished reading progress.");
+  const filtersBeforeSavedSearch = await evaluate("[localStorage.getItem('lantern.filters'), localStorage.getItem('lantern.articleFilters')]");
+  await evaluate("document.querySelector('[data-library-type=\"article\"]').click()");
+  assert(JSON.stringify(await ids()) === JSON.stringify([bookmarkArticle.id]), "The personal article tab must show only saved articles.");
+  await evaluate("document.querySelector('[data-library-type=\"story\"]').click()");
+  assert((await ids()).length === 2 && (await ids()).every((id) => storyIds.has(id)), "The personal story tab must show only saved stories.");
+  await evaluate("document.querySelector('[data-library-type=\"all\"]').click()");
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = ${JSON.stringify(bookmarkArticle.title)}; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  assert(JSON.stringify(await ids()) === JSON.stringify([bookmarkArticle.id]), "Personal library search must search within saved texts.");
+  await evaluate("(() => { const q = document.getElementById('q'); q.value = 'zzzx-nonexistent-title'; q.dispatchEvent(new Event('input', { bubbles: true })); })()");
+  assert((await ids()).length === 0 && (await bookmarkIds()).length === 3, "An empty saved search must preserve all stored bookmarks.");
+  await evaluate("(() => { const q = document.getElementById('q'); q.value = ''; q.dispatchEvent(new Event('input', { bubbles: true })); const sort = document.getElementById('sort'); sort.value = 'title'; sort.dispatchEvent(new Event('change', { bubbles: true })); })()");
+  const savedTitleOrder = savedTexts.slice().sort((a, b) => a.title.localeCompare(b.title)).map((t) => t.id);
+  assert(JSON.stringify(await ids()) === JSON.stringify(savedTitleOrder), "Personal library title sorting must order the saved cards.");
+  assert(JSON.stringify(await evaluate("[localStorage.getItem('lantern.filters'), localStorage.getItem('lantern.articleFilters')]")) === JSON.stringify(filtersBeforeSavedSearch), "Saved-library search and tabs must not modify story/article filters.");
+  await reload(myLibraryReady);
+  assert(JSON.stringify(await ids()) === JSON.stringify(savedTitleOrder) && (await bookmarkIds()).length === 3, "Saved texts and personal sorting must survive a document reload.");
+  assert(await evaluate("document.getElementById('library-badge').textContent.trim() === '3'"), "The saved-item badge must restore its count after reload.");
+  const savedStoryPage = await evaluate(`JSON.parse(localStorage.getItem('lantern.progress'))[${JSON.stringify(bookmarkStory.id)}].page + 1`);
+  await evaluate(`document.querySelector('#results a[href="#s.${bookmarkStory.id}"]').click()`);
+  await waitFor(`document.getElementById('text')?.dataset.page === '${savedStoryPage}'`);
+  assert((await pageState()).page === savedStoryPage, "Opening a saved unfinished story must resume its stored reader page.");
+  await evaluate("document.getElementById('nav-back').click()");
+  await waitFor(myLibraryReady);
+  assert((await ids()).length === 3, "Reader back must return to the personal library with its saved list intact.");
+
+  // A real second tab changes localStorage so the browser emits its native storage event.
+  const { targetId: savedTarget } = await send("Target.createTarget", { url: origin + "/index.html#my-library" });
+  try {
+    const { sessionId: savedSession } = await send("Target.attachToTarget", { targetId: savedTarget, flatten: true });
+    await send("Runtime.enable", {}, savedSession);
+    const secondEvaluate = async (expression) => {
+      const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true }, savedSession);
+      if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
+      return result.result.value;
+    };
+    const secondWait = async (expression) => {
+      for (let i = 0; i < 100; i++) { if (await secondEvaluate(expression)) return; await pause(100); }
+      throw new Error("Second-tab condition failed: " + expression);
+    };
+    await secondWait(myLibraryReady + " && document.querySelectorAll('#results a.card').length === 3");
+    await evaluate(`document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').focus()`);
+    await secondEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').click()`);
+    await waitFor("document.querySelectorAll('#results a.card').length === 2");
+    assert(!(await ids()).includes(bookmarkStory.id), "Removing a saved item in another tab must immediately update the open personal library.");
+    assert(await evaluate(`document.activeElement.matches('button[data-bookmark="${bookmarkArticle.id}"]')`), "A cross-tab redraw must retain keyboard focus on an unaffected saved-card button.");
+    await navigate("s." + bookmarkStory.id, readerReady);
+    const pageBeforeStorage = (await pageState()).page;
+    assert(await evaluate(`document.querySelector('.reader-head [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'false'`), "The reader save action must reflect changes made in another tab.");
+    await clickBookmark(bookmarkStory.id, ".reader-head ");
+    await secondWait("document.querySelectorAll('#results a.card').length === 3");
+    await secondEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').click()`);
+    await waitFor(`document.querySelector('.reader-head [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'false'`);
+    assert((await pageState()).page === pageBeforeStorage, "A cross-tab bookmark change must update reader controls without resetting its page.");
+    await clickBookmark(bookmarkStory.id, ".reader-head ");
+    await secondWait("document.querySelectorAll('#results a.card').length === 3");
+  } finally { await send("Target.closeTarget", { targetId: savedTarget }); }
+
+  await navigate("my-library", myLibraryReady);
+  const progressBeforeRemoval = await evaluate("localStorage.getItem('lantern.progress')");
+  for (const text of savedTexts) await clickBookmark(text.id, "#results ");
+  assert((await ids()).length === 0 && await isVisible(".empty") && (await bookmarkIds()).length === 0, "Removing the last saved text must immediately return the personal library to its empty state.");
+  assert(await evaluate("localStorage.getItem('lantern.progress')") === progressBeforeRemoval, "Removing saved texts must leave reading progress unchanged.");
+  await reload(myLibraryReady);
+  assert((await ids()).length === 0 && (await bookmarkIds()).length === 0, "Removed bookmarks must remain removed after a reload.");
+
+  for (const raw of ["{broken-json", JSON.stringify({ invalid: bookmarkStory.id }), JSON.stringify([bookmarkStory.id, bookmarkStory.id, null, 42, {}, "unknown-story", ""])]) {
+    await evaluate(`localStorage.setItem('lantern.bookmarks', ${JSON.stringify(raw)})`);
+    await reload(myLibraryReady);
+    const expected = raw.startsWith("[") ? [bookmarkStory.id] : [];
+    assert(JSON.stringify(await ids()) === JSON.stringify(expected), "Malformed, duplicate and unknown bookmark entries must not crash or produce invalid cards.");
+  }
+  await clickBookmark(bookmarkStory.id, "#results ");
+  assert(JSON.stringify(await bookmarkIds()) === "[]", "The next bookmark update must persist a clean string-ID array after corrupt storage.");
+
+  // Storage can be disabled in embedded/private browsers; saving should still work for this session.
+  const { targetId: blockedTarget } = await send("Target.createTarget", { url: "about:blank" });
+  try {
+    const { sessionId: blockedSession } = await send("Target.attachToTarget", { targetId: blockedTarget, flatten: true });
+    await send("Runtime.enable", {}, blockedSession);
+    await send("Page.enable", {}, blockedSession);
+    await send("Page.addScriptToEvaluateOnNewDocument", { source: "Storage.prototype.getItem = function () { throw new DOMException('Storage disabled', 'SecurityError'); }; Storage.prototype.setItem = function () { throw new DOMException('Storage disabled', 'SecurityError'); };" }, blockedSession);
+    await send("Page.navigate", { url: origin + "/index.html#articles" }, blockedSession);
+    const blockedEvaluate = async (expression) => {
+      const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true }, blockedSession);
+      if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
+      return result.result.value;
+    };
+    for (let i = 0; i < 100; i++) { if (await blockedEvaluate("!!document.querySelector('#results [data-bookmark]')")) break; await pause(100); }
+    await blockedEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').click(); document.querySelector('[data-nav="my-library"]').click()`);
+    for (let i = 0; i < 100; i++) { if (await blockedEvaluate(myLibraryReady)) break; await pause(100); }
+    assert(await blockedEvaluate(`document.querySelectorAll('#results a.card').length === 1 && document.querySelector('#results a.card').hash === '#s.${bookmarkArticle.id}'`), "Saving must remain usable within the session when localStorage is unavailable.");
+  } finally { await send("Target.closeTarget", { targetId: blockedTarget }); }
+
+  // Failed writes can coexist with successful stale reads; multiple saves must stay in memory.
+  const secondBlockedArticle = articles.find((a) => a.id !== bookmarkArticle.id);
+  const { targetId: writeBlockedTarget } = await send("Target.createTarget", { url: "about:blank" });
+  try {
+    const { sessionId: writeBlockedSession } = await send("Target.attachToTarget", { targetId: writeBlockedTarget, flatten: true });
+    await send("Runtime.enable", {}, writeBlockedSession);
+    await send("Page.enable", {}, writeBlockedSession);
+    await send("Page.addScriptToEvaluateOnNewDocument", { source: "Storage.prototype.setItem = function () { throw new DOMException('Storage writes disabled', 'QuotaExceededError'); };" }, writeBlockedSession);
+    await send("Page.navigate", { url: origin + "/index.html#articles" }, writeBlockedSession);
+    const writeBlockedEvaluate = async (expression) => {
+      const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true }, writeBlockedSession);
+      if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
+      return result.result.value;
+    };
+    for (let i = 0; i < 100; i++) { if (await writeBlockedEvaluate("!!document.querySelector('#results [data-bookmark]')")) break; await pause(100); }
+    await writeBlockedEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').click(); document.querySelector('#results [data-bookmark="${secondBlockedArticle.id}"]').click(); document.querySelector('[data-nav="my-library"]').click()`);
+    for (let i = 0; i < 100; i++) { if (await writeBlockedEvaluate(myLibraryReady)) break; await pause(100); }
+    const blockedIds = [bookmarkArticle.id, secondBlockedArticle.id].sort();
+    assert(await writeBlockedEvaluate(`JSON.stringify(Array.from(document.querySelectorAll('#results a.card')).map(a => a.hash.slice(3)).sort()) === ${JSON.stringify(JSON.stringify(blockedIds))}`), "Failed storage writes must retain both session bookmarks despite stale successful reads.");
+    await writeBlockedEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').click()`);
+    assert(await writeBlockedEvaluate(`document.querySelectorAll('#results a.card').length === 1 && document.querySelector('#results a.card').hash === '#s.${secondBlockedArticle.id}'`), "Removing one write-blocked session bookmark must preserve the other saved article.");
+  } finally { await send("Target.closeTarget", { targetId: writeBlockedTarget }); }
+
+  await navigate("library", "document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
+  await clickBookmark(bookmarkStory.id, "#results ");
+  await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
+  await clickBookmark(bookmarkArticle.id, "#results ");
+
   await page("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
   await navigate("home", "!!document.querySelector('.collection-grid')");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile home must fit the viewport.");
@@ -276,6 +462,12 @@ try {
     assert(await evaluate("(() => { const r = document.getElementById('tip').getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px word tooltips must remain within the viewport.`);
     await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))");
     await screenshot("reader-mobile-" + width);
+    await navigate("my-library", myLibraryReady);
+    assert((await ids()).length === 2 && await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), `${width}px personal library must display saved stories/articles without horizontal overflow.`);
+    assert(await evaluate("Array.from(document.querySelectorAll('#results [data-bookmark]')).every(b => { const r = b.getBoundingClientRect(); return r.width > 0 && r.height > 0 && r.left >= -1 && r.right <= innerWidth + 1 && !!b.getAttribute('aria-label')?.trim() && b.getAttribute('aria-pressed') === 'true'; })"), `${width}px saved-card controls must remain visible, reachable and labelled.`);
+    await evaluate("document.querySelector('[data-nav=\"my-library\"]').scrollIntoView({ block: 'nearest', inline: 'nearest' })");
+    assert(await evaluate("(() => { const r = document.querySelector('[data-nav=\"my-library\"]').getBoundingClientRect(); return r.width > 0 && r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px personal-library navigation must be reachable in the header.`);
+    await screenshot("my-library-mobile-" + width);
   }
   assert(browserErrors.length === 0, "Uncaught browser errors: " + browserErrors.join("\n"));
   console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles.`);
