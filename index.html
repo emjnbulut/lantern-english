@@ -19,7 +19,7 @@
 <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
 <link rel="icon" href="assets/icons/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-<meta name="description" content="Seviyeli İngilizce hikâyeler, makaleler ve klasik kitap özetleri. Her kelimede Türkçe anlam, kelime defteri ve tekrar kartları.">
+<meta name="description" content="Seviyeli İngilizce hikâyeler ve makaleler. Sayfa sayfa oku; her kelimede Türkçe anlam, kelime defteri ve tekrar kartları.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;1,7..72,400&family=Young+Serif&display=swap">
@@ -31,6 +31,9 @@
 
 <header class="topbar">
   <div class="topbar-in">
+    <button class="nav-back" id="nav-back" type="button" aria-label="Geri git" title="Geri git" disabled>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 6-6 6 6 6M8 12h12"/></svg><span>Geri</span>
+    </button>
     <a class="brand" href="#home" aria-label="Lantern English ana sayfa">
       <svg class="brand-mark" viewBox="0 0 24 32" aria-hidden="true">
         <path d="M9 2h6M12 2v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/>
@@ -42,7 +45,6 @@
     <nav class="nav" aria-label="Ana menü">
       <a href="#library" data-nav="library">Hikâyeler</a>
       <a href="#articles" data-nav="articles">Makaleler</a>
-      <a href="#summaries" data-nav="summaries">Kitap Özetleri</a>
       <a href="#words" data-nav="words">Kelime Defterim <span class="badge" id="due-badge" hidden></span></a>
       <a href="#about" data-nav="about">Nasıl Çalışır</a>
     </nav>

@@ -53,17 +53,17 @@ Same shape as a story, with these differences:
 - Use `## ` headings to structure the article (3–6 sections). Existing articles are 700–1400 words; new extended original articles target 1700–2100 words. Add developed arguments and concrete examples rather than padding.
 - `quiz` and `phrases` are required as for stories (phrases = academic collocations / useful expressions).
 
-## Book summaries — `content/summaries/<id>.json`
+## Reader pagination
 
-Use the same content shape, with `type: "summary"` and `author: "Lantern Editorial"`. Summaries are original English summaries and literary reading guides, not reproductions of the author's original prose. They live in their own `#summaries` collection.
+Story pages are computed from `paragraphs` in the browser at approximately 450 words per page. Do not split source files or insert artificial page markers. Whole paragraphs and their section headings stay together; the last page includes phrases and the quiz. Articles are not paginated.
 
-- `work` is required: `{ "title": "Dracula", "titleTr": "Drakula", "author": "Bram Stoker", "year": 1897 }`. An optional `editionYear` distinguishes the edition used. `work.author` credits the original author; `author` credits the summary writer.
-- `source: {name, url, license}` is required and points to a verified original work or reliable bibliographic source. Describe the source and the original summary accurately; do not label all source works public domain indiscriminately.
-- Target **30–40 minutes** at the app's level-specific reading speeds: A1 70, A2 90, B1 110, B2 130, C1 150, C2 170 words/minute. Current additions target B2 4,500–5,000 words or C1 4,800–5,400 words.
-- Use 8–12 `## ` sections, five comprehension questions with four distinct options and Turkish explanations, and eight useful expressions that actually occur in the text.
-- Keep source events and original interpretation distinguishable. Check names, endings, and edition differences; do not import film details or quote modern translations. Avoid padding and invented scenes.
-- Spoilers are expected and disclosed in the UI. `summaryTr` remains a short introductory blurb.
-- For a source that remains copyrighted, use a brief high-level plot overview and original critical discussion/reading guidance rather than recreating the book scene by scene.
+## Removed book-summary collection
+
+The owner requested removal of the three book summaries and the separate collection on 2026-10-11.
+`type: "summary"` and `content/summaries/` are no longer supported by the content tools. Do not add new summary files or restore the collection from the historical handoff.
+Existing abridged stories use `type: "story"` in `content/stories/` and remain available.
+
+For any adaptation, verify the original work and the specific source edition. Attribute the source and identify the English text as our own adaptation; do not copy protected modern translations or assume that every free online edition is public domain. Preserve source events and avoid importing film details.
 
 ## Dictionary — `content/dict/<chunk>.json`
 

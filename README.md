@@ -9,7 +9,8 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 - **Hikâyeler:** A1–C2 için ayrı koleksiyon; tür (komedi, gizem, korku, macera, romantik, bilim kurgu, fabl, dram) ve uzunluk filtreleri, arama, sıralama.
 - **Kelime ipucu:** her kelimede Türkçe anlam, kök (ör. *went ← go*), metne özel anlam ve kalıp ifadeler. Tıklayınca kutu sabitlenir: sesli telaffuz, deftere ekleme, Tureng bağlantısı.
 - **Kelime Defterim:** kaydedilen kelimeler geçtikleri cümleyle saklanır; aralıklı tekrar kartları (Leitner) ve Anki'ye kopyalama.
-- **Okuma araçları:** sesli okuma (paragraf vurgulu), yazı boyutu, okuma ilerlemesi ve kaldığın yerden devam, hikâye sonunda anlama soruları ve ifade listesi.
+- **Okuma araçları:** hikâyelerde yaklaşık 450 kelimelik sayfalar, önceki/sonraki sayfa ve sayfa seçimi, kaldığın sayfadan devam, sesli okuma (paragraf vurgulu), yazı boyutu ve okuma ilerlemesi. Anlama soruları ve ifade listesi son sayfada; makaleler kesintisiz okunur.
+- **Geri gitme:** sol üstteki düğme site içindeki önceki ekrana döner; doğrudan açılan sayfalarda uygun koleksiyona veya ana sayfaya götürür.
 - **Makaleler:** B2–C2 okurlar için ayrı koleksiyon ve bağımsız filtrelerle her türe özel özgün denemeler.
 - **Telifsiz içerik:** klasikler Project Gutenberg'den (kamu malı) kısaltılmadan alındı; “Lantern Original” hikâyeleri, makaleler ve sözlük Lantern English için yazıldı.
 
@@ -47,11 +48,11 @@ Telefonda tarayıcıdan açıp **Ana ekrana ekle** (iOS) / **Uygulamayı yükle*
 ## Geliştirme
 Bkz. [HANDOFF.md](HANDOFF.md) (son çalışma ve kalan işler), [AGENTS.md](AGENTS.md) (yapay zekâ asistanları için devir rehberi) ve [CONTENT_SPEC.md](CONTENT_SPEC.md) (içerik formatı).
 
-11 Ekim 2026 kontrol noktası: 28 hikâye, 16 makale, 4 kitap özeti, 7.533 sözlük maddesi.
+11 Ekim 2026 güncellemesi: Kullanıcının isteğiyle üç kitap özeti ve ayrı **Kitap Özetleri** bölümü kaldırıldı. Hikâyeler ve Makaleler ayrı koleksiyonlar olarak devam ediyor. Mevcut Dracula ve Frankenstein hikâye uyarlamaları korunuyor; Dönüşüm uyarlamasının henüz kaydedilmemiş yerel çalışması bu arayüz yayınına dahil değil. Yukarıdaki yedi hikâye plan listesinde kalıyor.
 
 **Site:** https://lantern-english.github.io/ (herkese açık). Yayın ve güncelleme adımları için [HOSTING.md](HOSTING.md).
 
-Kitap özetleri (Dracula, Dönüşüm, Hayvan Çiftliği, Frankenstein) tamamlandı ve bağımsız olarak gözden geçirildi. Önerilenler, mobil uygulama (PWA) ve imza eklendi; herkese açık yayın için [HOSTING.md](HOSTING.md).
+Önerilenler, mobil uygulama (PWA) ve imza mevcut; herkese açık yayın için [HOSTING.md](HOSTING.md). Eski kitap özeti çalışmasının kaydı [BOOK_SUMMARIES_HANDOFF.md](BOOK_SUMMARIES_HANDOFF.md) içinde yalnızca tarihsel bilgi olarak tutuluyor; yeniden ekleme görevi değil.
 
 ```bash
 node tools/validate.mjs   # içeriği doğrula

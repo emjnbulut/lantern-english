@@ -1,13 +1,12 @@
-/* Lantern English — single-page app. Routes: #home #library #articles #summaries #words #about #s.<id> */
+/* Lantern English — single-page app. Routes: #home #library #articles #words #about #s.<id> */
 (function () {
   "use strict";
 
   const L = window.LanternLemma;
-  const LIB = window.LANTERN_LIBRARY || [];
+  const LIB = (window.LANTERN_LIBRARY || []).filter((t) => t.type === "story" || t.type === "article");
   const DICT = window.LANTERN_DICT || {};
   const STORIES = LIB.filter((t) => t.type === "story");
   const ARTICLES = LIB.filter((t) => t.type === "article");
-  const SUMMARIES = LIB.filter((t) => t.type === "summary");
   const FEATURED = window.LANTERN_FEATURED || {};
   const BY_ID = Object.fromEntries(LIB.map((t) => [t.id, t]));
   const $main = document.getElementById("main");
@@ -59,11 +58,9 @@
   const prefs = Object.assign({ size: 19, mode: "hover", last: null }, S.load("prefs", {}));
   const filt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("filters", {}));
   const articleFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("articleFilters", {}));
-  const summaryFilt = Object.assign({ level: [], genre: [], length: [], q: "", sort: "level" }, S.load("summaryFilters", {}));
   const COLLECTIONS = {
     story: { items: STORIES, filters: filt, key: "filters", route: "library", title: "Hikâyeler", label: "hikâye", search: "Hikâye", eyebrow: "Hikâye kütüphanesi · A1–C2", lead: "Klasikler ve özgün hikâyeler. Seviyene, türe ve okuma uzunluğuna göre seç." },
     article: { items: ARTICLES, filters: articleFilt, key: "articleFilters", route: "articles", title: "Makaleler", label: "makale", search: "Makale", eyebrow: "Denemeler · B2–C2", lead: "Edebiyat, türler ve anlatı üzerine özgün denemeler. Seviyene ve ilgini çeken konuya göre bir makale seç." },
-    summary: { items: SUMMARIES, filters: summaryFilt, key: "summaryFilters", route: "summaries", title: "Kitap Özetleri", label: "kitap özeti", search: "Kitap", eyebrow: "Klasikler · 30–40 dakikalık okumalar", lead: "Ünlü eserlerin seviyene uygun İngilizce özetleri ve edebî incelemeleri. Metinler kitabın sonunu da anlatır; süreler okuma hızına göre yaklaşık hesaplanır." },
   };
   const saveWords = () => { S.save("words", words); updateBadge(); };
   const saveProgress = () => S.save("progress", progress);
@@ -147,13 +144,40 @@
     return out + esc(str.slice(last));
   }
 
-  function renderBody(text) {
+  function renderBody(text, paragraphs) {
     const phrases = prepPhrases(text);
-    return text.paragraphs.map((p) =>
+    return (paragraphs || text.paragraphs).map((p) =>
       p.startsWith("## ")
         ? `<h2 class="sec">${renderInline(smart(p.slice(3)), phrases)}</h2>`
         : `<p>${renderInline(smart(p), phrases)}</p>`
     ).join("");
+  }
+
+  // Page breaks preserve paragraphs and keep chapter headings with their first paragraph.
+  function storyPages(text) {
+    const pages = [];
+    let start = 0, words = 0, before = 0;
+    for (let i = 0; i < text.paragraphs.length;) {
+      let end = i;
+      while (end < text.paragraphs.length && text.paragraphs[end].startsWith("## ")) end++;
+      if (end < text.paragraphs.length) end++;
+      const count = text.paragraphs.slice(i, end).filter((p) => !p.startsWith("## ")).join(" ").match(L.WORD_RE)?.length || 0;
+      if (words && words + count > 450) {
+        pages.push({ start, end: i, words, before });
+        before += words; start = i; words = 0;
+      }
+      words += count; i = end;
+    }
+    pages.push({ start, end: text.paragraphs.length, words, before });
+    return pages;
+  }
+
+  function jumpScroll(top) {
+    const style = document.documentElement.style;
+    const previous = style.scrollBehavior;
+    style.scrollBehavior = "auto";
+    window.scrollTo(0, Math.max(0, top));
+    style.scrollBehavior = previous;
   }
 
   function markSaved(root) {
@@ -384,7 +408,7 @@
   function card(t, why) {
     const p = progress[t.id];
     const bar = p && !p.done && p.f > 0.03 ? `<div class="bar"><span style="width:${Math.round(p.f * 100)}%"></span></div>` : "";
-    const by = t.type === "summary" ? `${esc(t.work.author)} · Kitap özeti` : t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
+    const by = t.author.startsWith("Lantern") ? (t.type === "article" ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? " · " + t.year : "");
     return `<a class="card${t.type === "story" ? "" : " " + t.type}${why ? " rec" : ""}" href="#s.${t.id}">
       <div class="card-top"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}"><span class="dot"></span>${genreName(t.genre)}</span>${t.abridged ? '<span class="abr">Kısaltılmış klasik</span>' : ""}${stateOf(t)}</div>
       <h3>${esc(t.title)}</h3>
@@ -411,7 +435,6 @@
       .sort((a, b) => (b[1].at || 0) - (a[1].at || 0)).map(([id]) => BY_ID[id]);
     const readingStories = reading.filter((t) => t.type === "story").slice(0, 3);
     const readingArticles = reading.filter((t) => t.type === "article").slice(0, 3);
-    const readingSummaries = reading.filter((t) => t.type === "summary").slice(0, 3);
     const featured = LEVELS.map((lv) => STORIES.find((s) => s.level === lv.id && !(progress[s.id] && progress[s.id].done)) || STORIES.find((s) => s.level === lv.id)).filter(Boolean);
     const advanced = STORIES.filter((s) => ["B2", "C1", "C2"].includes(s.level) && s.author === "Lantern Original")
       .sort((a, b) => LEVELS.findIndex((l) => l.id === b.level) - LEVELS.findIndex((l) => l.id === a.level)).slice(0, 5);
@@ -430,7 +453,6 @@
           <div class="stats">
             <div class="stat"><b>${STORIES.length}</b><span>hikâye</span></div>
             <div class="stat"><b>${ARTICLES.length}</b><span>makale</span></div>
-            <div class="stat"><b>${SUMMARIES.length}</b><span>kitap özeti</span></div>
             <div class="stat"><b>${fmt(Object.keys(DICT).length)}</b><span>sözlük maddesi</span></div>
             <div class="stat"><b>${Object.keys(words).length}</b><span>defterindeki kelime</span></div>
           </div>
@@ -446,16 +468,11 @@
         <div class="collection-grid">
           <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · ${STORIES.length} hikâye</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
           <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · ${ARTICLES.length} makale</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
-          <a class="collection-link summaries-link" href="#summaries"><span class="eyebrow">30–40 dakika · ${SUMMARIES.length} kitap özeti</span><h2>Kitap Özetleri</h2><p>Dracula, Dönüşüm, Hayvan Çiftliği ve Frankenstein. Olayları ve temel fikirleri İngilizce keşfet.</p><span class="link">Kitap özetlerine git →</span></a>
         </div>
       </section>
 
       ${readingStories.length ? `<section class="section"><div class="section-head"><h2>Hikâyene devam et</h2><a class="link" href="#library">Hikâyeler</a></div>${grid(readingStories)}</section>` : ""}
       ${readingArticles.length ? `<section class="section"><div class="section-head"><h2>Makalene devam et</h2><a class="link" href="#articles">Makaleler</a></div>${grid(readingArticles)}</section>` : ""}
-      ${readingSummaries.length ? `<section class="section"><div class="section-head"><h2>Kitap özetine devam et</h2><a class="link" href="#summaries">Kitap Özetleri</a></div>${grid(readingSummaries)}</section>` : ""}
-
-      ${SUMMARIES.length ? `<section class="section" id="classic-summaries"><div class="section-head"><h2>Klasikler: 30–40 dakikalık özetler</h2><a class="link" href="#summaries">Tüm kitap özetleri</a></div>${grid(SUMMARIES)}</section>` : ""}
-
       <section class="section">
         <div class="section-head"><h2>Hikâye seviyeni seç</h2><a class="link" href="#about">Hangi seviyedeyim?</a></div>
         <div class="ladder">
@@ -579,8 +596,15 @@
     const p = progress[id] || (progress[id] = { f: 0 });
     p.at = Date.now(); saveProgress();
     const isArt = t.type === "article";
-    const isSummary = t.type === "summary";
     const collection = COLLECTIONS[t.type];
+    const pages = isArt ? [{ start: 0, end: t.paragraphs.length, words: t.words, before: 0 }] : storyPages(t);
+    const oldWord = (p.f || 0) * t.words;
+    const oldPage = Math.max(0, pages.findIndex((pg) => pg.before + pg.words >= oldWord));
+    const savedPage = Number.isInteger(p.page) ? Math.min(pages.length - 1, Math.max(0, p.page)) : oldPage;
+    const savedOffset = Number.isFinite(p.pageF) ? Math.min(1, Math.max(0, p.pageF)) : Math.min(1, Math.max(0, (oldWord - pages[savedPage].before) / Math.max(1, pages[savedPage].words)));
+    let pageIndex = p.done || isArt ? 0 : savedPage;
+    let blocks = [], tracking = false;
+    const pager = (place) => `<nav class="reader-pagination" data-placement="${place}" aria-label="Hikâye sayfaları (${place === "top" ? "üst" : "alt"})"></nav>`;
     const lvIdx = LEVELS.findIndex((l) => l.id === t.level);
     const next = collection.items.filter((s) => s.id !== id && !(progress[s.id] && progress[s.id].done))
       .map((s) => ({ s, score: Math.abs(LEVELS.findIndex((l) => l.id === s.level) - lvIdx) * 2 + (s.genre === t.genre ? 0 : 1) }))
@@ -594,35 +618,38 @@
         <nav class="crumbs"><a href="#home">Ana sayfa</a><span>/</span><a href="#${collection.route}">${collection.title}</a></nav>
         <header class="reader-head">
           <h1>${esc(t.title)}</h1>
-          <div class="by">${isSummary ? `${esc(t.work.author)} · ${esc(t.work.titleTr)} (${t.work.year})<br><span class="summary-credit">Lantern English için özgün İngilizce özet ve inceleme</span>` : t.author.startsWith("Lantern") ? (isArt ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? ", " + t.year : "")}</div>
+          <div class="by">${t.author.startsWith("Lantern") ? (isArt ? "Lantern makalesi" : "Lantern özgün hikâyesi") : esc(t.author) + (t.year ? ", " + t.year : "")}</div>
           <div class="tags"><span class="lvl lvl-${t.level}">${t.level}</span><span class="genre g-${t.genre}" style="display:inline-flex;align-items:center;gap:6px"><span class="dot"></span>${genreName(t.genre)}</span>
             <span class="sep">|</span><span>${LENGTHS[t.length]}</span><span class="sep">|</span><span>${fmt(t.words)} kelime</span><span class="sep">|</span><span>~${minutes(t)} dk</span></div>
           <div class="teaser-box">${esc(t.summaryTr)}</div>
-          ${t.abridged ? '<p class="spoiler-note"><b>Kısaltılmış klasik</b> · Kitabın olay örgüsü ve sonu sırasıyla korunarak sadeleştirilmiş, kısaltılmış anlatımdır. Spoiler içerir; yaklaşık okuma süresi seviyeye göre tahminidir.</p>' : ""}${isSummary ? '<p class="spoiler-note"><b>Kitap özeti</b> · Eserin sonu dahil olaylar anlatılır. Okuma süresi seviyeye göre tahminidir.</p>' : ""}
+          ${t.abridged ? '<p class="spoiler-note"><b>Kısaltılmış klasik</b> · Kitabın olay örgüsü ve sonu sırasıyla korunarak sadeleştirilmiş, kısaltılmış anlatımdır. Spoiler içerir; yaklaşık okuma süresi seviyeye göre tahminidir.</p>' : ""}
         </header>
         <div class="toolbar" role="toolbar" aria-label="Okuma ayarları">
-          <button class="btn sm" id="listen">${ICON.play} Dinle</button>
+          <button class="btn sm" id="listen">${ICON.play} ${isArt ? "Dinle" : "Sayfayı dinle"}</button>
           <div class="seg" aria-label="Yazı boyutu"><button id="smaller" aria-label="Yazıyı küçült">A−</button><button id="bigger" aria-label="Yazıyı büyüt">A+</button></div>
           ${hoverDevice ? `<div class="seg" aria-label="İpucu modu"><button data-mode="hover" aria-pressed="${prefs.mode === "hover"}">Üzerine gel</button><button data-mode="click" aria-pressed="${prefs.mode === "click"}">Tıkla</button></div>` : ""}
           <span class="spacer"></span>
           <span class="hint">Kesik çizgili kısımlar kalıp ifadedir</span>
         </div>
-        ${p.f > 0.05 && !p.done ? `<div class="resume" id="resume"><span>En son %${Math.round(p.f * 100)}'te kalmıştın.</span><button class="btn sm primary" id="resume-btn">Kaldığın yerden devam et</button></div>` : ""}
-        <div class="reader-text" id="text">${renderBody(t)}</div>
+        ${(savedOffset > 0.05 || pageIndex > 0) && !p.done ? `<div class="resume" id="resume"><span>${isArt ? `En son %${Math.round(p.f * 100)}'te kalmıştın.` : `${pageIndex + 1}. sayfadan devam ediyorsun.`}</span><button class="btn sm primary" id="resume-btn">Kaldığın yerden devam et</button></div>` : ""}
+        ${isArt ? "" : pager("top") + '<p class="page-status" id="page-status" tabindex="-1" role="status" aria-live="polite"></p>'}
+        <div class="reader-text" id="text"></div>
+        ${isArt ? "" : pager("bottom")}
 
         <div class="end">
           ${t.phrases && t.phrases.length ? `<section class="panel"><h2>Bu metindeki ifadeler</h2><p class="sub">Metinde kesik çizgiyle işaretlenenler. Üzerine gelince de görürsün.</p>
             <dl class="phrases">${t.phrases.map((ph) => `<div><dt>${esc(ph.en)}</dt><dd>${esc(ph.tr)}</dd></div>`).join("")}</dl></section>` : ""}
           ${t.quiz && t.quiz.length ? `<section class="panel"><h2>Ne kadar anladın?</h2><p class="sub">${t.quiz.length} soru. Cevabını seçince açıklaması görünür.</p><div class="quiz" id="quiz"></div></section>` : ""}
-          ${next.length ? `<section><div class="section-head"><h2>${isSummary ? "Diğer kitap özetleri" : isArt ? "Diğer makaleler" : "Sıradaki hikâyeler"}</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
+          ${next.length ? `<section><div class="section-head"><h2>${isArt ? "Diğer makaleler" : "Sıradaki hikâyeler"}</h2></div><div class="next-up">${next.map(card).join("")}</div></section>` : ""}
           <p class="source">${src}</p>
         </div>
       </article>`;
 
     const textEl = document.getElementById("text");
+    const reader = $main.querySelector(".reader");
+    const endEl = reader.querySelector(".end");
     document.documentElement.style.setProperty("--read-size", prefs.size + "px");
     bindText(textEl, t);
-    markSaved(textEl);
 
     // quiz
     const qz = document.getElementById("quiz");
@@ -658,8 +685,7 @@
       $main.querySelectorAll("[data-mode]").forEach((x) => x.setAttribute("aria-pressed", x === b));
     }));
     const listen = document.getElementById("listen");
-    const blocks = [...textEl.querySelectorAll("p, h2")];
-    const resetListen = () => { listen.innerHTML = ICON.play + " Dinle"; blocks.forEach((b) => b.classList.remove("speaking")); };
+    const resetListen = () => { listen.innerHTML = ICON.play + (isArt ? " Dinle" : " Sayfayı dinle"); blocks.forEach((b) => b.classList.remove("speaking")); };
     listen.addEventListener("click", () => {
       if (Speech.active) { Speech.stop(); return; }
       const barBottom = listen.closest(".toolbar").getBoundingClientRect().bottom;
@@ -673,23 +699,74 @@
     });
     const rb = document.getElementById("resume-btn");
     if (rb) rb.addEventListener("click", () => {
-      const h = textEl.offsetTop + textEl.offsetHeight * p.f - window.innerHeight / 3;
-      window.scrollTo({ top: h, behavior: "smooth" });
       document.getElementById("resume").hidden = true;
+      const h = window.scrollY + textEl.getBoundingClientRect().top + textEl.offsetHeight * savedOffset - window.innerHeight * 0.6;
+      tracking = true; jumpScroll(h); readerScroll();
     });
 
     // reading progress
     let saveT = 0;
-    readerScroll = () => {
+    readerScroll = (persist) => {
       const r = textEl.getBoundingClientRect();
-      const f = Math.min(1, Math.max(0, (window.innerHeight * 0.6 - r.top) / r.height));
+      const pageF = Math.min(1, Math.max(0, (window.innerHeight * 0.6 - r.top) / Math.max(1, r.height)));
+      const pg = pages[pageIndex];
+      const f = isArt ? pageF : (pg.before + pg.words * pageF) / Math.max(1, t.words);
       document.querySelector("#progress span").style.width = (f * 100) + "%";
-      if (!p.done && f > (p.f || 0)) {
-        p.f = f; p.at = Date.now();
+      if (persist !== false && tracking && !p.done) {
+        if (!isArt) { p.page = pageIndex; p.pageF = pageF; }
+        p.f = Math.max(p.f || 0, f); p.at = Date.now();
         clearTimeout(saveT); saveT = setTimeout(saveProgress, 600);
       }
     };
-    readerScroll();
+    readerFlush = () => { clearTimeout(saveT); saveProgress(); };
+
+    function renderPage(index, move) {
+      Speech.stop(); Tip.hide(); tracking = false;
+      pageIndex = index;
+      const pg = pages[index];
+      textEl.innerHTML = renderBody(t, t.paragraphs.slice(pg.start, pg.end));
+      textEl.dataset.page = String(index + 1); textEl.dataset.pages = String(pages.length);
+      blocks = [...textEl.querySelectorAll("p, h2")];
+      markSaved(textEl);
+      endEl.hidden = !isArt && index !== pages.length - 1;
+      reader.querySelectorAll(".reader-pagination").forEach((nav) => {
+        const selectId = "page-select-" + nav.dataset.placement;
+        nav.innerHTML = `<button class="btn sm" type="button" data-page-prev${index === 0 ? " disabled" : ""}>← Önceki</button>
+          <label for="${selectId}">Sayfa <select id="${selectId}" data-page-select aria-label="Sayfaya git">${pages.map((_, n) => `<option value="${n}"${n === index ? " selected" : ""}>${n + 1} / ${pages.length}</option>`).join("")}</select></label>
+          <button class="btn sm${index === pages.length - 1 ? "" : " primary"}" type="button" data-page-next${index === pages.length - 1 ? " disabled" : ""}>Sonraki →</button>`;
+      });
+      const status = document.getElementById("page-status");
+      if (status) status.textContent = `Sayfa ${index + 1} / ${pages.length} · ~${Math.max(1, Math.round(pg.words / (WPM[t.level] || 130)))} dk`;
+      if (move) {
+        clearTimeout(saveT);
+        const resume = document.getElementById("resume");
+        if (resume) resume.hidden = true;
+        p.page = index; p.pageF = 0;
+        p.f = Math.max(p.f || 0, pg.before / Math.max(1, t.words)); p.at = Date.now(); saveProgress();
+        // Focus without scrolling first, then account for both sticky bars.
+        if (status) {
+          status.focus({ preventScroll: true });
+          const bar = reader.querySelector(".toolbar");
+          const offset = document.querySelector(".topbar").offsetHeight + bar.offsetHeight + 20;
+          jumpScroll(window.scrollY + status.getBoundingClientRect().top - offset);
+        }
+      }
+      readerScroll(false);
+      requestAnimationFrame(() => { if (document.getElementById("text") === textEl) tracking = true; });
+    }
+
+    reader.addEventListener("click", (ev) => {
+      const prev = ev.target.closest("[data-page-prev]");
+      const next = ev.target.closest("[data-page-next]");
+      if (prev && pageIndex > 0) renderPage(pageIndex - 1, true);
+      if (next && pageIndex < pages.length - 1) renderPage(pageIndex + 1, true);
+    });
+    reader.addEventListener("change", (ev) => {
+      if (!ev.target.matches("[data-page-select]")) return;
+      const index = Number(ev.target.value);
+      if (Number.isInteger(index) && index >= 0 && index < pages.length && index !== pageIndex) renderPage(index, true);
+    });
+    renderPage(pageIndex, false);
   }
 
   function viewWords(tab) {
@@ -826,8 +903,23 @@
   }
 
   // ---------- router ----------
-  let readerScroll = null;
+  let readerScroll = null, readerFlush = null;
+  const $back = document.getElementById("nav-back");
+  const initialDepth = history.state && history.state.lanternDepth;
+  let navigationDepth = Number.isInteger(initialDepth) && initialDepth >= 0 ? initialDepth : 0;
   window.addEventListener("scroll", () => { if (readerScroll) readerScroll(); }, { passive: true });
+  window.addEventListener("pagehide", () => { if (readerFlush) readerFlush(); });
+  window.addEventListener("resize", () => { if (readerScroll) readerScroll(false); });
+
+  $back.addEventListener("click", () => {
+    if (navigationDepth > 0) { history.back(); return; }
+    const h = location.hash.slice(1);
+    const text = h.startsWith("s.") && BY_ID[h.slice(2)];
+    const fallback = text ? COLLECTIONS[text.type].route : h.startsWith("s.") ? "library" : "home";
+    // Direct links have no proven in-app predecessor; stay inside Lantern.
+    history.replaceState(Object.assign({}, history.state, { lanternDepth: 0 }), "", "#" + fallback);
+    route();
+  });
 
   $main.addEventListener("click", (ev) => {
     const a = ev.target.closest("[data-level], [data-genre]");
@@ -839,23 +931,31 @@
     if (location.hash === "#library") route();
   });
 
-  function route() {
-    const h = decodeURIComponent(location.hash.slice(1)) || "home";
+  function route(ev) {
+    let h;
+    try { h = decodeURIComponent(location.hash.slice(1)) || "home"; } catch (e) { h = "home"; }
+    if (ev && ev.type === "hashchange") {
+      const depth = history.state && history.state.lanternDepth;
+      navigationDepth = Number.isInteger(depth) && depth >= 0 ? depth : navigationDepth + 1;
+    }
+    if (h === "summaries") h = "library";
+    history.replaceState(Object.assign({}, history.state, { lanternDepth: navigationDepth }), "", "#" + h);
+    $back.disabled = h === "home" && navigationDepth === 0;
+    if (readerFlush) readerFlush();
     Speech.stop(); Tip.hide();
-    readerScroll = null; cardKeys = null;
+    readerScroll = null; readerFlush = null; cardKeys = null;
+    jumpScroll(0);
     document.querySelector("#progress span").style.width = "0";
     const section = h.startsWith("s.") ? (COLLECTIONS[BY_ID[h.slice(2)]?.type]?.route || "library") : h;
     document.querySelectorAll("[data-nav]").forEach((a) => { if (a.dataset.nav === section) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
     if (h.startsWith("s.")) viewReader(h.slice(2));
     else if (h === "library") viewLibrary();
     else if (h === "articles") viewArticles();
-    else if (h === "summaries") viewCollection("summary");
     else if (h === "words") viewWords();
     else if (h === "about") viewAbout();
     else viewHome();
     const t = h.startsWith("s.") && BY_ID[h.slice(2)];
     document.title = t ? `${t.title} · Lantern English` : "Lantern English";
-    window.scrollTo(0, 0);
   }
 
   // ---------- installable app (PWA) ----------

@@ -1,12 +1,12 @@
-// Browser checks for the separate story/article collections. No npm dependencies.
+// Browser checks for collections, reader pages and navigation. No npm dependencies.
 import fs from "node:fs";
 import path from "node:path";
 import os from "node:os";
 import http from "node:http";
 import { spawn } from "node:child_process";
-import { ROOT, loadAll, wordCount, Lemma } from "./lib.mjs";
+import { ROOT, loadAll } from "./lib.mjs";
 
-const { stories, articles, summaries, errors } = loadAll();
+const { stories, articles, errors } = loadAll();
 if (errors.length) throw new Error(errors.join("\n"));
 const binaries = [
   "C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe",
@@ -43,6 +43,8 @@ let socket;
 let send;
 let passed = 0;
 const assert = (value, message) => { if (!value) throw new Error(message); passed++; };
+// Typography is intentionally prettified by the reader; paragraph text and order must stay intact.
+const plainTypography = (s) => s.replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/—/g, "--");
 
 try {
   const portFile = path.join(profile, "DevToolsActivePort");
@@ -84,6 +86,8 @@ try {
   };
   const navigate = async (hash, condition) => {
     await page("Page.navigate", { url: origin + "/index.html#" + hash });
+    const text = hash.startsWith("s.") && [...stories, ...articles].find((t) => t.id === hash.slice(2));
+    if (text) await waitFor(`document.querySelector('.reader-head h1')?.textContent === ${JSON.stringify(text.title)}`);
     await waitFor(condition);
   };
   const screenshot = async (name) => {
@@ -93,12 +97,22 @@ try {
   const ids = async () => evaluate(`Array.from(document.querySelectorAll('#results .card')).map(a => a.hash.slice(3))`);
   const storyIds = new Set(stories.map((s) => s.id));
   const articleIds = new Set(articles.map((a) => a.id));
-  const summaryIds = new Set(summaries.map((s) => s.id));
+  const readerReady = "!!document.querySelector('#text .w')";
+  const pageState = async () => evaluate("({ page: Number(document.getElementById('text').dataset.page), pages: Number(document.getElementById('text').dataset.pages) })");
+  const readerParagraphs = async () => evaluate("Array.from(document.querySelectorAll('#text p, #text h2')).map(e => e.textContent)");
+  const isVisible = async (selector) => evaluate(`!!document.querySelector(${JSON.stringify(selector)})?.getClientRects().length`);
+  const selectPage = async (number) => {
+    await evaluate(`(() => { const select = document.querySelector('[data-page-select]'); select.selectedIndex = ${number - 1}; select.dispatchEvent(new Event('change', { bubbles: true })); })()`);
+    await waitFor(`document.getElementById('text')?.dataset.page === '${number}'`);
+  };
 
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
   await navigate("home", "!!document.querySelector('.collection-grid')");
   const counts = await evaluate(`Array.from(document.querySelectorAll('.step .count')).map(e => parseInt(e.textContent, 10))`);
   assert(counts.every((n, i) => n === stories.filter((s) => s.level === ["A1", "A2", "B1", "B2", "C1", "C2"][i]).length), "Home level counts must count only stories.");
+  assert(await evaluate("window.LANTERN_LIBRARY.every(t => t.type !== 'summary') && !document.querySelector('a[href=\"#summaries\"], [data-nav=\"summaries\"], #classic-summaries')"), "Removed book summaries must not appear in data, home cards or navigation.");
+  assert(await evaluate("document.getElementById('nav-back').disabled"), "The global back button must be disabled at the initial home route.");
+  assert(await evaluate("(() => { const b = document.getElementById('nav-back').getBoundingClientRect(); const h = document.querySelector('header').getBoundingClientRect(); return b.width > 0 && b.left < innerWidth / 2 && b.top >= h.top && b.bottom <= h.bottom + 1; })()"), "The back button must be visible in the upper-left header.");
   assert(await evaluate("!!document.getElementById('advanced-stories')"), "Advanced original stories must be discoverable from home.");
   await screenshot("home-desktop");
   await evaluate("document.getElementById('advanced-stories').click()");
@@ -131,8 +145,29 @@ try {
   await screenshot("articles-desktop");
 
   const advancedStory = stories.find((s) => s.level === "C2" && s.author === "Lantern Original");
-  await navigate("s." + advancedStory.id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
-  assert(await evaluate("document.querySelectorAll('#text .w').length > 5000"), "Long C2 story must render its complete text.");
+  await navigate("s." + advancedStory.id, readerReady);
+  const initialPage = await pageState();
+  assert(initialPage.page === 1 && initialPage.pages > 1, "A long story must start on the first of multiple pages.");
+  assert(await evaluate("document.querySelectorAll('nav.reader-pagination').length === 2"), "Story page controls must appear above and below the text.");
+  assert(await evaluate(`document.getElementById('page-status').textContent.trim().startsWith('Sayfa 1 / ${initialPage.pages}')`), "The page indicator must display the current and total pages.");
+  assert(!(await isVisible("#quiz")), "The quiz must remain hidden before the final story page.");
+  const allParagraphs = [];
+  for (let number = 1; number <= initialPage.pages; number++) {
+    const state = await pageState();
+    assert(state.page === number && state.pages === initialPage.pages, `Story page ${number} must be selected.`);
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-page-prev]')).every(b => b.disabled === ${number === 1}) && Array.from(document.querySelectorAll('[data-page-next]')).every(b => b.disabled === ${number === initialPage.pages})`), `Previous/next boundaries must be correct on page ${number}.`);
+    assert(await evaluate(`Array.from(document.querySelectorAll('[data-page-select]')).every(s => s.selectedIndex === ${number - 1})`), `Both page selectors must stay synchronized on page ${number}.`);
+    assert(await evaluate("document.getElementById('text').lastElementChild.tagName !== 'H2'"), `Page ${number} must keep a section heading with its following paragraph.`);
+    assert((await isVisible("#quiz")) === (number === initialPage.pages), `Quiz visibility must match the final page on page ${number}.`);
+    allParagraphs.push(...await readerParagraphs());
+    if (number < initialPage.pages) {
+      await evaluate("document.querySelector('[data-page-next]').click()");
+      await waitFor(`document.getElementById('text')?.dataset.page === '${number + 1}'`);
+    }
+  }
+  const expectedParagraphs = advancedStory.paragraphs.map((p) => plainTypography(p.startsWith("## ") ? p.slice(3) : p));
+  assert(JSON.stringify(allParagraphs.map(plainTypography)) === JSON.stringify(expectedParagraphs), "Paginated story paragraphs must match the complete source in order, without loss or duplication.");
+  assert(await evaluate(`location.hash === '#s.${advancedStory.id}'`), "Changing reader pages must not add page fragments to the route.");
   const nextStories = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
   assert(nextStories.every((id) => storyIds.has(id)) && await evaluate("document.querySelectorAll('.reader .card.article').length === 0"), "Story readers must recommend stories only.");
   for (const [i, q] of advancedStory.quiz.entries()) await evaluate(`document.querySelector('#quiz .q[data-i="${i}"] .opt[data-j="${q.answer}"]').click()`);
@@ -142,37 +177,85 @@ try {
   await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))");
   await screenshot("c2-reader-desktop");
 
-  await navigate("s." + articles[0].id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
+  await evaluate("document.querySelector('[data-page-prev]').click()");
+  await waitFor(`document.getElementById('text')?.dataset.page === '${initialPage.pages - 1}'`);
+  assert(!(await isVisible("#quiz")), "Previous page must hide the final-page quiz again.");
+  await selectPage(2);
+  assert((await pageState()).page === 2, "The page selector must jump directly to the selected story page.");
+
+  // Use an unfinished story to check saved-page resume; completed stories deliberately reopen at page one.
+  const resumeStory = stories.find((s) => s.id !== advancedStory.id && s.author === "Lantern Original" && s.paragraphs.join(" ").length > 15000);
+  assert(!!resumeStory, "A second long story must be available for resume checks.");
+  await navigate("s." + resumeStory.id, readerReady);
+  assert((await pageState()).pages > 1, "The resume story must expose multiple reader pages.");
+  await selectPage(2);
+  assert(await evaluate(`JSON.parse(localStorage.getItem('lantern.progress'))[${JSON.stringify(resumeStory.id)}].page === 1`), "Selecting a page must immediately persist its zero-based index.");
+  await evaluate("window.scrollTo(0, document.getElementById('text').offsetTop + 250)");
+  await waitFor(`JSON.parse(localStorage.getItem('lantern.progress'))[${JSON.stringify(resumeStory.id)}].pageF > 0`);
+  await pause(700);
+  const oldTimeOrigin = await evaluate("performance.timeOrigin");
+  await page("Page.reload");
+  await waitFor(`performance.timeOrigin !== ${oldTimeOrigin} && document.getElementById('text')?.dataset.page === '2'`);
+  assert((await pageState()).page === 2 && await isVisible("#resume-btn"), "Reloading an unfinished story must restore its page and offer within-page resume.");
+  await evaluate("document.getElementById('resume-btn').click()");
+  assert(!(await isVisible("#resume-btn")), "Resume must dismiss its prompt after returning to the saved position.");
+
+  await navigate("s." + advancedStory.id, readerReady);
+  assert((await pageState()).page === 1, "A completed story must reopen at page one.");
+
+  for (const story of stories) {
+    await navigate("s." + story.id, readerReady);
+    const state = await pageState();
+    assert(Number.isInteger(state.page) && Number.isInteger(state.pages) && state.page >= 1 && state.page <= state.pages && await evaluate("document.querySelectorAll('nav.reader-pagination').length === 2"), `${story.id} must expose a valid page indicator and both page controls.`);
+  }
+
+  await navigate("s." + articles[0].id, readerReady);
+  assert(await evaluate("!document.querySelector('nav.reader-pagination')") && await isVisible("#quiz"), "Articles must remain unpaginated with their quiz visible.");
+  assert(JSON.stringify((await readerParagraphs()).map(plainTypography)) === JSON.stringify(articles[0].paragraphs.map((p) => plainTypography(p.startsWith("## ") ? p.slice(3) : p))), "An article must still render all source paragraphs together.");
   const nextArticles = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
   assert(nextArticles.every((id) => articleIds.has(id)), "Article readers must recommend articles only.");
-  assert(["dracula", "the-metamorphosis", "frankenstein"].every((id) => summaryIds.has(id)), "The three classic book guides must be available (Animal Farm was removed for US copyright reasons).");
-  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
-  assert((await ids()).length === summaries.length && (await ids()).every((id) => summaryIds.has(id)), "Book summaries must have their own collection.");
-  await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'Franz Kafka'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
-  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summaries must be searchable by original author.");
-  await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
-  assert((await ids()).length === articles.length, "Book summary searches must not change article filters.");
-  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
-  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Book summary search must survive collection switching.");
-  await evaluate(`(() => { const q = document.getElementById('q'); q.value = 'Dönüşüm'; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
-  assert(JSON.stringify(await ids()) === JSON.stringify(["the-metamorphosis"]), "Turkish work titles must be searchable.");
-  await evaluate("document.getElementById('clear').click()");
-  await screenshot("summaries-desktop");
-  for (const summary of summaries) {
-    await navigate("s." + summary.id, "!!document.querySelector('#text .w') && !!document.getElementById('quiz')");
-    const count = wordCount(summary.paragraphs);
-    // chapter headings are rendered with hoverable words too, but are not part of the reading-time count
-    const rendered = count + (summary.paragraphs.filter((p) => p.startsWith("## ")).join(" ").match(Lemma.WORD_RE)?.length || 0);
-    const mins = Math.round(count / ({ B2: 130, C1: 150, C2: 170 }[summary.level] || 130));
-    assert(mins >= 30 && mins <= 40 && await evaluate(`document.querySelector('.reader-head .tags').textContent.includes('~${mins} dk')`), `${summary.id} must display a 30–40 minute reading estimate.`);
-    assert(await evaluate(`document.querySelector('#text').querySelectorAll('.w').length === ${rendered}`), `${summary.id} must render all summary text.`);
-    assert(await evaluate(`document.querySelector('.reader-head .by').textContent.includes(${JSON.stringify(summary.work.author)}) && !!document.querySelector('.spoiler-note') && document.querySelector('.crumbs a:last-child').hash === '#summaries' && document.querySelector('[data-nav="summaries"]').getAttribute('aria-current') === 'page'`), `${summary.id} must show original author, spoiler notice, and correct navigation.`);
-    const recommendations = await evaluate(`Array.from(document.querySelectorAll('.next-up .card')).map(a => a.hash.slice(3))`);
-    assert(recommendations.every((id) => summaryIds.has(id)), "Summary readers must recommend book summaries only.");
+
+  await navigate("summaries", "location.hash === '#library' && document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
+  assert(await evaluate("!document.querySelector('[data-nav=\"summaries\"], .card.summary')"), "The old summaries route must fall back to stories without summary cards.");
+  for (const id of ["dracula", "the-metamorphosis", "frankenstein"]) {
+    await navigate("s." + id, "!!document.querySelector('.empty') && !document.getElementById('text')");
+    assert(await evaluate("!!document.querySelector('main a[href=\"#library\"]')"), `${id} must no longer render the deleted book guide and must offer the story collection.`);
   }
-  for (const [i, q] of summaries.at(-1).quiz.entries()) await evaluate(`document.querySelector('#quiz .q[data-i="${i}"] .opt[data-j="${q.answer}"]').click()`);
-  assert(await evaluate("document.querySelector('#score b').textContent === '5/5'"), "Book summary quiz scoring must work.");
-  await screenshot("summary-reader-desktop");
+
+  await navigate("home", "!!document.querySelector('.collection-grid')");
+  await evaluate("document.querySelector('[data-nav=\"library\"]').click()");
+  await waitFor("document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
+  await evaluate("document.getElementById('clear').click()");
+  await evaluate(`document.querySelector('#results a[href="#s.${resumeStory.id}"]').click()`);
+  await waitFor(readerReady);
+  await selectPage(2);
+  await evaluate("document.getElementById('nav-back').click()");
+  await waitFor("location.hash === '#library' && document.querySelector('.lib-head h1')?.textContent === 'Hikâyeler'");
+  assert(await evaluate("location.hash === '#library'"), "Global back must return to the collection after page changes instead of undoing reader pages.");
+  await evaluate("document.getElementById('nav-back').click()");
+  await waitFor("location.hash === '#home' && !!document.querySelector('.collection-grid')");
+  assert(await evaluate("location.hash === '#home'"), "A second back action must return to the previous home route.");
+
+  const checkDirectBack = async (hash, fallback) => {
+    const { targetId: directTarget } = await send("Target.createTarget", { url: origin + "/index.html#" + hash });
+    try {
+      const { sessionId: directSession } = await send("Target.attachToTarget", { targetId: directTarget, flatten: true });
+      await send("Runtime.enable", {}, directSession);
+      const directEvaluate = async (expression) => {
+        const result = await send("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true }, directSession);
+        if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
+        return result.result.value;
+      };
+      for (let i = 0; i < 100; i++) { if (await directEvaluate(readerReady)) break; await pause(100); }
+      assert(await directEvaluate("!!document.getElementById('text') && !document.getElementById('nav-back').disabled"), "Direct-entry readers must have an enabled back button.");
+      await directEvaluate("document.getElementById('nav-back').click()");
+      for (let i = 0; i < 100; i++) { if (await directEvaluate(`location.hash === '#${fallback}'`)) break; await pause(100); }
+      assert(await directEvaluate(`location.hash === '#${fallback}' && location.origin === ${JSON.stringify(origin)}`), `Direct-entry ${hash} must return safely to #${fallback}.`);
+    } finally { await send("Target.closeTarget", { targetId: directTarget }); }
+  };
+  await checkDirectBack("s." + resumeStory.id, "library");
+  await checkDirectBack("s." + articles[0].id, "articles");
+
   await page("Emulation.setDeviceMetricsOverride", { width: 375, height: 812, deviceScaleFactor: 1, mobile: true });
   await navigate("home", "!!document.querySelector('.collection-grid')");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile home must fit the viewport.");
@@ -180,11 +263,22 @@ try {
   await navigate("articles", "document.querySelector('.lib-head h1')?.textContent === 'Makaleler'");
   assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile article collection must fit the viewport.");
   await screenshot("articles-mobile");
-  await navigate("summaries", "document.querySelector('.lib-head h1')?.textContent === 'Kitap Özetleri'");
-  assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), "Mobile summary collection must fit the viewport.");
-  await screenshot("summaries-mobile");
+  for (const width of [375, 390]) {
+    await page("Emulation.setDeviceMetricsOverride", { width, height: 844, deviceScaleFactor: 1, mobile: true });
+    await navigate("s." + resumeStory.id, readerReady);
+    assert(await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), `${width}px story pages must fit the viewport.`);
+    assert(await evaluate("Array.from(document.querySelectorAll('nav.reader-pagination, #nav-back')).every(e => { const r = e.getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })"), `${width}px back and page controls must fit the viewport.`);
+    await selectPage((await pageState()).pages);
+    assert(await isVisible("#quiz") && await evaluate("document.documentElement.scrollWidth <= innerWidth + 1"), `${width}px final-page quiz must be visible without horizontal overflow.`);
+    await selectPage(1);
+    await evaluate(`Array.from(document.querySelectorAll('#text .w')).find(e => e.textContent.toLowerCase() === 'the').click()`);
+    assert(await evaluate("!document.getElementById('tip').hidden && !!document.querySelector('#tip .tip-tr')?.textContent.trim()"), `${width}px page words must retain Turkish tooltips.`);
+    assert(await evaluate("(() => { const r = document.getElementById('tip').getBoundingClientRect(); return r.left >= -1 && r.right <= innerWidth + 1; })()"), `${width}px word tooltips must remain within the viewport.`);
+    await evaluate("document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }))");
+    await screenshot("reader-mobile-" + width);
+  }
   assert(browserErrors.length === 0, "Uncaught browser errors: " + browserErrors.join("\n"));
-  console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles, ${summaries.length} book summaries.`);
+  console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles.`);
   console.log(`Screenshots: ${runDir}`);
 } finally {
   if (send && socket?.readyState === WebSocket.OPEN) { try { await send("Browser.close"); } catch {} }

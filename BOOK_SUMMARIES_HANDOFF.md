@@ -1,4 +1,6 @@
-# Kitap özetleri — en son AI devir notu
+# Kitap özetleri — tarihsel arşiv
+
+**Güncel karar (11 Ekim 2026):** Kullanıcı üç kitap özetini ve ayrı Kitap Özetleri bölümünü silmemizi istedi. `content/summaries/dracula.json`, `frankenstein.json` ve `the-metamorphosis.json` kaldırıldı; özet yükleme/şema/derleme desteği de kaldırıldı. Aşağıdaki metin eski oturumların kaydıdır, aktif görev veya yayın talimatı değildir. Özetleri ve `#summaries` rotasını yeniden ekleme. Mevcut `content/stories/` içindeki hikâye uyarlamaları ve sözlük dosyaları ayrı içeriklerdir ve korunuyor.
 
 11 Ekim 2026. Kullanıcı limit nedeniyle **canlı siteye aktarımı yarıda bırakıp başka AI'a devretmemizi** istedi. Yeni yazım ve yayın durduruldu; eldeki dosyalar GitHub'a kaydediliyor. Bu görev için Sites yayını yapılmadı.
 

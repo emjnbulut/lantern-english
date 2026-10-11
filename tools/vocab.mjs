@@ -3,11 +3,11 @@
 import fs from "node:fs";
 import { loadAll, Lemma } from "./lib.mjs";
 
-const { stories, articles, summaries, dict } = loadAll();
+const { stories, articles, dict } = loadAll();
 const freq = new Map();
 const lowerSeen = new Set();
 const capOnly = new Map();
-for (const t of [...stories, ...articles, ...summaries]) {
+for (const t of [...stories, ...articles]) {
   for (const p of t.paragraphs || []) {
     const words = p.match(Lemma.WORD_RE) || [];
     for (const raw of words) {

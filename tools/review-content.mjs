@@ -4,7 +4,7 @@ import path from "node:path";
 import { execFileSync } from "node:child_process";
 import { ROOT, loadAll, wordCount, Lemma } from "./lib.mjs";
 
-const dirs = ["content/stories", "content/articles", "content/summaries"];
+const dirs = ["content/stories", "content/articles"];
 const gitLines = (args) => execFileSync("git", args, { cwd: ROOT, encoding: "utf8", windowsHide: true }).trim().split(/\r?\n/).filter(Boolean);
 const paths = [...new Set([...gitLines(["diff", "--name-only", "HEAD", "--", ...dirs]), ...gitLines(["ls-files", "--others", "--exclude-standard", "--", ...dirs])])].filter((p) => p.endsWith(".json") && fs.existsSync(path.join(ROOT, p)));
 const { errors: schemaErrors } = loadAll();
@@ -19,14 +19,8 @@ for (const file of paths) {
   if (!["Lantern Original", "Lantern Editorial"].includes(t.author)) continue;
   const fail = (message) => errors.push(`${file}: ${message}`);
   const count = wordCount(t.paragraphs);
-  const summaryWpm = { A1: 70, A2: 90, B1: 110, B2: 130, C1: 150, C2: 170 }[t.level];
-  const floor = t.type === "summary" ? 30 * summaryWpm : t.type === "article" ? 1700 : floors[t.level];
+  const floor = t.type === "article" ? 1700 : floors[t.level];
   if (count < floor) fail(`needs at least ${floor} words; found ${count}`);
-  if (t.type === "summary") {
-    if (count > 40 * summaryWpm) fail(`book summary exceeds 40 minutes at ${summaryWpm} words/minute`);
-    const headings = t.paragraphs.filter((p) => p.startsWith("## ")).length;
-    if (headings < 8 || headings > 12) fail("book summary needs eight to twelve sections");
-  }
   if (raw.includes("\uFFFD")) fail("contains a broken UTF-8 replacement character");
   if (t.phrases.length < 6) fail("needs at least six useful expressions");
   const paragraphTokens = t.paragraphs.filter((p) => !p.startsWith("## ")).map(tokens);

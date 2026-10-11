@@ -1,7 +1,8 @@
 # AGENTS.md — handoff guide for AI assistants
 
 Lantern English is a static, dependency-free website that teaches English to Turkish speakers through
-graded stories. Read this file, `HANDOFF.md`, `BOOK_SUMMARIES_HANDOFF.md` and `CONTENT_SPEC.md` before changing anything.
+graded stories. Read this file, `HANDOFF.md` and `CONTENT_SPEC.md` before changing anything.
+`BOOK_SUMMARIES_HANDOFF.md` is an archived record of a removed feature, not an active task list.
 
 ## Product brief (the owner's vision)
 - Dark, calm UI — neither bare nor busy. UI language is **Turkish**; content is **English**.
@@ -24,7 +25,6 @@ assets/js/lemmatize.js  shared lemmatizer (browser + node tools)
 assets/js/app.js        the single-page app (hash routing: #home #library #articles #words #about #s.<id>)
 content/stories/*.json  story sources        ┐ edit THESE
 content/articles/*.json article sources      │ (format: CONTENT_SPEC.md)
-content/summaries/*.json original book summaries and reading guides
 content/featured.json  editorial "Önerilenler" picks per level (ids + short Turkish why)
 content/dict/*.json     EN→TR dictionary     ┘
 drafts/                unfinished content; NOT included in browser bundles
@@ -52,7 +52,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - No frameworks, no build step beyond `tools/build.mjs`, no npm dependencies. Node ≥ 18 for tools.
 - User state lives in `localStorage` under the `lantern.` prefix (saved words, progress, prefs);
   always wrap storage access in try/catch.
-- Stories, articles and book summaries have separate routes (`#library`, `#articles`, `#summaries`), filter state (`filters` / `articleFilters` / `summaryFilters`), results and reader recommendations. Home level counts include stories only. Three book summaries are saved but not yet published; Animal Farm and final QA are pending (BOOK_SUMMARIES_HANDOFF.md).
+- Stories and articles have separate routes (`#library`, `#articles`), filter state (`filters` / `articleFilters`), results and reader recommendations. Home level counts include stories only. The owner requested removal of the three book summaries and their collection on 2026-10-11; do not restore `#summaries` or summary source files. Existing abridged stories in `content/stories/` are a separate collection and remain in place.
+- Stories are divided into pages of approximately 450 words without splitting paragraphs or leaving section headings behind. Reader controls provide previous/next and page selection, restore the current page, and show phrases/quiz on the final page. Articles remain continuous. The top-left back control uses internal navigation history with a fallback for direct entry.
 - Public-domain texts are reproduced exactly (no abridging/modernising); record the source URL.
 - Turkish copy uses proper characters (ç ğ ı İ ö ş ü) and a friendly, plain tone.
 
@@ -62,8 +63,15 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - `sw.js` is stamped by `tools/make-site.mjs`; registration is skipped on `file://`.
 - Footer credit "created by emjn" and `LICENSE` are owner requirements; keep them.
 
-## Content status (2026-10-11, Claude session)
-- 28 stories (A1 ×3, A2 ×6, B1 ×6, B2 ×6, C1 ×6, C2 ×1): 10 public-domain classics + 18 originals. 16 articles (two per genre, B2–C2). 3 book guides (Dracula B2, Frankenstein C1, The Metamorphosis C1).
+## Current change (2026-10-11)
+- The three book-summary source files and their build/schema support were removed at the owner's request. The site has story and article collections only.
+- Preserve the existing Dracula, Frankenstein and Kafka abridged stories and their dictionaries. These are story sources, not the removed summaries.
+- At the start of this task, `frankenstein-abridged.json` had uncommitted edits, and `the-metamorphosis-abridged.json`, `retell-frankenstein.json` and `retell-kafka.json` were untracked. They belong to another ongoing content task; preserve them locally and exclude those unfinished edits from this interface release. Build the release from a clean committed checkout.
+- The seven planned adaptations in README remain a backlog; this interface task does not authorize writing them.
+- Run the build and browser checks after the reader navigation changes; previous check counts below describe an older snapshot.
+
+## Historical content status (2026-10-11, Claude session)
+- At that checkpoint: 28 stories (A1 ×3, A2 ×6, B1 ×6, B2 ×6, C1 ×6, C2 ×1): 10 public-domain classics + 18 originals. 16 articles (two per genre, B2–C2). The three book guides from that checkpoint have since been removed.
 - Dictionary: 7,533 entries; run `node tools/vocab.mjs` for the current gap list (remaining forms are character names, initials and fragments).
 - `content/featured.json` holds the editorial "Önerilenler" picks (2–3 per level, C2 has none because it has one story); `tools/validate.mjs` checks ids/levels.
 - `last-crossing-of-greyhaven` (C1 adventure) was finished and moved from drafts/ into content/stories/.
@@ -79,4 +87,4 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.
 - Optional Turkish sentence translation on demand.
 - Export/import of the vocabulary notebook (JSON).
-- Public hosting: see HOSTING.md (separate public site repo + Pages; waiting for owner approval).
+- Public hosting: see HOSTING.md (separate public site repo + Pages).
