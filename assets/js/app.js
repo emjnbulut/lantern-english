@@ -622,7 +622,7 @@
   const videoTime = (seconds) => Math.floor(seconds / 60) + ":" + String(Math.floor(seconds % 60)).padStart(2, "0");
 
   function viewVideos() {
-    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren · Deneme</p><h1>Videolar</h1>
+    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren</p><h1>Videolar</h1>
       <p class="lead">İngilizce kısa filmler. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div></div>
       <div class="video-grid">${VIDEOS.map((v) => `<a class="video-card" href="#v.${esc(v.id)}">
         <div class="video-art" aria-hidden="true">${ICON.play}<span>Kısa film</span></div>
