@@ -667,6 +667,7 @@
           <div class="cs-title">Ayarlar</div>
           <div class="cs-row" id="cs-quality-row" hidden><label for="cs-quality">Görüntü</label><select id="cs-quality"></select></div>
           <p class="cs-hint" id="cs-quality-note" hidden></p>
+          <div class="cs-row" id="cs-inpage-row" hidden><span>Tam ekran</span><button type="button" class="cs-switch" id="cs-inpage-fs">Sayfa içi (kelimeye dokununca anlam)</button></div>
           <div class="cs-sep" role="separator"></div>
           <div class="cs-sub">Altyazı</div>
           <div class="cs-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-on" role="switch" aria-label="Altyazı" aria-checked="true"><span class="cs-knob"></span><span class="cs-switch-label">Açık</span></button></div>
@@ -764,12 +765,38 @@
       try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) { /* not supported */ }
     }
     function enterPseudoFs() { pseudoFs = true; syncFsUi(); }
+    // iPhone Safari cannot fullscreen an ordinary element, but can fullscreen the <video> itself.
+    // Captions are then supplied as a WebVTT track so they still show (read-only) in the native player.
+    const nativeFs = !requestFs && typeof player.webkitEnterFullscreen === "function";
+    let vttUrl = null;
+    function vttTime(sec) {
+      const ms = Math.round(sec * 1000), p = (n, w) => String(n).padStart(w, "0");
+      return p(Math.floor(ms / 3600000), 2) + ":" + p(Math.floor(ms / 60000) % 60, 2) + ":" + p(Math.floor(ms / 1000) % 60, 2) + "." + p(ms % 1000, 3);
+    }
+    function ensureTrack() {
+      if (player.querySelector("track")) return player.querySelector("track");
+      const body = "WEBVTT\n\n" + v.captions.map((c, i) => (i + 1) + "\n" + vttTime(c.start) + " --> " + vttTime(c.end) + "\n" + c.text).join("\n\n") + "\n";
+      vttUrl = URL.createObjectURL(new Blob([body], { type: "text/vtt" }));
+      const tr = document.createElement("track");
+      tr.kind = "subtitles"; tr.label = "English"; tr.srclang = "en"; tr.src = vttUrl;
+      player.appendChild(tr);
+      tr.track.mode = "hidden";
+      return tr;
+    }
+    const onNativeBegin = () => { const t = player.querySelector("track"); if (t) t.track.mode = "showing"; };
+    const onNativeEnd = () => { const t = player.querySelector("track"); if (t) t.track.mode = "hidden"; syncBar(); };
+    player.addEventListener("webkitbeginfullscreen", onNativeBegin);
+    player.addEventListener("webkitendfullscreen", onNativeEnd);
     function enterFs() {
-      // real fullscreen where the browser allows it (not on iPhone); otherwise fill the page
+      if (nativeFs && player.getAttribute("src")) {
+        try { const tr = ensureTrack(); tr.track.mode = "showing"; player.webkitEnterFullscreen(); return; } catch (e) { enterPseudoFs(); return; }
+      }
       if (!requestFs) { enterPseudoFs(); return; }
       let r;
       try { r = requestFs.call(stage); } catch (e) { enterPseudoFs(); return; }
       if (r && r.then) r.then(lockLandscape, enterPseudoFs); else lockLandscape();
+      // some in-app browsers accept the call and silently do nothing: fall back to the in-page mode
+      setTimeout(() => { if (!disposed && !isFs()) enterPseudoFs(); }, 700);
     }
     function exitFs() {
       if (pseudoFs) { pseudoFs = false; syncFsUi(); }
@@ -790,6 +817,23 @@
       if (pseudoFs) exitFs();
     };
     document.addEventListener("keydown", onEscape);
+
+    // controls fade out while playing and come back on touch / mouse move / keyboard
+    let hideTimer = 0;
+    const controlsPinned = () => !player.getAttribute("src") || player.paused || player.ended || !!switching ||
+      !document.getElementById("cap-settings").hidden || !document.getElementById("vol-pop").hidden ||
+      (bar.contains(document.activeElement) && document.activeElement.matches && document.activeElement.matches(":focus-visible"));
+    function hideControls() {
+      if (disposed || controlsPinned()) return;
+      stage.classList.add("controls-hidden");
+    }
+    function showControls() {
+      stage.classList.remove("controls-hidden");
+      clearTimeout(hideTimer);
+      if (!controlsPinned()) hideTimer = setTimeout(hideControls, 3000);
+    }
+    ["pointermove", "pointerdown", "touchstart", "keydown", "focusin"].forEach((n) => stage.addEventListener(n, showControls, { passive: true }));
+    ["play", "playing", "pause", "ended", "loadedmetadata", "seeked", "waiting"].forEach((n) => player.addEventListener(n, showControls));
 
     // custom controls (native controls cannot show our captions in fullscreen)
     const duration = () => (isFinite(player.duration) && player.duration > 0 ? player.duration : v.durationSeconds);
@@ -930,6 +974,7 @@
       if (open) Tip.hide();
       capPanel.hidden = !open;
       capBtns.forEach((b) => b.setAttribute("aria-expanded", String(open)));
+      showControls();
     }
     capBtns.forEach((b) => b.addEventListener("click", (ev) => { ev.stopPropagation(); setCapPanel(capPanel.hidden); }));
     capPanel.addEventListener("click", (ev) => ev.stopPropagation());
@@ -961,6 +1006,7 @@
       volPop.hidden = !open;
       vbMute.setAttribute("aria-expanded", String(open));
       if (open && !capPanel.hidden) setCapPanel(false);
+      showControls();
     }
     vbMute.addEventListener("click", (ev) => { ev.stopPropagation(); setVolPop(volPop.hidden); });
     volPop.addEventListener("click", (ev) => ev.stopPropagation());
@@ -980,6 +1026,8 @@
       syncBar();
     });
     capBtns.forEach((b) => b.addEventListener("click", () => setVolPop(false)));
+    document.getElementById("cs-inpage-row").hidden = !nativeFs;
+    document.getElementById("cs-inpage-fs").addEventListener("click", () => { setCapPanel(false); enterPseudoFs(); });
 
     function startVideo(at) {
       if (!navigator.onLine && !player.getAttribute("src")) {
@@ -1033,6 +1081,8 @@
       document.removeEventListener("keydown", onEscape);
       document.removeEventListener("click", onDocClickCap);
       document.removeEventListener("click", onDocClickVol);
+      clearTimeout(hideTimer);
+      if (vttUrl) { try { URL.revokeObjectURL(vttUrl); } catch (err) { /* ignore */ } }
       exitFs(); document.body.classList.remove("video-fs-open"); document.body.appendChild(Tip.el);
     };
   }

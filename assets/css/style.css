@@ -650,3 +650,15 @@ body.video-fs-open { overflow: hidden; }
 @media (max-width: 600px) {
   .video-stage .video-captions, .video-stage.pseudo-fs .video-captions, .video-stage.real-fs .video-captions { bottom: 72px; }
 }
+
+/* controls fade away while playing */
+.video-bar { transition: opacity .25s ease; }
+.video-stage.controls-hidden .video-bar { opacity: 0; pointer-events: none; }
+.video-stage.controls-hidden .video-bar > * { pointer-events: none; }
+.video-stage .video-captions { transition: bottom .2s ease; }
+.video-stage.controls-hidden .video-captions,
+.video-stage.controls-hidden.pseudo-fs .video-captions,
+.video-stage.controls-hidden.real-fs .video-captions { bottom: 16px; }
+.video-stage.controls-hidden { cursor: none; }
+.video-stage.controls-hidden .video-center, .video-stage.controls-hidden .video-captions p { cursor: pointer; }
+.cs-row #cs-inpage-fs { font-size: 13px; height: auto; min-height: 38px; padding: 6px 12px; text-align: left; border-radius: 12px; }
