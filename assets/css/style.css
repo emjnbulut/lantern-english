@@ -685,3 +685,29 @@ body.video-fs-open { overflow: hidden; }
 /* portrait fullscreen hint */
 .fs-hint { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 6; max-width: calc(100% - 24px); padding: 8px 14px; border-radius: 99px; background: rgba(8, 10, 15, .78); color: #fff; font: 600 13px var(--f-ui); text-align: center; pointer-events: none; }
 .fs-hint[hidden] { display: none; }
+
+/* portrait fullscreen without a landscape lock: turn the picture so it fills the whole screen */
+.video-stage.rot90 .video-frame {
+  position: absolute; top: 50%; left: 50%; margin: 0;
+  width: 100vh; width: 100dvh; height: 100vw;
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.video-stage.rot90 video { width: 100%; height: 100%; aspect-ratio: auto; object-fit: contain; }
+.video-stage.rot90 .video-placeholder { height: 100%; }
+.video-stage.rot90 { --cap-w: min(100vh, calc(100vw * 16 / 9)); }
+.video-stage.rot90 .cap-settings {
+  position: absolute; left: auto; right: 8px; bottom: 74px;
+  width: min(320px, calc(100% - 16px)); max-height: calc(100% - 84px);
+  z-index: 120;
+}
+
+/* full-screen zoom to fill (removes pillarbox bars on wider phone screens) */
+.video-stage.video-fill.real-fs video,
+.video-stage.video-fill.pseudo-fs video,
+.video-stage.video-fill.rot90 video {
+  object-fit: cover;
+}
+.video-stage.video-fill.real-fs .video-frame,
+.video-stage.video-fill.pseudo-fs:not(.rot90) .video-frame {
+  width: 100vw;
+}

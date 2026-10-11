@@ -224,6 +224,19 @@
     place() {
       if (!this.span || this.el.hidden) return;
       const r = this.span.getBoundingClientRect();
+      if (this.rotFrame) {
+        // frame is rotated 90deg clockwise about the viewport centre: map the word's viewport rect into frame-local coordinates
+        const f = this.rotFrame, W = f.offsetWidth, H = f.offsetHeight;
+        const dx = r.left + r.width / 2 - window.innerWidth / 2, dy = r.top + r.height / 2 - window.innerHeight / 2;
+        const cxl = W / 2 + dy, cyl = H / 2 - dx, wl = r.height, hl = r.width;
+        const tw2 = this.el.offsetWidth, th2 = this.el.offsetHeight;
+        let l2 = Math.min(Math.max(8, cxl - tw2 / 2), Math.max(8, W - tw2 - 8));
+        let t2 = cyl - hl / 2 - th2 - 10;
+        if (t2 < 8) t2 = cyl + hl / 2 + 10;
+        t2 = Math.min(Math.max(8, t2), Math.max(8, H - th2 - 8));
+        this.el.style.left = l2 + "px"; this.el.style.top = t2 + "px";
+        return;
+      }
       const tw = this.el.offsetWidth, th = this.el.offsetHeight;
       const left = Math.min(Math.max(8, r.left + r.width / 2 - tw / 2), window.innerWidth - tw - 8);
       let top = r.top - th - 10;
@@ -647,7 +660,7 @@
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
         <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
         <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
-        <div class="fs-hint" id="fs-hint" hidden>Daha büyük görüntü için telefonu yan çevir</div>
+        <div class="fs-hint" id="fs-hint" hidden>Telefonu yan çevirirsen görüntü dik durur</div>
         <button type="button" class="video-center" id="video-center" aria-label="Oynat" hidden>${ICON.play}</button>
         <div class="video-bar" id="video-bar" hidden>
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
@@ -668,6 +681,7 @@
           <div class="cs-title">Ayarlar</div>
           <div class="cs-row" id="cs-quality-row" hidden><label for="cs-quality">Görüntü</label><select id="cs-quality"></select></div>
           <p class="cs-hint" id="cs-quality-note" hidden></p>
+          <div class="cs-row" id="cs-fit-row"><span>Görünüm</span><button type="button" class="cs-switch" id="cs-fit" role="switch" aria-label="Ekranı kapla" aria-checked="false"><span class="cs-knob"></span><span class="cs-switch-label">Sığdır</span></button></div>
           <div class="cs-row" id="cs-inpage-row" hidden><span>Tam ekran</span><button type="button" class="cs-switch" id="cs-inpage-fs">Sayfa içi (kelimeye dokununca anlam)</button></div>
           <div class="cs-sep" role="separator"></div>
           <div class="cs-sub">Altyazı</div>
@@ -746,11 +760,24 @@
     let pseudoFs = false, seeking = false;
     player.setAttribute("disablepictureinpicture", "");
     const isFs = () => pseudoFs || fsElement() === stage;
+    let lockedLandscape = false;
+    const frameEl = document.getElementById("video-frame");
+    function syncRotate() {
+      const portrait = window.innerHeight > window.innerWidth;
+      // only touch devices: a tall desktop window must never get a rotated picture
+      const touch = !!(window.matchMedia && window.matchMedia("(pointer: coarse)").matches);
+      const want = isFs() && portrait && touch && !lockedLandscape;
+      stage.classList.toggle("rot90", want);
+      Tip.rotFrame = want ? frameEl : null;
+      Tip.el.style.position = want ? "absolute" : "";
+      // the tooltip must live inside the fullscreen element (and inside the rotated frame) to be visible
+      (want ? frameEl : (isFs() ? stage : document.body)).appendChild(Tip.el);
+      Tip.hide();
+    }
+    window.addEventListener("resize", syncRotate);
     function syncFsUi() {
       const on = isFs();
-      // the dictionary tooltip must live inside the fullscreen element to be visible
-      (on ? stage : document.body).appendChild(Tip.el);
-      Tip.hide();
+      syncRotate();
       stage.classList.toggle("pseudo-fs", pseudoFs);
       stage.classList.toggle("real-fs", fsElement() === stage);
       if (!on) unlockOrientation();
@@ -761,15 +788,24 @@
       const hint = document.getElementById("fs-hint");
       clearTimeout(syncFsUi.hintTimer);
       if (on && window.matchMedia && window.matchMedia("(orientation: portrait)").matches) {
+        hint.textContent = stage.classList.contains("rot90") ? "Telefonu yan çevirirsen görüntü dik durur" : "Daha büyük görüntü için telefonu yan çevir";
         hint.hidden = false;
         syncFsUi.hintTimer = setTimeout(() => { hint.hidden = true; }, 4500);
       } else hint.hidden = true;
     }
     function lockLandscape() {
-      try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock("landscape").catch(() => {}); } catch (e) { /* not supported */ }
+      try {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock("landscape").then(() => { lockedLandscape = true; syncRotate(); }, () => { lockedLandscape = false; syncRotate(); });
+        } else {
+          syncRotate();
+        }
+      } catch (e) { syncRotate(); }
     }
     function unlockOrientation() {
+      lockedLandscape = false;
       try { if (screen.orientation && screen.orientation.unlock) screen.orientation.unlock(); } catch (e) { /* not supported */ }
+      syncRotate();
     }
     function enterPseudoFs() { pseudoFs = true; syncFsUi(); }
     // iPhone Safari cannot fullscreen an ordinary element, but can fullscreen the <video> itself.
@@ -990,10 +1026,30 @@
     document.getElementById("cs-smaller").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.max(0, CAP_SCALES.indexOf(capPrefs.scale) - 1)]; applyCap(true); });
     document.getElementById("cs-bigger").addEventListener("click", () => { capPrefs.scale = CAP_SCALES[Math.min(CAP_SCALES.length - 1, CAP_SCALES.indexOf(capPrefs.scale) + 1)]; applyCap(true); });
     csAlpha.addEventListener("input", () => { capPrefs.alpha = Number(csAlpha.value); applyCap(true); });
-    document.getElementById("cs-reset").addEventListener("click", () => { capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true); });
+    const csFit = document.getElementById("cs-fit");
+    let videoFill = !!prefs.videoFill;
+    function applyFit(save) {
+      stage.classList.toggle("video-fill", videoFill);
+      if (csFit) {
+        csFit.setAttribute("aria-checked", String(videoFill));
+        csFit.querySelector(".cs-switch-label").textContent = videoFill ? "Ekranı kapla" : "Sığdır";
+      }
+      if (save) { prefs.videoFill = videoFill; savePrefs(); }
+    }
+    if (csFit) {
+      csFit.addEventListener("click", () => {
+        videoFill = !videoFill;
+        applyFit(true);
+      });
+    }
+    document.getElementById("cs-reset").addEventListener("click", () => {
+      capPrefs.scale = 1; capPrefs.alpha = 72; capPrefs.on = true; applyCap(true);
+      videoFill = false; applyFit(true);
+    });
     const toggleCaptions = () => { capPrefs.on = !capPrefs.on; Tip.hide(); applyCap(true); };
     csOn.addEventListener("click", toggleCaptions);
     applyCap(false);
+    applyFit(false);
 
     // volume: popover with slider + mute (phones that lock the volume only get mute)
     const volPop = document.getElementById("vol-pop"), volRange = document.getElementById("vol-range");
@@ -1086,6 +1142,8 @@
       document.removeEventListener("fullscreenchange", syncFsUi);
       document.removeEventListener("webkitfullscreenchange", syncFsUi);
       document.removeEventListener("keydown", onEscape);
+      window.removeEventListener("resize", syncRotate);
+      Tip.rotFrame = null; Tip.el.style.position = "";
       document.removeEventListener("click", onDocClickCap);
       document.removeEventListener("click", onDocClickVol);
       clearTimeout(hideTimer);
