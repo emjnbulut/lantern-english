@@ -562,3 +562,11 @@ body.video-fs-open { overflow: hidden; }
 }
 
 .cap-settings { background: #141822; }
+
+/* centre play indicator: tap the picture to pause / resume */
+.video-center { position: absolute; top: 50%; left: 50%; z-index: 3; transform: translate(-50%, -50%); width: 72px; height: 72px; border: 0; border-radius: 50%; display: grid; place-items: center; background: rgba(8, 10, 15, .62); color: #fff; cursor: pointer; box-shadow: 0 0 0 2px rgba(255, 255, 255, .25); }
+.video-center[hidden] { display: none; }
+.video-center svg { width: 34px; height: 34px; margin-left: 4px; }
+.video-center:hover { background: rgba(8, 10, 15, .8); }
+.video-placeholder { cursor: pointer; }
+.video-placeholder button { cursor: pointer; }

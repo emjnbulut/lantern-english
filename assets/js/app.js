@@ -646,6 +646,7 @@
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
         <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
         <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <button type="button" class="video-center" id="video-center" aria-label="Oynat" hidden>${ICON.play}</button>
         <div class="video-bar" id="video-bar" hidden>
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
           <input type="range" id="vb-seek" min="0" max="1000" value="0" step="1" aria-label="Videoda konum">
@@ -790,8 +791,18 @@
       if (!player.getAttribute("src")) { startVideo(); return; }
       if (player.paused) { const r = player.play(); if (r && r.catch) r.catch(() => {}); } else player.pause();
     }
+    const centerBtn = document.getElementById("video-center");
+    function syncCenter() {
+      const started = !!player.getAttribute("src");
+      centerBtn.hidden = !started || !player.paused;
+      centerBtn.setAttribute("aria-label", player.ended ? "Baştan oynat" : "Oynat");
+    }
+    centerBtn.addEventListener("click", (ev) => { ev.stopPropagation(); togglePlay(); });
+    ["play", "playing", "pause", "ended", "emptied", "loadedmetadata"].forEach((n) => player.addEventListener(n, syncCenter));
     vbPlay.addEventListener("click", togglePlay);
     player.addEventListener("click", togglePlay);
+    // before the first start, a tap on the frame (not on a button) starts the film
+    document.getElementById("video-placeholder").addEventListener("click", (ev) => { if (!ev.target.closest("button")) startVideo(); });
     vbMute.addEventListener("click", () => { player.muted = !player.muted; syncBar(); });
     vbSeek.addEventListener("input", () => {
       seeking = true;
@@ -892,7 +903,7 @@
         return;
       }
       if (!player.getAttribute("src")) {
-        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar();
+        player.src = currentSrc(); player.dataset.started = "true"; player.hidden = false; fsBtn.disabled = false; bar.hidden = false; syncBar(); syncCenter();
         document.getElementById("video-placeholder").hidden = true;
       }
       if (typeof at === "number") {
