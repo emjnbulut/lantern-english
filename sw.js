@@ -1,4 +1,4 @@
-/* Lantern English service worker: offline reading for installed / revisited devices.
+/* Lantern English service worker: fresh files whenever online, cached copy when offline.
    VERSION is stamped by tools/make-site.mjs; "dev" means an unstamped checkout. */
 const VERSION = "dev";
 const CACHE = "lantern-" + VERSION;
@@ -12,7 +12,7 @@ const SHELL = [
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches.open(CACHE)
-      .then((cache) => cache.addAll(SHELL.map((u) => new Request(u, { cache: "reload" }))))
+      .then((cache) => Promise.all(SHELL.map((u) => cache.add(new Request(u, { cache: "reload" })).catch(() => {}))))
       .then(() => self.skipWaiting())
   );
 });
@@ -25,25 +25,34 @@ self.addEventListener("activate", (event) => {
   );
 });
 
+function networkFirst(req) {
+  return caches.open(CACHE).then((cache) => {
+    const live = (req.mode === "navigate" ? fetch(req) : fetch(req, { cache: "no-cache" })).then((res) => {
+      if (res && res.ok) cache.put(req, res.clone());
+      return res;
+    });
+    const quiet = live.catch(() => null);
+    const slow = new Promise((resolve) => setTimeout(() => resolve(null), 4000));
+    return Promise.race([quiet, slow]).then((res) => {
+      if (res) return res;
+      return cache.match(req, { ignoreSearch: true }).then((hit) => hit || quiet.then((r) => r || cache.match("index.html")));
+    });
+  });
+}
+
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
   const isFont = url.hostname === "fonts.googleapis.com" || url.hostname === "fonts.gstatic.com";
-  // External movies are streamed from the credited source, never downloaded into the offline cache.
   if (!sameOrigin && !isFont) return;
-
-  // stale-while-revalidate: instant from cache, refreshed in the background for the next visit
-  event.respondWith(
-    caches.open(CACHE).then((cache) =>
-      cache.match(req, { ignoreSearch: true }).then((hit) => {
-        const fresh = fetch(req).then((res) => {
-          if (res && (res.ok || res.type === "opaque")) cache.put(req, res.clone());
-          return res;
-        }).catch(() => hit || (req.mode === "navigate" ? cache.match("index.html") : undefined));
-        return hit || fresh;
-      })
-    )
-  );
+  if (isFont) {
+    event.respondWith(caches.open(CACHE).then((cache) => cache.match(req).then((hit) => hit || fetch(req).then((res) => {
+      if (res && (res.ok || res.type === "opaque")) cache.put(req, res.clone());
+      return res;
+    }))));
+    return;
+  }
+  event.respondWith(networkFirst(req));
 });

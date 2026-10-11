@@ -681,3 +681,7 @@ body.video-fs-open { overflow: hidden; }
   .filters .chips { -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent); mask-image: linear-gradient(to right, #000 calc(100% - 32px), transparent); padding-right: 36px; }
   .video-stage .video-placeholder { min-height: 352px; padding: 20px 16px 124px; }
 }
+
+/* portrait fullscreen hint */
+.fs-hint { position: absolute; top: 12px; left: 50%; transform: translateX(-50%); z-index: 6; max-width: calc(100% - 24px); padding: 8px 14px; border-radius: 99px; background: rgba(8, 10, 15, .78); color: #fff; font: 600 13px var(--f-ui); text-align: center; pointer-events: none; }
+.fs-hint[hidden] { display: none; }

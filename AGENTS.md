@@ -90,6 +90,8 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 
 - Video player: own control bar; one **Ayarlar** (gear) panel holds picture quality (from `qualities`), subtitle on/off, size and background opacity; choices live in `lantern.prefs` (`vq`, `cap`). Phones get the panel as a bottom sheet. Videos so far: Sintel and Tears of Steel (both CC BY 3.0, official English SRT, 720p default).
 
+- Service worker is **network-first** (fresh code on every online visit, cached copy only when offline or after a 4 s timeout); when a new worker takes over the page reloads once (after a playing video pauses / on the next navigation). Don't go back to stale-while-revalidate: installed phones kept showing old versions.
+
 ## Ideas backlog
 - User-selected seven planned English adaptations (three Ömer Seyfettin, three Dede Korkut, Pinocchio): see [README — Eklenecek hikâyeler](README.md#eklenecek-hikâyeler) for titles, proposed A2/B1 levels and source references. This request added a GitHub backlog only; no story text was written or published.
 - More stories per level (especially C2 and A1), more dictionary coverage of rare words.

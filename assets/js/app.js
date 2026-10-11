@@ -647,6 +647,7 @@
         <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
         <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
         <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
+        <div class="fs-hint" id="fs-hint" hidden>Daha büyük görüntü için telefonu yan çevir</div>
         <button type="button" class="video-center" id="video-center" aria-label="Oynat" hidden>${ICON.play}</button>
         <div class="video-bar" id="video-bar" hidden>
           <button type="button" class="vb-btn" id="vb-play" aria-label="Oynat">${ICON.play}</button>
@@ -757,6 +758,12 @@
       fsBtn.textContent = on ? "Tam ekrandan çık" : "Tam ekran";
       vbFs.innerHTML = on ? ICON.shrink : ICON.expand;
       vbFs.setAttribute("aria-label", on ? "Tam ekrandan çık" : "Tam ekran");
+      const hint = document.getElementById("fs-hint");
+      clearTimeout(syncFsUi.hintTimer);
+      if (on && window.matchMedia && window.matchMedia("(orientation: portrait)").matches) {
+        hint.hidden = false;
+        syncFsUi.hintTimer = setTimeout(() => { hint.hidden = true; }, 4500);
+      } else hint.hidden = true;
     }
     function lockLandscape() {
       try { if (screen.orientation && screen.orientation.lock) screen.orientation.lock("landscape").catch(() => {}); } catch (e) { /* not supported */ }
@@ -833,7 +840,7 @@
       if (!controlsPinned()) hideTimer = setTimeout(hideControls, 3000);
     }
     ["pointermove", "pointerdown", "touchstart", "keydown", "focusin"].forEach((n) => stage.addEventListener(n, showControls, { passive: true }));
-    ["play", "playing", "pause", "ended", "loadedmetadata", "seeked", "waiting"].forEach((n) => player.addEventListener(n, showControls));
+    ["play", "playing", "pause", "ended"].forEach((n) => player.addEventListener(n, showControls));
 
     // custom controls (native controls cannot show our captions in fullscreen)
     const duration = () => (isFinite(player.duration) && player.duration > 0 ? player.duration : v.durationSeconds);
@@ -1554,6 +1561,7 @@
   });
 
   function route(ev) {
+    if (window.__lanternReloadPending && !window.__lanternReloading) { window.__lanternReloading = true; location.reload(); return; }
     let h;
     try { h = decodeURIComponent(location.hash.slice(1)) || "home"; } catch (e) { h = "home"; }
     if (ev && ev.type === "hashchange") {
@@ -1616,7 +1624,19 @@
       location.reload();
     });
     window.addEventListener("load", () => {
-      try { navigator.serviceWorker.register("sw.js").catch(() => {}); } catch (e) { /* unsupported frame */ }
+      try {
+        const hadController = !!navigator.serviceWorker.controller;
+        navigator.serviceWorker.register("sw.js").then((reg) => {
+          document.addEventListener("visibilitychange", () => { if (!document.hidden && reg.update) reg.update().catch(() => {}); });
+        }).catch(() => {});
+        navigator.serviceWorker.addEventListener("controllerchange", () => {
+          if (!hadController || window.__lanternReloading) return; // first install: nothing stale to replace
+          const p = document.getElementById("video-player");
+          if (p && p.getAttribute("src") && !p.paused) { window.__lanternReloadPending = true; return; }
+          window.__lanternReloading = true;
+          location.reload();
+        });
+      } catch (e) { /* unsupported frame */ }
     });
   }
 
