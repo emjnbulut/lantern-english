@@ -106,6 +106,7 @@ try {
   const myLibraryReady = "document.querySelector('main h1')?.textContent === 'Kitaplığım'";
   const bookmarkIds = async () => evaluate("JSON.parse(localStorage.getItem('lantern.bookmarks') || '[]')");
   const clickBookmark = async (id, scope = "") => evaluate(`document.querySelector(${JSON.stringify(scope + '[data-bookmark="' + id + '"]')}).click()`);
+  const clickReaderBookmark = async () => evaluate("document.getElementById('reader-bookmark').click()");
   const readerReady = "!!document.querySelector('#text .w')";
   const pageState = async () => evaluate("({ page: Number(document.getElementById('text').dataset.page), pages: Number(document.getElementById('text').dataset.pages) })");
   const readerParagraphs = async () => evaluate("Array.from(document.querySelectorAll('#text p, #text h2')).map(e => e.textContent)");
@@ -247,7 +248,9 @@ try {
     await navigate("s." + story.id, readerReady);
     const state = await pageState();
     assert(Number.isInteger(state.page) && Number.isInteger(state.pages) && state.page >= 1 && state.page <= state.pages && await evaluate("document.querySelectorAll('nav.reader-pagination').length === 2"), `${story.id} must expose a valid page indicator and both page controls.`);
+    assert(await evaluate("(() => { const box = document.getElementById('reader-bookmark'); return !!box?.matches('input[type=\"checkbox\"][data-bookmark-reader=\"true\"]') && !box.checked && Array.from(box.labels || []).some(label => label.textContent.trim() === 'Kitaplığıma ekle'); })()"), `${story.id} must offer an unchecked native personal-library checkbox with its fixed label.`);
   }
+  assert((await bookmarkIds()).length === 0, "Reader visits, page changes, completed quizzes and reloads must not automatically add bookmarks.");
 
   await navigate("s." + articles[0].id, readerReady);
   assert(await evaluate("!document.querySelector('nav.reader-pagination')") && await isVisible("#quiz"), "Articles must remain unpaginated with their quiz visible.");
@@ -313,9 +316,9 @@ try {
   await clickBookmark(bookmarkArticle.id, "#results ");
   assert(await evaluate(`location.hash === '#articles' && document.querySelector('#results [data-bookmark="${bookmarkArticle.id}"]').getAttribute('aria-pressed') === 'true'`), "Article cards must save independently without changing the collection route.");
   await navigate("s." + advancedStory.id, readerReady);
-  assert(await evaluate(`!!document.querySelector('.reader-head [data-bookmark="${advancedStory.id}"]')`), "Reader headers must expose a save action for the current text.");
-  await clickBookmark(advancedStory.id, ".reader-head ");
-  assert(await evaluate(`location.hash === '#s.${advancedStory.id}' && document.querySelector('.reader-head [data-bookmark="${advancedStory.id}"]').getAttribute('aria-pressed') === 'true'`), "Saving from a reader must retain the current route and update its button.");
+  assert(await evaluate("document.querySelector('.reader-head #reader-bookmark')?.type === 'checkbox' && !document.getElementById('reader-bookmark').checked"), "Reader headers must offer an unchecked checkbox for unsaved texts.");
+  await clickReaderBookmark();
+  assert(await evaluate(`location.hash === '#s.${advancedStory.id}' && document.getElementById('reader-bookmark').checked`), "Checking the reader bookmark must save its text while retaining the current route.");
   assert(JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(savedTexts.map((t) => t.id).sort()), "Personal bookmarks must contain exactly the saved story and article IDs.");
 
   await navigate("my-library", myLibraryReady);
@@ -368,19 +371,61 @@ try {
     assert(await evaluate(`document.activeElement.matches('button[data-bookmark="${bookmarkArticle.id}"]')`), "A cross-tab redraw must retain keyboard focus on an unaffected saved-card button.");
     await navigate("s." + bookmarkStory.id, readerReady);
     const pageBeforeStorage = (await pageState()).page;
-    assert(await evaluate(`document.querySelector('.reader-head [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'false'`), "The reader save action must reflect changes made in another tab.");
-    await clickBookmark(bookmarkStory.id, ".reader-head ");
+    assert(await evaluate("!document.getElementById('reader-bookmark').checked"), "The reader checkbox must reflect changes made in another tab.");
+    await clickReaderBookmark();
     await secondWait("document.querySelectorAll('#results a.card').length === 3");
     await secondEvaluate(`document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').click()`);
-    await waitFor(`document.querySelector('.reader-head [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'false'`);
+    await waitFor("!document.getElementById('reader-bookmark').checked");
     assert((await pageState()).page === pageBeforeStorage, "A cross-tab bookmark change must update reader controls without resetting its page.");
-    await clickBookmark(bookmarkStory.id, ".reader-head ");
+    await clickReaderBookmark();
     await secondWait("document.querySelectorAll('#results a.card').length === 3");
   } finally { await send("Target.closeTarget", { targetId: savedTarget }); }
 
+  // A personal library has no three-item limit; only editorial recommendations are capped.
+  const additionalSavedStories = stories.filter((s) => !savedTexts.some((t) => t.id === s.id)).slice(0, 4);
+  const expandedSavedTexts = [...savedTexts, ...additionalSavedStories];
+  const expandedSavedIds = expandedSavedTexts.map((t) => t.id).sort();
+  assert(additionalSavedStories.length === 4, "Four additional stories must be available for the seven-item personal-library check.");
+  for (const story of additionalSavedStories) {
+    await navigate("s." + story.id, readerReady);
+    assert(await evaluate("!document.getElementById('reader-bookmark').checked"), `${story.id} must stay unsaved until its checkbox is checked.`);
+    await clickReaderBookmark();
+    assert(await evaluate("document.getElementById('reader-bookmark').checked"), `${story.id} must show its explicit saved checkbox state.`);
+  }
+  assert(JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Saving six stories and one article must retain all seven IDs without a three-item cap.");
+  await navigate("my-library", myLibraryReady);
+  assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(expandedSavedIds), "Kitaplığım must show every explicitly saved story and article, including older saves.");
+  assert(await evaluate("document.getElementById('library-badge').textContent.trim() === '7'"), "The personal-library badge must count all seven saves.");
+  await reload(myLibraryReady);
+  assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(expandedSavedIds) && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "All seven personal-library items must remain visible and stored after refresh.");
+  await evaluate("document.querySelector('[data-library-type=\"article\"]').click()");
+  await evaluate(`(() => { const q = document.getElementById('q'); q.value = ${JSON.stringify(bookmarkArticle.title)}; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
+  assert(JSON.stringify(await ids()) === JSON.stringify([bookmarkArticle.id]) && await evaluate("JSON.stringify((document.getElementById('count').textContent.match(/\\d+/g) || []).map(Number).slice(0, 2)) === '[1,7]'"), "Filtered personal-library captions must distinguish the one shown item from seven total saves.");
+
+  const unsavedStory = stories.find((s) => !expandedSavedIds.includes(s.id) && s.paragraphs.join(" ").length > 15000);
+  assert(!!unsavedStory, "An unsaved multi-page story must be available for manual-only bookmarking checks.");
+  await navigate("s." + unsavedStory.id, readerReady);
+  assert(await evaluate("!document.getElementById('reader-bookmark').checked") && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Visiting an unsaved story must leave its checkbox unchecked and all bookmarks unchanged.");
+  await selectPage(2);
+  await evaluate("document.getElementById('listen').click(); document.getElementById('listen').click()");
+  await reload("document.getElementById('text')?.dataset.page === '2'");
+  assert(await evaluate("!document.getElementById('reader-bookmark').checked") && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Pagination, listening and refreshing must not automatically save an unsaved story.");
+  await clickReaderBookmark();
+  assert(await evaluate("document.getElementById('reader-bookmark').checked") && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify([...expandedSavedIds, unsavedStory.id].sort()), "Checking a story must add exactly that ID while preserving all seven existing saves.");
+  await clickReaderBookmark();
+  assert(await evaluate("!document.getElementById('reader-bookmark').checked") && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Unchecking a story must remove only that ID while preserving the other saved texts.");
+  await navigate("s." + bookmarkStory.id, readerReady);
+  assert(await evaluate("document.getElementById('reader-bookmark').checked"), "Revisiting an explicitly saved story must restore its checked state.");
+  await evaluate("document.getElementById('nav-back').click()");
+  await waitFor(`document.querySelector('.reader-head h1')?.textContent === ${JSON.stringify(unsavedStory.title)} && (${readerReady})`);
+  assert(await evaluate("!document.getElementById('reader-bookmark').checked") && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Back navigation must restore the unsaved story checkbox without changing other saves.");
+  await evaluate("document.querySelector('[data-nav=\"my-library\"]').click()");
+  await waitFor(myLibraryReady);
+  assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(expandedSavedIds) && await evaluate("document.getElementById('q').value === '' && document.querySelector('[data-library-type=\"all\"]').getAttribute('aria-pressed') === 'true'"), "Entering Kitaplığım again must show all saved items with an empty search and the all-types tab.");
+
   await navigate("my-library", myLibraryReady);
   const progressBeforeRemoval = await evaluate("localStorage.getItem('lantern.progress')");
-  for (const text of savedTexts) await clickBookmark(text.id, "#results ");
+  for (const text of expandedSavedTexts) await clickBookmark(text.id, "#results ");
   assert((await ids()).length === 0 && await isVisible(".empty") && (await bookmarkIds()).length === 0, "Removing the last saved text must immediately return the personal library to its empty state.");
   assert(await evaluate("localStorage.getItem('lantern.progress')") === progressBeforeRemoval, "Removing saved texts must leave reading progress unchanged.");
   await reload(myLibraryReady);

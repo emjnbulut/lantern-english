@@ -216,6 +216,10 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance
 .crumbs a:hover { color: var(--accent); }
 .reader-head { margin-bottom: 26px; }
 .reader-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 20px; }
+.bookmark-choice { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; background: var(--bg-2); border: 1px solid var(--line); border-radius: 8px; font-size: 14px; font-weight: 600; cursor: pointer; }
+.bookmark-choice input { width: 20px; height: 20px; margin: 0; flex-shrink: 0; accent-color: var(--accent); cursor: pointer; }
+.bookmark-choice.is-saved { color: var(--accent); border-color: rgba(241, 182, 95, .5); background: var(--glow); }
+.bookmark-hint { flex-basis: 100%; margin: 0; color: var(--fg-3); font-size: 13px; }
 .reader-head h1 { font-size: clamp(34px, 5.4vw, 50px); letter-spacing: -.01em; }
 .reader-head .by { margin-top: 10px; color: var(--fg-2); font-size: 16px; }
 .spoiler-note { margin: 14px 0 0; font-size: 13px; color: var(--fg-2); }

@@ -7,7 +7,7 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 
 ## Özellikler
 - **Hikâyeler:** A1–C2 için ayrı koleksiyon; tür (komedi, gizem, korku, macera, romantik, bilim kurgu, fabl, dram) ve uzunluk filtreleri, arama, sıralama.
-- **Kitaplığım:** hikâye ve makaleleri kartlardan veya okuyucudan kaydetme; kayıtlı listede arama, içerik türü filtresi ve sıralama. Okuma ilerlemesi ve kaldığın yerden devam korunur. Kayıtlar kullandığın cihazın tarayıcısında saklanır.
+- **Kitaplığım:** kartlardaki Kaydet düğmesi veya her okuma ekranındaki "Kitaplığıma ekle" kutucuğuyla manuel kayıt. Bir metni açmak kitaplığına eklemez; kayıt sayısı sınırı yoktur. Sekmeye girince tüm kayıtlar açılır; arama, içerik türü filtresi ve sıralama kullanılabilir. Okuma ilerlemesi korunur; kayıtlar bu tarayıcıda saklanır.
 - **Önerilenler:** mevcut filtrelere uygun en fazla üç hikâye; Dracula (B1) ve Frankenstein (B2) kısaltılmış klasikleri uygun seçimlerde önceliklidir.
 - **Kelime ipucu:** her kelimede Türkçe anlam, kök (ör. *went ← go*), metne özel anlam ve kalıp ifadeler. Tıklayınca kutu sabitlenir: sesli telaffuz, deftere ekleme, Tureng bağlantısı.
 - **Kelime Defterim:** kaydedilen kelimeler geçtikleri cümleyle saklanır; aralıklı tekrar kartları (Leitner) ve Anki'ye kopyalama.

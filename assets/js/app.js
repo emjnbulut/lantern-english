@@ -408,18 +408,22 @@
   }
 
   // ---------- personal reading shelf ----------
-  function bookmarkText(saved, reader) {
-    return reader ? (saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle") : (saved ? "Kaydedildi" : "Kaydet");
+  function bookmarkText(saved) {
+    return saved ? "Kaydedildi" : "Kaydet";
   }
-  function bookmarkContent(saved, reader) {
-    return (saved ? ICON.bookmarkFill : ICON.bookmark) + `<span>${bookmarkText(saved, reader)}</span>`;
+  function bookmarkContent(saved) {
+    return (saved ? ICON.bookmarkFill : ICON.bookmark) + `<span>${bookmarkText(saved)}</span>`;
   }
-  function bookmarkLabel(t, saved, reader) {
-    return `${bookmarkText(saved, reader)}${saved && !reader ? " · Kitaplığımdan çıkar" : ""}: ${t.title}`;
+  function bookmarkLabel(t, saved) {
+    return `${bookmarkText(saved)}${saved ? " · Kitaplığımdan çıkar" : ""}: ${t.title}`;
   }
-  function bookmarkButton(t, reader) {
+  function bookmarkButton(t) {
     const saved = bookmarks.includes(t.id);
-    return `<button class="btn sm bookmark-btn" type="button" data-bookmark="${esc(t.id)}"${reader ? ' data-bookmark-reader="true"' : ""} aria-pressed="${saved}" aria-label="${esc(bookmarkLabel(t, saved, reader))}" title="${saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle"}">${bookmarkContent(saved, reader)}</button>`;
+    return `<button class="btn sm bookmark-btn" type="button" data-bookmark="${esc(t.id)}" aria-pressed="${saved}" aria-label="${esc(bookmarkLabel(t, saved))}" title="${saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle"}">${bookmarkContent(saved)}</button>`;
+  }
+  function bookmarkCheckbox(t) {
+    const saved = bookmarks.includes(t.id);
+    return `<label class="bookmark-choice${saved ? " is-saved" : ""}" for="reader-bookmark"><input id="reader-bookmark" type="checkbox" data-bookmark="${esc(t.id)}" data-bookmark-reader="true" aria-label="${esc("Kitaplığıma ekle: " + t.title)}" aria-describedby="bookmark-hint"${saved ? " checked" : ""}><span>Kitaplığıma ekle</span></label>`;
   }
   const bookmarkStorageNote = () => bookmarkStorageAvailable ? "Kitaplığın bu tarayıcıda saklanır." : "Kayıtların şu an yalnızca bu oturumda tutulabiliyor.";
   function updateBookmarks() {
@@ -432,11 +436,16 @@
     $main.querySelectorAll("[data-bookmark]").forEach((b) => {
       const t = BY_ID[b.dataset.bookmark];
       if (!t) return;
-      const saved = bookmarks.includes(t.id), reader = b.dataset.bookmarkReader === "true";
+      const saved = bookmarks.includes(t.id);
+      if (b.matches("input[type='checkbox']")) {
+        b.checked = saved;
+        b.closest(".bookmark-choice").classList.toggle("is-saved", saved);
+        return;
+      }
       b.setAttribute("aria-pressed", saved);
-      b.setAttribute("aria-label", bookmarkLabel(t, saved, reader));
+      b.setAttribute("aria-label", bookmarkLabel(t, saved));
       b.title = saved ? "Kitaplığımdan çıkar" : "Kitaplığıma ekle";
-      b.innerHTML = bookmarkContent(saved, reader);
+      b.innerHTML = bookmarkContent(saved);
     });
   }
   function refreshShelf() {
@@ -456,16 +465,24 @@
       (next || document.getElementById("q")).focus({ preventScroll: true });
     }
   }
-  $main.addEventListener("click", (ev) => {
-    const b = ev.target.closest("[data-bookmark]");
-    if (!b || !Object.prototype.hasOwnProperty.call(BY_ID, b.dataset.bookmark)) return;
-    ev.preventDefault();
+  function changeBookmark(id, checked) {
+    if (!Object.prototype.hasOwnProperty.call(BY_ID, id)) return;
     // Read the latest list before editing so another tab's saves are retained.
     if (bookmarkStorageAvailable) bookmarks = cleanBookmarks(S.load("bookmarks", bookmarks));
-    const id = b.dataset.bookmark, saved = bookmarks.includes(id);
-    bookmarks = saved ? bookmarks.filter((item) => item !== id) : [id, ...bookmarks];
+    const saved = bookmarks.includes(id), wanted = typeof checked === "boolean" ? checked : !saved;
+    if (saved === wanted) { updateBookmarks(); return; }
+    bookmarks = wanted ? [id, ...bookmarks] : bookmarks.filter((item) => item !== id);
     bookmarkStorageAvailable = S.save("bookmarks", bookmarks); updateBookmarks(); refreshShelf();
-    toast((saved ? "Kitaplığından çıkarıldı" : "Kitaplığına eklendi") + (bookmarkStorageAvailable ? "" : " · Bu oturum için"));
+    toast((wanted ? "Kitaplığına eklendi" : "Kitaplığından çıkarıldı") + (bookmarkStorageAvailable ? "" : " · Bu oturum için"));
+  }
+  $main.addEventListener("click", (ev) => {
+    const b = ev.target.closest("button[data-bookmark]");
+    if (!b) return;
+    ev.preventDefault(); changeBookmark(b.dataset.bookmark);
+  });
+  $main.addEventListener("change", (ev) => {
+    const checkbox = ev.target.closest("input[type='checkbox'][data-bookmark]");
+    if (checkbox) changeBookmark(checkbox.dataset.bookmark, checkbox.checked);
   });
   window.addEventListener("storage", (ev) => {
     if (!bookmarkStorageAvailable || (ev.key !== null && ev.key !== "lantern.bookmarks")) return;
@@ -494,7 +511,7 @@
       <p class="teaser">${esc(t.summaryTr)}</p>
       ${bar}
       <div class="meta"><span>${LENGTHS[t.length]}</span><span>·</span><span>${fmt(t.words)} kelime</span><span>·</span><span>~${minutes(t)} dk</span></div>
-    </a><div class="card-actions">${bookmarkButton(t, false)}</div></div>`;
+    </a><div class="card-actions">${bookmarkButton(t)}</div></div>`;
   }
   const grid = (items) => items.length ? `<div class="grid">${items.map((t) => card(t)).join("")}</div>` : "";
   const collectionNav = (kind) => `<nav class="collection-switch" aria-label="Okuma bölümleri">${Object.entries(COLLECTIONS).map(([key, c]) => `<a href="#${c.route}"${key === kind ? ' aria-current="page"' : ""}>${c.title} <span>${c.items.length}</span></a>`).join("")}<a href="#my-library"${kind === "saved" ? ' aria-current="page"' : ""}>Kitaplığım <span data-bookmark-count>${bookmarks.length}</span></a></nav>`;
@@ -595,7 +612,10 @@
   }
 
   function viewMyLibrary() {
+    // A new visit always starts with the complete saved list; sorting may be retained.
+    shelfFilt.type = "all"; shelfFilt.q = "";
     const saveFilters = () => S.save("myLibraryFilters", shelfFilt);
+    saveFilters();
     $main.innerHTML = `
       ${collectionNav("saved")}
       <div class="lib-head">
@@ -618,7 +638,7 @@
       if (shelfFilt.sort === "title") list.sort((a, b) => a.title.localeCompare(b.title));
       else if (shelfFilt.sort === "recent") list.sort((a, b) => (progress[b.id]?.at || 0) - (progress[a.id]?.at || 0));
       else if (shelfFilt.sort === "level") list.sort((a, b) => LEVELS.findIndex((l) => l.id === a.level) - LEVELS.findIndex((l) => l.id === b.level) || a.words - b.words);
-      document.getElementById("count").textContent = `${list.length} kayıt · ${list.filter((t) => t.type === "story").length} hikâye · ${list.filter((t) => t.type === "article").length} makale`;
+      document.getElementById("count").textContent = `${list.length === bookmarks.length ? `${bookmarks.length} kayıt` : `${list.length} / ${bookmarks.length} kayıt gösteriliyor`} · ${list.filter((t) => t.type === "story").length} hikâye · ${list.filter((t) => t.type === "article").length} makale`;
       $main.querySelectorAll("[data-library-type]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.libraryType === shelfFilt.type));
       document.getElementById("results").innerHTML = grid(list) || (bookmarks.length
         ? '<div class="empty"><h3>Bu filtrelerle kayıt yok</h3><p>Bir filtreyi kaldırmayı veya aramayı temizlemeyi dene.</p></div>'
@@ -747,7 +767,7 @@
             <span class="sep">|</span><span>${LENGTHS[t.length]}</span><span class="sep">|</span><span>${fmt(t.words)} kelime</span><span class="sep">|</span><span>~${minutes(t)} dk</span></div>
           <div class="teaser-box">${esc(t.summaryTr)}</div>
           ${t.abridged ? '<p class="spoiler-note"><b>Kısaltılmış klasik</b> · Kitabın olay örgüsü ve sonu sırasıyla korunarak sadeleştirilmiş, kısaltılmış anlatımdır. Spoiler içerir; yaklaşık okuma süresi seviyeye göre tahminidir.</p>' : ""}
-          <div class="reader-actions">${bookmarkButton(t, true)}<a class="link" href="#my-library">Kitaplığım →</a></div>
+          <div class="reader-actions">${bookmarkCheckbox(t)}<a class="link" href="#my-library">Kitaplığım →</a><p class="bookmark-hint" id="bookmark-hint">Yalnızca seçtiğin metinler kitaplığına eklenir. Seçimi kaldırarak bu metni çıkarabilirsin.</p></div>
         </header>
         <div class="toolbar" role="toolbar" aria-label="Okuma ayarları">
           <button class="btn sm" id="listen">${ICON.play} ${isArt ? "Dinle" : "Sayfayı dinle"}</button>
@@ -1023,7 +1043,7 @@
       </ul>
       <p>Bir kez açtıktan sonra daha önce okuduğun hikâyeler internet olmadan da açılır.</p>
       <h2>Verilerin</h2>
-      <p>Hikâye ve makalelerdeki “Kaydet” düğmesiyle okuma listeni oluştur; <a href="#my-library">Kitaplığım</a> sekmesinden bu metinlere ulaşabilir, kaldığın yerden devam edebilirsin. Bir metni kitaplığından çıkarmak okuma ilerlemeni silmez.</p>
+      <p>Kartlardaki “Kaydet” düğmesini veya okuma ekranındaki “Kitaplığıma ekle” kutucuğunu kullanarak okuma listeni oluştur. Bir metni açmak kitaplığına eklemez. <a href="#my-library">Kitaplığım</a> sekmesi tüm kayıtlarını gösterir; kayıt sayısı sınırı yoktur. Bir metni kitaplığından çıkarmak okuma ilerlemeni silmez.</p>
       <p>Kitaplığın, kelime defterin ve okuma ilerlemen yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen bunlar da silinir.</p>
     </div>`;
   }
@@ -1106,6 +1126,15 @@
   });
   window.addEventListener("appinstalled", () => { if ($install) $install.hidden = true; toast("Uygulama yüklendi"); });
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
+    const wasControlled = !!navigator.serviceWorker.controller;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+      // Once an updated worker takes control, load its complete, consistent app shell.
+      if (!wasControlled || reloading) return;
+      reloading = true;
+      if (readerFlush) readerFlush();
+      location.reload();
+    });
     window.addEventListener("load", () => {
       try { navigator.serviceWorker.register("sw.js").catch(() => {}); } catch (e) { /* unsupported frame */ }
     });
