@@ -679,15 +679,19 @@
       close() { signal.removeEventListener("abort", stop); ctrl.abort(); },
     };
   }
-  // Some CDNs slow a long single download to a trickle; when that happens, reconnect from the last byte.
+  // Some CDNs slow a long single download to a trickle; when the speed collapses (compared with the best
+  // speed seen so far, so a steadily slow phone connection is left alone), reconnect from the last byte.
+  // Only attempts that deliver nothing count towards giving up.
   function resumableBody(url, first, total, signal, onBytes) {
-    let conn = first, offset = 0, retries = 0, windowStart = Date.now(), windowBytes = 0;
-    const SLOW_MS = 8000, SLOW_BYTES = 384 * 1024, MAX_RETRIES = 30;
+    let conn = first, offset = 0, stuck = 0, sinceConnect = 0, bestWindow = 0, windowStart = Date.now(), windowBytes = 0;
+    const SLOW_MS = 8000, MAX_STUCK = 8;
     const reconnect = async () => {
       conn.close();
-      if (++retries > MAX_RETRIES) throw new Error("http");
+      stuck = sinceConnect ? 0 : stuck + 1;
+      if (stuck > MAX_STUCK) throw new Error("http");
+      if (stuck) await new Promise((r) => setTimeout(r, Math.min(15000, 1000 * stuck)));
       conn = await openVideoStream(url, offset, signal);
-      windowStart = Date.now(); windowBytes = 0;
+      sinceConnect = 0; windowStart = Date.now(); windowBytes = 0;
     };
     return new ReadableStream({
       async pull(ctl) {
@@ -711,12 +715,13 @@
             conn.skip -= drop; chunk = chunk.subarray(drop);
             if (!chunk.byteLength) continue;
           }
-          offset += chunk.byteLength; windowBytes += chunk.byteLength; onBytes(chunk.byteLength);
+          offset += chunk.byteLength; windowBytes += chunk.byteLength; sinceConnect += chunk.byteLength; onBytes(chunk.byteLength);
           ctl.enqueue(chunk);
           if (Date.now() - windowStart > SLOW_MS) {
-            const slow = windowBytes < SLOW_BYTES && (!total || total - offset > SLOW_BYTES);
+            const collapsed = bestWindow > 0 && windowBytes < bestWindow / 5 && (!total || total - offset > windowBytes);
+            bestWindow = Math.max(bestWindow, windowBytes);
             windowStart = Date.now(); windowBytes = 0;
-            if (slow) await reconnect();
+            if (collapsed) await reconnect();
           }
           return;
         }
