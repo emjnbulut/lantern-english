@@ -1,0 +1,199 @@
+{
+  "id": "how-big-is-space",
+  "type": "video",
+  "title": "How Big Is Space? We Asked a NASA Expert",
+  "creator": "NASA",
+  "year": 2025,
+  "level": "B1",
+  "category": "real",
+  "durationSeconds": 96,
+  "genre": "education",
+  "summaryTr": "Bir NASA bilim insanı tek bir soruyu cevaplıyor: Uzay ne kadar büyük? Işık yılı, galaksiler ve evrenin sınırı hakkında bir buçuk dakikalık, hızlı ve anlaşılır bir açıklama.",
+  "levelNoteTr": "B1, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Konuşma açık ve tempolu; light-year, galaxy, observable gibi bilim kelimeleri vardır.",
+  "advisoryTr": "Tüm yaşlara uygundur.",
+  "videoUrl": "https://images-assets.nasa.gov/video/How%20Big%20is%20Space/How%20Big%20is%20Space~medium.mp4",
+  "qualities": [
+    {
+      "label": "Standart",
+      "url": "https://images-assets.nasa.gov/video/How%20Big%20is%20Space/How%20Big%20is%20Space~medium.mp4",
+      "sizeMB": 25
+    },
+    {
+      "label": "Yüksek",
+      "url": "https://images-assets.nasa.gov/video/How%20Big%20is%20Space/How%20Big%20is%20Space~large.mp4",
+      "sizeMB": 55
+    }
+  ],
+  "source": {
+    "name": "NASA — How Big is Space? We Asked a NASA Expert",
+    "url": "https://images.nasa.gov/details/How%20Big%20is%20Space",
+    "license": "Kamu malı (NASA yapımı, ABD'de telife tabi değil)",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "credit": "NASA · A NASA 360 Production"
+  },
+  "subtitleSource": {
+    "name": "NASA — resmî İngilizce SRT altyazısı",
+    "url": "https://images-assets.nasa.gov/video/How%20Big%20is%20Space/How%20Big%20is%20Space.srt",
+    "license": "Kamu malı (NASA)",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "changeNoteTr": "Altyazı sözleri korunmuş; zamanlar saniyeye dönüştürülmüştür."
+  },
+  "captions": [
+    {
+      "start": 0,
+      "end": 3.136,
+      "text": "How big is space?"
+    },
+    {
+      "start": 3.67,
+      "end": 5.171,
+      "text": "We Asked a NASA Scientist."
+    },
+    {
+      "start": 5.171,
+      "end": 7.474,
+      "text": "Space is really big."
+    },
+    {
+      "start": 7.474,
+      "end": 10.844,
+      "text": "Thinking about our solar system, let's imagine you could get in a car"
+    },
+    {
+      "start": 10.844,
+      "end": 13.146,
+      "text": "and drive to Pluto at highway speeds."
+    },
+    {
+      "start": 13.146,
+      "end": 15.782,
+      "text": "It would take you about 6,000 years to get there."
+    },
+    {
+      "start": 15.782,
+      "end": 19.252,
+      "text": "When we start to think about other stars outside of our solar system,"
+    },
+    {
+      "start": 19.252,
+      "end": 22.022,
+      "text": "we need to think about another unit of distance."
+    },
+    {
+      "start": 22.022,
+      "end": 24.958,
+      "text": "This is why astronomers use the unit light-years."
+    },
+    {
+      "start": 24.958,
+      "end": 28.228,
+      "text": "Light travels at 186,000 miles per second."
+    },
+    {
+      "start": 28.528,
+      "end": 31.531,
+      "text": "One light year is about 6 trillion miles."
+    },
+    {
+      "start": 31.664,
+      "end": 35.101,
+      "text": "The closest star to our Sun is about four light years away."
+    },
+    {
+      "start": 35.869,
+      "end": 40.373,
+      "text": "Our own Milky Way galaxy is about 100,000 light-years across."
+    },
+    {
+      "start": 40.44,
+      "end": 43.576,
+      "text": "We know from deep field images of the universe that there are hundreds"
+    },
+    {
+      "start": 43.576,
+      "end": 46.579,
+      "text": "of billions, perhaps a trillion other galaxies."
+    },
+    {
+      "start": 46.713,
+      "end": 49.482,
+      "text": "Using some of the deepest images yet from JWST,"
+    },
+    {
+      "start": 49.516,
+      "end": 51.017,
+      "text": "we've been able to see galaxies"
+    },
+    {
+      "start": 51.017,
+      "end": 54.02,
+      "text": "that emitted their light about 13 and a half billion years ago."
+    },
+    {
+      "start": 54.354,
+      "end": 58.158,
+      "text": "Now, here's a really important thing. Because the universe is expanding,"
+    },
+    {
+      "start": 58.191,
+      "end": 59.859,
+      "text": "those most distant galaxies"
+    },
+    {
+      "start": 59.859,
+      "end": 63.696,
+      "text": "are actually much further away than 13 and a half billion light years."
+    },
+    {
+      "start": 64.23,
+      "end": 67.934,
+      "text": "I'm glossing over some math here, but we can estimate that the observable"
+    },
+    {
+      "start": 67.934,
+      "end": 71.704,
+      "text": "universe is about 92 billion light-years across."
+    },
+    {
+      "start": 72.105,
+      "end": 75.742,
+      "text": "But we're pretty sure that the universe is even bigger than what we can see."
+    },
+    {
+      "start": 76.309,
+      "end": 78.511,
+      "text": "And here's where things get really weird,"
+    },
+    {
+      "start": 78.511,
+      "end": 82.248,
+      "text": "we don't actually know if the universe is finite or infinite."
+    },
+    {
+      "start": 82.649,
+      "end": 86.252,
+      "text": "As much as we've learned about the universe, science has no reliable"
+    },
+    {
+      "start": 86.252,
+      "end": 89.322,
+      "text": "estimate of the actual size of the entire universe."
+    },
+    {
+      "start": 89.889,
+      "end": 91.925,
+      "text": "We Asked a NASA Scientist."
+    },
+    {
+      "start": 91.925,
+      "end": 96.029,
+      "text": "NASA. A NASA 360 Production."
+    }
+  ],
+  "glossary": {
+    "nasa": "NASA (ABD Ulusal Havacılık ve Uzay Dairesi)",
+    "pluto": "Plüton (cüce gezegen)",
+    "milky": "Milky Way: Samanyolu galaksisi",
+    "jwst": "JWST: James Webb Uzay Teleskobu"
+  }
+}

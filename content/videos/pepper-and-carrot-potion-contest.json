@@ -1,0 +1,549 @@
+{
+  "id": "pepper-and-carrot-potion-contest",
+  "type": "video",
+  "title": "Pepper & Carrot: The Potion Contest",
+  "creator": "Morevna Project",
+  "year": 2017,
+  "level": "A2",
+  "category": "fun",
+  "durationSeconds": 454,
+  "genre": "comedy",
+  "summaryTr": "Genç cadı Pepper ve turuncu kedisi Carrot, kasabanın büyük iksir yarışmasına katılır. Rakipler göz kamaştırıcı iksirler sunarken Pepper'ın elindeki şişe herkesi şaşırtacaktır. David Revoy'un çizgi romanından uyarlanmış neşeli bir animasyon.",
+  "levelNoteTr": "A2, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Cümleler kısa ve günlük; iksir, büyü ve sunucu konuşmalarındaki süslü sözcükler kelime desteği gerektirebilir.",
+  "advisoryTr": "Çizgi film tarzı hafif aksiyon ve zararsız bir \"kedi çişi\" esprisi içerir; tüm yaşlara uygundur.",
+  "videoUrl": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-720.mp4",
+  "qualities": [
+    {
+      "label": "360p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-360.mp4",
+      "sizeMB": 30
+    },
+    {
+      "label": "720p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-720.mp4",
+      "sizeMB": 62
+    },
+    {
+      "label": "1080p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-1080.mp4",
+      "sizeMB": 102
+    }
+  ],
+  "source": {
+    "name": "Morevna Project — Pepper & Carrot Motion Comic, Episode 6",
+    "url": "https://morevnaproject.org/pepper-and-carrot/episode-6",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Morevna Project · Yönetmen ve animasyon: Nikolai Mamashev · David Revoy'un Pepper & Carrot çizgi romanına dayanır",
+    "watchUrl": "https://peertube.touhoppai.moe/videos/watch/79ff0983-3f55-4111-9f7d-f3d3feeefb69"
+  },
+  "subtitleSource": {
+    "name": "Morevna Project — İngilizce SRT altyazısı",
+    "url": "https://raw.githubusercontent.com/morevnaproject/subtitles-translation/master/output/pepper-and-carrot-ep6/pepper-and-carrot-ep6-eng.srt",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "changeNoteTr": "Altyazı sözleri korunmuş; [yawns] gibi ses notları ve biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür."
+  },
+  "captions": [
+    {
+      "start": 1.03,
+      "end": 3.53,
+      "text": "Morevna Project..."
+    },
+    {
+      "start": 4.37,
+      "end": 6.78,
+      "text": "...in association with \"Ethic Cinema\"..."
+    },
+    {
+      "start": 7.24,
+      "end": 8.51,
+      "text": "...presents."
+    },
+    {
+      "start": 24.24,
+      "end": 28.24,
+      "text": "Oh, I fell asleep with the window open again..."
+    },
+    {
+      "start": 29.96,
+      "end": 32.76,
+      "text": "Ufff... it's so windy..."
+    },
+    {
+      "start": 33.62,
+      "end": 36.91,
+      "text": "...and why can I see Komona through the window?"
+    },
+    {
+      "start": 37.24,
+      "end": 38.24,
+      "text": "Komona?!"
+    },
+    {
+      "start": 39.2,
+      "end": 39.99,
+      "text": "THE CONTEST!!!"
+    },
+    {
+      "start": 41.7,
+      "end": 43.28,
+      "text": "In previous episodes:"
+    },
+    {
+      "start": 43.45,
+      "end": 45.49,
+      "text": "Pepper spent a lot of effort..."
+    },
+    {
+      "start": 45.87,
+      "end": 49.49,
+      "text": "...preparing for the potion contest."
+    },
+    {
+      "start": 50.04,
+      "end": 50.87,
+      "text": "I must've..."
+    },
+    {
+      "start": 51.21,
+      "end": 54,
+      "text": "...must've accidentally fallen asleep..."
+    },
+    {
+      "start": 54.47,
+      "end": 55.1,
+      "text": "But..."
+    },
+    {
+      "start": 56.18,
+      "end": 57.32,
+      "text": "But...where am I?"
+    },
+    {
+      "start": 58.22,
+      "end": 59.16,
+      "text": "Oh!!!"
+    },
+    {
+      "start": 64.88,
+      "end": 68.58,
+      "text": "Carrot! It's so cute that you took care of everything!"
+    },
+    {
+      "start": 69.64,
+      "end": 70.64,
+      "text": "Meow!"
+    },
+    {
+      "start": 71.62,
+      "end": 76.04,
+      "text": "You even thought to bring a potion, my clothes, and my hat!"
+    },
+    {
+      "start": 77.12,
+      "end": 80.67,
+      "text": "Well, let's see which potion you brought."
+    },
+    {
+      "start": 81.17,
+      "end": 83.04,
+      "text": "So, what do we have here?"
+    },
+    {
+      "start": 83.87,
+      "end": 85.87,
+      "text": "Whaaaat?!"
+    },
+    {
+      "start": 88.74,
+      "end": 92.84,
+      "text": "Caaaaaaarrrrrooooooot!!!!!!!"
+    },
+    {
+      "start": 93.64,
+      "end": 97.4,
+      "text": "Pepper & Carrot. Episode 6: The Potion Contest"
+    },
+    {
+      "start": 98.33,
+      "end": 103.12,
+      "text": "As Mayor of Komona, I declare the potion contest..."
+    },
+    {
+      "start": 103.42,
+      "end": 105.08,
+      "text": "...open!"
+    },
+    {
+      "start": 106.87,
+      "end": 110.87,
+      "text": "Four young witches are participating in this contest!"
+    },
+    {
+      "start": 111.92,
+      "end": 114.54,
+      "text": "Please give a huge round of applause!"
+    },
+    {
+      "start": 120.62,
+      "end": 124.62,
+      "text": "It is an honor to welcome the ravishing and ingenious witch..."
+    },
+    {
+      "start": 125.21,
+      "end": 127.67,
+      "text": "...from the great Technologist's Union!!!.."
+    },
+    {
+      "start": 128.04,
+      "end": 131.78,
+      "text": "Coriander!"
+    },
+    {
+      "start": 133.04,
+      "end": 137.71,
+      "text": "And don't forget about our local girl, Komona's very own witch..."
+    },
+    {
+      "start": 138.08,
+      "end": 140.96,
+      "text": "Saffron!"
+    },
+    {
+      "start": 146.66,
+      "end": 148.92,
+      "text": "Our third participant..."
+    },
+    {
+      "start": 149.14,
+      "end": 152.58,
+      "text": "...comes to us from the lands of the setting moons..."
+    },
+    {
+      "start": 153.04,
+      "end": 154.92,
+      "text": "...the mysterious..."
+    },
+    {
+      "start": 155.9,
+      "end": 158.34,
+      "text": "...Shichimi!"
+    },
+    {
+      "start": 160.12,
+      "end": 164.52,
+      "text": "And finally our last participant, from the forest of Squirrel's End..."
+    },
+    {
+      "start": 164.82,
+      "end": 166.3,
+      "text": "...Pepper."
+    },
+    {
+      "start": 169.34,
+      "end": 170.78,
+      "text": "Ladies and gentlemen!"
+    },
+    {
+      "start": 170.87,
+      "end": 176.46,
+      "text": "The winner of the grand prize will be determined by applaud-o-meter!"
+    },
+    {
+      "start": 176.58,
+      "end": 180.42,
+      "text": "Let the games begin!"
+    },
+    {
+      "start": 182.58,
+      "end": 187.37,
+      "text": "Well! First up Coriander's demonstration."
+    },
+    {
+      "start": 189.83,
+      "end": 191.5,
+      "text": "Ladies & gentlemen..."
+    },
+    {
+      "start": 191.96,
+      "end": 195.04,
+      "text": "...fear death no more, thanks to my..."
+    },
+    {
+      "start": 195.67,
+      "end": 197.37,
+      "text": "...Potion of Zombification!"
+    },
+    {
+      "start": 207.98,
+      "end": 209.7,
+      "text": "Amazing!"
+    },
+    {
+      "start": 210.56,
+      "end": 217.18,
+      "text": "With this mi-ra-cu-lous potion, Coriander defies death itself!"
+    },
+    {
+      "start": 218.54,
+      "end": 220.62,
+      "text": "Yes-yes-yes..."
+    },
+    {
+      "start": 221.46,
+      "end": 223.52,
+      "text": "A potion of Zombification.."
+    },
+    {
+      "start": 223.92,
+      "end": 225.2,
+      "text": "that's nothing!"
+    },
+    {
+      "start": 225.21,
+      "end": 227.33,
+      "text": "It's time to rate MY potion."
+    },
+    {
+      "start": 227.83,
+      "end": 231.83,
+      "text": "The real potion you've all been waiting for..."
+    },
+    {
+      "start": 236.48,
+      "end": 238.38,
+      "text": "...The Potion of Poshness!"
+    },
+    {
+      "start": 241.12,
+      "end": 243.71,
+      "text": "Fantastic!"
+    },
+    {
+      "start": 243.96,
+      "end": 245.75,
+      "text": "Incredible!"
+    },
+    {
+      "start": 246.29,
+      "end": 250.8,
+      "text": "This potion could make all of Komona rich!"
+    },
+    {
+      "start": 250.96,
+      "end": 253.58,
+      "text": "It seems, Coriander has already been eliminated!"
+    },
+    {
+      "start": 253.87,
+      "end": 257.87,
+      "text": "Will Shichimi be able to beat that last demonstration?"
+    },
+    {
+      "start": 258.83,
+      "end": 262.7,
+      "text": "I... I did not know we had to give a demonstration."
+    },
+    {
+      "start": 263.04,
+      "end": 264.37,
+      "text": "Come on Shichimi!"
+    },
+    {
+      "start": 264.42,
+      "end": 265.79,
+      "text": "Everyone's waiting for you!"
+    },
+    {
+      "start": 266.33,
+      "end": 267.17,
+      "text": "No!.."
+    },
+    {
+      "start": 267.58,
+      "end": 268.12,
+      "text": "I cannot!.."
+    },
+    {
+      "start": 268.46,
+      "end": 270.2,
+      "text": "It is too dangerous!.."
+    },
+    {
+      "start": 270.4,
+      "end": 271.64,
+      "text": "S-sorry!.."
+    },
+    {
+      "start": 272.37,
+      "end": 273.75,
+      "text": "Ladies and gentlemen..."
+    },
+    {
+      "start": 274,
+      "end": 275.5,
+      "text": "...it seems that Shichimi forfeits..."
+    },
+    {
+      "start": 275.54,
+      "end": 276.42,
+      "text": "Give me that!"
+    },
+    {
+      "start": 276.58,
+      "end": 277.37,
+      "text": "CAREFUL!!!"
+    },
+    {
+      "start": 277.66,
+      "end": 279.48,
+      "text": "What could be so dangerous?"
+    },
+    {
+      "start": 279.68,
+      "end": 283.46,
+      "text": "You're just scared because your potion isn't as fantastic as mine!"
+    },
+    {
+      "start": 284.58,
+      "end": 286.9,
+      "text": "No-no, it is a potion of..."
+    },
+    {
+      "start": 287.96,
+      "end": 290.84,
+      "text": "...GIANT MONSTERS!!!"
+    },
+    {
+      "start": 298.1,
+      "end": 299.94,
+      "text": "Mr. Mayor, Mr. Mayor!"
+    },
+    {
+      "start": 300.1,
+      "end": 301.26,
+      "text": "Is it my turn now???"
+    },
+    {
+      "start": 301.28,
+      "end": 302.34,
+      "text": "Run!"
+    },
+    {
+      "start": 307.52,
+      "end": 311.26,
+      "text": "You're lucky, Carrot; It seems nobody will see your wondrous potion..."
+    },
+    {
+      "start": 311.5,
+      "end": 313.6,
+      "text": "She will destroy our town!!!"
+    },
+    {
+      "start": 314.72,
+      "end": 317.76,
+      "text": "Wait, I think I have an idea!"
+    },
+    {
+      "start": 326.06,
+      "end": 326.96,
+      "text": "Hey!"
+    },
+    {
+      "start": 327.44,
+      "end": 330.06,
+      "text": "You oversized-posh-zombie-canary!"
+    },
+    {
+      "start": 330.12,
+      "end": 332.37,
+      "text": "Wanna try one last \"potion\"?"
+    },
+    {
+      "start": 333.42,
+      "end": 334.71,
+      "text": "But first..."
+    },
+    {
+      "start": 334.79,
+      "end": 337,
+      "text": "...read the label!"
+    },
+    {
+      "start": 337.92,
+      "end": 339.48,
+      "text": "Read it carefully!"
+    },
+    {
+      "start": 344.36,
+      "end": 349.92,
+      "text": "If you don't get out of Komona right away, trust me: I'll pour it all over you!"
+    },
+    {
+      "start": 350.58,
+      "end": 351.25,
+      "text": "Understood?!"
+    },
+    {
+      "start": 375.71,
+      "end": 380.74,
+      "text": "Because she saved our town we award first place to..."
+    },
+    {
+      "start": 380.79,
+      "end": 383.04,
+      "text": "...Miss Pepper!"
+    },
+    {
+      "start": 383.24,
+      "end": 385.28,
+      "text": "For her wonderful potion!"
+    },
+    {
+      "start": 386.02,
+      "end": 387.33,
+      "text": "Huh, in fact..."
+    },
+    {
+      "start": 387.58,
+      "end": 389.29,
+      "text": "...it's not really a potion..."
+    },
+    {
+      "start": 389.42,
+      "end": 392.58,
+      "text": "...it's just my cat's pee sample from his last trip to the vet!"
+    },
+    {
+      "start": 393.17,
+      "end": 394.17,
+      "text": "Isn't it, Carrot?"
+    },
+    {
+      "start": 395.71,
+      "end": 396.42,
+      "text": "Meow!"
+    }
+  ],
+  "glossary": {
+    "morevna": "Morevna Project (animasyon stüdyosu)",
+    "ethic": "Ethic Cinema (yapım ortağının adı)",
+    "ufff": "of! (yorgunluk, sıkıntı sesi)",
+    "komona": "Komona (şehrin adı)",
+    "komona's": "Komona'nın (şehrin adı)",
+    "whaaaat": "neee?! (what, şaşkınlıkla uzatılmış)",
+    "caaaaaaarrrrrooooooot": "Caaarrot! (Carrot'a öfkeyle bağırış)",
+    "technologist's": "Technologist's Union: Teknologlar Birliği",
+    "coriander": "Coriander (yarışmacı cadının adı)",
+    "coriander's": "Coriander'ın (yarışmacı cadının adı)",
+    "saffron": "Saffron (yarışmacı cadının adı)",
+    "shichimi": "Shichimi (yarışmacı cadının adı)",
+    "o": "applaud-o-meter: alkışölçer",
+    "mi": "mi-ra-cu-lous: mucizevi (heceleyerek)",
+    "ra": "mi-ra-cu-lous: mucizevi (heceleyerek)",
+    "cu": "mi-ra-cu-lous: mucizevi (heceleyerek)",
+    "lous": "mi-ra-cu-lous: mucizevi (heceleyerek)",
+    "s": "S-sorry: Ö-özür dilerim (kekeleme)"
+  }
+}

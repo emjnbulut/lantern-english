@@ -1,0 +1,789 @@
+{
+  "id": "astronauts-reading-fan-mail",
+  "type": "video",
+  "title": "Astronauts Reading Fan Mail",
+  "creator": "NASA Johnson Space Center",
+  "year": 2022,
+  "level": "B1",
+  "category": "real",
+  "durationSeconds": 410,
+  "genre": "documentary",
+  "summaryTr": "NASA astronotları çocukların gönderdiği mektupları ve çizimleri okuyor: Uzayda peynir var mı? Tavuk nugget nasıl yenir? Astronotlar uzaylılara inanır mı? Samimi, esprili ve gerçek İngilizce konuşmalar.",
+  "levelNoteTr": "B1, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Yedi farklı astronot doğal ve hızlı konuşur; günlük ifadeler ve roket, yörünge gibi uzay kelimeleri vardır.",
+  "advisoryTr": "Tüm yaşlara uygundur.",
+  "videoUrl": "https://images-assets.nasa.gov/video/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL~medium.mp4",
+  "qualities": [
+    {
+      "label": "Standart",
+      "url": "https://images-assets.nasa.gov/video/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL~medium.mp4",
+      "sizeMB": 117
+    },
+    {
+      "label": "Yüksek",
+      "url": "https://images-assets.nasa.gov/video/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL~large.mp4",
+      "sizeMB": 253
+    }
+  ],
+  "source": {
+    "name": "NASA — Astronauts Reading Fan Mail #3",
+    "url": "https://images.nasa.gov/details/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL",
+    "license": "Kamu malı (NASA yapımı, ABD'de telife tabi değil)",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "credit": "NASA Johnson Space Center · Jeanette Epps, Kayla Barron, Kjell Lindgren, Megan McArthur, Zena Cardman, Reid Wiseman, Anil Menon"
+  },
+  "subtitleSource": {
+    "name": "NASA — resmî İngilizce SRT altyazısı",
+    "url": "https://images-assets.nasa.gov/video/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL/jsc2022m000279_Astronauts_Reading_Fan_Mail_3-SOCIAL.srt",
+    "license": "Kamu malı (NASA)",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "changeNoteTr": "NASA'nın tamamı büyük harfli altyazısı okunurluk için normal yazıma çevrildi, kısa parçalar cümle olarak birleştirildi ve bozuk kesme işaretleri düzeltildi; sözler korunmuştur."
+  },
+  "captions": [
+    {
+      "start": 0,
+      "end": 1.701,
+      "text": "Hi, my name is Jeanette Epps."
+    },
+    {
+      "start": 1.701,
+      "end": 3.57,
+      "text": "Hi, I'm NASA astronaut, Kayla Barron."
+    },
+    {
+      "start": 3.57,
+      "end": 7.107,
+      "text": "I am NASA astronaut Kjell Lindgren, and I just got back from the International"
+    },
+    {
+      "start": 7.107,
+      "end": 8.408,
+      "text": "Space Station a few weeks ago."
+    },
+    {
+      "start": 8.408,
+      "end": 12.112,
+      "text": "It's awesome to be back with my family and friends, to be back here on the Earth."
+    },
+    {
+      "start": 12.112,
+      "end": 16.182,
+      "text": "I do love to get real letters, whether it's at home or at work or even in space"
+    },
+    {
+      "start": 16.182,
+      "end": 19.986,
+      "text": "we get cards and letters delivered from family from time to time, which is so exciting."
+    },
+    {
+      "start": 19.986,
+      "end": 24.29,
+      "text": "And this year we'd like to thank all the students who sent in letters and notes to us."
+    },
+    {
+      "start": 24.29,
+      "end": 27.527,
+      "text": "And this is one of my favorite things to do is to read your letters."
+    },
+    {
+      "start": 27.527,
+      "end": 29.329,
+      "text": "So let's get to it."
+    },
+    {
+      "start": 36.202,
+      "end": 38.438,
+      "text": "The first time you went into space, how did it feel?"
+    },
+    {
+      "start": 38.438,
+      "end": 40.173,
+      "text": "Were you scared or happy?"
+    },
+    {
+      "start": 40.173,
+      "end": 43.309,
+      "text": "My first space launch was incredible."
+    },
+    {
+      "start": 43.309,
+      "end": 46.913,
+      "text": "We were super well prepared, so I think for the most part we were just"
+    },
+    {
+      "start": 46.913,
+      "end": 50.75,
+      "text": "executing the procedures, doing the job we had practiced doing."
+    },
+    {
+      "start": 50.75,
+      "end": 55.455,
+      "text": "But as we counted down, you know, the famous countdown from ten, nine, eight up to that"
+    },
+    {
+      "start": 55.455,
+      "end": 58.691,
+      "text": "moment of launch, the rocket engines light underneath us."
+    },
+    {
+      "start": 58.691,
+      "end": 63.029,
+      "text": "And there's kind of this magic moment where you hang in the air, you're just off"
+    },
+    {
+      "start": 63.029,
+      "end": 66.332,
+      "text": "the launch pad, and you can feel that you're starting to travel to space, but you haven't"
+    },
+    {
+      "start": 66.332,
+      "end": 68.134,
+      "text": "really started accelerating yet."
+    },
+    {
+      "start": 68.134,
+      "end": 72.005,
+      "text": "And in that moment, I was just flooded with pure joy."
+    },
+    {
+      "start": 72.005,
+      "end": 76.843,
+      "text": "I was just so excited that my journey was finally starting and so excited to do it"
+    },
+    {
+      "start": 76.843,
+      "end": 79.679,
+      "text": "with my teammates, my crew and our team around the world."
+    },
+    {
+      "start": 79.679,
+      "end": 85.051,
+      "text": "And so, yeah, it was I was happy more than anything else."
+    },
+    {
+      "start": 85.051,
+      "end": 87.42,
+      "text": "What do we have in here?"
+    },
+    {
+      "start": 87.62,
+      "end": 91.091,
+      "text": "Look at this."
+    },
+    {
+      "start": 91.091,
+      "end": 92.692,
+      "text": "That's so good."
+    },
+    {
+      "start": 92.692,
+      "end": 94.06,
+      "text": "I'm going to put that on my refrigerator."
+    },
+    {
+      "start": 94.06,
+      "end": 95.462,
+      "text": "Oh, look at this."
+    },
+    {
+      "start": 95.462,
+      "end": 97.097,
+      "text": "This makes my day."
+    },
+    {
+      "start": 97.097,
+      "end": 97.73,
+      "text": "How great is that?"
+    },
+    {
+      "start": 97.73,
+      "end": 99.866,
+      "text": "That's going up on the wall for sure."
+    },
+    {
+      "start": 99.866,
+      "end": 102.035,
+      "text": "I love those colors. Love it."
+    },
+    {
+      "start": 102.469,
+      "end": 105.905,
+      "text": "I had a bowl of cereal and milk for breakfast and chili for lunch."
+    },
+    {
+      "start": 105.905,
+      "end": 108.508,
+      "text": "And every now and then you open these up and you learn what, like,"
+    },
+    {
+      "start": 108.508,
+      "end": 109.542,
+      "text": "somebody's favorite food is."
+    },
+    {
+      "start": 109.542,
+      "end": 111.644,
+      "text": "Is there cheese to eat in your spaceship?"
+    },
+    {
+      "start": 111.644,
+      "end": 112.479,
+      "text": "I love cheese."
+    },
+    {
+      "start": 112.479,
+      "end": 113.646,
+      "text": "Oh, my gosh. Me too."
+    },
+    {
+      "start": 113.646,
+      "end": 118.084,
+      "text": "Actually, it's really hard to send cheese to space because it goes bad pretty quickly."
+    },
+    {
+      "start": 118.084,
+      "end": 121.187,
+      "text": "But you can send some hard cheeses to space, so I really hope that"
+    },
+    {
+      "start": 121.187,
+      "end": 122.555,
+      "text": "that's there in my spaceship."
+    },
+    {
+      "start": 122.555,
+      "end": 124.457,
+      "text": "Sara says."
+    },
+    {
+      "start": 124.457,
+      "end": 129.462,
+      "text": "I think space is very cool, but I think space ice cream would be the best part."
+    },
+    {
+      "start": 129.462,
+      "end": 134.634,
+      "text": "Sara, you know all that there is to know because you're absolutely right, space"
+    },
+    {
+      "start": 134.634,
+      "end": 136.536,
+      "text": "ice cream is very cool and cold."
+    },
+    {
+      "start": 136.536,
+      "end": 138.338,
+      "text": "Do you like chicken nuggets?"
+    },
+    {
+      "start": 138.338,
+      "end": 139.706,
+      "text": "I love all chicken nuggets."
+    },
+    {
+      "start": 139.706,
+      "end": 142.242,
+      "text": "I'm sure there's somebody out there that does not like chicken nuggets,"
+    },
+    {
+      "start": 142.242,
+      "end": 143.176,
+      "text": "but that is not me."
+    },
+    {
+      "start": 143.176,
+      "end": 147.147,
+      "text": "So I think the bigger chicken nugget question is, how do you eat your chicken nuggets?"
+    },
+    {
+      "start": 147.147,
+      "end": 149.215,
+      "text": "With a fork, and knife, dip them in ketchup?"
+    },
+    {
+      "start": 149.215,
+      "end": 151.651,
+      "text": "Are you kind of a mayonnaise or a mustard person?"
+    },
+    {
+      "start": 151.651,
+      "end": 154.854,
+      "text": "Or is it just straight up, I've got 18 chicken nuggets in front of me"
+    },
+    {
+      "start": 154.854,
+      "end": 157.223,
+      "text": "and I'm getting after it all right now?"
+    },
+    {
+      "start": 157.223,
+      "end": 160.593,
+      "text": "So I don't care how you eat yours, but I'll tell you how I eat mine."
+    },
+    {
+      "start": 160.593,
+      "end": 161.895,
+      "text": "I definitely like chicken nuggets."
+    },
+    {
+      "start": 161.895,
+      "end": 164.364,
+      "text": "I like a little bit of ketchup and I definitely use my fingers."
+    },
+    {
+      "start": 164.364,
+      "end": 169.702,
+      "text": "It's a great question and I hope you have a wonderful holiday season, Charlie."
+    },
+    {
+      "start": 169.702,
+      "end": 172.071,
+      "text": "So what type of rocket ship did you go on?"
+    },
+    {
+      "start": 172.071,
+      "end": 176.509,
+      "text": "Well, this most recent mission, I flew in a Crew Dragon capsule"
+    },
+    {
+      "start": 176.509,
+      "end": 178.578,
+      "text": "on top of a Falcon-9 rocket."
+    },
+    {
+      "start": 178.578,
+      "end": 179.746,
+      "text": "It was absolutely amazing."
+    },
+    {
+      "start": 179.746,
+      "end": 183.116,
+      "text": "We launched from Kennedy Space Center and we were in low Earth orbit"
+    },
+    {
+      "start": 183.116,
+      "end": 184.417,
+      "text": "in less than nine minutes."
+    },
+    {
+      "start": 184.417,
+      "end": 188.221,
+      "text": "Now, my first mission about seven years ago, I launched in a Soyuz capsule"
+    },
+    {
+      "start": 188.221,
+      "end": 192.225,
+      "text": "on a Soyuz rocket out of baikonur cosmodrome in Kazakhstan."
+    },
+    {
+      "start": 192.225,
+      "end": 196.496,
+      "text": "I launched with our Russian partners and, and that was my first flight."
+    },
+    {
+      "start": 196.496,
+      "end": 201.034,
+      "text": "And so it was really cool to have that experience of flying into space"
+    },
+    {
+      "start": 201.034,
+      "end": 202.936,
+      "text": "on two different types of rockets."
+    },
+    {
+      "start": 202.936,
+      "end": 204.671,
+      "text": "What's your favorite thing about your job?"
+    },
+    {
+      "start": 204.671,
+      "end": 209.842,
+      "text": "Well, Piper, one of my favorite things about my job is that I continue to learn new things"
+    },
+    {
+      "start": 209.842,
+      "end": 210.81,
+      "text": "just about every day."
+    },
+    {
+      "start": 210.81,
+      "end": 215.081,
+      "text": "Flying in the T-38, doing robotics, just about everything that we do here."
+    },
+    {
+      "start": 215.081,
+      "end": 216.549,
+      "text": "There's always something new going on."
+    },
+    {
+      "start": 216.549,
+      "end": 217.283,
+      "text": "And I like to learn."
+    },
+    {
+      "start": 217.283,
+      "end": 217.784,
+      "text": "This is cool."
+    },
+    {
+      "start": 217.784,
+      "end": 219.452,
+      "text": "This is a launch pad."
+    },
+    {
+      "start": 219.452,
+      "end": 220.954,
+      "text": "Look at that."
+    },
+    {
+      "start": 220.987,
+      "end": 222.956,
+      "text": "Very detailed from Gabe."
+    },
+    {
+      "start": 222.956,
+      "end": 224.49,
+      "text": "Gabe, that's awesome."
+    },
+    {
+      "start": 224.49,
+      "end": 224.857,
+      "text": "I see."
+    },
+    {
+      "start": 224.857,
+      "end": 226.259,
+      "text": "We got the, we got the pad here."
+    },
+    {
+      "start": 226.259,
+      "end": 230.93,
+      "text": "We got the gantry that we walk across into the capsule there with the astronauts inside."
+    },
+    {
+      "start": 230.93,
+      "end": 233.166,
+      "text": "That is a great drawing, Gabe. Good job."
+    },
+    {
+      "start": 233.166,
+      "end": 235.101,
+      "text": "Can you feel heat in the spaceship?"
+    },
+    {
+      "start": 235.101,
+      "end": 236.703,
+      "text": "Especially when we're coming home?"
+    },
+    {
+      "start": 236.703,
+      "end": 238.738,
+      "text": "The- our spacecraft gets really hot."
+    },
+    {
+      "start": 238.738,
+      "end": 242.842,
+      "text": "That's why we have a heat shield that protects us as our spacecraft starts to travel"
+    },
+    {
+      "start": 242.842,
+      "end": 243.643,
+      "text": "through the atmosphere."
+    },
+    {
+      "start": 243.643,
+      "end": 247.914,
+      "text": "Because all of that resistance of the gases in the atmosphere really cause the,"
+    },
+    {
+      "start": 247.914,
+      "end": 249.249,
+      "text": "the craft to heat up."
+    },
+    {
+      "start": 249.249,
+      "end": 253.086,
+      "text": "But we're in suits that give us cooling, so they keep our bodies cool."
+    },
+    {
+      "start": 253.086,
+      "end": 255.121,
+      "text": "And it's kind of like you have air conditioning."
+    },
+    {
+      "start": 255.121,
+      "end": 258.791,
+      "text": "So even though the vehicle gets really hot, the spaceship gets really hot, we stay at a"
+    },
+    {
+      "start": 258.791,
+      "end": 259.792,
+      "text": "comfortable temperature."
+    },
+    {
+      "start": 259.792,
+      "end": 261.861,
+      "text": "What types of things do we do in outer space?"
+    },
+    {
+      "start": 261.861,
+      "end": 267.133,
+      "text": "Right now we're in low-Earth orbit, so that's where the space station is."
+    },
+    {
+      "start": 267.133,
+      "end": 268.901,
+      "text": "We do two main things there."
+    },
+    {
+      "start": 268.901,
+      "end": 274.641,
+      "text": "One is to keep it functioning and keep it working because it's a complex machine there"
+    },
+    {
+      "start": 274.641,
+      "end": 275.908,
+      "text": "in low-Earth orbit."
+    },
+    {
+      "start": 275.908,
+      "end": 279.479,
+      "text": "The other thing we do is we do research there and a lot of our time"
+    },
+    {
+      "start": 279.479,
+      "end": 284.684,
+      "text": "is trying to understand the human body, understand different things that we need to take"
+    },
+    {
+      "start": 284.684,
+      "end": 290.089,
+      "text": "the next step to the Moon to stay and after that to Mars."
+    },
+    {
+      "start": 290.089,
+      "end": 293.826,
+      "text": "And so to keep exploring, we have to keep learning."
+    },
+    {
+      "start": 293.826,
+      "end": 297.33,
+      "text": "I love not knowing what is inside each of these letters."
+    },
+    {
+      "start": 297.33,
+      "end": 299.299,
+      "text": "And this one from Evan is really cool."
+    },
+    {
+      "start": 299.299,
+      "end": 301.034,
+      "text": "The drawings are always my favorite."
+    },
+    {
+      "start": 301.034,
+      "end": 308.141,
+      "text": "From Abigail in Saint George, Utah used a really awesome cat astronaut sticker here"
+    },
+    {
+      "start": 308.141,
+      "end": 310.61,
+      "text": "who doesn't love a cat on a flying saucer?"
+    },
+    {
+      "start": 310.61,
+      "end": 312.445,
+      "text": "Do astronauts believe in aliens?"
+    },
+    {
+      "start": 312.445,
+      "end": 313.613,
+      "text": "Well, that's a good question."
+    },
+    {
+      "start": 313.613,
+      "end": 314.18,
+      "text": "I don't know."
+    },
+    {
+      "start": 314.18,
+      "end": 316.716,
+      "text": "Some maybe do and some maybe don't."
+    },
+    {
+      "start": 316.716,
+      "end": 320.286,
+      "text": "I think it would be amazing to discover aliens in our lifetime."
+    },
+    {
+      "start": 320.286,
+      "end": 323.456,
+      "text": "From my perspective, aliens probably don't look like little green men,"
+    },
+    {
+      "start": 323.456,
+      "end": 327.86,
+      "text": "but they might be like tiny microorganisms that live or used to live on a planet"
+    },
+    {
+      "start": 327.86,
+      "end": 328.561,
+      "text": "like Mars."
+    },
+    {
+      "start": 328.561,
+      "end": 331.898,
+      "text": "Unequivocally, 100%, I believe in aliens."
+    },
+    {
+      "start": 331.898,
+      "end": 335.702,
+      "text": "There is no way that you can be on the space station going around the Earth"
+    },
+    {
+      "start": 335.702,
+      "end": 340.54,
+      "text": "and look out at night and see millions of stars and not think for certain."
+    },
+    {
+      "start": 340.54,
+      "end": 343.576,
+      "text": "There are aliens out there and people ask me if I've ever seen an alien."
+    },
+    {
+      "start": 343.576,
+      "end": 345.378,
+      "text": "And I say absolutely. 100%."
+    },
+    {
+      "start": 345.378,
+      "end": 347.88,
+      "text": "I've seen aliens because you're looking at them every night."
+    },
+    {
+      "start": 347.88,
+      "end": 353.152,
+      "text": "When you look out in the night sky, somewhere out there, there is some crazy civilization"
+    },
+    {
+      "start": 353.152,
+      "end": 355.588,
+      "text": "doing some crazy work that we haven't discovered yet."
+    },
+    {
+      "start": 355.588,
+      "end": 356.656,
+      "text": "I know it is out there."
+    },
+    {
+      "start": 356.656,
+      "end": 359.359,
+      "text": "Thank you all so much for the letters that you write to us."
+    },
+    {
+      "start": 359.359,
+      "end": 363.262,
+      "text": "It means so much to receive them and I love reading every single one."
+    },
+    {
+      "start": 363.262,
+      "end": 364.43,
+      "text": "Thank you."
+    },
+    {
+      "start": 364.43,
+      "end": 367.6,
+      "text": "These letters are the rocket fuel that we use."
+    },
+    {
+      "start": 367.6,
+      "end": 369.135,
+      "text": "This is what keeps us going."
+    },
+    {
+      "start": 369.135,
+      "end": 373.573,
+      "text": "So please don't stop sending them, please keep sending them and help us push this"
+    },
+    {
+      "start": 373.573,
+      "end": 374.34,
+      "text": "mission forward."
+    },
+    {
+      "start": 374.34,
+      "end": 376.342,
+      "text": "Because it's super important."
+    },
+    {
+      "start": 376.342,
+      "end": 377.143,
+      "text": "Thank you."
+    },
+    {
+      "start": 377.143,
+      "end": 380.847,
+      "text": "Thanks, everybody, for all your letters and your awesome questions."
+    },
+    {
+      "start": 380.847,
+      "end": 386.486,
+      "text": "The curiosity is awesome and I hope you stay engaged and thinking about how the world"
+    },
+    {
+      "start": 386.486,
+      "end": 387.787,
+      "text": "and the universe works."
+    },
+    {
+      "start": 387.787,
+      "end": 388.821,
+      "text": "Thank you for your letters."
+    },
+    {
+      "start": 388.821,
+      "end": 389.856,
+      "text": "Keep them coming."
+    },
+    {
+      "start": 389.856,
+      "end": 391.224,
+      "text": "Have a great holiday."
+    },
+    {
+      "start": 391.224,
+      "end": 395.161,
+      "text": "I am so thankful to be back here on Earth with my family and friends"
+    },
+    {
+      "start": 395.161,
+      "end": 399.866,
+      "text": "and I wish you all the best this holiday season as you spend time with your family,"
+    },
+    {
+      "start": 399.866,
+      "end": 403.136,
+      "text": "with your friends on our incredible planet, our home, the Earth."
+    }
+  ],
+  "glossary": {
+    "jeanette": "Jeanette Epps (NASA astronotu)",
+    "epps": "Jeanette Epps (NASA astronotu)",
+    "nasa": "NASA (ABD Ulusal Havacılık ve Uzay Dairesi)",
+    "kayla": "Kayla Barron (NASA astronotu)",
+    "barron": "Kayla Barron (NASA astronotu)",
+    "kjell": "Kjell Lindgren (NASA astronotu)",
+    "lindgren": "Kjell Lindgren (NASA astronotu)",
+    "sara": "Sara (mektup yazan çocuğun adı)",
+    "charlie": "Charlie (mektup yazan çocuğun adı)",
+    "gabe": "Gabe (mektup yazan çocuğun adı)",
+    "evan": "Evan (mektup yazan çocuğun adı)",
+    "abigail": "Abigail (mektup yazan çocuğun adı)",
+    "kennedy": "Kennedy Uzay Merkezi (Florida'daki fırlatma üssü)",
+    "soyuz": "Soyuz (Rus uzay kapsülü ve roketi)",
+    "baikonur": "Baykonur (Kazakistan'daki uzay üssü)",
+    "cosmodrome": "kozmodrom, uzay üssü",
+    "kazakhstan": "Kazakistan",
+    "utah": "Utah (ABD'de bir eyalet)",
+    "t": "T-38 (astronotların eğitim uçağı)"
+  }
+}

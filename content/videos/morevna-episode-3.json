@@ -1,0 +1,355 @@
+{
+  "id": "morevna-episode-3",
+  "type": "video",
+  "title": "Morevna: Episode 3 — Underground",
+  "creator": "Morevna Project",
+  "year": 2018,
+  "level": "B1",
+  "category": "adventure",
+  "durationSeconds": 617,
+  "genre": "fantasy",
+  "summaryTr": "Rus masalı Marya Morevna'nın bilim kurgu dünyasında geçen anime tarzı uyarlaması. Marya malikânesinden çıkarken tamirci Ivan'a tüm anahtarları bırakır ve tek bir kapıyı açmamasını tembihler. Ivan merakına yenik düşer.",
+  "levelNoteTr": "B1, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Konuşmalar kısa ama hızlıdır; telsiz konuşmaları, emir cümleleri ve teknik kelimeler vardır.",
+  "advisoryTr": "Çizgi film tarzı dövüş ve silah sahneleri, hafif argo (\"damn\") içerir. Dizinin 3. bölümüdür ve merak uyandıran açık bir sonla biter.",
+  "videoUrl": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-720.mp4",
+  "qualities": [
+    {
+      "label": "360p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-360.mp4",
+      "sizeMB": 29
+    },
+    {
+      "label": "720p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-720.mp4",
+      "sizeMB": 59
+    },
+    {
+      "label": "1080p",
+      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-1080.mp4",
+      "sizeMB": 112
+    }
+  ],
+  "source": {
+    "name": "Morevna Project — Morevna Episode 3 (English)",
+    "url": "https://morevnaproject.org/",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Morevna Project · Adamant Art School of Gorno-Altaisk ile birlikte",
+    "watchUrl": "https://peertube.touhoppai.moe/videos/watch/4adb3a75-6784-4e99-8a5d-66d13578ba9d"
+  },
+  "subtitleSource": {
+    "name": "Morevna Project — İngilizce SRT altyazısı",
+    "url": "https://raw.githubusercontent.com/morevnaproject/subtitles-translation/master/output/morevna-ep3/morevna-ep3-eng.srt",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "changeNoteTr": "Altyazı sözleri korunmuş; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür."
+  },
+  "captions": [
+    {
+      "start": 0.36,
+      "end": 2.4,
+      "text": "Morevna Project..."
+    },
+    {
+      "start": 2.88,
+      "end": 7,
+      "text": "...in association with \"Adamant\" Art School of Gorno-Altaisk..."
+    },
+    {
+      "start": 7.44,
+      "end": 9.24,
+      "text": "presents"
+    },
+    {
+      "start": 26.4,
+      "end": 30.4,
+      "text": "\"Falcon\", \"Falcon\", respond. This is \"Hawk\". What's your status?"
+    },
+    {
+      "start": 55,
+      "end": 57.68,
+      "text": "Hey officer, can I help you somehow?"
+    },
+    {
+      "start": 59.92,
+      "end": 61.56,
+      "text": "Stay away, stay away!"
+    },
+    {
+      "start": 61.72,
+      "end": 63.6,
+      "text": "I am a government agent!"
+    },
+    {
+      "start": 64.56,
+      "end": 67.12,
+      "text": "I know, I know..."
+    },
+    {
+      "start": 67.84,
+      "end": 70.56,
+      "text": "And I am the owner of this mansion."
+    },
+    {
+      "start": 72.96,
+      "end": 78.96,
+      "text": "Episode 3: Underground"
+    },
+    {
+      "start": 99.48,
+      "end": 105.04,
+      "text": "Ah, Marya Morevna, I just don't get it. We aren't that rich..."
+    },
+    {
+      "start": 105.8,
+      "end": 109.56,
+      "text": "...but they are coming here like bees to a..."
+    },
+    {
+      "start": 109.8,
+      "end": 111.36,
+      "text": "...honeypot!"
+    },
+    {
+      "start": 111.8,
+      "end": 113.56,
+      "text": "I am not a bee, I am a \"Hawk\"."
+    },
+    {
+      "start": 113.84,
+      "end": 115.6,
+      "text": "Spread your wings, Hawk."
+    },
+    {
+      "start": 118.36,
+      "end": 120.36,
+      "text": "But it seems like you're having fun."
+    },
+    {
+      "start": 120.64,
+      "end": 122.2,
+      "text": "Of course I am!"
+    },
+    {
+      "start": 122.64,
+      "end": 125.16,
+      "text": "But still, why did you drop my favorite toolbox on him?"
+    },
+    {
+      "start": 141.16,
+      "end": 144.72,
+      "text": "I just can't figure out what you did to them if they're after you so much..."
+    },
+    {
+      "start": 145.16,
+      "end": 147.16,
+      "text": "I have no idea."
+    },
+    {
+      "start": 147.72,
+      "end": 149.28,
+      "text": "Going somewhere?"
+    },
+    {
+      "start": 149.6,
+      "end": 152.24,
+      "text": "I am going to a biker party, and I won't be back until tomorrow."
+    },
+    {
+      "start": 152.44,
+      "end": 155.16,
+      "text": "Dinner on plate, firewood in shed, dog food under sink..."
+    },
+    {
+      "start": 155.44,
+      "end": 156.68,
+      "text": "Do we have dogs here?"
+    },
+    {
+      "start": 156.92,
+      "end": 161.68,
+      "text": "...in case of a power outage, turn on the electric generator and don't forget to restart the air defense system."
+    },
+    {
+      "start": 161.88,
+      "end": 164.12,
+      "text": "Here are the keys to all of the doors in the mansion."
+    },
+    {
+      "start": 164.24,
+      "end": 168.56,
+      "text": "Feel free to go anywhere, but don't touch this key and don't unlock the door."
+    },
+    {
+      "start": 168.84,
+      "end": 169.6,
+      "text": "But why?"
+    },
+    {
+      "start": 169.84,
+      "end": 172.16,
+      "text": "Just don't!"
+    },
+    {
+      "start": 173.36,
+      "end": 175.12,
+      "text": "Well, bye..."
+    },
+    {
+      "start": 191.2,
+      "end": 195.76,
+      "text": "So dear, now I can have some fun with you then."
+    },
+    {
+      "start": 233,
+      "end": 235.44,
+      "text": "Hm, it seems this lovely evening is in danger."
+    },
+    {
+      "start": 242.36,
+      "end": 246.68,
+      "text": "Stay here, I'll be right back."
+    },
+    {
+      "start": 248.68,
+      "end": 251.24,
+      "text": "Caption on the door: \"Cellar\""
+    },
+    {
+      "start": 277.2,
+      "end": 279.4,
+      "text": "Aha, here it is!"
+    },
+    {
+      "start": 285.84,
+      "end": 287.2,
+      "text": "What?"
+    },
+    {
+      "start": 297.72,
+      "end": 299.84,
+      "text": "Could it be..."
+    },
+    {
+      "start": 303.12,
+      "end": 307.08,
+      "text": "...feel free to go anywhere, but don't touch this key..."
+    },
+    {
+      "start": 353.32,
+      "end": 355.68,
+      "text": "Hey, is anybody here?"
+    },
+    {
+      "start": 358.04,
+      "end": 360.92,
+      "text": "There is something wrong with your engine here."
+    },
+    {
+      "start": 364.32,
+      "end": 366.8,
+      "text": "Damn you…"
+    },
+    {
+      "start": 367.52,
+      "end": 370.36,
+      "text": "Ah? Who is it?"
+    },
+    {
+      "start": 374.28,
+      "end": 377.32,
+      "text": "Come on..."
+    },
+    {
+      "start": 381.52,
+      "end": 386.28,
+      "text": "My name is Ivan Tsarevich... and I am very good at fixing things."
+    },
+    {
+      "start": 390.04,
+      "end": 391.64,
+      "text": "Inside..."
+    },
+    {
+      "start": 398.96,
+      "end": 401.16,
+      "text": "There..."
+    },
+    {
+      "start": 405.12,
+      "end": 410.4,
+      "text": "The framework is quite unusual. It will be a challenge to get inside."
+    },
+    {
+      "start": 411.8,
+      "end": 414.12,
+      "text": "So, let's start!"
+    },
+    {
+      "start": 418.24,
+      "end": 420.84,
+      "text": "Yes..."
+    },
+    {
+      "start": 423.92,
+      "end": 426.4,
+      "text": "Excellent..."
+    },
+    {
+      "start": 428.96,
+      "end": 431.12,
+      "text": "Well done."
+    },
+    {
+      "start": 434.4,
+      "end": 437.6,
+      "text": "Certainly, you've got talent..."
+    },
+    {
+      "start": 439.16,
+      "end": 442.24,
+      "text": "This is not the hardest one..."
+    },
+    {
+      "start": 442.48,
+      "end": 446.08,
+      "text": "Still, it's quite strange that it's so tricky to open this thing..."
+    },
+    {
+      "start": 452.56,
+      "end": 453.72,
+      "text": "Well, that's all."
+    },
+    {
+      "start": 454.6,
+      "end": 457.24,
+      "text": "Open Sesame!"
+    },
+    {
+      "start": 480.72,
+      "end": 485.48,
+      "text": "What's up? You are almost there!"
+    },
+    {
+      "start": 486.16,
+      "end": 494.52,
+      "text": "I don't know... there seems to be some piece of paper here... I'm going to remove it now."
+    },
+    {
+      "start": 574.88,
+      "end": 576.04,
+      "text": "Oh, no..."
+    }
+  ],
+  "glossary": {
+    "morevna": "Morevna (Marya Morevna, Rus masal kahramanı)",
+    "marya": "Marya Morevna (Rus masal kahramanı)",
+    "adamant": "Adamant (sanat okulunun adı)",
+    "gorno": "Gorno-Altaysk (Rusya'da bir şehir)",
+    "altaisk": "Gorno-Altaysk (Rusya'da bir şehir)",
+    "ivan": "Ivan Tsarevich (masaldaki prens)",
+    "tsarevich": "Tsarevich: çar oğlu, prens",
+    "hm": "hımm (düşünme sesi)",
+    "sesame": "Open Sesame: Açıl susam açıl!"
+  }
+}

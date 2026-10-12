@@ -212,8 +212,14 @@ h1, h2, h3 { font-family: var(--f-display); font-weight: 400; text-wrap: balance
 
 /* ---------- reader ---------- */
 /* One trial film; media is requested only after an explicit play action. */
-.video-grid { max-width: 680px; }
-.video-card { display: grid; grid-template-columns: 180px minmax(0, 1fr); text-decoration: none; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); }
+.video-cats { margin: 4px 0 30px; }
+.chip-n { color: var(--fg-3); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chip[aria-pressed="true"] .chip-n { color: inherit; opacity: .7; }
+.video-shelf { margin-bottom: 44px; }
+.video-shelf .section-head span { color: var(--fg-3); font-size: 14px; }
+.video-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 460px), 1fr)); gap: 16px; }
+.video-card { display: grid; grid-template-columns: 132px minmax(0, 1fr); text-decoration: none; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: var(--bg-2); }
+.video-card-body h3 { font-family: var(--f-display); font-weight: 400; font-size: 24px; line-height: 1.2; margin-top: 12px; color: var(--fg); }
 .video-card:hover { border-color: var(--accent); background: var(--bg-3); }
 .video-art { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; min-height: 210px; color: var(--accent); background: radial-gradient(ellipse at center, #3c302b, #181c25 75%); }
 .video-art svg { width: 52px; height: 52px; }
@@ -391,7 +397,9 @@ kbd { font: 600 12px var(--f-ui); background: var(--bg-3); border: 1px solid var
 @media (max-width: 600px) {
   :root { --read-size: 18px; }
   .video-card { grid-template-columns: 1fr; }
-  .video-art { min-height: 140px; }
+  .video-art { min-height: 76px; flex-direction: row; gap: 10px; }
+  .video-art svg { width: 30px; height: 30px; }
+  .video-shelf { margin-bottom: 34px; }
   .video-card-body { padding: 20px; }
   .video-placeholder { min-height: 240px; padding: 20px; }
   .caption-panel { padding: 18px; }
@@ -454,9 +462,9 @@ a, button, .chip, .card, .opt, .w, .flash { touch-action: manipulation; }
 @media (max-width: 600px) {
   .filters { padding: 12px; gap: 8px; }
   .filter-row { grid-template-columns: 1fr; gap: 4px; }
-  .filters .chips, .collection-switch { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin-left: -12px; margin-right: -12px; padding: 2px 12px; }
-  .filters .chips::-webkit-scrollbar, .collection-switch::-webkit-scrollbar { display: none; }
-  .filters .chip, .collection-switch a { flex-shrink: 0; white-space: nowrap; }
+  .filters .chips, .collection-switch, .video-cats { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; margin-left: -12px; margin-right: -12px; padding: 2px 12px; }
+  .filters .chips::-webkit-scrollbar, .collection-switch::-webkit-scrollbar, .video-cats::-webkit-scrollbar { display: none; }
+  .filters .chip, .collection-switch a, .video-cats .chip { flex-shrink: 0; white-space: nowrap; }
   .recs { padding: 14px; }
 }
 

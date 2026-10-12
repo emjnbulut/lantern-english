@@ -583,7 +583,7 @@
         <div class="collection-grid">
           <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · ${STORIES.length} hikâye</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
           <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · ${ARTICLES.length} makale</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
-          ${VIDEOS.length ? `<a class="collection-link videos-link" href="#videos"><span class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</span><h2>Videolar</h2><p>İngilizce kısa film izle. Altyazıdaki kelimelere dokun, Türkçe anlamlarını gör.</p><span class="link">Deneme videosunu izle →</span></a>` : ""}
+          ${VIDEOS.length ? `<a class="collection-link videos-link" href="#videos"><span class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</span><h2>Videolar</h2><p>Animasyon, bilim kurgu, macera ve astronotlar: İngilizce izle, altyazıdaki kelimelere dokun, Türkçe anlamlarını gör.</p><span class="link">Videolara göz at →</span></a>` : ""}
         </div>
       </section>
 
@@ -635,14 +635,44 @@
   // Videos have their own collection and never become reading bookmarks.
   const videoTime = (seconds) => Math.floor(seconds / 60) + ":" + String(Math.floor(seconds % 60)).padStart(2, "0");
 
+  // Shelves on #videos, in display order. Keep ids in sync with VIDEO_CATEGORIES in tools/video-content.mjs.
+  const VIDEO_CATEGORIES = [
+    { id: "fun", label: "Eğlenceli", note: "Gülümseten kısa animasyonlar" },
+    { id: "adventure", label: "Macera ve fantastik", note: "Ejderhalar, sırlar ve masal dünyaları" },
+    { id: "scifi", label: "Bilim kurgu", note: "Gelecek, robotlar ve tuhaf dünyalar" },
+    { id: "real", label: "Gerçek hayat ve uzay", note: "Astronotlar ve bilim insanları anlatıyor" },
+  ];
+  const videoCategory = (v) => VIDEO_CATEGORIES.find((c) => c.id === v.category) || VIDEO_CATEGORIES[0];
+  const levelRank = (id) => LEVELS.findIndex((l) => l.id === id);
+
+  function videoCard(v) {
+    return `<a class="video-card" href="#v.${esc(v.id)}">
+        <div class="video-art" aria-hidden="true">${ICON.play}<span>İzle</span></div>
+        <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${videoTime(v.durationSeconds)}</span></div>
+          <h3>${esc(v.title)}</h3><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><span class="link">İzlemeye başla →</span></div>
+      </a>`;
+  }
+
   function viewVideos() {
-    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren</p><h1>Videolar</h1>
-      <p class="lead">İngilizce kısa filmler. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div></div>
-      <div class="video-grid">${VIDEOS.map((v) => `<a class="video-card" href="#v.${esc(v.id)}">
-        <div class="video-art" aria-hidden="true">${ICON.play}<span>Kısa film</span></div>
-        <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
-          <h2>${esc(v.title)}</h2><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><span class="link">İzlemeye başla →</span></div>
-      </a>`).join("") || '<div class="empty"><h3>Henüz video yok</h3></div>'}</div>`;
+    let current = "all";
+    const shelves = VIDEO_CATEGORIES.map((c) => ({ ...c, list: VIDEOS.filter((v) => videoCategory(v).id === c.id)
+      .sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.durationSeconds - b.durationSeconds) })).filter((c) => c.list.length);
+    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</p><h1>Videolar</h1>
+      <p class="lead">İngilizce kısa filmler ve videolar. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div></div>
+      <div class="video-cats chips" role="group" aria-label="Video türü">
+        <button class="chip" type="button" data-video-cat="all" aria-pressed="true">Tümü <span class="chip-n">${VIDEOS.length}</span></button>
+        ${shelves.map((c) => `<button class="chip" type="button" data-video-cat="${c.id}" aria-pressed="false">${esc(c.label)} <span class="chip-n">${c.list.length}</span></button>`).join("")}
+      </div>
+      <div id="video-shelves">${shelves.map((c) => `<section class="video-shelf" data-shelf="${c.id}" aria-labelledby="shelf-${c.id}">
+        <div class="section-head"><h2 id="shelf-${c.id}">${esc(c.label)}</h2><span>${esc(c.note)}</span></div>
+        <div class="video-grid">${c.list.map(videoCard).join("")}</div></section>`).join("") || '<div class="empty"><h3>Henüz video yok</h3></div>'}</div>`;
+    $main.querySelector(".video-cats").addEventListener("click", (ev) => {
+      const b = ev.target.closest("[data-video-cat]");
+      if (!b) return;
+      current = b.dataset.videoCat;
+      $main.querySelectorAll("[data-video-cat]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.videoCat === current));
+      $main.querySelectorAll(".video-shelf").forEach((s) => { s.hidden = current !== "all" && s.dataset.shelf !== current; });
+    });
   }
 
   function viewVideo(id) {
@@ -653,7 +683,7 @@
     }
     $main.innerHTML = `<article class="video-view" id="video-view" data-id="${esc(v.id)}">
       <nav class="crumbs" aria-label="İçerik yolu"><a href="#videos">Videolar</a><span>›</span><span>${esc(v.title)}</span></nav>
-      <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
+      <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${esc(videoCategory(v).label)} · Altyazı destekli · ${videoTime(v.durationSeconds)}</span></div>
         <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
         <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
       <div class="video-stage" id="video-stage"><div class="video-frame" id="video-frame"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>

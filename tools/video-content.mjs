@@ -4,6 +4,8 @@ import path from "node:path";
 import { ROOT, LEVELS } from "./lib.mjs";
 
 const VIDEO_GENRES = ["comedy", "mystery", "horror", "adventure", "romance", "scifi", "fable", "drama", "fantasy", "documentary", "education"];
+// Viewer-facing shelves on #videos; keep in sync with VIDEO_CATEGORIES in assets/js/app.js.
+export const VIDEO_CATEGORIES = ["fun", "adventure", "scifi", "real"];
 const object = (v) => !!v && typeof v === "object" && !Array.isArray(v);
 const plainText = (v) => typeof v === "string" && !!v.trim() && !/<[^>]*>/.test(v);
 const httpsUrl = (v) => {
@@ -25,6 +27,7 @@ export function validateVideo(d, file, errors) {
   }
   if (!LEVELS.includes(d.level)) e(`level must be one of ${LEVELS}`);
   if (!VIDEO_GENRES.includes(d.genre)) e(`genre must be one of ${VIDEO_GENRES}`);
+  if (!VIDEO_CATEGORIES.includes(d.category)) e(`category must be one of ${VIDEO_CATEGORIES}`);
   if (!Number.isInteger(d.year) || d.year < 1) e("year must be a positive integer");
   const durationValid = Number.isFinite(d.durationSeconds) && d.durationSeconds > 0;
   if (!durationValid) e("durationSeconds must be a finite positive number");

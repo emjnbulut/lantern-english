@@ -66,6 +66,11 @@ manifest.webmanifest, sw.js, assets/icons/  installable mobile app (PWA) + offli
 - `sw.js` is stamped by `tools/make-site.mjs`; registration is skipped on `file://`.
 - Footer credit "created by emjn" and `LICENSE` are owner requirements; keep them.
 
+## Video shelves and non-Blender videos (2026-10-12, later)
+- `#videos` is grouped into four shelves via the required `category` field (`fun`, `adventure`, `scifi`, `real`; labels in `VIDEO_CATEGORIES` in app.js, ids validated in tools/video-content.mjs). Chips at the top filter one shelf; within a shelf videos sort by level, then length.
+- Added (owner request): Pepper & Carrot ep. 6 and Morevna ep. 3 (Morevna Project, CC BY-SA 4.0, MP4 from peertube.touhoppai.moe; English SRT from github.com/morevnaproject/subtitles-translation, CC BY 4.0) and NASA "How Big Is Space?" and "Astronauts Reading Fan Mail #3" (public domain, NASA's own SRT). Fan Mail captions were converted from ALL CAPS to sentence case and merged into readable cues; words unchanged.
+- Rejected sources: archive.org licence tags (unreliable), files whose captions are ASR-only, Commons WebM-only files, NASA caption files that are "[Captions Unavailable]" placeholders or in another language.
+
 ## Current video additions (2026-10-12)
 - The owner authorized three NEW videos: Elephants Dream (B1 with subtitle support), Cosmos Laundromat: First Cycle (B2), Sprite Fright (B2). Five videos total; preserve Sintel and Tears of Steel. Levels are editorial listening estimates, not certifications.
 - Official complete Blender MP4 files include end credits and default to 720p. Sprite Fright uses the official English VTT; the other two use Wikimedia Commons contributor captions under CC BY-SA 4.0, credited and linked separately from the film licenses. Caption formatting is stripped; three Elephants Dream overlaps are clipped by 3–9 ms and disclosed.
