@@ -27,7 +27,7 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 
 ## Eklenecek hikâyeler
 
-12 Ekim 2026 durumu: planlanan 7 hikâyenin **6'sı yazıldı ve yayında** (Kaşağı, Perili Köşk, Pembe İncili Kaftan, Boğaç Han, Bamsı Beyrek, Basat ve Tepegöz). **Pinokyo** (A2) henüz eklenmedi; devam edecek AI `content/stories/pinocchio-retold.json` dosyasını İtalyanca orijinalden (Gutenberg #52484) yazmalıdır. Hepsi `content/stories/` içinde, "Kısaltılmış klasik" rozetiyle Hikâyeler koleksiyonundadır. Seviyeler uyarlamaların düzeyidir, özgün eserlerin CEFR derecesi değildir.
+12 Ekim 2026 durumu: planlanan 7 hikâyenin **tamamı yazıldı** (Kaşağı, Perili Köşk, Pembe İncili Kaftan, Boğaç Han, Bamsı Beyrek, Basat ve Tepegöz, Pinokyo). Pinokyo (A2) İtalyanca özgünden (Gutenberg #52484) `content/stories/pinocchio-retold.json` olarak yazıldı. Hepsi `content/stories/` içinde, "Kısaltılmış klasik" rozetiyle Hikâyeler koleksiyonundadır. Canlı sitede yayın durumu için HOSTING.md'ye bakın. Seviyeler uyarlamaların düzeyidir, özgün eserlerin CEFR derecesi değildir.
 
 | Yazar / kaynak | Eser | Hedef seviye | Seçim gerekçesi |
 |---|---|---|---|

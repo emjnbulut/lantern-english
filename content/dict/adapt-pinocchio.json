@@ -1,0 +1,10 @@
+{
+  "falcon": { "pos": "isim", "tr": "doğan, şahin" },
+  "woodpecker": { "pos": "isim", "tr": "ağaçkakan" },
+  "hoop": { "pos": "isim", "tr": "çember, halka" },
+  "tuna": { "pos": "isim", "tr": "ton balığı" },
+  "cri": { "pos": "ünlem", "tr": "cır (cırcır böceğinin sesi)" },
+  "choo": { "pos": "ünlem", "tr": "hapşu (hapşırık sesi)" },
+  "hee": { "pos": "ünlem", "tr": "hee (eşek anırması: hee-haw)" },
+  "haw": { "pos": "ünlem", "tr": "haa (eşek anırması: hee-haw)" }
+}
