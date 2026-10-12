@@ -47,6 +47,7 @@
     stop: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="6" width="12" height="12" rx="1.5"/></svg>',
     check: '<svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>',
     trash: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>',
+    download: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10.5l5 5 5-5M5 19.5h14"/></svg>',
     gear: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.9.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.9 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.9l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.9.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.9-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.9V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>',
     mute: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4z"/><path d="m16 9 5 6M21 9l-5 6"/></svg>',
     pause: '<svg viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4.5" height="14" rx="1.2"/><rect x="13.5" y="5" width="4.5" height="14" rx="1.2"/></svg>',
@@ -635,6 +636,90 @@
   // Videos have their own collection and never become reading bookmarks.
   const videoTime = (seconds) => Math.floor(seconds / 60) + ":" + String(Math.floor(seconds % 60)).padStart(2, "0");
 
+  // ---------- offline video downloads ----------
+  // Files live in Cache Storage under VCACHE (outside the versioned "lantern-*" app caches, so updates keep them);
+  // sw.js serves them with byte ranges, also offline. lantern.downloads lists {id: {url, label, bytes, at}}.
+  const VCACHE = "offline-videos-v1";
+  const canDownload = "caches" in window && "serviceWorker" in navigator && /^https?:$/.test(location.protocol);
+  let downloads = (() => { const d = S.load("downloads", {}); return d && typeof d === "object" && !Array.isArray(d) ? d : {}; })();
+  const saveDownloads = () => S.save("downloads", downloads);
+  const activeDownloads = {}; // id -> { loaded, total, label, controller }
+  const blockedDownloads = new Set(); // ids whose host refused a CORS read during this visit
+  const dlListeners = new Set();
+  const dlNotify = () => dlListeners.forEach((f) => f());
+  const fmtMB = (b) => { const mb = b / 1048576; return (mb >= 100 ? Math.round(mb) : mb.toFixed(1)) + " MB"; };
+  const isDownloaded = (id) => !!downloads[id];
+  const tellWorker = () => { const sw = navigator.serviceWorker && navigator.serviceWorker.controller; if (sw) sw.postMessage({ type: "offline-videos-changed" }); };
+  function downloadQuality(v, current) {
+    const Q = Array.isArray(v.qualities) && v.qualities.length ? v.qualities : [{ label: "", url: v.videoUrl }];
+    return (current && Q.find((q) => q.url === current.url)) || Q.find((q) => q.url === v.videoUrl) || Q[0];
+  }
+  async function verifyDownloads() {
+    if (!canDownload) return;
+    try {
+      const cache = await caches.open(VCACHE);
+      let changed = false;
+      for (const id of Object.keys(downloads)) {
+        if (!VIDEO_BY_ID[id] || !(await cache.match(downloads[id].url))) { delete downloads[id]; changed = true; }
+      }
+      if (changed) { saveDownloads(); dlNotify(); }
+    } catch (e) { /* storage unavailable: keep the list as it is */ }
+  }
+  async function startDownload(v, q) {
+    if (activeDownloads[v.id] || downloads[v.id]) return;
+    const controller = new AbortController();
+    const job = activeDownloads[v.id] = { loaded: 0, total: (q.sizeMB || 0) * 1048576, label: q.label, controller };
+    dlNotify();
+    try {
+      if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(() => {});
+      if (navigator.storage && navigator.storage.estimate) {
+        const est = await navigator.storage.estimate();
+        if (est.quota && job.total && est.quota - (est.usage || 0) < job.total * 1.05) throw new Error("space");
+      }
+      const res = await fetch(q.url, { mode: "cors", credentials: "omit", signal: controller.signal });
+      if (!res.ok || !res.body) throw new Error("http");
+      const len = Number(res.headers.get("content-length")) || 0;
+      if (len) job.total = len;
+      let body = res.body, last = 0;
+      if (typeof TransformStream === "function") {
+        body = res.body.pipeThrough(new TransformStream({ transform(chunk, ctl) {
+          job.loaded += chunk.byteLength;
+          const now = Date.now();
+          if (now - last > 300) { last = now; dlNotify(); }
+          ctl.enqueue(chunk);
+        } }));
+      }
+      const headers = { "Content-Type": res.headers.get("content-type") || "video/mp4" };
+      if (len) headers["Content-Length"] = String(len);
+      const cache = await caches.open(VCACHE);
+      await cache.put(q.url, new Response(body, { headers }));
+      if (len && job.loaded && job.loaded < len) throw new Error("incomplete");
+      downloads[v.id] = { url: q.url, label: q.label, bytes: job.loaded || len, at: Date.now() };
+      saveDownloads();
+      delete activeDownloads[v.id];
+      tellWorker();
+      toast("İndirildi: " + v.title);
+    } catch (err) {
+      delete activeDownloads[v.id];
+      try { await (await caches.open(VCACHE)).delete(q.url); } catch (e) { /* nothing stored */ }
+      if (err && err.name === "TypeError" && navigator.onLine && !job.loaded) {
+        // online but the file could not be read at all: the host does not allow downloads from other sites (CORS)
+        blockedDownloads.add(v.id);
+        toast("Bu videonun sunucusu indirmeye izin vermiyor; internetle izleyebilirsin.");
+      } else if (!(err && err.name === "AbortError")) {
+        toast(err && (err.message === "space" || err.name === "QuotaExceededError") ? "Cihazda yeterli yer yok." : "İndirme tamamlanamadı. İnternetini kontrol edip tekrar dene.");
+      }
+    }
+    dlNotify();
+  }
+  async function removeDownload(id) {
+    const d = downloads[id];
+    if (!d) return;
+    try { await (await caches.open(VCACHE)).delete(d.url); } catch (e) { /* already gone */ }
+    delete downloads[id]; saveDownloads(); tellWorker(); dlNotify();
+  }
+  verifyDownloads();
+
   // Shelves on #videos, in display order. Keep ids in sync with VIDEO_CATEGORIES in tools/video-content.mjs.
   const VIDEO_CATEGORIES = [
     { id: "fun", label: "Eğlenceli", note: "Gülümseten kısa animasyonlar" },
@@ -648,7 +733,7 @@
   function videoCard(v) {
     return `<a class="video-card" href="#v.${esc(v.id)}">
         <div class="video-art" aria-hidden="true">${ICON.play}<span>İzle</span></div>
-        <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${videoTime(v.durationSeconds)}</span></div>
+        <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${videoTime(v.durationSeconds)}</span>${isDownloaded(v.id) ? `<span class="dl-badge">${ICON.download} İndirildi</span>` : ""}</div>
           <h3>${esc(v.title)}</h3><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><span class="link">İzlemeye başla →</span></div>
       </a>`;
   }
@@ -657,22 +742,52 @@
     let current = "all";
     const shelves = VIDEO_CATEGORIES.map((c) => ({ ...c, list: VIDEOS.filter((v) => videoCategory(v).id === c.id)
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.durationSeconds - b.durationSeconds) })).filter((c) => c.list.length);
-    $main.innerHTML = `<div class="lib-head"><div><p class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</p><h1>Videolar</h1>
-      <p class="lead">İngilizce kısa filmler ve videolar. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div></div>
+    $main.innerHTML = `<div class="lib-head video-head"><div><p class="eyebrow">İzleyerek öğren · ${VIDEOS.length} video</p><h1>Videolar</h1>
+      <p class="lead">İngilizce kısa filmler ve videolar. Altyazıdaki kelimeye dokun; anlamını gör ve defterine kaydet.</p></div>
+      ${canDownload ? `<button class="dl-tab" type="button" data-video-cat="downloads" aria-pressed="false" aria-controls="shelf-downloads-box">${ICON.download} İndirilenler <span class="chip-n" id="dl-count"></span></button>` : ""}</div>
       <div class="video-cats chips" role="group" aria-label="Video türü">
         <button class="chip" type="button" data-video-cat="all" aria-pressed="true">Tümü <span class="chip-n">${VIDEOS.length}</span></button>
         ${shelves.map((c) => `<button class="chip" type="button" data-video-cat="${c.id}" aria-pressed="false">${esc(c.label)} <span class="chip-n">${c.list.length}</span></button>`).join("")}
       </div>
       <div id="video-shelves">${shelves.map((c) => `<section class="video-shelf" data-shelf="${c.id}" aria-labelledby="shelf-${c.id}">
         <div class="section-head"><h2 id="shelf-${c.id}">${esc(c.label)}</h2><span>${esc(c.note)}</span></div>
-        <div class="video-grid">${c.list.map(videoCard).join("")}</div></section>`).join("") || '<div class="empty"><h3>Henüz video yok</h3></div>'}</div>`;
+        <div class="video-grid">${c.list.map(videoCard).join("")}</div></section>`).join("") || '<div class="empty"><h3>Henüz video yok</h3></div>'}
+        ${canDownload ? '<section class="video-shelf" data-shelf="downloads" id="shelf-downloads-box" aria-labelledby="shelf-downloads" hidden></section>' : ""}</div>`;
+    const dlShelf = document.getElementById("shelf-downloads-box");
+    const drawDownloads = () => {
+      if (!dlShelf || !dlShelf.isConnected) { dlListeners.delete(drawDownloads); return; }
+      const saved = VIDEOS.filter((v) => isDownloaded(v.id)).sort((a, b) => downloads[b.id].at - downloads[a.id].at);
+      const busy = VIDEOS.filter((v) => activeDownloads[v.id]);
+      const total = saved.reduce((n, v) => n + (downloads[v.id].bytes || 0), 0);
+      document.getElementById("dl-count").textContent = saved.length || "";
+      dlShelf.innerHTML = `<div class="section-head"><h2 id="shelf-downloads">İndirilenler</h2><span>${saved.length ? `${saved.length} video · ${fmtMB(total)} · internetsiz izlenebilir` : "Bu cihaza kaydettiğin videolar"}</span></div>
+        ${busy.map((v) => { const j = activeDownloads[v.id]; const pct = j.total ? Math.min(99, Math.floor(j.loaded / j.total * 100)) : 0;
+          return `<p class="dl-line">${ICON.download} <b>${esc(v.title)}</b> indiriliyor · %${pct}</p>`; }).join("")}
+        ${saved.length ? `<div class="video-grid">${saved.map((v) => `<div class="dl-item">${videoCard(v)}<button class="btn sm ghost dl-remove" type="button" data-dl-remove="${esc(v.id)}">${ICON.trash} Sil · ${fmtMB(downloads[v.id].bytes || 0)}</button></div>`).join("")}</div>`
+          : busy.length ? "" : '<div class="empty"><h3>Henüz indirdiğin video yok</h3><p>Bir videonun sayfasındaki <b>İndir</b> düğmesine bas; video bu cihaza kaydedilir ve internetsiz de izlenir.</p></div>'}
+        <p class="dl-note">Videolar yalnızca bu tarayıcıda saklanır. Tarayıcı verilerini silersen indirilenler de silinir.</p>`;
+    };
+    const select = (cat) => {
+      current = cat;
+      $main.querySelectorAll("[data-video-cat]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.videoCat === current));
+      $main.querySelectorAll(".video-shelf").forEach((s) => {
+        s.hidden = s.dataset.shelf === "downloads" ? current !== "downloads" : (current !== "all" && s.dataset.shelf !== current);
+      });
+    };
     $main.querySelector(".video-cats").addEventListener("click", (ev) => {
       const b = ev.target.closest("[data-video-cat]");
-      if (!b) return;
-      current = b.dataset.videoCat;
-      $main.querySelectorAll("[data-video-cat]").forEach((x) => x.setAttribute("aria-pressed", x.dataset.videoCat === current));
-      $main.querySelectorAll(".video-shelf").forEach((s) => { s.hidden = current !== "all" && s.dataset.shelf !== current; });
+      if (b) select(b.dataset.videoCat);
     });
+    if (dlShelf) {
+      $main.querySelector(".dl-tab").addEventListener("click", () => select(current === "downloads" ? "all" : "downloads"));
+      dlShelf.addEventListener("click", (ev) => {
+        const b = ev.target.closest("[data-dl-remove]");
+        if (b) removeDownload(b.dataset.dlRemove);
+      });
+      dlListeners.add(drawDownloads);
+      drawDownloads();
+      verifyDownloads();
+    }
   }
 
   function viewVideo(id) {
@@ -687,7 +802,7 @@
         <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
         <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
       <div class="video-stage" id="video-stage"><div class="video-frame" id="video-frame"><div class="video-placeholder" id="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce kısa film · ${videoTime(v.durationSeconds)}</p>
-        <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir.</p></div>
+        <button class="btn primary" id="video-start" type="button">Videoyu başlat</button><p class="video-load-note">${isDownloaded(v.id) ? "Bu video cihazına indirildi; internetsiz de izleyebilirsin." : "Video için internet bağlantısı gerekir. Oynatma başladığında yüklenir."}</p></div>
         <video id="video-player" playsinline webkit-playsinline preload="none" aria-label="${esc(v.title)} İngilizce kısa film" hidden></video>
         <div class="reader-text video-captions" id="video-captions" lang="en" aria-describedby="caption-help"></div>
         <div class="seek-flash seek-back" id="seek-back" hidden aria-hidden="true">−5 sn</div>
@@ -724,6 +839,7 @@
           <button type="button" class="cs-reset" id="cs-reset">Varsayılana dön</button>
         </div></div></div>
       <p class="video-status" id="video-status" role="status" aria-live="polite">Altyazı videonun üzerinde görünür; bir kelimeye dokununca anlamı açılır.</p>
+      ${canDownload ? '<div class="video-dl" id="video-dl" aria-live="polite"></div>' : ""}
       <section class="panel caption-panel" aria-labelledby="caption-heading"><div class="section-head"><h2 id="caption-heading">İngilizce altyazı</h2><span id="caption-time"></span></div>
         <p class="sub" id="caption-help">Altyazı videonun üzerinde görünür. Bir kelimeye dokunduğunda video durur ve Türkçe anlamı açılır; oynat düğmesiyle devam edebilirsin. Görüntü kalitesi ve altyazı görünümü için Ayarlar düğmesini kullan.</p>
         <div class="caption-controls"><button class="btn sm" id="caption-prev" type="button" aria-label="Önceki altyazı">← Önceki</button>
@@ -1024,7 +1140,10 @@
     let curQ = QUALS.find((q) => q.url === v.videoUrl) || QUALS[0] || null;
     const wanted = QUALS.find((q) => q.label === prefs.vq) || (saveData && QUALS.find((q) => q.label === "360p")) || null;
     if (wanted) curQ = wanted;
-    const currentSrc = () => (curQ ? curQ.url : v.videoUrl);
+    // a downloaded copy wins, so it plays from this device (also offline)
+    const offlineQ = downloads[v.id] && QUALS.find((q) => q.url === downloads[v.id].url);
+    if (offlineQ) curQ = offlineQ;
+    const currentSrc = () => (curQ ? curQ.url : downloads[v.id] ? downloads[v.id].url : v.videoUrl);
     if (QUALS.length > 1) {
       qSel.innerHTML = QUALS.slice().reverse().map((q) => `<option value="${esc(q.label)}">${esc(q.label)}${q.sizeMB ? " · ~" + q.sizeMB + " MB" : ""}</option>`).join("");
       qSel.value = curQ.label;
@@ -1076,6 +1195,41 @@
         player.preload = "auto"; // also load while paused so the frame and position are ready
         player.src = at > 0.5 ? q.url + "#t=" + at.toFixed(2) : q.url;
       });
+    }
+
+    // download for offline viewing: saves the picture quality that is selected in Ayarlar
+    const dlBox = document.getElementById("video-dl");
+    const drawDl = () => {
+      if (!dlBox || !dlBox.isConnected) { dlListeners.delete(drawDl); return; }
+      const d = downloads[v.id], job = activeDownloads[v.id];
+      if (job) {
+        const pct = job.total ? Math.min(99, Math.floor(job.loaded / job.total * 100)) : 0;
+        dlBox.innerHTML = `<div class="dl-progress" role="progressbar" aria-label="İndirme" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${pct}"><span style="width:${pct}%"></span></div>
+          <span class="dl-text">İndiriliyor · %${pct}${job.total ? " · " + fmtMB(job.loaded) + " / " + fmtMB(job.total) : ""}</span>
+          <button class="btn sm ghost" type="button" data-dl="cancel">İptal</button>`;
+      } else if (d) {
+        dlBox.innerHTML = `<span class="dl-done">${ICON.check} İndirildi${d.label ? " · " + esc(d.label) : ""} · ${fmtMB(d.bytes || 0)}</span>
+          <span class="dl-text">İnternetsiz de izleyebilirsin.</span>
+          <button class="btn sm ghost" type="button" data-dl="remove">${ICON.trash} Sil</button>`;
+      } else if (blockedDownloads.has(v.id)) {
+        dlBox.innerHTML = '<span class="dl-text">Bu videonun sunucusu indirmeye izin vermiyor; internetle izleyebilirsin.</span>';
+      } else {
+        const q = downloadQuality(v, curQ);
+        dlBox.innerHTML = `<button class="btn sm" type="button" data-dl="start">${ICON.download} İndir${q.label ? " · " + esc(q.label) : ""}${q.sizeMB ? " · ~" + q.sizeMB + " MB" : ""}</button>
+          <span class="dl-text">İnternetsiz izlemek için bu cihaza kaydet. Kaliteyi Ayarlar'dan seçebilirsin.</span>`;
+      }
+    };
+    if (dlBox) {
+      dlBox.addEventListener("click", (ev) => {
+        const b = ev.target.closest("[data-dl]");
+        if (!b) return;
+        if (b.dataset.dl === "start") startDownload(v, downloadQuality(v, curQ));
+        if (b.dataset.dl === "cancel" && activeDownloads[v.id]) activeDownloads[v.id].controller.abort();
+        if (b.dataset.dl === "remove") removeDownload(v.id);
+      });
+      if (QUALS.length > 1) qSel.addEventListener("change", drawDl);
+      dlListeners.add(drawDl);
+      drawDl();
     }
 
     // subtitle size + background opacity (remembered per device)
@@ -1178,7 +1332,8 @@
     document.getElementById("cs-inpage-fs").addEventListener("click", () => { setCapPanel(false); enterNativeFs(); });
 
     function startVideo(at) {
-      if (!navigator.onLine && !player.getAttribute("src")) {
+      const offlineCopy = downloads[v.id] && navigator.serviceWorker && navigator.serviceWorker.controller;
+      if (!navigator.onLine && !player.getAttribute("src") && !offlineCopy) {
         status.textContent = "Çevrimdışısın. Altyazıyı inceleyebilirsin; video için internete bağlan.";
         return;
       }

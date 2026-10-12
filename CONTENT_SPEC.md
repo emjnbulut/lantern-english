@@ -114,7 +114,7 @@ Rules:
 - Optional `qualities`: `[{ "label": "720p", "url": "https://…-720.mp4", "sizeMB": 225 }, …]` (≥2 HTTPS MP4 files, `videoUrl` must be one of them). The player offers them in Ayarlar; the choice is remembered (`lantern.prefs.vq`). `videoUrl` is the default (720p).
 - Optional subtitle attribution: subtitleSource.credit names contributors and subtitleSource.changeNoteTr discloses formatting/timing edits. When subtitles have a separate license, include subtitleSource.licenseUrl; the player displays it independently from the film license. ShareAlike subtitle text remains under its stated license, separately from application code.
 - Caption words use the existing English–Turkish dictionary/tooltip behavior. Site-owned timed captions are separate from native player captions, allowing taps and dictionary lookup.
-- The service worker caches the app and caption bundle for revisits. Playback still needs access to the external video host; no offline movie download is provided.
+- The service worker caches the app and caption bundle for revisits. Streaming needs the external video host. Readers can also press "İndir" on a video page: app.js saves the selected quality into Cache Storage (`offline-videos-v1`), and sw.js serves that copy with byte ranges, also offline. This only works when the host sends `Access-Control-Allow-Origin` for the MP4; otherwise the page says the source does not allow downloads. Downloaded videos are listed under the "İndirilenler" tab on `#videos`.
 
 ## Dictionary — `content/dict/<chunk>.json`
 
