@@ -665,6 +665,65 @@
       if (changed) { saveDownloads(); dlNotify(); }
     } catch (e) { /* storage unavailable: keep the list as it is */ }
   }
+  // One GET (Range from `offset` when resuming). Content-Length is CORS-safelisted, so the size is readable.
+  async function openVideoStream(url, offset, signal) {
+    const ctrl = new AbortController();
+    const stop = () => ctrl.abort();
+    signal.addEventListener("abort", stop, { once: true });
+    const res = await fetch(url, { mode: "cors", credentials: "omit", signal: ctrl.signal, headers: offset ? { Range: "bytes=" + offset + "-" } : {} });
+    if (!res.ok || !res.body) { signal.removeEventListener("abort", stop); throw new Error("http"); }
+    return {
+      reader: res.body.getReader(), type: res.headers.get("content-type"),
+      length: offset ? 0 : Number(res.headers.get("content-length")) || 0,
+      skip: offset && res.status === 200 ? offset : 0, // server ignored Range: drop bytes we already have
+      close() { signal.removeEventListener("abort", stop); ctrl.abort(); },
+    };
+  }
+  // Some CDNs slow a long single download to a trickle; when that happens, reconnect from the last byte.
+  function resumableBody(url, first, total, signal, onBytes) {
+    let conn = first, offset = 0, retries = 0, windowStart = Date.now(), windowBytes = 0;
+    const SLOW_MS = 8000, SLOW_BYTES = 384 * 1024, MAX_RETRIES = 30;
+    const reconnect = async () => {
+      conn.close();
+      if (++retries > MAX_RETRIES) throw new Error("http");
+      conn = await openVideoStream(url, offset, signal);
+      windowStart = Date.now(); windowBytes = 0;
+    };
+    return new ReadableStream({
+      async pull(ctl) {
+        for (;;) {
+          if (signal.aborted) throw new DOMException("Aborted", "AbortError");
+          let step, timer = 0;
+          try {
+            step = await Promise.race([conn.reader.read(), new Promise((r) => { timer = setTimeout(() => r({ stalled: true }), SLOW_MS); })]);
+          } catch (err) {
+            if (signal.aborted) throw err;
+            await reconnect(); continue; // network hiccup: resume
+          } finally { clearTimeout(timer); }
+          if (step.stalled) { await reconnect(); continue; }
+          if (step.done) {
+            if (total && offset < total) { await reconnect(); continue; } // ended early
+            conn.close(); ctl.close(); return;
+          }
+          let chunk = step.value;
+          if (conn.skip) {
+            const drop = Math.min(conn.skip, chunk.byteLength);
+            conn.skip -= drop; chunk = chunk.subarray(drop);
+            if (!chunk.byteLength) continue;
+          }
+          offset += chunk.byteLength; windowBytes += chunk.byteLength; onBytes(chunk.byteLength);
+          ctl.enqueue(chunk);
+          if (Date.now() - windowStart > SLOW_MS) {
+            const slow = windowBytes < SLOW_BYTES && (!total || total - offset > SLOW_BYTES);
+            windowStart = Date.now(); windowBytes = 0;
+            if (slow) await reconnect();
+          }
+          return;
+        }
+      },
+      cancel() { conn.close(); },
+    });
+  }
   async function startDownload(v, q) {
     if (activeDownloads[v.id] || downloads[v.id]) return;
     const controller = new AbortController();
@@ -676,24 +735,20 @@
         const est = await navigator.storage.estimate();
         if (est.quota && job.total && est.quota - (est.usage || 0) < job.total * 1.05) throw new Error("space");
       }
-      const res = await fetch(q.url, { mode: "cors", credentials: "omit", signal: controller.signal });
-      if (!res.ok || !res.body) throw new Error("http");
-      const len = Number(res.headers.get("content-length")) || 0;
+      const first = await openVideoStream(q.url, 0, controller.signal);
+      const len = first.length;
       if (len) job.total = len;
-      let body = res.body, last = 0;
-      if (typeof TransformStream === "function") {
-        body = res.body.pipeThrough(new TransformStream({ transform(chunk, ctl) {
-          job.loaded += chunk.byteLength;
-          const now = Date.now();
-          if (now - last > 300) { last = now; dlNotify(); }
-          ctl.enqueue(chunk);
-        } }));
-      }
-      const headers = { "Content-Type": res.headers.get("content-type") || "video/mp4" };
+      let last = 0;
+      const body = resumableBody(q.url, first, len, controller.signal, (n) => {
+        job.loaded += n;
+        const now = Date.now();
+        if (now - last > 300) { last = now; dlNotify(); }
+      });
+      const headers = { "Content-Type": first.type || "video/mp4" };
       if (len) headers["Content-Length"] = String(len);
       const cache = await caches.open(VCACHE);
       await cache.put(q.url, new Response(body, { headers }));
-      if (len && job.loaded && job.loaded < len) throw new Error("incomplete");
+      if (len && job.loaded < len) throw new Error("incomplete");
       downloads[v.id] = { url: q.url, label: q.label, bytes: job.loaded || len, at: Date.now() };
       saveDownloads();
       delete activeDownloads[v.id];
@@ -702,7 +757,9 @@
     } catch (err) {
       delete activeDownloads[v.id];
       try { await (await caches.open(VCACHE)).delete(q.url); } catch (e) { /* nothing stored */ }
-      if (err && err.name === "TypeError" && navigator.onLine && !job.loaded) {
+      if (controller.signal.aborted) {
+        // cancelled by the reader: nothing to report
+      } else if (err && err.name === "TypeError" && navigator.onLine && !job.loaded) {
         // online but the file could not be read at all: the host does not allow downloads from other sites (CORS)
         blockedDownloads.add(v.id);
         toast("Bu videonun sunucusu indirmeye izin vermiyor; internetle izleyebilirsin.");
