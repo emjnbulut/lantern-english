@@ -11,22 +11,22 @@
   "summaryTr": "Rus masalı Marya Morevna'nın bilim kurgu dünyasında geçen anime tarzı uyarlaması. Marya malikânesinden çıkarken tamirci Ivan'a tüm anahtarları bırakır ve tek bir kapıyı açmamasını tembihler. Ivan merakına yenik düşer.",
   "levelNoteTr": "B1, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Konuşmalar kısa ama hızlıdır; telsiz konuşmaları, emir cümleleri ve teknik kelimeler vardır.",
   "advisoryTr": "Çizgi film tarzı dövüş ve silah sahneleri, hafif argo (\"damn\") içerir. Dizinin 3. bölümüdür ve merak uyandıran açık bir sonla biter.",
-  "videoUrl": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-720.mp4",
+  "videoUrl": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/4adb3a75-6784-4e99-8a5d-66d13578ba9d/1c5c2052-b4eb-4fd2-9819-d62aa67d5403-720-fragmented.mp4",
   "qualities": [
     {
       "label": "360p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-360.mp4",
-      "sizeMB": 29
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/4adb3a75-6784-4e99-8a5d-66d13578ba9d/c0727f91-890b-48e4-a4dd-2dc750b3b42e-360-fragmented.mp4",
+      "sizeMB": 28
     },
     {
       "label": "720p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-720.mp4",
-      "sizeMB": 59
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/4adb3a75-6784-4e99-8a5d-66d13578ba9d/1c5c2052-b4eb-4fd2-9819-d62aa67d5403-720-fragmented.mp4",
+      "sizeMB": 56
     },
     {
       "label": "1080p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/4adb3a75-6784-4e99-8a5d-66d13578ba9d-1080.mp4",
-      "sizeMB": 112
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/4adb3a75-6784-4e99-8a5d-66d13578ba9d/3dbfc20c-9e3e-447c-a529-0298d87d3780-1080-fragmented.mp4",
+      "sizeMB": 96
     }
   ],
   "source": {

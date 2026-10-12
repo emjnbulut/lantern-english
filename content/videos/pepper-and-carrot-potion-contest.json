@@ -11,22 +11,22 @@
   "summaryTr": "Genç cadı Pepper ve turuncu kedisi Carrot, kasabanın büyük iksir yarışmasına katılır. Rakipler göz kamaştırıcı iksirler sunarken Pepper'ın elindeki şişe herkesi şaşırtacaktır. David Revoy'un çizgi romanından uyarlanmış neşeli bir animasyon.",
   "levelNoteTr": "A2, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî bir CEFR derecesi değildir. Cümleler kısa ve günlük; iksir, büyü ve sunucu konuşmalarındaki süslü sözcükler kelime desteği gerektirebilir.",
   "advisoryTr": "Çizgi film tarzı hafif aksiyon ve zararsız bir \"kedi çişi\" esprisi içerir; tüm yaşlara uygundur.",
-  "videoUrl": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-720.mp4",
+  "videoUrl": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/79ff0983-3f55-4111-9f7d-f3d3feeefb69/4cac02ca-6045-4cab-880d-5dd13ecb4f4e-720-fragmented.mp4",
   "qualities": [
     {
       "label": "360p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-360.mp4",
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/79ff0983-3f55-4111-9f7d-f3d3feeefb69/1f75c515-0db6-46f6-8ced-eaa52249021e-360-fragmented.mp4",
       "sizeMB": 30
     },
     {
       "label": "720p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-720.mp4",
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/79ff0983-3f55-4111-9f7d-f3d3feeefb69/4cac02ca-6045-4cab-880d-5dd13ecb4f4e-720-fragmented.mp4",
       "sizeMB": 62
     },
     {
       "label": "1080p",
-      "url": "https://peertube.touhoppai.moe/static/web-videos/79ff0983-3f55-4111-9f7d-f3d3feeefb69-1080.mp4",
-      "sizeMB": 102
+      "url": "https://peertube.touhoppai.moe/static/streaming-playlists/hls/79ff0983-3f55-4111-9f7d-f3d3feeefb69/d88f7b11-878e-4694-8f20-c9f63b4e4f60-1080-fragmented.mp4",
+      "sizeMB": 98
     }
   ],
   "source": {
