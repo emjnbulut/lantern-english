@@ -1,0 +1,35 @@
+{
+  "id": "laboratory-conditions",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "1N25e4Ss34Q",
+  "title": "Laboratory Conditions",
+  "creator": "Jocelyn Stamat",
+  "year": 2018,
+  "level": "C1",
+  "category": "scifi",
+  "genre": "fantasy",
+  "durationSeconds": 1022,
+  "summaryTr": "Bir doktor, hastanedeki kayıp bir hastanın izini sürerken sıra dışı bir deneyle karşılaşır. Marisa Tomei ve Minnie Driver’ın oynadığı bu filmde bilim, etik ve doğaüstü gerilim birbirine karışır.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Tıbbi ve deneysel kelimeler, etik tartışma, örtük niyetler ve hızlı karşı çıkışlar C1 seviyesinde dinleme gerektirir.",
+  "advisoryTr": "Ölüm, tıbbi deneyler, rahatsız edici görüntüler ve küfür içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "DUST — Laboratory Conditions",
+    "url": "https://www.youtube.com/watch?v=1N25e4Ss34Q",
+    "watchUrl": "https://www.youtube.com/watch?v=1N25e4Ss34Q",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Jocelyn Stamat · Yayıncı: DUST"
+  },
+  "glossary": {
+    "experiment": "deney",
+    "consciousness": "bilinç",
+    "consent": "rıza; onay",
+    "ethical": "etik; ahlaki açıdan uygun",
+    "hypothesis": "hipotez; sınanabilir varsayım",
+    "patient": "hasta",
+    "specimen": "numune; örnek"
+  },
+  "captions": []
+}

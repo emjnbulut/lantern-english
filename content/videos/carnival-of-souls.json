@@ -1,0 +1,2461 @@
+{
+  "id": "carnival-of-souls",
+  "type": "video",
+  "title": "Carnival of Souls",
+  "creator": "Herk Harvey",
+  "year": 1962,
+  "level": "B2",
+  "category": "horror",
+  "genre": "horror",
+  "durationSeconds": 4663,
+  "summaryTr": "Bir kazadan sağ çıkan genç kadın yeni bir şehirde işe başlar. Terk edilmiş bir eğlence alanı ve sürekli gördüğü bir yabancı, gerçeklikle ilişkisini sarsar. Atmosferik bir hayalet hikâyesi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Gündelik diyaloglar ve meslekle ilgili konuşmalar çoğunlukla açık ilerler; eski kayıt, ima ve bilinçli olarak belirsiz bırakılan sahneler ek dikkat ister.",
+  "advisoryTr": "Ölüm, kaza, tacizkâr davranışlar ve rahatsız edici hayalet görüntüleri içerir.",
+  "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm.480p.vp9.webm",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm.240p.vp9.webm",
+      "sizeMB": 140
+    },
+    {
+      "label": "480p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/69/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm/Carnival_of_Souls_%281962%29_by_Herk_Harvey.webm.480p.vp9.webm",
+      "sizeMB": 424
+    }
+  ],
+  "source": {
+    "name": "Wikimedia Commons — Carnival of Souls",
+    "url": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_(1962)_by_Herk_Harvey.webm",
+    "watchUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_(1962)_by_Herk_Harvey.webm",
+    "license": "Kamu malı (ABD)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Carnival_of_Souls_(1962)_by_Herk_Harvey.webm",
+    "credit": "Herk Harvey · Özgün film; Wikimedia Commons aktarımı",
+    "creditNoteTr": "Video, kaynak sürümüyle ve jeneriğiyle birlikte değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText%3ACarnival%20of%20Souls%20(1962)%20by%20Herk%20Harvey.webm.en.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar altyazı sayfasının geçmişinde)",
+    "changeNoteTr": "Sözler ve zamanlar korunmuştur; biçim etiketleri kaldırılıp satırlar birleştirilerek zamanlar saniyeye dönüştürülmüştür."
+  },
+  "glossary": {
+    "boarding": "boarding house: pansiyon",
+    "organist": "org çalan müzisyen",
+    "pavilion": "pavyon; eğlence veya sergi yapısı"
+  },
+  "captions": [
+    {
+      "start": 10.8,
+      "end": 14.04,
+      "text": "Stop it, Joe! Look at this !"
+    },
+    {
+      "start": 14.36,
+      "end": 17.12,
+      "text": "- Shall we go for a walk? - OK."
+    },
+    {
+      "start": 18.76,
+      "end": 20.04,
+      "text": "Come on man, here we go!"
+    },
+    {
+      "start": 38.72,
+      "end": 41.44,
+      "text": "I will show them what I can do..."
+    },
+    {
+      "start": 58.84,
+      "end": 61.08,
+      "text": "Road under construction"
+    },
+    {
+      "start": 107.12,
+      "end": 112.08,
+      "text": "THE CARNIVAL OF SOULS"
+    },
+    {
+      "start": 197.84,
+      "end": 200.28,
+      "text": "The river carries so much mud and sand"
+    },
+    {
+      "start": 200.4,
+      "end": 203.44,
+      "text": "that we will have trouble to find the car."
+    },
+    {
+      "start": 214.2,
+      "end": 215.44,
+      "text": "- This way. - Good."
+    },
+    {
+      "start": 215.68,
+      "end": 219.6,
+      "text": "- What happened ? - We can't help it, sir."
+    },
+    {
+      "start": 220.28,
+      "end": 222.8,
+      "text": "- Oh no ? - We were already on deck,"
+    },
+    {
+      "start": 223.12,
+      "end": 225.24,
+      "text": "when the car came behind us."
+    },
+    {
+      "start": 225.44,
+      "end": 230.07999999999998,
+      "text": "She wanted to double us and she had to swerve."
+    },
+    {
+      "start": 230.28,
+      "end": 232.68,
+      "text": "You wouldn't have it a bit pushed?"
+    },
+    {
+      "start": 243.6,
+      "end": 245.28,
+      "text": "It's been three hours."
+    },
+    {
+      "start": 245.76,
+      "end": 248.28,
+      "text": "Oh yes ? It's not sure let's find her."
+    },
+    {
+      "start": 248.92,
+      "end": 251.44,
+      "text": "There is too much current and too much sand."
+    },
+    {
+      "start": 252.04,
+      "end": 253.96,
+      "text": "We can always try..."
+    },
+    {
+      "start": 259.4,
+      "end": 261.04,
+      "text": "What's going on ?"
+    },
+    {
+      "start": 282.36,
+      "end": 283.88,
+      "text": "Come on, let's go down!"
+    },
+    {
+      "start": 304.08,
+      "end": 308.04,
+      "text": "- So that ! It's Mary Henry... - How are you ?"
+    },
+    {
+      "start": 308.44,
+      "end": 310.52,
+      "text": "How did you get out of there?"
+    },
+    {
+      "start": 310.92,
+      "end": 314.04,
+      "text": "Put that, we'll take you back to town."
+    },
+    {
+      "start": 317.4,
+      "end": 319.24,
+      "text": "And the other girls?"
+    },
+    {
+      "start": 323,
+      "end": 324.48,
+      "text": "I do not remember."
+    },
+    {
+      "start": 480.28,
+      "end": 482,
+      "text": "It will be the same organ in Utah?"
+    },
+    {
+      "start": 482.4,
+      "end": 486.4,
+      "text": "Practically. It's me who installed it there."
+    },
+    {
+      "start": 487.08,
+      "end": 489.08,
+      "text": "The crash won't delay your leaving ?"
+    },
+    {
+      "start": 489.4,
+      "end": 493.32,
+      "text": "No, I'm leaving this morning. Nothing keeps me here."
+    },
+    {
+      "start": 493.64,
+      "end": 494.84,
+      "text": "It's true."
+    },
+    {
+      "start": 495.16,
+      "end": 498.12,
+      "text": "Alright Mary. This church is going to have an excellent organist!"
+    },
+    {
+      "start": 498.44,
+      "end": 502.08,
+      "text": "- You'll like it. - This job or another..."
+    },
+    {
+      "start": 502.4,
+      "end": 506.24,
+      "text": "You are going to work in a church, anyway..."
+    },
+    {
+      "start": 506.56,
+      "end": 508.72,
+      "text": "To hold the organ, that's all."
+    },
+    {
+      "start": 509.04,
+      "end": 511.04,
+      "text": "Let's go!"
+    },
+    {
+      "start": 511.36,
+      "end": 515.56,
+      "text": "It's not very well paid, sure, but it's a start."
+    },
+    {
+      "start": 516.6,
+      "end": 518.68,
+      "text": "Are you going to your parents?"
+    },
+    {
+      "start": 519.76,
+      "end": 522.08,
+      "text": "No, I'm in a hurry."
+    },
+    {
+      "start": 522.4,
+      "end": 525.68,
+      "text": "I will not have time to stop on the way."
+    },
+    {
+      "start": 526.08,
+      "end": 530.32,
+      "text": "Mary, music, we don't do it only with his head."
+    },
+    {
+      "start": 531.04,
+      "end": 533.88,
+      "text": "Put a little of your soul into it, Okay ?"
+    },
+    {
+      "start": 541.08,
+      "end": 543.04,
+      "text": "Good luck, Mary!"
+    },
+    {
+      "start": 543.44,
+      "end": 545.6,
+      "text": "Come see us sometime."
+    },
+    {
+      "start": 545.92,
+      "end": 549.12,
+      "text": "Thanks, but I'm leaving for all time."
+    },
+    {
+      "start": 789.44,
+      "end": 791.6,
+      "text": "- Can I help you ? - Full."
+    },
+    {
+      "start": 791.76,
+      "end": 793.08,
+      "text": "OK."
+    },
+    {
+      "start": 818.36,
+      "end": 820.68,
+      "text": "Would you like anything else, ma'am?"
+    },
+    {
+      "start": 821.28,
+      "end": 825.12,
+      "text": "What is this big building a few miles near the lake?"
+    },
+    {
+      "start": 825.8,
+      "end": 828.04,
+      "text": "Ah, you want to talk of the old public bath."
+    },
+    {
+      "start": 828.36,
+      "end": 831.28,
+      "text": "It used to be a nice luxurious place."
+    },
+    {
+      "start": 831.48,
+      "end": 834.76,
+      "text": "The lake has dried up and they turned it into a ballroom."
+    },
+    {
+      "start": 834.92,
+      "end": 837.16,
+      "text": "And then they built these buildings"
+    },
+    {
+      "start": 837.28,
+      "end": 839.76,
+      "text": "and for a time they performed there a kind of carnival."
+    },
+    {
+      "start": 840.08,
+      "end": 843.44,
+      "text": "But, that was years ago. Now there is nothing."
+    },
+    {
+      "start": 843.88,
+      "end": 845.16,
+      "text": "I see."
+    },
+    {
+      "start": 848.8,
+      "end": 853.28,
+      "text": "I have the address of a pension, could you tell me how to get there?"
+    },
+    {
+      "start": 853.84,
+      "end": 857,
+      "text": "Sure. It's very close to here."
+    },
+    {
+      "start": 865.36,
+      "end": 868.28,
+      "text": "I reserved it for you as soon as I got your letter."
+    },
+    {
+      "start": 871.6,
+      "end": 873.44,
+      "text": "I could have rented it yesterday..."
+    },
+    {
+      "start": 873.76,
+      "end": 877.56,
+      "text": "It is very good, thats what i was looking for."
+    },
+    {
+      "start": 877.88,
+      "end": 880.04,
+      "text": "I was sure of it."
+    },
+    {
+      "start": 880.6,
+      "end": 883.04,
+      "text": "It is not really a boarding house here."
+    },
+    {
+      "start": 883.36,
+      "end": 887.44,
+      "text": "It's just you and Mr. Linden, across the hall."
+    },
+    {
+      "start": 893.2,
+      "end": 896.6,
+      "text": "You each have your bathroom."
+    },
+    {
+      "start": 899.6,
+      "end": 901.52,
+      "text": "And for the baths,"
+    },
+    {
+      "start": 901.84,
+      "end": 904.48,
+      "text": "take as many that you want."
+    },
+    {
+      "start": 904.8,
+      "end": 907.24,
+      "text": "Thanks. I will like it here."
+    },
+    {
+      "start": 907.56,
+      "end": 910,
+      "text": "I hope you will stay one moment."
+    },
+    {
+      "start": 910.8,
+      "end": 914.2,
+      "text": "I live on the ground floor, ON the other side."
+    },
+    {
+      "start": 914.52,
+      "end": 918.4,
+      "text": "If you are missing something, it will wait until tomorrow."
+    },
+    {
+      "start": 922.72,
+      "end": 925.8,
+      "text": "- Good night. - Good night, Mrs. Thomas."
+    },
+    {
+      "start": 982.76,
+      "end": 986.48,
+      "text": "And here is our little gem, MissHenry."
+    },
+    {
+      "start": 987,
+      "end": 989.48,
+      "text": "We come from the same city, he and I."
+    },
+    {
+      "start": 989.8,
+      "end": 992.84,
+      "text": "I say. It is over there that we have been told about you."
+    },
+    {
+      "start": 993.16,
+      "end": 995.28,
+      "text": "Have you found accommodation?"
+    },
+    {
+      "start": 995.52,
+      "end": 997.76,
+      "text": "- Yes, I took a room. - Good."
+    },
+    {
+      "start": 998.08,
+      "end": 1000.52,
+      "text": "I hope that you will like it here."
+    },
+    {
+      "start": 1000.84,
+      "end": 1003.76,
+      "text": "Of course the church is not big"
+    },
+    {
+      "start": 1004.16,
+      "end": 1007.08,
+      "text": "but our parishioners are charming."
+    },
+    {
+      "start": 1007.52,
+      "end": 1010.6,
+      "text": "We're gonna throw a little party in your honor."
+    },
+    {
+      "start": 1011.08,
+      "end": 1014.08,
+      "text": "- I'd rather not. - Oh good ?"
+    },
+    {
+      "start": 1014.52,
+      "end": 1017.32,
+      "text": "Of course it's not an obligation,"
+    },
+    {
+      "start": 1017.76,
+      "end": 1020.36,
+      "text": "but these ladies will be disappointed."
+    },
+    {
+      "start": 1020.76,
+      "end": 1023.76,
+      "text": "The important thing is that they like my way of playing!"
+    },
+    {
+      "start": 1024.2,
+      "end": 1026.52,
+      "text": "Definitely..."
+    },
+    {
+      "start": 1026.92,
+      "end": 1029.84,
+      "text": "Let's stop talking about it. We'll see later."
+    },
+    {
+      "start": 1030.28,
+      "end": 1032.48,
+      "text": "But my dear,"
+    },
+    {
+      "start": 1033,
+      "end": 1036.88,
+      "text": "you can not live like a hermit!"
+    },
+    {
+      "start": 1038.08,
+      "end": 1040.92,
+      "text": "- Can I try it? - I was going to ask you."
+    },
+    {
+      "start": 1062.48,
+      "end": 1063.36,
+      "text": "I leave you."
+    },
+    {
+      "start": 1064.28,
+      "end": 1067.04,
+      "text": "I'm right next to it If you need me."
+    },
+    {
+      "start": 1082.72,
+      "end": 1086.8,
+      "text": "We have an organist who knows how to touch souls."
+    },
+    {
+      "start": 1143.16,
+      "end": 1146.96,
+      "text": "- What did you see ? - Nothing."
+    },
+    {
+      "start": 1147.4,
+      "end": 1150.52,
+      "text": "I played too long. I feel weird."
+    },
+    {
+      "start": 1150.64,
+      "end": 1152.12,
+      "text": "You need air."
+    },
+    {
+      "start": 1152.8,
+      "end": 1156.88,
+      "text": "I have a visit to make, near the lake. I am taking you ?"
+    },
+    {
+      "start": 1157.6,
+      "end": 1159.8,
+      "text": "Near the old pavilion?"
+    },
+    {
+      "start": 1160.88,
+      "end": 1162.72,
+      "text": "- Are you going there? - Very close."
+    },
+    {
+      "start": 1163.08,
+      "end": 1165.88,
+      "text": "- Do you want to see it? - With you, yes!"
+    },
+    {
+      "start": 1166.12,
+      "end": 1167.52,
+      "text": "Good."
+    },
+    {
+      "start": 1203.48,
+      "end": 1205.04,
+      "text": "It was great before."
+    },
+    {
+      "start": 1205.6,
+      "end": 1207.76,
+      "text": "It's been closed for a long time."
+    },
+    {
+      "start": 1208.16,
+      "end": 1210.76,
+      "text": "- Can we come in? - Certainly not !"
+    },
+    {
+      "start": 1211.12,
+      "end": 1215.08,
+      "text": "It's dangerous, that's why they put up a fence."
+    },
+    {
+      "start": 1215.52,
+      "end": 1218,
+      "text": "We could sneak..."
+    },
+    {
+      "start": 1218.76,
+      "end": 1222.2,
+      "text": "What attracts you so much?"
+    },
+    {
+      "start": 1222.52,
+      "end": 1223.56,
+      "text": "I do not know."
+    },
+    {
+      "start": 1224.12,
+      "end": 1226.64,
+      "text": "I'm pretty reasonable usually."
+    },
+    {
+      "start": 1226.96,
+      "end": 1231.92,
+      "text": "I may want to see if he is hiding something."
+    },
+    {
+      "start": 1232.68,
+      "end": 1234.68,
+      "text": "- Are you coming with me? - Nope."
+    },
+    {
+      "start": 1235.04,
+      "end": 1236.92,
+      "text": "It is prohibited by law."
+    },
+    {
+      "start": 1237.24,
+      "end": 1240.68,
+      "text": "A pastor cannot break the law !"
+    },
+    {
+      "start": 1241,
+      "end": 1244.76,
+      "text": "It's true. I'll be back maybe another time."
+    },
+    {
+      "start": 1246.2,
+      "end": 1248.72,
+      "text": "We're leaving ?"
+    },
+    {
+      "start": 1275.08,
+      "end": 1278.32,
+      "text": "- Oh, it's you! - Good evening."
+    },
+    {
+      "start": 1279,
+      "end": 1282.68,
+      "text": "You played the organ all day ?"
+    },
+    {
+      "start": 1283.32,
+      "end": 1286.8,
+      "text": "I took a drive with my boss."
+    },
+    {
+      "start": 1287.28,
+      "end": 1289.08,
+      "text": "An old pastor."
+    },
+    {
+      "start": 1291.52,
+      "end": 1294,
+      "text": "You have some pay you a portion."
+    },
+    {
+      "start": 1295.32,
+      "end": 1298.48,
+      "text": "as Mr. Linden would say, the other tenant."
+    },
+    {
+      "start": 1299.16,
+      "end": 1302.88,
+      "text": "- Have you had dinner? - I forgot !"
+    },
+    {
+      "start": 1303.4,
+      "end": 1306.2,
+      "text": "It's not a boarding house but what do i have"
+    },
+    {
+      "start": 1306.64,
+      "end": 1308.88,
+      "text": "make you a coffee and a sandwich."
+    },
+    {
+      "start": 1309.04,
+      "end": 1311.44,
+      "text": "I show you this in a moment."
+    },
+    {
+      "start": 1311.88,
+      "end": 1315.12,
+      "text": "Good. I will have a bath, as you suggested."
+    },
+    {
+      "start": 1315.32,
+      "end": 1320.28,
+      "text": "As much as you want, this is not a problem."
+    },
+    {
+      "start": 1367.44,
+      "end": 1369.04,
+      "text": "Come in, Mrs. Thomas."
+    },
+    {
+      "start": 1370.92,
+      "end": 1372.92,
+      "text": "One minute."
+    },
+    {
+      "start": 1393.6,
+      "end": 1395.84,
+      "text": "I thought it was Madame Thomas!"
+    },
+    {
+      "start": 1396.16,
+      "end": 1398.88,
+      "text": "I suspected a little..."
+    },
+    {
+      "start": 1399.2,
+      "end": 1401.4,
+      "text": "I am John Linden, your neighbour."
+    },
+    {
+      "start": 1401.72,
+      "end": 1404.36,
+      "text": "- Nice to meet you. Excuse me. - Say..."
+    },
+    {
+      "start": 1404.64,
+      "end": 1407.6,
+      "text": "One moment, stay out!"
+    },
+    {
+      "start": 1433.84,
+      "end": 1436.2,
+      "text": "My name is Mary Henry."
+    },
+    {
+      "start": 1436.32,
+      "end": 1438.92,
+      "text": "I say..."
+    },
+    {
+      "start": 1439.24,
+      "end": 1442.2,
+      "text": "I heard you say to Mrs. Thomas that you had not had dinner."
+    },
+    {
+      "start": 1442.52,
+      "end": 1444.84,
+      "text": "Since we are neighbors..."
+    },
+    {
+      "start": 1445.16,
+      "end": 1446.8,
+      "text": "I haven't eaten either."
+    },
+    {
+      "start": 1447.12,
+      "end": 1449.36,
+      "text": "so I invite you to dinner?"
+    },
+    {
+      "start": 1449.68,
+      "end": 1451.6,
+      "text": "That's nice, but no thanks."
+    },
+    {
+      "start": 1451.92,
+      "end": 1454.04,
+      "text": "I know we don't know each other..."
+    },
+    {
+      "start": 1454.36,
+      "end": 1456.8,
+      "text": "I'm sorry, I can't."
+    },
+    {
+      "start": 1457.12,
+      "end": 1461.08,
+      "text": "There is a small restaurant very nice, close..."
+    },
+    {
+      "start": 1461.6,
+      "end": 1464.2,
+      "text": "And I don't like eat alone!"
+    },
+    {
+      "start": 1464.52,
+      "end": 1466.92,
+      "text": "I dine in my room, tonight."
+    },
+    {
+      "start": 1467.88,
+      "end": 1471.28,
+      "text": "Good. If you change your mind, call me !"
+    },
+    {
+      "start": 1474.8,
+      "end": 1476.68,
+      "text": "We feel lonely here sometimes."
+    },
+    {
+      "start": 1477.32,
+      "end": 1479.28,
+      "text": "Good night, Mr. Linden."
+    },
+    {
+      "start": 1562.16,
+      "end": 1565.72,
+      "text": "Miss Henry? It's Mrs. Thomas."
+    },
+    {
+      "start": 1584.76,
+      "end": 1586.76,
+      "text": "Who is that man in the corridor ?"
+    },
+    {
+      "start": 1588.72,
+      "end": 1590.24,
+      "text": "A man ?"
+    },
+    {
+      "start": 1592.52,
+      "end": 1594.52,
+      "text": "You must have seen Mr. Linden."
+    },
+    {
+      "start": 1594.72,
+      "end": 1597.16,
+      "text": "He has his room opposite."
+    },
+    {
+      "start": 1597.4,
+      "end": 1600.56,
+      "text": "No, the other!"
+    },
+    {
+      "start": 1601.08,
+      "end": 1603.72,
+      "text": "There is no one else!"
+    },
+    {
+      "start": 1604.56,
+      "end": 1607.24,
+      "text": "There's me, you and Mr. Linden."
+    },
+    {
+      "start": 1607.52,
+      "end": 1609.88,
+      "text": "The three of us, that's all."
+    },
+    {
+      "start": 1610.12,
+      "end": 1612.6,
+      "text": "But you must have seen it, out !"
+    },
+    {
+      "start": 1613.36,
+      "end": 1615.64,
+      "text": "You have to eat."
+    },
+    {
+      "start": 1616.04,
+      "end": 1619.76,
+      "text": "When you have an empty stomach, sometimes we have funny ideas."
+    },
+    {
+      "start": 1620.12,
+      "end": 1622.92,
+      "text": "You must have heard crack the floor."
+    },
+    {
+      "start": 1623.24,
+      "end": 1625.48,
+      "text": "Old houses creak!"
+    },
+    {
+      "start": 1625.8,
+      "end": 1629.52,
+      "text": "I saw it, I tell you, not heard !"
+    },
+    {
+      "start": 1632.4,
+      "end": 1634.48,
+      "text": "Do not tell such things!"
+    },
+    {
+      "start": 1635.8,
+      "end": 1638.2,
+      "text": "Even without that, I have trouble sleeping!"
+    },
+    {
+      "start": 1639.32,
+      "end": 1641.76,
+      "text": "It's these old houses..."
+    },
+    {
+      "start": 1642.08,
+      "end": 1646,
+      "text": "These are too big. They have too many corners."
+    },
+    {
+      "start": 1648.96,
+      "end": 1652.08,
+      "text": "You must not leave roam his imagination."
+    },
+    {
+      "start": 1652.4,
+      "end": 1655.04,
+      "text": "- You're going out ? - Obviously !"
+    },
+    {
+      "start": 1675.84,
+      "end": 1678.32,
+      "text": "There is nobody."
+    },
+    {
+      "start": 1680.48,
+      "end": 1684.16,
+      "text": "eat the sandwich what I did to you."
+    },
+    {
+      "start": 1685.96,
+      "end": 1689.24,
+      "text": "Leave the coffee, if it keeps you awake."
+    },
+    {
+      "start": 1689.6,
+      "end": 1691.52,
+      "text": "No risk."
+    },
+    {
+      "start": 1694.32,
+      "end": 1696.8,
+      "text": "Coffee never keeps me awake."
+    },
+    {
+      "start": 1779.04,
+      "end": 1781.68,
+      "text": "Good morning !"
+    },
+    {
+      "start": 1782,
+      "end": 1783.8,
+      "text": "I heard your alarm clock!"
+    },
+    {
+      "start": 1784.12,
+      "end": 1786.32,
+      "text": "- Guess what I have. - No idea."
+    },
+    {
+      "start": 1786.64,
+      "end": 1789.44,
+      "text": "What's needed to start the day off right."
+    },
+    {
+      "start": 1789.76,
+      "end": 1793,
+      "text": "I do it in my room to drink it out of bed."
+    },
+    {
+      "start": 1793.32,
+      "end": 1796.2,
+      "text": "But to come and see you, I had to dress well!"
+    },
+    {
+      "start": 1796.68,
+      "end": 1798.64,
+      "text": "Exactly what I need!"
+    },
+    {
+      "start": 1798.96,
+      "end": 1802.64,
+      "text": "Two coffees, it works!"
+    },
+    {
+      "start": 1808.56,
+      "end": 1812.2,
+      "text": "You were less happy from my visit last night..."
+    },
+    {
+      "start": 1812.6,
+      "end": 1815.28,
+      "text": "I am not someone very sociable."
+    },
+    {
+      "start": 1815.72,
+      "end": 1819.4,
+      "text": "You lead me into temptation!"
+    },
+    {
+      "start": 1819.88,
+      "end": 1821.64,
+      "text": "What ? It's too complicated for me!"
+    },
+    {
+      "start": 1821.96,
+      "end": 1824.64,
+      "text": "I am not than a mere storekeeper."
+    },
+    {
+      "start": 1825.08,
+      "end": 1827.56,
+      "text": "But I make a good living."
+    },
+    {
+      "start": 1828.2,
+      "end": 1831.2,
+      "text": "I have a small drop left. You want some ?"
+    },
+    {
+      "start": 1831.52,
+      "end": 1835.52,
+      "text": "No thanks. It is not indicated for an organist."
+    },
+    {
+      "start": 1836.04,
+      "end": 1837.48,
+      "text": "Is that your job?"
+    },
+    {
+      "start": 1837.96,
+      "end": 1840.12,
+      "text": "We pay you to play the organ?"
+    },
+    {
+      "start": 1840.72,
+      "end": 1842.4,
+      "text": "Some churches do."
+    },
+    {
+      "start": 1843.32,
+      "end": 1847,
+      "text": "You are a churchwoman... I couldn't know!"
+    },
+    {
+      "start": 1847.56,
+      "end": 1850,
+      "text": "This is where I earn my living, that's all."
+    },
+    {
+      "start": 1850.6,
+      "end": 1853.36,
+      "text": "- Funny way to see! - Why ?"
+    },
+    {
+      "start": 1853.88,
+      "end": 1856.8,
+      "text": "What's shocking? I work"
+    },
+    {
+      "start": 1857,
+      "end": 1858.96,
+      "text": "in a church, that's all."
+    },
+    {
+      "start": 1859.44,
+      "end": 1862.08,
+      "text": "I am an organist and I get paid to play."
+    },
+    {
+      "start": 1863.48,
+      "end": 1866,
+      "text": "And it doesn't give you nightmares ?"
+    },
+    {
+      "start": 1867.96,
+      "end": 1870,
+      "text": "It's funny you say that."
+    },
+    {
+      "start": 1870.72,
+      "end": 1873.52,
+      "text": "In fact, it has nothing to do with it, but..."
+    },
+    {
+      "start": 1873.84,
+      "end": 1877.4,
+      "text": "Last night, I had a weird feeling."
+    },
+    {
+      "start": 1877.92,
+      "end": 1880.8,
+      "text": "I too had a difficult night."
+    },
+    {
+      "start": 1882,
+      "end": 1883.12,
+      "text": "It's strange..."
+    },
+    {
+      "start": 1884.28,
+      "end": 1886.96,
+      "text": "Everything is different during the day."
+    },
+    {
+      "start": 1887.96,
+      "end": 1891.32,
+      "text": "At night, our imagination plays tricks on us."
+    },
+    {
+      "start": 1892.52,
+      "end": 1895.6,
+      "text": "And as soon as it's day, everything is in order."
+    },
+    {
+      "start": 1898,
+      "end": 1899.76,
+      "text": "Nights should be removed."
+    },
+    {
+      "start": 1900.28,
+      "end": 1903.84,
+      "text": "Or return them more interesting?"
+    },
+    {
+      "start": 1906.88,
+      "end": 1910.32,
+      "text": "- Where did you learn the organ? - At University."
+    },
+    {
+      "start": 1910.56,
+      "end": 1912.52,
+      "text": "I could have gone there!"
+    },
+    {
+      "start": 1913.24,
+      "end": 1917.52,
+      "text": "But I preferred football. All these courses to learn..."
+    },
+    {
+      "start": 1917.8,
+      "end": 1921.56,
+      "text": "- Eh yes ! - I'm not stupid,"
+    },
+    {
+      "start": 1922.28,
+      "end": 1925.4,
+      "text": "but I didn't like the methods of the time."
+    },
+    {
+      "start": 1925.96,
+      "end": 1928.72,
+      "text": "I hated raw materials."
+    },
+    {
+      "start": 1929.32,
+      "end": 1931.8,
+      "text": "- Like what ? - You know..."
+    },
+    {
+      "start": 1932.32,
+      "end": 1934.92,
+      "text": "Like raw materials from Brazil."
+    },
+    {
+      "start": 1938.28,
+      "end": 1941.16,
+      "text": "coffee, sugar, stuff like that!"
+    },
+    {
+      "start": 1942,
+      "end": 1945.92,
+      "text": "I didn't care about school, I preferred girls."
+    },
+    {
+      "start": 1946.52,
+      "end": 1948.68,
+      "text": "Was it your favorite subject?"
+    },
+    {
+      "start": 1949.32,
+      "end": 1951.64,
+      "text": "Yes, the only one where I passed my exams."
+    },
+    {
+      "start": 1953.48,
+      "end": 1955.92,
+      "text": "A problem ? Does it still taste like coffee?"
+    },
+    {
+      "start": 1956.84,
+      "end": 1959.28,
+      "text": "don't take me for an alcoholic!"
+    },
+    {
+      "start": 1959.52,
+      "end": 1962.32,
+      "text": "It's to be happy in the morning, that's all."
+    },
+    {
+      "start": 1962.52,
+      "end": 1964.48,
+      "text": "At noon, you must be hilarious!"
+    },
+    {
+      "start": 1964.8,
+      "end": 1967.04,
+      "text": "That's why I'm appreciated."
+    },
+    {
+      "start": 1967.36,
+      "end": 1969.64,
+      "text": "I work in good spirits."
+    },
+    {
+      "start": 1969.96,
+      "end": 1972.88,
+      "text": "I didn't make you laugh this morning ?"
+    },
+    {
+      "start": 1973.2,
+      "end": 1975.68,
+      "text": "Yes, this morning you have fulfilled me."
+    },
+    {
+      "start": 1976,
+      "end": 1979.04,
+      "text": "I can fill you too in the evening if you want."
+    },
+    {
+      "start": 1980.52,
+      "end": 1982.84,
+      "text": "- I'll rinse the cups. - Nope !"
+    },
+    {
+      "start": 1983.16,
+      "end": 1985.6,
+      "text": "Especially not, it would be less good tomorrow!"
+    },
+    {
+      "start": 1985.92,
+      "end": 1987.28,
+      "text": "Thanks for the coffee."
+    },
+    {
+      "start": 1988.12,
+      "end": 1989.92,
+      "text": "Unhygienic but delicious."
+    },
+    {
+      "start": 1990.04,
+      "end": 1994.32,
+      "text": "You should have put some disinfectant!"
+    },
+    {
+      "start": 1995.72,
+      "end": 1998.2,
+      "text": "We really need am I leaving already?"
+    },
+    {
+      "start": 1998.76,
+      "end": 2000,
+      "text": "You will arrive to walk through the door?"
+    },
+    {
+      "start": 2001.44,
+      "end": 2003.4,
+      "text": "Who do you take me for?"
+    },
+    {
+      "start": 2003.52,
+      "end": 2006.48,
+      "text": "I just want to say that you are well charged."
+    },
+    {
+      "start": 2008.08,
+      "end": 2010.08,
+      "text": "Let's stay there..."
+    },
+    {
+      "start": 2010.4,
+      "end": 2013.76,
+      "text": "You must probably go to work Mr. Linden, right?"
+    },
+    {
+      "start": 2014.12,
+      "end": 2017.8,
+      "text": "- Not you ? - No, shopping day."
+    },
+    {
+      "start": 2030.12,
+      "end": 2031.88,
+      "text": "Does the hem hang well?"
+    },
+    {
+      "start": 2032.2,
+      "end": 2034.16,
+      "text": "We're going to do a little editing."
+    },
+    {
+      "start": 2034.48,
+      "end": 2037.92,
+      "text": "Aside from that, the drape is perfect."
+    },
+    {
+      "start": 2038.24,
+      "end": 2042.16,
+      "text": "This is not reasonnable, but I'll take both."
+    },
+    {
+      "start": 2042.48,
+      "end": 2045.64,
+      "text": "We're going to edit a little the rounding here."
+    },
+    {
+      "start": 2046.48,
+      "end": 2048.92,
+      "text": "I accompany you to your cabin?"
+    },
+    {
+      "start": 2130.08,
+      "end": 2130.8,
+      "text": "I love it !"
+    },
+    {
+      "start": 2131.12,
+      "end": 2133.88,
+      "text": "Can you have it delivered to me?"
+    },
+    {
+      "start": 2135.36,
+      "end": 2137.8,
+      "text": "I said I took it!"
+    },
+    {
+      "start": 2153.2,
+      "end": 2155.24,
+      "text": "But what does she have?"
+    },
+    {
+      "start": 2158.52,
+      "end": 2160.8,
+      "text": "What do they all have?"
+    },
+    {
+      "start": 2164.04,
+      "end": 2166.12,
+      "text": "Why am I not being answered?"
+    },
+    {
+      "start": 2268.32,
+      "end": 2270.56,
+      "text": "- What is it ? - It's that man!"
+    },
+    {
+      "start": 2272.04,
+      "end": 2275.16,
+      "text": "I meant him no harm. I was thirsty."
+    },
+    {
+      "start": 2275.56,
+      "end": 2280.16,
+      "text": "No, not that man!"
+    },
+    {
+      "start": 2282,
+      "end": 2283.88,
+      "text": "It was the other!"
+    },
+    {
+      "start": 2285.84,
+      "end": 2289.16,
+      "text": "There was someone else a strange man."
+    },
+    {
+      "start": 2289.64,
+      "end": 2291.32,
+      "text": "You were scared, that's all."
+    },
+    {
+      "start": 2291.72,
+      "end": 2294.84,
+      "text": "nervous breakdowns, It's no use. Calm down!"
+    },
+    {
+      "start": 2295.28,
+      "end": 2300.08,
+      "text": "The am Dr. Samuels. My office is just across the street."
+    },
+    {
+      "start": 2300.84,
+      "end": 2302.76,
+      "text": "You are in shock."
+    },
+    {
+      "start": 2303.32,
+      "end": 2305.44,
+      "text": "Can I help you if you desire it."
+    },
+    {
+      "start": 2306.12,
+      "end": 2308.52,
+      "text": "Thanks. I can come right away ?"
+    },
+    {
+      "start": 2308.72,
+      "end": 2311.2,
+      "text": "Sure. I take him to my office."
+    },
+    {
+      "start": 2311.64,
+      "end": 2313.72,
+      "text": "I will take care of her."
+    },
+    {
+      "start": 2328.36,
+      "end": 2331.92,
+      "text": "I heard nothing more, but that wasn't the worst."
+    },
+    {
+      "start": 2332.76,
+      "end": 2335.08,
+      "text": "Nobody saw me."
+    },
+    {
+      "start": 2335.4,
+      "end": 2336.84,
+      "text": "It was like..."
+    },
+    {
+      "start": 2338.96,
+      "end": 2341.48,
+      "text": "As if I had ceased to exist,"
+    },
+    {
+      "start": 2343.32,
+      "end": 2346,
+      "text": "and that I didn't have no place in this world,"
+    },
+    {
+      "start": 2347,
+      "end": 2349.2,
+      "text": "no life around me."
+    },
+    {
+      "start": 2350.36,
+      "end": 2354.16,
+      "text": "That's where you saw that man ?"
+    },
+    {
+      "start": 2354.88,
+      "end": 2356.12,
+      "text": "Yes."
+    },
+    {
+      "start": 2358.72,
+      "end": 2362.32,
+      "text": "Excuse me for having my back turned, I took notes."
+    },
+    {
+      "start": 2362.64,
+      "end": 2364.72,
+      "text": "I must have spoken for an hour."
+    },
+    {
+      "start": 2365.04,
+      "end": 2368.2,
+      "text": "Did you tell me everything? Did you forget anything?"
+    },
+    {
+      "start": 2368.96,
+      "end": 2372.12,
+      "text": "No, I told you all the story."
+    },
+    {
+      "start": 2372.44,
+      "end": 2374.6,
+      "text": "He follows me, that's all."
+    },
+    {
+      "start": 2374.92,
+      "end": 2378.76,
+      "text": "- It is not so simple. - What do you mean ?"
+    },
+    {
+      "start": 2379.36,
+      "end": 2382.96,
+      "text": "If he had been in the park, someone would have seen him."
+    },
+    {
+      "start": 2383.28,
+      "end": 2386.64,
+      "text": "And that man on the landing that you are alone"
+    },
+    {
+      "start": 2386.96,
+      "end": 2390.84,
+      "text": "- to have seen. - Where are you coming from?"
+    },
+    {
+      "start": 2391.16,
+      "end": 2394.88,
+      "text": "Your car fell in the water a few days ago."
+    },
+    {
+      "start": 2395.2,
+      "end": 2397.48,
+      "text": "You survived by miracle."
+    },
+    {
+      "start": 2397.8,
+      "end": 2400.72,
+      "text": "The emotional shock must have been terrible."
+    },
+    {
+      "start": 2401.16,
+      "end": 2403.88,
+      "text": "You take me for a fool that's it ?"
+    },
+    {
+      "start": 2404.04,
+      "end": 2406.16,
+      "text": "No way."
+    },
+    {
+      "start": 2406.48,
+      "end": 2408.12,
+      "text": "I'm a sensible person"
+    },
+    {
+      "start": 2408.44,
+      "end": 2411.36,
+      "text": "rational, I don't imagine nonsense."
+    },
+    {
+      "start": 2411.68,
+      "end": 2415.88,
+      "text": "Let's go! It may happen to anyone!"
+    },
+    {
+      "start": 2416.36,
+      "end": 2420.76,
+      "text": "You have never interpreted a crooked conversation?"
+    },
+    {
+      "start": 2422.12,
+      "end": 2424.48,
+      "text": "You never took a person"
+    },
+    {
+      "start": 2424.64,
+      "end": 2428.28,
+      "text": "- for another? - I do not see the link."
+    },
+    {
+      "start": 2428.76,
+      "end": 2432.24,
+      "text": "Our imagination plays tricks on us."
+    },
+    {
+      "start": 2432.56,
+      "end": 2435.96,
+      "text": "She distorts what they say our senses. OK ?"
+    },
+    {
+      "start": 2436.6,
+      "end": 2438.16,
+      "text": "It's possible."
+    },
+    {
+      "start": 2438.48,
+      "end": 2442,
+      "text": "These are things that happen every day."
+    },
+    {
+      "start": 2442.32,
+      "end": 2446.32,
+      "text": "So during a high fever or after a shock."
+    },
+    {
+      "start": 2446.64,
+      "end": 2450.08,
+      "text": "I can not believe that I imagined all this."
+    },
+    {
+      "start": 2450.56,
+      "end": 2454.16,
+      "text": "This man makes you think about someone ?"
+    },
+    {
+      "start": 2454.32,
+      "end": 2456.68,
+      "text": "- To a friend, to your father? - Nope."
+    },
+    {
+      "start": 2456.84,
+      "end": 2460.32,
+      "text": "- Do you have a boyfriend? - No, I don't want to."
+    },
+    {
+      "start": 2460.64,
+      "end": 2463.12,
+      "text": "- Never ? - Nope."
+    },
+    {
+      "start": 2464.64,
+      "end": 2468.6,
+      "text": "I find myself telling you this, but it's true."
+    },
+    {
+      "start": 2468.96,
+      "end": 2472.24,
+      "text": "I don't wanna feel close to someone."
+    },
+    {
+      "start": 2472.56,
+      "end": 2475.04,
+      "text": "You have always been like that ?"
+    },
+    {
+      "start": 2476.84,
+      "end": 2478.32,
+      "text": "No I do not know."
+    },
+    {
+      "start": 2478.64,
+      "end": 2482.92,
+      "text": "You don't like to mingle to others, to their lives?"
+    },
+    {
+      "start": 2483.24,
+      "end": 2486.24,
+      "text": "I find it difficult to approach them."
+    },
+    {
+      "start": 2486.56,
+      "end": 2490.72,
+      "text": "I feel like I'm looking for something else."
+    },
+    {
+      "start": 2490.88,
+      "end": 2493.44,
+      "text": "Do you feel guilty?"
+    },
+    {
+      "start": 2494.12,
+      "end": 2495.92,
+      "text": "I don't understand."
+    },
+    {
+      "start": 2496.32,
+      "end": 2499.84,
+      "text": "I am not a psychiatrist I may be clumsy."
+    },
+    {
+      "start": 2500.2,
+      "end": 2503.68,
+      "text": "anything can come of a feeling of guilt."
+    },
+    {
+      "start": 2503.84,
+      "end": 2505.72,
+      "text": "It's ridiculous !"
+    },
+    {
+      "start": 2506.04,
+      "end": 2508.8,
+      "text": "It's possible. Frankly I do not know."
+    },
+    {
+      "start": 2510.16,
+      "end": 2511.88,
+      "text": "One thing is certain."
+    },
+    {
+      "start": 2512.52,
+      "end": 2516.16,
+      "text": "If my imagination is in question, I can put it in order."
+    },
+    {
+      "start": 2516.84,
+      "end": 2519.32,
+      "text": "You are a very strong-willed person."
+    },
+    {
+      "start": 2519.76,
+      "end": 2521.4,
+      "text": "I want to survive anyway."
+    },
+    {
+      "start": 2522.52,
+      "end": 2525.2,
+      "text": "This old pavilion, near the lake,"
+    },
+    {
+      "start": 2525.76,
+      "end": 2528.04,
+      "text": "is related to all this according to you."
+    },
+    {
+      "start": 2529.48,
+      "end": 2533.2,
+      "text": "I could go to get to the bottom of it."
+    },
+    {
+      "start": 2534.44,
+      "end": 2537.08,
+      "text": "- If I went... - No rush !"
+    },
+    {
+      "start": 2537.96,
+      "end": 2541.8,
+      "text": "If it's my imagination It has to stop."
+    },
+    {
+      "start": 2542.28,
+      "end": 2544.88,
+      "text": "Get accompanied, at least."
+    },
+    {
+      "start": 2545,
+      "end": 2547.8,
+      "text": "You said that I have the will!"
+    },
+    {
+      "start": 2548.84,
+      "end": 2551.04,
+      "text": "It is now that I have to go."
+    },
+    {
+      "start": 2551.52,
+      "end": 2554.72,
+      "text": "If necessary, I will go alone."
+    },
+    {
+      "start": 2834.2,
+      "end": 2838.12,
+      "text": "I hope you're not going yet send me for a ride,"
+    },
+    {
+      "start": 2839.04,
+      "end": 2841.48,
+      "text": "but I would like invite you to dinner."
+    },
+    {
+      "start": 2841.72,
+      "end": 2845.56,
+      "text": "I ate in town. And I must rehearse in church tonight."
+    },
+    {
+      "start": 2845.92,
+      "end": 2850.24,
+      "text": "If I came take you out?"
+    },
+    {
+      "start": 2850.56,
+      "end": 2853.12,
+      "text": "We could go dancing If you want."
+    },
+    {
+      "start": 2853.44,
+      "end": 2856.56,
+      "text": "Dance, it's not my forte."
+    },
+    {
+      "start": 2860.92,
+      "end": 2863.08,
+      "text": "Can I ask you something?"
+    },
+    {
+      "start": 2863.4,
+      "end": 2867,
+      "text": "- Always ask. - Are you afraid of men?"
+    },
+    {
+      "start": 2867.32,
+      "end": 2869.84,
+      "text": "No way."
+    },
+    {
+      "start": 2871.68,
+      "end": 2874.28,
+      "text": "You are quite distant."
+    },
+    {
+      "start": 2874.64,
+      "end": 2877.88,
+      "text": "You were nicer this morning when we had coffee."
+    },
+    {
+      "start": 2878.12,
+      "end": 2880.76,
+      "text": "I needed company."
+    },
+    {
+      "start": 2881.28,
+      "end": 2884.04,
+      "text": "You may be happy tonight."
+    },
+    {
+      "start": 2884.92,
+      "end": 2887.12,
+      "text": "It's not funny to go home alone."
+    },
+    {
+      "start": 2889.92,
+      "end": 2891.12,
+      "text": "It's true."
+    },
+    {
+      "start": 2892.16,
+      "end": 2895,
+      "text": "I will be finished around 9 o'clock, will it be ok?"
+    },
+    {
+      "start": 2895.32,
+      "end": 2897.52,
+      "text": "Very well."
+    },
+    {
+      "start": 2898.6,
+      "end": 2902.24,
+      "text": "See you at church."
+    },
+    {
+      "start": 3107.68,
+      "end": 3110.32,
+      "text": "It is a profanation, sacrilege!"
+    },
+    {
+      "start": 3110.72,
+      "end": 3113.16,
+      "text": "what are you playing there in a church?"
+    },
+    {
+      "start": 3113.6,
+      "end": 3117.16,
+      "text": "So you have no respect?"
+    },
+    {
+      "start": 3118.92,
+      "end": 3122.48,
+      "text": "I pity you to miss of soul at this point."
+    },
+    {
+      "start": 3123.32,
+      "end": 3125.84,
+      "text": "This organ and the music we play here"
+    },
+    {
+      "start": 3126,
+      "end": 3129.12,
+      "text": "have for us great meaning."
+    },
+    {
+      "start": 3129.6,
+      "end": 3132.16,
+      "text": "I thought it was same for you."
+    },
+    {
+      "start": 3132.68,
+      "end": 3134.6,
+      "text": "But if not,"
+    },
+    {
+      "start": 3135,
+      "end": 3138.24,
+      "text": "you can't stay our organist."
+    },
+    {
+      "start": 3138.8,
+      "end": 3142.12,
+      "text": "I must, in all conscience, ask you to leave."
+    },
+    {
+      "start": 3166.6,
+      "end": 3168.84,
+      "text": "I don't give up on you however."
+    },
+    {
+      "start": 3169.4,
+      "end": 3171.32,
+      "text": "Don't turn your back to the Church!"
+    },
+    {
+      "start": 3171.56,
+      "end": 3174.56,
+      "text": "You will find help here, accept it."
+    },
+    {
+      "start": 3204.72,
+      "end": 3207.72,
+      "text": "Hi ! I wait for a long time."
+    },
+    {
+      "start": 3207.96,
+      "end": 3209.76,
+      "text": "My car is here, let's go."
+    },
+    {
+      "start": 3236.6,
+      "end": 3238.36,
+      "text": "So what ? You don't drink?"
+    },
+    {
+      "start": 3238.72,
+      "end": 3241.36,
+      "text": "- Not really. - Not really !"
+    },
+    {
+      "start": 3241.68,
+      "end": 3244.92,
+      "text": "What's left, can you tell me?"
+    },
+    {
+      "start": 3245.76,
+      "end": 3249.28,
+      "text": "Me, I drink..."
+    },
+    {
+      "start": 3249.44,
+      "end": 3251.76,
+      "text": "Ah, really, I drink!"
+    },
+    {
+      "start": 3257.36,
+      "end": 3259.48,
+      "text": "You don't like either the music ?"
+    },
+    {
+      "start": 3259.88,
+      "end": 3262.04,
+      "text": "- If it's okay. - But no !"
+    },
+    {
+      "start": 3262.36,
+      "end": 3264.12,
+      "text": "You don't like dancing"
+    },
+    {
+      "start": 3264.44,
+      "end": 3266.8,
+      "text": "nor drink,"
+    },
+    {
+      "start": 3267.12,
+      "end": 3270.08,
+      "text": "nor that a man approaches you. I am wrong ?"
+    },
+    {
+      "start": 3270.72,
+      "end": 3274.44,
+      "text": "- I did not say that. - You do not pick up a word!"
+    },
+    {
+      "start": 3277.32,
+      "end": 3280.68,
+      "text": "I will put back the song you love so much."
+    },
+    {
+      "start": 3286.44,
+      "end": 3290.32,
+      "text": "- Hey Johnny, who's the girl? - You don't know her, kid."
+    },
+    {
+      "start": 3290.68,
+      "end": 3293,
+      "text": "You're hiding things from me."
+    },
+    {
+      "start": 3293.4,
+      "end": 3296.48,
+      "text": "It's not the kind of sausage that you usually go out!"
+    },
+    {
+      "start": 3296.8,
+      "end": 3299.88,
+      "text": "stop drooling, she's too good for you!"
+    },
+    {
+      "start": 3300.32,
+      "end": 3302.16,
+      "text": "We bet ?"
+    },
+    {
+      "start": 3302.84,
+      "end": 3306.96,
+      "text": "Drop it. I'm on a roll."
+    },
+    {
+      "start": 3307.08,
+      "end": 3308.52,
+      "text": "I could help you..."
+    },
+    {
+      "start": 3308.84,
+      "end": 3312.28,
+      "text": "I don't want her to see me with a sucker like you!"
+    },
+    {
+      "start": 3313.96,
+      "end": 3315.92,
+      "text": "Good luck !"
+    },
+    {
+      "start": 3319.52,
+      "end": 3321.4,
+      "text": "Have you met a friend?"
+    },
+    {
+      "start": 3321.72,
+      "end": 3326.52,
+      "text": "Yes... A classmate."
+    },
+    {
+      "start": 3328.28,
+      "end": 3331.8,
+      "text": "He told me that a girl wanted to talk to me."
+    },
+    {
+      "start": 3333.16,
+      "end": 3336.28,
+      "text": "- He asked me to go. - What did you answer?"
+    },
+    {
+      "start": 3336.72,
+      "end": 3340.04,
+      "text": "I refused, of course. I'm going out with you tonight."
+    },
+    {
+      "start": 3344.8,
+      "end": 3348.8,
+      "text": "He said you looked to bore you with me."
+    },
+    {
+      "start": 3349.36,
+      "end": 3350.96,
+      "text": "It's not true!"
+    },
+    {
+      "start": 3351.36,
+      "end": 3354.36,
+      "text": "I enjoyed this evening in your company."
+    },
+    {
+      "start": 3354.84,
+      "end": 3357.36,
+      "text": "She would have been sinister, without you."
+    },
+    {
+      "start": 3359.16,
+      "end": 3361.88,
+      "text": "So have fun! Finish your drink!"
+    },
+    {
+      "start": 3368.24,
+      "end": 3370.92,
+      "text": "It's not poison at whatever cost!"
+    },
+    {
+      "start": 3371.4,
+      "end": 3374.04,
+      "text": "I'm sorry to be disagreeable to you."
+    },
+    {
+      "start": 3375.48,
+      "end": 3376.68,
+      "text": "I do not understand anything."
+    },
+    {
+      "start": 3377.52,
+      "end": 3380.92,
+      "text": "First, you're ignoring me. Well, that's class!"
+    },
+    {
+      "start": 3381.36,
+      "end": 3383.84,
+      "text": "You have to be prayed for, what..."
+    },
+    {
+      "start": 3384.16,
+      "end": 3387.12,
+      "text": "And there you spin soft, a real mess!"
+    },
+    {
+      "start": 3388.12,
+      "end": 3392.92,
+      "text": "Yesterday I was not interested. Tonight I want to be with you."
+    },
+    {
+      "start": 3393.64,
+      "end": 3397.04,
+      "text": "- With anyone ? - No, with you!"
+    },
+    {
+      "start": 3403.48,
+      "end": 3406.16,
+      "text": "Come on, let yourself go..."
+    },
+    {
+      "start": 3409.24,
+      "end": 3413,
+      "text": "Do you prefer to be alone? I'm leaving, if you want."
+    },
+    {
+      "start": 3413.8,
+      "end": 3416.12,
+      "text": "I like your company, I assure you !"
+    },
+    {
+      "start": 3417.44,
+      "end": 3421.48,
+      "text": "Don't leave me alone tonight. I want to stay close to you."
+    },
+    {
+      "start": 3430.12,
+      "end": 3433.24,
+      "text": "- It is serious ? - Yes."
+    },
+    {
+      "start": 3444.04,
+      "end": 3446,
+      "text": "If we were leaving, both ?"
+    },
+    {
+      "start": 3446.88,
+      "end": 3450.04,
+      "text": "You know my room is next to yours."
+    },
+    {
+      "start": 3450.92,
+      "end": 3453.76,
+      "text": "So you don't have just one word to say..."
+    },
+    {
+      "start": 3472.8,
+      "end": 3476.76,
+      "text": "- Oh dear ! - We're going to wake Mrs. Thomas!"
+    },
+    {
+      "start": 3477.08,
+      "end": 3480.32,
+      "text": "She sleeps on the other side, she won't hear anything."
+    },
+    {
+      "start": 3489.76,
+      "end": 3491.72,
+      "text": "Sweetheart..."
+    },
+    {
+      "start": 3492.88,
+      "end": 3495.88,
+      "text": "Won't you leave me there?"
+    },
+    {
+      "start": 3497.84,
+      "end": 3500.28,
+      "text": "It's dark in there"
+    },
+    {
+      "start": 3502.08,
+      "end": 3504,
+      "text": "Are you going to be alone tonight?"
+    },
+    {
+      "start": 3504.56,
+      "end": 3507.88,
+      "text": "Let me pass a moment with you."
+    },
+    {
+      "start": 3509.24,
+      "end": 3511.12,
+      "text": "You don't want to be alone!"
+    },
+    {
+      "start": 3511.44,
+      "end": 3513.4,
+      "text": "No."
+    },
+    {
+      "start": 3524.08,
+      "end": 3526.84,
+      "text": "- Sorry, I can not... - Lets go !"
+    },
+    {
+      "start": 3527.4,
+      "end": 3531.2,
+      "text": "I must please you a little since you let me in."
+    },
+    {
+      "start": 3560.24,
+      "end": 3561.92,
+      "text": "But what do you have ?"
+    },
+    {
+      "start": 3565.6,
+      "end": 3567.52,
+      "text": "What is happening here ?"
+    },
+    {
+      "start": 3568.96,
+      "end": 3572.24,
+      "text": "- What do you have ? - A man is chasing me."
+    },
+    {
+      "start": 3572.88,
+      "end": 3574.68,
+      "text": "Do something !"
+    },
+    {
+      "start": 3574.92,
+      "end": 3576.64,
+      "text": "- I am leaving. - No, stay!"
+    },
+    {
+      "start": 3577.64,
+      "end": 3580.4,
+      "text": "Oh no, my dear! That's all me!"
+    },
+    {
+      "start": 3580.56,
+      "end": 3583.12,
+      "text": "I ran into a weirdo!"
+    },
+    {
+      "start": 3583.2,
+      "end": 3585.6,
+      "text": "Don't leave me alone!"
+    },
+    {
+      "start": 3638.56,
+      "end": 3640.2,
+      "text": "What have you discovered, doctor?"
+    },
+    {
+      "start": 3641.64,
+      "end": 3643.84,
+      "text": "Not much, I'm afraid."
+    },
+    {
+      "start": 3644.12,
+      "end": 3647.36,
+      "text": "I'm glad you're here."
+    },
+    {
+      "start": 3648.04,
+      "end": 3651.84,
+      "text": "I was going to call someone, but I would not have liked to pay."
+    },
+    {
+      "start": 3652.12,
+      "end": 3654.16,
+      "text": "I came on purpose."
+    },
+    {
+      "start": 3654.56,
+      "end": 3658.04,
+      "text": "I keep thinking about her since she left my office yesterday."
+    },
+    {
+      "start": 3658.36,
+      "end": 3660.56,
+      "text": "What is she making?"
+    },
+    {
+      "start": 3661,
+      "end": 3663.52,
+      "text": "The Devil alone knows."
+    },
+    {
+      "start": 3664.12,
+      "end": 3668.84,
+      "text": "I heard her move objects all night."
+    },
+    {
+      "start": 3669.08,
+      "end": 3671.52,
+      "text": "It's the first time I hear that."
+    },
+    {
+      "start": 3671.64,
+      "end": 3674.16,
+      "text": "And this morning she didn't want let me in."
+    },
+    {
+      "start": 3674.36,
+      "end": 3676.48,
+      "text": "She is strange."
+    },
+    {
+      "start": 3676.68,
+      "end": 3679.32,
+      "text": "She absolutely refuses my help."
+    },
+    {
+      "start": 3679.8,
+      "end": 3684.36,
+      "text": "I don't criticize her. Something about her baffles me."
+    },
+    {
+      "start": 3684.92,
+      "end": 3688.84,
+      "text": "I insisted that she call me when she needs help."
+    },
+    {
+      "start": 3689.84,
+      "end": 3691.84,
+      "text": "I can't let her stay in this house."
+    },
+    {
+      "start": 3692.2,
+      "end": 3693.68,
+      "text": "Don't worry about that."
+    },
+    {
+      "start": 3694.04,
+      "end": 3697.84,
+      "text": "She wants to leave town as soon as possible."
+    },
+    {
+      "start": 3698.64,
+      "end": 3700.6,
+      "text": "I hope she leaves."
+    },
+    {
+      "start": 3703.28,
+      "end": 3705.08,
+      "text": "I hope she can."
+    },
+    {
+      "start": 3746.52,
+      "end": 3748.96,
+      "text": "You go ?"
+    },
+    {
+      "start": 3749.24,
+      "end": 3751.28,
+      "text": "Where are you going ?"
+    },
+    {
+      "start": 3755.48,
+      "end": 3759.4,
+      "text": "I won't pay you back the rest of the week !"
+    },
+    {
+      "start": 3816.04,
+      "end": 3819.2,
+      "text": "It's the gearbox. Shall we put her on the bridge?"
+    },
+    {
+      "start": 3832.48,
+      "end": 3834.2,
+      "text": "Its good."
+    },
+    {
+      "start": 3835,
+      "end": 3837.36,
+      "text": "- Will it be long? - Must see."
+    },
+    {
+      "start": 3837.68,
+      "end": 3839.64,
+      "text": "Want to come down?"
+    },
+    {
+      "start": 3840.12,
+      "end": 3843.72,
+      "text": "- Can I stay here? - If you want."
+    },
+    {
+      "start": 3986.32,
+      "end": 3988.84,
+      "text": "when leave the next bus going east?"
+    },
+    {
+      "start": 3990.32,
+      "end": 3992.8,
+      "text": "I must take it!"
+    },
+    {
+      "start": 4009.24,
+      "end": 4014.32,
+      "text": "I want to get out of here! I have to go !"
+    },
+    {
+      "start": 4028.04,
+      "end": 4032.92,
+      "text": "The next bus heading from the east will leave"
+    },
+    {
+      "start": 4034.4,
+      "end": 4036,
+      "text": "from gate 9.\""
+    },
+    {
+      "start": 4100.44,
+      "end": 4103.24,
+      "text": "Do not close the gate! Wait !"
+    },
+    {
+      "start": 4103.56,
+      "end": 4106.2,
+      "text": "Let me take this train!"
+    },
+    {
+      "start": 4106.52,
+      "end": 4110.36,
+      "text": "I must leave at any cost, You're welcome !"
+    },
+    {
+      "start": 4115.32,
+      "end": 4118.96,
+      "text": "Listen to me ! You hear me ?"
+    },
+    {
+      "start": 4131.32,
+      "end": 4133.64,
+      "text": "Why can't I hear anything?"
+    },
+    {
+      "start": 4137.96,
+      "end": 4140.88,
+      "text": "You can help me ?"
+    },
+    {
+      "start": 4144.92,
+      "end": 4147.36,
+      "text": "One moment please !"
+    },
+    {
+      "start": 4164.68,
+      "end": 4167.92,
+      "text": "Why can't anyone hear me?"
+    },
+    {
+      "start": 4221.24,
+      "end": 4226.36,
+      "text": "Doctor, I came to see you because you are my only hope."
+    },
+    {
+      "start": 4227.56,
+      "end": 4232.2,
+      "text": "Without your help, I should go back there."
+    },
+    {
+      "start": 4234.16,
+      "end": 4236.52,
+      "text": "He tries to attract me somewhere, to remember."
+    },
+    {
+      "start": 4238.32,
+      "end": 4242.72,
+      "text": "Tell me what to do, Doctor!"
+    },
+    {
+      "start": 4578.68,
+      "end": 4580.2,
+      "text": "The car is over there."
+    },
+    {
+      "start": 4580.96,
+      "end": 4583.4,
+      "text": "And the footsteps lead here."
+    },
+    {
+      "start": 4593.8,
+      "end": 4595.72,
+      "text": "And then, nothing."
+    },
+    {
+      "start": 4621.88,
+      "end": 4625.64,
+      "text": "It's okay, Will, she's here."
+    },
+    {
+      "start": 4625.96,
+      "end": 4627.92,
+      "text": "Bring it up!"
+    },
+    {
+      "start": 4658.48,
+      "end": 4662.4,
+      "text": "© Bach Films"
+    }
+  ]
+}

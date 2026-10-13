@@ -1,0 +1,225 @@
+{
+  "id": "voa-game-is-fun",
+  "type": "video",
+  "category": "fun",
+  "title": "This Game Is Fun!",
+  "creator": "VOA Learning English",
+  "year": 2021,
+  "level": "A2",
+  "durationSeconds": 300,
+  "genre": "comedy",
+  "summaryTr": "Anna, telefonundaki oyunda sanal simgeleri kovalarken Dan ile yarışa tutuşuyor. Puan toplamak kolay; önündeki ağacı fark etmek biraz daha zor!",
+  "levelNoteTr": "Seviye, altyazı ve kelime desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Ana skeçteki ekran altyazıları dokunulabilir olarak hazırlanmıştır. VOA’nın Dinle/Konuş tekrarları ve ara açıklamaları özgün hâliyle korunur; bu bölümlerde her cümle için dokunulabilir altyazı bulunmaz.",
+  "videoUrl": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b9/b9ddf673-07ec-4557-b33d-37cf6315e3e3_720p.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b9/b9ddf673-07ec-4557-b33d-37cf6315e3e3_240p.mp4",
+      "sizeMB": 12
+    },
+    {
+      "label": "360p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b9/b9ddf673-07ec-4557-b33d-37cf6315e3e3.mp4",
+      "sizeMB": 21
+    },
+    {
+      "label": "480p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b9/b9ddf673-07ec-4557-b33d-37cf6315e3e3_480p.mp4",
+      "sizeMB": 38
+    },
+    {
+      "label": "720p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b9/b9ddf673-07ec-4557-b33d-37cf6315e3e3_720p.mp4",
+      "sizeMB": 64
+    }
+  ],
+  "source": {
+    "name": "VOA Learning English — This Game Is Fun!",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-26-this-game-is-fun/3457248.html",
+    "watchUrl": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-26-this-game-is-fun/3457248.html",
+    "license": "VOA özgün üretimi · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America / VOA Learning English. Özgün video bütünüyle ve değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "VOA’nın video üzerindeki İngilizce ekran altyazıları",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-26-this-game-is-fun/3457248.html",
+    "license": "VOA özgün metni · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America; metin çıkarımı ve zaman eşlemesi: Lantern English",
+    "changeNoteTr": "Ana skeçteki ekran yazıları aktarılmış, OCR yazım hataları düzeltilmiş ve yaklaşık 0,5 saniye çözünürlükle zamanlanmıştır. Dinle/Konuş alıştırmalarındaki boşluklar korunmuştur."
+  },
+  "glossary": {
+    "memorial": "bir kişiyi veya olayı anmak için yapılan anıt",
+    "roosevelt": "Roosevelt (ABD başkanının soyadı)",
+    "lincoln": "Lincoln (ABD başkanının soyadı)",
+    "americana": "Amerikan kültürüne ait şeyler; burada Anna adıyla kelime oyunu",
+    "wrestler": "güreşçi",
+    "bald": "bald eagle: kel kartal; ABD simgesi olan kuş",
+    "liberty": "özgürlük; Statue of Liberty: Özgürlük Heykeli"
+  },
+  "captions": [
+    {
+      "start": 30.5,
+      "end": 35,
+      "text": "This is the Roosevelt Memorial. Where is the symbol?"
+    },
+    {
+      "start": 35.5,
+      "end": 38,
+      "text": "But this game is really fun."
+    },
+    {
+      "start": 38,
+      "end": 41.5,
+      "text": "You have to find things that aren't really there."
+    },
+    {
+      "start": 41.5,
+      "end": 46,
+      "text": "When you find an American symbol, you win points and"
+    },
+    {
+      "start": 46,
+      "end": 49.5,
+      "text": "a Fun Fact about a U.S. president."
+    },
+    {
+      "start": 51.5,
+      "end": 57,
+      "text": "Yay! I found Uncle Sam and I won 40 points!"
+    },
+    {
+      "start": 57,
+      "end": 60.5,
+      "text": "What is the Fun Fact?"
+    },
+    {
+      "start": 60.5,
+      "end": 65.5,
+      "text": "Franklin Roosevelt was the first to fly in a plane as president!"
+    },
+    {
+      "start": 65.5,
+      "end": 71.5,
+      "text": "I didn't know that. This is a really beautiful memorial."
+    },
+    {
+      "start": 142.5,
+      "end": 149.5,
+      "text": "I found it! The Statue of Liberty! Please give me my Fun Fact."
+    },
+    {
+      "start": 149.5,
+      "end": 152,
+      "text": "Abraham Lincoln was a great wrestler!"
+    },
+    {
+      "start": 152,
+      "end": 156.5,
+      "text": "I didn't know that. Lincoln wanted freedom for all people."
+    },
+    {
+      "start": 156.5,
+      "end": 159.5,
+      "text": "So, the Statue of Liberty works well."
+    },
+    {
+      "start": 159.5,
+      "end": 166.5,
+      "text": "And I won 20 points! Time to find the next symbol."
+    },
+    {
+      "start": 189.5,
+      "end": 191.5,
+      "text": "Hey! Look out!"
+    },
+    {
+      "start": 191.5,
+      "end": 196.5,
+      "text": "Sorry. Hey, it's you! Now, I should be more careful."
+    },
+    {
+      "start": 196.5,
+      "end": 197.5,
+      "text": "That's okay."
+    },
+    {
+      "start": 197.5,
+      "end": 201.5,
+      "text": "This game is a lot of fun. What's your name?"
+    },
+    {
+      "start": 201.5,
+      "end": 204,
+      "text": "Dan. What's yours?"
+    },
+    {
+      "start": 204,
+      "end": 205.5,
+      "text": "Anna."
+    },
+    {
+      "start": 205.5,
+      "end": 207.5,
+      "text": "Like Americana!"
+    },
+    {
+      "start": 207.5,
+      "end": 210,
+      "text": "Yeah, I guess so."
+    },
+    {
+      "start": 255,
+      "end": 256.5,
+      "text": "Did you find any symbols?"
+    },
+    {
+      "start": 256.5,
+      "end": 264,
+      "text": "Yes, I found three and I won 120 points!"
+    },
+    {
+      "start": 264,
+      "end": 268.5,
+      "text": "Me too. But, did you find the bald eagle?"
+    },
+    {
+      "start": 268.5,
+      "end": 271,
+      "text": "No. Did you?"
+    },
+    {
+      "start": 271,
+      "end": 273.5,
+      "text": "No."
+    },
+    {
+      "start": 273.5,
+      "end": 276.5,
+      "text": "First one to find it wins?"
+    },
+    {
+      "start": 277,
+      "end": 280,
+      "text": "Hey Anna, look out for that tree!"
+    },
+    {
+      "start": 282,
+      "end": 284.5,
+      "text": "I learned a lot about presidents with this game."
+    },
+    {
+      "start": 284.5,
+      "end": 287.5,
+      "text": "But I ought to be more careful."
+    },
+    {
+      "start": 287.5,
+      "end": 292,
+      "text": "Until next time!"
+    }
+  ],
+  "categoryTr": "Komedi skeçi",
+  "captionCoverage": "main-dialogue"
+}

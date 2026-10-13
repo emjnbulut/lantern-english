@@ -1,0 +1,4740 @@
+{
+  "id": "night-of-the-living-dead",
+  "type": "video",
+  "title": "Night of the Living Dead",
+  "creator": "George A. Romero",
+  "year": 1968,
+  "level": "B2",
+  "category": "horror",
+  "genre": "horror",
+  "durationSeconds": 5753,
+  "summaryTr": "Zombilerle çevrili bir çiftlik evinde hayatta kalmaya çalışan bir grup, dışarıdaki tehlike kadar kendi anlaşmazlıklarıyla da mücadele eder. Klasik zombi korkusunda acil durum konuşmalarını ve tartışmaları takip et.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Radyo haberleri, emirler ve tartışmalar çoğunlukla açık anlatılır; bağırışlar, eski ses kaydı ve üst üste konuşmalar dinlemeyi zorlaştırır.",
+  "advisoryTr": "Ölüm, kan, zombi saldırıları, aile içi çatışma ve rahatsız edici görüntüler içerir.",
+  "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/24/Night_of_the_Living_Dead_%281968%29.webm/Night_of_the_Living_Dead_%281968%29.webm.480p.vp9.webm",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/24/Night_of_the_Living_Dead_%281968%29.webm/Night_of_the_Living_Dead_%281968%29.webm.240p.vp9.webm",
+      "sizeMB": 184
+    },
+    {
+      "label": "480p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/24/Night_of_the_Living_Dead_%281968%29.webm/Night_of_the_Living_Dead_%281968%29.webm.480p.vp9.webm",
+      "sizeMB": 529
+    }
+  ],
+  "source": {
+    "name": "Wikimedia Commons — Night of the Living Dead",
+    "url": "https://commons.wikimedia.org/wiki/File:Night_of_the_Living_Dead_(1968).webm",
+    "watchUrl": "https://commons.wikimedia.org/wiki/File:Night_of_the_Living_Dead_(1968).webm",
+    "license": "Kamu malı (ABD)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Night_of_the_Living_Dead_(1968).webm",
+    "credit": "George A. Romero · Özgün film; Wikimedia Commons aktarımı",
+    "creditNoteTr": "Video, kaynak sürümüyle ve jeneriğiyle birlikte değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText%3ANight%20of%20the%20Living%20Dead%20(1968).webm.en.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar altyazı sayfasının geçmişinde)",
+    "changeNoteTr": "Sözler ve zamanlar korunmuştur; biçim etiketleri kaldırılıp satırlar birleştirilerek zamanlar saniyeye dönüştürülmüştür."
+  },
+  "glossary": {
+    "cemetery": "mezarlık",
+    "ghoul": "hortlak",
+    "morgue": "morg",
+    "shelter": "sığınak; sığınmak",
+    "cellar": "mahzen",
+    "broadcast": "radyo veya televizyon yayını",
+    "flesh": "et; vücudun yumuşak dokusu",
+    "rescue": "kurtarmak; kurtarma",
+    "refuge": "sığınak",
+    "homicide": "cinayet",
+    "feed": "beslemek",
+    "newsroom": "haber merkezi",
+    "reporter": "muhabir",
+    "sheriff": "şerif",
+    "governor": "vali",
+    "racket": "burada: iş; gürültü; yasa dışı düzen",
+    "barbra": "Barbra (karakter adı)"
+  },
+  "captions": [
+    {
+      "start": 139.451,
+      "end": 142.715,
+      "text": "They ought to make the day the time changes the first day of summer."
+    },
+    {
+      "start": 142.8,
+      "end": 144.055,
+      "text": "What?"
+    },
+    {
+      "start": 144.223,
+      "end": 146.316,
+      "text": "Well, it's eight o'clock and it's still light."
+    },
+    {
+      "start": 146.441,
+      "end": 149.162,
+      "text": "A lot of good the extra daylight does us."
+    },
+    {
+      "start": 149.204,
+      "end": 150.92000000000002,
+      "text": "Now we've still got a three-hour drive back."
+    },
+    {
+      "start": 151.129,
+      "end": 152.93,
+      "text": "We're not going to be home until after midnight."
+    },
+    {
+      "start": 152.971,
+      "end": 155.692,
+      "text": "Well, if it really bugged you, Johnny, you wouldn't do it."
+    },
+    {
+      "start": 155.81799999999998,
+      "end": 158.58100000000002,
+      "text": "You think I wanna blow Sunday on a scene like this?"
+    },
+    {
+      "start": 158.665,
+      "end": 160.758,
+      "text": "You know, I figure we're either gonna have to move mother out here,"
+    },
+    {
+      "start": 160.883,
+      "end": 163.395,
+      "text": "or move the grave into Pittsburgh."
+    },
+    {
+      "start": 163.47899999999998,
+      "end": 165.488,
+      "text": "She can't make a trip like this."
+    },
+    {
+      "start": 165.572,
+      "end": 167.748,
+      "text": "I don't know that she can't."
+    },
+    {
+      "start": 168.041,
+      "end": 171.809,
+      "text": "- Is there any candy left? - No."
+    },
+    {
+      "start": 172.185,
+      "end": 174.571,
+      "text": "Look at this thing. \"We still remember. \""
+    },
+    {
+      "start": 174.697,
+      "end": 177.167,
+      "text": "I don't. You know, I don't even remember what the man looks like."
+    },
+    {
+      "start": 177.292,
+      "end": 178.96699999999998,
+      "text": "Johnny, it takes you five minutes."
+    },
+    {
+      "start": 179.09199999999998,
+      "end": 184.073,
+      "text": "5 minutes to put the wreath on the grave and 6 hours to drive back and forth."
+    },
+    {
+      "start": 184.115,
+      "end": 186.376,
+      "text": "Mother wants to remember, so we trot 200 miles into the country"
+    },
+    {
+      "start": 186.459,
+      "end": 188.469,
+      "text": "and she stays at home."
+    },
+    {
+      "start": 188.636,
+      "end": 190.436,
+      "text": "Well, we're here, John, all right?"
+    },
+    {
+      "start": 197.845,
+      "end": 200.65,
+      "text": "Radio: Testing... back on... Ah, ladies and... We're coming back"
+    },
+    {
+      "start": 200.776,
+      "end": 203.162,
+      "text": "on the air after an interruption due to technical problem..."
+    },
+    {
+      "start": 215.594,
+      "end": 218.692,
+      "text": "There's nothing wrong with the radio. Must've been the station."
+    },
+    {
+      "start": 218.817,
+      "end": 221.036,
+      "text": "Which row is it in?"
+    },
+    {
+      "start": 241.338,
+      "end": 243.347,
+      "text": "There's no one around."
+    },
+    {
+      "start": 243.598,
+      "end": 246.235,
+      "text": "Well, it's late. If you'd gotten up earlier..."
+    },
+    {
+      "start": 246.277,
+      "end": 249.165,
+      "text": "Oh, look, I already lost an hour's sleep in the time change."
+    },
+    {
+      "start": 249.249,
+      "end": 252.305,
+      "text": "I think you complain just to hear yourself talk."
+    },
+    {
+      "start": 252.34,
+      "end": 254.022,
+      "text": "There it is."
+    },
+    {
+      "start": 269.719,
+      "end": 272.60699999999997,
+      "text": "I wonder what happened to the one from last year."
+    },
+    {
+      "start": 273.025,
+      "end": 275.997,
+      "text": "Each year we spend good money on these things."
+    },
+    {
+      "start": 276.081,
+      "end": 278.677,
+      "text": "We come out here, and the one from last year is gone."
+    },
+    {
+      "start": 278.761,
+      "end": 280.644,
+      "text": "Well, the flowers die,"
+    },
+    {
+      "start": 280.77,
+      "end": 283.449,
+      "text": "And the caretaker or somebody takes them away."
+    },
+    {
+      "start": 283.951,
+      "end": 287.006,
+      "text": "Yeah, a little spit and polish,"
+    },
+    {
+      "start": 287.09000000000003,
+      "end": 288.304,
+      "text": "he can clean this up sell it next year."
+    },
+    {
+      "start": 289.016,
+      "end": 291.611,
+      "text": "Wonder how many times we bought the same one?"
+    },
+    {
+      "start": 308.899,
+      "end": 311.704,
+      "text": "Hey, come on, Barb, church was this morning, huh?"
+    },
+    {
+      "start": 330.625,
+      "end": 334.978,
+      "text": "Hey, I mean, praying's for church, huh? Come on."
+    },
+    {
+      "start": 335.229,
+      "end": 338.034,
+      "text": "I haven't seen you in church lately."
+    },
+    {
+      "start": 339.959,
+      "end": 342.178,
+      "text": "Well, there's not much sense in my going to church."
+    },
+    {
+      "start": 342.889,
+      "end": 346.448,
+      "text": "Do you remember one time when we were small, we were out here?"
+    },
+    {
+      "start": 346.573,
+      "end": 348.457,
+      "text": "It was from right over there."
+    },
+    {
+      "start": 348.582,
+      "end": 350.466,
+      "text": "I jumped out at you from behind the tree"
+    },
+    {
+      "start": 350.55,
+      "end": 353.229,
+      "text": "And Grandpa got all excited, and he shook his fist at me, and he said,"
+    },
+    {
+      "start": 353.313,
+      "end": 355.615,
+      "text": "\"Boy, you'll be damned to hell!\""
+    },
+    {
+      "start": 356.159,
+      "end": 358.461,
+      "text": "[chuckles] Remember that? Right over there."
+    },
+    {
+      "start": 359.09000000000003,
+      "end": 360.303,
+      "text": "Boy, you used to really be scared here."
+    },
+    {
+      "start": 361.936,
+      "end": 363.276,
+      "text": "Johnny."
+    },
+    {
+      "start": 363.694,
+      "end": 367.168,
+      "text": "- Hey, you're still afraid. - Stop it now. I mean it."
+    },
+    {
+      "start": 370.852,
+      "end": 374.117,
+      "text": "[imitating Boris Karloff] They're coming to get you, Barbra."
+    },
+    {
+      "start": 374.41,
+      "end": 377.054,
+      "text": "Stop it. You're ignorant."
+    },
+    {
+      "start": 377.089,
+      "end": 379.35,
+      "text": "They're coming for you, Barbra."
+    },
+    {
+      "start": 380.103,
+      "end": 382.405,
+      "text": "Stop it. You're acting like a child."
+    },
+    {
+      "start": 382.74,
+      "end": 384.289,
+      "text": "They're coming for you."
+    },
+    {
+      "start": 384.875,
+      "end": 387.596,
+      "text": "Look! There comes one of them now."
+    },
+    {
+      "start": 388.433,
+      "end": 391.279,
+      "text": "- He'll hear you. - Here he comes now. I'm getting out of here!"
+    },
+    {
+      "start": 391.447,
+      "end": 392.536,
+      "text": "Johnny!"
+    },
+    {
+      "start": 403.336,
+      "end": 404.507,
+      "text": "Johnny!"
+    },
+    {
+      "start": 404.591,
+      "end": 406.349,
+      "text": "Help me!"
+    },
+    {
+      "start": 834.659,
+      "end": 836.5,
+      "text": "It's all right."
+    },
+    {
+      "start": 839.598,
+      "end": 841.733,
+      "text": "Don't worry about him. I can handle him."
+    },
+    {
+      "start": 841.817,
+      "end": 844.831,
+      "text": "Probably be a lot more of them as soon as they find out about us."
+    },
+    {
+      "start": 848.222,
+      "end": 849.602,
+      "text": "Truck is outta gas."
+    },
+    {
+      "start": 849.686,
+      "end": 851.696,
+      "text": "This pump out here is locked. Is there a key?"
+    },
+    {
+      "start": 853.621,
+      "end": 856.635,
+      "text": "We can try to get out of here if we can get some gas. Is there a key?"
+    },
+    {
+      "start": 866.723,
+      "end": 868.691,
+      "text": "I suppose you've tried this."
+    },
+    {
+      "start": 878.193,
+      "end": 879.784,
+      "text": "Do you live here?"
+    },
+    {
+      "start": 902.932,
+      "end": 904.858,
+      "text": "We've gotta get out of here."
+    },
+    {
+      "start": 904.983,
+      "end": 907.16,
+      "text": "We have to get where there are some other people."
+    },
+    {
+      "start": 910.802,
+      "end": 913.021,
+      "text": "Maybe we better take some food."
+    },
+    {
+      "start": 913.397,
+      "end": 917.249,
+      "text": "I'll see if I can find some food."
+    },
+    {
+      "start": 959.778,
+      "end": 963.797,
+      "text": "- What's happening? - I'll be just a second."
+    },
+    {
+      "start": 964.048,
+      "end": 965.261,
+      "text": "What's happening?"
+    },
+    {
+      "start": 978.865,
+      "end": 980.289,
+      "text": "Two of them."
+    },
+    {
+      "start": 985.521,
+      "end": 988.578,
+      "text": "There are two of them out there. Have you seen any more around here?"
+    },
+    {
+      "start": 988.613,
+      "end": 990.754,
+      "text": "I can take care of those two."
+    },
+    {
+      "start": 990.796,
+      "end": 993.349,
+      "text": "- I know you're afraid, but we have to... - I don't know! I don't know!"
+    },
+    {
+      "start": 993.384,
+      "end": 995.443,
+      "text": "What's happening?"
+    },
+    {
+      "start": 1136.342,
+      "end": 1137.766,
+      "text": "They know we're in here now."
+    },
+    {
+      "start": 1153.129,
+      "end": 1154.426,
+      "text": "Don't look at it."
+    },
+    {
+      "start": 1227.597,
+      "end": 1229.941,
+      "text": "Get some more lights on in this house."
+    },
+    {
+      "start": 1267.698,
+      "end": 1271.006,
+      "text": "Why don't you see if you can find some wood, some boards,"
+    },
+    {
+      "start": 1271.048,
+      "end": 1273.099,
+      "text": "something there by the fireplace, Something we can nail this place up?"
+    },
+    {
+      "start": 1277.871,
+      "end": 1279.126,
+      "text": "Well, goddamn..."
+    },
+    {
+      "start": 1281.848,
+      "end": 1286.369,
+      "text": "Look. I know you're afraid. I'm afraid too."
+    },
+    {
+      "start": 1286.452,
+      "end": 1289.891,
+      "text": "But we have to try to board the house up together."
+    },
+    {
+      "start": 1289.926,
+      "end": 1292.521,
+      "text": "Now, I'm going to board up the windows and the doors. Do you understand?"
+    },
+    {
+      "start": 1292.556,
+      "end": 1295.208,
+      "text": "We'll be all right here."
+    },
+    {
+      "start": 1295.243,
+      "end": 1298.8,
+      "text": "We'll be all right till someone comes to rescue us. But we have to work together."
+    },
+    {
+      "start": 1298.835,
+      "end": 1299.931,
+      "text": "You'll have to help me."
+    },
+    {
+      "start": 1299.973,
+      "end": 1303.237,
+      "text": "Now I want you to go in and get some wood so I can board the place up."
+    },
+    {
+      "start": 1304.117,
+      "end": 1305.121,
+      "text": "Ok?"
+    },
+    {
+      "start": 1306.294,
+      "end": 1307.424,
+      "text": "Ok?"
+    },
+    {
+      "start": 1467.035,
+      "end": 1468.249,
+      "text": "They're not that strong."
+    },
+    {
+      "start": 1468.543,
+      "end": 1471.765,
+      "text": "Here, I want you to pick out some nails. Pick out the biggest ones you can find."
+    },
+    {
+      "start": 1477.417,
+      "end": 1479.9279999999999,
+      "text": "There, this room looks pretty secure."
+    },
+    {
+      "start": 1481.77,
+      "end": 1484.909,
+      "text": "If we have to, we can run in here and board up the doors."
+    },
+    {
+      "start": 1487.839,
+      "end": 1491.23,
+      "text": "Won't be long before those things'll be back, pounding their way in here."
+    },
+    {
+      "start": 1491.272,
+      "end": 1494.788,
+      "text": "They're afraid now."
+    },
+    {
+      "start": 1496.295,
+      "end": 1499.351,
+      "text": "They're afraid of fire. I found that out."
+    },
+    {
+      "start": 1511.532,
+      "end": 1515.551,
+      "text": "You know a place back down the road called Beekman's? Beekman's diner?"
+    },
+    {
+      "start": 1522.332,
+      "end": 1525.346,
+      "text": "Anyhow, that's where I found that truck I have out there."
+    },
+    {
+      "start": 1527.481,
+      "end": 1529.406,
+      "text": "There's a radio in the truck."
+    },
+    {
+      "start": 1530.788,
+      "end": 1532.797,
+      "text": "I had jumped in to listen to it,"
+    },
+    {
+      "start": 1533.3,
+      "end": 1537.402,
+      "text": "When a big gasoline truck came screaming right across the road."
+    },
+    {
+      "start": 1537.444,
+      "end": 1541.462,
+      "text": "Well, there must have been 10-15 of those things chasing after it."
+    },
+    {
+      "start": 1542.718,
+      "end": 1544.644,
+      "text": "Grabbing and holding on."
+    },
+    {
+      "start": 1548.159,
+      "end": 1550.001,
+      "text": "Now, I didn't see them at first."
+    },
+    {
+      "start": 1551.676,
+      "end": 1554.773,
+      "text": "I could just see that the truck was moving in a funny way."
+    },
+    {
+      "start": 1555.611,
+      "end": 1558.122,
+      "text": "And those things were catching up to it."
+    },
+    {
+      "start": 1560.592,
+      "end": 1563.647,
+      "text": "Truck went right across the road."
+    },
+    {
+      "start": 1564.485,
+      "end": 1567.624,
+      "text": "Slammed on my brakes to keep from hitting it myself."
+    },
+    {
+      "start": 1567.917,
+      "end": 1570.052,
+      "text": "It went right through the guard rail."
+    },
+    {
+      "start": 1576.289,
+      "end": 1580.224,
+      "text": "I guess... I guess the driver must have cut off the road,"
+    },
+    {
+      "start": 1580.434,
+      "end": 1583.573,
+      "text": "into that gas station by Beekman's diner."
+    },
+    {
+      "start": 1583.992,
+      "end": 1587.675,
+      "text": "It went right through the billboard. Ripped over a gas pump,"
+    },
+    {
+      "start": 1587.717,
+      "end": 1588.645,
+      "text": "and never stopped moving."
+    },
+    {
+      "start": 1588.68,
+      "end": 1591.485,
+      "text": "By now it's like a moving bonfire."
+    },
+    {
+      "start": 1594.707,
+      "end": 1598.35,
+      "text": "Didn't know if the truck was going to explode or what."
+    },
+    {
+      "start": 1601.196,
+      "end": 1605.089,
+      "text": "I can still hear the man, screaming."
+    },
+    {
+      "start": 1609.066,
+      "end": 1612.833,
+      "text": "This thing is just backing away from it."
+    },
+    {
+      "start": 1614.465,
+      "end": 1617.731,
+      "text": "I look back at the diner to see"
+    },
+    {
+      "start": 1617.773,
+      "end": 1620.075,
+      "text": "If there was anyone there who could help me."
+    },
+    {
+      "start": 1622.586,
+      "end": 1624.728,
+      "text": "That was when I noticed that"
+    },
+    {
+      "start": 1624.763,
+      "end": 1627.191,
+      "text": "The entire place had been encircled."
+    },
+    {
+      "start": 1629.368,
+      "end": 1632.13,
+      "text": "Wasn't a sign of life left, except..."
+    },
+    {
+      "start": 1636.023,
+      "end": 1638.2,
+      "text": "by now, there were no more screams."
+    },
+    {
+      "start": 1640.126,
+      "end": 1642.261,
+      "text": "I realized that..."
+    },
+    {
+      "start": 1643.558,
+      "end": 1645.281,
+      "text": "I was alone."
+    },
+    {
+      "start": 1645.316,
+      "end": 1646.531,
+      "text": "With 50 or 60 of those things."
+    },
+    {
+      "start": 1648.414,
+      "end": 1650.926,
+      "text": "Just standing there,"
+    },
+    {
+      "start": 1651.804,
+      "end": 1653.688,
+      "text": "staring at me."
+    },
+    {
+      "start": 1655.196,
+      "end": 1657.288,
+      "text": "I started to drive. I..."
+    },
+    {
+      "start": 1658.753,
+      "end": 1660.888,
+      "text": "Just plowed right through them."
+    },
+    {
+      "start": 1660.972,
+      "end": 1662.73,
+      "text": "They didn't move."
+    },
+    {
+      "start": 1662.814,
+      "end": 1668.507,
+      "text": "They didn't run, or... just stood there, staring at me."
+    },
+    {
+      "start": 1670.684,
+      "end": 1672.944,
+      "text": "Just wanted to crush them."
+    },
+    {
+      "start": 1677.004,
+      "end": 1681.357,
+      "text": "They... scattered through the air, like bugs."
+    },
+    {
+      "start": 1683.952,
+      "end": 1686.758,
+      "text": "We were riding in the cemetery."
+    },
+    {
+      "start": 1687.636,
+      "end": 1689.185,
+      "text": "Johnny and me."
+    },
+    {
+      "start": 1690.232,
+      "end": 1691.613,
+      "text": "Johnny."
+    },
+    {
+      "start": 1697.851,
+      "end": 1702.037,
+      "text": "We... we came to put a wreath on my father's grave."
+    },
+    {
+      "start": 1704.088,
+      "end": 1707.855,
+      "text": "Johnny and... and he said,"
+    },
+    {
+      "start": 1709.027,
+      "end": 1711.999,
+      "text": "\"Can I have some candy, Barbra?\""
+    },
+    {
+      "start": 1715.012,
+      "end": 1717.357,
+      "text": "And we didn't have any."
+    },
+    {
+      "start": 1719.743,
+      "end": 1721.417,
+      "text": "And..."
+    },
+    {
+      "start": 1726.147,
+      "end": 1727.445,
+      "text": "Oh, it's hot in here."
+    },
+    {
+      "start": 1728.115,
+      "end": 1729.203,
+      "text": "Hot..."
+    },
+    {
+      "start": 1736.152,
+      "end": 1738.726,
+      "text": "And he said, \"Oh, it's late. \""
+    },
+    {
+      "start": 1738.761,
+      "end": 1741.301,
+      "text": "\"Why did we start so late?\""
+    },
+    {
+      "start": 1741.845,
+      "end": 1744.113,
+      "text": "And I said, \"Johnny,"
+    },
+    {
+      "start": 1744.148,
+      "end": 1746.868,
+      "text": "\"if you'd gotten up earlier,"
+    },
+    {
+      "start": 1746.903,
+      "end": 1748.71,
+      "text": "\"we wouldn't be late. \""
+    },
+    {
+      "start": 1749.715,
+      "end": 1752.854,
+      "text": "Johnny asked me if I were afraid."
+    },
+    {
+      "start": 1753.064,
+      "end": 1756.287,
+      "text": "And I said, \"I'm not afraid, Johnny. \""
+    },
+    {
+      "start": 1758.463,
+      "end": 1761.98,
+      "text": "And then this man started walking up the road."
+    },
+    {
+      "start": 1763.612,
+      "end": 1767.631,
+      "text": "He came slowly, and Johnny kept teasing me and saying,"
+    },
+    {
+      "start": 1767.798,
+      "end": 1770.896,
+      "text": "\"He's coming to get you, Barbra. \""
+    },
+    {
+      "start": 1770.938,
+      "end": 1773.993,
+      "text": "And I laughed at him, and said, \"Johnny, stop it. \""
+    },
+    {
+      "start": 1776.003,
+      "end": 1778.556,
+      "text": "And then Johnny ran away."
+    },
+    {
+      "start": 1778.64,
+      "end": 1780.942,
+      "text": "And I went up to this man,"
+    },
+    {
+      "start": 1780.977,
+      "end": 1783.244,
+      "text": "and I was going to apologize,"
+    },
+    {
+      "start": 1784.584,
+      "end": 1786.594,
+      "text": "Why don't you just keep calm?"
+    },
+    {
+      "start": 1786.635,
+      "end": 1790.486,
+      "text": "And I looked up, and I said, \"Good eve... \""
+    },
+    {
+      "start": 1791.993,
+      "end": 1793.458,
+      "text": "And he grabbed me!"
+    },
+    {
+      "start": 1794.714,
+      "end": 1798.481,
+      "text": "He grabbed me! And he ripped at me!"
+    },
+    {
+      "start": 1798.774,
+      "end": 1802.082,
+      "text": "He held me and he ripped at my clothes!"
+    },
+    {
+      "start": 1802.207,
+      "end": 1804.468,
+      "text": "I think you should just calm down."
+    },
+    {
+      "start": 1805.053,
+      "end": 1809.114,
+      "text": "Oh, I screamed, \"Johnny! Johnny, help me! Oh, help me!\""
+    },
+    {
+      "start": 1809.149,
+      "end": 1812.504,
+      "text": "And he wouldn't let me go. He ripped..."
+    },
+    {
+      "start": 1816.397,
+      "end": 1818.281,
+      "text": "And then Johnny came and he ran"
+    },
+    {
+      "start": 1819.411,
+      "end": 1821.671,
+      "text": "And he... he fought this man,"
+    },
+    {
+      "start": 1822.509,
+      "end": 1825.397,
+      "text": "And I got so afraid I ran."
+    },
+    {
+      "start": 1825.481,
+      "end": 1827.197,
+      "text": "I ran... I ran..."
+    },
+    {
+      "start": 1831.467,
+      "end": 1833.937,
+      "text": "And Johnny didn't come."
+    },
+    {
+      "start": 1835.066,
+      "end": 1838.458,
+      "text": "We've got... we have to wait for Johnny."
+    },
+    {
+      "start": 1844.276,
+      "end": 1846.746,
+      "text": "Maybe... we'd better go out and get him."
+    },
+    {
+      "start": 1847.876,
+      "end": 1850.345,
+      "text": "We have to go out and get Johnny."
+    },
+    {
+      "start": 1850.387,
+      "end": 1851.894,
+      "text": "He's out there."
+    },
+    {
+      "start": 1853.025,
+      "end": 1856.959,
+      "text": "Please, don't you hear me? We've got to go out and get him."
+    },
+    {
+      "start": 1858.718,
+      "end": 1862.109,
+      "text": "Please! We have got to go get Johnny!"
+    },
+    {
+      "start": 1862.569,
+      "end": 1864.536,
+      "text": "Please help me!"
+    },
+    {
+      "start": 1866.839,
+      "end": 1869.894,
+      "text": "Look, don't you know what's going on out there? This is no Sunday school picnic."
+    },
+    {
+      "start": 1869.929,
+      "end": 1872.287,
+      "text": "Don't you understand? My brother is alone."
+    },
+    {
+      "start": 1872.322,
+      "end": 1876.466,
+      "text": "- Your brother is dead. - No! My brother is not dead!"
+    },
+    {
+      "start": 1930.549,
+      "end": 1932.977,
+      "text": "Radio: Because of the obvious threat to untold numbers of citizens,"
+    },
+    {
+      "start": 1933.103,
+      "end": 1936.2,
+      "text": "and because of the crisis which is even now developing,"
+    },
+    {
+      "start": 1936.242,
+      "end": 1939.214,
+      "text": "this radio station will remain on the air, day and night."
+    },
+    {
+      "start": 1939.507,
+      "end": 1941.767,
+      "text": "This station and hundreds of other radio and TV stations"
+    },
+    {
+      "start": 1941.809,
+      "end": 1943.86,
+      "text": "throughout this part of the country are pooling their resources"
+    },
+    {
+      "start": 1943.986,
+      "end": 1949.051,
+      "text": "Through an emergency network hookup to keep you informed of all developments."
+    },
+    {
+      "start": 1949.428,
+      "end": 1952.776,
+      "text": "At this hour, we repeat, these are the facts as we know them."
+    },
+    {
+      "start": 1952.818,
+      "end": 1954.576,
+      "text": "There is an epidemic of mass murder"
+    },
+    {
+      "start": 1954.618,
+      "end": 1957.675,
+      "text": "being committed by a virtual army of unidentified assassins."
+    },
+    {
+      "start": 1957.842,
+      "end": 1960.27,
+      "text": "The murders are taking place in villages, cities,"
+    },
+    {
+      "start": 1960.437,
+      "end": 1965.376,
+      "text": "Rural homes and suburbs with no apparent pattern or reason for the slayings."
+    },
+    {
+      "start": 1965.411,
+      "end": 1968.557,
+      "text": "It seems to be a sudden, general explosion of mass homicide."
+    },
+    {
+      "start": 1968.726,
+      "end": 1971.411,
+      "text": "We have some descriptions of the assassins."
+    },
+    {
+      "start": 1971.446,
+      "end": 1974.271,
+      "text": "Eyewitnesses say they are ordinary looking people."
+    },
+    {
+      "start": 1974.306,
+      "end": 1977.097,
+      "text": "Some say they appear to be in a kind of trance."
+    },
+    {
+      "start": 1977.139,
+      "end": 1978.604,
+      "text": "Others describe them as being..."
+    },
+    {
+      "start": 1988.693,
+      "end": 1994.594,
+      "text": "So, at this point there is no really authentic way for us"
+    },
+    {
+      "start": 1995.6,
+      "end": 1996.604,
+      "text": "to say who or what to look for and guard yourself against."
+    },
+    {
+      "start": 1996.646,
+      "end": 2000.539,
+      "text": "...reaction of law enforcement officials"
+    },
+    {
+      "start": 2000.581,
+      "end": 2004.641,
+      "text": "is one of complete bewilderment at this hour."
+    },
+    {
+      "start": 2006.651,
+      "end": 2010.752,
+      "text": "Police, sheriffs' deputies, and emergency ambulances"
+    },
+    {
+      "start": 2010.787,
+      "end": 2012.8029999999999,
+      "text": "are literally deluged with calls for help"
+    },
+    {
+      "start": 2012.845,
+      "end": 2015.273,
+      "text": "The scene can best be described as mayhem."
+    },
+    {
+      "start": 2015.308,
+      "end": 2017.702,
+      "text": "Mayors of Pittsburgh, Philadelphia, and Miami,"
+    },
+    {
+      "start": 2017.744,
+      "end": 2020.506,
+      "text": "Along with the governors of several eastern and midwestern states"
+    },
+    {
+      "start": 2020.841,
+      "end": 2024.022,
+      "text": "have indicated the national guard may be mobilized at any moment,"
+    },
+    {
+      "start": 2024.105,
+      "end": 2025.278,
+      "text": "but that has not happened as yet."
+    },
+    {
+      "start": 2025.445,
+      "end": 2029.799,
+      "text": "The only advice our reporters have been able to get from official sources"
+    },
+    {
+      "start": 2029.834,
+      "end": 2033.817,
+      "text": "is for private citizens to stay in their homes behind locked doors."
+    },
+    {
+      "start": 2033.985,
+      "end": 2036.461,
+      "text": "Do not venture outside, for any reason,"
+    },
+    {
+      "start": 2036.496,
+      "end": 2038.296,
+      "text": "until the nature of this crisis has been determined"
+    },
+    {
+      "start": 2038.464,
+      "end": 2041.519,
+      "text": "and until we can advise what course of action to take."
+    },
+    {
+      "start": 2041.554,
+      "end": 2044.283,
+      "text": "Keep listening to radio and TV"
+    },
+    {
+      "start": 2044.366,
+      "end": 2047.589,
+      "text": "for any special instructions as this crisis develops further."
+    },
+    {
+      "start": 2047.624,
+      "end": 2050.812,
+      "text": "Thousands of office and factory workers are being urged"
+    },
+    {
+      "start": 2050.896,
+      "end": 2052.696,
+      "text": "to stay at their places of employment,"
+    },
+    {
+      "start": 2052.738,
+      "end": 2055.291,
+      "text": "not to make any attempt to get to their homes."
+    },
+    {
+      "start": 2055.459,
+      "end": 2058.354,
+      "text": "However, in spite of this urging and warning,"
+    },
+    {
+      "start": 2058.389,
+      "end": 2060.691,
+      "text": "streets and highways are packed with frantic people"
+    },
+    {
+      "start": 2060.733,
+      "end": 2064.375,
+      "text": "trying to reach their families, or apparently to flee just anywhere."
+    },
+    {
+      "start": 2064.919,
+      "end": 2070.068,
+      "text": "Repeat: The safest course of action at this time is simply to stay where you..."
+    },
+    {
+      "start": 2088.653,
+      "end": 2090.586,
+      "text": "Ladies and gentlemen, we've just received word"
+    },
+    {
+      "start": 2090.621,
+      "end": 2092.839,
+      "text": "that the president has called a meeting of his cabinet"
+    },
+    {
+      "start": 2093.007,
+      "end": 2095.442,
+      "text": "to deal with the sudden epidemic of murder"
+    },
+    {
+      "start": 2095.477,
+      "end": 2097.988,
+      "text": "which has seized the eastern third of this nation."
+    },
+    {
+      "start": 2098.023,
+      "end": 2100.5,
+      "text": "The meeting is scheduled to convene within the hour."
+    },
+    {
+      "start": 2100.542,
+      "end": 2102.97,
+      "text": "Members of the presidential cabinet will be joined"
+    },
+    {
+      "start": 2103.054,
+      "end": 2106.863,
+      "text": "by officials of the FBI and the joint chiefs behind closed doors."
+    },
+    {
+      "start": 2107.532,
+      "end": 2109.667,
+      "text": "A White House spokesman, in announcing this conference,"
+    },
+    {
+      "start": 2109.709,
+      "end": 2111.719,
+      "text": "says there will be an official announcement"
+    },
+    {
+      "start": 2111.76,
+      "end": 2113.77,
+      "text": "as soon as possible following that meeting."
+    },
+    {
+      "start": 2113.812,
+      "end": 2116.239,
+      "text": "This is the latest dispatch just received in our newsroom."
+    },
+    {
+      "start": 2116.867,
+      "end": 2121.388,
+      "text": "Latest word also from national press services in Washington, D.C.,"
+    },
+    {
+      "start": 2121.472,
+      "end": 2125.909,
+      "text": "that the emergency presidential conference which we've just mentioned"
+    },
+    {
+      "start": 2125.951,
+      "end": 2129.593,
+      "text": "Will include high-ranking scientists from NASA."
+    },
+    {
+      "start": 2140.518,
+      "end": 2143.49,
+      "text": "Radio and TV stations across the eastern part of the country"
+    },
+    {
+      "start": 2143.574,
+      "end": 2145.499,
+      "text": "including the one to which you are listening"
+    },
+    {
+      "start": 2145.625,
+      "end": 2148.638,
+      "text": "have joined their facilities in an emergency network"
+    },
+    {
+      "start": 2148.68,
+      "end": 2150.69,
+      "text": "to bring you this news as it develops."
+    },
+    {
+      "start": 2150.857,
+      "end": 2153.369,
+      "text": "We urge you to stay tuned to radio and TV"
+    },
+    {
+      "start": 2153.453,
+      "end": 2155.336,
+      "text": "and to stay indoors at all costs."
+    },
+    {
+      "start": 2156.927,
+      "end": 2159.104,
+      "text": "Late reports reaching this newsroom"
+    },
+    {
+      "start": 2159.145,
+      "end": 2161.155,
+      "text": "tell of frightened people seeking refuge"
+    },
+    {
+      "start": 2161.197,
+      "end": 2163.206,
+      "text": "in churches, schools and government buildings."
+    },
+    {
+      "start": 2163.248,
+      "end": 2164.971,
+      "text": "Demanding shelter and protection"
+    },
+    {
+      "start": 2165.006,
+      "end": 2166.597,
+      "text": "from the wholesale murder which apparently"
+    },
+    {
+      "start": 2166.632,
+      "end": 2168.438,
+      "text": "is engulfing much of the nation."
+    },
+    {
+      "start": 2168.941,
+      "end": 2171.787,
+      "text": "Law enforcement officials are at a loss to explain or,"
+    },
+    {
+      "start": 2171.871,
+      "end": 2173.755,
+      "text": "even at this hour, even to theorize"
+    },
+    {
+      "start": 2173.797,
+      "end": 2175.974,
+      "text": "about the reasons for this wave of murder..."
+    },
+    {
+      "start": 2177.732,
+      "end": 2183.09,
+      "text": "Chief T.K. Dunmore of Camden, North Carolina, is quoted as saying, quote,"
+    },
+    {
+      "start": 2183.125,
+      "end": 2187.736,
+      "text": "\"Tell the people, for God's sake, to get off the streets. \""
+    },
+    {
+      "start": 2187.82,
+      "end": 2191.134,
+      "text": "\"Tell 'em to go home and lock their doors and windows up tight. \""
+    },
+    {
+      "start": 2191.169,
+      "end": 2194.684,
+      "text": "\"We don't know what kind of murder-happy characters we have here. \" End quote."
+    },
+    {
+      "start": 2196.108,
+      "end": 2198.787,
+      "text": "That's Chief Dunmore of Camden, North Carolina."
+    },
+    {
+      "start": 2199.498,
+      "end": 2202.262,
+      "text": "So far the only descriptions, the only clues,"
+    },
+    {
+      "start": 2202.345,
+      "end": 2206.447,
+      "text": "anyone has of the killers come from frightened witnesses."
+    },
+    {
+      "start": 2206.53,
+      "end": 2208.665,
+      "text": "These eyewitness accounts variously describe"
+    },
+    {
+      "start": 2208.749,
+      "end": 2210.8,
+      "text": "the murderers as \"ordinary looking people,\""
+    },
+    {
+      "start": 2210.842,
+      "end": 2212.475,
+      "text": "\"Misshapen monsters. \""
+    },
+    {
+      "start": 2212.559,
+      "end": 2214.575,
+      "text": "\"People who look like they're in a trance. \""
+    },
+    {
+      "start": 2214.61,
+      "end": 2218.294,
+      "text": "And \"things that look like people but act like animals. \""
+    },
+    {
+      "start": 2218.336,
+      "end": 2220.931,
+      "text": "Some eyewitnesses tell of seeing victims"
+    },
+    {
+      "start": 2220.966,
+      "end": 2223.526,
+      "text": "who look as though they had been torn apart."
+    },
+    {
+      "start": 2223.861,
+      "end": 2228.047,
+      "text": "This whole ghastly story began developing two days ago"
+    },
+    {
+      "start": 2228.089,
+      "end": 2232.149,
+      "text": "with the report of the slaying of a family of seven..."
+    },
+    {
+      "start": 2232.191,
+      "end": 2234.326,
+      "text": "Since then, reports of some senseless killings"
+    },
+    {
+      "start": 2234.368,
+      "end": 2236.377,
+      "text": "began snowballing in a reign of terror"
+    },
+    {
+      "start": 2236.412,
+      "end": 2237.256,
+      "text": "which has hopscotched..."
+    },
+    {
+      "start": 2241.651,
+      "end": 2243.66,
+      "text": "...keep track of the murder reports"
+    },
+    {
+      "start": 2243.695,
+      "end": 2245.67,
+      "text": "by the placing of markers on a map"
+    },
+    {
+      "start": 2245.795,
+      "end": 2247.554,
+      "text": "seem to indicate a general spreading"
+    },
+    {
+      "start": 2247.637,
+      "end": 2251.154,
+      "text": "from the extreme southeastern and states north and west."
+    },
+    {
+      "start": 2251.656,
+      "end": 2253.414,
+      "text": "Our newsmen, who have been on the telephone"
+    },
+    {
+      "start": 2253.449,
+      "end": 2255.388,
+      "text": "talking with officials of other cities"
+    },
+    {
+      "start": 2255.423,
+      "end": 2258.395,
+      "text": "have determined that none of this kind of mass murder"
+    },
+    {
+      "start": 2258.688,
+      "end": 2261.744,
+      "text": "has yet been reported west of the Mississippi river,"
+    },
+    {
+      "start": 2261.786,
+      "end": 2264.926,
+      "text": "except in the extreme southeastern portion of Texas."
+    },
+    {
+      "start": 2265.302,
+      "end": 2266.935,
+      "text": "Similar killings have been reported"
+    },
+    {
+      "start": 2266.977,
+      "end": 2268.734,
+      "text": "around the Houston and Galveston areas"
+    },
+    {
+      "start": 2268.769,
+      "end": 2269.83,
+      "text": "but nothing like the..."
+    },
+    {
+      "start": 2269.865,
+      "end": 2271.372,
+      "text": "I found a gun and some bullets out there."
+    },
+    {
+      "start": 2274.344,
+      "end": 2275.432,
+      "text": "Oh, and these."
+    },
+    {
+      "start": 2283.553,
+      "end": 2285.52,
+      "text": "This place is boarded up pretty solid now."
+    },
+    {
+      "start": 2286.819,
+      "end": 2288.534,
+      "text": "We ought to be all right here for a while."
+    },
+    {
+      "start": 2290.209,
+      "end": 2292.176,
+      "text": "We have a gun and bullets,"
+    },
+    {
+      "start": 2292.72,
+      "end": 2294.227,
+      "text": "Food and the radio,"
+    },
+    {
+      "start": 2296.739,
+      "end": 2300.046,
+      "text": "Sooner or later, someone's bound to come and get us out."
+    },
+    {
+      "start": 2301.594,
+      "end": 2304.609,
+      "text": "So again, we join with law enforcement agencies"
+    },
+    {
+      "start": 2304.902,
+      "end": 2306.828,
+      "text": "in urging you to seek shelter in a building."
+    },
+    {
+      "start": 2306.911,
+      "end": 2308.689,
+      "text": "Lock the doors and windows securely."
+    },
+    {
+      "start": 2308.724,
+      "end": 2310.469,
+      "text": "Hey, that's us. We're doing all right."
+    },
+    {
+      "start": 2310.511,
+      "end": 2312.478,
+      "text": "Be cautious of any suspicious strangers,"
+    },
+    {
+      "start": 2312.52,
+      "end": 2314.529,
+      "text": "and keep tuned to your radio and television"
+    },
+    {
+      "start": 2314.571,
+      "end": 2315.75,
+      "text": "for survival instructions"
+    },
+    {
+      "start": 2315.785,
+      "end": 2318.046,
+      "text": "and further details of this continuing story."
+    },
+    {
+      "start": 2318.13,
+      "end": 2319.929,
+      "text": "Look, I don't know if you're hearing me."
+    },
+    {
+      "start": 2320.767,
+      "end": 2322.609,
+      "text": "But I'm going upstairs now."
+    },
+    {
+      "start": 2324.953,
+      "end": 2327.422,
+      "text": "If anything should try to break in, I can hear it from up there."
+    },
+    {
+      "start": 2327.457,
+      "end": 2329.222,
+      "text": "I'll be down to take care of it."
+    },
+    {
+      "start": 2331.399,
+      "end": 2332.829,
+      "text": "Everything is all right for now."
+    },
+    {
+      "start": 2332.864,
+      "end": 2336.129,
+      "text": "I'll be back to reinforce the windows and doors later."
+    },
+    {
+      "start": 2336.631,
+      "end": 2338.683,
+      "text": "But you'll be alright for now, ok?"
+    },
+    {
+      "start": 2341.194,
+      "end": 2342.283,
+      "text": "Ok?"
+    },
+    {
+      "start": 2345.338,
+      "end": 2347.599,
+      "text": "Radio: Civil defense officials in Cumberland"
+    },
+    {
+      "start": 2347.634,
+      "end": 2348.854,
+      "text": "have told newsmen that murder victims"
+    },
+    {
+      "start": 2348.896,
+      "end": 2353.878,
+      "text": "show evidence of having been partially devoured by their murderers."
+    },
+    {
+      "start": 2393.184,
+      "end": 2395.653,
+      "text": "Consistent reports from witnesses to the effect that people"
+    },
+    {
+      "start": 2395.689,
+      "end": 2398.542,
+      "text": "who acted as though they were in a kind of trance"
+    },
+    {
+      "start": 2398.584,
+      "end": 2400.307,
+      "text": "were killing and eating their victims"
+    },
+    {
+      "start": 2400.342,
+      "end": 2403.983,
+      "text": "prompted authorities to examine the bodies of some of the victims."
+    },
+    {
+      "start": 2404.018,
+      "end": 2407.626,
+      "text": "Medical authorities in Cumberland, Maryland have concluded that in all cases"
+    },
+    {
+      "start": 2407.661,
+      "end": 2411.937,
+      "text": "the killers are eating the flesh of the people they murdered."
+    },
+    {
+      "start": 2412.272,
+      "end": 2415.998,
+      "text": "Repeating this latest bulletin just received moments ago from Cumberland."
+    },
+    {
+      "start": 2416.033,
+      "end": 2418.384,
+      "text": "Civil defense authorities have told newsmen"
+    },
+    {
+      "start": 2418.467,
+      "end": 2420.435,
+      "text": "that murder victims show evidence"
+    },
+    {
+      "start": 2420.519,
+      "end": 2423.365,
+      "text": "of having been partially devoured by their murderers."
+    },
+    {
+      "start": 2423.407,
+      "end": 2427.174,
+      "text": "Medical examination of victims' bodies shows conclusively that"
+    },
+    {
+      "start": 2427.209,
+      "end": 2430.23,
+      "text": "the killers are eating the flesh of the people they kill."
+    },
+    {
+      "start": 2431.15,
+      "end": 2435.714,
+      "text": "And so this incredible story becomes more ghastly with each report."
+    },
+    {
+      "start": 2435.749,
+      "end": 2437.939,
+      "text": "It's difficult to imagine such a thing actually happening"
+    },
+    {
+      "start": 2437.974,
+      "end": 2441.657,
+      "text": "but these are the reports we have been receiving and passing on to you,"
+    },
+    {
+      "start": 2441.692,
+      "end": 2444.965,
+      "text": "Reports which have been verified as completely as is possible"
+    },
+    {
+      "start": 2445,
+      "end": 2446.597,
+      "text": "in this confused situation."
+    },
+    {
+      "start": 2460.075,
+      "end": 2462.588,
+      "text": "- Hold it! - Don't shoot. We're from town."
+    },
+    {
+      "start": 2462.63,
+      "end": 2463.676,
+      "text": "A radio!"
+    },
+    {
+      "start": 2464.681,
+      "end": 2467.701,
+      "text": "Radio: The Butler county sheriff has verified that reports"
+    },
+    {
+      "start": 2467.736,
+      "end": 2471.881,
+      "text": "of murder victims being partially eaten by their slayers is true."
+    },
+    {
+      "start": 2474.057,
+      "end": 2477.071,
+      "text": "How long you guys been down there? I could've used some help up here."
+    },
+    {
+      "start": 2477.113,
+      "end": 2478.501,
+      "text": "That's the cellar. It's the safest place."
+    },
+    {
+      "start": 2478.536,
+      "end": 2480.88,
+      "text": "You mean you didn't hear the racket we were making up here?"
+    },
+    {
+      "start": 2480.915,
+      "end": 2482.932,
+      "text": "How were we supposed to know what was going on?"
+    },
+    {
+      "start": 2482.973,
+      "end": 2484.941,
+      "text": "Could've been those things for all we knew."
+    },
+    {
+      "start": 2484.983,
+      "end": 2486.078,
+      "text": "That girl was screaming."
+    },
+    {
+      "start": 2486.113,
+      "end": 2488.373,
+      "text": "Surely you must know what a girl screaming sounds like."
+    },
+    {
+      "start": 2488.408,
+      "end": 2489.462,
+      "text": "Those things don't make any noise."
+    },
+    {
+      "start": 2489.797,
+      "end": 2492.022,
+      "text": "Anybody would know somebody needed help."
+    },
+    {
+      "start": 2492.057,
+      "end": 2494.61,
+      "text": "Look, it's kind of hard to hear what's going on from down there."
+    },
+    {
+      "start": 2494.736,
+      "end": 2496.954,
+      "text": "We thought we could hear screams, but for all we knew,"
+    },
+    {
+      "start": 2496.996,
+      "end": 2499.801,
+      "text": "that could have meant those things were in the house after her."
+    },
+    {
+      "start": 2500.052,
+      "end": 2503.024,
+      "text": "- And you wouldn't come up and help? - Well, if there were more..."
+    },
+    {
+      "start": 2503.059,
+      "end": 2505.285,
+      "text": "The racket sounded like the place was being ripped apart."
+    },
+    {
+      "start": 2505.368,
+      "end": 2507.001,
+      "text": "How were we supposed to know what was going on?"
+    },
+    {
+      "start": 2507.461,
+      "end": 2508.549,
+      "text": "Now wait a minute."
+    },
+    {
+      "start": 2508.591,
+      "end": 2511.186,
+      "text": "You just got finished saying you couldn't hear it from down there."
+    },
+    {
+      "start": 2511.221,
+      "end": 2513.573,
+      "text": "Now you say it sounded like the place was being ripped apart."
+    },
+    {
+      "start": 2513.615,
+      "end": 2515.917,
+      "text": "It would be nice if you'd get your story straight, man."
+    },
+    {
+      "start": 2516.001,
+      "end": 2518.22,
+      "text": "All right, now you tell me."
+    },
+    {
+      "start": 2519.015,
+      "end": 2522.154,
+      "text": "I'm not going to take that kind of a chance when we've got a safe place."
+    },
+    {
+      "start": 2522.448,
+      "end": 2524.833,
+      "text": "We luck into a safe place, and you're telling us"
+    },
+    {
+      "start": 2524.875,
+      "end": 2528.098,
+      "text": "we've gotta risk our lives just because somebody might need help, huh?"
+    },
+    {
+      "start": 2528.133,
+      "end": 2531.322,
+      "text": "- Yeah. Something like that. - All right, why don't we settle this..."
+    },
+    {
+      "start": 2531.364,
+      "end": 2532.368,
+      "text": "Look, mister!"
+    },
+    {
+      "start": 2532.41,
+      "end": 2534.084,
+      "text": "We came up, ok? We're here."
+    },
+    {
+      "start": 2534.879,
+      "end": 2536.896,
+      "text": "Now I suggest we all go back downstairs"
+    },
+    {
+      "start": 2536.931,
+      "end": 2538.94,
+      "text": "before any of those things find out we're in here."
+    },
+    {
+      "start": 2538.975,
+      "end": 2540.28,
+      "text": "They can't get in here."
+    },
+    {
+      "start": 2540.531,
+      "end": 2542.163,
+      "text": "You got the whole place boarded up?"
+    },
+    {
+      "start": 2542.246,
+      "end": 2543,
+      "text": "Yeah, most of it."
+    },
+    {
+      "start": 2543.168,
+      "end": 2546.223,
+      "text": "All but a few spots upstairs. They won't be hard to fix."
+    },
+    {
+      "start": 2546.307,
+      "end": 2549.238,
+      "text": "You are insane. The cellar's the safest place."
+    },
+    {
+      "start": 2549.273,
+      "end": 2551.044,
+      "text": "I'm telling you, they can't get in here."
+    },
+    {
+      "start": 2551.079,
+      "end": 2554.093,
+      "text": "And I'm telling you, those things turned over our car."
+    },
+    {
+      "start": 2554.128,
+      "end": 2555.893,
+      "text": "We were damned lucky to get away at all."
+    },
+    {
+      "start": 2556.103,
+      "end": 2559.869,
+      "text": "Now you tell me those... things can't get through this lousy pile of wood?"
+    },
+    {
+      "start": 2560.498,
+      "end": 2564.014,
+      "text": "His wife and kids downstairs. The kid's hurt."
+    },
+    {
+      "start": 2566.065,
+      "end": 2567.907,
+      "text": "Well, I still think we're better off up here."
+    },
+    {
+      "start": 2569.33,
+      "end": 2571.297,
+      "text": "We could strengthen everything up, Mr. Cooper."
+    },
+    {
+      "start": 2571.507,
+      "end": 2574.019,
+      "text": "With all of us working, we could fix this place up in no time."
+    },
+    {
+      "start": 2574.06,
+      "end": 2575.734,
+      "text": "We have everything we need up here."
+    },
+    {
+      "start": 2575.776,
+      "end": 2578.539,
+      "text": "We can take all that stuff downstairs with us."
+    },
+    {
+      "start": 2578.581,
+      "end": 2580.171,
+      "text": "Man, you're really crazy, you know that?"
+    },
+    {
+      "start": 2580.34,
+      "end": 2581.678,
+      "text": "You got a million windows up here."
+    },
+    {
+      "start": 2581.713,
+      "end": 2583.018,
+      "text": "All these windows. You're gonna..."
+    },
+    {
+      "start": 2583.102,
+      "end": 2585.739,
+      "text": "You're gonna make 'em strong enough to keep these things out, huh?"
+    },
+    {
+      "start": 2585.781,
+      "end": 2587.414,
+      "text": "I told you, those things don't have any strength."
+    },
+    {
+      "start": 2587.497,
+      "end": 2590.134,
+      "text": "I smashed three of them and pushed another one out the door."
+    },
+    {
+      "start": 2590.218,
+      "end": 2593.818,
+      "text": "Did you hear me, what I told you? They turned over our car."
+    },
+    {
+      "start": 2593.902,
+      "end": 2595.701,
+      "text": "Oh hell, any good five men can do that."
+    },
+    {
+      "start": 2595.743,
+      "end": 2596.916,
+      "text": "That's my point..."
+    },
+    {
+      "start": 2596.958,
+      "end": 2599.009,
+      "text": "Only there's not going to be five, or even ten."
+    },
+    {
+      "start": 2599.051,
+      "end": 2601.939,
+      "text": "There's gonna be twenty, thirty, maybe a hundred of those things."
+    },
+    {
+      "start": 2601.974,
+      "end": 2603.118,
+      "text": "And as soon as they know we're here,"
+    },
+    {
+      "start": 2603.153,
+      "end": 2604.576,
+      "text": "this place is gonna be crawling with them."
+    },
+    {
+      "start": 2604.617,
+      "end": 2607.883,
+      "text": "Well, if there're that many, they'll probably get us wherever we are."
+    },
+    {
+      "start": 2608.552,
+      "end": 2610.729,
+      "text": "Look, the cellar."
+    },
+    {
+      "start": 2611.064,
+      "end": 2612.697,
+      "text": "The cellar. There's only one door, right?"
+    },
+    {
+      "start": 2612.739,
+      "end": 2615.585,
+      "text": "Just one door. That's all we have to protect."
+    },
+    {
+      "start": 2615.627,
+      "end": 2618.809,
+      "text": "Tom and I fixed it so it locks and boards from the inside."
+    },
+    {
+      "start": 2619.06,
+      "end": 2620.273,
+      "text": "But up here, all these windows,"
+    },
+    {
+      "start": 2620.651,
+      "end": 2622.869,
+      "text": "Why, we'd never know where they were gonna hit us next."
+    },
+    {
+      "start": 2622.904,
+      "end": 2624.292,
+      "text": "You got a point, Mr. Cooper."
+    },
+    {
+      "start": 2624.417,
+      "end": 2627.223,
+      "text": "But down in the cellar, there's no place to run to."
+    },
+    {
+      "start": 2627.515,
+      "end": 2630.906,
+      "text": "I mean, if they did get in, there'd be no back exit. We'd be done for."
+    },
+    {
+      "start": 2632.162,
+      "end": 2633.711,
+      "text": "We can get out of here if we have to."
+    },
+    {
+      "start": 2633.753,
+      "end": 2637.059,
+      "text": "And we got windows to see what's going on outside."
+    },
+    {
+      "start": 2637.436,
+      "end": 2639.201,
+      "text": "But down there, with no windows,"
+    },
+    {
+      "start": 2639.236,
+      "end": 2641.538,
+      "text": "if a rescue party did come, we wouldn't even know it."
+    },
+    {
+      "start": 2641.622,
+      "end": 2643.966,
+      "text": "But the cellar is the strongest place."
+    },
+    {
+      "start": 2644.001,
+      "end": 2645.557,
+      "text": "The cellar is a death trap."
+    },
+    {
+      "start": 2645.724,
+      "end": 2649.325,
+      "text": "I don't know, Mr. Cooper. I think he's right."
+    },
+    {
+      "start": 2649.827,
+      "end": 2651.752,
+      "text": "You know how many's out there?"
+    },
+    {
+      "start": 2651.794,
+      "end": 2653.468,
+      "text": "I don't know, I figure maybe six or seven."
+    },
+    {
+      "start": 2653.678,
+      "end": 2657.194,
+      "text": "Look. You two can do whatever you like."
+    },
+    {
+      "start": 2657.319,
+      "end": 2661.003,
+      "text": "I'm going back down to the cellar and you better decide,"
+    },
+    {
+      "start": 2661.087,
+      "end": 2663.222,
+      "text": "'cause I'm gonna board up that door,"
+    },
+    {
+      "start": 2663.306,
+      "end": 2665.44,
+      "text": "and I'm not gonna unlock it again no matter what happens."
+    },
+    {
+      "start": 2665.482,
+      "end": 2666.863,
+      "text": "Now wait a minute, Mr. Cooper."
+    },
+    {
+      "start": 2666.905,
+      "end": 2669.961,
+      "text": "No, I'm not gonna wait! I've made my decision, now you make yours."
+    },
+    {
+      "start": 2670.045,
+      "end": 2672.556,
+      "text": "Now wait a minute! Let's think about this."
+    },
+    {
+      "start": 2672.891,
+      "end": 2674.859,
+      "text": "We can make it to the cellar if we have to."
+    },
+    {
+      "start": 2675.361,
+      "end": 2678.919,
+      "text": "And if we do decide to stay down there, We'll need some things from up here."
+    },
+    {
+      "start": 2678.961,
+      "end": 2681.473,
+      "text": "So let's at least consider this a while."
+    },
+    {
+      "start": 2685.617,
+      "end": 2686.788,
+      "text": "If you box yourself in the cellar"
+    },
+    {
+      "start": 2686.83,
+      "end": 2689.216,
+      "text": "and those things get in the house, you've had it."
+    },
+    {
+      "start": 2689.259,
+      "end": 2691.519,
+      "text": "At least up here, you have a fighting chance."
+    },
+    {
+      "start": 2695.412,
+      "end": 2697.714,
+      "text": "Yeah, looks like about eight or ten of them now."
+    },
+    {
+      "start": 2697.839,
+      "end": 2701.733,
+      "text": "That's more than there were. There're a lot out back, too."
+    },
+    {
+      "start": 2744.304,
+      "end": 2747.318,
+      "text": "Harry? Harry, what's happening?"
+    },
+    {
+      "start": 2747.353,
+      "end": 2748.615,
+      "text": "It's all right!"
+    },
+    {
+      "start": 2763.392,
+      "end": 2764.564,
+      "text": "Now take it."
+    },
+    {
+      "start": 2804.331,
+      "end": 2805.754,
+      "text": "We've gotta fix these boards."
+    },
+    {
+      "start": 2806.591,
+      "end": 2807.722,
+      "text": "You're crazy!"
+    },
+    {
+      "start": 2808.182,
+      "end": 2810.736,
+      "text": "Those things are gonna be at every window and door in this place!"
+    },
+    {
+      "start": 2810.903,
+      "end": 2812.326,
+      "text": "We've got to get down into the cellar."
+    },
+    {
+      "start": 2812.452,
+      "end": 2814.503,
+      "text": "Go down into your damn cellar and get out of here!"
+    },
+    {
+      "start": 2817.391,
+      "end": 2819.7,
+      "text": "- I'm... I'm taking the girl with me. - You leave her here."
+    },
+    {
+      "start": 2819.735,
+      "end": 2822.498,
+      "text": "Keep your hands off her, and everything else that's up here too."
+    },
+    {
+      "start": 2822.54,
+      "end": 2825.136,
+      "text": "Because if I stay up here, I'm fighting for everything up here,"
+    },
+    {
+      "start": 2825.178,
+      "end": 2827.605,
+      "text": "and the radio and the food is part of what I'm fighting for."
+    },
+    {
+      "start": 2828.108,
+      "end": 2829.908,
+      "text": "Now if you're going down in the cellar, get."
+    },
+    {
+      "start": 2829.95,
+      "end": 2831.205,
+      "text": "The man's insane. He's insane."
+    },
+    {
+      "start": 2832.879,
+      "end": 2835.809,
+      "text": "We've... we've got to have food down there. We've got a right."
+    },
+    {
+      "start": 2835.844,
+      "end": 2837.651,
+      "text": "- This your house? - We've got a right."
+    },
+    {
+      "start": 2837.986,
+      "end": 2839.661,
+      "text": "You going down there with him?"
+    },
+    {
+      "start": 2840.457,
+      "end": 2843.679,
+      "text": "Yes or no? This is your last chance. No beating around the bush."
+    },
+    {
+      "start": 2844.558,
+      "end": 2846.316,
+      "text": "Listen, I got a kid down there."
+    },
+    {
+      "start": 2846.818,
+      "end": 2848.619,
+      "text": "She can't possib... I couldn't bring her up here."
+    },
+    {
+      "start": 2848.702,
+      "end": 2851.046,
+      "text": "She can't possibly take all the racket from those things"
+    },
+    {
+      "start": 2851.081,
+      "end": 2852.637,
+      "text": "smashing through the windows."
+    },
+    {
+      "start": 2852.672,
+      "end": 2853.984,
+      "text": "Well, you're her father."
+    },
+    {
+      "start": 2854.019,
+      "end": 2857.075,
+      "text": "If you're stupid enough to go die in that trap, that's your business."
+    },
+    {
+      "start": 2857.116,
+      "end": 2859.502,
+      "text": "However, I am not stupid enough to follow you."
+    },
+    {
+      "start": 2860.507,
+      "end": 2863.019,
+      "text": "It is tough for the kid that her old man is so stupid."
+    },
+    {
+      "start": 2863.312,
+      "end": 2866.074,
+      "text": "Now, get the hell down in the cellar."
+    },
+    {
+      "start": 2866.2,
+      "end": 2868.962,
+      "text": "You can be the boss down there. I'm boss up here."
+    },
+    {
+      "start": 2871.014,
+      "end": 2872.73,
+      "text": "You bastards!"
+    },
+    {
+      "start": 2874.698,
+      "end": 2877.586,
+      "text": "You know, I won't open this door again. I mean it."
+    },
+    {
+      "start": 2877.837,
+      "end": 2880.893,
+      "text": "- Mr. Cooper, with your help... - With my help."
+    },
+    {
+      "start": 2880.935,
+      "end": 2884.158,
+      "text": "Let him go, man. His mind is made up."
+    },
+    {
+      "start": 2886.125,
+      "end": 2887.129,
+      "text": "Wait a minute."
+    },
+    {
+      "start": 2889.516,
+      "end": 2891.357,
+      "text": "Judy? Come on up here, honey."
+    },
+    {
+      "start": 2898.851,
+      "end": 2900.483,
+      "text": "You're gonna let them get her too, huh?"
+    },
+    {
+      "start": 2900.944,
+      "end": 2902.492,
+      "text": "It's all right, honey. Go ahead."
+    },
+    {
+      "start": 2912.999,
+      "end": 2915.72,
+      "text": "If we stick together, man, we can fix it up real good."
+    },
+    {
+      "start": 2916.348,
+      "end": 2918.902,
+      "text": "There's lots of places we can run to up here."
+    },
+    {
+      "start": 2919.739,
+      "end": 2922.48,
+      "text": "Mr. Cooper? We'd all be a lot better off"
+    },
+    {
+      "start": 2922.515,
+      "end": 2925.223,
+      "text": "if all three of us were working together."
+    },
+    {
+      "start": 2928.153,
+      "end": 2929.66,
+      "text": "Hey. Hey, kid."
+    },
+    {
+      "start": 2938.24,
+      "end": 2939.58,
+      "text": "He's wrong, you know."
+    },
+    {
+      "start": 2940.501,
+      "end": 2942.426,
+      "text": "I'm not boxing myself in down there."
+    },
+    {
+      "start": 2949.627,
+      "end": 2951.762,
+      "text": "Well, we're safe now. It's boarded up tight."
+    },
+    {
+      "start": 2954.064,
+      "end": 2955.319,
+      "text": "What about Tom and Judy?"
+    },
+    {
+      "start": 2955.529,
+      "end": 2957.12,
+      "text": "They wanna stay up there. Let 'em."
+    },
+    {
+      "start": 2961.599,
+      "end": 2966.621,
+      "text": "There are... two other people upstairs. A man and a girl."
+    },
+    {
+      "start": 2966.656,
+      "end": 2968.296,
+      "text": "We heard the screaming."
+    },
+    {
+      "start": 2968.924,
+      "end": 2971.184,
+      "text": "Yeah, but I didn't know who they were,"
+    },
+    {
+      "start": 2971.435,
+      "end": 2973.445,
+      "text": "and I wasn't about to take any unnecessary chances."
+    },
+    {
+      "start": 2973.486,
+      "end": 2974.994,
+      "text": "Of course not, Harry."
+    },
+    {
+      "start": 2988.389,
+      "end": 2992.575,
+      "text": "- Is she all right? - I don't know what it is."
+    },
+    {
+      "start": 2992.659,
+      "end": 2993.998,
+      "text": "She feels warm. Maybe it's shock."
+    },
+    {
+      "start": 2994.793,
+      "end": 2996.301,
+      "text": "Where'd you get the bandage?"
+    },
+    {
+      "start": 2996.845,
+      "end": 3000.318,
+      "text": "Some laundry in the basket. I tore a sheet."
+    },
+    {
+      "start": 3007.896,
+      "end": 3009.947,
+      "text": "Let them stay upstairs."
+    },
+    {
+      "start": 3010.909,
+      "end": 3011.998,
+      "text": "Let them."
+    },
+    {
+      "start": 3013.253,
+      "end": 3015.974,
+      "text": "Too many ways those monsters can get in up there."
+    },
+    {
+      "start": 3017.314,
+      "end": 3019.198,
+      "text": "We'll see who's right."
+    },
+    {
+      "start": 3019.407,
+      "end": 3022.797,
+      "text": "We'll see, when they come begging me to let them in down here."
+    },
+    {
+      "start": 3023.216,
+      "end": 3025.435,
+      "text": "- That's important, isn't it? - What?"
+    },
+    {
+      "start": 3025.853,
+      "end": 3027.528,
+      "text": "To be right. Everybody else to be wrong."
+    },
+    {
+      "start": 3027.563,
+      "end": 3029.327,
+      "text": "What do you mean by that?"
+    },
+    {
+      "start": 3033.011,
+      "end": 3035.983,
+      "text": "Does anyone up there know why we're being attacked?"
+    },
+    {
+      "start": 3036.988,
+      "end": 3039.5,
+      "text": "Whatever it is, it isn't just happening here."
+    },
+    {
+      "start": 3039.96,
+      "end": 3042.429,
+      "text": "It's some kind of mass murder. It's going on everywhere."
+    },
+    {
+      "start": 3043.142,
+      "end": 3044.941,
+      "text": "- The radio said to stay inside... - Radio?"
+    },
+    {
+      "start": 3046.072,
+      "end": 3047.788,
+      "text": "Radio, upstairs. I heard the news bulletin."
+    },
+    {
+      "start": 3047.872,
+      "end": 3050.802,
+      "text": "There's a radio upstairs and you boarded us in down here?"
+    },
+    {
+      "start": 3050.885,
+      "end": 3053.104,
+      "text": "- I know what I'm doing. - What did it say?"
+    },
+    {
+      "start": 3053.146,
+      "end": 3055.281,
+      "text": "Nothing! Nothing. They don't know anything yet."
+    },
+    {
+      "start": 3055.783,
+      "end": 3057.416,
+      "text": "The... there's mass murder everywhere, and"
+    },
+    {
+      "start": 3057.499,
+      "end": 3060.681,
+      "text": "people are supposed to look for a safe place to hide."
+    },
+    {
+      "start": 3060.723,
+      "end": 3062.522,
+      "text": "Take the boards off that door."
+    },
+    {
+      "start": 3063.402,
+      "end": 3065.411,
+      "text": "We are staying down here, Helen."
+    },
+    {
+      "start": 3065.453,
+      "end": 3068.257,
+      "text": "Harry, that radio is at least some kind of communication."
+    },
+    {
+      "start": 3068.425,
+      "end": 3070.309,
+      "text": "If the authorities know what's happening,"
+    },
+    {
+      "start": 3070.392,
+      "end": 3073.406,
+      "text": "Well, they'll send people for us, or they'll tell us what to do."
+    },
+    {
+      "start": 3073.741,
+      "end": 3075.332,
+      "text": "How are we going to know what's going on,"
+    },
+    {
+      "start": 3075.373,
+      "end": 3077.132,
+      "text": "if we lock ourselves in this dungeon?"
+    },
+    {
+      "start": 3087.639,
+      "end": 3089.732,
+      "text": "We may not enjoy living together..."
+    },
+    {
+      "start": 3091.489,
+      "end": 3093.791,
+      "text": "But dying together isn't going to solve anything."
+    },
+    {
+      "start": 3094.546,
+      "end": 3096.68,
+      "text": "Those people aren't our enemies."
+    },
+    {
+      "start": 3096.89,
+      "end": 3098.187,
+      "text": "Mr. Cooper!"
+    },
+    {
+      "start": 3100.112,
+      "end": 3103.294,
+      "text": "Mr. Cooper? They found a television set upstairs."
+    },
+    {
+      "start": 3105.848,
+      "end": 3106.852,
+      "text": "Let's go up."
+    },
+    {
+      "start": 3107.103,
+      "end": 3108.192,
+      "text": "Tom?"
+    },
+    {
+      "start": 3108.652,
+      "end": 3109.447,
+      "text": "Yes?"
+    },
+    {
+      "start": 3110.452,
+      "end": 3113.089,
+      "text": "If Judy would come downstairs for a few minutes,"
+    },
+    {
+      "start": 3113.173,
+      "end": 3115.308,
+      "text": "Harry and I could come upstairs."
+    },
+    {
+      "start": 3116.103,
+      "end": 3117.735,
+      "text": "Ok. Yeah. Right away."
+    },
+    {
+      "start": 3120.876,
+      "end": 3121.838,
+      "text": "Will you do it?"
+    },
+    {
+      "start": 3122.424,
+      "end": 3123.812,
+      "text": "Do I have to?"
+    },
+    {
+      "start": 3123.847,
+      "end": 3127.615,
+      "text": "Look, honey. Nothing's gonna get done with them down there and us up here."
+    },
+    {
+      "start": 3128.075,
+      "end": 3131.843,
+      "text": "- Do this. For me. - Ok."
+    },
+    {
+      "start": 3133.349,
+      "end": 3134.605,
+      "text": "Ok, open up."
+    },
+    {
+      "start": 3156.749,
+      "end": 3158.465,
+      "text": "I'll take good care of her, Helen."
+    },
+    {
+      "start": 3161.94,
+      "end": 3163.279,
+      "text": "She's all I have."
+    },
+    {
+      "start": 3165.331,
+      "end": 3166.795,
+      "text": "Why don't you go upstairs now?"
+    },
+    {
+      "start": 3194.967,
+      "end": 3196.349,
+      "text": "Her brother was killed."
+    },
+    {
+      "start": 3197.228,
+      "end": 3199.028,
+      "text": "Hey... give me a hand with this thing."
+    },
+    {
+      "start": 3200.367,
+      "end": 3202.334,
+      "text": "I gotta go help Ben with the television."
+    },
+    {
+      "start": 3245.785,
+      "end": 3247.208,
+      "text": "Don't be afraid of me."
+    },
+    {
+      "start": 3247.878,
+      "end": 3251.143,
+      "text": "I'm Helen Cooper. Harry's wife."
+    },
+    {
+      "start": 3259.18,
+      "end": 3262.528,
+      "text": "This place is ridiculous. Look at this."
+    },
+    {
+      "start": 3262.738,
+      "end": 3264.663,
+      "text": "There's a million weak spots up here."
+    },
+    {
+      "start": 3266.798,
+      "end": 3268.138,
+      "text": "Give me one of those."
+    },
+    {
+      "start": 3272.575,
+      "end": 3274.334,
+      "text": "Her brother was killed."
+    },
+    {
+      "start": 3282.161,
+      "end": 3284.338,
+      "text": "And they talk about these windows."
+    },
+    {
+      "start": 3285.049,
+      "end": 3286.556,
+      "text": "I can't see a damned thing."
+    },
+    {
+      "start": 3287.058,
+      "end": 3289.319,
+      "text": "There could be 15 million of those things out there."
+    },
+    {
+      "start": 3289.528,
+      "end": 3291.203,
+      "text": "That's how much good these windows are."
+    },
+    {
+      "start": 3295.807,
+      "end": 3298.486,
+      "text": "Why don't you do something to help somebody?"
+    },
+    {
+      "start": 3303.594,
+      "end": 3306.063,
+      "text": "Here, I have it. Drag a couple of those chairs together."
+    },
+    {
+      "start": 3306.482,
+      "end": 3307.989,
+      "text": "There's a socket over here."
+    },
+    {
+      "start": 3313.095,
+      "end": 3316.193,
+      "text": "Now, you'd better watch this and try to understand what's going on."
+    },
+    {
+      "start": 3318.077,
+      "end": 3319.709,
+      "text": "I don't want anyone's life on my hands."
+    },
+    {
+      "start": 3319.751,
+      "end": 3321.265,
+      "text": "Is there anything I can do to help?"
+    },
+    {
+      "start": 3321.3,
+      "end": 3322.974,
+      "text": "I don't want to hear any more from you, mister."
+    },
+    {
+      "start": 3323.142,
+      "end": 3325.192,
+      "text": "If you stay up here, you take orders from me!"
+    },
+    {
+      "start": 3325.445,
+      "end": 3327.453,
+      "text": "And that includes leaving the girl alone."
+    },
+    {
+      "start": 3327.747,
+      "end": 3328.918,
+      "text": "It's on! It's on!"
+    },
+    {
+      "start": 3329.002,
+      "end": 3330.049,
+      "text": "There's no sound."
+    },
+    {
+      "start": 3331.262,
+      "end": 3332.644,
+      "text": "Play with the rabbit ears."
+    },
+    {
+      "start": 3333.397,
+      "end": 3336.16,
+      "text": "Reports, incredible as they seem,"
+    },
+    {
+      "start": 3336.202,
+      "end": 3338.714,
+      "text": "are not the results of mass hysteria."
+    },
+    {
+      "start": 3338.756,
+      "end": 3341.895,
+      "text": "\"Mass hysteria. \" What do they think, we're imagining all this?"
+    },
+    {
+      "start": 3341.937,
+      "end": 3342.774,
+      "text": "Shut up."
+    },
+    {
+      "start": 3342.816,
+      "end": 3344.407,
+      "text": "In all parts of the country."
+    },
+    {
+      "start": 3344.49,
+      "end": 3347.965,
+      "text": "The wave of murder which is sweeping the eastern third of the nation"
+    },
+    {
+      "start": 3348.007,
+      "end": 3350.274,
+      "text": "is being committed by creatures"
+    },
+    {
+      "start": 3350.309,
+      "end": 3352.737,
+      "text": "who feast upon the flesh of their victims."
+    },
+    {
+      "start": 3353.323,
+      "end": 3356.176,
+      "text": "First eyewitness accounts of this grisly development"
+    },
+    {
+      "start": 3356.211,
+      "end": 3360.439,
+      "text": "came from people who were understandably frightened and almost incoherent."
+    },
+    {
+      "start": 3360.9,
+      "end": 3364.081,
+      "text": "Officials and newsmen at first discounted"
+    },
+    {
+      "start": 3364.123,
+      "end": 3366.927,
+      "text": "those eyewitness descriptions as being beyond belief."
+    },
+    {
+      "start": 3367.136,
+      "end": 3369.606,
+      "text": "However, the reports persisted."
+    },
+    {
+      "start": 3369.774,
+      "end": 3372.251,
+      "text": "Medical examinations of some of the victims"
+    },
+    {
+      "start": 3372.286,
+      "end": 3376.136,
+      "text": "bore out the fact that they had been partially devoured."
+    },
+    {
+      "start": 3378.187,
+      "end": 3380.322,
+      "text": "I think we have some late word just arriving"
+    },
+    {
+      "start": 3380.699,
+      "end": 3382.708,
+      "text": "and we interrupt to bring this to you."
+    },
+    {
+      "start": 3384.592,
+      "end": 3386.601,
+      "text": "This is the latest disclosure in a report"
+    },
+    {
+      "start": 3386.643,
+      "end": 3389.322,
+      "text": "from National civil defense headquarters in Washington."
+    },
+    {
+      "start": 3389.531,
+      "end": 3393.508,
+      "text": "It has been established that persons who have recently died"
+    },
+    {
+      "start": 3393.55,
+      "end": 3397.652,
+      "text": "have been returning to life and committing acts of murder."
+    },
+    {
+      "start": 3398.238,
+      "end": 3403.178,
+      "text": "A widespread investigation of reports from funeral homes, morgues & hospitals"
+    },
+    {
+      "start": 3403.22,
+      "end": 3407.28,
+      "text": "has concluded that the unburied dead are coming back to life"
+    },
+    {
+      "start": 3407.322,
+      "end": 3409.456,
+      "text": "and seeking human victims."
+    },
+    {
+      "start": 3410.294,
+      "end": 3413.35,
+      "text": "It's hard for us here to believe what we're reporting to you,"
+    },
+    {
+      "start": 3413.385,
+      "end": 3414.982,
+      "text": "but it does seem to be a fact."
+    },
+    {
+      "start": 3416.154,
+      "end": 3417.829,
+      "text": "When this emergency first began,"
+    },
+    {
+      "start": 3418.205,
+      "end": 3421.638,
+      "text": "radio and television was advising people to stay inside,"
+    },
+    {
+      "start": 3421.68,
+      "end": 3424.031,
+      "text": "behind locked doors, for safety."
+    },
+    {
+      "start": 3424.066,
+      "end": 3426.166,
+      "text": "Well, that situation has now changed."
+    },
+    {
+      "start": 3426.201,
+      "end": 3429.34,
+      "text": "We're able to report a definite course of action for you."
+    },
+    {
+      "start": 3429.465,
+      "end": 3431.977,
+      "text": "Civil defense machinery has been organized to provide"
+    },
+    {
+      "start": 3432.145,
+      "end": 3435.207,
+      "text": "rescue stations with food, shelter,"
+    },
+    {
+      "start": 3435.242,
+      "end": 3438.717,
+      "text": "medical treatment and protection by armed National Guardsmen."
+    },
+    {
+      "start": 3439.052,
+      "end": 3442.442,
+      "text": "Stay tuned to the broadcasting stations in your local area"
+    },
+    {
+      "start": 3442.484,
+      "end": 3444.291,
+      "text": "for this list of rescue stations."
+    },
+    {
+      "start": 3444.326,
+      "end": 3447.423,
+      "text": "This list will be repeated throughout our news coverage."
+    },
+    {
+      "start": 3447.507,
+      "end": 3450.898,
+      "text": "Look for the name of the rescue station nearest you,"
+    },
+    {
+      "start": 3450.982,
+      "end": 3454.415,
+      "text": "and make your way to that location as soon as possible."
+    },
+    {
+      "start": 3454.624,
+      "end": 3457.47,
+      "text": "So we have that truck. If we can get some gas, we can get outta here."
+    },
+    {
+      "start": 3457.554,
+      "end": 3460.316,
+      "text": "- There's a pump out by the shed. - I know. That's why I pulled in here."
+    },
+    {
+      "start": 3460.358,
+      "end": 3461.286,
+      "text": "But it's locked."
+    },
+    {
+      "start": 3461.321,
+      "end": 3463.833,
+      "text": "...called this afternoon by the president."
+    },
+    {
+      "start": 3463.875,
+      "end": 3467.181,
+      "text": "Since convening, this conference of the presidential cabinet,"
+    },
+    {
+      "start": 3467.223,
+      "end": 3470.154,
+      "text": "The FBI, the joint chiefs of staff, the CIA"
+    },
+    {
+      "start": 3470.196,
+      "end": 3473.126,
+      "text": "has not produced any public information."
+    },
+    {
+      "start": 3473.251,
+      "end": 3476.265,
+      "text": "Why are space experts being consulted"
+    },
+    {
+      "start": 3476.3,
+      "end": 3478.065,
+      "text": "about an earthbound emergency?"
+    },
+    {
+      "start": 3479.07,
+      "end": 3482.084,
+      "text": "So far, all the betting on the answer to that question"
+    },
+    {
+      "start": 3482.125,
+      "end": 3485.223,
+      "text": "centers on the recent explorer satellite shot to Venus."
+    },
+    {
+      "start": 3485.809,
+      "end": 3489.032,
+      "text": "That satellite, you recall, started back to Earth,"
+    },
+    {
+      "start": 3489.067,
+      "end": 3490.414,
+      "text": "but never got here."
+    },
+    {
+      "start": 3490.79,
+      "end": 3493.218,
+      "text": "That's the space vehicle which orbited Venus"
+    },
+    {
+      "start": 3493.26,
+      "end": 3495.583,
+      "text": "and then was purposely destroyed by NASA,"
+    },
+    {
+      "start": 3495.618,
+      "end": 3497.906,
+      "text": "when scientists discovered it was carrying"
+    },
+    {
+      "start": 3497.948,
+      "end": 3500.209,
+      "text": "a mysterious, high-level radiation with it."
+    },
+    {
+      "start": 3500.543,
+      "end": 3503.097,
+      "text": "Could that radiation be somehow responsible"
+    },
+    {
+      "start": 3503.18,
+      "end": 3505.818,
+      "text": "for the wholesale murders we're now suffering?"
+    },
+    {
+      "start": 3506.446,
+      "end": 3508.916,
+      "text": "Newsman Don Quinn in Washington"
+    },
+    {
+      "start": 3508.957,
+      "end": 3510.005,
+      "text": "has posed those questions."
+    },
+    {
+      "start": 3510.046,
+      "end": 3512.349,
+      "text": "It's obvious. Our best move is to try to get out of here."
+    },
+    {
+      "start": 3512.474,
+      "end": 3514.064,
+      "text": "How're you gonna get over to that pump?"
+    },
+    {
+      "start": 3514.484,
+      "end": 3515.362,
+      "text": "Look!"
+    },
+    {
+      "start": 3516.241,
+      "end": 3519.214,
+      "text": "You're coming from a meeting regarding the explosion of the Venus probe,"
+    },
+    {
+      "start": 3519.255,
+      "end": 3520.05,
+      "text": "is that right?"
+    },
+    {
+      "start": 3520.176,
+      "end": 3522.694,
+      "text": "Yes, yes, that was the subject of the meeting."
+    },
+    {
+      "start": 3522.729,
+      "end": 3524.99,
+      "text": "Do you feel there is a connection between this and the phenomenon..."
+    },
+    {
+      "start": 3525.031,
+      "end": 3527.879,
+      "text": "There's a definite connection. A definite connection."
+    },
+    {
+      "start": 3527.92,
+      "end": 3530.39,
+      "text": "In other words, you feel that the radiation on the Venus probe is enough"
+    },
+    {
+      "start": 3530.516,
+      "end": 3531.736,
+      "text": "to cause these mutations?"
+    },
+    {
+      "start": 3531.771,
+      "end": 3533.445,
+      "text": "It was a very high degree of radiation."
+    },
+    {
+      "start": 3533.529,
+      "end": 3536.417,
+      "text": "Well, just a minute. I'm not sure that that's certain at all."
+    },
+    {
+      "start": 3536.459,
+      "end": 3539.39,
+      "text": "I don't think that has been... It's the only logical explanation"
+    },
+    {
+      "start": 3539.432,
+      "end": 3540.143,
+      "text": "that we have at this time."
+    },
+    {
+      "start": 3540.478,
+      "end": 3542.069,
+      "text": "In other words, it is the military's viewpoint that this..."
+    },
+    {
+      "start": 3542.104,
+      "end": 3544.831,
+      "text": "the radiation is not the cause of the mutation."
+    },
+    {
+      "start": 3544.873,
+      "end": 3547.804,
+      "text": "I can't speak for the entire military at this time, gentlemen."
+    },
+    {
+      "start": 3548.432,
+      "end": 3550.943,
+      "text": "I must disagree with these gentlemen presently,"
+    },
+    {
+      "start": 3550.985,
+      "end": 3553.58,
+      "text": "until we, until this is irrefutably proved."
+    },
+    {
+      "start": 3553.915,
+      "end": 3555.924,
+      "text": "Everything is being done that can be done."
+    },
+    {
+      "start": 3555.966,
+      "end": 3557.933,
+      "text": "We'll have to hurry for our next meeting."
+    },
+    {
+      "start": 3559.357,
+      "end": 3562.036,
+      "text": "Professor, you feel that there is a definite connection between..."
+    },
+    {
+      "start": 3562.12,
+      "end": 3565.3,
+      "text": "A definite connection as far as Dr. Keller and myself..."
+    },
+    {
+      "start": 3565.342,
+      "end": 3568.441,
+      "text": "Doctor, please. I thought we decided that is not proved yet."
+    },
+    {
+      "start": 3568.943,
+      "end": 3570.283,
+      "text": "Was it... was the satellite..."
+    },
+    {
+      "start": 3570.366,
+      "end": 3573.212,
+      "text": "- When the satellite was exploded... - It was an unusual amount of radiation,"
+    },
+    {
+      "start": 3573.247,
+      "end": 3575.891,
+      "text": "enough to cause mutation under certain circumstances."
+    },
+    {
+      "start": 3576.226,
+      "end": 3578.277,
+      "text": "Could have happened to have a bearing on it."
+    },
+    {
+      "start": 3578.737,
+      "end": 3580.328,
+      "text": "It does seem to have a bearing on it."
+    },
+    {
+      "start": 3580.538,
+      "end": 3583.427,
+      "text": "Will there be a reply for the..."
+    },
+    {
+      "start": 3584.012,
+      "end": 3585.435,
+      "text": "- There will be a reply? - Yes."
+    },
+    {
+      "start": 3585.47,
+      "end": 3586.44,
+      "text": "Later this afternoon?"
+    },
+    {
+      "start": 3588.91,
+      "end": 3591.338,
+      "text": "There will be a report this afternoon."
+    },
+    {
+      "start": 3591.379,
+      "end": 3593.807,
+      "text": "Perhaps there will be a report later..."
+    },
+    {
+      "start": 3593.849,
+      "end": 3594.812,
+      "text": "Will you close the window?"
+    },
+    {
+      "start": 3594.854,
+      "end": 3597.449,
+      "text": "We are doing everything possible to solve the problem."
+    },
+    {
+      "start": 3603.603,
+      "end": 3606.031,
+      "text": "We've heard all we need to know. We have to try to get out of here."
+    },
+    {
+      "start": 3606.198,
+      "end": 3609.546,
+      "text": "He said the rescue stations have doctors and medical supplies."
+    },
+    {
+      "start": 3609.581,
+      "end": 3612.016,
+      "text": "If we can get Karen there, we can get help for her."
+    },
+    {
+      "start": 3616.077,
+      "end": 3618.128,
+      "text": "Willard. I saw a sign. That said Willard."
+    },
+    {
+      "start": 3618.463,
+      "end": 3620.395,
+      "text": "It's only about 17 miles from here."
+    },
+    {
+      "start": 3620.43,
+      "end": 3622.565,
+      "text": "You know this area. Are you from around here?"
+    },
+    {
+      "start": 3622.691,
+      "end": 3624.323,
+      "text": "Judy and I are both from around here."
+    },
+    {
+      "start": 3624.365,
+      "end": 3626.877,
+      "text": "We were on our way to the lake to go swimming."
+    },
+    {
+      "start": 3627.086,
+      "end": 3630.017,
+      "text": "Judy had a radio, and we heard the first reports about this."
+    },
+    {
+      "start": 3630.142,
+      "end": 3632.151,
+      "text": "So we knew the old house was here and we came in,"
+    },
+    {
+      "start": 3632.193,
+      "end": 3634.118,
+      "text": "And found the lady upstairs, dead."
+    },
+    {
+      "start": 3634.83,
+      "end": 3637.593,
+      "text": "Then these other people came. We went down into the basement"
+    },
+    {
+      "start": 3637.635,
+      "end": 3640.314,
+      "text": "and put a bar across the door, and it is pretty strong."
+    },
+    {
+      "start": 3640.397,
+      "end": 3642.7,
+      "text": "How could we possibly get away from here?"
+    },
+    {
+      "start": 3642.909,
+      "end": 3646.216,
+      "text": "We've got a sick child, two women, one woman out of her head,"
+    },
+    {
+      "start": 3646.258,
+      "end": 3649.523,
+      "text": "three men, and the place is surrounded with these things."
+    },
+    {
+      "start": 3649.899,
+      "end": 3653.709,
+      "text": "For NASA. Dr. Grimes, your entire staff, I know,"
+    },
+    {
+      "start": 3653.751,
+      "end": 3657.476,
+      "text": "has been working very hard to find some solution"
+    },
+    {
+      "start": 3657.56,
+      "end": 3659.528,
+      "text": "to these things that are happening."
+    },
+    {
+      "start": 3659.611,
+      "end": 3661.502,
+      "text": "Do you have any answers at this time?"
+    },
+    {
+      "start": 3661.537,
+      "end": 3665.849,
+      "text": "Yes, we have some answers. But first let me stress the importance"
+    },
+    {
+      "start": 3665.89,
+      "end": 3669.489,
+      "text": "of seeking medical attention for anyone who's been injured in any way."
+    },
+    {
+      "start": 3669.524,
+      "end": 3673.09,
+      "text": "We don't know yet what complications might result from such injuries."
+    },
+    {
+      "start": 3673.801,
+      "end": 3675.392,
+      "text": "How bad has your kid been hurt?"
+    },
+    {
+      "start": 3680.248,
+      "end": 3683.303,
+      "text": "Look. You go down there and tell... Judy?"
+    },
+    {
+      "start": 3683.555,
+      "end": 3686.569,
+      "text": "Yeah, you tell Judy to come up here and you stay with the kid, all right?"
+    },
+    {
+      "start": 3686.82,
+      "end": 3689.833,
+      "text": "Destructive action taken with regard to the Venus probe."
+    },
+    {
+      "start": 3690.713,
+      "end": 3694.354,
+      "text": "In the cold room at the university, we had a cadaver."
+    },
+    {
+      "start": 3694.69,
+      "end": 3698.582,
+      "text": "A cadaver from which all four limbs had been amputated."
+    },
+    {
+      "start": 3699.043,
+      "end": 3700.592,
+      "text": "Sometime early this morning,"
+    },
+    {
+      "start": 3700.885,
+      "end": 3704.031,
+      "text": "it opened its eyes and began to move its trunk."
+    },
+    {
+      "start": 3704.066,
+      "end": 3707.54,
+      "text": "It was dead, but it opened its eyes and tried to move."
+    },
+    {
+      "start": 3710.304,
+      "end": 3711.726,
+      "text": "They want you upstairs."
+    },
+    {
+      "start": 3711.936,
+      "end": 3714.866,
+      "text": "- Did she ask for me? - She hasn't said anything."
+    },
+    {
+      "start": 3715.996,
+      "end": 3717.378,
+      "text": "I don't understand."
+    },
+    {
+      "start": 3718.8,
+      "end": 3722.066,
+      "text": "Baby? It's mommy."
+    },
+    {
+      "start": 3723.154,
+      "end": 3724.285,
+      "text": "I hurt."
+    },
+    {
+      "start": 3725.666,
+      "end": 3728.345,
+      "text": "I'll come back down as soon as I find out what they want."
+    },
+    {
+      "start": 3728.931,
+      "end": 3730.438,
+      "text": "Thank you, Judy."
+    },
+    {
+      "start": 3731.61,
+      "end": 3735.336,
+      "text": "The bodies should be disposed of at once, preferably by cremation."
+    },
+    {
+      "start": 3735.545,
+      "end": 3739.396,
+      "text": "Well, how long after death, then, does the body become reactivated?"
+    },
+    {
+      "start": 3739.431,
+      "end": 3741.496,
+      "text": "- It's only a matter of minutes. - Minutes?"
+    },
+    {
+      "start": 3741.531,
+      "end": 3743.464,
+      "text": "That doesn't give people time to make arrangements..."
+    },
+    {
+      "start": 3743.499,
+      "end": 3747.098,
+      "text": "No, you're right. It doesn't give them time to make funeral arrangements."
+    },
+    {
+      "start": 3747.391,
+      "end": 3751.577,
+      "text": "The bodies must be carried to the street and burned."
+    },
+    {
+      "start": 3751.912,
+      "end": 3755.596,
+      "text": "They must be burned immediately. Soak them with gasoline and burn them."
+    },
+    {
+      "start": 3756.14,
+      "end": 3759.865,
+      "text": "The bereaved will have to forgo the dubious comforts"
+    },
+    {
+      "start": 3759.907,
+      "end": 3761.707,
+      "text": "that a funeral service will give."
+    },
+    {
+      "start": 3762.335,
+      "end": 3765.014,
+      "text": "They're just dead flesh. And dangerous."
+    },
+    {
+      "start": 3765.684,
+      "end": 3768.154,
+      "text": "Judy, I need you to find some bedspreads or sheets"
+    },
+    {
+      "start": 3770.373,
+      "end": 3772.549,
+      "text": "- Is there a fruit cellar here? - Yes."
+    },
+    {
+      "start": 3772.717,
+      "end": 3774.021,
+      "text": "We need some bottles or jars"
+    },
+    {
+      "start": 3774.056,
+      "end": 3776.986,
+      "text": "to make Molotov cocktails to hold them off while we try to escape."
+    },
+    {
+      "start": 3777.021,
+      "end": 3778.953,
+      "text": "Hey! There's a big can of kerosene down there."
+    },
+    {
+      "start": 3779.079,
+      "end": 3781.591,
+      "text": "- I'll see what I can find. - I'll look for the bottles."
+    },
+    {
+      "start": 3781.675,
+      "end": 3783.475,
+      "text": "There's a big key ring down there."
+    },
+    {
+      "start": 3783.6,
+      "end": 3785.861,
+      "text": "There may be a key to the gas pump on it."
+    },
+    {
+      "start": 3786.112,
+      "end": 3787.534,
+      "text": "I'll check."
+    },
+    {
+      "start": 3787.827,
+      "end": 3790.046,
+      "text": "We can toss the cocktails from a window upstairs."
+    },
+    {
+      "start": 3790.298,
+      "end": 3792.977,
+      "text": "Meantime, some of us can go out and try to get the gas,"
+    },
+    {
+      "start": 3793.019,
+      "end": 3794.735,
+      "text": "then we can come back for the rest of the people."
+    },
+    {
+      "start": 3794.819,
+      "end": 3796.534,
+      "text": "But that'll leave a door open someplace."
+    },
+    {
+      "start": 3796.576,
+      "end": 3799.088,
+      "text": "Yeah, that's right. It better be this door."
+    },
+    {
+      "start": 3799.423,
+      "end": 3801.013,
+      "text": "It's closer to the truck."
+    },
+    {
+      "start": 3801.6,
+      "end": 3804.823,
+      "text": "Before we go out, we'll put some supplies behind the cellar door."
+    },
+    {
+      "start": 3804.865,
+      "end": 3806.665,
+      "text": "While we're gone, the rest of you can hole up in there."
+    },
+    {
+      "start": 3806.707,
+      "end": 3808.549,
+      "text": "I found some fruit jars in the cellar."
+    },
+    {
+      "start": 3808.841,
+      "end": 3811.646,
+      "text": "And there's a key on here that's labeled for the gas pump out back."
+    },
+    {
+      "start": 3813.237,
+      "end": 3816.334,
+      "text": "I'm not really that used to the truck. I found it abandoned."
+    },
+    {
+      "start": 3817.004,
+      "end": 3818.929,
+      "text": "I can handle the truck, no sweat."
+    },
+    {
+      "start": 3822.404,
+      "end": 3824.581,
+      "text": "You're it, then. You and I'll go."
+    },
+    {
+      "start": 3830.064,
+      "end": 3832.744,
+      "text": "We'll put whatever lumber we find behind the cellar door."
+    },
+    {
+      "start": 3833.58,
+      "end": 3836.51,
+      "text": "You can go upstairs and toss the cocktails from a window."
+    },
+    {
+      "start": 3837.264,
+      "end": 3839.19,
+      "text": "Tom, you and I will have to unboard this door."
+    },
+    {
+      "start": 3839.483,
+      "end": 3840.906,
+      "text": "After you toss the cocktails,"
+    },
+    {
+      "start": 3840.989,
+      "end": 3842.873,
+      "text": "you hustle back down here and lock this door."
+    },
+    {
+      "start": 3843.124,
+      "end": 3845.72,
+      "text": "It's no good to board it up because we'll have to get back in quickly."
+    },
+    {
+      "start": 3847.017,
+      "end": 3850.115,
+      "text": "After we get the gas and get back into the house,"
+    },
+    {
+      "start": 3850.241,
+      "end": 3852.753,
+      "text": "then we'll worry about getting everybody into the truck."
+    },
+    {
+      "start": 3853.882,
+      "end": 3855.145,
+      "text": "Now, let's move it."
+    },
+    {
+      "start": 3855.18,
+      "end": 3858.78,
+      "text": "No place to flee for safety, except for the rescue stations"
+    },
+    {
+      "start": 3858.822,
+      "end": 3859.701,
+      "text": "which have been set up."
+    },
+    {
+      "start": 3860.036,
+      "end": 3863.636,
+      "text": "Indications are that before this emergency is over,"
+    },
+    {
+      "start": 3863.678,
+      "end": 3867.194,
+      "text": "we will need many, many more such rescue stations."
+    },
+    {
+      "start": 3876.382,
+      "end": 3877.931,
+      "text": "You always have a smile for me."
+    },
+    {
+      "start": 3878.984,
+      "end": 3881.58,
+      "text": "How can you smile like that all the time?"
+    },
+    {
+      "start": 3883.308,
+      "end": 3884.773,
+      "text": "How many do you have done?"
+    },
+    {
+      "start": 3888.525,
+      "end": 3890.2,
+      "text": "Come on, honey, we gotta move."
+    },
+    {
+      "start": 3891.078,
+      "end": 3892.324,
+      "text": "Tom, are you sure about the phone?"
+    },
+    {
+      "start": 3892.53,
+      "end": 3896.548,
+      "text": "The phone is dead out. All you get is a recorded message."
+    },
+    {
+      "start": 3897.057,
+      "end": 3900.813,
+      "text": "If I could only call the folks. They're going to be so worried about us."
+    },
+    {
+      "start": 3901.773,
+      "end": 3903.317,
+      "text": "Everything'll be alright."
+    },
+    {
+      "start": 3903.358,
+      "end": 3906.948,
+      "text": "As soon as we get to Willard, we'll call them. They might even be there."
+    },
+    {
+      "start": 3907.908,
+      "end": 3908.827,
+      "text": "I know."
+    },
+    {
+      "start": 3913.293,
+      "end": 3918.468,
+      "text": "Tom... Are you sure we're doing the right thing, Tom?"
+    },
+    {
+      "start": 3918.718,
+      "end": 3920.638,
+      "text": "- What, about getting outta here? - Yeah."
+    },
+    {
+      "start": 3921.515,
+      "end": 3923.644,
+      "text": "Well, the television said that's the right thing to do."
+    },
+    {
+      "start": 3923.727,
+      "end": 3925.939,
+      "text": "We've got to get to a rescue station."
+    },
+    {
+      "start": 3926.315,
+      "end": 3927.525,
+      "text": "I don't know."
+    },
+    {
+      "start": 3927.817,
+      "end": 3930.071,
+      "text": "Come on. You're starting to sound like Mr. Cooper now."
+    },
+    {
+      "start": 3930.112,
+      "end": 3932.206,
+      "text": "But why do you have to go out there?"
+    },
+    {
+      "start": 3932.241,
+      "end": 3935.956,
+      "text": "Look, I know how to handle that truck. And I can handle the pump."
+    },
+    {
+      "start": 3935.998,
+      "end": 3938.085,
+      "text": "Ben doesn't know anything about that stuff."
+    },
+    {
+      "start": 3939.845,
+      "end": 3941.229,
+      "text": "But we're safe in here."
+    },
+    {
+      "start": 3941.264,
+      "end": 3943.81,
+      "text": "For how long, honey? We're safe now."
+    },
+    {
+      "start": 3943.936,
+      "end": 3946.481,
+      "text": "But there's gonna be more and more of those things."
+    },
+    {
+      "start": 3946.523,
+      "end": 3948.318,
+      "text": "I know. I know all that."
+    },
+    {
+      "start": 3952.742,
+      "end": 3956.79,
+      "text": "Listen. Remember when we had the big flood?"
+    },
+    {
+      "start": 3957.417,
+      "end": 3961.507,
+      "text": "Remember how difficult it was for us to convince you that it was right to leave?"
+    },
+    {
+      "start": 3961.883,
+      "end": 3964.512,
+      "text": "Remember? Remember we had to go to Willard then?"
+    },
+    {
+      "start": 3964.804,
+      "end": 3966.933,
+      "text": "This isn't a passing thing, honey."
+    },
+    {
+      "start": 3967.976,
+      "end": 3970.689,
+      "text": "It... it's not like just a wind passing through."
+    },
+    {
+      "start": 3970.814,
+      "end": 3973.569,
+      "text": "We've got to do something, and fast."
+    },
+    {
+      "start": 3979.621,
+      "end": 3982.292,
+      "text": "I just don't want you to go out there, that's all."
+    },
+    {
+      "start": 3983.962,
+      "end": 3985.297,
+      "text": "Hey... smile, honey."
+    },
+    {
+      "start": 3986.299,
+      "end": 3988.052,
+      "text": "Where's that big smile for me?"
+    },
+    {
+      "start": 3992.727,
+      "end": 3995.022,
+      "text": "You sure are no use at all, are you?"
+    },
+    {
+      "start": 3995.481,
+      "end": 4000.281,
+      "text": "We've got work to do, honey. And you... you..."
+    },
+    {
+      "start": 4016.683,
+      "end": 4018.353,
+      "text": "We better get her downstairs."
+    },
+    {
+      "start": 4018.603,
+      "end": 4020.857,
+      "text": "We have to go downstairs now, Barbra."
+    },
+    {
+      "start": 4022.694,
+      "end": 4024.948,
+      "text": "She's right. You have to go downstairs now."
+    },
+    {
+      "start": 4025.073,
+      "end": 4027.494,
+      "text": "Just for a little while, until we get back."
+    },
+    {
+      "start": 4028.329,
+      "end": 4032.92,
+      "text": "- Then we can all leave. - Oh, I'd like to leave. Yes."
+    },
+    {
+      "start": 4052.077,
+      "end": 4053.997,
+      "text": "- Good luck. - Yeah."
+    },
+    {
+      "start": 4103.874,
+      "end": 4105.751,
+      "text": "- You ready upstairs? - Yeah."
+    },
+    {
+      "start": 4105.786,
+      "end": 4107.046,
+      "text": "Ok, toss 'em!"
+    },
+    {
+      "start": 4147.781,
+      "end": 4149.284,
+      "text": "Go ahead! Go on!"
+    },
+    {
+      "start": 4165.353,
+      "end": 4166.23,
+      "text": "I'm going with him!"
+    },
+    {
+      "start": 4166.689,
+      "end": 4169.902,
+      "text": "Get back in the cellar! It's too late. Too late!"
+    },
+    {
+      "start": 4178.167,
+      "end": 4179.669,
+      "text": "Well, is she coming? Come on."
+    },
+    {
+      "start": 4181.84,
+      "end": 4182.674,
+      "text": "Get in!"
+    },
+    {
+      "start": 4255.879,
+      "end": 4257.132,
+      "text": "- Come on! - This key won't work."
+    },
+    {
+      "start": 4257.167,
+      "end": 4258.717,
+      "text": "Watch it."
+    },
+    {
+      "start": 4264.06,
+      "end": 4266.815,
+      "text": "Watch the torch!"
+    },
+    {
+      "start": 4273.451,
+      "end": 4274.996,
+      "text": "We've gotta get away from the pump!"
+    },
+    {
+      "start": 4286.932,
+      "end": 4287.641,
+      "text": "Hang on!"
+    },
+    {
+      "start": 4289.147,
+      "end": 4291.484,
+      "text": "Stop! I'm telling you guys to get outta the truck!"
+    },
+    {
+      "start": 4309.762,
+      "end": 4311.724,
+      "text": "Let's get outta here!"
+    },
+    {
+      "start": 4313.644,
+      "end": 4314.812,
+      "text": "Come on, come on!"
+    },
+    {
+      "start": 4314.847,
+      "end": 4315.982,
+      "text": "My jacket's caught."
+    },
+    {
+      "start": 4384.719,
+      "end": 4385.72,
+      "text": "Let me in!"
+    },
+    {
+      "start": 4386.847,
+      "end": 4387.682,
+      "text": "Cooper!"
+    },
+    {
+      "start": 4452.709,
+      "end": 4455.047,
+      "text": "I ought to drag you out there and feed you to those things."
+    },
+    {
+      "start": 4545.95,
+      "end": 4547.829,
+      "text": "Isn't it three o'clock yet?"
+    },
+    {
+      "start": 4552.503,
+      "end": 4555.676,
+      "text": "There's supposed to be another broadcast at three o'clock."
+    },
+    {
+      "start": 4555.759,
+      "end": 4557.094,
+      "text": "Ten minutes."
+    },
+    {
+      "start": 4559.766,
+      "end": 4561.518,
+      "text": "Oh. Only ten more minutes?"
+    },
+    {
+      "start": 4561.937,
+      "end": 4564.191,
+      "text": "We don't have very long to wait."
+    },
+    {
+      "start": 4565.067,
+      "end": 4566.319,
+      "text": "We can leave."
+    },
+    {
+      "start": 4568.322,
+      "end": 4569.908,
+      "text": "Or we better leave soon."
+    },
+    {
+      "start": 4570.743,
+      "end": 4572.204,
+      "text": "It's ten minutes to three."
+    },
+    {
+      "start": 4578.089,
+      "end": 4579.967,
+      "text": "You know anything about this area at all?"
+    },
+    {
+      "start": 4580.593,
+      "end": 4582.138,
+      "text": "I mean, is Willard the nearest town?"
+    },
+    {
+      "start": 4584.266,
+      "end": 4585.685,
+      "text": "I don't know."
+    },
+    {
+      "start": 4588.565,
+      "end": 4590.484,
+      "text": "We were..."
+    },
+    {
+      "start": 4592.279,
+      "end": 4595.744,
+      "text": "Just trying to get to a motel before dark."
+    },
+    {
+      "start": 4596.912,
+      "end": 4598.624,
+      "text": "You said those things turned your car over."
+    },
+    {
+      "start": 4598.832,
+      "end": 4601.253,
+      "text": "You think we can get it back on its wheels and drive it? Where is it?"
+    },
+    {
+      "start": 4601.295,
+      "end": 4603.674,
+      "text": "Seems like it was pretty far away."
+    },
+    {
+      "start": 4604.884,
+      "end": 4606.471,
+      "text": "Seems like we ran."
+    },
+    {
+      "start": 4606.946,
+      "end": 4609.074,
+      "text": "Forget it. It's at least a mile."
+    },
+    {
+      "start": 4609.449,
+      "end": 4611.119,
+      "text": "Johnny has the keys."
+    },
+    {
+      "start": 4611.703,
+      "end": 4613.664,
+      "text": "You're going to carry that child a mile?"
+    },
+    {
+      "start": 4613.705,
+      "end": 4615.666,
+      "text": "Through that army of things out there?"
+    },
+    {
+      "start": 4615.701,
+      "end": 4616.709,
+      "text": "I can carry the kid."
+    },
+    {
+      "start": 4617.669,
+      "end": 4619.171,
+      "text": "What's wrong with her? How'd she get hurt?"
+    },
+    {
+      "start": 4620.673,
+      "end": 4623.719,
+      "text": "- One of those things grabbed her. - Bit her on the arm."
+    },
+    {
+      "start": 4625.972,
+      "end": 4626.807,
+      "text": "What's wrong?"
+    },
+    {
+      "start": 4627.391,
+      "end": 4629.977,
+      "text": "Who knows what kind of disease those things carry?"
+    },
+    {
+      "start": 4630.812,
+      "end": 4633.357,
+      "text": "- Is she conscious? - Barely."
+    },
+    {
+      "start": 4633.649,
+      "end": 4635.944,
+      "text": "She can't walk. She's too weak."
+    },
+    {
+      "start": 4638.99,
+      "end": 4641.368,
+      "text": "Well, one of us could try to get to the car."
+    },
+    {
+      "start": 4641.409,
+      "end": 4643.204,
+      "text": "You gonna turn it over by yourself?"
+    },
+    {
+      "start": 4643.245,
+      "end": 4646.959,
+      "text": "You can't start the car. Johnny has the keys."
+    },
+    {
+      "start": 4650.38,
+      "end": 4652.967,
+      "text": "You have a car? Where? Where is it?"
+    },
+    {
+      "start": 4653.218,
+      "end": 4657.014,
+      "text": "- You won't be able to start it. - Yeah. I know. But where is it?"
+    },
+    {
+      "start": 4670.282,
+      "end": 4671.368,
+      "text": "Good lord."
+    },
+    {
+      "start": 4686.639,
+      "end": 4690.56,
+      "text": "At this hour, they report the level of the mysterious radiation"
+    },
+    {
+      "start": 4690.685,
+      "end": 4692.73,
+      "text": "continues to increase steadily."
+    },
+    {
+      "start": 4693.273,
+      "end": 4695.318,
+      "text": "So long as this situation remains,"
+    },
+    {
+      "start": 4695.443,
+      "end": 4698.071,
+      "text": "government spokesmen warn that dead bodies"
+    },
+    {
+      "start": 4698.113,
+      "end": 4701.534,
+      "text": "will continue to be transformed into the flesh-eating ghouls."
+    },
+    {
+      "start": 4701.575,
+      "end": 4705.79,
+      "text": "All persons who die during this crisis, from whatever cause,"
+    },
+    {
+      "start": 4705.831,
+      "end": 4708.501,
+      "text": "will come back to life to seek human victims."
+    },
+    {
+      "start": 4708.586,
+      "end": 4712.007,
+      "text": "Unless their bodies are first disposed of by cremation."
+    },
+    {
+      "start": 4712.674,
+      "end": 4714.718,
+      "text": "Our News cameras have just returned"
+    },
+    {
+      "start": 4715.177,
+      "end": 4718.265,
+      "text": "from covering such a search and destroy operation against the ghouls."
+    },
+    {
+      "start": 4718.3,
+      "end": 4720.769,
+      "text": "This one conducted by sheriff Conan McClellan"
+    },
+    {
+      "start": 4720.935,
+      "end": 4722.771,
+      "text": "in Butler County, Pennsylvania."
+    },
+    {
+      "start": 4722.938,
+      "end": 4724.566,
+      "text": "So now let's go to that film report."
+    },
+    {
+      "start": 4725.483,
+      "end": 4728.487,
+      "text": "All law enforcement agencies and the military"
+    },
+    {
+      "start": 4728.57,
+      "end": 4732.284,
+      "text": "have been organized to search out and destroy the marauding ghouls."
+    },
+    {
+      "start": 4732.451,
+      "end": 4734.662,
+      "text": "The survival command center at the Pentagon"
+    },
+    {
+      "start": 4734.787,
+      "end": 4738.001,
+      "text": "has disclosed that a ghoul can be killed"
+    },
+    {
+      "start": 4738.168,
+      "end": 4742.131,
+      "text": "by a shot in the head or a heavy blow to the skull."
+    },
+    {
+      "start": 4742.799,
+      "end": 4744.51,
+      "text": "Officials are quoted as explaining"
+    },
+    {
+      "start": 4744.593,
+      "end": 4748.222,
+      "text": "that since the brain of a ghoul has been activated by the radiation,"
+    },
+    {
+      "start": 4748.64,
+      "end": 4752.729,
+      "text": "the plan is, kill the brain and you kill the ghoul."
+    },
+    {
+      "start": 4753.897,
+      "end": 4757.401,
+      "text": "- Want anything from the supply wagon? - No, we're all right."
+    },
+    {
+      "start": 4758.737,
+      "end": 4761.038,
+      "text": "Hey, Cass, put that thing all the way in the fire."
+    },
+    {
+      "start": 4761.073,
+      "end": 4763.702,
+      "text": "- We don't want it getting up again. - All right, I gotcha."
+    },
+    {
+      "start": 4763.737,
+      "end": 4765.705,
+      "text": "Chief McClellan, how's everything going?"
+    },
+    {
+      "start": 4765.746,
+      "end": 4768.793,
+      "text": "Oh, things aren't going too bad. Men are taking it pretty good."
+    },
+    {
+      "start": 4769.21,
+      "end": 4771.546,
+      "text": "You want to get on the other side of the road over there."
+    },
+    {
+      "start": 4772.172,
+      "end": 4773.966,
+      "text": "Chief, do you think we'll be able to defeat these things?"
+    },
+    {
+      "start": 4774.508,
+      "end": 4777.137,
+      "text": "Well, we killed 19 of them today, right in this area."
+    },
+    {
+      "start": 4777.345,
+      "end": 4780.6,
+      "text": "Those last three we caught trying to claw their way into an abandoned shed."
+    },
+    {
+      "start": 4780.642,
+      "end": 4783.396,
+      "text": "They must have thought somebody was in there. There wasn't, though."
+    },
+    {
+      "start": 4783.437,
+      "end": 4785.03,
+      "text": "We heard 'em making all kind of noise."
+    },
+    {
+      "start": 4785.065,
+      "end": 4787.61,
+      "text": "We came over and beat 'em off, blasted 'em down."
+    },
+    {
+      "start": 4787.652,
+      "end": 4789.863,
+      "text": "Chief, as soon as you're finished, can I see you here?"
+    },
+    {
+      "start": 4789.946,
+      "end": 4790.739,
+      "text": "Yeah, ok."
+    },
+    {
+      "start": 4790.906,
+      "end": 4793.869,
+      "text": "Chief, if I were surrounded by six or eight of these things,"
+    },
+    {
+      "start": 4793.91,
+      "end": 4795.203,
+      "text": "would I stand a chance with them?"
+    },
+    {
+      "start": 4795.245,
+      "end": 4797.833,
+      "text": "Well, there's no problem. If you had a gun, shoot 'em in the head."
+    },
+    {
+      "start": 4797.868,
+      "end": 4799.007,
+      "text": "That's a sure way to kill 'em."
+    },
+    {
+      "start": 4799.042,
+      "end": 4801.212,
+      "text": "If you don't, get yourself a club or a torch."
+    },
+    {
+      "start": 4801.253,
+      "end": 4803.256,
+      "text": "Beat 'em or burn 'em. They go up pretty easy."
+    },
+    {
+      "start": 4803.798,
+      "end": 4806.176,
+      "text": "Well, Chief McClellan, how long do you think it'll take"
+    },
+    {
+      "start": 4806.211,
+      "end": 4807.929,
+      "text": "until you get the situation under control?"
+    },
+    {
+      "start": 4808.054,
+      "end": 4811.226,
+      "text": "Well, that's pretty hard to say. We don't know how many of 'em there are."
+    },
+    {
+      "start": 4811.267,
+      "end": 4813.019,
+      "text": "We know when we find 'em, we can kill 'em."
+    },
+    {
+      "start": 4814.563,
+      "end": 4815.774,
+      "text": "Are they slow-moving, chief?"
+    },
+    {
+      "start": 4815.982,
+      "end": 4818.909,
+      "text": "Yeah, they're dead. They're all messed up."
+    },
+    {
+      "start": 4818.944,
+      "end": 4823.158,
+      "text": "Well, in time, would you say you'd be able to wrap this up in 24 hours?"
+    },
+    {
+      "start": 4823.534,
+      "end": 4826.12,
+      "text": "Well, we don't really know."
+    },
+    {
+      "start": 4826.162,
+      "end": 4829.792,
+      "text": "We know we'll be into it most of the night, probably into the early morning."
+    },
+    {
+      "start": 4829.834,
+      "end": 4831.587,
+      "text": "We're working our way toward Willard"
+    },
+    {
+      "start": 4831.628,
+      "end": 4833.631,
+      "text": "and we'll team up with the National Guard over there,"
+    },
+    {
+      "start": 4833.673,
+      "end": 4835.634,
+      "text": "and then we'll be able to give a more definite view."
+    },
+    {
+      "start": 4835.801,
+      "end": 4837.553,
+      "text": "Thank you very much, chief McClellan."
+    },
+    {
+      "start": 4837.929,
+      "end": 4841.183,
+      "text": "This is Bill Cardille, WIC-TV 11 news."
+    },
+    {
+      "start": 4841.725,
+      "end": 4843.019,
+      "text": "Thank you, Bill, for that report."
+    },
+    {
+      "start": 4843.561,
+      "end": 4845.988,
+      "text": "Official spokesmen declined to speculate"
+    },
+    {
+      "start": 4846.023,
+      "end": 4849.027,
+      "text": "just how long it may take to kill off all the flesh-eaters"
+    },
+    {
+      "start": 4849.236,
+      "end": 4850.989,
+      "text": "so long as the heavy ra..."
+    },
+    {
+      "start": 4857.33,
+      "end": 4858.999,
+      "text": "Is the fuse box in the cellar?"
+    },
+    {
+      "start": 4859.791,
+      "end": 4860.877,
+      "text": "I don't know. I..."
+    },
+    {
+      "start": 4865.091,
+      "end": 4866.425,
+      "text": "Is... isn't the fuse..."
+    },
+    {
+      "start": 4867.552,
+      "end": 4868.637,
+      "text": "The power lines are down."
+    },
+    {
+      "start": 4871.475,
+      "end": 4874.562,
+      "text": "Helen? I have to get that gun."
+    },
+    {
+      "start": 4876.398,
+      "end": 4878.067,
+      "text": "Haven't you had enough?"
+    },
+    {
+      "start": 4878.943,
+      "end": 4881.988,
+      "text": "Two people are dead already, on account of that guy."
+    },
+    {
+      "start": 4882.073,
+      "end": 4883.657,
+      "text": "Take a look out that window. Look at..."
+    },
+    {
+      "start": 4942.572,
+      "end": 4943.656,
+      "text": "Get over here, man!"
+    },
+    {
+      "start": 4945.701,
+      "end": 4946.326,
+      "text": "Come on!"
+    },
+    {
+      "start": 4964.81,
+      "end": 4968.648,
+      "text": "Go ahead. Go ahead. You wanna stay up here now?"
+    },
+    {
+      "start": 4969.233,
+      "end": 4970.735,
+      "text": "Helen, get in the cellar."
+    },
+    {
+      "start": 4973.113,
+      "end": 4975.074,
+      "text": "Get in the cellar now! Move!"
+    },
+    {
+      "start": 5079.675,
+      "end": 5080.51,
+      "text": "Karen?"
+    },
+    {
+      "start": 5090.19,
+      "end": 5091.192,
+      "text": "Oh, baby."
+    },
+    {
+      "start": 5093.612,
+      "end": 5094.654,
+      "text": "Baby."
+    },
+    {
+      "start": 5099,
+      "end": 5103,
+      "text": "[Helen gasping]"
+    },
+    {
+      "start": 5107,
+      "end": 5132,
+      "text": "[shrieking distorts, reverberates]"
+    },
+    {
+      "start": 5151.3,
+      "end": 5153.5,
+      "text": "BARBRA: Get out! Get out!"
+    },
+    {
+      "start": 5154.989,
+      "end": 5160.286,
+      "text": "No... no... No! Johnny!"
+    },
+    {
+      "start": 5162,
+      "end": 5167.17,
+      "text": "No! Oh, help me, help me!"
+    },
+    {
+      "start": 5439.951,
+      "end": 5441.037,
+      "text": "Hey, Vince, Bill,"
+    },
+    {
+      "start": 5441.579,
+      "end": 5444.291,
+      "text": "you wanna get about four or five men and a couple dogs?"
+    },
+    {
+      "start": 5444.374,
+      "end": 5447.254,
+      "text": "There's a house over here behind those trees. We wanna go check it out."
+    },
+    {
+      "start": 5447.546,
+      "end": 5448.922,
+      "text": "You still here, Bill?"
+    },
+    {
+      "start": 5448.963,
+      "end": 5450.508,
+      "text": "Yeah, chief, we're going to stay with it"
+    },
+    {
+      "start": 5450.549,
+      "end": 5451.975,
+      "text": "till we meet up with the National Guard."
+    },
+    {
+      "start": 5452.01,
+      "end": 5454.221,
+      "text": "- Where'd you get the coffee? - One of the volunteers."
+    },
+    {
+      "start": 5454.256,
+      "end": 5455.981,
+      "text": "- You're doing all the work, take it. - Thank you."
+    },
+    {
+      "start": 5456.016,
+      "end": 5458.727,
+      "text": "We should be wrapped up here. About three or four more hours,"
+    },
+    {
+      "start": 5458.853,
+      "end": 5460.194,
+      "text": "we'll probably get into Willard's end."
+    },
+    {
+      "start": 5460.229,
+      "end": 5462.449,
+      "text": "I guess you can go over there and meet the national guard."
+    },
+    {
+      "start": 5462.484,
+      "end": 5464.669,
+      "text": "Nick, you and the rest of these men wanna come with me?"
+    },
+    {
+      "start": 5465.504,
+      "end": 5467.34,
+      "text": "Bill, I'm checking the office to see what's happening."
+    },
+    {
+      "start": 5467.632,
+      "end": 5470.093,
+      "text": "All right, Steve, tell 'em we're going to stay with it"
+    },
+    {
+      "start": 5470.128,
+      "end": 5473.055,
+      "text": "and everything appears to be under control."
+    },
+    {
+      "start": 5522.957,
+      "end": 5525.169,
+      "text": "They need you down there by the barn."
+    },
+    {
+      "start": 5529.048,
+      "end": 5531.176,
+      "text": "You guys can follow the wagon down."
+    },
+    {
+      "start": 5531.218,
+      "end": 5533.722,
+      "text": "I only need a few men to check out the house."
+    },
+    {
+      "start": 5536.643,
+      "end": 5539.938,
+      "text": "- Somebody had a cookout here, Vince. - Yeah, sure looks like it, Con."
+    },
+    {
+      "start": 5579.159,
+      "end": 5580.953,
+      "text": "He's a dead one. Get up here!"
+    },
+    {
+      "start": 5582.454,
+      "end": 5584.499,
+      "text": "Nick! Tony! Steve!"
+    },
+    {
+      "start": 5584.582,
+      "end": 5586.877,
+      "text": "You wanna get out in that field and build me a bonfire?"
+    },
+    {
+      "start": 5599.812,
+      "end": 5602.565,
+      "text": "You. Drag that out of here and throw it on the fire."
+    },
+    {
+      "start": 5602.608,
+      "end": 5603.525,
+      "text": "Nothing down here."
+    },
+    {
+      "start": 5603.609,
+      "end": 5605.487,
+      "text": "All right. Go ahead down and give 'em a hand."
+    },
+    {
+      "start": 5605.737,
+      "end": 5607.03,
+      "text": "Let's go check out the house."
+    },
+    {
+      "start": 5607.072,
+      "end": 5608.699,
+      "text": "There's something there. I heard a noise."
+    },
+    {
+      "start": 5614.04,
+      "end": 5616.251,
+      "text": "All right, Vince. Hit him in the head. Right between the eyes."
+    },
+    {
+      "start": 5620.173,
+      "end": 5623.511,
+      "text": "Good shot. Okay, he's dead. Let's go get him."
+    },
+    {
+      "start": 5623.546,
+      "end": 5625.097,
+      "text": "That's another one for the fire."
+    },
+    {
+      "start": 5646.501,
+      "end": 5648.295,
+      "text": "Alright, send a wagon through..."
+    },
+    {
+      "start": 5657.079,
+      "end": 5659.457,
+      "text": "Keep those dogs back off of those things."
+    },
+    {
+      "start": 5720.458,
+      "end": 5724.464,
+      "text": "Come ahead with the motorcycle, please. Let's go!"
+    },
+    {
+      "start": 5728.258,
+      "end": 5730.553,
+      "text": "Hey Randy, light these torches over here."
+    }
+  ]
+}

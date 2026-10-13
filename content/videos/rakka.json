@@ -1,0 +1,35 @@
+{
+  "id": "rakka",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "VjQ2t_yNHQs",
+  "title": "Rakka",
+  "creator": "Neill Blomkamp · Oats Studios",
+  "year": 2017,
+  "level": "C1",
+  "category": "scifi",
+  "genre": "fantasy",
+  "durationSeconds": 1313,
+  "summaryTr": "Dünya uzaylıların kontrolüne girmiştir. Bir direniş grubu, insanlığın geleceği için son bir şans arar. Sigourney Weaver’ın da yer aldığı karanlık bir bilim kurgu ve aksiyon filmi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Yoğun anlatıcı metni, farklı aksanlar, savaş ve işgal dili ile açıkça söylenmeyen neden-sonuç bağlantıları ileri seviye dinleme gerektirir.",
+  "advisoryTr": "Yoğun kanlı şiddet, işkence, insan deneyleri ve ağır küfür içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "Oats Studios — Rakka",
+    "url": "https://www.youtube.com/watch?v=VjQ2t_yNHQs",
+    "watchUrl": "https://www.youtube.com/watch?v=VjQ2t_yNHQs",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Neill Blomkamp · Oats Studios · Yayıncı: Oats Studios"
+  },
+  "glossary": {
+    "occupation": "işgal",
+    "insurgency": "silahlı isyan",
+    "resistance": "direniş",
+    "enslave": "köleleştirmek",
+    "surveillance": "gözetim",
+    "weapon": "silah",
+    "humanity": "insanlık"
+  },
+  "captions": []
+}

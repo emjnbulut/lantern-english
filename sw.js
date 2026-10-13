@@ -1,6 +1,6 @@
 /* Lantern English service worker: fresh files whenever online, cached copy when offline.
    VERSION is stamped by tools/make-site.mjs; "dev" means an unstamped checkout. */
-const VERSION = "dev";
+const VERSION = "9d5321d38e";
 const CACHE = "lantern-" + VERSION;
 const SHELL = [
   "./", "index.html", "manifest.webmanifest",
@@ -82,7 +82,7 @@ self.addEventListener("fetch", (event) => {
   if (req.method !== "GET") return;
   const url = new URL(req.url);
   const sameOrigin = url.origin === self.location.origin;
-  if (!sameOrigin && /\.mp4$/i.test(url.pathname)) {
+  if (!sameOrigin && /\.(mp4|m4v|webm)$/i.test(url.pathname)) {
     const key = url.origin + url.pathname + url.search;
     if (offlineVideos && !offlineVideos.has(key)) return; // not downloaded: the browser streams it as before
     event.respondWith(offlineVideo(req, key));

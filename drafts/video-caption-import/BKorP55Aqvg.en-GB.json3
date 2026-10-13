@@ -1,0 +1,817 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 0,
+    "dDurationMs": 8163,
+    "segs": [ {
+      "utf8": "Our company has a new strategic initiative to increase market penetration, maximise brand loyalty, and enhance intangible assets."
+    } ]
+  }, {
+    "tStartMs": 8197,
+    "dDurationMs": 3517,
+    "segs": [ {
+      "utf8": "In pursuit of these objectives, we've started a new project --"
+    } ]
+  }, {
+    "tStartMs": 11715,
+    "dDurationMs": 2388,
+    "segs": [ {
+      "utf8": "for which we require 7 red lines."
+    } ]
+  }, {
+    "tStartMs": 14103,
+    "dDurationMs": 2430,
+    "segs": [ {
+      "utf8": "I understand your company can help us in this matter."
+    } ]
+  }, {
+    "tStartMs": 16534,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Of course!"
+    } ]
+  }, {
+    "tStartMs": 17719,
+    "dDurationMs": 4891,
+    "segs": [ {
+      "utf8": "Walter here will be the Project Manager. Walter, we can do this, can't we?"
+    } ]
+  }, {
+    "tStartMs": 22611,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Yes, of course."
+    } ]
+  }, {
+    "tStartMs": 23685,
+    "dDurationMs": 3257,
+    "segs": [ {
+      "utf8": "Anderson here is our expert in all matters related to drawing red lines. "
+    } ]
+  }, {
+    "tStartMs": 26943,
+    "dDurationMs": 2814,
+    "segs": [ {
+      "utf8": "We brought him along today to share his professional opinion."
+    } ]
+  }, {
+    "tStartMs": 30117,
+    "dDurationMs": 1953,
+    "segs": [ {
+      "utf8": "Nice to meet you! Well, you all know me."
+    } ]
+  }, {
+    "tStartMs": 32071,
+    "dDurationMs": 3020,
+    "segs": [ {
+      "utf8": "This is Justine, our company's design specialist."
+    } ]
+  }, {
+    "tStartMs": 35450,
+    "dDurationMs": 593,
+    "segs": [ {
+      "utf8": "Hallo..."
+    } ]
+  }, {
+    "tStartMs": 36044,
+    "dDurationMs": 3094,
+    "segs": [ {
+      "utf8": "We need you to draw seven red lines."
+    } ]
+  }, {
+    "tStartMs": 39139,
+    "dDurationMs": 5536,
+    "segs": [ {
+      "utf8": "All of them strictly perpendicular; some with green ink and some with transparent. Can you do that?"
+    } ]
+  }, {
+    "tStartMs": 46249,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "No. I'm afraid we --"
+    } ]
+  }, {
+    "tStartMs": 47720,
+    "dDurationMs": 3943,
+    "segs": [ {
+      "utf8": "Let's not rush into any hasty answers, Anderson! The task has been set and needs to be carried out."
+    } ]
+  }, {
+    "tStartMs": 51664,
+    "dDurationMs": 1494,
+    "segs": [ {
+      "utf8": "At the end of the day, you are an expert."
+    } ]
+  }, {
+    "tStartMs": 53623,
+    "dDurationMs": 4761,
+    "segs": [ {
+      "utf8": "The term \"red line\" implies the colour of the line to be red. To draw a red line with green ink is --"
+    } ]
+  }, {
+    "tStartMs": 58385,
+    "dDurationMs": 4050,
+    "segs": [ {
+      "utf8": "well if it is not exactly impossible, then it is pretty close to being impossible."
+    } ]
+  }, {
+    "tStartMs": 62436,
+    "dDurationMs": 1751,
+    "segs": [ {
+      "utf8": "What does it even mean: \"impossible\"?"
+    } ]
+  }, {
+    "tStartMs": 64667,
+    "dDurationMs": 3783,
+    "segs": [ {
+      "utf8": "I mean, it is quite possible that there are some people, say suffering from colour blindness,"
+    } ]
+  }, {
+    "tStartMs": 68451,
+    "dDurationMs": 2505,
+    "segs": [ {
+      "utf8": "for whom the colour of the lines doesn't really make a difference."
+    } ]
+  }, {
+    "tStartMs": 70957,
+    "dDurationMs": 4799,
+    "segs": [ {
+      "utf8": "But I am quite sure that the target audience of your project does not consists solely of such people."
+    } ]
+  }, {
+    "tStartMs": 75757,
+    "dDurationMs": 1973,
+    "segs": [ {
+      "utf8": "So in principle this is possible."
+    } ]
+  }, {
+    "tStartMs": 79789,
+    "dDurationMs": 1301,
+    "segs": [ {
+      "utf8": "I'll simplify."
+    } ]
+  }, {
+    "tStartMs": 81091,
+    "dDurationMs": 2924,
+    "segs": [ {
+      "utf8": "A line as such can be drawn with absolutely any ink."
+    } ]
+  }, {
+    "tStartMs": 84015,
+    "dDurationMs": 3526,
+    "segs": [ {
+      "utf8": "But if you want to get a red line, you need to use red ink."
+    } ]
+  }, {
+    "tStartMs": 88200,
+    "dDurationMs": 1837,
+    "segs": [ {
+      "utf8": "What if we draw them with blue ink?"
+    } ]
+  }, {
+    "tStartMs": 90252,
+    "dDurationMs": 4371,
+    "segs": [ {
+      "utf8": "It still won't work. If you use blue ink, you will get blue lines."
+    } ]
+  }, {
+    "tStartMs": 97107,
+    "dDurationMs": 2969,
+    "segs": [ {
+      "utf8": "And what exactly did you mean, when you talked about the transparent ink?"
+    } ]
+  }, {
+    "tStartMs": 100077,
+    "dDurationMs": 2693,
+    "segs": [ {
+      "utf8": "How to better explain?"
+    } ]
+  }, {
+    "tStartMs": 102771,
+    "dDurationMs": 1805,
+    "segs": [ {
+      "utf8": "I'm sure you know what \"transparent\" means?"
+    } ]
+  }, {
+    "tStartMs": 104577,
+    "dDurationMs": 1407,
+    "segs": [ {
+      "utf8": "Yes, I do."
+    } ]
+  }, {
+    "tStartMs": 105985,
+    "dDurationMs": 3507,
+    "segs": [ {
+      "utf8": "And what a \"red line\" means, I hope I don't need to explain to you?"
+    } ]
+  }, {
+    "tStartMs": 109493,
+    "dDurationMs": 964,
+    "segs": [ {
+      "utf8": "Of course not."
+    } ]
+  }, {
+    "tStartMs": 110457,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "Well... You need to draw red lines with transparent ink."
+    } ]
+  }, {
+    "tStartMs": 115873,
+    "dDurationMs": 2985,
+    "segs": [ {
+      "utf8": "Could you describe what you imagine the end result would look like?"
+    } ]
+  }, {
+    "tStartMs": 118859,
+    "dDurationMs": 2177,
+    "segs": [ {
+      "utf8": "C'mon, Anderson! What do we have here, kindergarten?"
+    } ]
+  }, {
+    "tStartMs": 121495,
+    "dDurationMs": 3870,
+    "segs": [ {
+      "utf8": "Let's not waste our time with these unproductive quarrels."
+    } ]
+  }, {
+    "tStartMs": 125366,
+    "dDurationMs": 2396,
+    "segs": [ {
+      "utf8": "The task has been set; the task is plain and clear."
+    } ]
+  }, {
+    "tStartMs": 127763,
+    "dDurationMs": 3711,
+    "segs": [ {
+      "utf8": "Now, if you have any specific questions, go ahead!"
+    } ]
+  }, {
+    "tStartMs": 131475,
+    "dDurationMs": 1693,
+    "segs": [ {
+      "utf8": "You're the expert here!"
+    } ]
+  }, {
+    "tStartMs": 133583,
+    "dDurationMs": 3231,
+    "segs": [ {
+      "utf8": "Alright, let's leave aside the colour for the moment."
+    } ]
+  }, {
+    "tStartMs": 136815,
+    "dDurationMs": 3561,
+    "segs": [ {
+      "utf8": "You had something there also relating to perpendicularity?.."
+    } ]
+  }, {
+    "tStartMs": 140377,
+    "dDurationMs": 2237,
+    "segs": [ {
+      "utf8": "Seven lines, all strictly perpendicular."
+    } ]
+  }, {
+    "tStartMs": 143101,
+    "dDurationMs": 1298,
+    "segs": [ {
+      "utf8": "To what?"
+    } ]
+  }, {
+    "tStartMs": 146597,
+    "dDurationMs": 3989,
+    "segs": [ {
+      "utf8": "Erm, to everything. Among themselves."
+    } ]
+  }, {
+    "tStartMs": 150587,
+    "dDurationMs": 2219,
+    "segs": [ {
+      "utf8": "I assumed you know what perpendicular lines are like!"
+    } ]
+  }, {
+    "tStartMs": 152807,
+    "dDurationMs": 1486,
+    "segs": [ {
+      "utf8": "Of course he does. He's an expert!"
+    } ]
+  }, {
+    "tStartMs": 155039,
+    "dDurationMs": 1762,
+    "segs": [ {
+      "utf8": "Two lines can be perpendicular."
+    } ]
+  }, {
+    "tStartMs": 156802,
+    "dDurationMs": 3417,
+    "segs": [ {
+      "utf8": "All seven can't be simultaneously perpendicular to each other."
+    } ]
+  }, {
+    "tStartMs": 161550,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I'll show you."
+    } ]
+  }, {
+    "tStartMs": 165712,
+    "dDurationMs": 2700,
+    "segs": [ {
+      "utf8": "This is a line, right?"
+    } ]
+  }, {
+    "tStartMs": 168755,
+    "dDurationMs": 658,
+    "segs": [ {
+      "utf8": "Yes."
+    } ]
+  }, {
+    "tStartMs": 169414,
+    "dDurationMs": 4994,
+    "segs": [ {
+      "utf8": "And another one. Is it perpendicular to the first line?"
+    } ]
+  }, {
+    "tStartMs": 175534,
+    "dDurationMs": 1787,
+    "segs": [ {
+      "utf8": "Well..."
+    } ]
+  }, {
+    "tStartMs": 177928,
+    "dDurationMs": 1323,
+    "segs": [ {
+      "utf8": "Yes, it is perpendicular."
+    } ]
+  }, {
+    "tStartMs": 179252,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Exactly!"
+    } ]
+  }, {
+    "tStartMs": 180253,
+    "dDurationMs": 4809,
+    "segs": [ {
+      "utf8": "Wait, wait, I'm not done. And a third one: is it perpendicular to the first line?"
+    } ]
+  }, {
+    "tStartMs": 186232,
+    "dDurationMs": 5121,
+    "segs": [ {
+      "utf8": "Yes, it is! But it doesn't cross the second line. They're both parallel."
+    } ]
+  }, {
+    "tStartMs": 192532,
+    "dDurationMs": 1115,
+    "segs": [ {
+      "utf8": "Not perpendicular!"
+    } ]
+  }, {
+    "tStartMs": 196359,
+    "dDurationMs": 1246,
+    "segs": [ {
+      "utf8": "I suppose so."
+    } ]
+  }, {
+    "tStartMs": 197606,
+    "dDurationMs": 3531,
+    "segs": [ {
+      "utf8": "There it is. Two lines can be perpendicular --"
+    } ]
+  }, {
+    "tStartMs": 201138,
+    "dDurationMs": 1259,
+    "segs": [ {
+      "utf8": "Can I have the pen?"
+    } ]
+  }, {
+    "tStartMs": 222418,
+    "dDurationMs": 1211,
+    "segs": [ {
+      "utf8": "How about this?"
+    } ]
+  }, {
+    "tStartMs": 228044,
+    "dDurationMs": 1519,
+    "segs": [ {
+      "utf8": "This is a triangle."
+    } ]
+  }, {
+    "tStartMs": 229564,
+    "dDurationMs": 3742,
+    "segs": [ {
+      "utf8": "It's definitely not perpendicular lines."
+    } ]
+  }, {
+    "tStartMs": 233307,
+    "dDurationMs": 2706,
+    "segs": [ {
+      "utf8": "And there are three, not seven."
+    } ]
+  }, {
+    "tStartMs": 237853,
+    "dDurationMs": 882,
+    "segs": [ {
+      "utf8": "Why are they blue?"
+    } ]
+  }, {
+    "tStartMs": 238736,
+    "dDurationMs": 1718,
+    "segs": [ {
+      "utf8": "Indeed. Wanted to ask that myself."
+    } ]
+  }, {
+    "tStartMs": 241387,
+    "dDurationMs": 2639,
+    "segs": [ {
+      "utf8": "I have a blue pen with me. This was just a demonstration --"
+    } ]
+  }, {
+    "tStartMs": 244027,
+    "dDurationMs": 3432,
+    "segs": [ {
+      "utf8": "That's the problem, your lines are blue. Draw them with red ink!"
+    } ]
+  }, {
+    "tStartMs": 247460,
+    "dDurationMs": 1552,
+    "segs": [ {
+      "utf8": "It won't solve the problem."
+    } ]
+  }, {
+    "tStartMs": 249013,
+    "dDurationMs": 1933,
+    "segs": [ {
+      "utf8": "How do you know before you've tried? "
+    } ]
+  }, {
+    "tStartMs": 250946,
+    "dDurationMs": 2019,
+    "segs": [ {
+      "utf8": "Lets draw them with red ink and then let's see."
+    } ]
+  }, {
+    "tStartMs": 252966,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "I don't have a red pen with me, --"
+    } ]
+  }, {
+    "tStartMs": 253967,
+    "dDurationMs": 5132,
+    "segs": [ {
+      "utf8": "but I am completely certain that with red ink the result will still be the same."
+    } ]
+  }, {
+    "tStartMs": 259100,
+    "dDurationMs": 3245,
+    "segs": [ {
+      "utf8": "Didn't you tell us earlier that you can only draw red lines with red ink?"
+    } ]
+  }, {
+    "tStartMs": 262346,
+    "dDurationMs": 1988,
+    "segs": [ {
+      "utf8": "In fact, yes, I've written it down here!"
+    } ]
+  }, {
+    "tStartMs": 264335,
+    "dDurationMs": 4579,
+    "segs": [ {
+      "utf8": "And now you want to draw them with a blue ink. Do you want to call these red lines?"
+    } ]
+  }, {
+    "tStartMs": 269440,
+    "dDurationMs": 3610,
+    "segs": [ {
+      "utf8": "I think I understand. You're not talking about the colour now, right?"
+    } ]
+  }, {
+    "tStartMs": 273051,
+    "dDurationMs": 4421,
+    "segs": [ {
+      "utf8": "You're talking about that, what do you call it: per-per, dick-dick --"
+    } ]
+  }, {
+    "tStartMs": 277473,
+    "dDurationMs": 1493,
+    "segs": [ {
+      "utf8": "Perpendicularity, yes!"
+    } ]
+  }, {
+    "tStartMs": 278967,
+    "dDurationMs": 2492,
+    "segs": [ {
+      "utf8": "That's it, now you've confused everyone. "
+    } ]
+  }, {
+    "tStartMs": 281459,
+    "dDurationMs": 3283,
+    "segs": [ {
+      "utf8": "So what exactly is stopping us from doing this?"
+    } ]
+  }, {
+    "tStartMs": 284943,
+    "dDurationMs": 1299,
+    "segs": [ {
+      "utf8": "Geometry."
+    } ]
+  }, {
+    "tStartMs": 286243,
+    "dDurationMs": 1155,
+    "segs": [ {
+      "utf8": "Just ignore it!"
+    } ]
+  }, {
+    "tStartMs": 287399,
+    "dDurationMs": 5457,
+    "segs": [ {
+      "utf8": "We have a task. Seven red lines. It's not twenty; it's just seven."
+    } ]
+  }, {
+    "tStartMs": 292857,
+    "dDurationMs": 5167,
+    "segs": [ {
+      "utf8": "Anderson, I understand; you're a specialist of a narrow field, you don't see the overall picture."
+    } ]
+  }, {
+    "tStartMs": 298025,
+    "dDurationMs": 3636,
+    "segs": [ {
+      "utf8": "But surely it's not a difficult task to draw some seven lines!"
+    } ]
+  }, {
+    "tStartMs": 301662,
+    "dDurationMs": 1916,
+    "segs": [ {
+      "utf8": "Exactly. Suggest a solution!"
+    } ]
+  }, {
+    "tStartMs": 303579,
+    "dDurationMs": 6017,
+    "segs": [ {
+      "utf8": "Any fool can criticise, no offence, but you're an expert, you should know better!"
+    } ]
+  }, {
+    "tStartMs": 310186,
+    "dDurationMs": 4938,
+    "segs": [ {
+      "utf8": "OK. Let me draw you two perfectly perpendicular red lines, --"
+    } ]
+  }, {
+    "tStartMs": 315125,
+    "dDurationMs": 3458,
+    "segs": [ {
+      "utf8": "and I will draw the rest with transparent ink."
+    } ]
+  }, {
+    "tStartMs": 318584,
+    "dDurationMs": 3250,
+    "segs": [ {
+      "utf8": "They'll be invisible, but I'll draw them."
+    } ]
+  }, {
+    "tStartMs": 321835,
+    "dDurationMs": 1260,
+    "segs": [ {
+      "utf8": "Would this suit us?"
+    } ]
+  }, {
+    "tStartMs": 324186,
+    "dDurationMs": 1437,
+    "segs": [ {
+      "utf8": "Yes, this will suit us."
+    } ]
+  }, {
+    "tStartMs": 326383,
+    "dDurationMs": 2287,
+    "segs": [ {
+      "utf8": "Yes, but at least a couple with green ink."
+    } ]
+  }, {
+    "tStartMs": 328671,
+    "dDurationMs": 2377,
+    "segs": [ {
+      "utf8": "Oh, and I have another question, if I may."
+    } ]
+  }, {
+    "tStartMs": 331049,
+    "dDurationMs": 3029,
+    "segs": [ {
+      "utf8": "Can you draw one of the lines in the form of a kitten?"
+    } ]
+  }, {
+    "tStartMs": 334631,
+    "dDurationMs": 689,
+    "segs": [ {
+      "utf8": "A what?"
+    } ]
+  }, {
+    "tStartMs": 335321,
+    "dDurationMs": 1296,
+    "segs": [ {
+      "utf8": "In the form of a kitten. "
+    } ]
+  }, {
+    "tStartMs": 336618,
+    "dDurationMs": 4092,
+    "segs": [ {
+      "utf8": "Market research tells our users like cute animals. It'd be really great if --"
+    } ]
+  }, {
+    "tStartMs": 340711,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "No-oh..."
+    } ]
+  }, {
+    "tStartMs": 342462,
+    "dDurationMs": 534,
+    "segs": [ {
+      "utf8": "Why?"
+    } ]
+  }, {
+    "tStartMs": 342997,
+    "dDurationMs": 2062,
+    "segs": [ {
+      "utf8": "Look, I can of course draw you a cat."
+    } ]
+  }, {
+    "tStartMs": 345060,
+    "dDurationMs": 1955,
+    "segs": [ {
+      "utf8": "I'm no artist, but I can give it a try."
+    } ]
+  }, {
+    "tStartMs": 347016,
+    "dDurationMs": 2079,
+    "segs": [ {
+      "utf8": "But it won't be a line any more. It will be a cat. "
+    } ]
+  }, {
+    "tStartMs": 349096,
+    "dDurationMs": 2355,
+    "segs": [ {
+      "utf8": "A line and a cat: those are two different things."
+    } ]
+  }, {
+    "tStartMs": 351452,
+    "dDurationMs": 2545,
+    "segs": [ {
+      "utf8": "A kitten. Not a cat, but a kitten."
+    } ]
+  }, {
+    "tStartMs": 353998,
+    "dDurationMs": 4676,
+    "segs": [ {
+      "utf8": "It's little, cute, cuddly. Cats, on the other hand --"
+    } ]
+  }, {
+    "tStartMs": 358675,
+    "dDurationMs": 1014,
+    "segs": [ {
+      "utf8": "It doesn't make a difference."
+    } ]
+  }, {
+    "tStartMs": 359690,
+    "dDurationMs": 1664,
+    "segs": [ {
+      "utf8": "Anderson, at least hear her out! "
+    } ]
+  }, {
+    "tStartMs": 361355,
+    "dDurationMs": 2762,
+    "segs": [ {
+      "utf8": "She hasn't even finished speaking, and you're already saying \"No!\""
+    } ]
+  }, {
+    "tStartMs": 364118,
+    "dDurationMs": 5563,
+    "segs": [ {
+      "utf8": "I got the idea, but it is impossible to draw a line in the form of a cat...ten."
+    } ]
+  }, {
+    "tStartMs": 370097,
+    "dDurationMs": 1956,
+    "segs": [ {
+      "utf8": "What about a bird?"
+    } ]
+  }, {
+    "tStartMs": 375274,
+    "dDurationMs": 2032,
+    "segs": [ {
+      "utf8": "So, where did we stop? What are we doing?"
+    } ]
+  }, {
+    "tStartMs": 377307,
+    "dDurationMs": 4568,
+    "segs": [ {
+      "utf8": "Seven red lines, two with red ink, two with green ink and the rest - with transparent."
+    } ]
+  }, {
+    "tStartMs": 381876,
+    "dDurationMs": 1404,
+    "segs": [ {
+      "utf8": "Did I understand correctly? --\n-- Yes."
+    } ]
+  }, {
+    "tStartMs": 383281,
+    "dDurationMs": 2819,
+    "segs": [ {
+      "utf8": "Excellent! In which case that's everything, right?"
+    } ]
+  }, {
+    "tStartMs": 386101,
+    "dDurationMs": 2850,
+    "segs": [ {
+      "utf8": "Oh, oh, I almost forgot, we also have a red balloon."
+    } ]
+  }, {
+    "tStartMs": 388952,
+    "dDurationMs": 1959,
+    "segs": [ {
+      "utf8": "Do you know if you could inflate it?"
+    } ]
+  }, {
+    "tStartMs": 394882,
+    "dDurationMs": 2138,
+    "segs": [ {
+      "utf8": "What do I have to do with balloons?"
+    } ]
+  }, {
+    "tStartMs": 397021,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "It's red."
+    } ]
+  }, {
+    "tStartMs": 398022,
+    "dDurationMs": 3632,
+    "segs": [ {
+      "utf8": "Anderson, can you or can you not do this? A simple question."
+    } ]
+  }, {
+    "tStartMs": 402119,
+    "dDurationMs": 1383,
+    "segs": [ {
+      "utf8": "As such, I can of course, but --"
+    } ]
+  }, {
+    "tStartMs": 403503,
+    "dDurationMs": 4420,
+    "segs": [ {
+      "utf8": "Excellent. Organise a business trip, we'll cover the expenses, --"
+    } ]
+  }, {
+    "tStartMs": 407924,
+    "dDurationMs": 4197,
+    "segs": [ {
+      "utf8": "go over to their location, inflate the balloon."
+    } ]
+  }, {
+    "tStartMs": 412122,
+    "dDurationMs": 3289,
+    "segs": [ {
+      "utf8": "Well this was very productive, thank you all!"
+    } ]
+  }, {
+    "tStartMs": 428303,
+    "dDurationMs": 1907,
+    "segs": [ {
+      "utf8": "Can I ask one more question, please?"
+    } ]
+  }, {
+    "tStartMs": 430937,
+    "dDurationMs": 3606,
+    "segs": [ {
+      "utf8": "When you inflate the balloon, could you do it in the form of a kitten?"
+    } ]
+  }, {
+    "tStartMs": 436005,
+    "dDurationMs": 1402,
+    "segs": [ {
+      "utf8": "Of course I can!"
+    } ]
+  }, {
+    "tStartMs": 437408,
+    "dDurationMs": 4331,
+    "segs": [ {
+      "utf8": "I can do anything, I can do absolutely anything."
+    } ]
+  }, {
+    "tStartMs": 443326,
+    "dDurationMs": 2070,
+    "segs": [ {
+      "utf8": "I'm an expert!"
+    } ]
+  } ]
+}

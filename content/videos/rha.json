@@ -1,0 +1,34 @@
+{
+  "id": "rha",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "Sgm_4WRcGRo",
+  "title": "R’ha",
+  "creator": "Kaleb Lechowski",
+  "year": 2013,
+  "level": "B2",
+  "category": "scifi",
+  "genre": "fantasy",
+  "durationSeconds": 360,
+  "summaryTr": "Bir uzaylı asker, kendi uygarlığını yok etmeye çalışan makineler tarafından sorgulanır. Kısa bir animasyon içinde direniş, güven ve hayatta kalma üzerine bir bilim kurgu macerası.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Kısa soru-cevaplar ve emirler açık bir hikâye içinde ilerler; mekanik sesler ve askerî kelimeler dinlemeyi zorlaştırır.",
+  "advisoryTr": "İşkence, tehdit ve savaş görüntüleri içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "DUST — R’ha",
+    "url": "https://www.youtube.com/watch?v=Sgm_4WRcGRo",
+    "watchUrl": "https://www.youtube.com/watch?v=Sgm_4WRcGRo",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Kaleb Lechowski · Yayıncı: DUST"
+  },
+  "glossary": {
+    "interrogation": "sorgulama",
+    "resistance": "direniş",
+    "survivor": "hayatta kalan",
+    "machine": "makine",
+    "betrayal": "ihanet",
+    "civilization": "uygarlık"
+  },
+  "captions": []
+}

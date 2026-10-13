@@ -1,0 +1,287 @@
+{
+  "id": "nps-my-trip-to-the-beach",
+  "type": "video",
+  "category": "real",
+  "title": "My Trip to the Beach",
+  "creator": "National Park Service · Ranger Scott",
+  "year": 2020,
+  "level": "B1",
+  "durationSeconds": 206.32,
+  "genre": "adventure",
+  "summaryTr": "Ranger Scott ile göl kıyısında hayalî bir geziye çık: soğuk su, martılar, kumdan kaleler ve piknik vakti! Duyularla anlatılan sakin ve neşeli bir kısa hikâye.",
+  "levelNoteTr": "B1, İngilizce altyazı ve kelime desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Anlatım yavaş ve nettir; duyuları anlatan sıfatlar ve birkaç doğa kelimesi içerir.",
+  "videoUrl": "https://www.nps.gov/nps-audiovideo/legacy/piro/128F745D-C3B4-DDE0-EB19452A0DCDE0DF/piro-StoryTimewithaRanger-MyTriptotheBeach_854x480.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://www.nps.gov/nps-audiovideo/legacy/piro/128F745D-C3B4-DDE0-EB19452A0DCDE0DF/piro-StoryTimewithaRanger-MyTriptotheBeach_426x240.mp4"
+    },
+    {
+      "label": "360p",
+      "url": "https://www.nps.gov/nps-audiovideo/legacy/piro/128F745D-C3B4-DDE0-EB19452A0DCDE0DF/piro-StoryTimewithaRanger-MyTriptotheBeach_640x360.mp4"
+    },
+    {
+      "label": "480p",
+      "url": "https://www.nps.gov/nps-audiovideo/legacy/piro/128F745D-C3B4-DDE0-EB19452A0DCDE0DF/piro-StoryTimewithaRanger-MyTriptotheBeach_854x480.mp4"
+    },
+    {
+      "label": "720p",
+      "url": "https://www.nps.gov/nps-audiovideo/legacy/piro/128F745D-C3B4-DDE0-EB19452A0DCDE0DF/piro-StoryTimewithaRanger-MyTriptotheBeach_1280x720.mp4"
+    }
+  ],
+  "source": {
+    "name": "National Park Service — Story Time with a Ranger",
+    "url": "https://www.nps.gov/media/video/view.htm?id=128F745D-C3B4-DDE0-EB19452A0DCDE0DF",
+    "watchUrl": "https://www.nps.gov/media/video/view.htm?id=128F745D-C3B4-DDE0-EB19452A0DCDE0DF",
+    "license": "NPS özgün üretimi · ABD kamu malı",
+    "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+    "credit": "National Park Service / Pictured Rocks National Lakeshore; Taylor Mace (Ranger Taylor), Ranger Scott. Özgün video değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "National Park Service — Resmî İngilizce altyazı",
+    "url": "https://www.nps.gov/nps-audiovideo/legacy/closed-caption/mwr/avElement/piro-StoryTimewithaRanger-MyTriptotheBeach-captions.vtt",
+    "license": "NPS özgün metni · ABD kamu malı",
+    "licenseUrl": "https://www.nps.gov/aboutus/disclaimer.htm",
+    "credit": "National Park Service",
+    "changeNoteTr": "Resmî WebVTT altyazısı sözleri ve zamanları korunarak uygulama biçimine dönüştürülmüş, satır sonları boşlukla birleştirilmiştir."
+  },
+  "glossary": {
+    "aqua": "açık mavi-yeşil; su rengi",
+    "driftwood": "suya düşüp kıyıya vurmuş ağaç parçası",
+    "lakeshore": "göl kıyısı",
+    "rippling": "küçük dalgalarla kıpırdayan",
+    "bark": "ağacın kabuğu",
+    "rumble": "guruldama; burada karnın guruldaması",
+    "superior": "Lake Superior: Superior Gölü (yer adı)",
+    "twelvemile": "Twelvemile Beach (plaj adı)",
+    "scott": "Scott (anlatıcının adı)"
+  },
+  "captions": [
+    {
+      "start": 0.22,
+      "end": 4.56,
+      "text": "[WAVES]"
+    },
+    {
+      "start": 4.56,
+      "end": 8.2,
+      "text": "Welcome to Story Time with a Ranger. I'm Ranger Scott and I work for"
+    },
+    {
+      "start": 8.2,
+      "end": 11.6,
+      "text": "Pictured Rocks National Lakeshore. I'll be reading you a story about a family"
+    },
+    {
+      "start": 11.6,
+      "end": 14.78,
+      "text": "visiting one of our beaches  found here in the park."
+    },
+    {
+      "start": 14.78,
+      "end": 19.24,
+      "text": "So, if you're ready, I'll begin! [WAVES]"
+    },
+    {
+      "start": 19.24,
+      "end": 26.16,
+      "text": "\"My Trip to the Beach'\" written by Ranger Taylor and read by Ranger Scott. [WAVES]"
+    },
+    {
+      "start": 26.16,
+      "end": 29.28,
+      "text": "It is a warm summer day,  the sun shines bright,"
+    },
+    {
+      "start": 29.28,
+      "end": 32.48,
+      "text": "and you are with your family  visiting Pictured Rocks."
+    },
+    {
+      "start": 32.48,
+      "end": 36.719,
+      "text": "You are walking on a sandy path towards the biggest of the Great Lakes -"
+    },
+    {
+      "start": 36.719,
+      "end": 41.04,
+      "text": "Lake Superior. What do you hear in the distance?  [QUIET WAVES]"
+    },
+    {
+      "start": 41.04,
+      "end": 44.78,
+      "text": "Can you hear the waves up ahead? [WAVES]"
+    },
+    {
+      "start": 44.78,
+      "end": 50.3,
+      "text": "As you come to the edge of the trees, the wide  beach lies before you. It's called Twelvemile Beach."
+    },
+    {
+      "start": 50.3,
+      "end": 56.16,
+      "text": "And do you know why? Because this beach  stretches for 12 long miles along the shore."
+    },
+    {
+      "start": 56.16,
+      "end": 59.88,
+      "text": "You see that Lake Superior  is a brilliant aqua blue"
+    },
+    {
+      "start": 59.88,
+      "end": 65.22,
+      "text": "and the moving waves have white  watery caps on top of them. [WAVES]"
+    },
+    {
+      "start": 65.22,
+      "end": 70.7,
+      "text": "You step onto the beach and take off your shoes.  How does the sand feel between your toes?"
+    },
+    {
+      "start": 70.7,
+      "end": 75.58,
+      "text": "Perhaps its feels soft and firm  all at the same time."
+    },
+    {
+      "start": 75.58,
+      "end": 81.94,
+      "text": "Walking through the warm sand, you and your  family head to the water's edge. [WAVES]"
+    },
+    {
+      "start": 81.94,
+      "end": 86.5,
+      "text": "You watch the rhythm of the waves washing up  onto the sand and flowing back out to the lake."
+    },
+    {
+      "start": 86.5,
+      "end": 91.6,
+      "text": "Washing up...flowing back... washing up...flowing back"
+    },
+    {
+      "start": 91.6,
+      "end": 96.1,
+      "text": "The sun is really warm on your body now.  So, it's time to put your toes in the water."
+    },
+    {
+      "start": 96.1,
+      "end": 100.96000000000001,
+      "text": "What do you think it'll feel like? [WAVES]"
+    },
+    {
+      "start": 100.96000000000001,
+      "end": 105.34,
+      "text": "It's quite a change to walk from the warm sand into the cold water, isn't it?"
+    },
+    {
+      "start": 105.34,
+      "end": 108.96000000000001,
+      "text": "You can see the sunlight  sparkling on the rippling surface."
+    },
+    {
+      "start": 108.96000000000001,
+      "end": 111.64,
+      "text": "Looking down through the  clear water of Lake Superior,"
+    },
+    {
+      "start": 111.64,
+      "end": 114.8,
+      "text": "you can see the tan  sandy bottom below."
+    },
+    {
+      "start": 114.8,
+      "end": 119.58,
+      "text": "[BIRD CALL] What's that?!"
+    },
+    {
+      "start": 119.58,
+      "end": 125.22,
+      "text": "Something is alive nearby. You look up  into the blue sky. What do you see?"
+    },
+    {
+      "start": 125.22,
+      "end": 130.7,
+      "text": "There it is. You spot a seagull flying high in the sky. [BIRD CALL]"
+    },
+    {
+      "start": 130.7,
+      "end": 137.86,
+      "text": "You're finally cooled off now. So, you walk out of the  water and continue down the beach. [WAVES]"
+    },
+    {
+      "start": 137.86,
+      "end": 143.44,
+      "text": "You can see the wet wavy lines in the sand where  the last big waves washed up onto the shore."
+    },
+    {
+      "start": 143.44,
+      "end": 147.2,
+      "text": "You spot something up ahead that the  waves have brought in from the lake."
+    },
+    {
+      "start": 147.2,
+      "end": 152.3,
+      "text": "What is that? You walk closer  to investigate. [WAVES]"
+    },
+    {
+      "start": 152.3,
+      "end": 158.06,
+      "text": "It's a piece of a tree that fell into the lake  a long time ago and it's called driftwood."
+    },
+    {
+      "start": 158.06,
+      "end": 162.86,
+      "text": "The water has rubbed off the bark and polished it smooth and cool."
+    },
+    {
+      "start": 162.86,
+      "end": 169.14,
+      "text": "Wanting our park visitors to see this treasure,  you put it back where you found it. [WAVES]"
+    },
+    {
+      "start": 169.14,
+      "end": 173.2,
+      "text": "You hear a rumble but there  isn't a rain cloud in sight."
+    },
+    {
+      "start": 173.2,
+      "end": 177.84,
+      "text": "It's your belly and that means it's time for a picnic with your family."
+    },
+    {
+      "start": 177.84,
+      "end": 182,
+      "text": "Afterwards maybe you'll find colorful rocks to make patterns in the sand,"
+    },
+    {
+      "start": 182,
+      "end": 186.7,
+      "text": "or gently toss them into the lake. Or maybe you'll build giant castles,"
+    },
+    {
+      "start": 186.7,
+      "end": 191.68,
+      "text": "or whole kingdoms in the sand. Whatever your adventure you choose,"
+    },
+    {
+      "start": 191.68,
+      "end": 194.48,
+      "text": "the beach awaits.  [WAVES]"
+    },
+    {
+      "start": 194.48,
+      "end": 199.2,
+      "text": "\"The End.\" Thanks for joining me  today for Story Time with a Ranger."
+    },
+    {
+      "start": 199.2,
+      "end": 201.4,
+      "text": "I hope you come again soon."
+    },
+    {
+      "start": 201.4,
+      "end": 206.32,
+      "text": "[WAVES]"
+    }
+  ],
+  "categoryTr": "Doğa hikâyesi"
+}

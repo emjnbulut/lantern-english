@@ -1,0 +1,34 @@
+{
+  "id": "the-chair",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "mhazCS14Tas",
+  "title": "The Chair",
+  "creator": "Curry Barker",
+  "year": 2023,
+  "level": "B2",
+  "category": "horror",
+  "genre": "horror",
+  "durationSeconds": 1462,
+  "summaryTr": "Eve getirilen eski bir sandalye, bir çiftin hayatını giderek daha tuhaf ve ürkütücü hâle getirir. Gündelik konuşmalardan psikolojik korkuya dönüşen bir kısa film.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Gündelik çift konuşmaları ve kısa tartışmalar B2 seviyesine uygundur; kesintili anlatı, argo ve fısıltılar takibi zorlaştırabilir.",
+  "advisoryTr": "Kan, şiddet, rahatsız edici görüntüler, küfür ve psikolojik korku içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "that's a bad idea — The Chair",
+    "url": "https://www.youtube.com/watch?v=mhazCS14Tas",
+    "watchUrl": "https://www.youtube.com/watch?v=mhazCS14Tas",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Curry Barker · Yayıncı: that's a bad idea"
+  },
+  "glossary": {
+    "antique": "antika",
+    "malevolent": "kötücül",
+    "possess": "burada: birine veya nesneye musallat olmak",
+    "doubt": "şüphe",
+    "memory": "anı; bellek",
+    "haunt": "musallat olmak"
+  },
+  "captions": []
+}

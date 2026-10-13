@@ -1,0 +1,34 @@
+{
+  "id": "the-expert",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "BKorP55Aqvg",
+  "title": "The Expert",
+  "creator": "Lauris Beinerts",
+  "year": 2014,
+  "level": "B2",
+  "category": "fun",
+  "genre": "comedy",
+  "durationSeconds": 454,
+  "summaryTr": "Bir uzman, iş toplantısında kendisinden istenen imkânsız görevi açıklamaya çalışır. Herkesin çok emin konuştuğu ama kimsenin birbirini anlamadığı bir ofis komedisi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. İş toplantısı dili, kibar itiraz, açıklama ve tekrar eden kelimeler B2 dinlemeye uygundur; ironi ve mantık oyunları ek dikkat ister.",
+  "advisoryTr": "",
+  "downloadable": false,
+  "source": {
+    "name": "Lauris Beinerts — The Expert",
+    "url": "https://www.youtube.com/watch?v=BKorP55Aqvg",
+    "watchUrl": "https://www.youtube.com/watch?v=BKorP55Aqvg",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Lauris Beinerts · Yayıncı: Lauris Beinerts"
+  },
+  "glossary": {
+    "expert": "uzman",
+    "perpendicular": "birbirine dik",
+    "transparent": "saydam",
+    "requirement": "gereklilik; istenen özellik",
+    "assumption": "varsayım",
+    "solution": "çözüm"
+  },
+  "captions": []
+}

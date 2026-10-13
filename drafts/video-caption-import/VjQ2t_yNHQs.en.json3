@@ -1,0 +1,2843 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  }, {
+    "iAttr": 1
+  } ],
+  "wsWinStyles": [ {
+  
+  }, {
+    "juJustifCode": 2
+  }, {
+    "juJustifCode": 0
+  } ],
+  "wpWinPositions": [ {
+  
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 6
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 22
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 18
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 11
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 26
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 8
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 19
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 22
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 27
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 31
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 24
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 26
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 21
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 25
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 31
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 16
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 25
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 30
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 10
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 27
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 16
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 15
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 30
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 28
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 24
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 29
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 23
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 20
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 28
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 23
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 19
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 13
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 17
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 8
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 9
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 12
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 13
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 12
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 7
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 10
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 10
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 20
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 21
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 29
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 17
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 3
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 23
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 11
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 21
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 9
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 18
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 20
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 5
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 12
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 18
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 5
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 4
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 57,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 9
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 17
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 9
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 32
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 16
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 11
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 32
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 24
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 16
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 18
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 87,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 5
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 67,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 5
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 13
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 39,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 11
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 16
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 17
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 19
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 28,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 6
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 12,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 19
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 5
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 17
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 21
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 10
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 100,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 14
+  }, {
+    "apPoint": 7,
+    "ahHorPos": 50,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 14
+  }, {
+    "apPoint": 8,
+    "ahHorPos": 93,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 9
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 8
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 1,
+    "ccCols": 7
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 20
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 16
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 14
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 12
+  }, {
+    "apPoint": 6,
+    "ahHorPos": 3,
+    "avVerPos": 100,
+    "rcRows": 2,
+    "ccCols": 19
+  } ],
+  "events": [ {
+    "tStartMs": 15481,
+    "dDurationMs": 3971,
+    "segs": [ {
+      "utf8": " [♪♪♪]"
+    } ],
+    "wpWinPosId": 1,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 26258,
+    "dDurationMs": 2203,
+    "segs": [ {
+      "utf8": " We were once mankind."
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 30763,
+    "dDurationMs": 1535,
+    "segs": [ {
+      "utf8": " We were humanity."
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 39071,
+    "dDurationMs": 2736,
+    "segs": [ {
+      "utf8": " And now..."
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 41807,
+    "dDurationMs": 1769,
+    "segs": [ {
+      "utf8": " We're no more than pests."
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 45544,
+    "dDurationMs": 2303,
+    "segs": [ {
+      "utf8": " Vermin."
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 47847,
+    "dDurationMs": 2203,
+    "segs": [ {
+      "utf8": " They came here\n to exterminate us."
+    } ],
+    "wpWinPosId": 7,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 54888,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": " They took our history\n and culture."
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 57357,
+    "dDurationMs": 4204,
+    "segs": [ {
+      "utf8": " They covered our landworks\n in dying humanity."
+    } ],
+    "wpWinPosId": 9,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 61561,
+    "dDurationMs": 2536,
+    "segs": [ {
+      "utf8": " The wail of the dying\n carried for miles."
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 66733,
+    "dDurationMs": 1968,
+    "segs": [ {
+      "utf8": " They're building\n some kind of breeding facility"
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 68701,
+    "dDurationMs": 2703,
+    "segs": [ {
+      "utf8": " for those that survive."
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 71404,
+    "dDurationMs": 3203,
+    "segs": [ {
+      "utf8": " People that have defected\n say it's worse than Hell,"
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 74607,
+    "dDurationMs": 2703,
+    "segs": [ {
+      "utf8": " humans becoming some kind\n of surrogate incubators"
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 77310,
+    "dDurationMs": 2069,
+    "segs": [ {
+      "utf8": " for the alien young."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 85452,
+    "dDurationMs": 2769,
+    "segs": [ {
+      "utf8": " They killed us in waves\n when they first arrived."
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 90823,
+    "dDurationMs": 4204,
+    "segs": [ {
+      "utf8": "They built these megastructures\n that spew methane,"
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 95027,
+    "dDurationMs": 2670,
+    "segs": [ {
+      "utf8": "manufacturing their atmosphere."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 101000,
+    "dDurationMs": 1301,
+    "segs": [ {
+      "utf8": " They've sown their crops,"
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 102301,
+    "dDurationMs": 1635,
+    "segs": [ {
+      "utf8": " snuffing out\n our plant life,"
+    } ],
+    "wpWinPosId": 16,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 103936,
+    "dDurationMs": 2537,
+    "segs": [ {
+      "utf8": "raising the global temperature,\n causing our cities to flood."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 109808,
+    "dDurationMs": 2070,
+    "segs": [ {
+      "utf8": " They waged war on Earth."
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 111878,
+    "dDurationMs": 3169,
+    "segs": [ {
+      "utf8": " They set fire to our forests."
+    } ],
+    "wpWinPosId": 18,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 115047,
+    "dDurationMs": 2570,
+    "segs": [ {
+      "utf8": "It's already hard to breathe..."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 117617,
+    "dDurationMs": 3070,
+    "segs": [ {
+      "utf8": " impossible to breathe\nif you are close to the stacks."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 123422,
+    "dDurationMs": 2102,
+    "segs": [ {
+      "utf8": " Rats..."
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 125524,
+    "dDurationMs": 2236,
+    "segs": [ {
+      "utf8": " insects..."
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 127760,
+    "dDurationMs": 3537,
+    "segs": [ {
+      "utf8": " humans..."
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 131297,
+    "dDurationMs": 1935,
+    "segs": [ {
+      "utf8": " they hack into our psyche,"
+    } ],
+    "wpWinPosId": 20,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 133232,
+    "dDurationMs": 1435,
+    "segs": [ {
+      "utf8": " into our minds,"
+    } ],
+    "wpWinPosId": 21,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 134667,
+    "dDurationMs": 1868,
+    "segs": [ {
+      "utf8": " paralyzing us,"
+    } ],
+    "wpWinPosId": 22,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 136535,
+    "dDurationMs": 4772,
+    "segs": [ {
+      "utf8": " taking control of the cerebrum\n and the limbic system,"
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 141307,
+    "dDurationMs": 3070,
+    "segs": [ {
+      "utf8": " rendering us slaves."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 144377,
+    "dDurationMs": 2836,
+    "segs": [ {
+      "utf8": " We've been able\n to design a brain barrier"
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 147213,
+    "dDurationMs": 3203,
+    "segs": [ {
+      "utf8": " that protects us\n from their influence."
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 150416,
+    "dDurationMs": 3804,
+    "segs": [ {
+      "utf8": " They know we can't produce\n enough of these for everyone,"
+    } ],
+    "wpWinPosId": 23,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 154220,
+    "dDurationMs": 1502,
+    "segs": [ {
+      "utf8": "that it's just a matter of time"
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 155722,
+    "dDurationMs": 4203,
+    "segs": [ {
+      "utf8": " before the entire planet\n is theirs..."
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 159925,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": " but we're survivors."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 166298,
+    "dDurationMs": 1436,
+    "segs": [ {
+      "utf8": " Scrounging enough to eat..."
+    } ],
+    "wpWinPosId": 24,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 170602,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": " gathering enough morale\n to fight."
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 180913,
+    "dDurationMs": 1535,
+    "segs": [ {
+      "utf8": "[distorted voices over radio]"
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 188821,
+    "dDurationMs": 1601,
+    "segs": [ {
+      "utf8": " I wonder if deep down,"
+    } ],
+    "wpWinPosId": 27,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 190422,
+    "dDurationMs": 3571,
+    "segs": [ {
+      "utf8": " each person knows\n we're already dead."
+    } ],
+    "wpWinPosId": 28,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 193993,
+    "dDurationMs": 2769,
+    "segs": [ {
+      "utf8": " I wonder if only one, sick,\n primordial instinct"
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 196762,
+    "dDurationMs": 3404,
+    "segs": [ {
+      "utf8": " keeps marching us forward\n aimlessly."
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 200166,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": " Every rational thought\n tells us it's over."
+    } ],
+    "wpWinPosId": 30,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 206706,
+    "dDurationMs": 2703,
+    "segs": [ {
+      "utf8": " Every vile,\n deceptive, chemical emotion"
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 209409,
+    "dDurationMs": 2068,
+    "segs": [ {
+      "utf8": " tells us it isn't."
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 217083,
+    "dDurationMs": 3770,
+    "segs": [ {
+      "utf8": " We are sold a different story\n by our politicians."
+    } ],
+    "wpWinPosId": 23,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 254354,
+    "dDurationMs": 1901,
+    "segs": [ {
+      "utf8": "Come with us!"
+    } ],
+    "wpWinPosId": 32,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 256255,
+    "dDurationMs": 3303,
+    "segs": [ {
+      "utf8": "Do not be afraid!"
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 259558,
+    "dDurationMs": 1335,
+    "segs": [ {
+      "utf8": "They want what's best for us!"
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 260893,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": "Come on."
+    } ],
+    "wpWinPosId": 34,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 264730,
+    "dDurationMs": 5205,
+    "segs": [ {
+      "utf8": "They have built\na conservatory for us!"
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 269935,
+    "dDurationMs": 2937,
+    "segs": [ {
+      "utf8": "Paradise!"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 272872,
+    "dDurationMs": 2102,
+    "segs": [ {
+      "utf8": "Put down your guns!"
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 274974,
+    "dDurationMs": 1768,
+    "segs": [ {
+      "utf8": "There it is."
+    } ],
+    "wpWinPosId": 36,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 276742,
+    "dDurationMs": 4371,
+    "segs": [ {
+      "utf8": "Come on, freaky-faced fuck.\nCome on."
+    } ],
+    "wpWinPosId": 9,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 281113,
+    "dDurationMs": 1602,
+    "segs": [ {
+      "utf8": "Come with us!"
+    } ],
+    "wpWinPosId": 37,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 282715,
+    "dDurationMs": 2869,
+    "segs": [ {
+      "utf8": "Do not be afraid!"
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 285584,
+    "dDurationMs": 5873,
+    "segs": [ {
+      "utf8": "They have built a conservatory!"
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 291457,
+    "dDurationMs": 2403,
+    "segs": [ {
+      "utf8": "Come with us, friends!"
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 293860,
+    "dDurationMs": 1434,
+    "segs": [ {
+      "utf8": "Come on, come on, come on."
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 295294,
+    "dDurationMs": 1902,
+    "segs": [ {
+      "utf8": "...paradise!"
+    } ],
+    "wpWinPosId": 38,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 297196,
+    "dDurationMs": 2402,
+    "segs": [ {
+      "utf8": "I'll go\nto the new conservatory."
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 299598,
+    "dDurationMs": 3470,
+    "segs": [ {
+      "utf8": "Take me with you, please."
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 303068,
+    "dDurationMs": 1502,
+    "segs": [ {
+      "utf8": "There it is. There it is."
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 314613,
+    "dDurationMs": 1069,
+    "segs": [ {
+      "utf8": "[gasping]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 317149,
+    "dDurationMs": 1134,
+    "segs": [ {
+      "utf8": "[click]"
+    } ],
+    "wpWinPosId": 39,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 318283,
+    "dDurationMs": 1336,
+    "segs": [ {
+      "utf8": "[laughing]"
+    } ],
+    "wpWinPosId": 40,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 333966,
+    "dDurationMs": 3637,
+    "segs": [ {
+      "utf8": " Every once in a while,\n something goes our way."
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 337603,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": " Just one in a thousand."
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 340072,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": " Just enough to keep fighting."
+    } ],
+    "wpWinPosId": 18,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 341741,
+    "dDurationMs": 1535,
+    "segs": [ {
+      "utf8": "[cheering]"
+    } ],
+    "wpWinPosId": 41,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 343276,
+    "dDurationMs": 2269,
+    "segs": [ {
+      "utf8": " A glimmer of hope."
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 348981,
+    "dDurationMs": 1969,
+    "segs": [ {
+      "utf8": " People will pay for this."
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 353452,
+    "dDurationMs": 1602,
+    "segs": [ {
+      "utf8": " They always do."
+    } ],
+    "wpWinPosId": 21,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 363729,
+    "dDurationMs": 1335,
+    "segs": [ {
+      "utf8": " Even for small victories,"
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 365064,
+    "dDurationMs": 4171,
+    "segs": [ {
+      "utf8": " it would seem that everything\n was lost."
+    } ],
+    "wpWinPosId": 23,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 369235,
+    "dDurationMs": 3770,
+    "segs": [ {
+      "utf8": " Humanity would soon\n cease to exist."
+    } ],
+    "wpWinPosId": 28,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 376809,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "[groaning]"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 389321,
+    "dDurationMs": 2804,
+    "segs": [ {
+      "utf8": "[gasping]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 395928,
+    "dDurationMs": 3203,
+    "segs": [ {
+      "utf8": " Until they arrived,"
+    } ],
+    "wpWinPosId": 42,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 399131,
+    "dDurationMs": 4739,
+    "segs": [ {
+      "utf8": "like angels carried on the rays\n of the Aurora Borealis."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 414580,
+    "dDurationMs": 2536,
+    "segs": [ {
+      "utf8": " Like a biblical salvation."
+    } ],
+    "wpWinPosId": 20,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 436502,
+    "dDurationMs": 2869,
+    "segs": [ {
+      "utf8": "The new world altered everyone."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 439371,
+    "dDurationMs": 2737,
+    "segs": [ {
+      "utf8": " Adapt or die, it was\n as simple as that."
+    } ],
+    "wpWinPosId": 43,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 445944,
+    "dDurationMs": 2837,
+    "segs": [ {
+      "utf8": " In the old world, Nosh would\n have been locked up."
+    } ],
+    "wpWinPosId": 44,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 448781,
+    "dDurationMs": 3670,
+    "segs": [ {
+      "utf8": " A pyromaniac, a bomb-maker..."
+    } ],
+    "wpWinPosId": 18,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 452451,
+    "dDurationMs": 3670,
+    "segs": [ {
+      "utf8": "but here, he not only survived,\n he thrived."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 456121,
+    "dDurationMs": 1703,
+    "segs": [ {
+      "utf8": "[flying overhead]"
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 465197,
+    "dDurationMs": 2503,
+    "segs": [ {
+      "utf8": "[death metal blasts]"
+    } ],
+    "wpWinPosId": 42,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 481414,
+    "dDurationMs": 3837,
+    "segs": [ {
+      "utf8": " Nosh could make just about\nanything out of scavenged junk."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 488420,
+    "dDurationMs": 4805,
+    "segs": [ {
+      "utf8": "Bombs, brain locks... anything."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 493225,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": " We needed him, and he knew it."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 494894,
+    "dDurationMs": 2568,
+    "segs": [ {
+      "utf8": "How many you got?"
+    } ],
+    "wpWinPosId": 45,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 497462,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": "Uh, four."
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 499732,
+    "dDurationMs": 1434,
+    "segs": [ {
+      "utf8": "No."
+    } ],
+    "wpWinPosId": 46,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 501166,
+    "dDurationMs": 1402,
+    "segs": [ {
+      "utf8": "We need more than that."
+    } ],
+    "wpWinPosId": 47,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 502568,
+    "dDurationMs": 1368,
+    "segs": [ {
+      "utf8": "Sure, yeah."
+    } ],
+    "wpWinPosId": 48,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 503936,
+    "dDurationMs": 1201,
+    "segs": [ {
+      "utf8": "And payment?"
+    } ],
+    "wpWinPosId": 38,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 505137,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "You can do the usual?"
+    } ],
+    "wpWinPosId": 49,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 506972,
+    "dDurationMs": 1068,
+    "segs": [ {
+      "utf8": "Yeah, yeah, sure."
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 508040,
+    "dDurationMs": 1868,
+    "segs": [ {
+      "utf8": "What about the..."
+    } ],
+    "wpWinPosId": 45,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 509908,
+    "dDurationMs": 1235,
+    "segs": [ {
+      "utf8": "the item?"
+    } ],
+    "wpWinPosId": 50,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 511143,
+    "dDurationMs": 1869,
+    "segs": [ {
+      "utf8": "We've heard about it."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 515447,
+    "dDurationMs": 1536,
+    "segs": [ {
+      "utf8": "Yeah, um..."
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 518383,
+    "dDurationMs": 935,
+    "segs": [ {
+      "utf8": "It's not for sale."
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 519318,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "You piece of shit."
+    } ],
+    "wpWinPosId": 51,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 521153,
+    "dDurationMs": 1568,
+    "segs": [ {
+      "utf8": "[laughing]"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 522721,
+    "dDurationMs": 1101,
+    "segs": [ {
+      "utf8": "You don't fuckin'..."
+    } ],
+    "wpWinPosId": 52,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 523822,
+    "dDurationMs": 734,
+    "segs": [ {
+      "utf8": "Wait."
+    } ],
+    "wpWinPosId": 53,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 524556,
+    "dDurationMs": 2003,
+    "segs": [ {
+      "utf8": "My friend..."
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 526559,
+    "dDurationMs": 2235,
+    "segs": [ {
+      "utf8": "we need your help.\nYou know that."
+    } ],
+    "wpWinPosId": 55,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 528794,
+    "dDurationMs": 968,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ],
+    "wpWinPosId": 56,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 529762,
+    "dDurationMs": 1235,
+    "segs": [ {
+      "utf8": "Everything has a price,"
+    } ],
+    "wpWinPosId": 47,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 530997,
+    "dDurationMs": 1334,
+    "segs": [ {
+      "utf8": "and we can pay you."
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 532331,
+    "dDurationMs": 868,
+    "segs": [ {
+      "utf8": "Sure."
+    } ],
+    "wpWinPosId": 53,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 533199,
+    "dDurationMs": 1901,
+    "segs": [ {
+      "utf8": "Hmm."
+    } ],
+    "wpWinPosId": 57,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 535100,
+    "dDurationMs": 1869,
+    "segs": [ {
+      "utf8": "Hey, Jasper."
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 536969,
+    "dDurationMs": 2035,
+    "segs": [ {
+      "utf8": "I'm glad these fucking things\ncame here."
+    } ],
+    "wpWinPosId": 44,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 539004,
+    "dDurationMs": 2436,
+    "segs": [ {
+      "utf8": "They mean that I get to burn\nwhatever I see."
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 541440,
+    "dDurationMs": 1134,
+    "segs": [ {
+      "utf8": "Every day."
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 542574,
+    "dDurationMs": 901,
+    "segs": [ {
+      "utf8": "Every night."
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 543475,
+    "dDurationMs": 901,
+    "segs": [ {
+      "utf8": "No laws."
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 544376,
+    "dDurationMs": 1902,
+    "segs": [ {
+      "utf8": "No fucking jails."
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 546278,
+    "dDurationMs": 1802,
+    "segs": [ {
+      "utf8": "The fire..."
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 548080,
+    "dDurationMs": 934,
+    "segs": [ {
+      "utf8": "The fire."
+    } ],
+    "wpWinPosId": 58,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 549014,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": "What is it with you\nand the fucking fire?"
+    } ],
+    "wpWinPosId": 43,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 551483,
+    "dDurationMs": 1369,
+    "segs": [ {
+      "utf8": "Fire!!!"
+    } ],
+    "wpWinPosId": 39,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 555621,
+    "dDurationMs": 2669,
+    "segs": [ {
+      "utf8": "I'll die and perish\nin the fire someday."
+    } ],
+    "wpWinPosId": 28,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 558290,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "You say\nyou need my help?"
+    } ],
+    "wpWinPosId": 59,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 559124,
+    "dDurationMs": 1235,
+    "segs": [ {
+      "utf8": "For what?"
+    } ],
+    "wpWinPosId": 60,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 560359,
+    "dDurationMs": 2769,
+    "segs": [ {
+      "utf8": "For a fucking hope for things\nto go back to the way they were?"
+    } ],
+    "wpWinPosId": 61,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 563128,
+    "dDurationMs": 1469,
+    "segs": [ {
+      "utf8": "[laughing]"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 564597,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "Just give me...\ngimme some bait."
+    } ],
+    "wpWinPosId": 62,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 566432,
+    "dDurationMs": 1134,
+    "segs": [ {
+      "utf8": "Some bait?"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 567566,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "I just need\nsome bait,"
+    } ],
+    "wpWinPosId": 63,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 568400,
+    "dDurationMs": 968,
+    "segs": [ {
+      "utf8": "some of your people..."
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 569368,
+    "dDurationMs": 1201,
+    "segs": [ {
+      "utf8": "some of your people,"
+    } ],
+    "wpWinPosId": 42,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 570569,
+    "dDurationMs": 1435,
+    "segs": [ {
+      "utf8": "some of the sick you don't need."
+    } ],
+    "wpWinPosId": 64,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 573138,
+    "dDurationMs": 868,
+    "segs": [ {
+      "utf8": "I'm two seconds away"
+    } ],
+    "wpWinPosId": 52,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 574006,
+    "dDurationMs": 2035,
+    "segs": [ {
+      "utf8": "from blowing this\nmotherfucker's head off."
+    } ],
+    "wpWinPosId": 65,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 576041,
+    "dDurationMs": 2470,
+    "segs": [ {
+      "utf8": "Oh, it would be so good.\nSo much fun."
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 578511,
+    "dDurationMs": 1735,
+    "segs": [ {
+      "utf8": "Just a little more!"
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 580246,
+    "dDurationMs": 867,
+    "segs": [ {
+      "utf8": "Gimme some bait."
+    } ],
+    "wpWinPosId": 21,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 581113,
+    "dDurationMs": 1201,
+    "segs": [ {
+      "utf8": "Gimme some bait."
+    } ],
+    "wpWinPosId": 66,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 582314,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": "It'll make\nthe \"boom\" bigger."
+    } ],
+    "wpWinPosId": 67,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 583883,
+    "dDurationMs": 1267,
+    "segs": [ {
+      "utf8": "I'll take out\nan entire convoy."
+    } ],
+    "wpWinPosId": 59,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 585150,
+    "dDurationMs": 2036,
+    "segs": [ {
+      "utf8": "That'll help you, right?"
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 587186,
+    "dDurationMs": 2770,
+    "segs": [ {
+      "utf8": "I have enough ordnance\nto make this fire breathe."
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 590956,
+    "dDurationMs": 2937,
+    "segs": [ {
+      "utf8": "You're an interesting person,\nNosh."
+    } ],
+    "wpWinPosId": 44,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 595127,
+    "dDurationMs": 1802,
+    "segs": [ {
+      "utf8": "Have fun in the fire."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 596929,
+    "dDurationMs": 2436,
+    "segs": [ {
+      "utf8": "Oh, I will."
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 599365,
+    "dDurationMs": 1234,
+    "segs": [ {
+      "utf8": "[laughing]"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 600599,
+    "dDurationMs": 4471,
+    "segs": [ {
+      "utf8": " Some sick people in exchange\n for Nosh's item."
+    } ],
+    "wpWinPosId": 44,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 605070,
+    "dDurationMs": 3303,
+    "segs": [ {
+      "utf8": " In peacetime, such an offer\n would be insane."
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 608373,
+    "dDurationMs": 1335,
+    "segs": [ {
+      "utf8": " Immoral."
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 609708,
+    "dDurationMs": 4138,
+    "segs": [ {
+      "utf8": "But now... anything's possible."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 615080,
+    "dDurationMs": 1668,
+    "segs": [ {
+      "utf8": "[Carl]:"
+    }, {
+      "utf8": " Ma'am, we've done\n everything we can.",
+      "pPenId": 1
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 616748,
+    "dDurationMs": 1469,
+    "segs": [ {
+      "utf8": " He's not responding."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 623255,
+    "dDurationMs": 1736,
+    "segs": [ {
+      "utf8": "All right. Let's go."
+    } ],
+    "wpWinPosId": 42,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 628961,
+    "dDurationMs": 3270,
+    "segs": [ {
+      "utf8": " We picked up Amir\n in Sector 7."
+    } ],
+    "wpWinPosId": 55,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 632231,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": " At first,\n they thought he was dead,"
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 634700,
+    "dDurationMs": 2603,
+    "segs": [ {
+      "utf8": " some refuse\n from one of their experiments."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 641406,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": "Amir?"
+    } ],
+    "wpWinPosId": 68,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 644910,
+    "dDurationMs": 1302,
+    "segs": [ {
+      "utf8": "Amir?"
+    } ],
+    "wpWinPosId": 69,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 650349,
+    "dDurationMs": 2636,
+    "segs": [ {
+      "utf8": "Amir... Hey."
+    } ],
+    "wpWinPosId": 36,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 654653,
+    "dDurationMs": 1535,
+    "segs": [ {
+      "utf8": "I'm not going\nto hurt you."
+    } ],
+    "wpWinPosId": 70,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 659691,
+    "dDurationMs": 1069,
+    "segs": [ {
+      "utf8": "Look at me."
+    } ],
+    "wpWinPosId": 71,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 660760,
+    "dDurationMs": 2601,
+    "segs": [ {
+      "utf8": "You can help us."
+    } ],
+    "wpWinPosId": 72,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 663361,
+    "dDurationMs": 1002,
+    "segs": [ {
+      "utf8": "[Carl]: Kill him."
+    } ],
+    "wpWinPosId": 73,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 664363,
+    "dDurationMs": 1734,
+    "segs": [ {
+      "utf8": "Just fucking kill him."
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 666097,
+    "dDurationMs": 1636,
+    "segs": [ {
+      "utf8": "All that shit\nthey put in his head."
+    } ],
+    "wpWinPosId": 43,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 667733,
+    "dDurationMs": 1368,
+    "segs": [ {
+      "utf8": "-He's not even one of us--\n-Stop."
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 676275,
+    "dDurationMs": 2435,
+    "segs": [ {
+      "utf8": "I'm not going to hurt you."
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 678710,
+    "dDurationMs": 1202,
+    "segs": [ {
+      "utf8": "I know what they did."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 686118,
+    "dDurationMs": 1367,
+    "segs": [ {
+      "utf8": "[he startles]"
+    } ],
+    "wpWinPosId": 32,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 687485,
+    "dDurationMs": 2336,
+    "segs": [ {
+      "utf8": "It's okay."
+    } ],
+    "wpWinPosId": 40,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 689821,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": "Let's get this off."
+    } ],
+    "wpWinPosId": 74,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 699097,
+    "dDurationMs": 2069,
+    "segs": [ {
+      "utf8": "There."
+    } ],
+    "wpWinPosId": 75,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 701166,
+    "dDurationMs": 1102,
+    "segs": [ {
+      "utf8": "You're free."
+    } ],
+    "wpWinPosId": 38,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 703969,
+    "dDurationMs": 1302,
+    "segs": [ {
+      "utf8": "We've gotta check\nthe wounded, ma'am."
+    } ],
+    "wpWinPosId": 76,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 705271,
+    "dDurationMs": 1468,
+    "segs": [ {
+      "utf8": "Okay."
+    } ],
+    "wpWinPosId": 77,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 719118,
+    "dDurationMs": 1335,
+    "segs": [ {
+      "utf8": "It's okay."
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 731630,
+    "dDurationMs": 1135,
+    "segs": [ {
+      "utf8": "I'm Sarah."
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 734532,
+    "dDurationMs": 2871,
+    "segs": [ {
+      "utf8": "I need to ask you\nfor a favor."
+    } ],
+    "wpWinPosId": 78,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 737403,
+    "dDurationMs": 2769,
+    "segs": [ {
+      "utf8": "I give you food,"
+    } ],
+    "wpWinPosId": 72,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 740172,
+    "dDurationMs": 2903,
+    "segs": [ {
+      "utf8": "you do me a favor."
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 744610,
+    "dDurationMs": 2669,
+    "segs": [ {
+      "utf8": "Okay?"
+    } ],
+    "wpWinPosId": 77,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 749281,
+    "dDurationMs": 2470,
+    "segs": [ {
+      "utf8": "[man groaning in pain]"
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 772137,
+    "dDurationMs": 2370,
+    "segs": [ {
+      "utf8": "It's okay, it's okay.\nIt's fine."
+    } ],
+    "wpWinPosId": 79,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 776241,
+    "dDurationMs": 4138,
+    "segs": [ {
+      "utf8": "I need to see\nwhat it did to you."
+    } ],
+    "wpWinPosId": 7,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 781480,
+    "dDurationMs": 2303,
+    "segs": [ {
+      "utf8": "It's okay."
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 810141,
+    "dDurationMs": 2037,
+    "segs": [ {
+      "utf8": " This world\n had changed all of us..."
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 813978,
+    "dDurationMs": 1570,
+    "segs": [ {
+      "utf8": " but Amir had been reborn..."
+    } ],
+    "wpWinPosId": 24,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 817682,
+    "dDurationMs": 1870,
+    "segs": [ {
+      "utf8": " with something entirely new."
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 854853,
+    "dDurationMs": 2570,
+    "segs": [ {
+      "utf8": "[shouting and gunfire]"
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 858990,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": "You see all these men?"
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 862894,
+    "dDurationMs": 1636,
+    "segs": [ {
+      "utf8": "They're going out to fight."
+    } ],
+    "wpWinPosId": 20,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 865797,
+    "dDurationMs": 3270,
+    "segs": [ {
+      "utf8": "To try to make it\nhow it was before."
+    } ],
+    "wpWinPosId": 55,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 869067,
+    "dDurationMs": 4005,
+    "segs": [ {
+      "utf8": "To stop those beasts\nfrom doing more of this..."
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 874740,
+    "dDurationMs": 2469,
+    "segs": [ {
+      "utf8": "[crying out in pain]"
+    } ],
+    "wpWinPosId": 42,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 878710,
+    "dDurationMs": 935,
+    "segs": [ {
+      "utf8": "What is it\nwith her"
+    } ],
+    "wpWinPosId": 80,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 879645,
+    "dDurationMs": 1268,
+    "segs": [ {
+      "utf8": "and that\nfucking thing?"
+    } ],
+    "wpWinPosId": 81,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 883415,
+    "dDurationMs": 1936,
+    "segs": [ {
+      "utf8": "Her daughter is gone."
+    } ],
+    "wpWinPosId": 13,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 887185,
+    "dDurationMs": 1736,
+    "segs": [ {
+      "utf8": "[Carl]: Everyone's daughter\nis gone."
+    } ],
+    "wpWinPosId": 9,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 891222,
+    "dDurationMs": 2670,
+    "segs": [ {
+      "utf8": "[Jasper]: The ones\nthat are experimented on,"
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 893892,
+    "dDurationMs": 2803,
+    "segs": [ {
+      "utf8": "who survive..."
+    } ],
+    "wpWinPosId": 82,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 896695,
+    "dDurationMs": 2269,
+    "segs": [ {
+      "utf8": "the very few..."
+    } ],
+    "wpWinPosId": 22,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 898964,
+    "dDurationMs": 1268,
+    "segs": [ {
+      "utf8": "Her theory is"
+    } ],
+    "wpWinPosId": 32,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 900232,
+    "dDurationMs": 3770,
+    "segs": [ {
+      "utf8": "it's because they have\nsome kind of predisposition."
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 904002,
+    "dDurationMs": 2403,
+    "segs": [ {
+      "utf8": "They're savants of some kind."
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 907439,
+    "dDurationMs": 1902,
+    "segs": [ {
+      "utf8": "And Amir is like that."
+    } ],
+    "wpWinPosId": 2,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 910709,
+    "dDurationMs": 1501,
+    "segs": [ {
+      "utf8": "[Sarah]: These men are trying\nto stop the genocide."
+    } ],
+    "wpWinPosId": 44,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 912210,
+    "dDurationMs": 3971,
+    "segs": [ {
+      "utf8": "[Ryan]: Alpha team! Move out!"
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 920385,
+    "dDurationMs": 2537,
+    "segs": [ {
+      "utf8": "[Sarah]: They're ready\nto sacrifice themselves."
+    } ],
+    "wpWinPosId": 25,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 924189,
+    "dDurationMs": 935,
+    "segs": [ {
+      "utf8": "Let's go!"
+    } ],
+    "wpWinPosId": 83,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 927793,
+    "dDurationMs": 1768,
+    "segs": [ {
+      "utf8": "They don't have to die tonight."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 931163,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "Help us."
+    } ],
+    "wpWinPosId": 84,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 932164,
+    "dDurationMs": 1601,
+    "segs": [ {
+      "utf8": "Please."
+    } ],
+    "wpWinPosId": 85,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 933765,
+    "dDurationMs": 1602,
+    "segs": [ {
+      "utf8": "Tell me\nwhat futures you see."
+    } ],
+    "wpWinPosId": 79,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 938536,
+    "dDurationMs": 1068,
+    "segs": [ {
+      "utf8": "Turn to the left."
+    } ],
+    "wpWinPosId": 73,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 939604,
+    "dDurationMs": 2070,
+    "segs": [ {
+      "utf8": "Incoming!"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 956855,
+    "dDurationMs": 3504,
+    "segs": [ {
+      "utf8": "You can help us\nturn the tide, Amir."
+    } ],
+    "wpWinPosId": 86,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 960359,
+    "dDurationMs": 2034,
+    "segs": [ {
+      "utf8": "We can beat them."
+    } ],
+    "wpWinPosId": 45,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 962393,
+    "dDurationMs": 1202,
+    "segs": [ {
+      "utf8": "[gunfire]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 969200,
+    "dDurationMs": 1202,
+    "segs": [ {
+      "utf8": "Threat down\nin Fox Squadron."
+    } ],
+    "wpWinPosId": 87,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 970402,
+    "dDurationMs": 868,
+    "segs": [ {
+      "utf8": "Threat down."
+    } ],
+    "wpWinPosId": 38,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 974205,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": "All right, everyone,\ntriple-check those brain locks."
+    } ],
+    "wpWinPosId": 10,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 978744,
+    "dDurationMs": 1401,
+    "segs": [ {
+      "utf8": "I don't want anyone\nlooking at it,"
+    } ],
+    "wpWinPosId": 7,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 980145,
+    "dDurationMs": 2436,
+    "segs": [ {
+      "utf8": "and keep out of\nits line of sight, right?"
+    } ],
+    "wpWinPosId": 14,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 996094,
+    "dDurationMs": 1535,
+    "segs": [ {
+      "utf8": "[Sarah]:"
+    }, {
+      "utf8": " What do you see?",
+      "pPenId": 1
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 999831,
+    "dDurationMs": 1836,
+    "segs": [ {
+      "utf8": "Do you see us\nwinning, Amir?"
+    } ],
+    "wpWinPosId": 88,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 1003735,
+    "dDurationMs": 1969,
+    "segs": [ {
+      "utf8": "Go! Go! Go!"
+    } ],
+    "wpWinPosId": 4,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1010342,
+    "dDurationMs": 1869,
+    "segs": [ {
+      "utf8": "[Sarah]:"
+    }, {
+      "utf8": "\n Can we learn to hunt them?",
+      "pPenId": 1
+    } ],
+    "wpWinPosId": 9,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1014646,
+    "dDurationMs": 2103,
+    "segs": [ {
+      "utf8": " Can we make them fear us?"
+    } ],
+    "wpWinPosId": 5,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1018583,
+    "dDurationMs": 1469,
+    "segs": [ {
+      "utf8": "Go! Go!"
+    } ],
+    "wpWinPosId": 39,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1024956,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "Amir..."
+    } ],
+    "wpWinPosId": 39,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1029094,
+    "dDurationMs": 2102,
+    "segs": [ {
+      "utf8": " Do you remember\n what they did to you?"
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1032397,
+    "dDurationMs": 2637,
+    "segs": [ {
+      "utf8": " They do experiments\n all day and all night."
+    } ],
+    "wpWinPosId": 30,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1038069,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": " They tear people apart."
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1041806,
+    "dDurationMs": 1102,
+    "segs": [ {
+      "utf8": "[gunfire]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1042908,
+    "dDurationMs": 1100,
+    "segs": [ {
+      "utf8": "It's wounded!"
+    } ],
+    "wpWinPosId": 32,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1044008,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "That fucking thing!\nDon't let it get away!"
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1045843,
+    "dDurationMs": 1903,
+    "segs": [ {
+      "utf8": "[gunfire]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1049747,
+    "dDurationMs": 2037,
+    "segs": [ {
+      "utf8": "[Sarah]:"
+    }, {
+      "utf8": " Billions die...",
+      "pPenId": 1
+    } ],
+    "wpWinPosId": 11,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1054486,
+    "dDurationMs": 1135,
+    "segs": [ {
+      "utf8": " No one lives."
+    } ],
+    "wpWinPosId": 82,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1055621,
+    "dDurationMs": 1768,
+    "segs": [ {
+      "utf8": " Not through that."
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1065430,
+    "dDurationMs": 2169,
+    "segs": [ {
+      "utf8": "But every once in a while,\na miracle happens."
+    } ],
+    "wpWinPosId": 12,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1069867,
+    "dDurationMs": 2604,
+    "segs": [ {
+      "utf8": "One in ten million, like you."
+    } ],
+    "wpWinPosId": 26,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1074406,
+    "dDurationMs": 3203,
+    "segs": [ {
+      "utf8": "Someone who somehow survives..."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1079544,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": " Their cruelty."
+    } ],
+    "wpWinPosId": 22,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1086184,
+    "dDurationMs": 2302,
+    "segs": [ {
+      "utf8": " Those things have given you\n an amazing power."
+    } ],
+    "wpWinPosId": 29,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1088486,
+    "dDurationMs": 1169,
+    "segs": [ {
+      "utf8": " A gift."
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1091623,
+    "dDurationMs": 1034,
+    "segs": [ {
+      "utf8": " Beyond man."
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1092657,
+    "dDurationMs": 1202,
+    "segs": [ {
+      "utf8": "Don't look at it!"
+    } ],
+    "wpWinPosId": 33,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1093859,
+    "dDurationMs": 1067,
+    "segs": [ {
+      "utf8": "Look away!"
+    } ],
+    "wpWinPosId": 19,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1094926,
+    "dDurationMs": 2703,
+    "segs": [ {
+      "utf8": " You can do the things they do."
+    } ],
+    "wpWinPosId": 15,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1112377,
+    "dDurationMs": 2069,
+    "segs": [ {
+      "utf8": "Put it down, Martinez!\nPut it down!"
+    } ],
+    "wpWinPosId": 8,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1120352,
+    "dDurationMs": 1367,
+    "segs": [ {
+      "utf8": "Don't do it,\nMartinez!"
+    } ],
+    "wpWinPosId": 89,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 1121719,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "Don't do it!"
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1122887,
+    "dDurationMs": 2270,
+    "segs": [ {
+      "utf8": "[gunshot]"
+    } ],
+    "wpWinPosId": 35,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1149714,
+    "dDurationMs": 2136,
+    "segs": [ {
+      "utf8": " Amir..."
+    } ],
+    "wpWinPosId": 6,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1151850,
+    "dDurationMs": 1402,
+    "segs": [ {
+      "utf8": " Please tell me..."
+    } ],
+    "wpWinPosId": 3,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1155386,
+    "dDurationMs": 2437,
+    "segs": [ {
+      "utf8": " What futures do you see?"
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  }, {
+    "tStartMs": 1161960,
+    "dDurationMs": 1735,
+    "segs": [ {
+      "utf8": "[crying out]"
+    } ],
+    "wpWinPosId": 54,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1172403,
+    "dDurationMs": 3004,
+    "segs": [ {
+      "utf8": "Cut its fucking head off."
+    } ],
+    "wpWinPosId": 17,
+    "wsWinStyleId": 1
+  }, {
+    "tStartMs": 1189588,
+    "dDurationMs": 1601,
+    "segs": [ {
+      "utf8": "Amir, it's tine."
+    } ],
+    "wpWinPosId": 72,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 1191189,
+    "dDurationMs": 1635,
+    "segs": [ {
+      "utf8": "You have to use\nwhat they gave you."
+    } ],
+    "wpWinPosId": 90,
+    "wsWinStyleId": 2
+  }, {
+    "tStartMs": 1198130,
+    "dDurationMs": 1701,
+    "segs": [ {
+      "utf8": " It's not a choice."
+    } ],
+    "wpWinPosId": 31,
+    "wsWinStyleId": 1,
+    "pPenId": 1
+  } ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "the-shaman",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "80EQZaYV9TA",
+  "title": "The Shaman",
+  "creator": "Marco Kalantari",
+  "year": 2015,
+  "level": "B2",
+  "category": "adventure",
+  "genre": "fantasy",
+  "durationSeconds": 1043,
+  "summaryTr": "Savaşın durmadığı bir gelecekte, bir şaman dev bir savaş makinesinin ruhuna ulaşmak için görevlendirilir. Büyü, teknoloji ve aksiyonu bir araya getiren fantastik bir bilim kurgu filmi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Kısa görev konuşmaları ve emirler görsellerle desteklenir; askerî dil, sembolik ifadeler ve farklı aksanlar B2 için ek dikkat gerektirir.",
+  "advisoryTr": "Savaş, ölüm, kan ve rahatsız edici görüntüler içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "Marco Kalantari — The Shaman",
+    "url": "https://www.youtube.com/watch?v=80EQZaYV9TA",
+    "watchUrl": "https://www.youtube.com/watch?v=80EQZaYV9TA",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Marco Kalantari · Yayıncı: Marco Kalantari"
+  },
+  "glossary": {
+    "shaman": "şaman",
+    "colossus": "devasa varlık veya yapı",
+    "soul": "ruh",
+    "mission": "görev",
+    "ritual": "ritüel; ayin",
+    "battle": "savaş; çatışma"
+  },
+  "captions": []
+}

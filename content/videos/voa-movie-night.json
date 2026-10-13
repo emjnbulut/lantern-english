@@ -1,0 +1,349 @@
+{
+  "id": "voa-movie-night",
+  "type": "video",
+  "category": "fun",
+  "title": "Movie Night",
+  "creator": "VOA Learning English",
+  "year": 2021,
+  "level": "B1",
+  "durationSeconds": 300,
+  "genre": "comedy",
+  "summaryTr": "Anna ve Pete sinemaya gider. Patlamış mısır, milkshake ve telefon derken sessiz kalma işi beklenmedik şekilde tersine döner. Komik bir skeçle kibar rica kalıplarını dinle.",
+  "levelNoteTr": "Seviye, altyazı ve kelime desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Ana skeçteki ekran altyazıları dokunulabilir olarak hazırlanmıştır. VOA’nın Dinle/Konuş tekrarları ve ara açıklamaları özgün hâliyle korunur; bu bölümlerde her cümle için dokunulabilir altyazı bulunmaz.",
+  "videoUrl": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/7/72/72d73c46-9f5a-47ba-96dc-4a2e460ce714_720p.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/7/72/72d73c46-9f5a-47ba-96dc-4a2e460ce714_240p.mp4",
+      "sizeMB": 13
+    },
+    {
+      "label": "360p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/7/72/72d73c46-9f5a-47ba-96dc-4a2e460ce714.mp4",
+      "sizeMB": 18
+    },
+    {
+      "label": "480p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/7/72/72d73c46-9f5a-47ba-96dc-4a2e460ce714_480p.mp4",
+      "sizeMB": 27
+    },
+    {
+      "label": "720p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/7/72/72d73c46-9f5a-47ba-96dc-4a2e460ce714_720p.mp4",
+      "sizeMB": 65
+    }
+  ],
+  "source": {
+    "name": "VOA Learning English — Movie Night",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-19/4242927.html",
+    "watchUrl": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-19/4242927.html",
+    "license": "VOA özgün üretimi · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America / VOA Learning English. Özgün video bütünüyle ve değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "VOA’nın video üzerindeki İngilizce ekran altyazıları",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-level-2-lesson-19/4242927.html",
+    "license": "VOA özgün metni · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America; metin çıkarımı ve zaman eşlemesi: Lantern English",
+    "changeNoteTr": "Ana skeçteki ekran yazıları aktarılmış, OCR yazım hataları düzeltilmiş ve yaklaşık 0,5 saniye çözünürlükle zamanlanmıştır. Dinle/Konuş alıştırmalarındaki boşluklar korunmuştur."
+  },
+  "glossary": {
+    "plot": "film veya hikâyenin olay örgüsü",
+    "preview": "fragman; yakında gösterilecek filmin tanıtımı",
+    "rock": "burada: koltuğun ileri geri sallanması",
+    "thick": "milkshake için: koyu kıvamlı",
+    "shush": "birine sessiz olmasını söylemek",
+    "mind": "would you mind: ... yapar mısın / sakıncası var mı?"
+  },
+  "captions": [
+    {
+      "start": 6.5,
+      "end": 10,
+      "text": "Hi, can you tell me how to get to your movie theater?"
+    },
+    {
+      "start": 12,
+      "end": 15,
+      "text": "Oh, that's easy. Okay, thank you. Bye."
+    },
+    {
+      "start": 15.5,
+      "end": 19,
+      "text": "Hi, Pete! Thanks for the movie invitation."
+    },
+    {
+      "start": 19,
+      "end": 20,
+      "text": "Yeah, sure Anna."
+    },
+    {
+      "start": 20,
+      "end": 23.5,
+      "text": "I love movies. I love the plot! I love the set design!"
+    },
+    {
+      "start": 23.5,
+      "end": 26,
+      "text": "I love the costumes! I love -"
+    },
+    {
+      "start": 26,
+      "end": 31,
+      "text": "Anna, I take movies very seriously. You're not one of"
+    },
+    {
+      "start": 31,
+      "end": 35,
+      "text": "those people who talks during a movie, are you?"
+    },
+    {
+      "start": 35,
+      "end": 37.5,
+      "text": "No."
+    },
+    {
+      "start": 37.5,
+      "end": 38.5,
+      "text": "Good."
+    },
+    {
+      "start": 39.5,
+      "end": 44.5,
+      "text": "Anna loves movies. And she loves talking about movies."
+    },
+    {
+      "start": 45,
+      "end": 47.5,
+      "text": "And Pete doesn't sound happy about that."
+    },
+    {
+      "start": 47.5,
+      "end": 50,
+      "text": "But he's trying to be polite."
+    },
+    {
+      "start": 98.5,
+      "end": 104,
+      "text": "I love the smell of popcorn."
+    },
+    {
+      "start": 104,
+      "end": 107.5,
+      "text": "I love seats that rock."
+    },
+    {
+      "start": 107.5,
+      "end": 110.5,
+      "text": "I love when people are quiet."
+    },
+    {
+      "start": 117.5,
+      "end": 119.5,
+      "text": "Ooh look, the previews are starting!"
+    },
+    {
+      "start": 119.5,
+      "end": 121.5,
+      "text": "I love to see what movies are coming out."
+    },
+    {
+      "start": 121.5,
+      "end": 123.5,
+      "text": "Oh, this one looks good!"
+    },
+    {
+      "start": 123.5,
+      "end": 129,
+      "text": "Anna, the previews are part of the movie experience."
+    },
+    {
+      "start": 129,
+      "end": 130.5,
+      "text": "So, would you mind not talking?"
+    },
+    {
+      "start": 130.5,
+      "end": 132.5,
+      "text": "Oh, sure, sure."
+    },
+    {
+      "start": 144,
+      "end": 148,
+      "text": "Anna, I was wondering: are you almost finished with that?"
+    },
+    {
+      "start": 148,
+      "end": 154.5,
+      "text": "No. There's still a lot of milkshake at the bottom."
+    },
+    {
+      "start": 154.5,
+      "end": 157,
+      "text": "Anna, do you mind not drinking so loudly?"
+    },
+    {
+      "start": 157,
+      "end": 160,
+      "text": "I'll try. But it's really thick."
+    },
+    {
+      "start": 163,
+      "end": 164.5,
+      "text": "Anna, what are you doing?!"
+    },
+    {
+      "start": 164.5,
+      "end": 166.5,
+      "text": "Shh!"
+    },
+    {
+      "start": 166.5,
+      "end": 170,
+      "text": "I'm not the one making all the noise."
+    },
+    {
+      "start": 172,
+      "end": 173.5,
+      "text": "I'm done now."
+    },
+    {
+      "start": 184.5,
+      "end": 189.5,
+      "text": "Anna, would you mind opening that a little bit more quietly?"
+    },
+    {
+      "start": 189.5,
+      "end": 191.5,
+      "text": "I'll try."
+    },
+    {
+      "start": 197,
+      "end": 199,
+      "text": "Anna, just give it to me!"
+    },
+    {
+      "start": 200.5,
+      "end": 202,
+      "text": "Shhh!"
+    },
+    {
+      "start": 202,
+      "end": 205.5,
+      "text": "It's not mine. I'm opening it for her."
+    },
+    {
+      "start": 205.5,
+      "end": 207,
+      "text": "Shhhhhh!!"
+    },
+    {
+      "start": 207,
+      "end": 208.5,
+      "text": "Here!"
+    },
+    {
+      "start": 208.5,
+      "end": 211,
+      "text": "Thanks, Pete."
+    },
+    {
+      "start": 211,
+      "end": 214.5,
+      "text": "Now, would you mind being more quiet?"
+    },
+    {
+      "start": 223,
+      "end": 229.5,
+      "text": "Excuse me, would you mind turning down your phone light?"
+    },
+    {
+      "start": 230.5,
+      "end": 233.5,
+      "text": "Oh, sorry! I forgot to turn my phone off."
+    },
+    {
+      "start": 233.5,
+      "end": 239,
+      "text": "Oh no! I dropped it. Where is it?"
+    },
+    {
+      "start": 239,
+      "end": 242.5,
+      "text": "Anna, can you please turn your phone off?"
+    },
+    {
+      "start": 242.5,
+      "end": 247,
+      "text": "Excuse me, would you mind lending me your phone light for a minute?"
+    },
+    {
+      "start": 247,
+      "end": 250,
+      "text": "No! I'll get it!"
+    },
+    {
+      "start": 250,
+      "end": 252.5,
+      "text": "Shhhhh!"
+    },
+    {
+      "start": 252.5,
+      "end": 255.5,
+      "text": "Look, people, I'm not the noisy one here!"
+    },
+    {
+      "start": 255.5,
+      "end": 258,
+      "text": "So, you need to shush the right person."
+    },
+    {
+      "start": 258,
+      "end": 262.5,
+      "text": "And I should know about shushing! I shush people all the time!"
+    },
+    {
+      "start": 262.5,
+      "end": 266.5,
+      "text": "Excuse me, sir. You can't yell in a movie theater."
+    },
+    {
+      "start": 266.5,
+      "end": 268.5,
+      "text": "Would you mind coming with me?"
+    },
+    {
+      "start": 268.5,
+      "end": 275.5,
+      "text": "You're kicking me out? Me? But I'm always the quiet one in the movie!"
+    },
+    {
+      "start": 275.5,
+      "end": 280.5,
+      "text": "Pete should know better. You have to be quiet in a movie theater."
+    },
+    {
+      "start": 281,
+      "end": 283,
+      "text": "Shh! The movie's starting!"
+    },
+    {
+      "start": 284,
+      "end": 288,
+      "text": "That's a surprise. I thought Anna would be the noisy one."
+    },
+    {
+      "start": 288,
+      "end": 293,
+      "text": "Well, she was ... with her food. But Pete did all of the talking."
+    },
+    {
+      "start": 293,
+      "end": 298,
+      "text": "At least he tried to be polite by using indirect questions."
+    }
+  ],
+  "categoryTr": "Komedi skeçi",
+  "captionCoverage": "main-dialogue"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "other-side-of-the-box",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "OrOYvVf6tIM",
+  "title": "Other Side of the Box",
+  "creator": "Caleb J. Phillips · ALTER",
+  "year": 2018,
+  "level": "B2",
+  "category": "horror",
+  "genre": "horror",
+  "durationSeconds": 923,
+  "summaryTr": "Bir çiftin kapısına eski bir arkadaşları gelir ve onlara tuhaf bir kutu bırakır. Kutunun içindekinin tek bir kuralı vardır; o kurala uymak düşündüklerinden çok daha zordur.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Gündelik konuşmalar, kısa açıklamalar ve açık talimatlar B2 seviyesine uygundur; fısıltı, gerilim ve hızlı tepkiler ek dikkat gerektirir.",
+  "advisoryTr": "Yoğun gerilim, korkutucu görüntüler ve küfür içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "ALTER — Other Side of the Box",
+    "url": "https://www.youtube.com/watch?v=OrOYvVf6tIM",
+    "watchUrl": "https://www.youtube.com/watch?v=OrOYvVf6tIM",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Caleb J. Phillips · ALTER · Yayıncı: ALTER"
+  },
+  "glossary": {
+    "package": "paket",
+    "estranged": "arası açılmış; uzaklaşmış",
+    "rule": "kural",
+    "stare": "gözünü ayırmadan bakmak",
+    "disappear": "kaybolmak",
+    "warning": "uyarı"
+  },
+  "captions": []
+}

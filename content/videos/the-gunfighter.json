@@ -1,0 +1,35 @@
+{
+  "id": "the-gunfighter",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "cWs4WA--eKU",
+  "title": "The Gunfighter",
+  "creator": "Eric Kissack · Nick Offerman",
+  "year": 2014,
+  "level": "C1",
+  "category": "fun",
+  "genre": "comedy",
+  "durationSeconds": 529,
+  "summaryTr": "Bir silahşör salona girer; hikâyenin anlatıcısı herkesin sırlarını yüksek sesle söylemeye başlar. Karakterlerin anlatıcıyla tartıştığı, western ve kara mizahı birleştiren bir kısa film.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Hızlı atışmalar, argo, dolaylı hakaretler, anlatıcıyla karakterler arasındaki geçişler ve mizahın ima yoluyla kurulması C1 için zorlayıcıdır.",
+  "advisoryTr": "Ağır küfür, cinsel göndermeler, silahlı çatışma ve ölüm içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "MAGNETFILM — The Gunfighter",
+    "url": "https://www.youtube.com/watch?v=cWs4WA--eKU",
+    "watchUrl": "https://www.youtube.com/watch?v=cWs4WA--eKU",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Eric Kissack · Nick Offerman · Yayıncı: MAGNETFILM"
+  },
+  "glossary": {
+    "gunfighter": "silahşör",
+    "narrator": "anlatıcı",
+    "bounty": "başına konan ödül",
+    "saloon": "western filmlerindeki bar",
+    "standoff": "tarafların birbirini tehdit ettiği çıkmaz",
+    "omniscient": "her şeyi bilen",
+    "secret": "sır"
+  },
+  "captions": []
+}

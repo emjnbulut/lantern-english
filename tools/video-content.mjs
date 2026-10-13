@@ -5,7 +5,7 @@ import { ROOT, LEVELS } from "./lib.mjs";
 
 const VIDEO_GENRES = ["comedy", "mystery", "horror", "adventure", "romance", "scifi", "fable", "drama", "fantasy", "documentary", "education"];
 // Viewer-facing shelves on #videos; keep in sync with VIDEO_CATEGORIES in assets/js/app.js.
-export const VIDEO_CATEGORIES = ["fun", "adventure", "scifi", "real"];
+export const VIDEO_CATEGORIES = ["fun", "adventure", "scifi", "real", "horror"];
 const object = (v) => !!v && typeof v === "object" && !Array.isArray(v);
 const plainText = (v) => typeof v === "string" && !!v.trim() && !/<[^>]*>/.test(v);
 const httpsUrl = (v) => {
@@ -22,7 +22,7 @@ export function validateVideo(d, file, errors) {
   if (typeof d.id !== "string" || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(d.id)) e("id must be kebab-case");
   if (path.basename(file, ".json") !== d.id) e(`file name must equal id (${d.id})`);
   if (d.type !== "video") e('type must be "video"');
-  for (const key of ["title", "creator", "summaryTr", "levelNoteTr", "advisoryTr"]) {
+  for (const key of ["title", "creator", "summaryTr", "levelNoteTr"]) {
     if (!plainText(d[key])) e(`${key} must be non-empty plain text`);
   }
   if (!LEVELS.includes(d.level)) e(`level must be one of ${LEVELS}`);
@@ -31,15 +31,19 @@ export function validateVideo(d, file, errors) {
   if (!Number.isInteger(d.year) || d.year < 1) e("year must be a positive integer");
   const durationValid = Number.isFinite(d.durationSeconds) && d.durationSeconds > 0;
   if (!durationValid) e("durationSeconds must be a finite positive number");
-  if (!httpsUrl(d.videoUrl)) e("videoUrl must be an HTTPS URL without credentials");
-  else if (!/\.mp4$/i.test(new URL(d.videoUrl).pathname)) e("videoUrl must point to an MP4 file");
+  const youtube = d.provider === "youtube";
+  if (d.provider !== undefined && !youtube) e("unknown video provider");
+  if (youtube) {
+    if (!/^[A-Za-z0-9_-]{11}$/.test(d.youtubeId || "")) e("youtubeId must be a valid video ID");
+  } else if (!httpsUrl(d.videoUrl)) e("videoUrl must be an HTTPS URL without credentials");
+  else if (!/\.(mp4|webm|m4v)$/i.test(new URL(d.videoUrl).pathname)) e("videoUrl must point to a supported video file");
 
   if (d.qualities !== undefined) {
     if (!Array.isArray(d.qualities) || d.qualities.length < 2) e("qualities must list at least two options");
     else {
       const labels = new Set();
       d.qualities.forEach((q, i) => {
-        if (!object(q) || !plainText(q.label) || !httpsUrl(q.url) || !/\.mp4$/i.test(new URL(q.url).pathname)) { e(`quality ${i} needs a label and an HTTPS MP4 url`); return; }
+        if (!object(q) || !plainText(q.label) || !httpsUrl(q.url) || !/\.(mp4|webm|m4v)$/i.test(new URL(q.url).pathname)) { e(`quality ${i} needs a label and a supported HTTPS video url`); return; }
         if (labels.has(q.label)) e(`quality ${i} repeats label ${q.label}`);
         labels.add(q.label);
         if (q.sizeMB !== undefined && !(Number.isFinite(q.sizeMB) && q.sizeMB > 0)) e(`quality ${i} sizeMB must be a positive number`);
@@ -52,6 +56,7 @@ export function validateVideo(d, file, errors) {
     ["source", ["name", "license", "credit"], ["url", "licenseUrl"]],
     ["subtitleSource", ["name", "license"], ["url"]],
   ]) {
+    if (key === "subtitleSource" && youtube && !d.captions?.length) continue;
     if (!object(d[key])) { e(`${key} must be an attribution object`); continue; }
     for (const field of texts) if (!plainText(d[key][field])) e(`${key}.${field} must be non-empty plain text`);
     for (const field of urls) if (!httpsUrl(d[key][field])) e(`${key}.${field} must be an HTTPS URL without credentials`);
@@ -60,7 +65,7 @@ export function validateVideo(d, file, errors) {
     e("subtitleSource.licenseUrl must be an HTTPS URL without credentials");
   }
 
-  if (!Array.isArray(d.captions) || !d.captions.length) e("captions must be a non-empty array");
+  if (!Array.isArray(d.captions) || (!youtube && !d.captions.length)) e("captions must be a non-empty array for native videos");
   else {
     let previousStart = -1, previousEnd = 0;
     d.captions.forEach((cue, i) => {

@@ -1,0 +1,35 @@
+{
+  "id": "six",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "za2fY2ZFelo",
+  "title": "Six",
+  "creator": "L. Gustavo Cooper",
+  "year": 2016,
+  "level": "C1",
+  "category": "adventure",
+  "genre": "fantasy",
+  "durationSeconds": 672,
+  "summaryTr": "Genç bir vampir, kendisi gibi olanları avlayan gizli bir örgütün eline düşer. Ona sunulan teklif, fantastik korku ile aksiyonu bir araya getirir.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Hızlı sorgulamalar, tehdit, argo, örtük pazarlık ve farklı karakterlerin tonlarını ayırt etme C1 dinleme çalışması sunar.",
+  "advisoryTr": "Kan, vampir saldırıları, silahlı şiddet, küfür ve yetişkinlere yönelik temalar içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "DUST — Six",
+    "url": "https://www.youtube.com/watch?v=za2fY2ZFelo",
+    "watchUrl": "https://www.youtube.com/watch?v=za2fY2ZFelo",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "L. Gustavo Cooper · Yayıncı: DUST"
+  },
+  "glossary": {
+    "vampire": "vampir",
+    "clandestine": "gizli; örtülü",
+    "eliminate": "ortadan kaldırmak",
+    "hunt": "avlamak",
+    "bargain": "pazarlık",
+    "agent": "ajan; görevli",
+    "offer": "teklif"
+  },
+  "captions": []
+}

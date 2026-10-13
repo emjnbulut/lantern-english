@@ -1,0 +1,3589 @@
+{
+  "id": "the-terror",
+  "type": "video",
+  "title": "The Terror",
+  "creator": "Roger Corman",
+  "year": 1963,
+  "level": "B2",
+  "category": "horror",
+  "genre": "horror",
+  "durationSeconds": 4755,
+  "summaryTr": "Genç bir subay, kıyıda karşılaştığı gizemli kadının izini eski bir şatoya kadar sürer. Şatonun sakladığı sırları keşfederken resmî hitapları, sorgulamaları ve gotik korku dilini dinle.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Çoğunlukla anlaşılır ve görece yavaş diyaloglar vardır; dönem dili, unvanlar ve sırlarla ilgili kelimeler ek destek gerektirir.",
+  "advisoryTr": "Ölüm, boğulma, şiddet ve doğaüstü korku sahneleri içerir.",
+  "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e7/The_Terror_%281963%29.webm/The_Terror_%281963%29.webm.480p.vp9.webm",
+  "qualities": [
+    {
+      "label": "232p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e7/The_Terror_%281963%29.webm/The_Terror_%281963%29.webm.240p.vp9.webm",
+      "sizeMB": 160
+    },
+    {
+      "label": "464p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e7/The_Terror_%281963%29.webm/The_Terror_%281963%29.webm.480p.vp9.webm",
+      "sizeMB": 421
+    }
+  ],
+  "source": {
+    "name": "Wikimedia Commons — The Terror",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Terror_(1963).webm",
+    "watchUrl": "https://commons.wikimedia.org/wiki/File:The_Terror_(1963).webm",
+    "license": "Kamu malı (ABD)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Terror_(1963).webm",
+    "credit": "Roger Corman · Özgün film; Wikimedia Commons aktarımı",
+    "creditNoteTr": "Video, kaynak sürümüyle ve jeneriğiyle birlikte değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText%3AThe%20Terror%20(1963).webm.en.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar altyazı sayfasının geçmişinde)",
+    "changeNoteTr": "Sözler ve zamanlar korunmuştur; biçim etiketleri kaldırılıp satırlar birleştirilerek zamanlar saniyeye dönüştürülmüştür."
+  },
+  "glossary": {
+    "cemetery": "mezarlık",
+    "shelter": "sığınak; sığınmak",
+    "cellar": "mahzen",
+    "flesh": "et; vücudun yumuşak dokusu",
+    "regiment": "askerî alay",
+    "baron": "baron; soyluluk unvanı",
+    "baroness": "barones",
+    "crypt": "yeraltı mezar odası",
+    "portrait": "portre",
+    "duvalier": "Duvalier (karakterin soyadı)",
+    "helene": "Helene (karakter adı)"
+  },
+  "captions": [
+    {
+      "start": 304.387,
+      "end": 305.387,
+      "text": "Hello!"
+    },
+    {
+      "start": 308.224,
+      "end": 309.224,
+      "text": "Hello?"
+    },
+    {
+      "start": 309.424,
+      "end": 312.227,
+      "text": "Do you know the road to Colbin?"
+    },
+    {
+      "start": 312.437,
+      "end": 317.858,
+      "text": "I was separated from my regiment at Arshstadt."
+    },
+    {
+      "start": 318.067,
+      "end": 322.446,
+      "text": "Do you have any drinking water?"
+    },
+    {
+      "start": 323.448,
+      "end": 325.824,
+      "text": "I'm very thirsty!"
+    },
+    {
+      "start": 363.571,
+      "end": 364.654,
+      "text": "Clear water from the mountain."
+    },
+    {
+      "start": 381.089,
+      "end": 383.423,
+      "text": "Thank you, I-"
+    },
+    {
+      "start": 400.858,
+      "end": 401.858,
+      "text": "Hello."
+    },
+    {
+      "start": 401.943,
+      "end": 404.027,
+      "text": "I'd like a word with you."
+    },
+    {
+      "start": 404.237,
+      "end": 405.278,
+      "text": "You never said goodbye to me."
+    },
+    {
+      "start": 405.488,
+      "end": 407.739,
+      "text": "In fact, you never even said hello."
+    },
+    {
+      "start": 413.413,
+      "end": 417.416,
+      "text": "It isn't an act of treason to talk to me."
+    },
+    {
+      "start": 417.625,
+      "end": 419.793,
+      "text": "I'm a weary, disillusioned soldier."
+    },
+    {
+      "start": 420.002,
+      "end": 421.92,
+      "text": "And you're the only pleasant sight"
+    },
+    {
+      "start": 422.13,
+      "end": 423.964,
+      "text": "that I've seen in seven months."
+    },
+    {
+      "start": 425.007,
+      "end": 426.007,
+      "text": "Go ahead."
+    },
+    {
+      "start": 426.207,
+      "end": 428.385,
+      "text": "It's permitted for you to laugh."
+    },
+    {
+      "start": 429.637,
+      "end": 430.637,
+      "text": "Wait."
+    },
+    {
+      "start": 430.837,
+      "end": 431.837,
+      "text": "You haven't told me your name."
+    },
+    {
+      "start": 432.037,
+      "end": 432.556,
+      "text": "My name's Helene."
+    },
+    {
+      "start": 432.932,
+      "end": 435.35,
+      "text": "I want to show you something."
+    },
+    {
+      "start": 477.351,
+      "end": 478.351,
+      "text": "Wait!"
+    },
+    {
+      "start": 478.436,
+      "end": 480.312,
+      "text": "Where are you going?"
+    },
+    {
+      "start": 483.816,
+      "end": 484.816,
+      "text": "What's wrong?"
+    },
+    {
+      "start": 578.703,
+      "end": 580.245,
+      "text": "Rest yourself, young man."
+    },
+    {
+      "start": 580.454,
+      "end": 582.539,
+      "text": "You're safe here."
+    },
+    {
+      "start": 582.748,
+      "end": 585.333,
+      "text": "Here, take this for your strength."
+    },
+    {
+      "start": 588.671,
+      "end": 591.131,
+      "text": "God knows help is a very rare thing in this forest."
+    },
+    {
+      "start": 591.34,
+      "end": 592.632,
+      "text": "Take it whenever it's offered to you."
+    },
+    {
+      "start": 609.442,
+      "end": 611.484,
+      "text": "That bird."
+    },
+    {
+      "start": 611.694,
+      "end": 613.57,
+      "text": "He attacked me."
+    },
+    {
+      "start": 613.779,
+      "end": 615.405,
+      "text": "I'm afraid you're wrong."
+    },
+    {
+      "start": 615.615,
+      "end": 616.615,
+      "text": "She's quite harmless."
+    },
+    {
+      "start": 625.666,
+      "end": 626.75,
+      "text": "Here, hold out your arm."
+    },
+    {
+      "start": 629.712,
+      "end": 631.671,
+      "text": "She only seems dangerous."
+    },
+    {
+      "start": 631.881,
+      "end": 633.84,
+      "text": "Actually, she's very affectionate,"
+    },
+    {
+      "start": 634.05,
+      "end": 637.26,
+      "text": "which is very unusual for a bird."
+    },
+    {
+      "start": 637.47,
+      "end": 638.72,
+      "text": "Take it back."
+    },
+    {
+      "start": 638.929,
+      "end": 641.348,
+      "text": "Oh, that is too bad."
+    },
+    {
+      "start": 641.557,
+      "end": 643.85,
+      "text": "Little girl liked him, didn't you?"
+    },
+    {
+      "start": 646.771,
+      "end": 647.771,
+      "text": "This is Gustav."
+    },
+    {
+      "start": 650.191,
+      "end": 651.691,
+      "text": "He brought you here."
+    },
+    {
+      "start": 651.901,
+      "end": 653.985,
+      "text": "Gustav fed your horse."
+    },
+    {
+      "start": 654.195,
+      "end": 656.529,
+      "text": "Where is Helene?"
+    },
+    {
+      "start": 656.739,
+      "end": 657.781,
+      "text": "This is Helene."
+    },
+    {
+      "start": 657.99,
+      "end": 659.866,
+      "text": "No, not the bird, the girl."
+    },
+    {
+      "start": 660.076,
+      "end": 661.076,
+      "text": "Where is the girl?"
+    },
+    {
+      "start": 661.276,
+      "end": 663.161,
+      "text": "There is no girl."
+    },
+    {
+      "start": 663.371,
+      "end": 664.621,
+      "text": "Of course there's a girl."
+    },
+    {
+      "start": 664.83,
+      "end": 665.83,
+      "text": "I saw her."
+    },
+    {
+      "start": 666.03,
+      "end": 667.03,
+      "text": "She spoke to me."
+    },
+    {
+      "start": 669.585,
+      "end": 672.045,
+      "text": "Perhaps you were tired from your long journey,"
+    },
+    {
+      "start": 672.254,
+      "end": 674.089,
+      "text": "and had a pleasant illusion."
+    },
+    {
+      "start": 676.717,
+      "end": 682.389,
+      "text": "Gustav, have you ever seen a girl here?"
+    },
+    {
+      "start": 682.598,
+      "end": 685.85,
+      "text": "Gustav sometimes imagines things."
+    },
+    {
+      "start": 686.06,
+      "end": 688.645,
+      "text": "If he could speak, I think we would"
+    },
+    {
+      "start": 688.854,
+      "end": 692.107,
+      "text": "find that his mind is warped."
+    },
+    {
+      "start": 692.316,
+      "end": 697.654,
+      "text": "Such is the will of God, to endow and deprive."
+    },
+    {
+      "start": 700.991,
+      "end": 705.787,
+      "text": "The only thing of beauty you'll find in this forest is Helene."
+    },
+    {
+      "start": 815.856,
+      "end": 816.856,
+      "text": "Hello."
+    },
+    {
+      "start": 820.82,
+      "end": 822.07,
+      "text": "I was afraid you'd drowned."
+    },
+    {
+      "start": 838.754,
+      "end": 841.714,
+      "text": "So you are real."
+    },
+    {
+      "start": 841.924,
+      "end": 844.008,
+      "text": "I started to think-"
+    },
+    {
+      "start": 849.431,
+      "end": 852.684,
+      "text": "Who are you?"
+    },
+    {
+      "start": 910.034,
+      "end": 912.911,
+      "text": "Wait, wait, danger."
+    },
+    {
+      "start": 924.924,
+      "end": 930.887,
+      "text": "Quick sand — the girl was trying to kill me."
+    },
+    {
+      "start": 931.096,
+      "end": 932.263,
+      "text": "She knows not what she does."
+    },
+    {
+      "start": 932.473,
+      "end": 934.599,
+      "text": "Her will is not her own."
+    },
+    {
+      "start": 934.808,
+      "end": 936.643,
+      "text": "You mean she's insane?"
+    },
+    {
+      "start": 936.852,
+      "end": 939.437,
+      "text": "Possessed, she needs your help."
+    },
+    {
+      "start": 939.647,
+      "end": 941.272,
+      "text": "Help?"
+    },
+    {
+      "start": 941.482,
+      "end": 943.024,
+      "text": "How can I help her?"
+    },
+    {
+      "start": 943.233,
+      "end": 947.278,
+      "text": "The castle of the Baron von Leppe, you will find her there."
+    },
+    {
+      "start": 947.488,
+      "end": 948.488,
+      "text": "I can say no more."
+    },
+    {
+      "start": 948.614,
+      "end": 949.906,
+      "text": "There's great danger."
+    },
+    {
+      "start": 950.115,
+      "end": 951.908,
+      "text": "Find Eric, Eric knows."
+    },
+    {
+      "start": 969.551,
+      "end": 972.679,
+      "text": "The Ride to Colbin is long and far safer by day."
+    },
+    {
+      "start": 972.888,
+      "end": 976.975,
+      "text": "If you leave now, you can rejoin your regiment by dusk."
+    },
+    {
+      "start": 977.184,
+      "end": 979.727,
+      "text": "Where is Gustav?"
+    },
+    {
+      "start": 979.937,
+      "end": 981.854,
+      "text": "What do you want him for?"
+    },
+    {
+      "start": 982.064,
+      "end": 984.357,
+      "text": "I want him to show me where the castle of the Baron von Leppe"
+    },
+    {
+      "start": 984.566,
+      "end": 985.9,
+      "text": "is."
+    },
+    {
+      "start": 986.11,
+      "end": 987.735,
+      "text": "No one's lived in the castle for years."
+    },
+    {
+      "start": 987.945,
+      "end": 992.448,
+      "text": "And, besides, Gustav has gone away for a few days."
+    },
+    {
+      "start": 992.658,
+      "end": 996.953,
+      "text": "Perhaps you'd show me the way to the castle."
+    },
+    {
+      "start": 997.162,
+      "end": 999.205,
+      "text": "Why are you so interested in the Baron?"
+    },
+    {
+      "start": 999.415,
+      "end": 1001.457,
+      "text": "I never said that I was."
+    },
+    {
+      "start": 1001.667,
+      "end": 1005.044,
+      "text": "But the girl that I followed last night and spoke to,"
+    },
+    {
+      "start": 1005.254,
+      "end": 1007.672,
+      "text": "I believe that she lives there."
+    },
+    {
+      "start": 1007.881,
+      "end": 1011.342,
+      "text": "I told you, there is no girl."
+    },
+    {
+      "start": 1011.552,
+      "end": 1013.511,
+      "text": "That is nonsense."
+    },
+    {
+      "start": 1013.721,
+      "end": 1015.096,
+      "text": "You recognize her, don't you?"
+    },
+    {
+      "start": 1018.35,
+      "end": 1019.35,
+      "text": "No."
+    },
+    {
+      "start": 1029.194,
+      "end": 1031.154,
+      "text": "I'll find the castle myself."
+    },
+    {
+      "start": 1031.363,
+      "end": 1032.363,
+      "text": "No!"
+    },
+    {
+      "start": 1040.456,
+      "end": 1042.29,
+      "text": "Don't go to the castle."
+    },
+    {
+      "start": 1042.499,
+      "end": 1044,
+      "text": "I have told you the truth."
+    },
+    {
+      "start": 1044.209,
+      "end": 1045.209,
+      "text": "There is no girl."
+    },
+    {
+      "start": 1045.409,
+      "end": 1046.409,
+      "text": "Mark me, you are getting yourself"
+    },
+    {
+      "start": 1046.462,
+      "end": 1048.212,
+      "text": "into things beyond your understanding."
+    },
+    {
+      "start": 1048.422,
+      "end": 1050.798,
+      "text": "Leave now, while you can."
+    },
+    {
+      "start": 1051.008,
+      "end": 1053.301,
+      "text": "I intend to find her."
+    },
+    {
+      "start": 1053.51,
+      "end": 1056.012,
+      "text": "Please don't tell the Baron that I am here."
+    },
+    {
+      "start": 1168.25,
+      "end": 1171.085,
+      "text": "Hello!"
+    },
+    {
+      "start": 1171.295,
+      "end": 1172.795,
+      "text": "Is anyone here?"
+    },
+    {
+      "start": 1177.217,
+      "end": 1179.177,
+      "text": "Hello, it's me, Andre."
+    },
+    {
+      "start": 1198.405,
+      "end": 1201.657,
+      "text": "In the name of the government of France,"
+    },
+    {
+      "start": 1201.867,
+      "end": 1203.701,
+      "text": "I order you to open this door!"
+    },
+    {
+      "start": 1207.206,
+      "end": 1209.999,
+      "text": "Your pardon, young sir, I was at my devotions."
+    },
+    {
+      "start": 1210.209,
+      "end": 1211.5,
+      "text": "I did not hear you."
+    },
+    {
+      "start": 1211.71,
+      "end": 1212.919,
+      "text": "I'm sorry, sir."
+    },
+    {
+      "start": 1213.128,
+      "end": 1217.256,
+      "text": "But surely I made enough noise to awaken the dead."
+    },
+    {
+      "start": 1217.466,
+      "end": 1218.925,
+      "text": "The government of France."
+    },
+    {
+      "start": 1219.134,
+      "end": 1224.096,
+      "text": "I've seen the uniforms of many governments in my time."
+    },
+    {
+      "start": 1224.306,
+      "end": 1226.974,
+      "text": "What would a soldier of France be wanting here?"
+    },
+    {
+      "start": 1227.184,
+      "end": 1228.643,
+      "text": "Shelter, for one thing."
+    },
+    {
+      "start": 1228.852,
+      "end": 1233.856,
+      "text": "Permit me to introduce myself, Lieutenant Andre Duvalier."
+    },
+    {
+      "start": 1234.066,
+      "end": 1237.151,
+      "text": "Baron Victor Frederick von Lepp."
+    },
+    {
+      "start": 1237.361,
+      "end": 1240.154,
+      "text": "I suggest you will find better shelter at the village inn."
+    },
+    {
+      "start": 1240.364,
+      "end": 1241.364,
+      "text": "Thank you, Baron."
+    },
+    {
+      "start": 1241.49,
+      "end": 1243.658,
+      "text": "But I've had my fill of village inns."
+    },
+    {
+      "start": 1243.867,
+      "end": 1246.41,
+      "text": "Surely, you wouldn't want to inconvenience a French officer."
+    },
+    {
+      "start": 1248.705,
+      "end": 1249.705,
+      "text": "Come in."
+    },
+    {
+      "start": 1257.339,
+      "end": 1264.553,
+      "text": "What you see, Lieutenant, are the remains of a noble house-"
+    },
+    {
+      "start": 1264.763,
+      "end": 1270.351,
+      "text": "relics, ghosts of past glories."
+    },
+    {
+      "start": 1270.56,
+      "end": 1273.562,
+      "text": "A noble heritage is something to be proud of, Baron."
+    },
+    {
+      "start": 1273.772,
+      "end": 1276.148,
+      "text": "I'm afraid we've forgotten that in France."
+    },
+    {
+      "start": 1276.358,
+      "end": 1280.194,
+      "text": "Ah yes, your name, Duvalier, your family-"
+    },
+    {
+      "start": 1280.404,
+      "end": 1283.364,
+      "text": "My father was the Count Duvalier — was,"
+    },
+    {
+      "start": 1283.573,
+      "end": 1285.95,
+      "text": "until they spilled his head into a basket one morning"
+    },
+    {
+      "start": 1286.159,
+      "end": 1287.41,
+      "text": "in the Place de la Concorde."
+    },
+    {
+      "start": 1287.619,
+      "end": 1290.997,
+      "text": "Forgive me for reviving painful memories."
+    },
+    {
+      "start": 1291.206,
+      "end": 1294.166,
+      "text": "You must be cold and tired, Lieutenant."
+    },
+    {
+      "start": 1294.376,
+      "end": 1295.418,
+      "text": "Some cognac?"
+    },
+    {
+      "start": 1295.627,
+      "end": 1297.378,
+      "text": "I'd like that, Baron, thank you."
+    },
+    {
+      "start": 1297.587,
+      "end": 1298.921,
+      "text": "Sit down."
+    },
+    {
+      "start": 1304.3029999999999,
+      "end": 1305.3029999999999,
+      "text": "Yes, Baron?"
+    },
+    {
+      "start": 1305.345,
+      "end": 1308.723,
+      "text": "Cognac, for our guest."
+    },
+    {
+      "start": 1308.932,
+      "end": 1311.142,
+      "text": "Yes, Baron."
+    },
+    {
+      "start": 1311.351,
+      "end": 1313.227,
+      "text": "Baron, I wonder if I might ask, who"
+    },
+    {
+      "start": 1313.437,
+      "end": 1315.021,
+      "text": "was the young woman I saw in the window"
+    },
+    {
+      "start": 1315.23,
+      "end": 1317.565,
+      "text": "before you came to the door?"
+    },
+    {
+      "start": 1317.774,
+      "end": 1319.817,
+      "text": "Young woman?"
+    },
+    {
+      "start": 1320.027,
+      "end": 1322.278,
+      "text": "Oh, I'm afraid you're mistaken."
+    },
+    {
+      "start": 1322.487,
+      "end": 1324.155,
+      "text": "No, I'm not mistaken."
+    },
+    {
+      "start": 1324.364,
+      "end": 1329.076,
+      "text": "I saw her, dark hair and eyes, about 20."
+    },
+    {
+      "start": 1329.286,
+      "end": 1333.331,
+      "text": "Well, I'm quite sure you think you saw someone."
+    },
+    {
+      "start": 1333.54,
+      "end": 1334.54,
+      "text": "But-"
+    },
+    {
+      "start": 1334.74,
+      "end": 1337.585,
+      "text": "Baron, I am in full possession of my faculties."
+    },
+    {
+      "start": 1337.794,
+      "end": 1341.213,
+      "text": "Please, allow me to show you something."
+    },
+    {
+      "start": 1349.598,
+      "end": 1351.265,
+      "text": "You should never believe everything"
+    },
+    {
+      "start": 1351.475,
+      "end": 1354.393,
+      "text": "your eyes tell you, young man."
+    },
+    {
+      "start": 1354.603,
+      "end": 1358.147,
+      "text": "Is that the girl you think you saw?"
+    },
+    {
+      "start": 1358.357,
+      "end": 1359.357,
+      "text": "Yes, of course-"
+    },
+    {
+      "start": 1359.557,
+      "end": 1363.069,
+      "text": "Before you say anything, examine the portrait closely,"
+    },
+    {
+      "start": 1363.278,
+      "end": 1366.238,
+      "text": "the signature — and above all, the date."
+    },
+    {
+      "start": 1371.244,
+      "end": 1375.039,
+      "text": "1786?"
+    },
+    {
+      "start": 1375.248,
+      "end": 1376.916,
+      "text": "But that's 20 years ago."
+    },
+    {
+      "start": 1377.125,
+      "end": 1378.125,
+      "text": "It's incredible."
+    },
+    {
+      "start": 1378.325,
+      "end": 1379.325,
+      "text": "It's the same girl."
+    },
+    {
+      "start": 1379.525,
+      "end": 1381.128,
+      "text": "And she hasn't changed a bit."
+    },
+    {
+      "start": 1381.338,
+      "end": 1383.422,
+      "text": "She has been dead for 20 years."
+    },
+    {
+      "start": 1387.511,
+      "end": 1389.345,
+      "text": "With all respect, Baron, for a ghost,"
+    },
+    {
+      "start": 1389.554,
+      "end": 1393.265,
+      "text": "she's very active young woman."
+    },
+    {
+      "start": 1393.475,
+      "end": 1396.644,
+      "text": "You're speaking of the Baroness von Lepp, my wife."
+    },
+    {
+      "start": 1396.853,
+      "end": 1399.397,
+      "text": "I beg your pardon, Baron, I meant no offense."
+    },
+    {
+      "start": 1399.606,
+      "end": 1402.691,
+      "text": "Perhaps the resemblance was not quite as much as I had thought."
+    },
+    {
+      "start": 1402.901,
+      "end": 1403.901,
+      "text": "The girl at the window-"
+    },
+    {
+      "start": 1403.944,
+      "end": 1408.155,
+      "text": "Lieutenant Duvalier, the only occupants of this castle"
+    },
+    {
+      "start": 1408.365,
+      "end": 1411.45,
+      "text": "are Stefan and myself."
+    },
+    {
+      "start": 1411.66,
+      "end": 1415.329,
+      "text": "You are the first visitor since the turn of the century."
+    },
+    {
+      "start": 1415.539,
+      "end": 1416.539,
+      "text": "Of course, Baron."
+    },
+    {
+      "start": 1416.54,
+      "end": 1418.666,
+      "text": "Stefan will see you to your room."
+    },
+    {
+      "start": 1418.875,
+      "end": 1419.875,
+      "text": "Thank you."
+    },
+    {
+      "start": 1487.527,
+      "end": 1489.987,
+      "text": "Hello down there!"
+    },
+    {
+      "start": 1490.1970000000001,
+      "end": 1491.28,
+      "text": "I'm coming down!"
+    },
+    {
+      "start": 1491.49,
+      "end": 1492.49,
+      "text": "Wait for me!"
+    },
+    {
+      "start": 1547.337,
+      "end": 1549.463,
+      "text": "Alright, unlock this door."
+    },
+    {
+      "start": 1549.673,
+      "end": 1551.465,
+      "text": "Do you hear me?"
+    },
+    {
+      "start": 1551.675,
+      "end": 1555.01,
+      "text": "Unlock this door or I'm going to shoot through the door!"
+    },
+    {
+      "start": 1752.125,
+      "end": 1753.125,
+      "text": "Ah!"
+    },
+    {
+      "start": 1806.679,
+      "end": 1807.93,
+      "text": "I kept in the shadows, sir."
+    },
+    {
+      "start": 1808.139,
+      "end": 1809.139,
+      "text": "He did not see me."
+    },
+    {
+      "start": 1809.14,
+      "end": 1810.724,
+      "text": "He's a strange one, though."
+    },
+    {
+      "start": 1810.934,
+      "end": 1812.768,
+      "text": "He showed no fear."
+    },
+    {
+      "start": 1812.977,
+      "end": 1813.977,
+      "text": "He must leave at once."
+    },
+    {
+      "start": 1814.187,
+      "end": 1816.48,
+      "text": "Do you think, perhaps, he is not merely a traveler?"
+    },
+    {
+      "start": 1816.689,
+      "end": 1817.773,
+      "text": "Why do you say that?"
+    },
+    {
+      "start": 1817.982,
+      "end": 1819.817,
+      "text": "He might have heard things in the village."
+    },
+    {
+      "start": 1820.026,
+      "end": 1821.193,
+      "text": "Oh, nonsense, he's a soldier."
+    },
+    {
+      "start": 1821.402,
+      "end": 1823.695,
+      "text": "He doesn't listen to old wives' tales."
+    },
+    {
+      "start": 1823.905,
+      "end": 1828.826,
+      "text": "The important thing is that he leave with all due speed."
+    },
+    {
+      "start": 1829.035,
+      "end": 1830.494,
+      "text": "I shall see to it, sir."
+    },
+    {
+      "start": 1830.703,
+      "end": 1831.87,
+      "text": "But of his own accord."
+    },
+    {
+      "start": 1832.08,
+      "end": 1833.872,
+      "text": "We must show him the respect that his position"
+    },
+    {
+      "start": 1834.082,
+      "end": 1835.874,
+      "text": "and rank demand."
+    },
+    {
+      "start": 1836.084,
+      "end": 1837.793,
+      "text": "How quickly."
+    },
+    {
+      "start": 1838.002,
+      "end": 1839.002,
+      "text": "I understand, sir."
+    },
+    {
+      "start": 1866.281,
+      "end": 1869.7,
+      "text": "So, must you intrude on the dead as well as the living?"
+    },
+    {
+      "start": 1869.909,
+      "end": 1871.66,
+      "text": "If I intrude, Stefan, I shall leave it"
+    },
+    {
+      "start": 1871.87,
+      "end": 1873.328,
+      "text": "to my host to so inform me."
+    },
+    {
+      "start": 1873.538,
+      "end": 1874.872,
+      "text": "Why have you come to Castle von Leppe?"
+    },
+    {
+      "start": 1875.081,
+      "end": 1876.957,
+      "text": "What do you want here?"
+    },
+    {
+      "start": 1877.166,
+      "end": 1879.084,
+      "text": "You seem to have things strangely confused"
+    },
+    {
+      "start": 1879.294,
+      "end": 1880.294,
+      "text": "in your mind."
+    },
+    {
+      "start": 1880.503,
+      "end": 1883.505,
+      "text": "You're the servant, not I. I'll ask the questions."
+    },
+    {
+      "start": 1893.224,
+      "end": 1894.892,
+      "text": "This was once a place of worship."
+    },
+    {
+      "start": 1895.101,
+      "end": 1897.269,
+      "text": "Why have the holy objects been removed?"
+    },
+    {
+      "start": 1897.478,
+      "end": 1902.316,
+      "text": "The baron ordered it when his wife passed away."
+    },
+    {
+      "start": 1902.525,
+      "end": 1903.65,
+      "text": "Then this became her tomb?"
+    },
+    {
+      "start": 1903.86,
+      "end": 1905.694,
+      "text": "No, just the entrance to it."
+    },
+    {
+      "start": 1905.904,
+      "end": 1908.28,
+      "text": "The von Leppe family crypt lies below, beneath the cemetery."
+    },
+    {
+      "start": 1908.489,
+      "end": 1910.49,
+      "text": "She rests there with four centuries of von Leppes."
+    },
+    {
+      "start": 1913.161,
+      "end": 1916.288,
+      "text": "That's been sealed for 20 years."
+    },
+    {
+      "start": 1916.497,
+      "end": 1918.04,
+      "text": "Nonsense."
+    },
+    {
+      "start": 1918.249,
+      "end": 1919.541,
+      "text": "It must have been open last night."
+    },
+    {
+      "start": 1919.751,
+      "end": 1921.96,
+      "text": "The girl must have passed through here."
+    },
+    {
+      "start": 1922.17,
+      "end": 1923.837,
+      "text": "As the Baron told you, sir, there is no girl."
+    },
+    {
+      "start": 1924.047,
+      "end": 1925.589,
+      "text": "No girl."
+    },
+    {
+      "start": 1925.798,
+      "end": 1927.007,
+      "text": "Well, we shall see."
+    },
+    {
+      "start": 1927.216,
+      "end": 1928.342,
+      "text": "Come with me to the stable, Stefan."
+    },
+    {
+      "start": 1928.551,
+      "end": 1929.885,
+      "text": "I wish to attend to my horse."
+    },
+    {
+      "start": 1930.094,
+      "end": 1931.72,
+      "text": "Wait, Lieutenant."
+    },
+    {
+      "start": 1931.93,
+      "end": 1933.43,
+      "text": "That's what I came to tell you."
+    },
+    {
+      "start": 1933.64,
+      "end": 1934.89,
+      "text": "Your horse is gone."
+    },
+    {
+      "start": 1935.099,
+      "end": 1936.683,
+      "text": "Apparently, it bolted during the night."
+    },
+    {
+      "start": 1936.893,
+      "end": 1938.06,
+      "text": "Impossible, you're lying."
+    },
+    {
+      "start": 1938.269,
+      "end": 1939.269,
+      "text": "Why?"
+    },
+    {
+      "start": 1939.469,
+      "end": 1941.146,
+      "text": "No, sir, I'm not lying."
+    },
+    {
+      "start": 1941.356,
+      "end": 1942.856,
+      "text": "Hear me well, Stefan."
+    },
+    {
+      "start": 1943.066,
+      "end": 1946.818,
+      "text": "I'm sick of all of these lies- first the old woman, then"
+    },
+    {
+      "start": 1947.028,
+      "end": 1948.028,
+      "text": "the baron, and now you."
+    },
+    {
+      "start": 1948.154,
+      "end": 1949.154,
+      "text": "The old woman, you mean-"
+    },
+    {
+      "start": 1949.28,
+      "end": 1950.28,
+      "text": "Never mind."
+    },
+    {
+      "start": 1950.406,
+      "end": 1951.907,
+      "text": "What about my horse?"
+    },
+    {
+      "start": 1952.116,
+      "end": 1954.409,
+      "text": "I shall get you another one from the village at once, sir."
+    },
+    {
+      "start": 1954.619,
+      "end": 1956.078,
+      "text": "Believe me, lieutenant, I have no desire"
+    },
+    {
+      "start": 1956.287,
+      "end": 1958.205,
+      "text": "to interfere with your departure from this castle."
+    },
+    {
+      "start": 1958.414,
+      "end": 1960.916,
+      "text": "You seem very anxious to be rid of me."
+    },
+    {
+      "start": 1961.125,
+      "end": 1964.086,
+      "text": "Is it because you're afraid I might find out about Eric?"
+    },
+    {
+      "start": 1967.215,
+      "end": 1969.883,
+      "text": "Eric?"
+    },
+    {
+      "start": 1970.093,
+      "end": 1971.802,
+      "text": "So there is an Eric?"
+    },
+    {
+      "start": 1972.011,
+      "end": 1974.012,
+      "text": "That at least was not a lie."
+    },
+    {
+      "start": 1974.222,
+      "end": 1976.765,
+      "text": "Lieutenant, please, don't involve yourself"
+    },
+    {
+      "start": 1976.975,
+      "end": 1978.6,
+      "text": "in these dead matters."
+    },
+    {
+      "start": 1978.81,
+      "end": 1981.937,
+      "text": "There is nothing here but an old man and his decaying memories."
+    },
+    {
+      "start": 1982.146,
+      "end": 1983.981,
+      "text": "I beg of you, leave him in peace!"
+    },
+    {
+      "start": 1992.615,
+      "end": 1994.032,
+      "text": "Will you join me, lieutenant?"
+    },
+    {
+      "start": 1994.242,
+      "end": 1995.742,
+      "text": "No thank you, Baron."
+    },
+    {
+      "start": 1995.952,
+      "end": 1997.452,
+      "text": "I've just come from the stables."
+    },
+    {
+      "start": 1997.662,
+      "end": 1998.704,
+      "text": "My horse is gone."
+    },
+    {
+      "start": 1998.913,
+      "end": 2001.039,
+      "text": "Your horse is gone?"
+    },
+    {
+      "start": 2001.249,
+      "end": 2002.916,
+      "text": "Yes, I believe it was stolen, Baron."
+    },
+    {
+      "start": 2003.126,
+      "end": 2005.711,
+      "text": "Oh, impossible."
+    },
+    {
+      "start": 2005.92,
+      "end": 2009.089,
+      "text": "The stable door perhaps was left open and the animal bolted-"
+    },
+    {
+      "start": 2009.298,
+      "end": 2011.008,
+      "text": "not an unusual thing."
+    },
+    {
+      "start": 2011.217,
+      "end": 2014.011,
+      "text": "In itself, no, but there are certain other mysteries"
+    },
+    {
+      "start": 2014.22,
+      "end": 2015.512,
+      "text": "I would like to have explained, Baron."
+    },
+    {
+      "start": 2015.722,
+      "end": 2017.806,
+      "text": "And I mean to have them explained."
+    },
+    {
+      "start": 2018.016,
+      "end": 2020.1,
+      "text": "How dare you take that tone with me."
+    },
+    {
+      "start": 2020.309,
+      "end": 2021.393,
+      "text": "I don't know to be abrupt."
+    },
+    {
+      "start": 2021.602,
+      "end": 2022.602,
+      "text": "But I will have answers."
+    },
+    {
+      "start": 2026.024,
+      "end": 2028.108,
+      "text": "Well-"
+    },
+    {
+      "start": 2028.317,
+      "end": 2032.07,
+      "text": "Now, why did you the portrait of the Baroness from the wall?"
+    },
+    {
+      "start": 2032.28,
+      "end": 2034.573,
+      "text": "I sent it away for renovation."
+    },
+    {
+      "start": 2034.782,
+      "end": 2036.616,
+      "text": "The, the dampness of these walls"
+    },
+    {
+      "start": 2036.826,
+      "end": 2038.201,
+      "text": "puts a mold on the pigment."
+    },
+    {
+      "start": 2038.411,
+      "end": 2040.162,
+      "text": "You evade very cleverly, Baron."
+    },
+    {
+      "start": 2040.371,
+      "end": 2042.998,
+      "text": "Can you also explain the violin music and the girl"
+    },
+    {
+      "start": 2043.207,
+      "end": 2044.583,
+      "text": "in the chapel last night?"
+    },
+    {
+      "start": 2044.792,
+      "end": 2045.792,
+      "text": "You saw her again?"
+    },
+    {
+      "start": 2045.992,
+      "end": 2046.992,
+      "text": "So you admit there's a girl?"
+    },
+    {
+      "start": 2047.086,
+      "end": 2048.086,
+      "text": "Ilsa."
+    },
+    {
+      "start": 2048.286,
+      "end": 2049.286,
+      "text": "Ilsa, is that her name?"
+    },
+    {
+      "start": 2049.486,
+      "end": 2050.172,
+      "text": "Answer me, Baron."
+    },
+    {
+      "start": 2050.298,
+      "end": 2051.423,
+      "text": "Please, please, leave me in peace."
+    },
+    {
+      "start": 2051.632,
+      "end": 2054.509,
+      "text": "If I leave you now, Baron, I will come back"
+    },
+    {
+      "start": 2054.719,
+      "end": 2055.719,
+      "text": "with a company of my men."
+    },
+    {
+      "start": 2055.803,
+      "end": 2057.888,
+      "text": "And I will tear this place down around your ears"
+    },
+    {
+      "start": 2058.097,
+      "end": 2059.097,
+      "text": "until I find her."
+    },
+    {
+      "start": 2059.297,
+      "end": 2060.297,
+      "text": "Is that clear?"
+    },
+    {
+      "start": 2062.435,
+      "end": 2063.435,
+      "text": "Very clear."
+    },
+    {
+      "start": 2063.644,
+      "end": 2065.353,
+      "text": "All right, now what happened to the Baroness?"
+    },
+    {
+      "start": 2065.563,
+      "end": 2066.855,
+      "text": "Was her death violent?"
+    },
+    {
+      "start": 2067.065,
+      "end": 2068.607,
+      "text": "Yes, her death was violent."
+    },
+    {
+      "start": 2068.816,
+      "end": 2070.692,
+      "text": "How did she die?"
+    },
+    {
+      "start": 2070.902,
+      "end": 2074.029,
+      "text": "Can you spare me nothing?"
+    },
+    {
+      "start": 2074.238,
+      "end": 2077.866,
+      "text": "20 years ago, I was not the man you're looking at now."
+    },
+    {
+      "start": 2078.076,
+      "end": 2080.368,
+      "text": "This land, this estate prospered."
+    },
+    {
+      "start": 2080.578,
+      "end": 2082.996,
+      "text": "My people live well and were happy."
+    },
+    {
+      "start": 2083.206,
+      "end": 2085.04,
+      "text": "My wife had died some years before."
+    },
+    {
+      "start": 2085.249,
+      "end": 2086.666,
+      "text": "And I was lonely."
+    },
+    {
+      "start": 2086.876,
+      "end": 2089.044,
+      "text": "Then one day in the village, I saw"
+    },
+    {
+      "start": 2089.253,
+      "end": 2092.631,
+      "text": "Ilsa, a peasant girl who'd come to live there with her mother."
+    },
+    {
+      "start": 2092.84,
+      "end": 2096.093,
+      "text": "Oh, I could have taken her as nobles"
+    },
+    {
+      "start": 2096.302,
+      "end": 2098.136,
+      "text": "have taken the daughters of peasants"
+    },
+    {
+      "start": 2098.346,
+      "end": 2100.097,
+      "text": "since the beginning of time."
+    },
+    {
+      "start": 2100.306,
+      "end": 2103.058,
+      "text": "But I loved her."
+    },
+    {
+      "start": 2103.267,
+      "end": 2107.479,
+      "text": "And she became the Baroness von Leppe."
+    },
+    {
+      "start": 2107.688,
+      "end": 2110.023,
+      "text": "Almost immediately afterwards, I was called away"
+    },
+    {
+      "start": 2110.233,
+      "end": 2112.067,
+      "text": "for military service, a rebellion"
+    },
+    {
+      "start": 2112.276,
+      "end": 2114.653,
+      "text": "in the Polish province."
+    },
+    {
+      "start": 2114.862,
+      "end": 2116.196,
+      "text": "I was gone for nearly a year."
+    },
+    {
+      "start": 2116.405,
+      "end": 2121.201,
+      "text": "When the fighting was over, I hurried home to my bride."
+    },
+    {
+      "start": 2123.663,
+      "end": 2126.123,
+      "text": "No one knew of my coming."
+    },
+    {
+      "start": 2126.332,
+      "end": 2127.666,
+      "text": "I surprised her in her room."
+    },
+    {
+      "start": 2127.875,
+      "end": 2129.835,
+      "text": "She was not alone."
+    },
+    {
+      "start": 2130.044,
+      "end": 2134.422,
+      "text": "She laughed at me, said her bed was not for me to find another."
+    },
+    {
+      "start": 2134.632,
+      "end": 2139.136,
+      "text": "And with my own hands, I killed her."
+    },
+    {
+      "start": 2139.345,
+      "end": 2142.013,
+      "text": "And her lover?"
+    },
+    {
+      "start": 2142.223,
+      "end": 2146.56,
+      "text": "Stefan took care of him."
+    },
+    {
+      "start": 2146.769,
+      "end": 2150.856,
+      "text": "Later, I gave out a story that she had died of some malaise."
+    },
+    {
+      "start": 2151.065,
+      "end": 2156.236,
+      "text": "No one ever knew of her betrayal of me, or how, in fact, she did"
+    },
+    {
+      "start": 2156.445,
+      "end": 2158.029,
+      "text": "die."
+    },
+    {
+      "start": 2158.239,
+      "end": 2160.574,
+      "text": "Except for Stefan."
+    },
+    {
+      "start": 2160.783,
+      "end": 2163.368,
+      "text": "For 20 years, I've not set foot beyond the walls"
+    },
+    {
+      "start": 2163.578,
+      "end": 2165.829,
+      "text": "of this castle."
+    },
+    {
+      "start": 2166.038,
+      "end": 2170.834,
+      "text": "I've lived here alone with the memory of that dreadful thing"
+    },
+    {
+      "start": 2171.043,
+      "end": 2174.254,
+      "text": "I did that night."
+    },
+    {
+      "start": 2174.463,
+      "end": 2176.923,
+      "text": "That is my penance."
+    },
+    {
+      "start": 2177.133,
+      "end": 2178.633,
+      "text": "And now you believe what?"
+    },
+    {
+      "start": 2178.843,
+      "end": 2181.052,
+      "text": "That the ghost of Ilsa has come back to relieve you"
+    },
+    {
+      "start": 2181.262,
+      "end": 2183.054,
+      "text": "of your penance, is that it?"
+    },
+    {
+      "start": 2183.264,
+      "end": 2184.306,
+      "text": "Yes."
+    },
+    {
+      "start": 2184.515,
+      "end": 2187.142,
+      "text": "How long has the spirit been coming to the castle?"
+    },
+    {
+      "start": 2187.351,
+      "end": 2191.271,
+      "text": "It, it all began two years ago."
+    },
+    {
+      "start": 2191.48,
+      "end": 2192.647,
+      "text": "At first, I was terrified."
+    },
+    {
+      "start": 2192.857,
+      "end": 2197.569,
+      "text": "But now I — I'm eager for our every meeting."
+    },
+    {
+      "start": 2197.778,
+      "end": 2199.821,
+      "text": "One more question, Baron."
+    },
+    {
+      "start": 2200.031,
+      "end": 2203.742,
+      "text": "Has anyone else except yourself seen this spirit, Stefan,"
+    },
+    {
+      "start": 2203.951,
+      "end": 2204.951,
+      "text": "for instance?"
+    },
+    {
+      "start": 2209.207,
+      "end": 2212.667,
+      "text": "You think I'm mad, don't you?"
+    },
+    {
+      "start": 2212.877,
+      "end": 2216.171,
+      "text": "Right now, Baron, I'm not sure just what I think."
+    },
+    {
+      "start": 2216.38,
+      "end": 2218.506,
+      "text": "Ah, but don't forget."
+    },
+    {
+      "start": 2218.716,
+      "end": 2221.885,
+      "text": "You saw her too."
+    },
+    {
+      "start": 2222.094,
+      "end": 2223.345,
+      "text": "Perhaps we are both mad."
+    },
+    {
+      "start": 2250.831,
+      "end": 2256.294,
+      "text": "Ilsa, Ilsa."
+    },
+    {
+      "start": 2256.504,
+      "end": 2257.837,
+      "text": "Ilsa?"
+    },
+    {
+      "start": 2258.047,
+      "end": 2261.758,
+      "text": "The name sounds strange to me here by the sea."
+    },
+    {
+      "start": 2261.968,
+      "end": 2263.051,
+      "text": "It your name."
+    },
+    {
+      "start": 2263.261,
+      "end": 2265.845,
+      "text": "Don't you remember?"
+    },
+    {
+      "start": 2266.055,
+      "end": 2268.014,
+      "text": "My name is Helene."
+    },
+    {
+      "start": 2268.224,
+      "end": 2269.516,
+      "text": "The old woman told me."
+    },
+    {
+      "start": 2269.725,
+      "end": 2271.685,
+      "text": "She lies."
+    },
+    {
+      "start": 2271.894,
+      "end": 2274.729,
+      "text": "She summoned me from the sea."
+    },
+    {
+      "start": 2274.939,
+      "end": 2276.481,
+      "text": "You must go back."
+    },
+    {
+      "start": 2276.691,
+      "end": 2278.858,
+      "text": "Your soul is troubled, Ilsa."
+    },
+    {
+      "start": 2279.068,
+      "end": 2280.068,
+      "text": "Go back?"
+    },
+    {
+      "start": 2280.111,
+      "end": 2281.444,
+      "text": "To Eric?"
+    },
+    {
+      "start": 2281.654,
+      "end": 2285.24,
+      "text": "To the sea."
+    },
+    {
+      "start": 2285.449,
+      "end": 2287.909,
+      "text": "Only when the sea enters the crypt."
+    },
+    {
+      "start": 2291.038,
+      "end": 2295.333,
+      "text": "We shall rest there together, he and I, beneath the sea."
+    },
+    {
+      "start": 2295.543,
+      "end": 2296.626,
+      "text": "It is an evil thing."
+    },
+    {
+      "start": 2296.836,
+      "end": 2299.212,
+      "text": "You must not do it, Ilsa."
+    },
+    {
+      "start": 2299.422,
+      "end": 2301.423,
+      "text": "I must obey the old woman."
+    },
+    {
+      "start": 2309.39,
+      "end": 2313.435,
+      "text": "The Frenchman, he can help you, Ilsa."
+    },
+    {
+      "start": 2313.644,
+      "end": 2314.644,
+      "text": "Andre?"
+    },
+    {
+      "start": 2329.327,
+      "end": 2330.618,
+      "text": "The old one calls."
+    },
+    {
+      "start": 2333.831,
+      "end": 2338.376,
+      "text": "She warned you, Gustav, do not interfere."
+    },
+    {
+      "start": 2338.586,
+      "end": 2342.088,
+      "text": "She's been patient with you long enough, but no more."
+    },
+    {
+      "start": 2400.981,
+      "end": 2404.442,
+      "text": "Oh, powers of darkness, let the spirit of Ilsa"
+    },
+    {
+      "start": 2404.652,
+      "end": 2409.364,
+      "text": "sink deeper, deeper into this mortal fog."
+    },
+    {
+      "start": 2409.573,
+      "end": 2416.413,
+      "text": "Helene, be as though you never were."
+    },
+    {
+      "start": 2416.622,
+      "end": 2421.084,
+      "text": "Spirit of Ilsa, see through these eyes."
+    },
+    {
+      "start": 2421.293,
+      "end": 2422.794,
+      "text": "Speak through these lips."
+    },
+    {
+      "start": 2423.003,
+      "end": 2424.796,
+      "text": "Do my bidding."
+    },
+    {
+      "start": 2425.005,
+      "end": 2430.76,
+      "text": "For only then, shall you find release from your torment."
+    },
+    {
+      "start": 2437.476,
+      "end": 2442.313,
+      "text": "You are becoming stronger now, quite strong."
+    },
+    {
+      "start": 2442.523,
+      "end": 2446.276,
+      "text": "Soon you shall have the strength to carry out"
+    },
+    {
+      "start": 2446.485,
+      "end": 2450.28,
+      "text": "my vengeance, vengeance."
+    },
+    {
+      "start": 2450.489,
+      "end": 2453.241,
+      "text": "And the dark powers will set you free."
+    },
+    {
+      "start": 2453.451,
+      "end": 2457.245,
+      "text": "For I have promised them a richer prize."
+    },
+    {
+      "start": 2477.641,
+      "end": 2478.725,
+      "text": "Good afternoon."
+    },
+    {
+      "start": 2478.934,
+      "end": 2480.56,
+      "text": "Who are you?"
+    },
+    {
+      "start": 2480.769,
+      "end": 2481.811,
+      "text": "An appropriate question, but I'm"
+    },
+    {
+      "start": 2482.021,
+      "end": 2484.022,
+      "text": "afraid I'm the one who should be doing the asking."
+    },
+    {
+      "start": 2484.231,
+      "end": 2485.356,
+      "text": "I'm invited in, of course."
+    },
+    {
+      "start": 2488.068,
+      "end": 2489.36,
+      "text": "What do you want of me?"
+    },
+    {
+      "start": 2489.57,
+      "end": 2491.905,
+      "text": "You realize that this is the property of the Baron Victor"
+    },
+    {
+      "start": 2492.114,
+      "end": 2493.114,
+      "text": "von Leppe?"
+    },
+    {
+      "start": 2493.314,
+      "end": 2494.866,
+      "text": "And that it is forbidden for any of the villagers"
+    },
+    {
+      "start": 2495.075,
+      "end": 2498.244,
+      "text": "to set foot here, much less make it their home."
+    },
+    {
+      "start": 2498.454,
+      "end": 2499.537,
+      "text": "How long have you been living here?"
+    },
+    {
+      "start": 2499.747,
+      "end": 2502.707,
+      "text": "Only two months."
+    },
+    {
+      "start": 2502.917,
+      "end": 2504.417,
+      "text": "Perhaps I should tell you, you see,"
+    },
+    {
+      "start": 2504.627,
+      "end": 2505.877,
+      "text": "I've just come from Kleinschmidt,"
+    },
+    {
+      "start": 2506.086,
+      "end": 2507.462,
+      "text": "where you are not totally unknown."
+    },
+    {
+      "start": 2509.757,
+      "end": 2512.842,
+      "text": "You have lived here slightly more than two years."
+    },
+    {
+      "start": 2513.052,
+      "end": 2514.052,
+      "text": "Your name is Katherina."
+    },
+    {
+      "start": 2514.252,
+      "end": 2515.252,
+      "text": "And you originally come from Colbin,"
+    },
+    {
+      "start": 2515.452,
+      "end": 2516.387,
+      "text": "where you were quite unpopular because"
+    },
+    {
+      "start": 2516.597,
+      "end": 2520.183,
+      "text": "of, uh, certain activities."
+    },
+    {
+      "start": 2520.392,
+      "end": 2523.269,
+      "text": "They call you Katherina the Heretic, the Witch."
+    },
+    {
+      "start": 2523.479,
+      "end": 2525.855,
+      "text": "They were fools."
+    },
+    {
+      "start": 2526.065,
+      "end": 2527.065,
+      "text": "Why do you live here?"
+    },
+    {
+      "start": 2527.265,
+      "end": 2528.525,
+      "text": "What do you want?"
+    },
+    {
+      "start": 2528.734,
+      "end": 2530.36,
+      "text": "I haven't any money."
+    },
+    {
+      "start": 2530.569,
+      "end": 2533.613,
+      "text": "This was the only place that wasn't burned to the ground."
+    },
+    {
+      "start": 2533.822,
+      "end": 2536.991,
+      "text": "So I, I brought my things in here."
+    },
+    {
+      "start": 2537.201,
+      "end": 2539.452,
+      "text": "Where did you find the girl?"
+    },
+    {
+      "start": 2539.662,
+      "end": 2542.789,
+      "text": "There's no girl."
+    },
+    {
+      "start": 2542.998,
+      "end": 2544.499,
+      "text": "I saw her."
+    },
+    {
+      "start": 2544.708,
+      "end": 2547.293,
+      "text": "She was sitting in this chair."
+    },
+    {
+      "start": 2547.503,
+      "end": 2549.295,
+      "text": "There is no girl!"
+    },
+    {
+      "start": 2549.505,
+      "end": 2551.422,
+      "text": "I know what she is."
+    },
+    {
+      "start": 2551.632,
+      "end": 2555.301,
+      "text": "Old woman, I know what she is!"
+    },
+    {
+      "start": 2555.511,
+      "end": 2557.387,
+      "text": "Listen to me, and listen to me very carefully."
+    },
+    {
+      "start": 2557.596,
+      "end": 2559.055,
+      "text": "I don't know what you want, nor do I fully"
+    },
+    {
+      "start": 2559.265,
+      "end": 2561.057,
+      "text": "understand your black abilities."
+    },
+    {
+      "start": 2561.267,
+      "end": 2563.434,
+      "text": "But if the two of you have not returned to Colbin within one"
+    },
+    {
+      "start": 2563.644,
+      "end": 2567.605,
+      "text": "night, I shall come back and kill you with my own hands,"
+    },
+    {
+      "start": 2567.815,
+      "end": 2571.609,
+      "text": "and burn this place to the ground once and for all."
+    },
+    {
+      "start": 2571.819,
+      "end": 2575.029,
+      "text": "Then you know who once lived here all those years ago?"
+    },
+    {
+      "start": 2577.741,
+      "end": 2580.66,
+      "text": "You know who lived here?"
+    },
+    {
+      "start": 2593.132,
+      "end": 2594.132,
+      "text": "Is the Frenchman gone?"
+    },
+    {
+      "start": 2594.216,
+      "end": 2595.216,
+      "text": "No."
+    },
+    {
+      "start": 2595.416,
+      "end": 2596.416,
+      "text": "Why not?"
+    },
+    {
+      "start": 2596.616,
+      "end": 2597.176,
+      "text": "He now refuses to leave."
+    },
+    {
+      "start": 2597.386,
+      "end": 2599.137,
+      "text": "I don't think he will leave of his own accord."
+    },
+    {
+      "start": 2599.346,
+      "end": 2600.43,
+      "text": "He must."
+    },
+    {
+      "start": 2600.639,
+      "end": 2602.307,
+      "text": "I gave you definite orders."
+    },
+    {
+      "start": 2602.516,
+      "end": 2604.976,
+      "text": "Baron, no one knows this officer is here."
+    },
+    {
+      "start": 2605.185,
+      "end": 2607.186,
+      "text": "If he should never arrive in Copeland-"
+    },
+    {
+      "start": 2607.396,
+      "end": 2609.063,
+      "text": "Are you suggesting that-"
+    },
+    {
+      "start": 2609.273,
+      "end": 2610.94,
+      "text": "It's the only way."
+    },
+    {
+      "start": 2611.15,
+      "end": 2613.484,
+      "text": "That I will never."
+    },
+    {
+      "start": 2613.694,
+      "end": 2616.154,
+      "text": "God knows I have enough upon my conscience"
+    },
+    {
+      "start": 2616.363,
+      "end": 2619.616,
+      "text": "without the senseless murder of a young man who"
+    },
+    {
+      "start": 2619.825,
+      "end": 2620.825,
+      "text": "never harmed me."
+    },
+    {
+      "start": 2620.826,
+      "end": 2622.493,
+      "text": "How do you know what harm he plans?"
+    },
+    {
+      "start": 2622.703,
+      "end": 2624.37,
+      "text": "You want him wandering around the castle?"
+    },
+    {
+      "start": 2624.58,
+      "end": 2625.913,
+      "text": "Do you want him down in the crypt?"
+    },
+    {
+      "start": 2626.123,
+      "end": 2629.25,
+      "text": "Enough, the crypt is no concern of yours."
+    },
+    {
+      "start": 2791.83,
+      "end": 2792.83,
+      "text": "Andre?"
+    },
+    {
+      "start": 2795.876,
+      "end": 2797.293,
+      "text": "Andre?"
+    },
+    {
+      "start": 2797.503,
+      "end": 2799.837,
+      "text": "Help me."
+    },
+    {
+      "start": 2804.176,
+      "end": 2806.01,
+      "text": "Come to me."
+    },
+    {
+      "start": 2806.22,
+      "end": 2809.514,
+      "text": "Come to me, Andre."
+    },
+    {
+      "start": 2809.723,
+      "end": 2811.724,
+      "text": "I need you."
+    },
+    {
+      "start": 2811.934,
+      "end": 2814.727,
+      "text": "Where are you?"
+    },
+    {
+      "start": 2919.207,
+      "end": 2922.793,
+      "text": "What is the meaning of this intrusion?"
+    },
+    {
+      "start": 2923.003,
+      "end": 2924.003,
+      "text": "I'm sorry, Baron."
+    },
+    {
+      "start": 2924.171,
+      "end": 2925.963,
+      "text": "I thought I heard voices."
+    },
+    {
+      "start": 2926.173,
+      "end": 2929.967,
+      "text": "Does that give you the right to burst into my room unannounced?"
+    },
+    {
+      "start": 2930.177,
+      "end": 2931.928,
+      "text": "I beg your pardon, Baron."
+    },
+    {
+      "start": 2932.137,
+      "end": 2935.89,
+      "text": "Stefan has gone to the village to get you another horse."
+    },
+    {
+      "start": 2936.099,
+      "end": 2938.392,
+      "text": "It will save us both embarrassment if you will"
+    },
+    {
+      "start": 2938.602,
+      "end": 2940.478,
+      "text": "leave the moment he returns."
+    },
+    {
+      "start": 2940.687,
+      "end": 2942.188,
+      "text": "There can be no doubt of it, sir."
+    },
+    {
+      "start": 2953.158,
+      "end": 2955.952,
+      "text": "Ilsa?"
+    },
+    {
+      "start": 2956.161,
+      "end": 2958.245,
+      "text": "You're doing the best thing, Lieutenant."
+    },
+    {
+      "start": 2958.455,
+      "end": 2959.914,
+      "text": "The Baron often does things which"
+    },
+    {
+      "start": 2960.123,
+      "end": 2962.166,
+      "text": "may seem strange to you and me."
+    },
+    {
+      "start": 2962.376,
+      "end": 2964.794,
+      "text": "But the death of the Baroness was a severe shock to him,"
+    },
+    {
+      "start": 2965.003,
+      "end": 2967.129,
+      "text": "one from which I fear he has never fully recovered."
+    },
+    {
+      "start": 2967.339,
+      "end": 2968.839,
+      "text": "I understand completely, Stefan."
+    },
+    {
+      "start": 2977.766,
+      "end": 2980.601,
+      "text": "Tell me something, Stefan."
+    },
+    {
+      "start": 2980.811,
+      "end": 2982.603,
+      "text": "If I can."
+    },
+    {
+      "start": 2982.813,
+      "end": 2983.813,
+      "text": "Who is Eric?"
+    },
+    {
+      "start": 2987.067,
+      "end": 2989.402,
+      "text": "You recall the Baron spoke of returning from the war"
+    },
+    {
+      "start": 2989.611,
+      "end": 2991.404,
+      "text": "and finding the Baroness with another?"
+    },
+    {
+      "start": 2991.613,
+      "end": 2992.613,
+      "text": "Yes."
+    },
+    {
+      "start": 2992.813,
+      "end": 2994.073,
+      "text": "Eric was that other."
+    },
+    {
+      "start": 3075.28,
+      "end": 3076.781,
+      "text": "Wait!"
+    },
+    {
+      "start": 3163.285,
+      "end": 3165.536,
+      "text": "Gustav?"
+    },
+    {
+      "start": 3165.745,
+      "end": 3168.164,
+      "text": "She has seen you."
+    },
+    {
+      "start": 3168.373,
+      "end": 3171.125,
+      "text": "She loves you."
+    },
+    {
+      "start": 3171.334,
+      "end": 3173.21,
+      "text": "You must help her."
+    },
+    {
+      "start": 3177.257,
+      "end": 3185.257,
+      "text": "Tonight, her soul cries out for release."
+    },
+    {
+      "start": 3185.682,
+      "end": 3189.101,
+      "text": "Go back."
+    },
+    {
+      "start": 3248.036,
+      "end": 3250.287,
+      "text": "I've waited for you so long."
+    },
+    {
+      "start": 3250.497,
+      "end": 3253.916,
+      "text": "I've been searching for you to help you,"
+    },
+    {
+      "start": 3254.125,
+      "end": 3260.381,
+      "text": "but you wander in strange places at strange hours."
+    },
+    {
+      "start": 3260.59,
+      "end": 3263.384,
+      "text": "You're really here."
+    },
+    {
+      "start": 3263.593,
+      "end": 3264.593,
+      "text": "Of course I'm here."
+    },
+    {
+      "start": 3264.594,
+      "end": 3268.305,
+      "text": "And I'll never leave you again."
+    },
+    {
+      "start": 3268.515,
+      "end": 3269.515,
+      "text": "Never?"
+    },
+    {
+      "start": 3273.895,
+      "end": 3277.356,
+      "text": "When the night comes, I get cold."
+    },
+    {
+      "start": 3280.193,
+      "end": 3283.696,
+      "text": "My arms and my shoulders get cold."
+    },
+    {
+      "start": 3283.905,
+      "end": 3287.283,
+      "text": "I don't like the night."
+    },
+    {
+      "start": 3287.492,
+      "end": 3290.619,
+      "text": "I want to be free of it."
+    },
+    {
+      "start": 3290.829,
+      "end": 3292.246,
+      "text": "You are free."
+    },
+    {
+      "start": 3292.455,
+      "end": 3297.543,
+      "text": "Only in here, in this holy place."
+    },
+    {
+      "start": 3297.752,
+      "end": 3300.17,
+      "text": "No, everywhere with me."
+    },
+    {
+      "start": 3300.38,
+      "end": 3302.715,
+      "text": "You must come away with me now."
+    },
+    {
+      "start": 3302.924,
+      "end": 3307.97,
+      "text": "No, I can't, not until-"
+    },
+    {
+      "start": 3308.179,
+      "end": 3310.973,
+      "text": "Until what?"
+    },
+    {
+      "start": 3311.182,
+      "end": 3313.309,
+      "text": "The crypt."
+    },
+    {
+      "start": 3313.518,
+      "end": 3318.772,
+      "text": "It must be destroyed, and with it the dead."
+    },
+    {
+      "start": 3318.982,
+      "end": 3320.399,
+      "text": "Don't speak of the dead anymore."
+    },
+    {
+      "start": 3320.608,
+      "end": 3324.236,
+      "text": "You're with me now."
+    },
+    {
+      "start": 3324.446,
+      "end": 3326.363,
+      "text": "I am possessed of the dead."
+    },
+    {
+      "start": 3326.573,
+      "end": 3327.614,
+      "text": "You're a warm, living woman."
+    },
+    {
+      "start": 3327.824,
+      "end": 3329.867,
+      "text": "Who has told you these things?"
+    },
+    {
+      "start": 3330.076,
+      "end": 3331.076,
+      "text": "The dead."
+    },
+    {
+      "start": 3331.077,
+      "end": 3333.829,
+      "text": "In Paris, they're doing wonderful things"
+    },
+    {
+      "start": 3334.039,
+      "end": 3337.458,
+      "text": "to discover the nature of the mind."
+    },
+    {
+      "start": 3337.667,
+      "end": 3338.667,
+      "text": "I'll take you there."
+    },
+    {
+      "start": 3338.877,
+      "end": 3341.295,
+      "text": "There are doctors who can free you from this-"
+    },
+    {
+      "start": 3341.504,
+      "end": 3342.504,
+      "text": "From the dead?"
+    },
+    {
+      "start": 3342.505,
+      "end": 3347.468,
+      "text": "The dead cannot reach out from the grave."
+    },
+    {
+      "start": 3347.677,
+      "end": 3350.471,
+      "text": "You must come away with me now."
+    },
+    {
+      "start": 3350.68,
+      "end": 3352.097,
+      "text": "No."
+    },
+    {
+      "start": 3352.307,
+      "end": 3354.099,
+      "text": "I'm afraid."
+    },
+    {
+      "start": 3354.309,
+      "end": 3356.06,
+      "text": "The night."
+    },
+    {
+      "start": 3356.269,
+      "end": 3358.145,
+      "text": "There's nothing to be afraid of."
+    },
+    {
+      "start": 3370.45,
+      "end": 3371.95,
+      "text": "You see?"
+    },
+    {
+      "start": 3372.16,
+      "end": 3376.33,
+      "text": "Love me and there is no fear."
+    },
+    {
+      "start": 3376.539,
+      "end": 3381.001,
+      "text": "Yes, I do love you."
+    },
+    {
+      "start": 3384.422,
+      "end": 3386.006,
+      "text": "Then come away with me."
+    },
+    {
+      "start": 3400.605,
+      "end": 3403.857,
+      "text": "Wait here."
+    },
+    {
+      "start": 3404.067,
+      "end": 3405.567,
+      "text": "It's all right."
+    },
+    {
+      "start": 3567.313,
+      "end": 3573.527,
+      "text": "Ilsa, my love, you are not alone."
+    },
+    {
+      "start": 3573.736,
+      "end": 3576.488,
+      "text": "I am here with you now."
+    },
+    {
+      "start": 3576.698,
+      "end": 3580.826,
+      "text": "Soon, I will join you in eternal sleep."
+    },
+    {
+      "start": 3581.035,
+      "end": 3587.249,
+      "text": "Stefan will flood the crypt and seal us here together"
+    },
+    {
+      "start": 3587.458,
+      "end": 3588.667,
+      "text": "with our love."
+    },
+    {
+      "start": 3593.339,
+      "end": 3595.549,
+      "text": "Ilsa?"
+    },
+    {
+      "start": 3595.758,
+      "end": 3596.758,
+      "text": "Ilsa?"
+    },
+    {
+      "start": 3599.679,
+      "end": 3602.139,
+      "text": "Ilsa?"
+    },
+    {
+      "start": 3602.348,
+      "end": 3604.6,
+      "text": "Why do you not talk to me?"
+    },
+    {
+      "start": 3607.645,
+      "end": 3610.105,
+      "text": "I am here."
+    },
+    {
+      "start": 3610.315,
+      "end": 3613.483,
+      "text": "I've been waiting for you."
+    },
+    {
+      "start": 3613.693,
+      "end": 3616.153,
+      "text": "My love, my love."
+    },
+    {
+      "start": 3621.2,
+      "end": 3623.577,
+      "text": "You know what you must do."
+    },
+    {
+      "start": 3623.786,
+      "end": 3625.537,
+      "text": "No, anything I will do."
+    },
+    {
+      "start": 3625.747,
+      "end": 3627.08,
+      "text": "But that, I dare not."
+    },
+    {
+      "start": 3627.29,
+      "end": 3629.207,
+      "text": "Do not ask me, I beg of you."
+    },
+    {
+      "start": 3629.417,
+      "end": 3633.378,
+      "text": "You must, or we can never be together."
+    },
+    {
+      "start": 3633.588,
+      "end": 3634.588,
+      "text": "No, no, I cannot."
+    },
+    {
+      "start": 3634.589,
+      "end": 3637.466,
+      "text": "I dare not."
+    },
+    {
+      "start": 3637.675,
+      "end": 3638.925,
+      "text": "Look at me, Victor."
+    },
+    {
+      "start": 3649.395,
+      "end": 3651.647,
+      "text": "Why do you torment me so?"
+    },
+    {
+      "start": 3651.856,
+      "end": 3653.649,
+      "text": "You must do it, Victor."
+    },
+    {
+      "start": 3653.858,
+      "end": 3659.696,
+      "text": "Only then can we be together — only then, Victor."
+    },
+    {
+      "start": 3659.906,
+      "end": 3661.615,
+      "text": "I cannot."
+    },
+    {
+      "start": 3661.824,
+      "end": 3663.7,
+      "text": "I dare not."
+    },
+    {
+      "start": 3663.91,
+      "end": 3667.788,
+      "text": "My soul will be damned to eternal perdition."
+    },
+    {
+      "start": 3667.997,
+      "end": 3669.748,
+      "text": "Let me see who you really are!"
+    },
+    {
+      "start": 3672.71,
+      "end": 3673.71,
+      "text": "No!"
+    },
+    {
+      "start": 3673.795,
+      "end": 3674.795,
+      "text": "No, go back!"
+    },
+    {
+      "start": 3674.796,
+      "end": 3675.796,
+      "text": "You must not!"
+    },
+    {
+      "start": 3675.996,
+      "end": 3676.996,
+      "text": "No!"
+    },
+    {
+      "start": 3677.131,
+      "end": 3679.716,
+      "text": "Let me go!"
+    },
+    {
+      "start": 3679.926,
+      "end": 3682.427,
+      "text": "What kind of a woman are you?"
+    },
+    {
+      "start": 3685.056,
+      "end": 3686.306,
+      "text": "Where you are you?"
+    },
+    {
+      "start": 3694.482,
+      "end": 3695.816,
+      "text": "Who are you?"
+    },
+    {
+      "start": 3700.238,
+      "end": 3701.238,
+      "text": "Helene?"
+    },
+    {
+      "start": 3717.588,
+      "end": 3719.256,
+      "text": "Is there a doctor in the village?"
+    },
+    {
+      "start": 3719.465,
+      "end": 3721.717,
+      "text": "his illness is not of the flesh."
+    },
+    {
+      "start": 3721.926,
+      "end": 3722.926,
+      "text": "I have seen this before."
+    },
+    {
+      "start": 3722.927,
+      "end": 3725.595,
+      "text": "In a day or two, his mind will return."
+    },
+    {
+      "start": 3725.805,
+      "end": 3727.723,
+      "text": "We can only wait."
+    },
+    {
+      "start": 3727.932,
+      "end": 3729.307,
+      "text": "The Baron tells me you've been with him"
+    },
+    {
+      "start": 3729.517,
+      "end": 3732.686,
+      "text": "since the Polish campaign."
+    },
+    {
+      "start": 3732.895,
+      "end": 3735.063,
+      "text": "That is true,"
+    },
+    {
+      "start": 3735.273,
+      "end": 3737.858,
+      "text": "Then you must have been in this castle for 20 years."
+    },
+    {
+      "start": 3738.067,
+      "end": 3741.153,
+      "text": "You must know every section of the estate."
+    },
+    {
+      "start": 3741.362,
+      "end": 3743.822,
+      "text": "He's regaining consciousness."
+    },
+    {
+      "start": 3744.031,
+      "end": 3747.951,
+      "text": "No, he often moans during these seizures."
+    },
+    {
+      "start": 3748.161,
+      "end": 3749.786,
+      "text": "You have keys."
+    },
+    {
+      "start": 3749.996,
+      "end": 3752.289,
+      "text": "Fetch them, I'd like to see the chapel."
+    },
+    {
+      "start": 3752.498,
+      "end": 3754.166,
+      "text": "The chapel?"
+    },
+    {
+      "start": 3754.375,
+      "end": 3755.667,
+      "text": "Yes, if you don't mind."
+    },
+    {
+      "start": 3794.832,
+      "end": 3796.541,
+      "text": "The hinges have rusted solid."
+    },
+    {
+      "start": 3796.751,
+      "end": 3798.668,
+      "text": "Do you have a crowbar?"
+    },
+    {
+      "start": 3798.878,
+      "end": 3799.878,
+      "text": "Yes, come with me."
+    },
+    {
+      "start": 3812.308,
+      "end": 3813.308,
+      "text": "What is it?"
+    },
+    {
+      "start": 3813.476,
+      "end": 3816.228,
+      "text": "That light there, that's the Baroness's bedroom"
+    },
+    {
+      "start": 3816.437,
+      "end": 3817.687,
+      "text": "in the tower."
+    },
+    {
+      "start": 3817.897,
+      "end": 3819.689,
+      "text": "The room has been sealed ever since that night."
+    },
+    {
+      "start": 3819.899,
+      "end": 3822.359,
+      "text": "Not even the Baron would enter."
+    },
+    {
+      "start": 3822.568,
+      "end": 3823.568,
+      "text": "Come with me."
+    },
+    {
+      "start": 3847.218,
+      "end": 3848.969,
+      "text": "Where's the key?"
+    },
+    {
+      "start": 3849.178,
+      "end": 3852.472,
+      "text": "Only the Baron has the key to this lock."
+    },
+    {
+      "start": 3852.682,
+      "end": 3853.723,
+      "text": "Lieutenant, don't!"
+    },
+    {
+      "start": 3865.111,
+      "end": 3867.946,
+      "text": "If the Baron should find out we've entered this room-"
+    },
+    {
+      "start": 3879.125,
+      "end": 3880.792,
+      "text": "Did the Baroness have a child?"
+    },
+    {
+      "start": 3881.002,
+      "end": 3882.002,
+      "text": "I don't know."
+    },
+    {
+      "start": 3882.128,
+      "end": 3883.211,
+      "text": "I never though she did."
+    },
+    {
+      "start": 3883.421,
+      "end": 3885.171,
+      "text": "You spare me nothing."
+    },
+    {
+      "start": 3888.134,
+      "end": 3890.468,
+      "text": "Baron, if you'll permit me, I think that I can explain."
+    },
+    {
+      "start": 3891.053,
+      "end": 3892.053,
+      "text": "Forgive me, Baron."
+    },
+    {
+      "start": 3892.263,
+      "end": 3893.263,
+      "text": "Stefan!"
+    },
+    {
+      "start": 3895.182,
+      "end": 3897.517,
+      "text": "Take this gun."
+    },
+    {
+      "start": 3897.727,
+      "end": 3900.02,
+      "text": "Escort this gentleman from the castle."
+    },
+    {
+      "start": 3903.983,
+      "end": 3907.569,
+      "text": "If he resists, kill him."
+    },
+    {
+      "start": 3907.778,
+      "end": 3909.613,
+      "text": "Yes, Baron."
+    },
+    {
+      "start": 3909.822,
+      "end": 3910.822,
+      "text": "Lieutenant."
+    },
+    {
+      "start": 3928.049,
+      "end": 3931.927,
+      "text": "My love, my love."
+    },
+    {
+      "start": 3932.136,
+      "end": 3933.345,
+      "text": "I am here, Victor."
+    },
+    {
+      "start": 3939.393,
+      "end": 3942.228,
+      "text": "I'm weary, Ilsa."
+    },
+    {
+      "start": 3942.438,
+      "end": 3946.024,
+      "text": "My soul cries out for relief."
+    },
+    {
+      "start": 3946.233,
+      "end": 3949.861,
+      "text": "There is but one way, Victor."
+    },
+    {
+      "start": 3950.071,
+      "end": 3955.617,
+      "text": "No, the holy covenants of God forbid it."
+    },
+    {
+      "start": 3955.826,
+      "end": 3957.953,
+      "text": "You will be forgiven."
+    },
+    {
+      "start": 3958.162,
+      "end": 3959.829,
+      "text": "If I could be sure."
+    },
+    {
+      "start": 3960.039,
+      "end": 3963.333,
+      "text": "Take your life as you took mine."
+    },
+    {
+      "start": 3963.542,
+      "end": 3969.923,
+      "text": "Let your own hand destroy you and bring us together forever."
+    },
+    {
+      "start": 3970.132,
+      "end": 3972.467,
+      "text": "Forever."
+    },
+    {
+      "start": 3972.677,
+      "end": 3975.303,
+      "text": "No more torment, Victor, forever."
+    },
+    {
+      "start": 3977.89,
+      "end": 3978.89,
+      "text": "Forever."
+    },
+    {
+      "start": 3981.477,
+      "end": 3983.269,
+      "text": "I will, Ilsa."
+    },
+    {
+      "start": 3983.479,
+      "end": 3986.773,
+      "text": "I will."
+    },
+    {
+      "start": 3986.983,
+      "end": 3989.859,
+      "text": "I promise you, Lieutenant, if you return to von Leppe castle,"
+    },
+    {
+      "start": 3990.069,
+      "end": 3992.07,
+      "text": "I shall not hesitate to kill you."
+    },
+    {
+      "start": 4030.943,
+      "end": 4031.943,
+      "text": "Where is she?"
+    },
+    {
+      "start": 4032.143,
+      "end": 4033.403,
+      "text": "Let me be."
+    },
+    {
+      "start": 4033.612,
+      "end": 4036.99,
+      "text": "Why did you lie to me about the girl?"
+    },
+    {
+      "start": 4041.078,
+      "end": 4043.204,
+      "text": "Call it off."
+    },
+    {
+      "start": 4048.669,
+      "end": 4051.046,
+      "text": "It doesn't matter now."
+    },
+    {
+      "start": 4051.255,
+      "end": 4052.839,
+      "text": "You're too late."
+    },
+    {
+      "start": 4053.049,
+      "end": 4054.591,
+      "text": "Tonight, he damns himself."
+    },
+    {
+      "start": 4054.8,
+      "end": 4058.762,
+      "text": "Yes, even now she taunts him to his own eternal doom."
+    },
+    {
+      "start": 4058.971,
+      "end": 4062.057,
+      "text": "You control the girl, just as you control that bird."
+    },
+    {
+      "start": 4062.266,
+      "end": 4063.308,
+      "text": "How?"
+    },
+    {
+      "start": 4063.517,
+      "end": 4065.143,
+      "text": "Mesmerism?"
+    },
+    {
+      "start": 4065.352,
+      "end": 4066.644,
+      "text": "Mesmerism, you fool."
+    },
+    {
+      "start": 4066.854,
+      "end": 4067.937,
+      "text": "Why?"
+    },
+    {
+      "start": 4068.147,
+      "end": 4071.149,
+      "text": "Answer me, old woman, or I'll break your neck."
+    },
+    {
+      "start": 4071.358,
+      "end": 4074.36,
+      "text": "To avenge myself on the Baron von Leppe."
+    },
+    {
+      "start": 4074.57,
+      "end": 4080.158,
+      "text": "She will drive him to God's one unpardonable sin, suicide."
+    },
+    {
+      "start": 4080.367,
+      "end": 4081.367,
+      "text": "For what offense?"
+    },
+    {
+      "start": 4081.41,
+      "end": 4083.119,
+      "text": "What has the Baron done to you?"
+    },
+    {
+      "start": 4086.123,
+      "end": 4089.542,
+      "text": "He killed my son, Eric."
+    },
+    {
+      "start": 4089.752,
+      "end": 4091.002,
+      "text": "Eric was your son?"
+    },
+    {
+      "start": 4091.212,
+      "end": 4093.129,
+      "text": "Yes."
+    },
+    {
+      "start": 4093.339,
+      "end": 4095.632,
+      "text": "And tonight, the Baron pays for Eric's life"
+    },
+    {
+      "start": 4095.841,
+      "end": 4099.177,
+      "text": "with his own immortal soul!"
+    },
+    {
+      "start": 4099.386,
+      "end": 4103.014,
+      "text": "She spoke of destroying the crypt."
+    },
+    {
+      "start": 4103.224,
+      "end": 4105.85,
+      "text": "Too late, too late."
+    },
+    {
+      "start": 4132.878,
+      "end": 4135.13,
+      "text": "Baron!"
+    },
+    {
+      "start": 4135.339,
+      "end": 4137.465,
+      "text": "Baron, you mustn't go — ah!"
+    },
+    {
+      "start": 4157.57,
+      "end": 4158.57,
+      "text": "Baron!"
+    },
+    {
+      "start": 4179.216,
+      "end": 4180.216,
+      "text": "Where's the Baron?"
+    },
+    {
+      "start": 4180.301,
+      "end": 4181.301,
+      "text": "We must get to him."
+    },
+    {
+      "start": 4181.501,
+      "end": 4182.677,
+      "text": "He's locked himself in the crypt."
+    },
+    {
+      "start": 4182.887,
+      "end": 4184.679,
+      "text": "Eric is avenged."
+    },
+    {
+      "start": 4184.889,
+      "end": 4186.264,
+      "text": "Eric avenged?"
+    },
+    {
+      "start": 4186.473,
+      "end": 4190.226,
+      "text": "She's used the girl as a puppet to drive the Baron to suicide."
+    },
+    {
+      "start": 4190.811,
+      "end": 4192.645,
+      "text": "She thinks it was the Baron that killed her son."
+    },
+    {
+      "start": 4192.855,
+      "end": 4194.23,
+      "text": "She never knew it was you."
+    },
+    {
+      "start": 4194.44,
+      "end": 4195.44,
+      "text": "What do you mean?"
+    },
+    {
+      "start": 4195.64,
+      "end": 4197.192,
+      "text": "He killed my Eric!"
+    },
+    {
+      "start": 4197.401,
+      "end": 4199.194,
+      "text": "Eric is her son?"
+    },
+    {
+      "start": 4199.403,
+      "end": 4200.528,
+      "text": "You murdered!"
+    },
+    {
+      "start": 4200.738,
+      "end": 4202.53,
+      "text": "No, wait!"
+    },
+    {
+      "start": 4202.74,
+      "end": 4205.116,
+      "text": "Don't you see now it was all a lie?"
+    },
+    {
+      "start": 4205.326,
+      "end": 4208.119,
+      "text": "The Baron did return that night to find Eric with the Baroness."
+    },
+    {
+      "start": 4208.329,
+      "end": 4209.329,
+      "text": "And he did kill her."
+    },
+    {
+      "start": 4209.529,
+      "end": 4210.529,
+      "text": "But there was a struggle."
+    },
+    {
+      "start": 4210.729,
+      "end": 4213.166,
+      "text": "And in the fight, it was not Eric who died, but the Baron!"
+    },
+    {
+      "start": 4213.375,
+      "end": 4215.126,
+      "text": "I killed the Baron."
+    },
+    {
+      "start": 4215.336,
+      "end": 4217.629,
+      "text": "Then Eric is still alive?"
+    },
+    {
+      "start": 4217.838,
+      "end": 4218.838,
+      "text": "He took the Baron's place."
+    },
+    {
+      "start": 4218.964,
+      "end": 4221.09,
+      "text": "And for 20 years, no one has known."
+    },
+    {
+      "start": 4221.3,
+      "end": 4224.01,
+      "text": "But he took the Baron's place in mind as well as body."
+    },
+    {
+      "start": 4224.22,
+      "end": 4227.305,
+      "text": "In his mind, he is the Baron von Leppe."
+    },
+    {
+      "start": 4227.514,
+      "end": 4231.226,
+      "text": "The crypt — she's told him to flood the cellars."
+    },
+    {
+      "start": 4231.435,
+      "end": 4233.436,
+      "text": "Now they'll both be killed."
+    },
+    {
+      "start": 4233.646,
+      "end": 4234.979,
+      "text": "Eric!"
+    },
+    {
+      "start": 4235.189,
+      "end": 4236.856,
+      "text": "Flood the cellars, how?"
+    },
+    {
+      "start": 4237.066,
+      "end": 4240.193,
+      "text": "There's a tunnel that leads from the sea to the crypt."
+    },
+    {
+      "start": 4240.402,
+      "end": 4241.402,
+      "text": "Come with me."
+    },
+    {
+      "start": 4258.837,
+      "end": 4260.213,
+      "text": "He's locked it from the inside."
+    },
+    {
+      "start": 4273.936,
+      "end": 4274.936,
+      "text": "You keep on here."
+    },
+    {
+      "start": 4275.136,
+      "end": 4276.646,
+      "text": "I'll try and get in through the chapel."
+    },
+    {
+      "start": 4295.874,
+      "end": 4297.041,
+      "text": "I may need you."
+    },
+    {
+      "start": 4297.251,
+      "end": 4298.668,
+      "text": "No, no, not the chapel!"
+    },
+    {
+      "start": 4298.877,
+      "end": 4300.378,
+      "text": "I may not enter the house of God!"
+    },
+    {
+      "start": 4300.587,
+      "end": 4302.213,
+      "text": "I have made my pact with another!"
+    },
+    {
+      "start": 4302.423,
+      "end": 4304.424,
+      "text": "No!"
+    },
+    {
+      "start": 4304.624,
+      "end": 4305.624,
+      "text": "No closer!"
+    },
+    {
+      "start": 4305.824,
+      "end": 4307.176,
+      "text": "No!"
+    },
+    {
+      "start": 4353.432,
+      "end": 4360.646,
+      "text": "I'm here, Ilsa, my love, this time forever."
+    },
+    {
+      "start": 4360.856,
+      "end": 4363.274,
+      "text": "Now, Victor, now."
+    },
+    {
+      "start": 4363.484,
+      "end": 4364.734,
+      "text": "I am waiting."
+    },
+    {
+      "start": 4372.368,
+      "end": 4375.328,
+      "text": "Hurry, Victor, hurry!"
+    },
+    {
+      "start": 4393.68,
+      "end": 4397.392,
+      "text": "Now, Victor, bring the sea into the crypt"
+    },
+    {
+      "start": 4397.601,
+      "end": 4399.477,
+      "text": "to mantle us forever."
+    },
+    {
+      "start": 4418.872,
+      "end": 4422.291,
+      "text": "We will be together again, Victor,"
+    },
+    {
+      "start": 4422.501,
+      "end": 4425.128,
+      "text": "together with our love here beneath the sea."
+    },
+    {
+      "start": 4429.466,
+      "end": 4430.967,
+      "text": "Come to me, my love."
+    },
+    {
+      "start": 4431.176,
+      "end": 4433.302,
+      "text": "Draw the veil."
+    },
+    {
+      "start": 4433.512,
+      "end": 4435.513,
+      "text": "Look at me."
+    },
+    {
+      "start": 4435.722,
+      "end": 4441.811,
+      "text": "Come see how eagerly I await your embrace."
+    },
+    {
+      "start": 4449.862,
+      "end": 4451.696,
+      "text": "What have you done to me?"
+    },
+    {
+      "start": 4451.905,
+      "end": 4454.949,
+      "text": "I have damned you as you damned me."
+    },
+    {
+      "start": 4455.159,
+      "end": 4457.618,
+      "text": "The part of me that loved you lies there, Victor,"
+    },
+    {
+      "start": 4457.828,
+      "end": 4460.204,
+      "text": "rotting in the coffin."
+    },
+    {
+      "start": 4460.414,
+      "end": 4461.581,
+      "text": "Look at it."
+    },
+    {
+      "start": 4461.79,
+      "end": 4464.167,
+      "text": "See what your evil love has done to me."
+    },
+    {
+      "start": 4464.376,
+      "end": 4467.503,
+      "text": "And die with that vision in your brain."
+    },
+    {
+      "start": 4467.713,
+      "end": 4469.38,
+      "text": "Why have you done this to me?"
+    },
+    {
+      "start": 4469.59,
+      "end": 4472.3,
+      "text": "I am the spirit of Ilsa that your unholy sin gave over"
+    },
+    {
+      "start": 4472.509,
+      "end": 4475.011,
+      "text": "to the dark powers."
+    },
+    {
+      "start": 4475.22,
+      "end": 4477.388,
+      "text": "But now, by giving your immortal soul to them,"
+    },
+    {
+      "start": 4477.598,
+      "end": 4481.35,
+      "text": "I will be free, Eric."
+    },
+    {
+      "start": 4687.182,
+      "end": 4688.683,
+      "text": "You're safe now."
+    },
+    {
+      "start": 4691.853,
+      "end": 4693.854,
+      "text": "It's over."
+    },
+    {
+      "start": 4694.064,
+      "end": 4695.064,
+      "text": "It's over."
+    },
+    {
+      "start": 4695.264,
+      "end": 4696.264,
+      "text": "Do you understand?"
+    },
+    {
+      "start": 4698.36,
+      "end": 4699.61,
+      "text": "You're free now."
+    },
+    {
+      "start": 4703.115,
+      "end": 4705.324,
+      "text": "Free?"
+    },
+    {
+      "start": 4705.534,
+      "end": 4706.575,
+      "text": "Andre."
+    }
+  ]
+}

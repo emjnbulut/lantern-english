@@ -1,0 +1,34 @@
+{
+  "id": "alternative-math",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "Zh3Yz3PiXZw",
+  "title": "Alternative Math",
+  "creator": "David Maddox · Ideaman",
+  "year": 2017,
+  "level": "B2",
+  "category": "fun",
+  "genre": "comedy",
+  "durationSeconds": 547,
+  "summaryTr": "Basit bir matematik sorusu, öğretmen ile aileler arasında giderek büyüyen bir tartışmaya dönüşür. Okul, otorite ve tartışma dili üzerinden ilerleyen bir hiciv.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Gündelik okul konuşmaları, anlaşılır tartışmalar ve tekrarlanan savunmalar B2 seviyesine uygundur; alay ve toplumsal hicvi fark etmek gerekir.",
+  "advisoryTr": "Bağırışlar, tehditkâr davranışlar ve siyasi hiciv içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "Ideaman — Alternative Math",
+    "url": "https://www.youtube.com/watch?v=Zh3Yz3PiXZw",
+    "watchUrl": "https://www.youtube.com/watch?v=Zh3Yz3PiXZw",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "David Maddox · Ideaman · Yayıncı: Ideaman"
+  },
+  "glossary": {
+    "evidence": "kanıt",
+    "opinion": "görüş",
+    "principal": "okul müdürü",
+    "suspend": "görevden veya okuldan geçici uzaklaştırmak",
+    "correct": "doğru; düzeltmek",
+    "alternative": "alternatif; başka bir seçenek"
+  },
+  "captions": []
+}
