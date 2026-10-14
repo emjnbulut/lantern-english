@@ -1,5 +1,11 @@
 # Lantern English yayın kaydı
 
+**YouTube videoları geçici olarak yayından kaldırıldı (14 Ekim 2026):** Kullanıcının isteğiyle 10 YouTube videosu canlı katalogdan ve doğrudan video rotalarından çıkarıldı. Kaynak JSON dosyaları `published: false` ile özel depoda korunur; geri ekleme yeni kullanıcı isteği gerektirir. Canlı katalogda 21 yerel oynatıcılı video vardır.
+
+Kaynak uygulama `40bc66c11e0224c2551f1a2bba9886b690a1ba2b`; public yayın `a848853b23a4e5524a3129976026b3ff075fe985`; service worker `877a5b875c`. Pages dağıtımı `38576371870` başarılı. Temiz kaynak build 21 yayımlanan / 10 yayımlanmayan video üretti; 100 tarayıcı kontrolü geçti. Canlı sitede de aynı 100 kontrol geçti: 21 video rotası açılır, 10 kaldırılan doğrudan rota Video bulunamadı gösterir ve oynatıcı oluşturmaz. Ekran görüntüleri: `C:\Users\emin\AppData\Local\Temp\lantern-smoke-YIfXg8`.
+
+Canlı assets/js/app.js, data/videos.js ve sw.js SHA-256 değerleri incelenen pakete birebir eşleşir. Yayın commitinde yalnızca bu üç ziyaretçi dosyası değişti. Hikâye, makale, sözlük ve kullanıcı kayıtlarıyla ilgili değişiklik yapılmadı; public geçmiş normal push ile korundu. Canlı adres: https://lantern-english.github.io/#videos.
+
 **31 videoda dokunulabilir altyazı yayını (14 Ekim 2026):** Kullanıcı kaynakları GitHub'a kaydetmeyi ve canlı siteyi güncellemeyi açıkça istedi. Kaynak uygulama commiti `4b9d6530fdd22a0290d32fa89b39e154d9ac851f`; public yayın commiti `333ac9713e68e111ef68cbff82464f556badf9bd`. GitHub Pages dağıtımı `38572915196` başarılı. Canlı adres: https://lantern-english.github.io/#videos.
 
 Paket 38 hikâye, 16 makale, 7.838 sözlük maddesi ve 31 altyazılı video içerir. YouTube videolarının dokunulabilir İngilizce altyazısı oynatıcının altında görünür; kelimeye dokunmak videoyu durdurur. The Chair'ın altyazısı otomatik olarak etiketlidir. Sözlükte olmayan kelimeler MyMemory ile çevrilebilir; ilk arama internet gerektirir. Çeviri yoksa veya kaynak kelimeyle aynıysa gerçek anlam bulunduğu iddia edilmez. Yeni altyazı kaynaklarının atıfları korunur; yeni bir Creative Commons lisansı iddia edilmez.
