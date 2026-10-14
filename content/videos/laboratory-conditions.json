@@ -31,5 +31,1329 @@
     "patient": "hasta",
     "specimen": "numune; örnek"
   },
-  "captions": []
+  "captions": [
+    {
+      "start": 3.25,
+      "end": 6.75,
+      "text": "(suspenseful music plays)"
+    },
+    {
+      "start": 16.517,
+      "end": 21.522,
+      "text": "(muffled PA announcements) (curtain rattles)"
+    },
+    {
+      "start": 22.898,
+      "end": 24.025,
+      "text": "- Well, he did not get up (telephone rings)"
+    },
+    {
+      "start": 24.025,
+      "end": 26.569,
+      "text": "and walk out of here, guy's at death's door."
+    },
+    {
+      "start": 26.569,
+      "end": 28.571,
+      "text": "- Tell me you did not misplace my patient."
+    },
+    {
+      "start": 28.571,
+      "end": 30.531,
+      "text": "- I went to check the urine output in 1052,"
+    },
+    {
+      "start": 30.531,
+      "end": 31.574,
+      "text": "I was only gone a minute."
+    },
+    {
+      "start": 31.574,
+      "end": 34.618,
+      "text": "- Palliative care? - Social work found a hospice."
+    },
+    {
+      "start": 34.618,
+      "end": 35.661,
+      "text": "- If he lasts that long."
+    },
+    {
+      "start": 35.661,
+      "end": 37.371,
+      "text": "- No family, no insurance."
+    },
+    {
+      "start": 37.371,
+      "end": 38.873,
+      "text": "- Check the morgue."
+    },
+    {
+      "start": 38.873,
+      "end": 41.167,
+      "text": "- You know, there is such a thing as harvesting organs"
+    },
+    {
+      "start": 41.167,
+      "end": 43.335,
+      "text": "and trafficking in cadavers, or such"
+    },
+    {
+      "start": 43.335,
+      "end": 46.213,
+      "text": "is the public perception. Let's not play into that."
+    },
+    {
+      "start": 46.213,
+      "end": 48.966,
+      "text": "- Got him. Celestial discharge at 9:15."
+    },
+    {
+      "start": 48.966,
+      "end": 52.97,
+      "text": "- Okay, my patient expires and nobody pages me."
+    },
+    {
+      "start": 52.97,
+      "end": 55.598,
+      "text": "- Wait. Morgue says body never got there."
+    },
+    {
+      "start": 55.598,
+      "end": 57.141,
+      "text": "Give us a few minutes?"
+    },
+    {
+      "start": 57.141,
+      "end": 59.643,
+      "text": "- Track him down before your shift change so that I can"
+    },
+    {
+      "start": 59.643,
+      "end": 61.729,
+      "text": "go home. - (whispers) Okay, thanks."
+    },
+    {
+      "start": 61.729,
+      "end": 62.98,
+      "text": "(telephone clanks) We got trouble. Transportation"
+    },
+    {
+      "start": 62.98,
+      "end": 66.442,
+      "text": "never picked him up. (button clicks)"
+    },
+    {
+      "start": 66.442,
+      "end": 71.447,
+      "text": "(ominous music plays) (foot steps pace)"
+    },
+    {
+      "start": 79.914,
+      "end": 84.502,
+      "text": "(light rain) (engine slows down)"
+    },
+    {
+      "start": 84.502,
+      "end": 87.171,
+      "text": "(ominous music)"
+    },
+    {
+      "start": 103.938,
+      "end": 106.774,
+      "text": "(hospital sounds)"
+    },
+    {
+      "start": 157.825,
+      "end": 161.12,
+      "text": "(muffled PA sounds)"
+    },
+    {
+      "start": 161.12,
+      "end": 162.663,
+      "text": "- Uh, who is that?"
+    },
+    {
+      "start": 162.663,
+      "end": 163.747,
+      "text": "Who is she?"
+    },
+    {
+      "start": 163.747,
+      "end": 164.665,
+      "text": "Dan. Dan."
+    },
+    {
+      "start": 164.665,
+      "end": 166.584,
+      "text": "- This nice lady seems to have made a wrong turn."
+    },
+    {
+      "start": 166.584,
+      "end": 168.586,
+      "text": "- Uh, sure, right. Ma'am if you could come"
+    },
+    {
+      "start": 168.586,
+      "end": 169.92,
+      "text": "- Get away from me."
+    },
+    {
+      "start": 169.92,
+      "end": 170.754,
+      "text": "- Yeah. All right."
+    },
+    {
+      "start": 170.754,
+      "end": 171.922,
+      "text": "All right. Okay."
+    },
+    {
+      "start": 171.922,
+      "end": 173.174,
+      "text": "This area is off limits."
+    },
+    {
+      "start": 173.174,
+      "end": 174.216,
+      "text": "I'm sorry, but we're"
+    },
+    {
+      "start": 174.216,
+      "end": 176.51,
+      "text": "at a critical phase in a very dangerous experiment."
+    },
+    {
+      "start": 176.51,
+      "end": 178.095,
+      "text": "- You have my patient, show him to me"
+    },
+    {
+      "start": 178.095,
+      "end": 180.139,
+      "text": "or I call campus police."
+    },
+    {
+      "start": 180.139,
+      "end": 181.182,
+      "text": "And then the department chair."
+    },
+    {
+      "start": 181.182,
+      "end": 183.559,
+      "text": "- That would be me, Marjorie Kane"
+    },
+    {
+      "start": 183.559,
+      "end": 185.477,
+      "text": "Chair of the Graduate School of Neuroscience."
+    },
+    {
+      "start": 185.477,
+      "end": 186.312,
+      "text": "- You're in charge."
+    },
+    {
+      "start": 186.312,
+      "end": 189.148,
+      "text": "- Yes, Dr. Emma Holloway."
+    },
+    {
+      "start": 190.274,
+      "end": 193.152,
+      "text": "So regarding your patient, perhaps we could delay your fears"
+    },
+    {
+      "start": 193.152,
+      "end": 195.321,
+      "text": "by showing you our grand experiment."
+    },
+    {
+      "start": 196.822,
+      "end": 201.619,
+      "text": "- So what we've done is we've, we've surrounded this chamber"
+    },
+    {
+      "start": 201.619,
+      "end": 203.287,
+      "text": "every type of detection device we could think"
+    },
+    {
+      "start": 203.287,
+      "end": 207.333,
+      "text": "of air pressure, motion, light sensors,"
+    },
+    {
+      "start": 207.333,
+      "end": 208.959,
+      "text": "ultraviolet infrared, all spectra,"
+    },
+    {
+      "start": 208.959,
+      "end": 210.002,
+      "text": "- Temperature"
+    },
+    {
+      "start": 210.002,
+      "end": 211.545,
+      "text": "- Temperature, temperature to a hundredth"
+    },
+    {
+      "start": 211.545,
+      "end": 212.755,
+      "text": "of a centigrade actually,"
+    },
+    {
+      "start": 212.755,
+      "end": 215.216,
+      "text": "an electric grid to a fraction of a millivolt,"
+    },
+    {
+      "start": 215.216,
+      "end": 217.801,
+      "text": "magnetic, electromagnetic."
+    },
+    {
+      "start": 217.801,
+      "end": 219.762,
+      "text": "On, on the quantum level"
+    },
+    {
+      "start": 219.762,
+      "end": 222.264,
+      "text": "we have we've constructed an atomic net"
+    },
+    {
+      "start": 222.264,
+      "end": 224.225,
+      "text": "exactly one particle thick, right?"
+    },
+    {
+      "start": 224.225,
+      "end": 226.268,
+      "text": "So if anything passes through it, anything"
+    },
+    {
+      "start": 226.268,
+      "end": 229.355,
+      "text": "be it strange or charmed or up or down or backwards."
+    },
+    {
+      "start": 229.355,
+      "end": 235.819,
+      "text": "It'll create a wave pattern, measurable disturbance."
+    },
+    {
+      "start": 235.819,
+      "end": 239.949,
+      "text": "- The room is a vault, not of steel, but of detection."
+    },
+    {
+      "start": 239.949,
+      "end": 242.952,
+      "text": "- I'm happy for you. Now, my patient."
+    },
+    {
+      "start": 244.119,
+      "end": 249.083,
+      "text": "- Dr. Holloway, tonight in this very room"
+    },
+    {
+      "start": 249.083,
+      "end": 252.378,
+      "text": "we intend to verify empirically in the human species."
+    },
+    {
+      "start": 252.378,
+      "end": 258.926,
+      "text": "The existence of a soul. Nature does not know extinction,"
+    },
+    {
+      "start": 258.926,
+      "end": 263.389,
+      "text": "all it knows is transformation and everything that science"
+    },
+    {
+      "start": 263.389,
+      "end": 264.89,
+      "text": "has taught me and continues to teach me"
+    },
+    {
+      "start": 264.89,
+      "end": 267.226,
+      "text": "strengthens my belief in the continuity"
+    },
+    {
+      "start": 267.226,
+      "end": 269.645,
+      "text": "of our spiritual existence after death."
+    },
+    {
+      "start": 270.604,
+      "end": 272.314,
+      "text": "Nothing disappears without trace."
+    },
+    {
+      "start": 274.942,
+      "end": 275.776,
+      "text": "- Soul."
+    },
+    {
+      "start": 275.776,
+      "end": 278.362,
+      "text": "- Yes, you clinicians don't have a monopoly"
+    },
+    {
+      "start": 278.362,
+      "end": 279.571,
+      "text": "on the spiritual element."
+    },
+    {
+      "start": 279.571,
+      "end": 280.948,
+      "text": "- As in Faustian bargain."
+    },
+    {
+      "start": 280.948,
+      "end": 282.7,
+      "text": "- As in Jesus died to save it."
+    },
+    {
+      "start": 282.7,
+      "end": 284.994,
+      "text": "- And for this, you steal a corpse?"
+    },
+    {
+      "start": 287.121,
+      "end": 289.29,
+      "text": "- Doctor, your patient is not deceased."
+    },
+    {
+      "start": 291.041,
+      "end": 292.042,
+      "text": "Not yet."
+    },
+    {
+      "start": 293.377,
+      "end": 295.796,
+      "text": "- We got a live one, not by much."
+    },
+    {
+      "start": 299.8,
+      "end": 302.845,
+      "text": "- We need to transport this patient back to ICU immediately."
+    },
+    {
+      "start": 303.887,
+      "end": 306.932,
+      "text": "- George Lockwood, 73, history of portal hypertension,"
+    },
+    {
+      "start": 306.932,
+      "end": 309.893,
+      "text": "cirrhosis secondary to chronic alcohol abuse"
+    },
+    {
+      "start": 309.893,
+      "end": 312.187,
+      "text": "presented with acities and jaundice."
+    },
+    {
+      "start": 312.187,
+      "end": 314.815,
+      "text": "Status post massive hemorrhagic stroke"
+    },
+    {
+      "start": 314.815,
+      "end": 318.694,
+      "text": "- DNR, he's not expected to survive the night."
+    },
+    {
+      "start": 318.694,
+      "end": 321.572,
+      "text": "- DNR does not imply consent for an experimental study."
+    },
+    {
+      "start": 321.572,
+      "end": 323.657,
+      "text": "He's obtunded, he could not have given consent."
+    },
+    {
+      "start": 323.657,
+      "end": 326.452,
+      "text": "- Right now, our gentle Mr. Lockwood"
+    },
+    {
+      "start": 326.452,
+      "end": 330.164,
+      "text": "would be lying in a hospital ward alone and waiting to die."
+    },
+    {
+      "start": 330.164,
+      "end": 333.083,
+      "text": "And so a lost man, in a small hospital,"
+    },
+    {
+      "start": 333.083,
+      "end": 335.711,
+      "text": "in a city of no consequence passes on"
+    },
+    {
+      "start": 335.711,
+      "end": 338.964,
+      "text": "as have millions before him and millions will after."
+    },
+    {
+      "start": 338.964,
+      "end": 341.008,
+      "text": "An underpaid, overworked nurse makes a notation"
+    },
+    {
+      "start": 341.008,
+      "end": 342.468,
+      "text": "on his chart and his body is discarded"
+    },
+    {
+      "start": 342.468,
+      "end": 348.015,
+      "text": "with the morning trash, but here his death can have meaning."
+    },
+    {
+      "start": 349.516,
+      "end": 353.312,
+      "text": "No, he did not give consent for the study."
+    },
+    {
+      "start": 353.312,
+      "end": 355.105,
+      "text": "- Mr. Lockwood, can you hear me?"
+    },
+    {
+      "start": 357.191,
+      "end": 359.818,
+      "text": "- Doctor, it's not like we can ask for volunteers."
+    },
+    {
+      "start": 360.944,
+      "end": 362.905,
+      "text": "- Don't take the moral high ground Holloway."
+    },
+    {
+      "start": 362.905,
+      "end": 364.615,
+      "text": "If he coded you wouldn't intubate."
+    },
+    {
+      "start": 366.45,
+      "end": 368.202,
+      "text": "Aren't you curious?"
+    },
+    {
+      "start": 370.371,
+      "end": 371.747,
+      "text": "Let's see what happens."
+    },
+    {
+      "start": 378.962,
+      "end": 380.422,
+      "text": "- I want a steroid drip to"
+    },
+    {
+      "start": 380.422,
+      "end": 383.675,
+      "text": "decrease intracranial pressure, morphine for pain."
+    },
+    {
+      "start": 393.31,
+      "end": 394.144,
+      "text": "- Entering!"
+    },
+    {
+      "start": 394.144,
+      "end": 397.439,
+      "text": "- All right guys, let's fire it up."
+    },
+    {
+      "start": 397.439,
+      "end": 400.442,
+      "text": "(suspenseful music)"
+    },
+    {
+      "start": 423.048,
+      "end": 425.801,
+      "text": "(keypad beeping)"
+    },
+    {
+      "start": 427.97,
+      "end": 428.971,
+      "text": "- All closed."
+    },
+    {
+      "start": 430.764,
+      "end": 431.765,
+      "text": "- Chamber sealed."
+    },
+    {
+      "start": 447.614,
+      "end": 449.867,
+      "text": "- You're not troubled by this?"
+    },
+    {
+      "start": 449.867,
+      "end": 453.203,
+      "text": "- No, actually I think we ought spend more time"
+    },
+    {
+      "start": 453.203,
+      "end": 456.915,
+      "text": "on things like this, death, life."
+    },
+    {
+      "start": 456.915,
+      "end": 458.083,
+      "text": "What came before?"
+    },
+    {
+      "start": 458.083,
+      "end": 461.211,
+      "text": "What comes after? It's basic."
+    },
+    {
+      "start": 463.005,
+      "end": 464.798,
+      "text": "- So die already."
+    },
+    {
+      "start": 464.798,
+      "end": 467.634,
+      "text": "- There is no real moment of death."
+    },
+    {
+      "start": 467.634,
+      "end": 470.304,
+      "text": "It's a legal construct, something to put down"
+    },
+    {
+      "start": 470.304,
+      "end": 471.68,
+      "text": "on a form."
+    },
+    {
+      "start": 471.68,
+      "end": 473.557,
+      "text": "Long after the heart has stopped,"
+    },
+    {
+      "start": 473.557,
+      "end": 477.019,
+      "text": "we can still detect pulseless electrical activity."
+    },
+    {
+      "start": 477.019,
+      "end": 480.23,
+      "text": "Moment of death, its a fiction."
+    },
+    {
+      "start": 480.23,
+      "end": 481.231,
+      "text": "- Til tonight."
+    },
+    {
+      "start": 482.149,
+      "end": 485.235,
+      "text": "True moment of death, when the soul leaves the body."
+    },
+    {
+      "start": 485.235,
+      "end": 488.238,
+      "text": "- Spark of the divine on its journey home."
+    },
+    {
+      "start": 488.238,
+      "end": 490.24,
+      "text": "- So where do you put your money doctor?"
+    },
+    {
+      "start": 491.658,
+      "end": 493.327,
+      "text": "When cerebral blood flow is"
+    },
+    {
+      "start": 493.327,
+      "end": 496.497,
+      "text": "in adequate to support synaptic function or when the"
+    },
+    {
+      "start": 496.497,
+      "end": 499.124,
+      "text": "when the reticular formation shuts down?"
+    },
+    {
+      "start": 499.124,
+      "end": 503.921,
+      "text": "I've I mean, will the soul exit the body"
+    },
+    {
+      "start": 503.921,
+      "end": 508.717,
+      "text": "all at once or will it seep away?"
+    },
+    {
+      "start": 510.302,
+      "end": 512.804,
+      "text": "Like, like sand?"
+    },
+    {
+      "start": 512.804,
+      "end": 514.014,
+      "text": "Yeah."
+    },
+    {
+      "start": 516.225,
+      "end": 517.226,
+      "text": "- Is that it?"
+    },
+    {
+      "start": 518.685,
+      "end": 521.438,
+      "text": "- Decerebrate posturing, primitive response"
+    },
+    {
+      "start": 521.438,
+      "end": 522.564,
+      "text": "common in brain injury."
+    },
+    {
+      "start": 525.692,
+      "end": 527.152,
+      "text": "- Oh, here we go, here we go, here we go."
+    },
+    {
+      "start": 527.152,
+      "end": 528.403,
+      "text": "- This is it guys."
+    },
+    {
+      "start": 528.403,
+      "end": 529.655,
+      "text": "- All right."
+    },
+    {
+      "start": 529.655,
+      "end": 531.365,
+      "text": "Fundamental question with human existence,"
+    },
+    {
+      "start": 531.365,
+      "end": 532.366,
+      "text": "soon we're gonna know."
+    },
+    {
+      "start": 532.366,
+      "end": 533.242,
+      "text": "- And this is a good thing?"
+    },
+    {
+      "start": 533.242,
+      "end": 535.536,
+      "text": "There is such concept as faith you know."
+    },
+    {
+      "start": 535.536,
+      "end": 537.454,
+      "text": "- Faith, you've done some of the things I've done."
+    },
+    {
+      "start": 537.454,
+      "end": 539.957,
+      "text": "You start dancing towards the edge of the abyss."
+    },
+    {
+      "start": 539.957,
+      "end": 540.791,
+      "text": "You hunger for something a little bit"
+    },
+    {
+      "start": 540.791,
+      "end": 542.417,
+      "text": "more substantial than faith."
+    },
+    {
+      "start": 542.417,
+      "end": 545.504,
+      "text": "- (monitors beeping)"
+    },
+    {
+      "start": 558.559,
+      "end": 559.56,
+      "text": "- Amen."
+    },
+    {
+      "start": 568.819,
+      "end": 569.82,
+      "text": "- Anything?"
+    },
+    {
+      "start": 570.988,
+      "end": 572.781,
+      "text": "- Slight shift in the weight of the gurney"
+    },
+    {
+      "start": 573.949,
+      "end": 575.075,
+      "text": "it's within tolerance."
+    },
+    {
+      "start": 583.25,
+      "end": 585.085,
+      "text": "- (audible gasp)"
+    },
+    {
+      "start": 585.085,
+      "end": 586.044,
+      "text": "- What happened?"
+    },
+    {
+      "start": 586.044,
+      "end": 587.044,
+      "text": "- What is it?"
+    },
+    {
+      "start": 588.046,
+      "end": 591.133,
+      "text": "- There, right, right there."
+    },
+    {
+      "start": 592.801,
+      "end": 594.344,
+      "text": "- What do you see?"
+    },
+    {
+      "start": 594.344,
+      "end": 598.307,
+      "text": "- That! He's standing there."
+    },
+    {
+      "start": 600.309,
+      "end": 601.852,
+      "text": "You don't see it?"
+    },
+    {
+      "start": 601.852,
+      "end": 602.686,
+      "text": "- No. What is there to see?"
+    },
+    {
+      "start": 602.686,
+      "end": 604.187,
+      "text": "- There's nothing there."
+    },
+    {
+      "start": 604.187,
+      "end": 605.314,
+      "text": "- Oh my God."
+    },
+    {
+      "start": 605.314,
+      "end": 606.773,
+      "text": "He.. he's right there."
+    },
+    {
+      "start": 606.773,
+      "end": 608.442,
+      "text": "He's right there."
+    },
+    {
+      "start": 610.777,
+      "end": 612.195,
+      "text": "Oh my God."
+    },
+    {
+      "start": 612.195,
+      "end": 613.03,
+      "text": "Oh my God."
+    },
+    {
+      "start": 613.03,
+      "end": 614.615,
+      "text": "He, he's trapped."
+    },
+    {
+      "start": 614.615,
+      "end": 615.449,
+      "text": "You've trapped him."
+    },
+    {
+      "start": 615.449,
+      "end": 617.159,
+      "text": "You have to let him go."
+    },
+    {
+      "start": 617.159,
+      "end": 619.369,
+      "text": "You're tormenting him."
+    },
+    {
+      "start": 620.662,
+      "end": 622.789,
+      "text": "- Okay. You might disagree with what we're doing here."
+    },
+    {
+      "start": 622.789,
+      "end": 623.624,
+      "text": "That's fine."
+    },
+    {
+      "start": 623.624,
+      "end": 625.5,
+      "text": "But the whole performance with the"
+    },
+    {
+      "start": 625.5,
+      "end": 627.377,
+      "text": "- it's a pretty good performance."
+    },
+    {
+      "start": 627.377,
+      "end": 628.754,
+      "text": "- Yeah."
+    },
+    {
+      "start": 628.754,
+      "end": 631.048,
+      "text": "- We're gonna shut the grid down after one hour,"
+    },
+    {
+      "start": 631.048,
+      "end": 634.259,
+      "text": "one field at a time as per our protocols."
+    },
+    {
+      "start": 644.478,
+      "end": 647.314,
+      "text": "- You think I'm hallucinating or lying?"
+    },
+    {
+      "start": 647.314,
+      "end": 648.148,
+      "text": "- I uh..."
+    },
+    {
+      "start": 648.148,
+      "end": 649.566,
+      "text": "- You don't, you don't believe me."
+    },
+    {
+      "start": 649.566,
+      "end": 652.486,
+      "text": "- Look, you're asking a lot, doctor."
+    },
+    {
+      "start": 652.486,
+      "end": 653.654,
+      "text": "You're claiming that you can see something"
+    },
+    {
+      "start": 653.654,
+      "end": 654.571,
+      "text": "the rest of us can't."
+    },
+    {
+      "start": 654.571,
+      "end": 656.114,
+      "text": "That somehow your eyes are special"
+    },
+    {
+      "start": 656.114,
+      "end": 657.366,
+      "text": "or different, or I don't even know."
+    },
+    {
+      "start": 657.366,
+      "end": 659.493,
+      "text": "That certain photons hit your retina, but not ours?"
+    },
+    {
+      "start": 659.493,
+      "end": 662.663,
+      "text": "I mean, I I'm sorry, no, I, I don't."
+    },
+    {
+      "start": 662.663,
+      "end": 666.958,
+      "text": "- You, you put all those sensors all around the room."
+    },
+    {
+      "start": 666.958,
+      "end": 668.085,
+      "text": "Think about it."
+    },
+    {
+      "start": 668.085,
+      "end": 671.505,
+      "text": "What is the perfect device for your search?"
+    },
+    {
+      "start": 671.505,
+      "end": 673.34,
+      "text": "- You're gonna say human being. A human being."
+    },
+    {
+      "start": 673.34,
+      "end": 675.467,
+      "text": "- My observations are data as valid as any."
+    },
+    {
+      "start": 679.513,
+      "end": 680.513,
+      "text": "- Oh my God."
+    },
+    {
+      "start": 681.348,
+      "end": 682.224,
+      "text": "- Is it local?"
+    },
+    {
+      "start": 682.224,
+      "end": 683.225,
+      "text": "- In the northeast corner?"
+    },
+    {
+      "start": 683.225,
+      "end": 684.267,
+      "text": "- What the hell?"
+    },
+    {
+      "start": 686.144,
+      "end": 688.063,
+      "text": "- Yeah, the movement goes inward, not outward."
+    },
+    {
+      "start": 697.072,
+      "end": 703.578,
+      "text": "- (muffled) (echoing) Help me! Help me!"
+    },
+    {
+      "start": 711.378,
+      "end": 713.588,
+      "text": "- That almost looks, something is trying to get in."
+    },
+    {
+      "start": 713.588,
+      "end": 715.382,
+      "text": "- Oh my God, this is so much bigger than we thought."
+    },
+    {
+      "start": 715.382,
+      "end": 717.926,
+      "text": "The hand of God reaching down to collect a wayward soul!"
+    },
+    {
+      "start": 717.926,
+      "end": 718.844,
+      "text": "- It's not the hand of God."
+    },
+    {
+      "start": 718.844,
+      "end": 719.97,
+      "text": "That's not the hand of God."
+    },
+    {
+      "start": 719.97,
+      "end": 720.804,
+      "text": "He is trapped."
+    },
+    {
+      "start": 720.804,
+      "end": 723.724,
+      "text": "He's hanging there like bait and something has come."
+    },
+    {
+      "start": 723.724,
+      "end": 725.517,
+      "text": "- (woman singing) Pleased to meet you"
+    },
+    {
+      "start": 725.517,
+      "end": 727.936,
+      "text": "won't you guess my name..."
+    },
+    {
+      "start": 734.151,
+      "end": 735.819,
+      "text": "- Look, it's almost there."
+    },
+    {
+      "start": 735.819,
+      "end": 736.987,
+      "text": "It's almost there."
+    },
+    {
+      "start": 736.987,
+      "end": 738.822,
+      "text": "There it's inside."
+    },
+    {
+      "start": 738.822,
+      "end": 739.906,
+      "text": "- Go get her, run!"
+    },
+    {
+      "start": 742.951,
+      "end": 744.661,
+      "text": "- Don't!"
+    },
+    {
+      "start": 764.848,
+      "end": 765.807,
+      "text": "- Anything?"
+    },
+    {
+      "start": 765.807,
+      "end": 767.476,
+      "text": "- No, all movement stopped."
+    },
+    {
+      "start": 769.644,
+      "end": 771.062,
+      "text": "- No, no. No, no, no, no."
+    },
+    {
+      "start": 771.062,
+      "end": 772.062,
+      "text": "Come on!"
+    },
+    {
+      "start": 774.941,
+      "end": 777.527,
+      "text": "- Hey. I didn't know they abducted the body,"
+    },
+    {
+      "start": 777.527,
+      "end": 778.695,
+      "text": "she never told us that."
+    },
+    {
+      "start": 778.695,
+      "end": 779.905,
+      "text": "- It's all right, It's all right."
+    },
+    {
+      "start": 779.905,
+      "end": 780.739,
+      "text": "He made it, he made it."
+    },
+    {
+      "start": 780.739,
+      "end": 781.74,
+      "text": "I saw it."
+    },
+    {
+      "start": 782.908,
+      "end": 783.909,
+      "text": "I saw it."
+    },
+    {
+      "start": 784.659,
+      "end": 785.66,
+      "text": "- All right."
+    },
+    {
+      "start": 787.037,
+      "end": 788.538,
+      "text": "Well what about the next patient?"
+    },
+    {
+      "start": 788.538,
+      "end": 790.499,
+      "text": "And the one after that?"
+    },
+    {
+      "start": 803.845,
+      "end": 804.846,
+      "text": "- What?"
+    },
+    {
+      "start": 805.806,
+      "end": 807.057,
+      "text": "- I can feel it."
+    },
+    {
+      "start": 807.057,
+      "end": 808.183,
+      "text": "- What?"
+    },
+    {
+      "start": 809.434,
+      "end": 811.394,
+      "text": "- In my body I can, you can't feel that?"
+    },
+    {
+      "start": 811.394,
+      "end": 814.815,
+      "text": "- No. I want to!"
+    },
+    {
+      "start": 818.568,
+      "end": 822.197,
+      "text": "- Whatever caused the disturbance is manifesting itself."
+    },
+    {
+      "start": 822.197,
+      "end": 823.615,
+      "text": "You felt that right?"
+    },
+    {
+      "start": 823.615,
+      "end": 825.158,
+      "text": "- Maybe. I don't know."
+    },
+    {
+      "start": 825.158,
+      "end": 826.368,
+      "text": "The doctor kind of freaked me out."
+    },
+    {
+      "start": 826.368,
+      "end": 827.911,
+      "text": "- Dan, you felt it."
+    },
+    {
+      "start": 827.911,
+      "end": 828.954,
+      "text": "You felt it."
+    },
+    {
+      "start": 828.954,
+      "end": 830.956,
+      "text": "Describe it."
+    },
+    {
+      "start": 830.956,
+      "end": 831.79,
+      "text": "Just gimme one word."
+    },
+    {
+      "start": 831.79,
+      "end": 832.791,
+      "text": "Gimme one word."
+    },
+    {
+      "start": 833.708,
+      "end": 834.709,
+      "text": "- Evil."
+    },
+    {
+      "start": 836.753,
+      "end": 839.047,
+      "text": "- Yeah. I was gonna say malevolent."
+    },
+    {
+      "start": 839.047,
+      "end": 840.257,
+      "text": "- It's still here."
+    },
+    {
+      "start": 840.257,
+      "end": 841.258,
+      "text": "I still feel it."
+    },
+    {
+      "start": 843.76,
+      "end": 844.761,
+      "text": "- All right, um..."
+    },
+    {
+      "start": 846.638,
+      "end": 848.348,
+      "text": "Maybe when the fields dropped something got in,"
+    },
+    {
+      "start": 848.348,
+      "end": 850.141,
+      "text": "and then when we brought them back up..."
+    },
+    {
+      "start": 850.141,
+      "end": 851.351,
+      "text": "- We trapped it."
+    },
+    {
+      "start": 857.357,
+      "end": 858.358,
+      "text": "Trapped what?"
+    },
+    {
+      "start": 859.192,
+      "end": 861.278,
+      "text": "- Robbins, I unlock the door I want in."
+    },
+    {
+      "start": 861.278,
+      "end": 862.112,
+      "text": "- All right."
+    },
+    {
+      "start": 862.112,
+      "end": 862.946,
+      "text": "- I want in."
+    },
+    {
+      "start": 862.946,
+      "end": 863.946,
+      "text": "- I don't..."
+    },
+    {
+      "start": 866.408,
+      "end": 870.662,
+      "text": "Dr. Holloway, do you see anything in there?"
+    },
+    {
+      "start": 875.876,
+      "end": 877.711,
+      "text": "- I have to go in there, I have to know."
+    },
+    {
+      "start": 877.711,
+      "end": 878.795,
+      "text": "- I know, just, just!"
+    },
+    {
+      "start": 879.838,
+      "end": 883.508,
+      "text": "Tell me, is there anything in there?"
+    },
+    {
+      "start": 897.147,
+      "end": 898.44,
+      "text": "- Is there anything there?"
+    },
+    {
+      "start": 916.124,
+      "end": 919.92,
+      "text": "- No there's nothing in there."
+    },
+    {
+      "start": 922.38,
+      "end": 923.882,
+      "text": "Go ahead, open it."
+    },
+    {
+      "start": 927.052,
+      "end": 928.97,
+      "text": "Let's see what happens."
+    },
+    {
+      "start": 932.599,
+      "end": 935.226,
+      "text": "(ominous music)"
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "DUST — Laboratory Conditions — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=1N25e4Ss34Q",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "Jocelyn Stamat · Yayıncı: DUST",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
 }

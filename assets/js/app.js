@@ -342,7 +342,11 @@
     return chunks;
   }
   async function translateSentence(sentence) {
-    if (sentenceCache.has(sentence)) return sentenceCache.get(sentence);
+    if (sentenceCache.has(sentence)) {
+      const cached = sentenceCache.get(sentence);
+      if ((sentence.match(L.WORD_RE) || []).length !== 1 || L.normalize(cached) !== L.normalize(sentence)) return cached;
+      sentenceCache.delete(sentence);
+    }
     if (sentencePending.has(sentence)) return sentencePending.get(sentence);
     const job = (async () => {
       const translated = [];
@@ -354,16 +358,27 @@
           if (!response.ok) throw new Error("translation unavailable");
           const data = await response.json();
           if (+data.responseStatus !== 200 || data.quotaFinished || typeof data.responseData?.translatedText !== "string" || !data.responseData.translatedText.trim()) throw new Error("translation unavailable");
+          let translatedText = data.responseData.translatedText;
+          // A translation-memory proper-name match may win over the actual common-word meaning.
+          // Only accept an alternative for the exact same source word, with a high match score.
+          const key = L.normalize(chunk);
+          if ((chunk.match(L.WORD_RE) || []).length === 1 && L.normalize(translatedText) === key && Array.isArray(data.matches)) {
+            const alternative = data.matches.filter((m) => typeof m.segment === "string" && typeof m.translation === "string" && +m.match >= .9 && L.normalize(m.segment.trim()) === key && m.translation.trim() && L.normalize(m.translation.trim()) !== key)
+              .sort((a, b) => +b.match - +a.match)[0];
+            if (alternative) translatedText = alternative.translation;
+          }
           // Some responses contain HTML entities. Decode as text, never render API HTML.
           const decoder = document.createElement("textarea");
-          decoder.innerHTML = esc(data.responseData.translatedText).replace(/&amp;/g, "&");
+          decoder.innerHTML = esc(translatedText).replace(/&amp;/g, "&");
           translated.push(decoder.value.trim());
         } finally { clearTimeout(timeout); }
       }
       const result = translated.join(" ");
-      sentenceCache.set(sentence, result);
-      if (sentenceCache.size > 200) sentenceCache.delete(sentenceCache.keys().next().value);
-      S.save("sentenceTranslations", [...sentenceCache]);
+      if ((sentence.match(L.WORD_RE) || []).length !== 1 || L.normalize(result) !== L.normalize(sentence)) {
+        sentenceCache.set(sentence, result);
+        if (sentenceCache.size > 200) sentenceCache.delete(sentenceCache.keys().next().value);
+        S.save("sentenceTranslations", [...sentenceCache]);
+      }
       return result;
     })();
     sentencePending.set(sentence, job);
@@ -413,7 +428,7 @@
     Tip.el.appendChild(hint);
     Tip.place();
     try {
-      const tr = await translateSentence(raw);
+      const tr = await translateSentence(L.normalize(raw));
       if (Tip.request !== request || !span.isConnected || Tip.sentence) return;
       if (L.normalize(tr) === L.normalize(raw)) {
         status.textContent = "Türkçe karşılık bulunamadı. Özel ad veya altyazıdaki bir yazım hatası olabilir; cümleyi çevirerek kontrol edebilirsin.";
@@ -950,7 +965,7 @@
     return `<a class="video-card" href="#v.${esc(v.id)}">
         <div class="video-art" aria-hidden="true">${ICON.play}<span>İzle</span></div>
         <div class="video-card-body"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${videoTime(v.durationSeconds)}</span>${isDownloaded(v.id) ? `<span class="dl-badge">${ICON.download} İndirildi</span>` : ""}</div>
-          <h3>${esc(v.title)}</h3><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><p class="by">${v.provider === "youtube" ? "YouTube oynatıcısı" : "Dokunulabilir İngilizce altyazı"}</p><span class="link">İzlemeye başla →</span></div>
+          <h3>${esc(v.title)}</h3><p class="by">${esc(v.creator)} · ${v.year}</p><p>${esc(v.summaryTr)}</p><p class="by">${v.captions.length ? "Dokunulabilir İngilizce altyazı" : "YouTube oynatıcısı"}${v.captionKind === "automatic" ? " · Otomatik" : ""}</p><span class="link">İzlemeye başla →</span></div>
       </a>`;
   }
 
@@ -959,7 +974,7 @@
     const shelves = VIDEO_CATEGORIES.map((c) => ({ ...c, list: VIDEOS.filter((v) => videoCategory(v).id === c.id)
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.durationSeconds - b.durationSeconds) })).filter((c) => c.list.length);
     $main.innerHTML = `<div class="lib-head video-head"><div><p class="eyebrow">İzleyerek öğren</p><h1>Videolar</h1>
-      <p class="lead">İngilizce filmler, kısa yapımlar ve belgeseller. Dokunulabilir altyazılı videolarda kelimenin anlamını gör ve defterine kaydet. YouTube videolarında altyazıyı oynatıcıdan aç.</p></div>
+      <p class="lead">İngilizce filmler, kısa yapımlar ve belgeseller. İngilizce altyazıdaki kelimelere dokun; Türkçe anlamını gör ve defterine kaydet. YouTube videolarının dokunulabilir altyazısı oynatıcının hemen altında görünür.</p></div>
       ${canDownload ? `<button class="dl-tab" type="button" data-video-cat="downloads" aria-pressed="false" aria-controls="shelf-downloads-box">${ICON.download} İndirilenler</button>` : ""}</div>
       <div class="video-cats chips" role="group" aria-label="Video türü">
         <button class="chip" type="button" data-video-cat="all" aria-pressed="true">Tümü</button>
@@ -1035,7 +1050,7 @@
       <nav class="crumbs" aria-label="İçerik yolu"><a href="#videos">Videolar</a><span>›</span><span>${esc(v.title)}</span></nav>
       <header class="reader-head"><div class="card-top"><span class="lvl lvl-${esc(v.level)}">${esc(v.level)}</span><span>${esc(videoCategory(v).label)} · ${videoTime(v.durationSeconds)}</span></div>
         <h1>${esc(v.title)}</h1><p class="by">${esc(v.creator)} · ${v.year}</p><p class="lead">${esc(v.summaryTr)}</p>
-        <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}</header>
+        <p class="video-level-note">${esc(v.levelNoteTr)}</p>${v.advisoryTr ? `<p class="video-advisory">${esc(v.advisoryTr)}</p>` : ""}${v.captionKind === "automatic" ? '<p class="video-advisory">Otomatik İngilizce altyazı; sözcük ve zaman hataları olabilir.</p>' : ""}</header>
       <div class="video-stage youtube-stage" id="youtube-stage">
         <div class="youtube-frame" id="youtube-frame"><div class="video-placeholder"><span aria-hidden="true">${ICON.play}</span><p>İngilizce video · ${videoTime(v.durationSeconds)}</p><p class="video-load-note">Video için internet bağlantısı gerekir.</p></div></div>
         <div class="reader-text youtube-captions" id="youtube-captions" lang="en" aria-describedby="youtube-help"></div>
@@ -1058,6 +1073,7 @@
     const start = document.getElementById("youtube-start"), status = document.getElementById("youtube-help");
     const fullscreen = document.getElementById("youtube-fullscreen");
     let player = null, ready = false, disposed = false, interval = 0, selected = 0, displayed = null, pendingSeek = null, frozen = false;
+    let loadingTimer = 0, attempt = 0;
     const defaultStatus = status.textContent;
     function showCaption(index) {
       if (disposed || displayed === index) return;
@@ -1078,7 +1094,7 @@
       if (!ev.target.closest(".w")) return;
       frozen = true;
       if (ready) player.pauseVideo();
-      start.textContent = "Devam et";
+      if (ready) start.textContent = "Devam et";
     }
     captions.addEventListener("pointerdown", (ev) => { if (ev.isPrimary && ev.button === 0) pauseForWord(ev); });
     captions.addEventListener("click", pauseForWord);
@@ -1100,39 +1116,44 @@
         return;
       }
       start.disabled = true; status.textContent = "Video yükleniyor…";
+      const thisAttempt = ++attempt;
+      const current = () => !disposed && attempt === thisAttempt;
+      function failed(message) {
+        if (!current()) return;
+        attempt++; clearTimeout(loadingTimer); clearInterval(interval); ready = false;
+        if (player) { player.destroy(); player = null; }
+        start.disabled = false; start.textContent = "Tekrar dene"; status.textContent = message;
+      }
       try {
         const YT = await loadYouTubeAPI();
-        if (disposed) return;
+        if (!current()) return;
         if (player) player.destroy();
         frame.innerHTML = '<div id="youtube-player"></div>';
+        loadingTimer = setTimeout(() => failed("Video yüklenemedi. İnternetini kontrol edip tekrar dene veya YouTube’da izle."), 20000);
         player = new YT.Player("youtube-player", {
           host: "https://www.youtube-nocookie.com", videoId: v.youtubeId, width: "100%", height: "100%",
           playerVars: { playsinline: 1, cc_load_policy: v.captions.length ? 0 : 1, cc_lang_pref: "en", hl: "tr", rel: 0, fs: 0, origin: location.origin },
           events: {
             onReady: (event) => {
-              if (disposed) { event.target.destroy(); return; }
+              if (!current()) { event.target.destroy(); return; }
+              clearTimeout(loadingTimer);
               ready = true; start.disabled = false; status.textContent = defaultStatus;
               if (pendingSeek !== null) { event.target.seekTo(pendingSeek, true); pendingSeek = null; }
               frozen = false; event.target.playVideo();
               interval = setInterval(sync, 100);
             },
             onStateChange: (event) => {
-              if (disposed) return;
-              if (event.data === 1) { frozen = false; Tip.hide(); }
+              if (!current()) return;
+              if (event.data === 1) { frozen = false; Tip.hide(); status.textContent = defaultStatus; }
               start.textContent = event.data === 1 ? "Duraklat" : "Devam et";
               sync();
             },
-            onError: () => {
-              if (disposed) return;
-              clearInterval(interval); ready = false; start.disabled = false; start.textContent = "Tekrar dene";
-              status.textContent = "Video burada açılamadı. Tekrar dene veya aşağıdaki YouTube’da izle bağlantısını kullan.";
-            }
+            onError: () => failed("Video burada açılamadı. Tekrar dene veya aşağıdaki YouTube’da izle bağlantısını kullan."),
+            onAutoplayBlocked: () => { if (current()) { start.disabled = false; start.textContent = "Oynat"; status.textContent = "Tarayıcı oynatmayı bekletiyor. Videonun üzerindeki ▶ düğmesine dokunarak başlat."; } }
           }
         });
       } catch (error) {
-        if (disposed) return;
-        start.disabled = false; start.textContent = "Tekrar dene";
-        status.textContent = "Oynatıcı yüklenemedi. İnternetini kontrol edip tekrar dene.";
+        failed("Oynatıcı yüklenemedi. İnternetini kontrol edip tekrar dene.");
       }
     });
     const tipParent = Tip.el.parentNode;
@@ -1162,7 +1183,7 @@
     vocabulary.addEventListener("keydown", (ev) => { if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches(".w")) { ev.preventDefault(); ev.target.click(); } });
     markSaved(vocabulary);
     videoCleanup = () => {
-      disposed = true; clearInterval(interval);
+      disposed = true; attempt++; clearTimeout(loadingTimer); clearInterval(interval);
       document.removeEventListener("fullscreenchange", fullscreenChanged);
       document.removeEventListener("keydown", escapeFullscreen);
       if (document.fullscreenElement === stage) document.exitFullscreen().catch(() => {});

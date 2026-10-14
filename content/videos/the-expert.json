@@ -30,5 +30,684 @@
     "assumption": "varsayım",
     "solution": "çözüm"
   },
-  "captions": []
+  "captions": [
+    {
+      "start": 0,
+      "end": 8.163,
+      "text": "Our company has a new strategic initiative to increase market penetration, maximise brand loyalty, and enhance intangible assets."
+    },
+    {
+      "start": 8.197,
+      "end": 11.714,
+      "text": "In pursuit of these objectives, we've started a new project --"
+    },
+    {
+      "start": 11.715,
+      "end": 14.103,
+      "text": "for which we require 7 red lines."
+    },
+    {
+      "start": 14.103,
+      "end": 16.533,
+      "text": "I understand your company can help us in this matter."
+    },
+    {
+      "start": 16.534,
+      "end": 17.534,
+      "text": "Of course!"
+    },
+    {
+      "start": 17.719,
+      "end": 22.61,
+      "text": "Walter here will be the Project Manager. Walter, we can do this, can't we?"
+    },
+    {
+      "start": 22.611,
+      "end": 23.611,
+      "text": "Yes, of course."
+    },
+    {
+      "start": 23.685,
+      "end": 26.942,
+      "text": "Anderson here is our expert in all matters related to drawing red lines."
+    },
+    {
+      "start": 26.943,
+      "end": 29.757,
+      "text": "We brought him along today to share his professional opinion."
+    },
+    {
+      "start": 30.117,
+      "end": 32.07,
+      "text": "Nice to meet you! Well, you all know me."
+    },
+    {
+      "start": 32.071,
+      "end": 35.091,
+      "text": "This is Justine, our company's design specialist."
+    },
+    {
+      "start": 35.45,
+      "end": 36.043,
+      "text": "Hallo..."
+    },
+    {
+      "start": 36.044,
+      "end": 39.138,
+      "text": "We need you to draw seven red lines."
+    },
+    {
+      "start": 39.139,
+      "end": 44.675,
+      "text": "All of them strictly perpendicular; some with green ink and some with transparent. Can you do that?"
+    },
+    {
+      "start": 46.249,
+      "end": 47.719,
+      "text": "No. I'm afraid we --"
+    },
+    {
+      "start": 47.72,
+      "end": 51.663,
+      "text": "Let's not rush into any hasty answers, Anderson! The task has been set and needs to be carried out."
+    },
+    {
+      "start": 51.664,
+      "end": 53.158,
+      "text": "At the end of the day, you are an expert."
+    },
+    {
+      "start": 53.623,
+      "end": 58.384,
+      "text": "The term \"red line\" implies the colour of the line to be red. To draw a red line with green ink is --"
+    },
+    {
+      "start": 58.385,
+      "end": 62.435,
+      "text": "well if it is not exactly impossible, then it is pretty close to being impossible."
+    },
+    {
+      "start": 62.436,
+      "end": 64.187,
+      "text": "What does it even mean: \"impossible\"?"
+    },
+    {
+      "start": 64.667,
+      "end": 68.45,
+      "text": "I mean, it is quite possible that there are some people, say suffering from colour blindness,"
+    },
+    {
+      "start": 68.451,
+      "end": 70.956,
+      "text": "for whom the colour of the lines doesn't really make a difference."
+    },
+    {
+      "start": 70.957,
+      "end": 75.756,
+      "text": "But I am quite sure that the target audience of your project does not consists solely of such people."
+    },
+    {
+      "start": 75.757,
+      "end": 77.73,
+      "text": "So in principle this is possible."
+    },
+    {
+      "start": 79.789,
+      "end": 81.09,
+      "text": "I'll simplify."
+    },
+    {
+      "start": 81.091,
+      "end": 84.015,
+      "text": "A line as such can be drawn with absolutely any ink."
+    },
+    {
+      "start": 84.015,
+      "end": 87.541,
+      "text": "But if you want to get a red line, you need to use red ink."
+    },
+    {
+      "start": 88.2,
+      "end": 90.037,
+      "text": "What if we draw them with blue ink?"
+    },
+    {
+      "start": 90.252,
+      "end": 94.623,
+      "text": "It still won't work. If you use blue ink, you will get blue lines."
+    },
+    {
+      "start": 97.107,
+      "end": 100.076,
+      "text": "And what exactly did you mean, when you talked about the transparent ink?"
+    },
+    {
+      "start": 100.077,
+      "end": 102.77,
+      "text": "How to better explain?"
+    },
+    {
+      "start": 102.771,
+      "end": 104.576,
+      "text": "I'm sure you know what \"transparent\" means?"
+    },
+    {
+      "start": 104.577,
+      "end": 105.984,
+      "text": "Yes, I do."
+    },
+    {
+      "start": 105.985,
+      "end": 109.492,
+      "text": "And what a \"red line\" means, I hope I don't need to explain to you?"
+    },
+    {
+      "start": 109.493,
+      "end": 110.457,
+      "text": "Of course not."
+    },
+    {
+      "start": 110.457,
+      "end": 115.457,
+      "text": "Well... You need to draw red lines with transparent ink."
+    },
+    {
+      "start": 115.873,
+      "end": 118.858,
+      "text": "Could you describe what you imagine the end result would look like?"
+    },
+    {
+      "start": 118.859,
+      "end": 121.036,
+      "text": "C'mon, Anderson! What do we have here, kindergarten?"
+    },
+    {
+      "start": 121.495,
+      "end": 125.365,
+      "text": "Let's not waste our time with these unproductive quarrels."
+    },
+    {
+      "start": 125.366,
+      "end": 127.762,
+      "text": "The task has been set; the task is plain and clear."
+    },
+    {
+      "start": 127.763,
+      "end": 131.474,
+      "text": "Now, if you have any specific questions, go ahead!"
+    },
+    {
+      "start": 131.475,
+      "end": 133.168,
+      "text": "You're the expert here!"
+    },
+    {
+      "start": 133.583,
+      "end": 136.814,
+      "text": "Alright, let's leave aside the colour for the moment."
+    },
+    {
+      "start": 136.815,
+      "end": 140.376,
+      "text": "You had something there also relating to perpendicularity?.."
+    },
+    {
+      "start": 140.377,
+      "end": 142.614,
+      "text": "Seven lines, all strictly perpendicular."
+    },
+    {
+      "start": 143.101,
+      "end": 144.399,
+      "text": "To what?"
+    },
+    {
+      "start": 146.597,
+      "end": 150.586,
+      "text": "Erm, to everything. Among themselves."
+    },
+    {
+      "start": 150.587,
+      "end": 152.806,
+      "text": "I assumed you know what perpendicular lines are like!"
+    },
+    {
+      "start": 152.807,
+      "end": 154.293,
+      "text": "Of course he does. He's an expert!"
+    },
+    {
+      "start": 155.039,
+      "end": 156.801,
+      "text": "Two lines can be perpendicular."
+    },
+    {
+      "start": 156.802,
+      "end": 160.219,
+      "text": "All seven can't be simultaneously perpendicular to each other."
+    },
+    {
+      "start": 161.55,
+      "end": 162.95,
+      "text": "I'll show you."
+    },
+    {
+      "start": 165.712,
+      "end": 168.412,
+      "text": "This is a line, right?"
+    },
+    {
+      "start": 168.755,
+      "end": 169.413,
+      "text": "Yes."
+    },
+    {
+      "start": 169.414,
+      "end": 174.408,
+      "text": "And another one. Is it perpendicular to the first line?"
+    },
+    {
+      "start": 175.534,
+      "end": 177.321,
+      "text": "Well..."
+    },
+    {
+      "start": 177.928,
+      "end": 179.251,
+      "text": "Yes, it is perpendicular."
+    },
+    {
+      "start": 179.252,
+      "end": 180.252,
+      "text": "Exactly!"
+    },
+    {
+      "start": 180.253,
+      "end": 185.062,
+      "text": "Wait, wait, I'm not done. And a third one: is it perpendicular to the first line?"
+    },
+    {
+      "start": 186.232,
+      "end": 191.353,
+      "text": "Yes, it is! But it doesn't cross the second line. They're both parallel."
+    },
+    {
+      "start": 192.532,
+      "end": 193.647,
+      "text": "Not perpendicular!"
+    },
+    {
+      "start": 196.359,
+      "end": 197.605,
+      "text": "I suppose so."
+    },
+    {
+      "start": 197.606,
+      "end": 201.137,
+      "text": "There it is. Two lines can be perpendicular --"
+    },
+    {
+      "start": 201.138,
+      "end": 202.397,
+      "text": "Can I have the pen?"
+    },
+    {
+      "start": 222.418,
+      "end": 223.629,
+      "text": "How about this?"
+    },
+    {
+      "start": 228.044,
+      "end": 229.563,
+      "text": "This is a triangle."
+    },
+    {
+      "start": 229.564,
+      "end": 233.306,
+      "text": "It's definitely not perpendicular lines."
+    },
+    {
+      "start": 233.307,
+      "end": 236.013,
+      "text": "And there are three, not seven."
+    },
+    {
+      "start": 237.853,
+      "end": 238.735,
+      "text": "Why are they blue?"
+    },
+    {
+      "start": 238.736,
+      "end": 240.454,
+      "text": "Indeed. Wanted to ask that myself."
+    },
+    {
+      "start": 241.387,
+      "end": 244.026,
+      "text": "I have a blue pen with me. This was just a demonstration --"
+    },
+    {
+      "start": 244.027,
+      "end": 247.459,
+      "text": "That's the problem, your lines are blue. Draw them with red ink!"
+    },
+    {
+      "start": 247.46,
+      "end": 249.012,
+      "text": "It won't solve the problem."
+    },
+    {
+      "start": 249.013,
+      "end": 250.946,
+      "text": "How do you know before you've tried?"
+    },
+    {
+      "start": 250.946,
+      "end": 252.965,
+      "text": "Lets draw them with red ink and then let's see."
+    },
+    {
+      "start": 252.966,
+      "end": 253.966,
+      "text": "I don't have a red pen with me, --"
+    },
+    {
+      "start": 253.967,
+      "end": 259.099,
+      "text": "but I am completely certain that with red ink the result will still be the same."
+    },
+    {
+      "start": 259.1,
+      "end": 262.345,
+      "text": "Didn't you tell us earlier that you can only draw red lines with red ink?"
+    },
+    {
+      "start": 262.346,
+      "end": 264.334,
+      "text": "In fact, yes, I've written it down here!"
+    },
+    {
+      "start": 264.335,
+      "end": 268.914,
+      "text": "And now you want to draw them with a blue ink. Do you want to call these red lines?"
+    },
+    {
+      "start": 269.44,
+      "end": 273.05,
+      "text": "I think I understand. You're not talking about the colour now, right?"
+    },
+    {
+      "start": 273.051,
+      "end": 277.472,
+      "text": "You're talking about that, what do you call it: per-per, dick-dick --"
+    },
+    {
+      "start": 277.473,
+      "end": 278.966,
+      "text": "Perpendicularity, yes!"
+    },
+    {
+      "start": 278.967,
+      "end": 281.459,
+      "text": "That's it, now you've confused everyone."
+    },
+    {
+      "start": 281.459,
+      "end": 284.742,
+      "text": "So what exactly is stopping us from doing this?"
+    },
+    {
+      "start": 284.943,
+      "end": 286.242,
+      "text": "Geometry."
+    },
+    {
+      "start": 286.243,
+      "end": 287.398,
+      "text": "Just ignore it!"
+    },
+    {
+      "start": 287.399,
+      "end": 292.856,
+      "text": "We have a task. Seven red lines. It's not twenty; it's just seven."
+    },
+    {
+      "start": 292.857,
+      "end": 298.024,
+      "text": "Anderson, I understand; you're a specialist of a narrow field, you don't see the overall picture."
+    },
+    {
+      "start": 298.025,
+      "end": 301.661,
+      "text": "But surely it's not a difficult task to draw some seven lines!"
+    },
+    {
+      "start": 301.662,
+      "end": 303.578,
+      "text": "Exactly. Suggest a solution!"
+    },
+    {
+      "start": 303.579,
+      "end": 309.596,
+      "text": "Any fool can criticise, no offence, but you're an expert, you should know better!"
+    },
+    {
+      "start": 310.186,
+      "end": 315.124,
+      "text": "OK. Let me draw you two perfectly perpendicular red lines, --"
+    },
+    {
+      "start": 315.125,
+      "end": 318.583,
+      "text": "and I will draw the rest with transparent ink."
+    },
+    {
+      "start": 318.584,
+      "end": 321.834,
+      "text": "They'll be invisible, but I'll draw them."
+    },
+    {
+      "start": 321.835,
+      "end": 323.095,
+      "text": "Would this suit us?"
+    },
+    {
+      "start": 324.186,
+      "end": 325.623,
+      "text": "Yes, this will suit us."
+    },
+    {
+      "start": 326.383,
+      "end": 328.67,
+      "text": "Yes, but at least a couple with green ink."
+    },
+    {
+      "start": 328.671,
+      "end": 331.048,
+      "text": "Oh, and I have another question, if I may."
+    },
+    {
+      "start": 331.049,
+      "end": 334.078,
+      "text": "Can you draw one of the lines in the form of a kitten?"
+    },
+    {
+      "start": 334.631,
+      "end": 335.32,
+      "text": "A what?"
+    },
+    {
+      "start": 335.321,
+      "end": 336.617,
+      "text": "In the form of a kitten."
+    },
+    {
+      "start": 336.618,
+      "end": 340.71,
+      "text": "Market research tells our users like cute animals. It'd be really great if --"
+    },
+    {
+      "start": 340.711,
+      "end": 341.711,
+      "text": "No-oh..."
+    },
+    {
+      "start": 342.462,
+      "end": 342.996,
+      "text": "Why?"
+    },
+    {
+      "start": 342.997,
+      "end": 345.059,
+      "text": "Look, I can of course draw you a cat."
+    },
+    {
+      "start": 345.06,
+      "end": 347.015,
+      "text": "I'm no artist, but I can give it a try."
+    },
+    {
+      "start": 347.016,
+      "end": 349.095,
+      "text": "But it won't be a line any more. It will be a cat."
+    },
+    {
+      "start": 349.096,
+      "end": 351.451,
+      "text": "A line and a cat: those are two different things."
+    },
+    {
+      "start": 351.452,
+      "end": 353.997,
+      "text": "A kitten. Not a cat, but a kitten."
+    },
+    {
+      "start": 353.998,
+      "end": 358.674,
+      "text": "It's little, cute, cuddly. Cats, on the other hand --"
+    },
+    {
+      "start": 358.675,
+      "end": 359.689,
+      "text": "It doesn't make a difference."
+    },
+    {
+      "start": 359.69,
+      "end": 361.354,
+      "text": "Anderson, at least hear her out!"
+    },
+    {
+      "start": 361.355,
+      "end": 364.117,
+      "text": "She hasn't even finished speaking, and you're already saying \"No!\""
+    },
+    {
+      "start": 364.118,
+      "end": 369.681,
+      "text": "I got the idea, but it is impossible to draw a line in the form of a cat...ten."
+    },
+    {
+      "start": 370.097,
+      "end": 372.053,
+      "text": "What about a bird?"
+    },
+    {
+      "start": 375.274,
+      "end": 377.306,
+      "text": "So, where did we stop? What are we doing?"
+    },
+    {
+      "start": 377.307,
+      "end": 381.875,
+      "text": "Seven red lines, two with red ink, two with green ink and the rest - with transparent."
+    },
+    {
+      "start": 381.876,
+      "end": 383.28,
+      "text": "Did I understand correctly? -- -- Yes."
+    },
+    {
+      "start": 383.281,
+      "end": 386.1,
+      "text": "Excellent! In which case that's everything, right?"
+    },
+    {
+      "start": 386.101,
+      "end": 388.951,
+      "text": "Oh, oh, I almost forgot, we also have a red balloon."
+    },
+    {
+      "start": 388.952,
+      "end": 390.911,
+      "text": "Do you know if you could inflate it?"
+    },
+    {
+      "start": 394.882,
+      "end": 397.02,
+      "text": "What do I have to do with balloons?"
+    },
+    {
+      "start": 397.021,
+      "end": 398.021,
+      "text": "It's red."
+    },
+    {
+      "start": 398.022,
+      "end": 401.654,
+      "text": "Anderson, can you or can you not do this? A simple question."
+    },
+    {
+      "start": 402.119,
+      "end": 403.502,
+      "text": "As such, I can of course, but --"
+    },
+    {
+      "start": 403.503,
+      "end": 407.923,
+      "text": "Excellent. Organise a business trip, we'll cover the expenses, --"
+    },
+    {
+      "start": 407.924,
+      "end": 412.121,
+      "text": "go over to their location, inflate the balloon."
+    },
+    {
+      "start": 412.122,
+      "end": 415.411,
+      "text": "Well this was very productive, thank you all!"
+    },
+    {
+      "start": 428.303,
+      "end": 430.21,
+      "text": "Can I ask one more question, please?"
+    },
+    {
+      "start": 430.937,
+      "end": 434.543,
+      "text": "When you inflate the balloon, could you do it in the form of a kitten?"
+    },
+    {
+      "start": 436.005,
+      "end": 437.407,
+      "text": "Of course I can!"
+    },
+    {
+      "start": 437.408,
+      "end": 441.739,
+      "text": "I can do anything, I can do absolutely anything."
+    },
+    {
+      "start": 443.326,
+      "end": 445.396,
+      "text": "I'm an expert!"
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "Lauris Beinerts — The Expert — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=BKorP55Aqvg",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "Lauris Beinerts · Yayıncı: Lauris Beinerts",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
 }

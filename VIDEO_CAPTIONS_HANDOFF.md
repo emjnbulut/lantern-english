@@ -1,4 +1,36 @@
-# Video caption work — paused at the user's request
+# Interactive video captions — local implementation complete
+
+## Publication requested
+The user now explicitly requested saving the completed changes to GitHub and updating the live site. The prior deferral statements below are historical. Release follows HOSTING.md and preserves both repository histories. `tools/make-site.mjs` was corrected to replace an existing stamped service-worker version as well as `dev`, ensuring installed clients receive the new caption/player bundle. No new subtitle-reuse license is claimed.
+
+Updated: 2026-10-14. The user resumed work and asked to save to GitHub later. The resumed changes are local and uncommitted on `fix/video-caption-meanings`; last pushed checkpoint is `18addf6`. No new push or deployment was performed. The public website remains at `34d0a22`.
+
+## Current implementation
+
+- All 31 source records now have non-empty timed captions. The 10 formerly captionless YouTube videos received 1,884 cues. `tools/import-video-captions.mjs --import` imports raw JSON3/SRT drafts, deduplicates rolling ASR windows, and clips overlaps and video-duration overflow.
+- Eight manual English YouTube tracks and The Chair's automatic track were imported. Other Side of the Box was resolved with Chris_Flynn1's resynced SRT from https://subf2m.co/subtitles/other-side-of-the-box/english/3088113 (community attribution). The Chair is visibly labeled automatic. R’ha events after the configured 360-second video duration were omitted. No video media was downloaded.
+- YouTube captions sit immediately below the publisher iframe in the app's fullscreen container. Pointerdown/click pauses; dictionary/context meanings, keyboard activation, long-press sentence translation, notebook saving, cue selection/seeking and resume work. Native captions pause before long press too.
+- YouTube API/iframe loading has bounded timeouts, retry, stale-attempt guards, navigation cleanup and autoplay-blocked guidance to use the video’s play button. Native and in-page fullscreen preserve captions, tooltip and body scrolling.
+- Missing video words use MyMemory with an automatic-translation label, normalized queries and existing translation caching. If the top result repeats English, a high-scoring match for EXACTLY the same source word can supply the Turkish alternative. This fixed carnival → Karnaval. Unchanged English is not accepted or permanently cached as a Turkish meaning. First missing-word lookup needs internet; names/source errors/service failures retain honest fallback messages. Zero missing offline vocabulary is not claimed.
+- Source schema now requires non-empty captions for ALL videos, validates captionKind (`publisher`, `community`, `automatic`), and retains HTTPS/source/timecode validation. Published removal of numeric badges/counters was preserved.
+
+## Verification completed after resuming
+
+- `node --check assets/js/app.js` and `node tools/build.mjs`: passed. Build: 38 stories, 16 articles, 7,838 dictionary entries, 31 videos; video bundle about 740 KB.
+- `node tools/test-caption-import.mjs`: passed (source timecodes, overlaps, duration limits, ASR duplicates, SRT).
+- `node tools/smoke.mjs`: final general run passed 634 checks. Old tests were updated for the owner's already-published counter removal while retaining bookmark/storage/collection assertions. The unbounded animation-frame settle wait became bounded timer polling; browser background throttling is disabled and the test page is brought to front. An earlier repeat had a CDP touch-event timeout; the final run passed.
+- `node tools/smoke.mjs --captions`: 159 checks passed, including all 31 routes, lazy loading, tap/long press/keyboard, pause/resume/seek, translation fallback/negative cache, saving, delayed results, readiness timeout/retry, stale callbacks, 375/390px tooltip bounds and fullscreen cleanup, landscape and native pointerdown.
+- `node tools/smoke.mjs --captions-online`: one real The Expert run passed three checks; actual time advanced to 8.269s, cue changed to 1, and a word click paused and showed a meaning. Other bounded attempts encountered autoplay gating or iframe readiness timeout. Do not claim all online attempts or all external movies passed.
+- `node tools/smoke.mjs --caption-word-online`: three checks passed with REAL MyMemory: CARNIVAL → Karnaval, labeled automatic and saveable. An initial failure exposed the unchanged-first-match issue, which was corrected.
+- Screenshots visually reviewed for 390px/landscape captions and real YouTube. Final general screenshots: `C:\Users\emin\AppData\Local\Temp\lantern-smoke-6Qa79y`; caption screenshots: `...\lantern-smoke-Wh8gpa`; real translation: `...\lantern-smoke-iISR7W`.
+
+## Deferred GitHub/release steps
+
+The user requested saving to GitHub later. When requested, inspect diff, commit source and generated data together, and normal-push the private source branch. The fetched source origin/main is `18af243`; public origin/main is `34d0a22`. Public `work/learning-upgrade-checkpoint` also exists; inspect its purpose before merging anything. No release package was made in this resumed work.
+
+Downloading or attributing subtitles does not establish public redistribution permission. These copied tracks are NOT claimed to be Creative Commons; the license fields identify source rights holders, not a rights grant. Review source-specific reuse permission before public distribution. Follow HOSTING.md and use a separate clean public worktree, preserving the pre-existing user CSS edit in `lantern-english-public-release`. Bundle visitor files only; no drafts, tools, content sources or handoff documents. Stamp sw.js, normal-push preserving history, then verify Pages/live hashes.
+
+## Historical paused checkpoint (superseded by the status above)
 
 Date: 2026-10-14. Branch: `fix/video-caption-meanings`.
 Workspace: `C:\Users\emin\lantern-english-caption-fix`.

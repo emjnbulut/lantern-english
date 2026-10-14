@@ -1,7 +1,7 @@
 # AGENTS.md — handoff guide for AI assistants
 
-## Paused video-caption checkpoint (2026-10-14)
-The user asked to pause and save unfinished work. Read `VIDEO_CAPTIONS_HANDOFF.md` before resuming `fix/video-caption-meanings`. This branch is not a tested release and must not be published as complete. Subtitle drafts in `drafts/video-caption-import/` are not bundled.
+## Video-caption fix (2026-10-14)
+The user resumed `fix/video-caption-meanings` and subsequently authorized saving to GitHub and updating the public site. Read `VIDEO_CAPTIONS_HANDOFF.md` for implementation, tests and release status. All 31 videos now have timed captions in source. Raw subtitle drafts in `drafts/video-caption-import/` are not bundled.
 
 Lantern English is a static, dependency-free website that teaches English to Turkish speakers through
 graded stories. Read this file, `HANDOFF.md` and `CONTENT_SPEC.md` before changing anything.

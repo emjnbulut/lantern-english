@@ -25,6 +25,8 @@ export function validateVideo(d, file, errors) {
   for (const key of ["title", "creator", "summaryTr", "levelNoteTr"]) {
     if (!plainText(d[key])) e(`${key} must be non-empty plain text`);
   }
+  if (d.advisoryTr !== undefined && (typeof d.advisoryTr !== "string" || (d.advisoryTr.trim() && !plainText(d.advisoryTr)))) e("advisoryTr must be plain text when present");
+  if (d.captionKind !== undefined && !["publisher", "community", "automatic"].includes(d.captionKind)) e("unknown captionKind");
   if (!LEVELS.includes(d.level)) e(`level must be one of ${LEVELS}`);
   if (!VIDEO_GENRES.includes(d.genre)) e(`genre must be one of ${VIDEO_GENRES}`);
   if (!VIDEO_CATEGORIES.includes(d.category)) e(`category must be one of ${VIDEO_CATEGORIES}`);
@@ -56,7 +58,6 @@ export function validateVideo(d, file, errors) {
     ["source", ["name", "license", "credit"], ["url", "licenseUrl"]],
     ["subtitleSource", ["name", "license"], ["url"]],
   ]) {
-    if (key === "subtitleSource" && youtube && !d.captions?.length) continue;
     if (!object(d[key])) { e(`${key} must be an attribution object`); continue; }
     for (const field of texts) if (!plainText(d[key][field])) e(`${key}.${field} must be non-empty plain text`);
     for (const field of urls) if (!httpsUrl(d[key][field])) e(`${key}.${field} must be an HTTPS URL without credentials`);
@@ -65,7 +66,7 @@ export function validateVideo(d, file, errors) {
     e("subtitleSource.licenseUrl must be an HTTPS URL without credentials");
   }
 
-  if (!Array.isArray(d.captions) || (!youtube && !d.captions.length)) e("captions must be a non-empty array for native videos");
+  if (!Array.isArray(d.captions) || !d.captions.length) e("every video must have a non-empty captions array");
   else {
     let previousStart = -1, previousEnd = 0;
     d.captions.forEach((cue, i) => {

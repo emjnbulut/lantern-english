@@ -31,5 +31,744 @@
     "agent": "ajan; görevli",
     "offer": "teklif"
   },
-  "captions": []
+  "captions": [
+    {
+      "start": 0,
+      "end": 1.927,
+      "text": "(lively, foreboding music)"
+    },
+    {
+      "start": 11.608,
+      "end": 14.525,
+      "text": "(phone vibrating)"
+    },
+    {
+      "start": 53.27,
+      "end": 54.103,
+      "text": "- You Charlie?"
+    },
+    {
+      "start": 55.96,
+      "end": 56.793,
+      "text": "Come in."
+    },
+    {
+      "start": 60.46,
+      "end": 62.423,
+      "text": "Ah, I'm John."
+    },
+    {
+      "start": 63.86,
+      "end": 65.353,
+      "text": "I don't do this very often."
+    },
+    {
+      "start": 69.39,
+      "end": 71.498,
+      "text": "- You're prettier than your picture."
+    },
+    {
+      "start": 71.498,
+      "end": 73.143,
+      "text": "- Thanks."
+    },
+    {
+      "start": 73.143,
+      "end": 76.726,
+      "text": "(lively, foreboding music)"
+    },
+    {
+      "start": 104.19,
+      "end": 105.983,
+      "text": "- [John] What are you doing all that for?"
+    },
+    {
+      "start": 107.352,
+      "end": 109.102,
+      "text": "- So I don't get any blood on them."
+    },
+    {
+      "start": 110.296,
+      "end": 111.463,
+      "text": "- [John] What?"
+    },
+    {
+      "start": 117.706,
+      "end": 118.539,
+      "text": "Oh my god."
+    },
+    {
+      "start": 122.009,
+      "end": 124.053,
+      "text": "(menacing music) (John screaming)"
+    },
+    {
+      "start": 124.053,
+      "end": 124.97,
+      "text": "Stop, stop!"
+    },
+    {
+      "start": 126.191,
+      "end": 127.108,
+      "text": "Help, help!"
+    },
+    {
+      "start": 139.083,
+      "end": 142.362,
+      "text": "(Charlie growling)"
+    },
+    {
+      "start": 142.362,
+      "end": 145.029,
+      "text": "(heart beating)"
+    },
+    {
+      "start": 147.112,
+      "end": 150.029,
+      "text": "(Charlie growling)"
+    },
+    {
+      "start": 153.334,
+      "end": 155.717,
+      "text": "(wood creaking)"
+    },
+    {
+      "start": 155.717,
+      "end": 158.384,
+      "text": "(ominous music)"
+    },
+    {
+      "start": 172.765,
+      "end": 175.348,
+      "text": "(lively music)"
+    },
+    {
+      "start": 176.535,
+      "end": 179.202,
+      "text": "- Hey, hey, this is where I sit!"
+    },
+    {
+      "start": 184.193,
+      "end": 187.152,
+      "text": "♪ Going (indistinct) ♪"
+    },
+    {
+      "start": 187.152,
+      "end": 190.893,
+      "text": "♪ Aching down deep inside, it's me ♪"
+    },
+    {
+      "start": 190.893,
+      "end": 193.16,
+      "text": "- [Darnell] Everybody around here knows this is my spot!"
+    },
+    {
+      "start": 193.16,
+      "end": 194.573,
+      "text": "- [Jamal] Hey, hey, Darnell, Darnell, chill, chill."
+    },
+    {
+      "start": 194.573,
+      "end": 196.117,
+      "text": "- It's mine! - Chill, man."
+    },
+    {
+      "start": 196.117,
+      "end": 197.98,
+      "text": "Why don't, why don't you take my spot for a while, huh?"
+    },
+    {
+      "start": 197.98,
+      "end": 199.39,
+      "text": "- Yeah, okay. - All right,"
+    },
+    {
+      "start": 199.39,
+      "end": 200.487,
+      "text": "it's right over there."
+    },
+    {
+      "start": 200.487,
+      "end": 202.53,
+      "text": "♪ Inside your mind, it's me ♪"
+    },
+    {
+      "start": 202.53,
+      "end": 204.82,
+      "text": "- Sorry about that, he's, he's harmless."
+    },
+    {
+      "start": 204.82,
+      "end": 207.85,
+      "text": "I promise, he just, he's all bark."
+    },
+    {
+      "start": 207.85,
+      "end": 210.6,
+      "text": "This is my boy, Sean, we're about to go grab some grub."
+    },
+    {
+      "start": 211.92,
+      "end": 214.14,
+      "text": "- Yo, yo, yo, don't even think about it."
+    },
+    {
+      "start": 214.14,
+      "end": 214.973,
+      "text": "She's a whore."
+    },
+    {
+      "start": 216.6,
+      "end": 219.93,
+      "text": "♪ It's me ♪"
+    },
+    {
+      "start": 219.93,
+      "end": 221.429,
+      "text": "♪ The monster ♪"
+    },
+    {
+      "start": 221.429,
+      "end": 224.719,
+      "text": "(women yelling)"
+    },
+    {
+      "start": 224.719,
+      "end": 228.596,
+      "text": "♪ In your head, it's me ♪"
+    },
+    {
+      "start": 228.596,
+      "end": 231.614,
+      "text": "♪ It's me ♪"
+    },
+    {
+      "start": 231.614,
+      "end": 236.614,
+      "text": "♪ It's me, it's me ♪"
+    },
+    {
+      "start": 237.728,
+      "end": 242.728,
+      "text": "♪ It's me, it's me ♪"
+    },
+    {
+      "start": 243.749,
+      "end": 246.666,
+      "text": "♪ It's me, it's me ♪"
+    },
+    {
+      "start": 249.918,
+      "end": 253.001,
+      "text": "(spray can rattling)"
+    },
+    {
+      "start": 258.13,
+      "end": 260.863,
+      "text": "- Hey, where did you go the other night?"
+    },
+    {
+      "start": 265.98,
+      "end": 267.33,
+      "text": "You know, you are making this very hard,"
+    },
+    {
+      "start": 267.33,
+      "end": 269.08,
+      "text": "and I'm just trying to be friendly."
+    },
+    {
+      "start": 270.48,
+      "end": 271.88,
+      "text": "I don't even know your name."
+    },
+    {
+      "start": 280.59,
+      "end": 281.423,
+      "text": "- Charlie."
+    },
+    {
+      "start": 284.06,
+      "end": 284.893,
+      "text": "- Charlie."
+    },
+    {
+      "start": 287.11,
+      "end": 289.77,
+      "text": "Oh shit, did you just tell me your name (chuckles)?"
+    },
+    {
+      "start": 289.77,
+      "end": 291.153,
+      "text": "She speaks, people."
+    },
+    {
+      "start": 293.209,
+      "end": 294.042,
+      "text": "(phone vibrating)"
+    },
+    {
+      "start": 294.042,
+      "end": 296.003,
+      "text": "Charlie, like that."
+    },
+    {
+      "start": 301.75,
+      "end": 303.25,
+      "text": "You don't have to go, Charlie."
+    },
+    {
+      "start": 305.89,
+      "end": 307.44,
+      "text": "There are other ways to get by."
+    },
+    {
+      "start": 310.04,
+      "end": 310.873,
+      "text": "- Not for me."
+    },
+    {
+      "start": 313.414,
+      "end": 316.247,
+      "text": "(vehicle passing)"
+    },
+    {
+      "start": 318.367,
+      "end": 322.034,
+      "text": "- No, gimme that tree, man, gimme that tree."
+    },
+    {
+      "start": 323.567,
+      "end": 325.366,
+      "text": "Hey, what's up, baby?"
+    },
+    {
+      "start": 325.366,
+      "end": 326.54,
+      "text": "How you doing?"
+    },
+    {
+      "start": 326.54,
+      "end": 329.457,
+      "text": "(foreboding music)"
+    },
+    {
+      "start": 342.048,
+      "end": 343.298,
+      "text": "- Your Charlie?"
+    },
+    {
+      "start": 345.619,
+      "end": 347.884,
+      "text": "- Can I, can I come in?"
+    },
+    {
+      "start": 347.884,
+      "end": 350.467,
+      "text": "- Yeah, please, come in, sorry."
+    },
+    {
+      "start": 355.717,
+      "end": 359.134,
+      "text": "(Davis exhaling sharply)"
+    },
+    {
+      "start": 360.16,
+      "end": 363.793,
+      "text": "So, how does this usually work?"
+    },
+    {
+      "start": 365.02,
+      "end": 366.693,
+      "text": "- You pay me and then we start."
+    },
+    {
+      "start": 368.95,
+      "end": 373.52,
+      "text": "- We start what?"
+    },
+    {
+      "start": 373.52,
+      "end": 374.52,
+      "text": "- Whatever you want."
+    },
+    {
+      "start": 378.083,
+      "end": 380.193,
+      "text": "- Yeah, whatever I want, um."
+    },
+    {
+      "start": 385.91,
+      "end": 387.223,
+      "text": "A hundred, right?"
+    },
+    {
+      "start": 393.06,
+      "end": 393.893,
+      "text": "- Yeah."
+    },
+    {
+      "start": 396.05,
+      "end": 399.923,
+      "text": "- So, what now?"
+    },
+    {
+      "start": 410.95,
+      "end": 412.15,
+      "text": "So that's how you do it."
+    },
+    {
+      "start": 414.264,
+      "end": 418.264,
+      "text": "(foreboding music intensifying)"
+    },
+    {
+      "start": 419.927,
+      "end": 421.563,
+      "text": "(exciting music)"
+    },
+    {
+      "start": 421.563,
+      "end": 424.146,
+      "text": "(men grunting)"
+    },
+    {
+      "start": 430.509,
+      "end": 433.009,
+      "text": "(man yelling)"
+    },
+    {
+      "start": 439.26,
+      "end": 441.927,
+      "text": "(man screaming)"
+    },
+    {
+      "start": 444.472,
+      "end": 446.946,
+      "text": "(electricity hissing)"
+    },
+    {
+      "start": 446.946,
+      "end": 448.624,
+      "text": "Been looking forward to meeting you, Charlie."
+    },
+    {
+      "start": 448.624,
+      "end": 453.089,
+      "text": "(electricity hissing) (Charlie grunting)"
+    },
+    {
+      "start": 453.089,
+      "end": 455.93,
+      "text": "(tense music)"
+    },
+    {
+      "start": 455.93,
+      "end": 457.41,
+      "text": "- Why the hell is she still alive?"
+    },
+    {
+      "start": 457.41,
+      "end": 460.313,
+      "text": "He was ordered to eliminate her, not to bring her back."
+    },
+    {
+      "start": 461.63,
+      "end": 464.18,
+      "text": "- He made a field call."
+    },
+    {
+      "start": 464.18,
+      "end": 465.653,
+      "text": "He thinks she has potential."
+    },
+    {
+      "start": 466.7,
+      "end": 468.589,
+      "text": "Director's willing to let him run with it."
+    },
+    {
+      "start": 468.589,
+      "end": 471.339,
+      "text": "(metal clanging)"
+    },
+    {
+      "start": 483.746,
+      "end": 485.14,
+      "text": "- So, what do we got?"
+    },
+    {
+      "start": 485.14,
+      "end": 488.91,
+      "text": "- Nothing, no ID, no matches on dental, DNA."
+    },
+    {
+      "start": 488.91,
+      "end": 491.21,
+      "text": "Nothing on her but some clothes and an old tape deck."
+    },
+    {
+      "start": 491.21,
+      "end": 492.85,
+      "text": "- A little young to be an asset, isn't she?"
+    },
+    {
+      "start": 492.85,
+      "end": 494.22,
+      "text": "- Don't let her fool you."
+    },
+    {
+      "start": 494.22,
+      "end": 497.42,
+      "text": "She took out six guys in six seconds with no weapons"
+    },
+    {
+      "start": 497.42,
+      "end": 498.253,
+      "text": "and no training."
+    },
+    {
+      "start": 499.346,
+      "end": 503.197,
+      "text": "(footsteps approaching)"
+    },
+    {
+      "start": 503.197,
+      "end": 506.03,
+      "text": "(buzzer sounding)"
+    },
+    {
+      "start": 510.2,
+      "end": 511.765,
+      "text": "- No!"
+    },
+    {
+      "start": 511.765,
+      "end": 512.598,
+      "text": "No, no!"
+    },
+    {
+      "start": 515.826,
+      "end": 518.659,
+      "text": "(Charlie panting)"
+    },
+    {
+      "start": 525.29,
+      "end": 527.443,
+      "text": "Where are we, what is this?"
+    },
+    {
+      "start": 527.443,
+      "end": 529.493,
+      "text": "- A place where we bring people like you."
+    },
+    {
+      "start": 531.41,
+      "end": 534.87,
+      "text": "Actually, this place was built with the express purpose"
+    },
+    {
+      "start": 534.87,
+      "end": 539.87,
+      "text": "of finding and eliminating people with your condition."
+    },
+    {
+      "start": 541.02,
+      "end": 542.243,
+      "text": "- Why am I here?"
+    },
+    {
+      "start": 543.2,
+      "end": 544.7,
+      "text": "- You mean, why are you alive?"
+    },
+    {
+      "start": 547.03,
+      "end": 548.993,
+      "text": "You are still alive because,"
+    },
+    {
+      "start": 550.52,
+      "end": 551.72,
+      "text": "because you are special."
+    },
+    {
+      "start": 553.01,
+      "end": 557.64,
+      "text": "You have abilities that we can use."
+    },
+    {
+      "start": 557.64,
+      "end": 559.037,
+      "text": "- Use how?"
+    },
+    {
+      "start": 559.037,
+      "end": 561.57,
+      "text": "(metal clanging)"
+    },
+    {
+      "start": 561.57,
+      "end": 563.733,
+      "text": "- To hunt others down like yourself."
+    },
+    {
+      "start": 565.91,
+      "end": 567.46,
+      "text": "Well, we know you're out there."
+    },
+    {
+      "start": 568.682,
+      "end": 569.599,
+      "text": "Everywhere."
+    },
+    {
+      "start": 571.434,
+      "end": 574.184,
+      "text": "Thousands of you hiding among us,"
+    },
+    {
+      "start": 575.619,
+      "end": 577.127,
+      "text": "living among us,"
+    },
+    {
+      "start": 577.127,
+      "end": 578.377,
+      "text": "feeding off us."
+    },
+    {
+      "start": 580.962,
+      "end": 583.712,
+      "text": "(metal rattling)"
+    },
+    {
+      "start": 584.693,
+      "end": 586.59,
+      "text": "Before you open your mouth,"
+    },
+    {
+      "start": 586.59,
+      "end": 588.45,
+      "text": "I want you to think very fucking carefully,"
+    },
+    {
+      "start": 588.45,
+      "end": 590.143,
+      "text": "because you get one shot at this."
+    },
+    {
+      "start": 591.7,
+      "end": 594.02,
+      "text": "You have one opportunity for this scenario"
+    },
+    {
+      "start": 594.02,
+      "end": 595.49,
+      "text": "in which you have a future."
+    },
+    {
+      "start": 595.49,
+      "end": 598.66,
+      "text": "And in that future, you are no longer Charlie."
+    },
+    {
+      "start": 598.66,
+      "end": 599.743,
+      "text": "You are Six."
+    },
+    {
+      "start": 602.354,
+      "end": 605.187,
+      "text": "(Charlie yelling)"
+    },
+    {
+      "start": 607.47,
+      "end": 609.003,
+      "text": "And you will do what we say."
+    },
+    {
+      "start": 610.73,
+      "end": 611.837,
+      "text": "When we say it."
+    },
+    {
+      "start": 613.042,
+      "end": 614.959,
+      "text": "- And what if I say no?"
+    },
+    {
+      "start": 619.62,
+      "end": 622.163,
+      "text": "- We open up that hatch right there,"
+    },
+    {
+      "start": 623.329,
+      "end": 626.268,
+      "text": "and you experience daylight."
+    },
+    {
+      "start": 626.268,
+      "end": 627.101,
+      "text": "(alarm sounding)"
+    },
+    {
+      "start": 627.101,
+      "end": 628.601,
+      "text": "For the last time."
+    },
+    {
+      "start": 631.175,
+      "end": 633.9,
+      "text": "(lively music)"
+    },
+    {
+      "start": 633.9,
+      "end": 635.173,
+      "text": "I'll give you 10 seconds."
+    },
+    {
+      "start": 636.7,
+      "end": 637.663,
+      "text": "To make a decision."
+    },
+    {
+      "start": 641.18,
+      "end": 644.284,
+      "text": "(Charlie yelling)"
+    },
+    {
+      "start": 644.284,
+      "end": 645.117,
+      "text": "Five."
+    },
+    {
+      "start": 645.996,
+      "end": 648.746,
+      "text": "(metal shifting)"
+    },
+    {
+      "start": 649.634,
+      "end": 651.626,
+      "text": "What is your answer?"
+    },
+    {
+      "start": 651.626,
+      "end": 652.459,
+      "text": "Yes or no?"
+    },
+    {
+      "start": 656.391,
+      "end": 659.141,
+      "text": "(exciting music)"
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "DUST — Six — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=za2fY2ZFelo",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "L. Gustavo Cooper · Yayıncı: DUST",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
 }
