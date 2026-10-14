@@ -1,5 +1,8 @@
 # AGENTS.md — handoff guide for AI assistants
 
+## YouTube videos temporarily unpublished (2026-10-14)
+The user requested removing the 10 YouTube videos from the live site for now. Their source JSON and captions are retained with `published: false`; tools/build.mjs excludes unpublished videos from data/videos.js. Publish 21 native-player videos. Do not restore the YouTube catalog entries without a new user request. Direct links to unpublished video IDs must not load the YouTube player.
+
 ## Video-caption fix (2026-10-14)
 The user resumed `fix/video-caption-meanings` and subsequently authorized saving to GitHub and updating the public site. The live release is public `333ac97`, from source application `4b9d653`, service-worker version `a8bd3e2574`; Pages succeeded and all nine core live files match the package. Read `VIDEO_CAPTIONS_HANDOFF.md` and HOSTING.md for tests/release details. All 31 videos now have timed captions in source. Raw subtitle drafts in `drafts/video-caption-import/` are not bundled.
 

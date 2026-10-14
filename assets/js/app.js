@@ -974,7 +974,7 @@
     const shelves = VIDEO_CATEGORIES.map((c) => ({ ...c, list: VIDEOS.filter((v) => videoCategory(v).id === c.id)
       .sort((a, b) => levelRank(a.level) - levelRank(b.level) || a.durationSeconds - b.durationSeconds) })).filter((c) => c.list.length);
     $main.innerHTML = `<div class="lib-head video-head"><div><p class="eyebrow">İzleyerek öğren</p><h1>Videolar</h1>
-      <p class="lead">İngilizce filmler, kısa yapımlar ve belgeseller. İngilizce altyazıdaki kelimelere dokun; Türkçe anlamını gör ve defterine kaydet. YouTube videolarının dokunulabilir altyazısı oynatıcının hemen altında görünür.</p></div>
+      <p class="lead">İngilizce filmler, kısa yapımlar ve belgeseller. İngilizce altyazıdaki kelimelere dokun; Türkçe anlamını gör ve defterine kaydet.</p></div>
       ${canDownload ? `<button class="dl-tab" type="button" data-video-cat="downloads" aria-pressed="false" aria-controls="shelf-downloads-box">${ICON.download} İndirilenler</button>` : ""}</div>
       <div class="video-cats chips" role="group" aria-label="Video türü">
         <button class="chip" type="button" data-video-cat="all" aria-pressed="true">Tümü</button>

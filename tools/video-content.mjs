@@ -35,6 +35,7 @@ export function validateVideo(d, file, errors) {
   if (!durationValid) e("durationSeconds must be a finite positive number");
   const youtube = d.provider === "youtube";
   if (d.provider !== undefined && !youtube) e("unknown video provider");
+  if (d.published !== undefined && typeof d.published !== "boolean") e("published must be a boolean when present");
   if (youtube) {
     if (!/^[A-Za-z0-9_-]{11}$/.test(d.youtubeId || "")) e("youtubeId must be a valid video ID");
   } else if (!httpsUrl(d.videoUrl)) e("videoUrl must be an HTTPS URL without credentials");

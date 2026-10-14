@@ -1,4 +1,5 @@
 // User-visible caption behavior; uses a deterministic YouTube transport, not remote movies.
+import { loadVideos } from "./video-content.mjs";
 export async function testVideoCaptions({ page, evaluate, waitFor, navigate, screenshot, assert, pause, origin }) {
   const mock = `(() => {
     window.__captionTest = { calls: [], players: [], translationMode: 'ok', ready: true, delayed: [], fastTimers: false };
@@ -35,10 +36,13 @@ export async function testVideoCaptions({ page, evaluate, waitFor, navigate, scr
   await page("Network.enable");
   await page("Network.setBlockedURLs", { urls: ["https://www.youtube.com/*", "https://www.youtube-nocookie.com/*", "https://api.mymemory.translated.net/*"] });
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
-  await navigate("videos", "document.querySelectorAll('a.video-card').length === 31");
+  await navigate("videos", "window.LANTERN_VIDEOS?.length > 0 && document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length");
   assert(await evaluate("window.LANTERN_VIDEOS.every(v => v.captions.length > 0)"), "Every video needs timed interactive captions.");
   assert(await evaluate("Array.from(document.querySelectorAll('.video-card')).every(c => c.textContent.includes('Dokunulabilir İngilizce altyazı'))"), "Every card describes its caption support.");
   const catalog = await evaluate("window.LANTERN_VIDEOS.map(v => ({id:v.id,provider:v.provider,kind:v.captionKind}))");
+  const { videos } = loadVideos();
+  const unpublished = videos.filter(v => v.published === false);
+  assert(catalog.length === videos.length - unpublished.length, "Only published sources enter the visitor catalog.");
   for (const v of catalog) {
     const youtube = v.provider === "youtube";
     const root = youtube ? "youtube-captions" : "video-captions";
@@ -51,6 +55,20 @@ export async function testVideoCaptions({ page, evaluate, waitFor, navigate, scr
     await waitFor("!document.getElementById('tip').hidden");
     assert(await evaluate("!!document.querySelector('#tip .tip-tr, #tip .tip-ctx, #tip .tip-none')"), "A caption word opens a meaning or lookup status: " + v.id);
     assert(await evaluate("document.querySelector('#tip [data-act=sentence]') !== null"), "Caption sentence translation remains available: " + v.id);
+  }
+
+  if (!catalog.some(v => v.provider === "youtube")) {
+    assert(await evaluate("!window.LANTERN_VIDEOS.some(v=>v.provider==='youtube')"), "The temporarily unpublished YouTube catalog is absent.");
+    for (const v of unpublished) {
+      await navigate("v." + v.id, "document.querySelector('.empty h3')?.textContent === 'Video bulunamadı'");
+      assert(await evaluate("!document.querySelector('iframe, #youtube-start, #video-player')"), "An unpublished direct route cannot create a player: " + v.id);
+    }
+    await navigate("videos", "document.querySelectorAll('a.video-card').length === window.LANTERN_VIDEOS.length");
+    assert(await evaluate("!document.querySelector('.video-head .lead').textContent.includes('YouTube')"), "The visible catalog description reflects the remaining videos.");
+    await screenshot("native-only-video-catalog");
+    await page("Page.removeScriptToEvaluateOnNewDocument", { identifier });
+    console.log(`Caption checks cover ${catalog.length} published video routes and ${unpublished.length} unavailable direct routes.`);
+    return;
   }
 
   await navigate("v.the-expert", "!!document.querySelector('#youtube-captions .w')");
