@@ -5,6 +5,8 @@ The latest explicit user request was to save to GitHub and add the changes to th
 
 The release work also added `tools/verify-live-site.mjs EXPECTED_PACKAGE [FILES...]` to compare live bytes, a `--live` option for isolated caption UI checks, and clearer CDP timeout diagnostics. The final source documentation commit records these release tools; it does not change the deployed application files.
 
+Final live UI result: `node tools/smoke.mjs --captions --live` passed 159 checks against the deployed site, with isolated mocked external playback/translation. Screenshots: `C:\Users\emin\AppData\Local\Temp\lantern-smoke-Wtrip6`. Private source main and fix/video-caption-meanings have both been pushed. Initial live attempts hit page-load waits; the successful run is recorded without claiming those earlier attempts passed.
+
 ## Publication requested
 The user now explicitly requested saving the completed changes to GitHub and updating the live site. The prior deferral statements below are historical. Release follows HOSTING.md and preserves both repository histories. `tools/make-site.mjs` was corrected to replace an existing stamped service-worker version as well as `dev`, ensuring installed clients receive the new caption/player bundle. No new subtitle-reuse license is claimed.
 
