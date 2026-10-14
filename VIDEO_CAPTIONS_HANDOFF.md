@@ -1,5 +1,10 @@
 # Interactive video captions — local implementation complete
 
+## Published release (current status)
+The latest explicit user request was to save to GitHub and add the changes to the live site. The public release is `333ac9713e68e111ef68cbff82464f556badf9bd`, built from clean source application `4b9d6530fdd22a0290d32fa89b39e154d9ac851f`. Pages run `38572915196` succeeded; service worker `a8bd3e2574`. All nine core live file SHA-256 values match the release package (library succeeded on a separate retry after a network timeout). See HOSTING.md for the complete validation record. All prior local-only/deferral statements below are historical. No existing raw-subtitle license was converted into a newly certified reuse license.
+
+The release work also added `tools/verify-live-site.mjs EXPECTED_PACKAGE [FILES...]` to compare live bytes, a `--live` option for isolated caption UI checks, and clearer CDP timeout diagnostics. The final source documentation commit records these release tools; it does not change the deployed application files.
+
 ## Publication requested
 The user now explicitly requested saving the completed changes to GitHub and updating the live site. The prior deferral statements below are historical. Release follows HOSTING.md and preserves both repository histories. `tools/make-site.mjs` was corrected to replace an existing stamped service-worker version as well as `dev`, ensuring installed clients receive the new caption/player bundle. No new subtitle-reuse license is claimed.
 

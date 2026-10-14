@@ -37,7 +37,7 @@ const server = http.createServer((req, res) => {
   } catch { res.writeHead(400); res.end(); }
 });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-const origin = `http://127.0.0.1:${server.address().port}`;
+const origin = process.argv.includes("--live") ? "https://lantern-english.github.io" : `http://127.0.0.1:${server.address().port}`;
 const browser = spawn(binary, ["--headless=new", "--disable-gpu", "--disable-background-timer-throttling", "--disable-renderer-backgrounding", "--no-first-run", "--no-default-browser-check", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${profile}`, "about:blank"], { windowsHide: true, stdio: "ignore" });
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 let socket;
@@ -73,7 +73,8 @@ try {
   });
   send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
     const id = ++serial;
-    const timer = setTimeout(() => { pending.delete(id); reject(new Error(`Timed out: ${method}`)); }, 15000);
+    const callSite = new Error().stack;
+    const timer = setTimeout(() => { pending.delete(id); reject(new Error(`Timed out: ${method} ${JSON.stringify(params)}\n${callSite}`)); }, 15000);
     pending.set(id, { resolve, reject, timer, method });
     socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
   });
@@ -88,8 +89,11 @@ try {
     return result.result.value;
   };
   const waitFor = async (expression) => {
-    for (let i = 0; i < 100; i++) { if (await evaluate(expression)) return; await pause(100); }
-    throw new Error(`Page condition failed: ${expression}`);
+    for (let i = 0; i < (process.argv.includes("--live") ? 600 : 100); i++) { if (await evaluate(expression)) return; await pause(100); }
+    const snapshot = await evaluate("({url:location.href,ready:document.readyState,title:document.title,catalog:window.LANTERN_VIDEOS?.length,cards:document.querySelectorAll('a.video-card').length,text:document.body?.innerText.slice(0,400)})");
+    const {data} = await page("Page.captureScreenshot", {format:"png",captureBeyondViewport:false});
+    fs.writeFileSync(path.join(runDir,"condition-failure.png"),Buffer.from(data,"base64"));
+    throw new Error(`Page condition failed: ${expression}\n${JSON.stringify(snapshot)}\nScreenshot: ${runDir}\\condition-failure.png`);
   };
   const reload = async (condition) => {
     const timeOrigin = await evaluate("performance.timeOrigin");
@@ -97,7 +101,8 @@ try {
     await waitFor(`performance.timeOrigin !== ${timeOrigin} && (${condition})`);
   };
   const navigate = async (hash, condition) => {
-    await page("Page.navigate", { url: origin + "/index.html#" + hash });
+    const navigation = await page("Page.navigate", { url: origin + "/index.html#" + hash });
+    if (navigation.errorText) throw new Error("Page navigation failed: " + navigation.errorText);
     const text = hash.startsWith("s.") && [...stories, ...articles].find((t) => t.id === hash.slice(2));
     if (text) await waitFor(`document.querySelector('.reader-head h1')?.textContent === ${JSON.stringify(text.title)}`);
     await waitFor(condition);

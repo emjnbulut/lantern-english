@@ -33,7 +33,7 @@ export async function testVideoCaptions({ page, evaluate, waitFor, navigate, scr
   })();`;
   const { identifier } = await page("Page.addScriptToEvaluateOnNewDocument", { source: mock });
   await page("Network.enable");
-  await page("Network.setBlockedURLs", { urls: ["https://*"] });
+  await page("Network.setBlockedURLs", { urls: ["https://www.youtube.com/*", "https://www.youtube-nocookie.com/*", "https://api.mymemory.translated.net/*"] });
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
   await navigate("videos", "document.querySelectorAll('a.video-card').length === 31");
   assert(await evaluate("window.LANTERN_VIDEOS.every(v => v.captions.length > 0)"), "Every video needs timed interactive captions.");
