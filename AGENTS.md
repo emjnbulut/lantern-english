@@ -1,7 +1,10 @@
 # AGENTS.md — handoff guide for AI assistants
 
+## Visual refresh published (2026-10-27)
+The PDF-guided homepage refresh is live at https://lantern-english.github.io/. Source commit `470eb99`, public commit `a5e9711`, service-worker version `7e0c4b5310`. Only CSS, app.js and sw.js changed in the public release. Source smoke passed 634 checks; all nine visitor files match the live site after CRLF/LF normalization. See HOSTING.md. A fresh source build removes 61 legacy dictionary keys from the tracked bundle; inspect that mismatch before the next content release.
+
 ## YouTube videos temporarily unpublished (2026-10-14)
-The user requested removing the 10 YouTube videos from the live site for now. Their source JSON and captions are retained with `published: false`; tools/build.mjs excludes unpublished videos from data/videos.js. The current live release is public `a848853`, from source application `40bc66c`, worker `877a5b875c`; 21 native-player videos and all 10 removed direct routes were checked live (100 checks). Do not restore the YouTube catalog entries without a new user request. Direct links to unpublished video IDs must not load the YouTube player. See HOSTING.md for release verification.
+The user requested removing the 10 YouTube videos from the live site for now. Their source JSON and captions are retained with `published: false`; tools/build.mjs excludes unpublished videos from data/videos.js. The removal release was public `a848853`, from source application `40bc66c`, worker `877a5b875c`; 21 native-player videos and all 10 removed direct routes were checked live (100 checks). Do not restore the YouTube catalog entries without a new user request. Direct links to unpublished video IDs must not load the YouTube player. See HOSTING.md for release verification.
 
 ## Video-caption fix (2026-10-14)
 The user resumed `fix/video-caption-meanings` and subsequently authorized saving to GitHub and updating the public site. The live release is public `333ac97`, from source application `4b9d653`, service-worker version `a8bd3e2574`; Pages succeeded and all nine core live files match the package. Read `VIDEO_CAPTIONS_HANDOFF.md` and HOSTING.md for tests/release details. All 31 videos now have timed captions in source. Raw subtitle drafts in `drafts/video-caption-import/` are not bundled.

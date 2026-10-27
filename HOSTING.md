@@ -1,5 +1,9 @@
 # Lantern English yayın kaydı
 
+**Tasarım düzenlemesi yayında (27 Ekim 2026):** PDF'deki Impeccable ölçütlerine göre ana sayfanın koleksiyon, seviye ve tür düzeni sadeleştirildi; küçük metinlerin kontrastı yükseltildi, dekoratif parlamalar kaldırıldı. Kaynak commit `470eb99`, public yayın commit `a5e9711`, service-worker sürümü `7e0c4b5310`. Kaynakta 634 tarayıcı kontrolü geçti; Impeccable kaynak ve 390 px yerel sayfa taramalarında raporlanabilir bulgu kalmadı. Canlı adreste dokuz ziyaretçi dosyası yayın commitiyle eşleşti (Windows CRLF ve Pages LF satır sonları eşitlenerek karşılaştırıldı). Yayında yalnızca `assets/css/style.css`, `assets/js/app.js` ve `sw.js` değişti; eski public checkouttaki yerel değişikliğe dokunulmadı. Canlı adres: https://lantern-english.github.io/.
+
+**Sonraki içerik yayınına not:** Kaynakta `node tools/build.mjs` çalıştırıldığında `data/dict.js` içindeki 61 eski karşılık kaldırılıyor (7.838 → 7.777); bu tasarım yayını sözlük paketini değiştirmedi. İçerik/sözlük yayını öncesinde bu farkı incele.
+
 **YouTube videoları geçici olarak yayından kaldırıldı (14 Ekim 2026):** Kullanıcının isteğiyle 10 YouTube videosu canlı katalogdan ve doğrudan video rotalarından çıkarıldı. Kaynak JSON dosyaları `published: false` ile özel depoda korunur; geri ekleme yeni kullanıcı isteği gerektirir. Canlı katalogda 21 yerel oynatıcılı video vardır.
 
 Kaynak uygulama `40bc66c11e0224c2551f1a2bba9886b690a1ba2b`; public yayın `a848853b23a4e5524a3129976026b3ff075fe985`; service worker `877a5b875c`. Pages dağıtımı `38576371870` başarılı. Temiz kaynak build 21 yayımlanan / 10 yayımlanmayan video üretti; 100 tarayıcı kontrolü geçti. Canlı sitede de aynı 100 kontrol geçti: 21 video rotası açılır, 10 kaldırılan doğrudan rota Video bulunamadı gösterir ve oynatıcı oluşturmaz. Ekran görüntüleri: `C:\Users\emin\AppData\Local\Temp\lantern-smoke-YIfXg8`.
