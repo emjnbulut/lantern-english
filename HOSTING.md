@@ -48,7 +48,7 @@ Eşzamanlı diğer AI çalışması: kaynak geçmişine altı yeni uyarlama ve o
 
 ## Kaynaklar ve çalışma klasörleri
 
-Ana kaynak deposu `emjnbulut/lantern-english`, private; yerel klasör `C:\Users\emin\lantern-english`. GitHub origin değiştirilmedi.
+Ana kaynak deposu `emjnbulut/lantern-english`, public (2026-10-27'den beri); yerel klasör `C:\Users\emin\lantern-english`. GitHub origin değiştirilmedi.
 
 Sites için ayrı kaynak checkout: **`C:\Users\emin\lantern-english-hosting`**. Bu klasörde uygulama kaynaklarının bir kopyası, `.openai/hosting.json` ve `dist/` bulunuyor. `dist/` içindeki index.html, assets/ ve data/ yayınlanır; content/ veya drafts/ doğrudan yayınlanmaz. Tamamlanmamış Greyhaven taslağı uygulama paketinde yok.
 
@@ -77,7 +77,7 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 
 ## Herkese açık yayın ve mobil uygulama (Claude oturumu, 11 Ekim 2026)
 
-**Durum:** Herkese açık site GitHub Pages'te yayında (aşağıya bak). ChatGPT Sites kopyası owner-private ve eski sürümde kalır; kaynak GitHub deposu private.
+**Durum:** Herkese açık site GitHub Pages'te yayında (aşağıya bak). ChatGPT Sites kopyası owner-private ve eski sürümde kalır; kaynak GitHub deposu da public (2026-10-27).
 
 ### Mobil uygulama / WebView uyumu
 - `manifest.webmanifest` + `sw.js` + `assets/icons/`: site Android/iOS/masaüstünde ana ekrana eklenebilir (PWA), daha önce açılan sayfalar çevrimdışı çalışır. Service worker yalnızca `http(s)` altında kaydedilir; `file://` ve gömülü WebView'larda sessizce atlanır.
@@ -90,12 +90,12 @@ Depoyu public yapmak, ücretli alan adı almak veya başka bir Site oluşturmak 
 
 ### Herkese açık yayın (YAYINDA, 11 Ekim 2026)
 - **Adres:** https://lantern-english.github.io/ — GitHub organizasyonu `lantern-english` (kullanıcı oluşturdu; adres kişisel ad içermez).
-- **Depo:** `lantern-english/lantern-english.github.io` (**public**; yalnızca derlenmiş site). Kaynak depo `emjnbulut/lantern-english` **private** kalır.
+- **Depo:** `lantern-english/lantern-english.github.io` (**public**; yalnızca derlenmiş site). Kaynak depo `emjnbulut/lantern-english` **public** (2026-10-27'den beri).
 - **Güncelleme:** Kaynak commitinden temiz bir worktree oluştur. Orada `node tools/validate.mjs`, `node tools/build.mjs` ve `node tools/smoke.mjs` çalıştır; üretilen veri paketlerini kaynak deposunda kaydet. Ardından `node tools/make-site.mjs` ile worktree içindeki `site/` klasörünü oluştur. Public depoyu normal olarak clone/fetch et; paketin ziyaretçi dosyalarını mevcut checkouta kopyala, `.git` ve varsa hosting ayarlarını koru. Diff'i incele, yalnızca site dosyalarını commit et ve normal `git push origin main` kullan. Kaynaklar, taslaklar ve devir notları public depoya kopyalanmaz.
 - **Geçmişi koru:** Mevcut `tools/publish-site.mjs` betiği yeni depo geçmişi oluşturup `--force` ile gönderir; güncellemelerde kullanma. Public yayın geçmişini normal commit/push ile sürdür.
 - Pages `main` / kök klasörden sunar; yayın birkaç dakika sürebilir. `sw.js` sürüm damgası değişir, kurulu kopyalar yenilenir. Push sonrasında canlı `index.html`, uygulama ve veri dosyalarının paketle eşleştiğini doğrula.
 - **Doğrulama:** canlı adreste 390 px mobil kontrol (ipucu, Önerilenler, manifest, service worker, çevrimdışı önbellek) geçti.
-- Ücretsiz GitHub hesabında private depodan Pages yoktur; bu yüzden ayrı public site deposu kullanılır.
+- Site, adresin hesap adını içermemesi için ayrı bir organizasyondaki public depodan yayınlanır.
 
 ### Koruma gerçeği
 Statik siteyi herkes tarayıcısından görüp kaydedebilir; teknik olarak kopyalanmasını engellemek mümkün değildir. Alınan önlemler: kaynak/taslak/geçmiş yayınlanmaz, `LICENSE` ile telif bildirimi, sayfada "created by emjn" imzası. Kamu malı klasikler (Gutenberg) zaten serbesttir; özgün metinler telif kapsamındadır.

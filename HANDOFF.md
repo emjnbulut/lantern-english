@@ -33,7 +33,7 @@ Depo zaten `emjnbulut/lantern-english` adını taşıyor. Arayüzde marka **Lant
 
 ## Depo ve çalışma ortamı
 
-- Depo: `https://github.com/emjnbulut/lantern-english.git`, **private**.
+- Depo: `https://github.com/emjnbulut/lantern-english.git`, **public** (2026-10-27 itibarıyla; kod MIT, içerik CC BY-NC 4.0).
 - Dal: `main`; uzak depo: `origin`.
 - Yerel klasör: `C:\Users\emin\lantern-english`.
 - Statik HTML/CSS/JavaScript; framework, npm bağımlılığı veya harici veritabanı yok.
@@ -82,7 +82,7 @@ Toplam site: **27 hikâye ve 16 makale**; A1 3, A2 6, B1 6, B2 6, C1 5, C2 1 hik
 1. **Sözlüğü tamamla.** `content/dict/extended-originals.json` 111 yeni madde ekliyor; toplam 6.687. Son `node tools/vocab.mjs` sonucu **451 çözümlenemeyen biçim**, ayrıca 249 yalnızca büyük harfle geçen biçim atlandı. Bazıları isim veya eski metinlerin tek harfli parçaları; birçok gerçek yeni kelime de hâlâ çeviri bekliyor. Öne çıkanlar: beaver, cassette, archive, catalogue, conversion, caption, beacon, valve, actuator, scanning, technician, inference. Aynı kavram için kök ve çekim biçimlerini lemmatizer davranışına göre ele al; bağlamsal anlam için metnin glossary alanını kullan. `Bas` bir karakter adı olabilir; eski klasiklerde küçük harfli Fransızca `bas` da geçtiğinden global karşılığı isimle ezme. Eski `s`, `l`, `à` parçaları için lemmatizer değişikliği gerekebilir; önce bağlamı kontrol et. Önceki %98,5 kapsama iddiası yeni metinler için doğrulanmış değil.
 2. **Greyhaven taslağını tamamla.** Aşağıdaki bölümde plan var. Bitmeden `content/stories/` içine taşıma.
 3. **İkinci C2 hikâyeyi yaz.** Kullanıcının üst seviye isteğini genişletmek için ek bir C2 drama planlandı; henüz dosya oluşturulmadı. Öneri aşağıda, zorunlu olay örgüsü değil.
-4. **Yayın erişimini koru.** Tamamlanmış sürüm Sites üzerinde yayınlandı; yalnızca sahibinin ChatGPT hesabıyla açılıyor. Kullanıcı başka kişilerin erişmesini isterse mevcut sitenin erişim politikasını değiştir; yeni Site oluşturma. GitHub deposu private kalmalı.
+4. **Yayın erişimini koru.** Tamamlanmış sürüm Sites üzerinde yayınlandı; yalnızca sahibinin ChatGPT hesabıyla açılıyor. Kullanıcı başka kişilerin erişmesini isterse mevcut sitenin erişim politikasını değiştir; yeni Site oluşturma. GitHub deposu artık public (2026-10-27).
 5. İçerik ve veri paketlerini birlikte doğrulayıp GitHub'a kaydet. Sayıları README/AGENTS içinde güncelle.
 
 ## Greyhaven: tamamlanmamış C1 macera
@@ -108,9 +108,9 @@ Henüz dosya yok. Öneri: **The Meal He Was Asked to Make**, id `the-meal-he-was
 
 ## Yayın durumu
 
-İlk GitHub API incelemesinde depo private, `homepage` boş, `has_pages=false`; Pages adresi yoktu (Pages API 404). Eski AGENTS'ta bahsedilen Claude artifact özel önizlemeydi. Sonraki kullanıcı isteği üzerine yeni bir Sites yayını tamamlandı; `.openai/hosting.json` artık gerçek Site kimliğini taşıyor.
+İlk GitHub API incelemesinde (eski durum; depo sonradan public yapıldı) depo private, `homepage` boş, `has_pages=false`; Pages adresi yoktu (Pages API 404). Eski AGENTS'ta bahsedilen Claude artifact özel önizlemeydi. Sonraki kullanıcı isteği üzerine yeni bir Sites yayını tamamlandı; `.openai/hosting.json` artık gerçek Site kimliğini taşıyor.
 
-Sites yayın adresi: **https://lantern-english.copperlion512.chatgpt.site**. Native deployment sonucu `succeeded` olarak doğrulandı. Yayın owner-private; GitHub görünürlüğü değiştirilmedi. Güncelleme için Sites skill ve `HOSTING.md` okunmalı, mevcut proje kimliği yeniden kullanılmalı. GitHub kaynakları bu depoda tutuluyor.
+Sites yayın adresi: **https://lantern-english.copperlion512.chatgpt.site**. Native deployment sonucu `succeeded` olarak doğrulandı. Yayın owner-private (ChatGPT Sites kopyası, eski). Güncelleme için Sites skill ve `HOSTING.md` okunmalı, mevcut proje kimliği yeniden kullanılmalı. GitHub kaynakları bu depoda tutuluyor.
 
 ## Bu kontrol noktasındaki doğrulamalar
 
