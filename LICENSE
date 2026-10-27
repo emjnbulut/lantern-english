@@ -1,23 +1,48 @@
-Lantern English — copyright notice
+Lantern English — licenses
 
-Copyright (c) 2026 emjn. All rights reserved.
+Copyright (c) 2026 emjn
 
-The following are original works made for Lantern English and may not be copied,
-redistributed, republished or used to train or build another product without
-written permission from the author:
-  - the website design and source code,
-  - the original stories ("Lantern Original"), articles and book summaries
-    ("Lantern Editorial"),
-  - the quizzes, phrase lists, glossaries and the English-Turkish dictionary.
+1. Code (MIT License)
+---------------------
+The website source code and build tools (index.html, sw.js, manifest.webmanifest,
+tools/ and other program code) are released under the MIT License:
 
-Classic texts reproduced on the site (see the Sources list on the "Nasıl Çalışır"
-page, each with a link) come from Project Gutenberg and are in the public domain.
-The editorial material added around them (summaries, glossaries, phrases, quizzes)
-is covered by the notice above.
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+2. Content (CC BY-NC 4.0)
+-------------------------
+The original stories ("Lantern Original"), articles, retellings and adaptations
+("Lantern Editorial"), quizzes, phrase lists, glossaries and the English-Turkish
+dictionary (content/ and data/) are licensed under Creative Commons
+Attribution-NonCommercial 4.0 International:
+https://creativecommons.org/licenses/by-nc/4.0/
+You may share and adapt them for non-commercial purposes with credit to
+"emjn / Lantern English". Commercial use, including training or building a
+commercial product, requires written permission from the author.
+
+Classic texts come from Project Gutenberg and are in the public domain (see the
+Sources list on the "Nasıl Çalışır" page). Only Lantern's own retelling,
+glossaries, phrases and quizzes around them fall under this section.
 
 External films and subtitles
 ---------------------------
-The restrictions above do not apply to the externally licensed films or their
+The licenses above do not apply to the externally licensed films or their
 English caption text. Each video retains its own attribution and source links:
   - Sintel and Tears of Steel: Blender Foundation, CC BY 3.0.
   - Elephants Dream: Blender Foundation / Netherlands Media Art Institute,
