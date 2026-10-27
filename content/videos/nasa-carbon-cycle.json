@@ -1,0 +1,594 @@
+{
+  "id": "nasa-carbon-cycle",
+  "type": "video",
+  "title": "The Carbon Cycle: The Living Planet",
+  "creator": "NASA · Dr. Lola Fatoyinbo",
+  "year": 2014,
+  "level": "C1",
+  "category": "real",
+  "genre": "documentary",
+  "durationSeconds": 441,
+  "summaryTr": "Bitkiler, okyanuslar ve insan faaliyetleri karbonu nasıl etkiler? Uydu görüntüleri üzerinden karbon döngüsünü anlatan bir bilim konuşması.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Yoğun biyoloji ve çevre kelimeleri, sayıların sözlü anlatımı ve karmaşık süreçlerin açıklanması ileri seviye dinleme gerektirir. 2014 tarihli konuşmada sayılar ve görev planları o dönemi yansıtır.",
+  "videoUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Lola.Fatoyinbo.2014_ipod_lg.m4v",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Lola.Fatoyinbo.2014_ipod_sm.mp4",
+      "sizeMB": 37
+    },
+    {
+      "label": "360p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Lola.Fatoyinbo.2014_ipod_lg.m4v",
+      "sizeMB": 87
+    },
+    {
+      "label": "540p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Lola.Fatoyinbo.2014_appletv.m4v",
+      "sizeMB": 211
+    }
+  ],
+  "downloadable": false,
+  "source": {
+    "name": "NASA Goddard — The Carbon Cycle: The Living Planet",
+    "url": "https://svs.gsfc.nasa.gov/11668/#media_group_344476",
+    "watchUrl": "https://svs.gsfc.nasa.gov/11668/#media_group_344476",
+    "license": "NASA medya kullanım koşulları · Eğitim amaçlı kullanım",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "credit": "NASA's Goddard Space Flight Center · NASA · Dr. Lola Fatoyinbo",
+    "creditNoteTr": "Özgün video ve jenerik değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "NASA — resmî İngilizce WebVTT altyazısı",
+    "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Lola_Fatoyinbo.en_US.vtt",
+    "license": "NASA medya kullanım koşulları",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "changeNoteTr": "Sözler ve kaynak zamanları korunmuştur; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür. Kaynak altyazıda yazım veya aktarım hataları bulunabilir."
+  },
+  "glossary": {
+    "biosphere": "biyosfer; canlıların yaşadığı katman",
+    "vegetation": "bitki örtüsü",
+    "decomposition": "ayrışma; çürüme",
+    "productivity": "üretkenlik",
+    "carbon": "karbon",
+    "emissions": "salım; emisyonlar",
+    "depletion": "tükenme; azalım"
+  },
+  "captions": [
+    {
+      "start": 0.02,
+      "end": 4.05,
+      "text": "[Applause]"
+    },
+    {
+      "start": 4.05,
+      "end": 8.06,
+      "text": "The most visual"
+    },
+    {
+      "start": 8.06,
+      "end": 12.11,
+      "text": "manifestation of life on earth happens every year when springtime"
+    },
+    {
+      "start": 12.11,
+      "end": 16.13,
+      "text": "comes and fresh green leaves and grasses appear all around us."
+    },
+    {
+      "start": 16.13,
+      "end": 20.2,
+      "text": "The biosphere, our living world is fueled by"
+    },
+    {
+      "start": 20.2,
+      "end": 24.22,
+      "text": "the seasonal pulse of energy that the change in season brings."
+    },
+    {
+      "start": 24.22,
+      "end": 28.24,
+      "text": "In this visualization, we can see the seasonal changes"
+    },
+    {
+      "start": 28.24,
+      "end": 32.33,
+      "text": "to plants on land and in the oceans. Using data"
+    },
+    {
+      "start": 32.33,
+      "end": 36.45,
+      "text": "like these, we can estimate agricultural yield worldwide,"
+    },
+    {
+      "start": 36.45,
+      "end": 40.49,
+      "text": "predict famines, fires and algae blooms"
+    },
+    {
+      "start": 40.49,
+      "end": 44.54,
+      "text": "or help with land management. This global view of our biosphere"
+    },
+    {
+      "start": 44.54,
+      "end": 48.56,
+      "text": "is also crucial for studying the flow of carbon to the Earth system"
+    },
+    {
+      "start": 48.56,
+      "end": 52.59,
+      "text": "and predicting the rate and effect of climate change on our home planet."
+    },
+    {
+      "start": 52.59,
+      "end": 56.64,
+      "text": "In fact, the vegetation on land and in the"
+    },
+    {
+      "start": 56.64,
+      "end": 60.66,
+      "text": "oceans are crucial component of the global carbon cycle"
+    },
+    {
+      "start": 60.66,
+      "end": 64.68,
+      "text": "and climate change science. Plants are the real lungs"
+    },
+    {
+      "start": 64.68,
+      "end": 68.73,
+      "text": "of the Earth, absorbing the carbon dioxide from the atmosphere"
+    },
+    {
+      "start": 68.73,
+      "end": 72.78999999999999,
+      "text": "and producing the oxygen that we breathe. Here we see what's call net primary"
+    },
+    {
+      "start": 72.78999999999999,
+      "end": 76.81,
+      "text": "productivity; maps are aware and how much carbon"
+    },
+    {
+      "start": 76.81,
+      "end": 80.85,
+      "text": "is taken up or released by plants on a monthly basis."
+    },
+    {
+      "start": 80.85,
+      "end": 84.91,
+      "text": "The colors are on these maps indicate how fast carbon"
+    },
+    {
+      "start": 84.91,
+      "end": 88.93,
+      "text": "was taken in for every square meter of land and you could see how"
+    },
+    {
+      "start": 92.97999999999999,
+      "end": 96.99000000000001,
+      "text": "where majority of the land masses lie. Maps such as these,"
+    },
+    {
+      "start": 96.99000000000001,
+      "end": 101.02000000000001,
+      "text": "allow a scientist to routinely monitor plant's role in the global carbon"
+    },
+    {
+      "start": 101.02000000000001,
+      "end": 105.05,
+      "text": "cycle and monitor how they're affecting and affected by"
+    },
+    {
+      "start": 105.05,
+      "end": 109.12,
+      "text": "or changing climate. Carbon is"
+    },
+    {
+      "start": 109.12,
+      "end": 113.14,
+      "text": "emitted into the atmosphere from natural sources such as forest"
+    },
+    {
+      "start": 113.14,
+      "end": 117.18,
+      "text": "clearing, decomposition, or volcanic activity."
+    },
+    {
+      "start": 117.18,
+      "end": 121.2,
+      "text": "90% of the non-natural emissions result"
+    },
+    {
+      "start": 121.2,
+      "end": 125.23,
+      "text": "from power production, cement production and transportation."
+    },
+    {
+      "start": 125.23,
+      "end": 129.32,
+      "text": "Over time 50%"
+    },
+    {
+      "start": 129.32,
+      "end": 133.43,
+      "text": "of that carbon that's emitted stays in the atmosphere while"
+    },
+    {
+      "start": 133.43,
+      "end": 137.47,
+      "text": "25% gets taken up by trees and plants and the remaining"
+    },
+    {
+      "start": 137.47,
+      "end": 141.55,
+      "text": "25% is taken up by our oceans."
+    },
+    {
+      "start": 141.55,
+      "end": 145.57,
+      "text": "And in fact, we can measure the contribution in vegetation growth and"
+    },
+    {
+      "start": 145.57,
+      "end": 149.57999999999998,
+      "text": "human's emissions on the carbon that is stored in the atmosphere using satellite data."
+    },
+    {
+      "start": 149.57999999999998,
+      "end": 153.59,
+      "text": "So this visualization is a time series of the global"
+    },
+    {
+      "start": 153.59,
+      "end": 157.63,
+      "text": "distribution and variation of carbon dioxide in the atmosphere as observed by NASA"
+    },
+    {
+      "start": 157.63,
+      "end": 161.68,
+      "text": "satellite since the year 2000. For comparison we've overlaid"
+    },
+    {
+      "start": 161.68,
+      "end": 165.72,
+      "text": "a graph of the seasonal and inter-annual annual changed increase of carbon"
+    },
+    {
+      "start": 165.72,
+      "end": 169.77,
+      "text": "dioxide that was measured at the Mauna Loa Observatory in Hawaii."
+    },
+    {
+      "start": 169.77,
+      "end": 173.85,
+      "text": "So these data sets show us that the amount of carbon dioxide stored in"
+    },
+    {
+      "start": 173.85,
+      "end": 177.88,
+      "text": "the atmosphere is steadily increasing as we continuously pump"
+    },
+    {
+      "start": 177.88,
+      "end": 181.95,
+      "text": "carbon into the atmosphere and decrease our forested and vegetated"
+    },
+    {
+      "start": 181.95,
+      "end": 185.95,
+      "text": "areas. And even though we still see that"
+    },
+    {
+      "start": 185.95,
+      "end": 189.99,
+      "text": "semi annual depth in concentrations with the growth of vegetation in the springtime,"
+    },
+    {
+      "start": 189.99,
+      "end": 194.03,
+      "text": "the increasing trend of carbon dioxide concentrations"
+    },
+    {
+      "start": 194.03,
+      "end": 198.06,
+      "text": "is leading to the warming and changing of our planet."
+    },
+    {
+      "start": 198.06,
+      "end": 202.11,
+      "text": "The seasonal"
+    },
+    {
+      "start": 202.11,
+      "end": 206.19,
+      "text": "pulse of vegetation growth is crucial for the well-being and balance of life on Earth."
+    },
+    {
+      "start": 206.19,
+      "end": 210.2,
+      "text": "This visualization of carbon dioxide concentrations in the atmosphere"
+    },
+    {
+      "start": 210.2,
+      "end": 214.24,
+      "text": "shows how every springtime when forests, grasslands and agricultural"
+    },
+    {
+      "start": 214.24,
+      "end": 218.3,
+      "text": "lands Green up they suck up the carbon dioxide contained in the atmosphere"
+    },
+    {
+      "start": 218.3,
+      "end": 222.32,
+      "text": "through photosynthesis, but in the winter months that photosynthetic"
+    },
+    {
+      "start": 222.32,
+      "end": 226.36,
+      "text": "uptake is not there and the large amounts of carbon dioxide stay in"
+    },
+    {
+      "start": 226.36,
+      "end": 230.37,
+      "text": "the atmosphere and in fact data from satellite sensors have"
+    },
+    {
+      "start": 230.37,
+      "end": 234.39,
+      "text": "shown us that during the Northern Hemisphere's growing season,"
+    },
+    {
+      "start": 234.39,
+      "end": 238.44,
+      "text": "the Midwest region of the United States boasts more photosynthetic activity"
+    },
+    {
+      "start": 238.44,
+      "end": 242.5,
+      "text": "than anywhere else on Earth. But with"
+    },
+    {
+      "start": 242.5,
+      "end": 246.53,
+      "text": "changes in the distribution and type of land cover on earth,"
+    },
+    {
+      "start": 246.53,
+      "end": 250.58,
+      "text": "the natural cycle of growth and carbon dioxide uptake is being"
+    },
+    {
+      "start": 250.58,
+      "end": 254.65,
+      "text": "disturbed and more and more carbon dioxide is accumulating in the atmosphere."
+    },
+    {
+      "start": 258.71,
+      "end": 262.73,
+      "text": "Forest fires are one of the leading causes of vegetation change"
+    },
+    {
+      "start": 262.73,
+      "end": 266.77,
+      "text": "and land use change emissions globally, but the cause of fires"
+    },
+    {
+      "start": 266.77,
+      "end": 270.8,
+      "text": "can be both natural or human induced. In Africa"
+    },
+    {
+      "start": 270.8,
+      "end": 274.85,
+      "text": "forest fires are used to clear land for agricultural activity"
+    },
+    {
+      "start": 274.85,
+      "end": 278.87,
+      "text": "and the amount and timing of fires is clearly linked to the seasonal changes"
+    },
+    {
+      "start": 278.87,
+      "end": 282.9,
+      "text": "from healthy green vegetation to dry grasses"
+    },
+    {
+      "start": 282.9,
+      "end": 286.96,
+      "text": "leading to these sweeping waves of fire that move from south to north"
+    },
+    {
+      "start": 286.96,
+      "end": 290.97,
+      "text": "and north to south each season. As these areas are getting"
+    },
+    {
+      "start": 290.97,
+      "end": 295,
+      "text": "hotter and drier with climate change, the intensity and amount of fire"
+    },
+    {
+      "start": 295,
+      "end": 299.04,
+      "text": "increases leading to even more clearing."
+    },
+    {
+      "start": 299.04,
+      "end": 303.09,
+      "text": "But our satellite sensors don't just show us the health and changes"
+    },
+    {
+      "start": 303.09,
+      "end": 307.12,
+      "text": "in vegetation on large scales. We can also monitor the human impact"
+    },
+    {
+      "start": 307.12,
+      "end": 311.15,
+      "text": "on our planet on the scale of the city or our neighborhood."
+    },
+    {
+      "start": 311.15,
+      "end": 315.19,
+      "text": "So this image series shows of the massive growth spurt of"
+    },
+    {
+      "start": 315.19,
+      "end": 319.2,
+      "text": "Las Vegas since 1972. Those large red areas are"
+    },
+    {
+      "start": 319.2,
+      "end": 323.22,
+      "text": "actually green spaces such as city parks or golf"
+    },
+    {
+      "start": 323.22,
+      "end": 327.26,
+      "text": "courses but now take a look at Lake Mead"
+    },
+    {
+      "start": 327.26,
+      "end": 331.33,
+      "text": "we can see how with the influx of people into the area, the water"
+    },
+    {
+      "start": 331.33,
+      "end": 335.36,
+      "text": "table is steadily decreasing."
+    },
+    {
+      "start": 335.36,
+      "end": 339.43,
+      "text": "These images from Landsat really"
+    },
+    {
+      "start": 339.43,
+      "end": 343.45,
+      "text": "show us how we humans have changed our planet."
+    },
+    {
+      "start": 343.45,
+      "end": 347.5,
+      "text": "Here we see the impact of mountaintop removal in West Virginia"
+    },
+    {
+      "start": 347.5,
+      "end": 351.56,
+      "text": "from 1984 to the present."
+    },
+    {
+      "start": 355.6,
+      "end": 359.65999999999997,
+      "text": "In Saudi Arabia"
+    },
+    {
+      "start": 359.65999999999997,
+      "end": 363.67,
+      "text": "we're able to see how irrigation technology has led to agriculture"
+    },
+    {
+      "start": 363.67,
+      "end": 367.69,
+      "text": "expansion in deserts but also to water table depletion"
+    },
+    {
+      "start": 367.69,
+      "end": 371.73,
+      "text": "n nearby reservoirs."
+    },
+    {
+      "start": 371.73,
+      "end": 375.77,
+      "text": "All of these examples are"
+    },
+    {
+      "start": 375.77,
+      "end": 379.79,
+      "text": "showing how we humans are changing the look of the planet and consequently"
+    },
+    {
+      "start": 379.79,
+      "end": 383.84,
+      "text": "significantly affecting its vital signs. Our last example"
+    },
+    {
+      "start": 383.84,
+      "end": 387.88,
+      "text": "shows a recent map of a forest cover loss that is highlighted the extensive changes"
+    },
+    {
+      "start": 387.88,
+      "end": 391.93,
+      "text": "happening since just the year 2000. These images show"
+    },
+    {
+      "start": 391.93,
+      "end": 396.04,
+      "text": "forest clearing from wildfires in Colorado from 2000"
+    },
+    {
+      "start": 396.04,
+      "end": 400.1,
+      "text": "to 2012 fueled by record temperatures and dry conditions."
+    },
+    {
+      "start": 400.1,
+      "end": 404.21,
+      "text": "In general, wildfires in the Western United States"
+    },
+    {
+      "start": 404.21,
+      "end": 408.22,
+      "text": "are increasing in frequency and duration due to higher temperatures"
+    },
+    {
+      "start": 408.22,
+      "end": 412.27,
+      "text": "and longer growing seasons and this has resulted in"
+    },
+    {
+      "start": 412.27,
+      "end": 416.29,
+      "text": "twice as many acres burnt each year compared to just 40 years ago."
+    },
+    {
+      "start": 416.29,
+      "end": 420.32,
+      "text": "These seasons are like the heartbeat of the planet,"
+    },
+    {
+      "start": 420.32,
+      "end": 424.39,
+      "text": "fueling the growth of vegetation worldwide"
+    },
+    {
+      "start": 424.39,
+      "end": 428.42,
+      "text": "and just as the seasons can affect the health of forested areas,"
+    },
+    {
+      "start": 428.42,
+      "end": 432.47,
+      "text": "they're also affecting the health of our ice caps and glaciers"
+    },
+    {
+      "start": 432.47,
+      "end": 436.53,
+      "text": "and on that note I would like to thank you for listening and introduce the next speaker,"
+    },
+    {
+      "start": 436.53,
+      "end": 440.54,
+      "text": "Dr. Thorsten Markus. [Applause]"
+    },
+    {
+      "start": 440.54,
+      "end": 440.621,
+      "text": "[Applause]"
+    }
+  ]
+}

@@ -1,0 +1,1297 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 739,
+    "dDurationMs": 3667,
+    "segs": [ {
+      "utf8": "(dramatic orchestral music)"
+    } ]
+  }, {
+    "tStartMs": 13973,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "(people chattering)"
+    } ]
+  }, {
+    "tStartMs": 35437,
+    "dDurationMs": 1191,
+    "segs": [ {
+      "utf8": "- [Narrator] The weary gunfighter"
+    } ]
+  }, {
+    "tStartMs": 36628,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "walked slowly through the saloon."
+    } ]
+  }, {
+    "tStartMs": 39108,
+    "dDurationMs": 3808,
+    "segs": [ {
+      "utf8": "The long miles from Cheyenne\nhad taken their toll."
+    } ]
+  }, {
+    "tStartMs": 42916,
+    "dDurationMs": 1553,
+    "segs": [ {
+      "utf8": "- Who's saying that stuff?"
+    } ]
+  }, {
+    "tStartMs": 44469,
+    "dDurationMs": 2976,
+    "segs": [ {
+      "utf8": "- [Narrator] He scanned the\nroom with a suspicious eye."
+    } ]
+  }, {
+    "tStartMs": 47445,
+    "dDurationMs": 2538,
+    "segs": [ {
+      "utf8": "Years of being on the\nwrong side of the law"
+    } ]
+  }, {
+    "tStartMs": 49983,
+    "dDurationMs": 3646,
+    "segs": [ {
+      "utf8": "had taught him that a tough\nman can get out of a situation,"
+    } ]
+  }, {
+    "tStartMs": 53629,
+    "dDurationMs": 2479,
+    "segs": [ {
+      "utf8": "but a smart man never\ngets himself into one."
+    } ]
+  }, {
+    "tStartMs": 56108,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "- Please quit doing that, I just want to"
+    } ]
+  }, {
+    "tStartMs": 57708,
+    "dDurationMs": 2184,
+    "segs": [ {
+      "utf8": "have a shot of whiskey in peace."
+    } ]
+  }, {
+    "tStartMs": 59892,
+    "dDurationMs": 2434,
+    "segs": [ {
+      "utf8": "- [Narrator] But the\ngunfighter would find no peace."
+    } ]
+  }, {
+    "tStartMs": 62326,
+    "dDurationMs": 2190,
+    "segs": [ {
+      "utf8": "For the Henderson boys\nwere waiting in the corner"
+    } ]
+  }, {
+    "tStartMs": 64516,
+    "dDurationMs": 4344,
+    "segs": [ {
+      "utf8": "to kill him for the\n$200 bounty on his head."
+    } ]
+  }, {
+    "tStartMs": 68860,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "- Is that true?"
+    } ]
+  }, {
+    "tStartMs": 71073,
+    "dDurationMs": 3180,
+    "segs": [ {
+      "utf8": "You boys trying to kill me\nlike this voice is saying?"
+    } ]
+  }, {
+    "tStartMs": 74253,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Uhh..."
+    } ]
+  }, {
+    "tStartMs": 76644,
+    "dDurationMs": 1032,
+    "segs": [ {
+      "utf8": "No."
+    } ]
+  }, {
+    "tStartMs": 77676,
+    "dDurationMs": 1828,
+    "segs": [ {
+      "utf8": "- [Narrator] Lied the\noldest Henderson boy."
+    } ]
+  }, {
+    "tStartMs": 79504,
+    "dDurationMs": 972,
+    "segs": [ {
+      "utf8": "- How do you know I'm lying?"
+    } ]
+  }, {
+    "tStartMs": 80476,
+    "dDurationMs": 2208,
+    "segs": [ {
+      "utf8": "- [Narrator] The oldest\nHenderson boy asked of the air."
+    } ]
+  }, {
+    "tStartMs": 82684,
+    "dDurationMs": 1509,
+    "segs": [ {
+      "utf8": "- No, I didn't ask the air."
+    } ]
+  }, {
+    "tStartMs": 84193,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "I'm asking you, you fuckin' voice."
+    } ]
+  }, {
+    "tStartMs": 87985,
+    "dDurationMs": 1854,
+    "segs": [ {
+      "utf8": "- [Narrator] Said the\noldest Henderson boy."
+    } ]
+  }, {
+    "tStartMs": 89839,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Would you please stop saying"
+    } ]
+  }, {
+    "tStartMs": 90672,
+    "dDurationMs": 1801,
+    "segs": [ {
+      "utf8": "\"Said the oldest Henderson boy\"?"
+    } ]
+  }, {
+    "tStartMs": 92473,
+    "dDurationMs": 3736,
+    "segs": [ {
+      "utf8": "- [Narrator] Implored Tommy,\nthe oldest Henderson boy."
+    } ]
+  }, {
+    "tStartMs": 96209,
+    "dDurationMs": 2453,
+    "segs": [ {
+      "utf8": "Meanwhile, the younger\nHenderson's hand twitched"
+    } ]
+  }, {
+    "tStartMs": 98662,
+    "dDurationMs": 2461,
+    "segs": [ {
+      "utf8": "by the Colt Peacemaker on his right hip."
+    } ]
+  }, {
+    "tStartMs": 101123,
+    "dDurationMs": 1967,
+    "segs": [ {
+      "utf8": "He was thinking of shouting\n\"Look out behind you\""
+    } ]
+  }, {
+    "tStartMs": 103090,
+    "dDurationMs": 2311,
+    "segs": [ {
+      "utf8": "to trick the gunfighter\ninto turning around"
+    } ]
+  }, {
+    "tStartMs": 105401,
+    "dDurationMs": 1600,
+    "segs": [ {
+      "utf8": "so he could shoot him in the back."
+    } ]
+  }, {
+    "tStartMs": 107001,
+    "dDurationMs": 1232,
+    "segs": [ {
+      "utf8": "- No, I was not!"
+    } ]
+  }, {
+    "tStartMs": 108233,
+    "dDurationMs": 2027,
+    "segs": [ {
+      "utf8": "- Come on, Johnny, again\nwith the \"Look behind you\"?"
+    } ]
+  }, {
+    "tStartMs": 110260,
+    "dDurationMs": 2149,
+    "segs": [ {
+      "utf8": "What were you gonna say\nwas behind him this time?"
+    } ]
+  }, {
+    "tStartMs": 112409,
+    "dDurationMs": 1243,
+    "segs": [ {
+      "utf8": "- Uhh, nothing."
+    } ]
+  }, {
+    "tStartMs": 113652,
+    "dDurationMs": 1158,
+    "segs": [ {
+      "utf8": "- [Narrator] Johnny lied."
+    } ]
+  }, {
+    "tStartMs": 114810,
+    "dDurationMs": 1992,
+    "segs": [ {
+      "utf8": "He was going to say a bear."
+    } ]
+  }, {
+    "tStartMs": 116802,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Oh, come on."
+    } ]
+  }, {
+    "tStartMs": 117635,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "(people laughing)"
+    } ]
+  }, {
+    "tStartMs": 118468,
+    "dDurationMs": 1868,
+    "segs": [ {
+      "utf8": "- A bear, Johnny? In a saloon?"
+    } ]
+  }, {
+    "tStartMs": 120336,
+    "dDurationMs": 1768,
+    "segs": [ {
+      "utf8": "- [Narrator] Johnny's face turned red."
+    } ]
+  }, {
+    "tStartMs": 122104,
+    "dDurationMs": 2472,
+    "segs": [ {
+      "utf8": "He began wishing he was in a safe place"
+    } ]
+  }, {
+    "tStartMs": 124576,
+    "dDurationMs": 3104,
+    "segs": [ {
+      "utf8": "at home, in bed, with his dolls."
+    } ]
+  }, {
+    "tStartMs": 127680,
+    "dDurationMs": 1822,
+    "segs": [ {
+      "utf8": "(Johnny scoffs)"
+    } ]
+  }, {
+    "tStartMs": 129502,
+    "dDurationMs": 2088,
+    "segs": [ {
+      "utf8": "Hey, hey, I ain't got no dolls!"
+    } ]
+  }, {
+    "tStartMs": 131590,
+    "dDurationMs": 1963,
+    "segs": [ {
+      "utf8": "- [Narrator] To calm his\nnerves, he pictured himself"
+    } ]
+  }, {
+    "tStartMs": 133553,
+    "dDurationMs": 4172,
+    "segs": [ {
+      "utf8": "combing his dolls' hair and\npouring them each a cup of tea."
+    } ]
+  }, {
+    "tStartMs": 137725,
+    "dDurationMs": 1397,
+    "segs": [ {
+      "utf8": "- No!"
+    } ]
+  }, {
+    "tStartMs": 139122,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "- Wait, wait, wait."
+    } ]
+  }, {
+    "tStartMs": 140662,
+    "dDurationMs": 3083,
+    "segs": [ {
+      "utf8": "You have tea parties with your dolls?"
+    } ]
+  }, {
+    "tStartMs": 144785,
+    "dDurationMs": 896,
+    "segs": [ {
+      "utf8": "- [Narrator] But something about"
+    } ]
+  }, {
+    "tStartMs": 145681,
+    "dDurationMs": 1839,
+    "segs": [ {
+      "utf8": "the younger Henderson's vulnerability"
+    } ]
+  }, {
+    "tStartMs": 147520,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "opened a door in the gunfighter's heart."
+    } ]
+  }, {
+    "tStartMs": 149840,
+    "dDurationMs": 1968,
+    "segs": [ {
+      "utf8": "- Nope, no it didn't!"
+    } ]
+  }, {
+    "tStartMs": 151808,
+    "dDurationMs": 2352,
+    "segs": [ {
+      "utf8": "- [Narrator] Inside, a\nsea of confusing emotions"
+    } ]
+  }, {
+    "tStartMs": 154160,
+    "dDurationMs": 1316,
+    "segs": [ {
+      "utf8": "bubbled to the surface."
+    } ]
+  }, {
+    "tStartMs": 155476,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- No."
+    } ]
+  }, {
+    "tStartMs": 156309,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "- [Narrator] He started imagining himself"
+    } ]
+  }, {
+    "tStartMs": 157809,
+    "dDurationMs": 1417,
+    "segs": [ {
+      "utf8": "holding the younger Henderson"
+    } ]
+  }, {
+    "tStartMs": 159226,
+    "dDurationMs": 2049,
+    "segs": [ {
+      "utf8": "and stroking his greasy hair."
+    } ]
+  }, {
+    "tStartMs": 161275,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- No!"
+    } ]
+  }, {
+    "tStartMs": 162108,
+    "dDurationMs": 1172,
+    "segs": [ {
+      "utf8": "- [Narrator] He pictured his first kiss"
+    } ]
+  }, {
+    "tStartMs": 163280,
+    "dDurationMs": 1184,
+    "segs": [ {
+      "utf8": "with the younger Henderson."
+    } ]
+  }, {
+    "tStartMs": 164464,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- No, that--"
+    } ]
+  }, {
+    "tStartMs": 165297,
+    "dDurationMs": 1447,
+    "segs": [ {
+      "utf8": "- [Narrator] They both\ngiggle at how clumsy it was."
+    } ]
+  }, {
+    "tStartMs": 166744,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- No."
+    } ]
+  }, {
+    "tStartMs": 167577,
+    "dDurationMs": 1993,
+    "segs": [ {
+      "utf8": "- [Narrator] They know the\nnext one will be even better."
+    } ]
+  }, {
+    "tStartMs": 169570,
+    "dDurationMs": 1889,
+    "segs": [ {
+      "utf8": "- I'm seriously not picturing that!"
+    } ]
+  }, {
+    "tStartMs": 171459,
+    "dDurationMs": 1256,
+    "segs": [ {
+      "utf8": "- [Narrator] But inside he was."
+    } ]
+  }, {
+    "tStartMs": 172715,
+    "dDurationMs": 1095,
+    "segs": [ {
+      "utf8": "- No, I'm not!"
+    } ]
+  }, {
+    "tStartMs": 173810,
+    "dDurationMs": 881,
+    "segs": [ {
+      "utf8": "- [Narrator] But he was."
+    } ]
+  }, {
+    "tStartMs": 174691,
+    "dDurationMs": 3333,
+    "segs": [ {
+      "utf8": "- No, I'm not and that's the final word."
+    } ]
+  }, {
+    "tStartMs": 186910,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- [Narrator] But he was."
+    } ]
+  }, {
+    "tStartMs": 187743,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- Goddamnit!"
+    } ]
+  }, {
+    "tStartMs": 189984,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "- Why don't you two go get a room?"
+    } ]
+  }, {
+    "tStartMs": 192144,
+    "dDurationMs": 3211,
+    "segs": [ {
+      "utf8": "- Hey, why should we\ntrust this voice anyway?"
+    } ]
+  }, {
+    "tStartMs": 195355,
+    "dDurationMs": 2165,
+    "segs": [ {
+      "utf8": "- [Narrator] Just then,\nthe gunfighter had an idea."
+    } ]
+  }, {
+    "tStartMs": 197520,
+    "dDurationMs": 891,
+    "segs": [ {
+      "utf8": "- Hey, you."
+    } ]
+  }, {
+    "tStartMs": 198411,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Me?"
+    } ]
+  }, {
+    "tStartMs": 199244,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "- Think of a number between one and 100"
+    } ]
+  }, {
+    "tStartMs": 200984,
+    "dDurationMs": 1573,
+    "segs": [ {
+      "utf8": "and then we'll see if this voice"
+    } ]
+  }, {
+    "tStartMs": 202557,
+    "dDurationMs": 1574,
+    "segs": [ {
+      "utf8": "really knows what we're thinkin'!"
+    } ]
+  }, {
+    "tStartMs": 204131,
+    "dDurationMs": 1568,
+    "segs": [ {
+      "utf8": "- Okay, got it."
+    } ]
+  }, {
+    "tStartMs": 205699,
+    "dDurationMs": 1849,
+    "segs": [ {
+      "utf8": "- [Narrator] Sally the\nwhore began thinking"
+    } ]
+  }, {
+    "tStartMs": 207548,
+    "dDurationMs": 3592,
+    "segs": [ {
+      "utf8": "of her favorite number, which was 32."
+    } ]
+  }, {
+    "tStartMs": 211140,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "She then thought of her lady\nparts and how itchy they were"
+    } ]
+  }, {
+    "tStartMs": 213900,
+    "dDurationMs": 3407,
+    "segs": [ {
+      "utf8": "before deciding to change\nher mind and go with 76,"
+    } ]
+  }, {
+    "tStartMs": 217307,
+    "dDurationMs": 1872,
+    "segs": [ {
+      "utf8": "her second favorite number."
+    } ]
+  }, {
+    "tStartMs": 219179,
+    "dDurationMs": 1845,
+    "segs": [ {
+      "utf8": "- The voice is right!"
+    } ]
+  }, {
+    "tStartMs": 221024,
+    "dDurationMs": 2311,
+    "segs": [ {
+      "utf8": "32 is my favorite number,"
+    } ]
+  }, {
+    "tStartMs": 223335,
+    "dDurationMs": 2547,
+    "segs": [ {
+      "utf8": "but then I changed my\nmind and went with 76!"
+    } ]
+  }, {
+    "tStartMs": 225882,
+    "dDurationMs": 1692,
+    "segs": [ {
+      "utf8": "- And your cooch?"
+    } ]
+  }, {
+    "tStartMs": 227574,
+    "dDurationMs": 2552,
+    "segs": [ {
+      "utf8": "- It's been itching something\nhorrible since Saturday, Bill."
+    } ]
+  }, {
+    "tStartMs": 230126,
+    "dDurationMs": 1569,
+    "segs": [ {
+      "utf8": "You know anything about that?"
+    } ]
+  }, {
+    "tStartMs": 231695,
+    "dDurationMs": 1399,
+    "segs": [ {
+      "utf8": "- Uhh,"
+    } ]
+  }, {
+    "tStartMs": 233094,
+    "dDurationMs": 1024,
+    "segs": [ {
+      "utf8": "no."
+    } ]
+  }, {
+    "tStartMs": 234118,
+    "dDurationMs": 3392,
+    "segs": [ {
+      "utf8": "- [Narrator] He did, but\nwe'll get to that in a minute."
+    } ]
+  }, {
+    "tStartMs": 237510,
+    "dDurationMs": 2348,
+    "segs": [ {
+      "utf8": "- Looks like that voice\nreally does know everything."
+    } ]
+  }, {
+    "tStartMs": 239858,
+    "dDurationMs": 1992,
+    "segs": [ {
+      "utf8": "- [Narrator] The gunfighter\nnoticed for the first time"
+    } ]
+  }, {
+    "tStartMs": 241850,
+    "dDurationMs": 2200,
+    "segs": [ {
+      "utf8": "that the bartender was black."
+    } ]
+  }, {
+    "tStartMs": 244050,
+    "dDurationMs": 2032,
+    "segs": [ {
+      "utf8": "This was still unusual in the west,"
+    } ]
+  }, {
+    "tStartMs": 246082,
+    "dDurationMs": 3360,
+    "segs": [ {
+      "utf8": "but the gunfighter decided\nhe was okay with it."
+    } ]
+  }, {
+    "tStartMs": 249442,
+    "dDurationMs": 1167,
+    "segs": [ {
+      "utf8": "- Umm, thanks?"
+    } ]
+  }, {
+    "tStartMs": 251677,
+    "dDurationMs": 1949,
+    "segs": [ {
+      "utf8": "- [Narrator] The people in\nthe town prided themselves"
+    } ]
+  }, {
+    "tStartMs": 253626,
+    "dDurationMs": 2472,
+    "segs": [ {
+      "utf8": "for their progressive\nattitudes about race."
+    } ]
+  }, {
+    "tStartMs": 256098,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "- That's right."
+    } ]
+  }, {
+    "tStartMs": 257218,
+    "dDurationMs": 1537,
+    "segs": [ {
+      "utf8": "- [Narrator] But would\nthey still feel that way"
+    } ]
+  }, {
+    "tStartMs": 258755,
+    "dDurationMs": 1863,
+    "segs": [ {
+      "utf8": "if they knew that Sam had been sleeping"
+    } ]
+  }, {
+    "tStartMs": 260618,
+    "dDurationMs": 1824,
+    "segs": [ {
+      "utf8": "with Ned Schilling's wife?"
+    } ]
+  }, {
+    "tStartMs": 262442,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- What!?"
+    } ]
+  }, {
+    "tStartMs": 263442,
+    "dDurationMs": 2139,
+    "segs": [ {
+      "utf8": "- Relax, Ned, alright?"
+    } ]
+  }, {
+    "tStartMs": 265581,
+    "dDurationMs": 3236,
+    "segs": [ {
+      "utf8": "I mean, everyone has been with her."
+    } ]
+  }, {
+    "tStartMs": 268817,
+    "dDurationMs": 952,
+    "segs": [ {
+      "utf8": "- Guilty."
+    } ]
+  }, {
+    "tStartMs": 269769,
+    "dDurationMs": 1787,
+    "segs": [ {
+      "utf8": "- Yeah, you're right."
+    } ]
+  }, {
+    "tStartMs": 271556,
+    "dDurationMs": 2304,
+    "segs": [ {
+      "utf8": "- [Narrator] And Elijah Jessup's sister."
+    } ]
+  }, {
+    "tStartMs": 273860,
+    "dDurationMs": 1918,
+    "segs": [ {
+      "utf8": "- Welp, it's time for him to die."
+    } ]
+  }, {
+    "tStartMs": 275778,
+    "dDurationMs": 2119,
+    "segs": [ {
+      "utf8": "(cocking guns)"
+    } ]
+  }, {
+    "tStartMs": 277897,
+    "dDurationMs": 1419,
+    "segs": [ {
+      "utf8": "- Watch yourself, Jessup."
+    } ]
+  }, {
+    "tStartMs": 279316,
+    "dDurationMs": 2238,
+    "segs": [ {
+      "utf8": "You best put that gun down\nor I'll cut you in half."
+    } ]
+  }, {
+    "tStartMs": 281554,
+    "dDurationMs": 2667,
+    "segs": [ {
+      "utf8": "(ominous music)"
+    } ]
+  }, {
+    "tStartMs": 286739,
+    "dDurationMs": 1083,
+    "segs": [ {
+      "utf8": "- That music,"
+    } ]
+  }, {
+    "tStartMs": 289011,
+    "dDurationMs": 1815,
+    "segs": [ {
+      "utf8": "it seems kind of ominous, don't it?"
+    } ]
+  }, {
+    "tStartMs": 290826,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Ominous."
+    } ]
+  }, {
+    "tStartMs": 292802,
+    "dDurationMs": 1144,
+    "segs": [ {
+      "utf8": "What's that mean?"
+    } ]
+  }, {
+    "tStartMs": 293946,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "- You know, like, something\nbad's about to happen,"
+    } ]
+  }, {
+    "tStartMs": 296246,
+    "dDurationMs": 2381,
+    "segs": [ {
+      "utf8": "like a needless gunfight."
+    } ]
+  }, {
+    "tStartMs": 298627,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "- [Narrator] The stage\nwas set for an awesome"
+    } ]
+  }, {
+    "tStartMs": 300467,
+    "dDurationMs": 2008,
+    "segs": [ {
+      "utf8": "ballet of death."
+    } ]
+  }, {
+    "tStartMs": 302475,
+    "dDurationMs": 2432,
+    "segs": [ {
+      "utf8": "Blood would be spilled,\nbut who would be the first?"
+    } ]
+  }, {
+    "tStartMs": 304907,
+    "dDurationMs": 1016,
+    "segs": [ {
+      "utf8": "- Wait a second."
+    } ]
+  }, {
+    "tStartMs": 305923,
+    "dDurationMs": 1352,
+    "segs": [ {
+      "utf8": "Ballet of death?"
+    } ]
+  }, {
+    "tStartMs": 307275,
+    "dDurationMs": 1216,
+    "segs": [ {
+      "utf8": "What the hell?"
+    } ]
+  }, {
+    "tStartMs": 308491,
+    "dDurationMs": 2727,
+    "segs": [ {
+      "utf8": "I think this voice wants\nus to kill each other."
+    } ]
+  }, {
+    "tStartMs": 311218,
+    "dDurationMs": 2103,
+    "segs": [ {
+      "utf8": "- [Narrator] Meanwhile, the\ngunfighter saw his opening"
+    } ]
+  }, {
+    "tStartMs": 313321,
+    "dDurationMs": 1366,
+    "segs": [ {
+      "utf8": "to shoot Tommy dead."
+    } ]
+  }, {
+    "tStartMs": 314687,
+    "dDurationMs": 1138,
+    "segs": [ {
+      "utf8": "- No, no, no, wait!"
+    } ]
+  }, {
+    "tStartMs": 315825,
+    "dDurationMs": 1688,
+    "segs": [ {
+      "utf8": "That one really is a lie, see?"
+    } ]
+  }, {
+    "tStartMs": 317513,
+    "dDurationMs": 1632,
+    "segs": [ {
+      "utf8": "My hand's nowhere near my gun."
+    } ]
+  }, {
+    "tStartMs": 319145,
+    "dDurationMs": 1296,
+    "segs": [ {
+      "utf8": "- [Narrator] Okay, you got me."
+    } ]
+  }, {
+    "tStartMs": 320441,
+    "dDurationMs": 1627,
+    "segs": [ {
+      "utf8": "That one wasn't true."
+    } ]
+  }, {
+    "tStartMs": 322068,
+    "dDurationMs": 1096,
+    "segs": [ {
+      "utf8": "But this one is."
+    } ]
+  }, {
+    "tStartMs": 323164,
+    "dDurationMs": 2141,
+    "segs": [ {
+      "utf8": "Yesterday, Tommy Henderson made sweet love"
+    } ]
+  }, {
+    "tStartMs": 325305,
+    "dDurationMs": 1407,
+    "segs": [ {
+      "utf8": "to Bill Jessup's wife."
+    } ]
+  }, {
+    "tStartMs": 326712,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- No!"
+    } ]
+  }, {
+    "tStartMs": 328577,
+    "dDurationMs": 1702,
+    "segs": [ {
+      "utf8": "You made sweet love to our mama?"
+    } ]
+  }, {
+    "tStartMs": 330279,
+    "dDurationMs": 3712,
+    "segs": [ {
+      "utf8": "- (laughs uncomfortably)\nHere's the thing about that."
+    } ]
+  }, {
+    "tStartMs": 333991,
+    "dDurationMs": 1683,
+    "segs": [ {
+      "utf8": "- Oh, you're dead, Henderson."
+    } ]
+  }, {
+    "tStartMs": 335674,
+    "dDurationMs": 2053,
+    "segs": [ {
+      "utf8": "- [Narrator] Said Gabriel,\nwho had recently delivered"
+    } ]
+  }, {
+    "tStartMs": 337727,
+    "dDurationMs": 4167,
+    "segs": [ {
+      "utf8": "a load of cream to the back\nporch of his brother's wife."
+    } ]
+  }, {
+    "tStartMs": 343426,
+    "dDurationMs": 1191,
+    "segs": [ {
+      "utf8": "He did her in the butt."
+    } ]
+  }, {
+    "tStartMs": 344617,
+    "dDurationMs": 1048,
+    "segs": [ {
+      "utf8": "- What!?"
+    } ]
+  }, {
+    "tStartMs": 345665,
+    "dDurationMs": 1861,
+    "segs": [ {
+      "utf8": "- How could you? Your own brother!"
+    } ]
+  }, {
+    "tStartMs": 347526,
+    "dDurationMs": 2484,
+    "segs": [ {
+      "utf8": "- [Narrator] Yet even as\nBill reacted with disgust,"
+    } ]
+  }, {
+    "tStartMs": 350010,
+    "dDurationMs": 1853,
+    "segs": [ {
+      "utf8": "the irony was not lost on him."
+    } ]
+  }, {
+    "tStartMs": 351863,
+    "dDurationMs": 3014,
+    "segs": [ {
+      "utf8": "- You know what, I see\nwhere you're goin' with this"
+    } ]
+  }, {
+    "tStartMs": 354877,
+    "dDurationMs": 2855,
+    "segs": [ {
+      "utf8": "and I'm just gonna retract\nmy disgust right now"
+    } ]
+  }, {
+    "tStartMs": 357732,
+    "dDurationMs": 1056,
+    "segs": [ {
+      "utf8": "if that's possible."
+    } ]
+  }, {
+    "tStartMs": 358788,
+    "dDurationMs": 1432,
+    "segs": [ {
+      "utf8": "- [Narrator] For he had\nbeen regularly sneaking"
+    } ]
+  }, {
+    "tStartMs": 360220,
+    "dDurationMs": 1752,
+    "segs": [ {
+      "utf8": "into Paul Valentine's barn."
+    } ]
+  }, {
+    "tStartMs": 361972,
+    "dDurationMs": 2808,
+    "segs": [ {
+      "utf8": "- Okay, you know, we're\ngood, we're good here."
+    } ]
+  }, {
+    "tStartMs": 364780,
+    "dDurationMs": 2728,
+    "segs": [ {
+      "utf8": "I think we should just move on."
+    } ]
+  }, {
+    "tStartMs": 367508,
+    "dDurationMs": 1216,
+    "segs": [ {
+      "utf8": "- [Narrator] Where he had been having sex"
+    } ]
+  }, {
+    "tStartMs": 368724,
+    "dDurationMs": 2623,
+    "segs": [ {
+      "utf8": "with Paul's favorite sheep Martha."
+    } ]
+  }, {
+    "tStartMs": 371347,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Oh boy."
+    } ]
+  }, {
+    "tStartMs": 372180,
+    "dDurationMs": 1517,
+    "segs": [ {
+      "utf8": "- Marth, Bill!?"
+    } ]
+  }, {
+    "tStartMs": 373697,
+    "dDurationMs": 1032,
+    "segs": [ {
+      "utf8": "Martha!?"
+    } ]
+  }, {
+    "tStartMs": 374729,
+    "dDurationMs": 2416,
+    "segs": [ {
+      "utf8": "- That is why I've been\nso itchy? (cocks gun)"
+    } ]
+  }, {
+    "tStartMs": 377145,
+    "dDurationMs": 960,
+    "segs": [ {
+      "utf8": "- You know what?"
+    } ]
+  }, {
+    "tStartMs": 378105,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "We all just need to\ntake a deep breath here."
+    } ]
+  }, {
+    "tStartMs": 381105,
+    "dDurationMs": 2408,
+    "segs": [ {
+      "utf8": "We're playin' right\ninto the voice's hands."
+    } ]
+  }, {
+    "tStartMs": 383513,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "Sure, there's been a surprising amount"
+    } ]
+  }, {
+    "tStartMs": 385033,
+    "dDurationMs": 2072,
+    "segs": [ {
+      "utf8": "of infidelity in this town,"
+    } ]
+  }, {
+    "tStartMs": 387105,
+    "dDurationMs": 2776,
+    "segs": [ {
+      "utf8": "and the bestiality should probably stop,"
+    } ]
+  }, {
+    "tStartMs": 389881,
+    "dDurationMs": 1752,
+    "segs": [ {
+      "utf8": "and I might be gay."
+    } ]
+  }, {
+    "tStartMs": 391633,
+    "dDurationMs": 3080,
+    "segs": [ {
+      "utf8": "But if we start shootin', the voice wins."
+    } ]
+  }, {
+    "tStartMs": 394713,
+    "dDurationMs": 2273,
+    "segs": [ {
+      "utf8": "I think the voice is\ngivin' us an opportunity."
+    } ]
+  }, {
+    "tStartMs": 396986,
+    "dDurationMs": 2439,
+    "segs": [ {
+      "utf8": "In a world where our\ndeepest, darkest secrets"
+    } ]
+  }, {
+    "tStartMs": 399425,
+    "dDurationMs": 1745,
+    "segs": [ {
+      "utf8": "are unveiled one by one,"
+    } ]
+  }, {
+    "tStartMs": 401170,
+    "dDurationMs": 2881,
+    "segs": [ {
+      "utf8": "maybe we'll stop doing the\nthings we're ashamed of"
+    } ]
+  }, {
+    "tStartMs": 404051,
+    "dDurationMs": 2470,
+    "segs": [ {
+      "utf8": "and start to embrace the\nthings about ourselves"
+    } ]
+  }, {
+    "tStartMs": 406521,
+    "dDurationMs": 1625,
+    "segs": [ {
+      "utf8": "we're afraid to accept."
+    } ]
+  }, {
+    "tStartMs": 408146,
+    "dDurationMs": 2658,
+    "segs": [ {
+      "utf8": "Hell, this could be the\nbeginning of a new utopia,"
+    } ]
+  }, {
+    "tStartMs": 410804,
+    "dDurationMs": 3317,
+    "segs": [ {
+      "utf8": "a society based on fairness and tolerance"
+    } ]
+  }, {
+    "tStartMs": 414121,
+    "dDurationMs": 2731,
+    "segs": [ {
+      "utf8": "where it don't matter\nif you're rich or poor--"
+    } ]
+  }, {
+    "tStartMs": 416852,
+    "dDurationMs": 1317,
+    "segs": [ {
+      "utf8": "- Or a woman!"
+    } ]
+  }, {
+    "tStartMs": 418169,
+    "dDurationMs": 2744,
+    "segs": [ {
+      "utf8": "- Let's not get carried\naway, but the point is,"
+    } ]
+  }, {
+    "tStartMs": 420913,
+    "dDurationMs": 3296,
+    "segs": [ {
+      "utf8": "is that the voice is showing\nus the worst side of ourselves"
+    } ]
+  }, {
+    "tStartMs": 424209,
+    "dDurationMs": 2696,
+    "segs": [ {
+      "utf8": "and we need to show it our best."
+    } ]
+  }, {
+    "tStartMs": 426905,
+    "dDurationMs": 1383,
+    "segs": [ {
+      "utf8": "Now, who's with me?"
+    } ]
+  }, {
+    "tStartMs": 428288,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "- [All] Yeehaw!"
+    } ]
+  }, {
+    "tStartMs": 432536,
+    "dDurationMs": 1284,
+    "segs": [ {
+      "utf8": "- [Narrator] It was a good speech"
+    } ]
+  }, {
+    "tStartMs": 433820,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "and things might have\nturned out differently"
+    } ]
+  }, {
+    "tStartMs": 435880,
+    "dDurationMs": 2697,
+    "segs": [ {
+      "utf8": "if the crowd never found\nout that the gunfighter"
+    } ]
+  }, {
+    "tStartMs": 438577,
+    "dDurationMs": 2447,
+    "segs": [ {
+      "utf8": "had just last night shot and killed"
+    } ]
+  }, {
+    "tStartMs": 441024,
+    "dDurationMs": 2528,
+    "segs": [ {
+      "utf8": "the youngest son of John McCullers,"
+    } ]
+  }, {
+    "tStartMs": 443552,
+    "dDurationMs": 3008,
+    "segs": [ {
+      "utf8": "because he \"had some\nbreath that smelled like"
+    } ]
+  }, {
+    "tStartMs": 446560,
+    "dDurationMs": 2333,
+    "segs": [ {
+      "utf8": "\"the ass end of a Chinaman.\""
+    } ]
+  }, {
+    "tStartMs": 452169,
+    "dDurationMs": 2748,
+    "segs": [ {
+      "utf8": "- Well, you must be Mr. McCullers."
+    } ]
+  }, {
+    "tStartMs": 454917,
+    "dDurationMs": 1375,
+    "segs": [ {
+      "utf8": "(fires gun)"
+    } ]
+  }, {
+    "tStartMs": 456292,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "(guns firing)"
+    } ]
+  }, {
+    "tStartMs": 470754,
+    "dDurationMs": 3625,
+    "segs": [ {
+      "utf8": "- [Narrator] It was a\ntrue ballet of death."
+    } ]
+  }, {
+    "tStartMs": 474379,
+    "dDurationMs": 2796,
+    "segs": [ {
+      "utf8": "When the gruesome bloodbath was over,"
+    } ]
+  }, {
+    "tStartMs": 477175,
+    "dDurationMs": 3651,
+    "segs": [ {
+      "utf8": "not a single person was left standing,"
+    } ]
+  }, {
+    "tStartMs": 480826,
+    "dDurationMs": 3478,
+    "segs": [ {
+      "utf8": "except for Sally, the itchy whore."
+    } ]
+  }, {
+    "tStartMs": 484304,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- Yoo!"
+    } ]
+  }, {
+    "tStartMs": 485304,
+    "dDurationMs": 3688,
+    "segs": [ {
+      "utf8": "- [Narrator] Who celebrated\nby scratching her front porch."
+    } ]
+  }, {
+    "tStartMs": 488992,
+    "dDurationMs": 1441,
+    "segs": [ {
+      "utf8": "- [Sally] Whoo!"
+    } ]
+  }, {
+    "tStartMs": 490433,
+    "dDurationMs": 1015,
+    "segs": [ {
+      "utf8": "- [Narrator] Little did she know,"
+    } ]
+  }, {
+    "tStartMs": 491448,
+    "dDurationMs": 2752,
+    "segs": [ {
+      "utf8": "she would be mauled to\ndeath by a rabid wolf"
+    } ]
+  }, {
+    "tStartMs": 494200,
+    "dDurationMs": 1492,
+    "segs": [ {
+      "utf8": "the very next day."
+    } ]
+  }, {
+    "tStartMs": 495692,
+    "dDurationMs": 1083,
+    "segs": [ {
+      "utf8": "- Well, fuck."
+    } ]
+  }, {
+    "tStartMs": 497616,
+    "dDurationMs": 3667,
+    "segs": [ {
+      "utf8": "(dramatic orchestral music)"
+    } ]
+  } ]
+}

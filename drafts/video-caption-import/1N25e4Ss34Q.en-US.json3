@@ -1,0 +1,1591 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 3250,
+    "dDurationMs": 3500,
+    "segs": [ {
+      "utf8": "(suspenseful music plays)"
+    } ]
+  }, {
+    "tStartMs": 16517,
+    "dDurationMs": 5005,
+    "segs": [ {
+      "utf8": "(muffled PA announcements)\n(curtain rattles)"
+    } ]
+  }, {
+    "tStartMs": 22898,
+    "dDurationMs": 1127,
+    "segs": [ {
+      "utf8": "- Well, he did not get up\n(telephone rings)"
+    } ]
+  }, {
+    "tStartMs": 24025,
+    "dDurationMs": 2544,
+    "segs": [ {
+      "utf8": "and walk out of here,\nguy's at death's door."
+    } ]
+  }, {
+    "tStartMs": 26569,
+    "dDurationMs": 2002,
+    "segs": [ {
+      "utf8": "- Tell me you did not\nmisplace my patient."
+    } ]
+  }, {
+    "tStartMs": 28571,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "- I went to check the\nurine output in 1052,"
+    } ]
+  }, {
+    "tStartMs": 30531,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "I was only gone a minute."
+    } ]
+  }, {
+    "tStartMs": 31574,
+    "dDurationMs": 3044,
+    "segs": [ {
+      "utf8": "- Palliative care?\n- Social work found a hospice."
+    } ]
+  }, {
+    "tStartMs": 34618,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "- If he lasts that long."
+    } ]
+  }, {
+    "tStartMs": 35661,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "- No family, no insurance."
+    } ]
+  }, {
+    "tStartMs": 37371,
+    "dDurationMs": 1502,
+    "segs": [ {
+      "utf8": "- Check the morgue."
+    } ]
+  }, {
+    "tStartMs": 38873,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "- You know, there is such a\nthing as harvesting organs"
+    } ]
+  }, {
+    "tStartMs": 41167,
+    "dDurationMs": 2168,
+    "segs": [ {
+      "utf8": "and trafficking in\ncadavers, or such"
+    } ]
+  }, {
+    "tStartMs": 43335,
+    "dDurationMs": 2878,
+    "segs": [ {
+      "utf8": "is the public perception.\nLet's not play into that."
+    } ]
+  }, {
+    "tStartMs": 46213,
+    "dDurationMs": 2753,
+    "segs": [ {
+      "utf8": "- Got him. Celestial\ndischarge at 9:15."
+    } ]
+  }, {
+    "tStartMs": 48966,
+    "dDurationMs": 4004,
+    "segs": [ {
+      "utf8": "- Okay, my patient expires\nand nobody pages me."
+    } ]
+  }, {
+    "tStartMs": 52970,
+    "dDurationMs": 2628,
+    "segs": [ {
+      "utf8": "- Wait. Morgue says\nbody never got there."
+    } ]
+  }, {
+    "tStartMs": 55598,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "Give us a few minutes?"
+    } ]
+  }, {
+    "tStartMs": 57141,
+    "dDurationMs": 2502,
+    "segs": [ {
+      "utf8": "- Track him down before your\nshift change so that I can"
+    } ]
+  }, {
+    "tStartMs": 59643,
+    "dDurationMs": 2086,
+    "segs": [ {
+      "utf8": "go home.\n- (whispers) Okay, thanks."
+    } ]
+  }, {
+    "tStartMs": 61729,
+    "dDurationMs": 1251,
+    "segs": [ {
+      "utf8": "(telephone clanks)\nWe got trouble. Transportation"
+    } ]
+  }, {
+    "tStartMs": 62980,
+    "dDurationMs": 3462,
+    "segs": [ {
+      "utf8": "never picked him up.\n(button clicks)"
+    } ]
+  }, {
+    "tStartMs": 66442,
+    "dDurationMs": 5005,
+    "segs": [ {
+      "utf8": "(ominous music plays)\n(foot steps pace)"
+    } ]
+  }, {
+    "tStartMs": 79914,
+    "dDurationMs": 4588,
+    "segs": [ {
+      "utf8": "(light rain)\n(engine slows down)"
+    } ]
+  }, {
+    "tStartMs": 84502,
+    "dDurationMs": 2669,
+    "segs": [ {
+      "utf8": "(ominous music)"
+    } ]
+  }, {
+    "tStartMs": 103938,
+    "dDurationMs": 2836,
+    "segs": [ {
+      "utf8": "(hospital sounds)"
+    } ]
+  }, {
+    "tStartMs": 157825,
+    "dDurationMs": 3295,
+    "segs": [ {
+      "utf8": "(muffled PA sounds)"
+    } ]
+  }, {
+    "tStartMs": 161120,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- Uh, who is that?"
+    } ]
+  }, {
+    "tStartMs": 162663,
+    "dDurationMs": 1084,
+    "segs": [ {
+      "utf8": "Who is she?"
+    } ]
+  }, {
+    "tStartMs": 163747,
+    "dDurationMs": 918,
+    "segs": [ {
+      "utf8": "Dan. Dan."
+    } ]
+  }, {
+    "tStartMs": 164665,
+    "dDurationMs": 1919,
+    "segs": [ {
+      "utf8": "- This nice lady seems to\nhave made a wrong turn."
+    } ]
+  }, {
+    "tStartMs": 166584,
+    "dDurationMs": 2002,
+    "segs": [ {
+      "utf8": "- Uh, sure, right.\nMa'am if you could come"
+    } ]
+  }, {
+    "tStartMs": 168586,
+    "dDurationMs": 1334,
+    "segs": [ {
+      "utf8": "- Get away from me."
+    } ]
+  }, {
+    "tStartMs": 169920,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- Yeah. All right."
+    } ]
+  }, {
+    "tStartMs": 170754,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "All right. Okay."
+    } ]
+  }, {
+    "tStartMs": 171922,
+    "dDurationMs": 1252,
+    "segs": [ {
+      "utf8": "This area is off limits."
+    } ]
+  }, {
+    "tStartMs": 173174,
+    "dDurationMs": 1042,
+    "segs": [ {
+      "utf8": "I'm sorry, but we're"
+    } ]
+  }, {
+    "tStartMs": 174216,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "at a critical phase in a\nvery dangerous experiment."
+    } ]
+  }, {
+    "tStartMs": 176510,
+    "dDurationMs": 1585,
+    "segs": [ {
+      "utf8": "- You have my\npatient, show him to me"
+    } ]
+  }, {
+    "tStartMs": 178095,
+    "dDurationMs": 2044,
+    "segs": [ {
+      "utf8": "or I call campus police."
+    } ]
+  }, {
+    "tStartMs": 180139,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "And then the department chair."
+    } ]
+  }, {
+    "tStartMs": 181182,
+    "dDurationMs": 2377,
+    "segs": [ {
+      "utf8": "- That would be\nme, Marjorie Kane"
+    } ]
+  }, {
+    "tStartMs": 183559,
+    "dDurationMs": 1918,
+    "segs": [ {
+      "utf8": "Chair of the Graduate\nSchool of Neuroscience."
+    } ]
+  }, {
+    "tStartMs": 185477,
+    "dDurationMs": 835,
+    "segs": [ {
+      "utf8": "- You're in charge."
+    } ]
+  }, {
+    "tStartMs": 186312,
+    "dDurationMs": 2836,
+    "segs": [ {
+      "utf8": "- Yes, Dr. Emma Holloway."
+    } ]
+  }, {
+    "tStartMs": 190274,
+    "dDurationMs": 2878,
+    "segs": [ {
+      "utf8": "So regarding your\npatient, perhaps we\ncould delay your fears"
+    } ]
+  }, {
+    "tStartMs": 193152,
+    "dDurationMs": 2169,
+    "segs": [ {
+      "utf8": "by showing you our\ngrand experiment."
+    } ]
+  }, {
+    "tStartMs": 196822,
+    "dDurationMs": 4797,
+    "segs": [ {
+      "utf8": "- So what we've done is we've,\nwe've surrounded this chamber"
+    } ]
+  }, {
+    "tStartMs": 201619,
+    "dDurationMs": 1668,
+    "segs": [ {
+      "utf8": "every type of detection\ndevice we could think"
+    } ]
+  }, {
+    "tStartMs": 203287,
+    "dDurationMs": 4046,
+    "segs": [ {
+      "utf8": "of air pressure,\nmotion, light sensors,"
+    } ]
+  }, {
+    "tStartMs": 207333,
+    "dDurationMs": 1626,
+    "segs": [ {
+      "utf8": "ultraviolet\ninfrared, all spectra,"
+    } ]
+  }, {
+    "tStartMs": 208959,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "- Temperature"
+    } ]
+  }, {
+    "tStartMs": 210002,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- Temperature,\ntemperature to a hundredth"
+    } ]
+  }, {
+    "tStartMs": 211545,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "of a centigrade actually,"
+    } ]
+  }, {
+    "tStartMs": 212755,
+    "dDurationMs": 2461,
+    "segs": [ {
+      "utf8": "an electric grid to a\nfraction of a millivolt,"
+    } ]
+  }, {
+    "tStartMs": 215216,
+    "dDurationMs": 2585,
+    "segs": [ {
+      "utf8": "magnetic, electromagnetic."
+    } ]
+  }, {
+    "tStartMs": 217801,
+    "dDurationMs": 1961,
+    "segs": [ {
+      "utf8": "On, on the quantum level"
+    } ]
+  }, {
+    "tStartMs": 219762,
+    "dDurationMs": 2502,
+    "segs": [ {
+      "utf8": "we have we've\nconstructed an atomic net"
+    } ]
+  }, {
+    "tStartMs": 222264,
+    "dDurationMs": 1961,
+    "segs": [ {
+      "utf8": "exactly one\nparticle thick, right?"
+    } ]
+  }, {
+    "tStartMs": 224225,
+    "dDurationMs": 2043,
+    "segs": [ {
+      "utf8": "So if anything passes\nthrough it, anything"
+    } ]
+  }, {
+    "tStartMs": 226268,
+    "dDurationMs": 3087,
+    "segs": [ {
+      "utf8": "be it strange or charmed\nor up or down or backwards."
+    } ]
+  }, {
+    "tStartMs": 229355,
+    "dDurationMs": 6464,
+    "segs": [ {
+      "utf8": "It'll create a wave pattern,\nmeasurable disturbance."
+    } ]
+  }, {
+    "tStartMs": 235819,
+    "dDurationMs": 4130,
+    "segs": [ {
+      "utf8": "- The room is a vault, not\nof steel, but of detection."
+    } ]
+  }, {
+    "tStartMs": 239949,
+    "dDurationMs": 3003,
+    "segs": [ {
+      "utf8": "- I'm happy for you.\nNow, my patient."
+    } ]
+  }, {
+    "tStartMs": 244119,
+    "dDurationMs": 4964,
+    "segs": [ {
+      "utf8": "- Dr. Holloway,\ntonight in this very room"
+    } ]
+  }, {
+    "tStartMs": 249083,
+    "dDurationMs": 3295,
+    "segs": [ {
+      "utf8": "we intend to verify empirically\nin the human species."
+    } ]
+  }, {
+    "tStartMs": 252378,
+    "dDurationMs": 6548,
+    "segs": [ {
+      "utf8": "The existence of a soul. Nature\ndoes not know extinction,"
+    } ]
+  }, {
+    "tStartMs": 258926,
+    "dDurationMs": 4463,
+    "segs": [ {
+      "utf8": "all it knows is transformation\nand everything that science"
+    } ]
+  }, {
+    "tStartMs": 263389,
+    "dDurationMs": 1501,
+    "segs": [ {
+      "utf8": "has taught me and\ncontinues to teach me"
+    } ]
+  }, {
+    "tStartMs": 264890,
+    "dDurationMs": 2336,
+    "segs": [ {
+      "utf8": "strengthens my\nbelief in the continuity"
+    } ]
+  }, {
+    "tStartMs": 267226,
+    "dDurationMs": 2419,
+    "segs": [ {
+      "utf8": "of our spiritual\nexistence after death."
+    } ]
+  }, {
+    "tStartMs": 270604,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "Nothing disappears\nwithout trace."
+    } ]
+  }, {
+    "tStartMs": 274942,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- Soul."
+    } ]
+  }, {
+    "tStartMs": 275776,
+    "dDurationMs": 2586,
+    "segs": [ {
+      "utf8": "- Yes, you clinicians\ndon't have a monopoly"
+    } ]
+  }, {
+    "tStartMs": 278362,
+    "dDurationMs": 1209,
+    "segs": [ {
+      "utf8": "on the spiritual element."
+    } ]
+  }, {
+    "tStartMs": 279571,
+    "dDurationMs": 1377,
+    "segs": [ {
+      "utf8": "- As in Faustian bargain."
+    } ]
+  }, {
+    "tStartMs": 280948,
+    "dDurationMs": 1752,
+    "segs": [ {
+      "utf8": "- As in Jesus died to save it."
+    } ]
+  }, {
+    "tStartMs": 282700,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "- And for this, you\nsteal a corpse?"
+    } ]
+  }, {
+    "tStartMs": 287121,
+    "dDurationMs": 2169,
+    "segs": [ {
+      "utf8": "- Doctor, your patient\nis not deceased."
+    } ]
+  }, {
+    "tStartMs": 291041,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "Not yet."
+    } ]
+  }, {
+    "tStartMs": 293377,
+    "dDurationMs": 2419,
+    "segs": [ {
+      "utf8": "- We got a live\none, not by much."
+    } ]
+  }, {
+    "tStartMs": 299800,
+    "dDurationMs": 3045,
+    "segs": [ {
+      "utf8": "- We need to transport this\npatient back to ICU immediately."
+    } ]
+  }, {
+    "tStartMs": 303887,
+    "dDurationMs": 3045,
+    "segs": [ {
+      "utf8": "- George Lockwood, 73, history\nof portal hypertension,"
+    } ]
+  }, {
+    "tStartMs": 306932,
+    "dDurationMs": 2961,
+    "segs": [ {
+      "utf8": "cirrhosis secondary to\nchronic alcohol abuse"
+    } ]
+  }, {
+    "tStartMs": 309893,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "presented with acities\nand jaundice."
+    } ]
+  }, {
+    "tStartMs": 312187,
+    "dDurationMs": 2628,
+    "segs": [ {
+      "utf8": "Status post massive\nhemorrhagic stroke"
+    } ]
+  }, {
+    "tStartMs": 314815,
+    "dDurationMs": 3879,
+    "segs": [ {
+      "utf8": "- DNR, he's not expected\nto survive the night."
+    } ]
+  }, {
+    "tStartMs": 318694,
+    "dDurationMs": 2878,
+    "segs": [ {
+      "utf8": "- DNR does not imply consent\nfor an experimental study."
+    } ]
+  }, {
+    "tStartMs": 321572,
+    "dDurationMs": 2085,
+    "segs": [ {
+      "utf8": "He's obtunded, he could\nnot have given consent."
+    } ]
+  }, {
+    "tStartMs": 323657,
+    "dDurationMs": 2795,
+    "segs": [ {
+      "utf8": "- Right now, our\ngentle Mr. Lockwood"
+    } ]
+  }, {
+    "tStartMs": 326452,
+    "dDurationMs": 3712,
+    "segs": [ {
+      "utf8": "would be lying in a hospital\nward alone and waiting to die."
+    } ]
+  }, {
+    "tStartMs": 330164,
+    "dDurationMs": 2919,
+    "segs": [ {
+      "utf8": "And so a lost man,\nin a small hospital,"
+    } ]
+  }, {
+    "tStartMs": 333083,
+    "dDurationMs": 2628,
+    "segs": [ {
+      "utf8": "in a city of no\nconsequence passes on"
+    } ]
+  }, {
+    "tStartMs": 335711,
+    "dDurationMs": 3253,
+    "segs": [ {
+      "utf8": "as have millions before him\nand millions will after."
+    } ]
+  }, {
+    "tStartMs": 338964,
+    "dDurationMs": 2044,
+    "segs": [ {
+      "utf8": "An underpaid, overworked\nnurse makes a notation"
+    } ]
+  }, {
+    "tStartMs": 341008,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "on his chart and\nhis body is discarded"
+    } ]
+  }, {
+    "tStartMs": 342468,
+    "dDurationMs": 5547,
+    "segs": [ {
+      "utf8": "with the morning trash, but\nhere his death can have meaning."
+    } ]
+  }, {
+    "tStartMs": 349516,
+    "dDurationMs": 3796,
+    "segs": [ {
+      "utf8": "No, he did not give\nconsent for the study."
+    } ]
+  }, {
+    "tStartMs": 353312,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "- Mr. Lockwood, can you hear me?"
+    } ]
+  }, {
+    "tStartMs": 357191,
+    "dDurationMs": 2627,
+    "segs": [ {
+      "utf8": "- Doctor, it's not like\nwe can ask for volunteers."
+    } ]
+  }, {
+    "tStartMs": 360944,
+    "dDurationMs": 1961,
+    "segs": [ {
+      "utf8": "- Don't take the moral\nhigh ground Holloway."
+    } ]
+  }, {
+    "tStartMs": 362905,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "If he coded you\nwouldn't intubate."
+    } ]
+  }, {
+    "tStartMs": 366450,
+    "dDurationMs": 1752,
+    "segs": [ {
+      "utf8": "Aren't you curious?"
+    } ]
+  }, {
+    "tStartMs": 370371,
+    "dDurationMs": 1376,
+    "segs": [ {
+      "utf8": "Let's see what happens."
+    } ]
+  }, {
+    "tStartMs": 378962,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "- I want a steroid drip to"
+    } ]
+  }, {
+    "tStartMs": 380422,
+    "dDurationMs": 3253,
+    "segs": [ {
+      "utf8": "decrease intracranial\npressure, morphine for pain."
+    } ]
+  }, {
+    "tStartMs": 393310,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- Entering!"
+    } ]
+  }, {
+    "tStartMs": 394144,
+    "dDurationMs": 3295,
+    "segs": [ {
+      "utf8": "- All right guys,\nlet's fire it up."
+    } ]
+  }, {
+    "tStartMs": 397439,
+    "dDurationMs": 3003,
+    "segs": [ {
+      "utf8": "(suspenseful music)"
+    } ]
+  }, {
+    "tStartMs": 423048,
+    "dDurationMs": 2753,
+    "segs": [ {
+      "utf8": "(keypad beeping)"
+    } ]
+  }, {
+    "tStartMs": 427970,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- All closed."
+    } ]
+  }, {
+    "tStartMs": 430764,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Chamber sealed."
+    } ]
+  }, {
+    "tStartMs": 447614,
+    "dDurationMs": 2253,
+    "segs": [ {
+      "utf8": "- You're not troubled by this?"
+    } ]
+  }, {
+    "tStartMs": 449867,
+    "dDurationMs": 3336,
+    "segs": [ {
+      "utf8": "- No, actually I think\nwe ought spend more time"
+    } ]
+  }, {
+    "tStartMs": 453203,
+    "dDurationMs": 3712,
+    "segs": [ {
+      "utf8": "on things like\nthis, death, life."
+    } ]
+  }, {
+    "tStartMs": 456915,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "What came before?"
+    } ]
+  }, {
+    "tStartMs": 458083,
+    "dDurationMs": 3128,
+    "segs": [ {
+      "utf8": "What comes after? It's basic."
+    } ]
+  }, {
+    "tStartMs": 463005,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "- So die already."
+    } ]
+  }, {
+    "tStartMs": 464798,
+    "dDurationMs": 2836,
+    "segs": [ {
+      "utf8": "- There is no real\nmoment of death."
+    } ]
+  }, {
+    "tStartMs": 467634,
+    "dDurationMs": 2670,
+    "segs": [ {
+      "utf8": "It's a legal construct,\nsomething to put down"
+    } ]
+  }, {
+    "tStartMs": 470304,
+    "dDurationMs": 1376,
+    "segs": [ {
+      "utf8": "on a form."
+    } ]
+  }, {
+    "tStartMs": 471680,
+    "dDurationMs": 1877,
+    "segs": [ {
+      "utf8": "Long after the\nheart has stopped,"
+    } ]
+  }, {
+    "tStartMs": 473557,
+    "dDurationMs": 3462,
+    "segs": [ {
+      "utf8": "we can still detect pulseless\nelectrical activity."
+    } ]
+  }, {
+    "tStartMs": 477019,
+    "dDurationMs": 3211,
+    "segs": [ {
+      "utf8": "Moment of death, its a fiction."
+    } ]
+  }, {
+    "tStartMs": 480230,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Til tonight."
+    } ]
+  }, {
+    "tStartMs": 482149,
+    "dDurationMs": 3086,
+    "segs": [ {
+      "utf8": "True moment of death, when\nthe soul leaves the body."
+    } ]
+  }, {
+    "tStartMs": 485235,
+    "dDurationMs": 3003,
+    "segs": [ {
+      "utf8": "- Spark of the divine\non its journey home."
+    } ]
+  }, {
+    "tStartMs": 488238,
+    "dDurationMs": 2002,
+    "segs": [ {
+      "utf8": "- So where do you\nput your money doctor?"
+    } ]
+  }, {
+    "tStartMs": 491658,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": "When cerebral blood flow is"
+    } ]
+  }, {
+    "tStartMs": 493327,
+    "dDurationMs": 3170,
+    "segs": [ {
+      "utf8": "in adequate to support\nsynaptic function or when the"
+    } ]
+  }, {
+    "tStartMs": 496497,
+    "dDurationMs": 2627,
+    "segs": [ {
+      "utf8": "when the reticular\nformation shuts down?"
+    } ]
+  }, {
+    "tStartMs": 499124,
+    "dDurationMs": 4797,
+    "segs": [ {
+      "utf8": "I've I mean, will the\nsoul exit the body"
+    } ]
+  }, {
+    "tStartMs": 503921,
+    "dDurationMs": 4796,
+    "segs": [ {
+      "utf8": "all at once or\nwill it seep away?"
+    } ]
+  }, {
+    "tStartMs": 510302,
+    "dDurationMs": 2502,
+    "segs": [ {
+      "utf8": "Like, like sand?"
+    } ]
+  }, {
+    "tStartMs": 512804,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "Yeah."
+    } ]
+  }, {
+    "tStartMs": 516225,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Is that it?"
+    } ]
+  }, {
+    "tStartMs": 518685,
+    "dDurationMs": 2753,
+    "segs": [ {
+      "utf8": "- Decerebrate posturing,\nprimitive response"
+    } ]
+  }, {
+    "tStartMs": 521438,
+    "dDurationMs": 1126,
+    "segs": [ {
+      "utf8": "common in brain injury."
+    } ]
+  }, {
+    "tStartMs": 525692,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "- Oh, here we go,\nhere we go, here we go."
+    } ]
+  }, {
+    "tStartMs": 527152,
+    "dDurationMs": 1251,
+    "segs": [ {
+      "utf8": "- This is it guys."
+    } ]
+  }, {
+    "tStartMs": 528403,
+    "dDurationMs": 1252,
+    "segs": [ {
+      "utf8": "- All right."
+    } ]
+  }, {
+    "tStartMs": 529655,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "Fundamental question\nwith human existence,"
+    } ]
+  }, {
+    "tStartMs": 531365,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "soon we're gonna know."
+    } ]
+  }, {
+    "tStartMs": 532366,
+    "dDurationMs": 876,
+    "segs": [ {
+      "utf8": "- And this is a good thing?"
+    } ]
+  }, {
+    "tStartMs": 533242,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "There is such concept\nas faith you know."
+    } ]
+  }, {
+    "tStartMs": 535536,
+    "dDurationMs": 1918,
+    "segs": [ {
+      "utf8": "- Faith, you've done some\nof the things I've done."
+    } ]
+  }, {
+    "tStartMs": 537454,
+    "dDurationMs": 2503,
+    "segs": [ {
+      "utf8": "You start dancing towards\nthe edge of the abyss."
+    } ]
+  }, {
+    "tStartMs": 539957,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "You hunger for\nsomething a little bit"
+    } ]
+  }, {
+    "tStartMs": 540791,
+    "dDurationMs": 1626,
+    "segs": [ {
+      "utf8": "more substantial than faith."
+    } ]
+  }, {
+    "tStartMs": 542417,
+    "dDurationMs": 3087,
+    "segs": [ {
+      "utf8": "- (monitors beeping)"
+    } ]
+  }, {
+    "tStartMs": 558559,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Amen."
+    } ]
+  }, {
+    "tStartMs": 568819,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Anything?"
+    } ]
+  }, {
+    "tStartMs": 570988,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "- Slight shift in the\nweight of the gurney"
+    } ]
+  }, {
+    "tStartMs": 573949,
+    "dDurationMs": 1126,
+    "segs": [ {
+      "utf8": "it's within tolerance."
+    } ]
+  }, {
+    "tStartMs": 583250,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "- (audible gasp)"
+    } ]
+  }, {
+    "tStartMs": 585085,
+    "dDurationMs": 959,
+    "segs": [ {
+      "utf8": "- What happened?"
+    } ]
+  }, {
+    "tStartMs": 586044,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- What is it?"
+    } ]
+  }, {
+    "tStartMs": 588046,
+    "dDurationMs": 3087,
+    "segs": [ {
+      "utf8": "- There, right, right there."
+    } ]
+  }, {
+    "tStartMs": 592801,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- What do you see?"
+    } ]
+  }, {
+    "tStartMs": 594344,
+    "dDurationMs": 3963,
+    "segs": [ {
+      "utf8": "- That! He's standing there."
+    } ]
+  }, {
+    "tStartMs": 600309,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "You don't see it?"
+    } ]
+  }, {
+    "tStartMs": 601852,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- No. What is there to see?"
+    } ]
+  }, {
+    "tStartMs": 602686,
+    "dDurationMs": 1501,
+    "segs": [ {
+      "utf8": "- There's nothing there."
+    } ]
+  }, {
+    "tStartMs": 604187,
+    "dDurationMs": 1127,
+    "segs": [ {
+      "utf8": "- Oh my God."
+    } ]
+  }, {
+    "tStartMs": 605314,
+    "dDurationMs": 1459,
+    "segs": [ {
+      "utf8": "He.. he's right there."
+    } ]
+  }, {
+    "tStartMs": 606773,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": "He's right there."
+    } ]
+  }, {
+    "tStartMs": 610777,
+    "dDurationMs": 1418,
+    "segs": [ {
+      "utf8": "Oh my God."
+    } ]
+  }, {
+    "tStartMs": 612195,
+    "dDurationMs": 835,
+    "segs": [ {
+      "utf8": "Oh my God."
+    } ]
+  }, {
+    "tStartMs": 613030,
+    "dDurationMs": 1585,
+    "segs": [ {
+      "utf8": "He, he's trapped."
+    } ]
+  }, {
+    "tStartMs": 614615,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "You've trapped him."
+    } ]
+  }, {
+    "tStartMs": 615449,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "You have to let him go."
+    } ]
+  }, {
+    "tStartMs": 617159,
+    "dDurationMs": 2210,
+    "segs": [ {
+      "utf8": "You're tormenting him."
+    } ]
+  }, {
+    "tStartMs": 620662,
+    "dDurationMs": 2127,
+    "segs": [ {
+      "utf8": "- Okay. You might disagree\nwith what we're doing here."
+    } ]
+  }, {
+    "tStartMs": 622789,
+    "dDurationMs": 835,
+    "segs": [ {
+      "utf8": "That's fine."
+    } ]
+  }, {
+    "tStartMs": 623624,
+    "dDurationMs": 1876,
+    "segs": [ {
+      "utf8": "But the whole\nperformance with the"
+    } ]
+  }, {
+    "tStartMs": 625500,
+    "dDurationMs": 1877,
+    "segs": [ {
+      "utf8": "- it's a pretty\ngood performance."
+    } ]
+  }, {
+    "tStartMs": 627377,
+    "dDurationMs": 1377,
+    "segs": [ {
+      "utf8": "- Yeah."
+    } ]
+  }, {
+    "tStartMs": 628754,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "- We're gonna shut the\ngrid down after one hour,"
+    } ]
+  }, {
+    "tStartMs": 631048,
+    "dDurationMs": 3211,
+    "segs": [ {
+      "utf8": "one field at a time\nas per our protocols."
+    } ]
+  }, {
+    "tStartMs": 644478,
+    "dDurationMs": 2836,
+    "segs": [ {
+      "utf8": "- You think I'm\nhallucinating or lying?"
+    } ]
+  }, {
+    "tStartMs": 647314,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- I uh..."
+    } ]
+  }, {
+    "tStartMs": 648148,
+    "dDurationMs": 1418,
+    "segs": [ {
+      "utf8": "- You don't, you\ndon't believe me."
+    } ]
+  }, {
+    "tStartMs": 649566,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "- Look, you're\nasking a lot, doctor."
+    } ]
+  }, {
+    "tStartMs": 652486,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "You're claiming that\nyou can see something"
+    } ]
+  }, {
+    "tStartMs": 653654,
+    "dDurationMs": 917,
+    "segs": [ {
+      "utf8": "the rest of us can't."
+    } ]
+  }, {
+    "tStartMs": 654571,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "That somehow\nyour eyes are special"
+    } ]
+  }, {
+    "tStartMs": 656114,
+    "dDurationMs": 1252,
+    "segs": [ {
+      "utf8": "or different, or I\ndon't even know."
+    } ]
+  }, {
+    "tStartMs": 657366,
+    "dDurationMs": 2127,
+    "segs": [ {
+      "utf8": "That certain photons hit\nyour retina, but not ours?"
+    } ]
+  }, {
+    "tStartMs": 659493,
+    "dDurationMs": 3170,
+    "segs": [ {
+      "utf8": "I mean, I I'm\nsorry, no, I, I don't."
+    } ]
+  }, {
+    "tStartMs": 662663,
+    "dDurationMs": 4295,
+    "segs": [ {
+      "utf8": "- You, you put all those\nsensors all around the room."
+    } ]
+  }, {
+    "tStartMs": 666958,
+    "dDurationMs": 1127,
+    "segs": [ {
+      "utf8": "Think about it."
+    } ]
+  }, {
+    "tStartMs": 668085,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "What is the perfect\ndevice for your search?"
+    } ]
+  }, {
+    "tStartMs": 671505,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "- You're gonna say human being.\nA human being."
+    } ]
+  }, {
+    "tStartMs": 673340,
+    "dDurationMs": 2127,
+    "segs": [ {
+      "utf8": "- My observations are\ndata as valid as any."
+    } ]
+  }, {
+    "tStartMs": 679513,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- Oh my God."
+    } ]
+  }, {
+    "tStartMs": 681348,
+    "dDurationMs": 876,
+    "segs": [ {
+      "utf8": "- Is it local?"
+    } ]
+  }, {
+    "tStartMs": 682224,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- In the northeast corner?"
+    } ]
+  }, {
+    "tStartMs": 683225,
+    "dDurationMs": 1042,
+    "segs": [ {
+      "utf8": "- What the hell?"
+    } ]
+  }, {
+    "tStartMs": 686144,
+    "dDurationMs": 1919,
+    "segs": [ {
+      "utf8": "- Yeah, the movement goes\ninward, not outward."
+    } ]
+  }, {
+    "tStartMs": 697072,
+    "dDurationMs": 6506,
+    "segs": [ {
+      "utf8": "- (muffled) (echoing)\nHelp me! Help me!"
+    } ]
+  }, {
+    "tStartMs": 711378,
+    "dDurationMs": 2210,
+    "segs": [ {
+      "utf8": "- That almost looks,\nsomething is trying to get in."
+    } ]
+  }, {
+    "tStartMs": 713588,
+    "dDurationMs": 1794,
+    "segs": [ {
+      "utf8": "- Oh my God, this is so\nmuch bigger than we thought."
+    } ]
+  }, {
+    "tStartMs": 715382,
+    "dDurationMs": 2544,
+    "segs": [ {
+      "utf8": "The hand of God reaching down\nto collect a wayward soul!"
+    } ]
+  }, {
+    "tStartMs": 717926,
+    "dDurationMs": 918,
+    "segs": [ {
+      "utf8": "- It's not the hand of God."
+    } ]
+  }, {
+    "tStartMs": 718844,
+    "dDurationMs": 1126,
+    "segs": [ {
+      "utf8": "That's not the hand of God."
+    } ]
+  }, {
+    "tStartMs": 719970,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "He is trapped."
+    } ]
+  }, {
+    "tStartMs": 720804,
+    "dDurationMs": 2920,
+    "segs": [ {
+      "utf8": "He's hanging there like\nbait and something has come."
+    } ]
+  }, {
+    "tStartMs": 723724,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "- (woman singing)\nPleased to meet you"
+    } ]
+  }, {
+    "tStartMs": 725517,
+    "dDurationMs": 2419,
+    "segs": [ {
+      "utf8": "won't you guess my name..."
+    } ]
+  }, {
+    "tStartMs": 734151,
+    "dDurationMs": 1668,
+    "segs": [ {
+      "utf8": "- Look, it's almost there."
+    } ]
+  }, {
+    "tStartMs": 735819,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "It's almost there."
+    } ]
+  }, {
+    "tStartMs": 736987,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "There it's inside."
+    } ]
+  }, {
+    "tStartMs": 738822,
+    "dDurationMs": 1084,
+    "segs": [ {
+      "utf8": "- Go get her, run!"
+    } ]
+  }, {
+    "tStartMs": 742951,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "- Don't!"
+    } ]
+  }, {
+    "tStartMs": 764848,
+    "dDurationMs": 959,
+    "segs": [ {
+      "utf8": "- Anything?"
+    } ]
+  }, {
+    "tStartMs": 765807,
+    "dDurationMs": 1669,
+    "segs": [ {
+      "utf8": "- No, all movement stopped."
+    } ]
+  }, {
+    "tStartMs": 769644,
+    "dDurationMs": 1418,
+    "segs": [ {
+      "utf8": "- No, no. No, no, no, no."
+    } ]
+  }, {
+    "tStartMs": 771062,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "Come on!"
+    } ]
+  }, {
+    "tStartMs": 774941,
+    "dDurationMs": 2586,
+    "segs": [ {
+      "utf8": "- Hey. I didn't know\nthey abducted the body,"
+    } ]
+  }, {
+    "tStartMs": 777527,
+    "dDurationMs": 1168,
+    "segs": [ {
+      "utf8": "she never told us that."
+    } ]
+  }, {
+    "tStartMs": 778695,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "- It's all right,\nIt's all right."
+    } ]
+  }, {
+    "tStartMs": 779905,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "He made it, he made it."
+    } ]
+  }, {
+    "tStartMs": 780739,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "I saw it."
+    } ]
+  }, {
+    "tStartMs": 782908,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "I saw it."
+    } ]
+  }, {
+    "tStartMs": 784659,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- All right."
+    } ]
+  }, {
+    "tStartMs": 787037,
+    "dDurationMs": 1501,
+    "segs": [ {
+      "utf8": "Well what about\nthe next patient?"
+    } ]
+  }, {
+    "tStartMs": 788538,
+    "dDurationMs": 1961,
+    "segs": [ {
+      "utf8": "And the one after that?"
+    } ]
+  }, {
+    "tStartMs": 803845,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- What?"
+    } ]
+  }, {
+    "tStartMs": 805806,
+    "dDurationMs": 1251,
+    "segs": [ {
+      "utf8": "- I can feel it."
+    } ]
+  }, {
+    "tStartMs": 807057,
+    "dDurationMs": 1126,
+    "segs": [ {
+      "utf8": "- What?"
+    } ]
+  }, {
+    "tStartMs": 809434,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "- In my body I can,\nyou can't feel that?"
+    } ]
+  }, {
+    "tStartMs": 811394,
+    "dDurationMs": 3421,
+    "segs": [ {
+      "utf8": "- No. I want to!"
+    } ]
+  }, {
+    "tStartMs": 818568,
+    "dDurationMs": 3629,
+    "segs": [ {
+      "utf8": "- Whatever caused\nthe disturbance is\nmanifesting itself."
+    } ]
+  }, {
+    "tStartMs": 822197,
+    "dDurationMs": 1418,
+    "segs": [ {
+      "utf8": "You felt that right?"
+    } ]
+  }, {
+    "tStartMs": 823615,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- Maybe. I don't know."
+    } ]
+  }, {
+    "tStartMs": 825158,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "The doctor kind\nof freaked me out."
+    } ]
+  }, {
+    "tStartMs": 826368,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- Dan, you felt it."
+    } ]
+  }, {
+    "tStartMs": 827911,
+    "dDurationMs": 1043,
+    "segs": [ {
+      "utf8": "You felt it."
+    } ]
+  }, {
+    "tStartMs": 828954,
+    "dDurationMs": 2002,
+    "segs": [ {
+      "utf8": "Describe it."
+    } ]
+  }, {
+    "tStartMs": 830956,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "Just gimme one word."
+    } ]
+  }, {
+    "tStartMs": 831790,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "Gimme one word."
+    } ]
+  }, {
+    "tStartMs": 833708,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- Evil."
+    } ]
+  }, {
+    "tStartMs": 836753,
+    "dDurationMs": 2294,
+    "segs": [ {
+      "utf8": "- Yeah. I was gonna\nsay malevolent."
+    } ]
+  }, {
+    "tStartMs": 839047,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "- It's still here."
+    } ]
+  }, {
+    "tStartMs": 840257,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "I still feel it."
+    } ]
+  }, {
+    "tStartMs": 843760,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "- All right, um..."
+    } ]
+  }, {
+    "tStartMs": 846638,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "Maybe when the fields\ndropped something got in,"
+    } ]
+  }, {
+    "tStartMs": 848348,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "and then when we brought\nthem back up..."
+    } ]
+  }, {
+    "tStartMs": 850141,
+    "dDurationMs": 1210,
+    "segs": [ {
+      "utf8": "- We trapped it."
+    } ]
+  }, {
+    "tStartMs": 857357,
+    "dDurationMs": 1001,
+    "segs": [ {
+      "utf8": "Trapped what?"
+    } ]
+  }, {
+    "tStartMs": 859192,
+    "dDurationMs": 2086,
+    "segs": [ {
+      "utf8": "- Robbins, I unlock\nthe door I want in."
+    } ]
+  }, {
+    "tStartMs": 861278,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- All right."
+    } ]
+  }, {
+    "tStartMs": 862112,
+    "dDurationMs": 834,
+    "segs": [ {
+      "utf8": "- I want in."
+    } ]
+  }, {
+    "tStartMs": 862946,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- I don't..."
+    } ]
+  }, {
+    "tStartMs": 866408,
+    "dDurationMs": 4254,
+    "segs": [ {
+      "utf8": "Dr. Holloway, do you\nsee anything in there?"
+    } ]
+  }, {
+    "tStartMs": 875876,
+    "dDurationMs": 1835,
+    "segs": [ {
+      "utf8": "- I have to go in\nthere, I have to know."
+    } ]
+  }, {
+    "tStartMs": 877711,
+    "dDurationMs": 1084,
+    "segs": [ {
+      "utf8": "- I know, just, just!"
+    } ]
+  }, {
+    "tStartMs": 879838,
+    "dDurationMs": 3670,
+    "segs": [ {
+      "utf8": "Tell me, is there\nanything in there?"
+    } ]
+  }, {
+    "tStartMs": 897147,
+    "dDurationMs": 1293,
+    "segs": [ {
+      "utf8": "- Is there anything there?"
+    } ]
+  }, {
+    "tStartMs": 916124,
+    "dDurationMs": 3796,
+    "segs": [ {
+      "utf8": "- No there's nothing in there."
+    } ]
+  }, {
+    "tStartMs": 922380,
+    "dDurationMs": 1502,
+    "segs": [ {
+      "utf8": "Go ahead, open it."
+    } ]
+  }, {
+    "tStartMs": 927052,
+    "dDurationMs": 1918,
+    "segs": [ {
+      "utf8": "Let's see what happens."
+    } ]
+  }, {
+    "tStartMs": 932599,
+    "dDurationMs": 2627,
+    "segs": [ {
+      "utf8": "(ominous music)"
+    } ]
+  } ]
+}

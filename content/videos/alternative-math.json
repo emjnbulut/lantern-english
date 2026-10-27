@@ -1,0 +1,704 @@
+{
+  "published": false,
+  "id": "alternative-math",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "Zh3Yz3PiXZw",
+  "title": "Alternative Math",
+  "creator": "David Maddox · Ideaman",
+  "year": 2017,
+  "level": "B2",
+  "category": "fun",
+  "genre": "comedy",
+  "durationSeconds": 547,
+  "summaryTr": "Basit bir matematik sorusu, öğretmen ile aileler arasında giderek büyüyen bir tartışmaya dönüşür. Okul, otorite ve tartışma dili üzerinden ilerleyen bir hiciv.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Gündelik okul konuşmaları, anlaşılır tartışmalar ve tekrarlanan savunmalar B2 seviyesine uygundur; alay ve toplumsal hicvi fark etmek gerekir.",
+  "advisoryTr": "Bağırışlar, tehditkâr davranışlar ve siyasi hiciv içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "Ideaman — Alternative Math",
+    "url": "https://www.youtube.com/watch?v=Zh3Yz3PiXZw",
+    "watchUrl": "https://www.youtube.com/watch?v=Zh3Yz3PiXZw",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "David Maddox · Ideaman · Yayıncı: Ideaman"
+  },
+  "glossary": {
+    "evidence": "kanıt",
+    "opinion": "görüş",
+    "principal": "okul müdürü",
+    "suspend": "görevden veya okuldan geçici uzaklaştırmak",
+    "correct": "doğru; düzeltmek",
+    "alternative": "alternatif; başka bir seçenek"
+  },
+  "captions": [
+    {
+      "start": 9.48,
+      "end": 12.36,
+      "text": "Oh, hi Danny come on in."
+    },
+    {
+      "start": 16.16,
+      "end": 19.2,
+      "text": "Looks like you’re having some trouble with addition."
+    },
+    {
+      "start": 19.22,
+      "end": 20.96,
+      "text": "Now don’t be upset."
+    },
+    {
+      "start": 20.96,
+      "end": 24.24,
+      "text": "You’re here to learn. And we learn from mistakes."
+    },
+    {
+      "start": 24.24,
+      "end": 25.86,
+      "text": "Everybody makes mistakes."
+    },
+    {
+      "start": 25.86,
+      "end": 27.6,
+      "text": "Nuh-uh."
+    },
+    {
+      "start": 28.64,
+      "end": 30.38,
+      "text": "Look at this question here."
+    },
+    {
+      "start": 30.46,
+      "end": 32.62,
+      "text": "What is 2 + 2?"
+    },
+    {
+      "start": 32.62,
+      "end": 34.8,
+      "text": "See you wrote 22."
+    },
+    {
+      "start": 34.8,
+      "end": 38.02,
+      "text": "But when we do addition we don’t just put the numbers next to each other."
+    },
+    {
+      "start": 38.22,
+      "end": 39.74,
+      "text": "That’s stupid."
+    },
+    {
+      "start": 39.74,
+      "end": 42.6,
+      "text": "Alright, think about it this way."
+    },
+    {
+      "start": 42.6,
+      "end": 45.94,
+      "text": "If I have two markers in this hand..."
+    },
+    {
+      "start": 45.94,
+      "end": 49.6,
+      "text": "...and then I add the two markers from this hand..."
+    },
+    {
+      "start": 49.6,
+      "end": 51.6,
+      "text": "How many markers do I have now?"
+    },
+    {
+      "start": 53.08,
+      "end": 55.48,
+      "text": "Twenty-two!"
+    },
+    {
+      "start": 55.64,
+      "end": 58.16,
+      "text": "No, Danny. It’s four."
+    },
+    {
+      "start": 66.06,
+      "end": 67.5,
+      "text": "Mrs. Wells?"
+    },
+    {
+      "start": 67.82,
+      "end": 69.5,
+      "text": "We’re Danny’s parents."
+    },
+    {
+      "start": 69.58,
+      "end": 72.86,
+      "text": "Oh yes! Hello. Please, come in."
+    },
+    {
+      "start": 72.9,
+      "end": 79.52,
+      "text": "Now don’t worry. It’s completely normal for kids to get frustrated when they’re struggling with a subject."
+    },
+    {
+      "start": 79.52,
+      "end": 84.06,
+      "text": "So what’s this about Danny getting some answers wrong on this so-called test of yours?"
+    },
+    {
+      "start": 84.66,
+      "end": 89.98,
+      "text": "We had a test. One of the questions was what is 2 + 2."
+    },
+    {
+      "start": 90.02,
+      "end": 93.28,
+      "text": "Danny answered 22."
+    },
+    {
+      "start": 97.88,
+      "end": 99.44,
+      "text": "And?"
+    },
+    {
+      "start": 99.52,
+      "end": 101.48,
+      "text": "And that’s not the right answer."
+    },
+    {
+      "start": 101.48,
+      "end": 102.52,
+      "text": "Says who?"
+    },
+    {
+      "start": 102.52,
+      "end": 103.62,
+      "text": "Says math."
+    },
+    {
+      "start": 103.62,
+      "end": 105.7,
+      "text": "Are you calling my son stupid?"
+    },
+    {
+      "start": 105.7,
+      "end": 107.38,
+      "text": "No, of course not!"
+    },
+    {
+      "start": 107.38,
+      "end": 110.1,
+      "text": "Who are you to say that your answer is right and that his is wrong?"
+    },
+    {
+      "start": 110.1,
+      "end": 111.98,
+      "text": "No no, she’s right."
+    },
+    {
+      "start": 111.98,
+      "end": 113.2,
+      "text": "Thank you."
+    },
+    {
+      "start": 113.2,
+      "end": 115.2,
+      "text": "Right out of Nazi Germany."
+    },
+    {
+      "start": 116.34,
+      "end": 121.02,
+      "text": "You can’t honestly tell me that you don’t know what two plus two equals."
+    },
+    {
+      "start": 121.06,
+      "end": 122.88,
+      "text": "So you’ve got it all figured out, don’t you."
+    },
+    {
+      "start": 122.88,
+      "end": 124.42,
+      "text": "You smart-ass little tramp."
+    },
+    {
+      "start": 124.42,
+      "end": 125.88,
+      "text": "Uhhhhhh"
+    },
+    {
+      "start": 125.88,
+      "end": 128.14,
+      "text": "Uhhhh uhhhhh uhhhhh."
+    },
+    {
+      "start": 128.14,
+      "end": 129.44,
+      "text": "What are you? Some kind of retard?"
+    },
+    {
+      "start": 129.46,
+      "end": 134.48,
+      "text": "Alright! I’m sorry, I’m not going to be able to continue this conversation."
+    },
+    {
+      "start": 134.48,
+      "end": 136.64,
+      "text": "We’re going to complain to the principal about you."
+    },
+    {
+      "start": 136.64,
+      "end": 138.22,
+      "text": "Danny is a free thinker!"
+    },
+    {
+      "start": 138.72,
+      "end": 141.02,
+      "text": "I’ll have your job, bitch."
+    },
+    {
+      "start": 141.56,
+      "end": 144.56,
+      "text": "Not if you can’t add two and two together you won’t."
+    },
+    {
+      "start": 149.86,
+      "end": 151.34,
+      "text": "Mrs. Wells."
+    },
+    {
+      "start": 151.34,
+      "end": 154.08,
+      "text": "Oh, sorry Principal. I didn’t see you."
+    },
+    {
+      "start": 154.08,
+      "end": 157.5,
+      "text": "I understand you had an issue yesterday with the parents of one of our students."
+    },
+    {
+      "start": 157.5,
+      "end": 159.42,
+      "text": "It did get a little crazy."
+    },
+    {
+      "start": 159.42,
+      "end": 162.6,
+      "text": "When things get out of hand I really need you to let me know about it."
+    },
+    {
+      "start": 162.6,
+      "end": 166.28,
+      "text": "Sure. So how do you want to handle it?"
+    },
+    {
+      "start": 167.1,
+      "end": 168.82,
+      "text": "I guess you could apologize."
+    },
+    {
+      "start": 168.82,
+      "end": 171.58,
+      "text": "Apol- What? His mom hit me!"
+    },
+    {
+      "start": 171.86,
+      "end": 174.88,
+      "text": "I understand you told Danny he had a wrong answer on his test."
+    },
+    {
+      "start": 174.88,
+      "end": 177.24,
+      "text": "He did have a wrong answer on his test."
+    },
+    {
+      "start": 177.24,
+      "end": 180.04,
+      "text": "It’s not our job to tell students when they’re right and wrong."
+    },
+    {
+      "start": 180.04,
+      "end": 182.5,
+      "text": "That is exactly what our job is."
+    },
+    {
+      "start": 182.5,
+      "end": 186.06,
+      "text": "Parents don’t want you ramming your biased views down their kids’ throats."
+    },
+    {
+      "start": 186.06,
+      "end": 189.66,
+      "text": "That’s not biased. That’s how math works."
+    },
+    {
+      "start": 190.12,
+      "end": 192.3,
+      "text": "You know what doesn’t work? Your attitude."
+    },
+    {
+      "start": 192.3,
+      "end": 196.18,
+      "text": "Maybe I can explain this in math terms, so you can understand."
+    },
+    {
+      "start": 196.18,
+      "end": 198.68,
+      "text": "If you took all the kids in this classroom,"
+    },
+    {
+      "start": 198.68,
+      "end": 200.32,
+      "text": "and divided them by zero,"
+    },
+    {
+      "start": 200.32,
+      "end": 203.04,
+      "text": "that’s exactly the amount of respect you’re giving them."
+    },
+    {
+      "start": 205.16,
+      "end": 206.82,
+      "text": "Something you’d like to say?"
+    },
+    {
+      "start": 206.82,
+      "end": 211.2,
+      "text": "You can’t divide a number by zero and get zero."
+    },
+    {
+      "start": 211.96,
+      "end": 213.94,
+      "text": "So now I’m stupid."
+    },
+    {
+      "start": 213.94,
+      "end": 216.9,
+      "text": "Just some crazy administrator doing paper work,"
+    },
+    {
+      "start": 216.9,
+      "end": 219.88,
+      "text": "while you superstar teachers change the world!"
+    },
+    {
+      "start": 226.88,
+      "end": 230.18,
+      "text": "Students Count! Teachers Divide!"
+    },
+    {
+      "start": 233.3,
+      "end": 235.52,
+      "text": "Stop undermining our kids’ confidence!"
+    },
+    {
+      "start": 235.52,
+      "end": 237.74,
+      "text": "Are you going to apologize to the parents?"
+    },
+    {
+      "start": 237.74,
+      "end": 241.8,
+      "text": "Why did you even start teaching if you hate children?"
+    },
+    {
+      "start": 253.78,
+      "end": 256.46,
+      "text": "Please have a seat, Mrs. Wells."
+    },
+    {
+      "start": 256.46,
+      "end": 258.8,
+      "text": "Thank you."
+    },
+    {
+      "start": 260.1,
+      "end": 265.36,
+      "text": "You know, I honestly think this will all blow over if we just wait a week or so."
+    },
+    {
+      "start": 265.48,
+      "end": 267.8,
+      "text": "I’m afraid we can’t do that."
+    },
+    {
+      "start": 267.8,
+      "end": 268.96,
+      "text": "Why not?"
+    },
+    {
+      "start": 268.96,
+      "end": 270.28,
+      "text": "They’re suing."
+    },
+    {
+      "start": 270.28,
+      "end": 271.4,
+      "text": "For what?"
+    },
+    {
+      "start": 271.4,
+      "end": 273.36,
+      "text": "Emotional distress to a minor."
+    },
+    {
+      "start": 273.36,
+      "end": 276.9,
+      "text": "Mrs. Wells, can you please tell the members of this board"
+    },
+    {
+      "start": 276.9,
+      "end": 280.3,
+      "text": "exactly when you became aware of this fiasco"
+    },
+    {
+      "start": 280.32,
+      "end": 282.42,
+      "text": "and the events leading up to the riot."
+    },
+    {
+      "start": 282.54,
+      "end": 284.12,
+      "text": "Riot?"
+    },
+    {
+      "start": 284.54,
+      "end": 289.88,
+      "text": "I just told a student that two plus two equals four."
+    },
+    {
+      "start": 292.24,
+      "end": 295.04,
+      "text": "We need for you to recant that."
+    },
+    {
+      "start": 295.04,
+      "end": 295.88,
+      "text": "What?"
+    },
+    {
+      "start": 295.88,
+      "end": 302.82,
+      "text": "Just say that you’re open to the possibility that there might be multiple correct answers."
+    },
+    {
+      "start": 302.82,
+      "end": 304.72,
+      "text": "But that’s not true."
+    },
+    {
+      "start": 305.72,
+      "end": 308.4,
+      "text": "We can’t let them bully us."
+    },
+    {
+      "start": 308.4,
+      "end": 310.34,
+      "text": "This is so stupid!"
+    },
+    {
+      "start": 310.36,
+      "end": 314.28,
+      "text": "Stupid. That’s your problem. Anyone who disagrees with you is stupid."
+    },
+    {
+      "start": 314.28,
+      "end": 320.1,
+      "text": "There is nothing to disagree with. There is only one correct answer."
+    },
+    {
+      "start": 320.1,
+      "end": 324.4,
+      "text": "For your sake, I certainly hope you have that correct answer when the media gets wind of this."
+    },
+    {
+      "start": 324.44,
+      "end": 326.5,
+      "text": "I do. It’s four."
+    },
+    {
+      "start": 326.5,
+      "end": 328.38,
+      "text": "I have my own answer."
+    },
+    {
+      "start": 328.38,
+      "end": 332.26,
+      "text": "This school minus you equals tomorrow."
+    },
+    {
+      "start": 332.26,
+      "end": 334.32,
+      "text": "You’re firing me?"
+    },
+    {
+      "start": 334.32,
+      "end": 338.98,
+      "text": "Suspending. While you reconsider your extremist views."
+    },
+    {
+      "start": 338.98,
+      "end": 341.44,
+      "text": "You brought this on yourself."
+    },
+    {
+      "start": 352.1,
+      "end": 354.76,
+      "text": "TV: Breaking News."
+    },
+    {
+      "start": 354.76,
+      "end": 356.86,
+      "text": "In what’s being called Mathgate"
+    },
+    {
+      "start": 356.86,
+      "end": 363.84,
+      "text": "an activist elementary school teacher was caught abusing her student’s First Amendment Rights."
+    },
+    {
+      "start": 364.62,
+      "end": 370.74,
+      "text": "So this teacher, this liberal elitist, tells this innocent little first-grade kid"
+    },
+    {
+      "start": 370.74,
+      "end": 374.6,
+      "text": "that his answer is wrong. Only her answer is acceptable."
+    },
+    {
+      "start": 374.6,
+      "end": 378.02,
+      "text": "Yeah, from what I hear, she doesn’t even keep these students for more than a year."
+    },
+    {
+      "start": 378.04,
+      "end": 381.34,
+      "text": "After that, they all leave her and go to another teacher."
+    },
+    {
+      "start": 381.6,
+      "end": 383.44,
+      "text": "It’s called graduating!"
+    },
+    {
+      "start": 383.84,
+      "end": 386.5,
+      "text": "It’s creating some good healthy debate in this country."
+    },
+    {
+      "start": 386.5,
+      "end": 390.02,
+      "text": "Some experts say that 2 + 2 = 4. Others say that it’s 22."
+    },
+    {
+      "start": 391.1,
+      "end": 393.12,
+      "text": "No they don’t!"
+    },
+    {
+      "start": 393.4,
+      "end": 398.52,
+      "text": "If you hate America that much, why don’t you just go teach in Commie France."
+    },
+    {
+      "start": 399.36,
+      "end": 400.26,
+      "text": "Hello?"
+    },
+    {
+      "start": 400.26,
+      "end": 402.4,
+      "text": "(Principal) Hello, Mrs. Wells."
+    },
+    {
+      "start": 402.4,
+      "end": 408.48,
+      "text": "The Board decided that for everyone’s benefit, your services will no longer be required."
+    },
+    {
+      "start": 408.48,
+      "end": 411.64,
+      "text": "For everyone’s benefit?"
+    },
+    {
+      "start": 411.64,
+      "end": 413.18,
+      "text": "How about the kids?"
+    },
+    {
+      "start": 413.18,
+      "end": 416.14,
+      "text": "I need you to come by the school tomorrow."
+    },
+    {
+      "start": 416.14,
+      "end": 419.44,
+      "text": "We don’t want you radicalizing our students anymore."
+    },
+    {
+      "start": 437.04,
+      "end": 441.64,
+      "text": "Mrs. Wells, thank you so much for coming."
+    },
+    {
+      "start": 441.64,
+      "end": 444.2,
+      "text": "I’m just so sorry it happened this way."
+    },
+    {
+      "start": 444.2,
+      "end": 447.54,
+      "text": "If only you’d been willing to be more open-minded."
+    },
+    {
+      "start": 447.54,
+      "end": 451.56,
+      "text": "About math? What about academic integrity?"
+    },
+    {
+      "start": 451.56,
+      "end": 454.14,
+      "text": "You were warned. Given an explanation."
+    },
+    {
+      "start": 454.16,
+      "end": 456.24,
+      "text": "And yet you persisted."
+    },
+    {
+      "start": 456.24,
+      "end": 459.9,
+      "text": "But we will of course fulfill our financial obligations."
+    },
+    {
+      "start": 460.26,
+      "end": 466,
+      "text": "Now, that’s $2,000 for your last pay period, and $2,000 for this one."
+    },
+    {
+      "start": 466,
+      "end": 468.3,
+      "text": "So that’s $4,000."
+    },
+    {
+      "start": 468.3,
+      "end": 470.02,
+      "text": "Wrong."
+    },
+    {
+      "start": 471.9,
+      "end": 475.62,
+      "text": "It’s twenty-two thousand!"
+    },
+    {
+      "start": 499.62,
+      "end": 540.56,
+      "text": "to"
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "Ideaman — Alternative Math — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=Zh3Yz3PiXZw",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "David Maddox · Ideaman · Yayıncı: Ideaman",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
+}

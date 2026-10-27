@@ -5,6 +5,7 @@ import os from "node:os";
 import http from "node:http";
 import { spawn } from "node:child_process";
 import { ROOT, loadAll } from "./lib.mjs";
+import { testVideoCaptions, probeVideoCaptions, probeCaptionWord } from "./test-video-captions.mjs";
 
 const { stories, articles, errors } = loadAll();
 if (errors.length) throw new Error(errors.join("\n"));
@@ -36,8 +37,8 @@ const server = http.createServer((req, res) => {
   } catch { res.writeHead(400); res.end(); }
 });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-const origin = `http://127.0.0.1:${server.address().port}`;
-const browser = spawn(binary, ["--headless=new", "--disable-gpu", "--no-first-run", "--no-default-browser-check", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${profile}`, "about:blank"], { windowsHide: true, stdio: "ignore" });
+const origin = process.argv.includes("--live") ? "https://lantern-english.github.io" : `http://127.0.0.1:${server.address().port}`;
+const browser = spawn(binary, ["--headless=new", "--disable-gpu", "--disable-background-timer-throttling", "--disable-renderer-backgrounding", "--no-first-run", "--no-default-browser-check", "--remote-debugging-port=0", "--remote-debugging-address=127.0.0.1", `--user-data-dir=${profile}`, "about:blank"], { windowsHide: true, stdio: "ignore" });
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 let socket;
 let send;
@@ -72,7 +73,8 @@ try {
   });
   send = (method, params = {}, sessionId) => new Promise((resolve, reject) => {
     const id = ++serial;
-    const timer = setTimeout(() => { pending.delete(id); reject(new Error(`Timed out: ${method}`)); }, 15000);
+    const callSite = new Error().stack;
+    const timer = setTimeout(() => { pending.delete(id); reject(new Error(`Timed out: ${method} ${JSON.stringify(params)}\n${callSite}`)); }, 15000);
     pending.set(id, { resolve, reject, timer, method });
     socket.send(JSON.stringify({ id, method, params, ...(sessionId ? { sessionId } : {}) }));
   });
@@ -80,14 +82,18 @@ try {
   const { sessionId } = await send("Target.attachToTarget", { targetId, flatten: true });
   const page = (method, params) => send(method, params, sessionId);
   await page("Runtime.enable"); await page("Page.enable");
+  await page("Page.bringToFront");
   const evaluate = async (expression, options = {}) => {
     const result = await page("Runtime.evaluate", { expression, returnByValue: true, awaitPromise: true, ...options }).catch((error) => { throw new Error(`${error.message} while evaluating: ${String(expression).slice(0, 160)}`); });
     if (result.exceptionDetails) throw new Error(result.exceptionDetails.exception?.description || result.exceptionDetails.text);
     return result.result.value;
   };
   const waitFor = async (expression) => {
-    for (let i = 0; i < 100; i++) { if (await evaluate(expression)) return; await pause(100); }
-    throw new Error(`Page condition failed: ${expression}`);
+    for (let i = 0; i < (process.argv.includes("--live") ? 600 : 100); i++) { if (await evaluate(expression)) return; await pause(100); }
+    const snapshot = await evaluate("({url:location.href,ready:document.readyState,title:document.title,catalog:window.LANTERN_VIDEOS?.length,cards:document.querySelectorAll('a.video-card').length,text:document.body?.innerText.slice(0,400)})");
+    const {data} = await page("Page.captureScreenshot", {format:"png",captureBeyondViewport:false});
+    fs.writeFileSync(path.join(runDir,"condition-failure.png"),Buffer.from(data,"base64"));
+    throw new Error(`Page condition failed: ${expression}\n${JSON.stringify(snapshot)}\nScreenshot: ${runDir}\\condition-failure.png`);
   };
   const reload = async (condition) => {
     const timeOrigin = await evaluate("performance.timeOrigin");
@@ -95,7 +101,8 @@ try {
     await waitFor(`performance.timeOrigin !== ${timeOrigin} && (${condition})`);
   };
   const navigate = async (hash, condition) => {
-    await page("Page.navigate", { url: origin + "/index.html#" + hash });
+    const navigation = await page("Page.navigate", { url: origin + "/index.html#" + hash });
+    if (navigation.errorText) throw new Error("Page navigation failed: " + navigation.errorText);
     const text = hash.startsWith("s.") && [...stories, ...articles].find((t) => t.id === hash.slice(2));
     if (text) await waitFor(`document.querySelector('.reader-head h1')?.textContent === ${JSON.stringify(text.title)}`);
     await waitFor(condition);
@@ -123,16 +130,22 @@ try {
     await waitFor(`document.getElementById('text')?.dataset.page === '${number}'`);
   };
 
+  if (process.argv.includes("--caption-word-online")) {
+    await probeCaptionWord({ page, evaluate, waitFor, navigate, screenshot, assert, pause });
+  } else if (process.argv.includes("--captions-online")) {
+    await probeVideoCaptions({ page, evaluate, waitFor, navigate, screenshot, assert, pause });
+  } else if (process.argv.includes("--captions")) {
+    await testVideoCaptions({ page, evaluate, waitFor, navigate, screenshot, assert, pause, origin });
+  } else {
   await page("Emulation.setDeviceMetricsOverride", { width: 1360, height: 900, deviceScaleFactor: 1, mobile: false });
   await navigate("home", "!!document.querySelector('.collection-grid')");
-  const counts = await evaluate(`Array.from(document.querySelectorAll('.step .count')).map(e => parseInt(e.textContent, 10))`);
-  assert(counts.every((n, i) => n === stories.filter((s) => s.level === ["A1", "A2", "B1", "B2", "C1", "C2"][i]).length), "Home level counts must count only stories.");
+  assert(await evaluate("document.querySelectorAll('.step').length === 6 && Array.from(document.querySelectorAll('.step .count')).every(e=>e.textContent.trim() && !/^\\d+\\b/.test(e.textContent.trim()))"), "Home keeps six level choices with descriptions instead of numeric counters.");
   assert(await evaluate("window.LANTERN_LIBRARY.every(t => t.type !== 'summary') && !document.querySelector('a[href=\"#summaries\"], [data-nav=\"summaries\"], #classic-summaries')"), "Removed book summaries must not appear in data, home cards or navigation.");
   assert(await evaluate("document.getElementById('nav-back').disabled"), "The global back button must be disabled at the initial home route.");
   assert(await evaluate("(() => { const b = document.getElementById('nav-back').getBoundingClientRect(); const h = document.querySelector('header').getBoundingClientRect(); return b.width > 0 && b.left < innerWidth / 2 && b.top >= h.top && b.bottom <= h.bottom + 1; })()"), "The back button must be visible in the upper-left header.");
   assert(await evaluate("!!document.getElementById('advanced-stories')"), "Advanced original stories must be discoverable from home.");
   await screenshot("home-desktop");
-  assert(await evaluate("document.querySelector('[data-nav=\"my-library\"]')?.hash === '#my-library' && !!document.getElementById('library-badge')"), "Kitaplığım must be accessible from the main navigation with a saved-item badge.");
+  assert(await evaluate("document.querySelector('[data-nav=\"my-library\"]')?.hash === '#my-library' && !document.getElementById('library-badge')"), "Kitaplığım stays accessible without the removed counter badge.");
   await evaluate("document.querySelector('[data-nav=\"my-library\"]').click()");
   await waitFor(myLibraryReady);
   assert((await ids()).length === 0 && await evaluate("!!document.querySelector('.empty a[href=\"#library\"]') && !!document.querySelector('.empty a[href=\"#articles\"]')"), "An empty personal library must offer both story and article collections.");
@@ -318,7 +331,7 @@ try {
   await evaluate("document.getElementById('clear').click()");
   assert(await evaluate(`(() => { const button = document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]'); return !!button && !button.closest('a') && !!button.closest('.card-shell')?.querySelector('a.card') && button.getAttribute('aria-pressed') === 'false' && !!button.getAttribute('aria-label')?.trim(); })()`), "Story cards must expose an accessible save button separate from the reader link.");
   await clickBookmark(bookmarkStory.id, "#results ");
-  assert(await evaluate(`location.hash === '#library' && document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'true' && document.getElementById('library-badge').textContent.trim() === '1'`), "Saving a story card must update its state and badge without opening the reader.");
+  assert(await evaluate(`location.hash === '#library' && document.querySelector('#results [data-bookmark="${bookmarkStory.id}"]').getAttribute('aria-pressed') === 'true' && JSON.parse(localStorage.getItem('lantern.bookmarks')).includes(${JSON.stringify(bookmarkStory.id)})`), "Saving a story card updates its state and storage without opening the reader.");
   await clickBookmark(bookmarkStory.id, "#results ");
   await clickBookmark(bookmarkStory.id, "#results ");
   assert(JSON.stringify(await bookmarkIds()) === JSON.stringify([bookmarkStory.id]), "Removing and saving a story again must keep exactly one bookmark ID.");
@@ -351,7 +364,7 @@ try {
   assert(JSON.stringify(await evaluate("[localStorage.getItem('lantern.filters'), localStorage.getItem('lantern.articleFilters')]")) === JSON.stringify(filtersBeforeSavedSearch), "Saved-library search and tabs must not modify story/article filters.");
   await reload(myLibraryReady);
   assert(JSON.stringify(await ids()) === JSON.stringify(savedTitleOrder) && (await bookmarkIds()).length === 3, "Saved texts and personal sorting must survive a document reload.");
-  assert(await evaluate("document.getElementById('library-badge').textContent.trim() === '3'"), "The saved-item badge must restore its count after reload.");
+  assert((await bookmarkIds()).length === 3 && await evaluate("!document.getElementById('library-badge')"), "Three saves survive reload without restoring the removed badge.");
   const savedStoryPage = await evaluate(`JSON.parse(localStorage.getItem('lantern.progress'))[${JSON.stringify(bookmarkStory.id)}].page + 1`);
   await evaluate(`document.querySelector('#results a[href="#s.${bookmarkStory.id}"]').click()`);
   await waitFor(`document.getElementById('text')?.dataset.page === '${savedStoryPage}'`);
@@ -406,12 +419,12 @@ try {
   assert(JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "Saving six stories and one article must retain all seven IDs without a three-item cap.");
   await navigate("my-library", myLibraryReady);
   assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(expandedSavedIds), "Kitaplığım must show every explicitly saved story and article, including older saves.");
-  assert(await evaluate("document.getElementById('library-badge').textContent.trim() === '7'"), "The personal-library badge must count all seven saves.");
+  assert((await bookmarkIds()).length === 7, "All seven explicit saves remain stored.");
   await reload(myLibraryReady);
   assert(JSON.stringify((await ids()).slice().sort()) === JSON.stringify(expandedSavedIds) && JSON.stringify((await bookmarkIds()).slice().sort()) === JSON.stringify(expandedSavedIds), "All seven personal-library items must remain visible and stored after refresh.");
   await evaluate("document.querySelector('[data-library-type=\"article\"]').click()");
   await evaluate(`(() => { const q = document.getElementById('q'); q.value = ${JSON.stringify(bookmarkArticle.title)}; q.dispatchEvent(new Event('input', { bubbles: true })); })()`);
-  assert(JSON.stringify(await ids()) === JSON.stringify([bookmarkArticle.id]) && await evaluate("JSON.stringify((document.getElementById('count').textContent.match(/\\d+/g) || []).map(Number).slice(0, 2)) === '[1,7]'"), "Filtered personal-library captions must distinguish the one shown item from seven total saves.");
+  assert(JSON.stringify(await ids()) === JSON.stringify([bookmarkArticle.id]) && (await bookmarkIds()).length === 7 && await evaluate("!document.getElementById('count')"), "Filtering to one article preserves all seven saves without a visible counter.");
 
   const unsavedStory = stories.find((s) => !expandedSavedIds.includes(s.id) && s.paragraphs.join(" ").length > 15000);
   assert(!!unsavedStory, "An unsaved multi-page story must be available for manual-only bookmarking checks.");
@@ -670,12 +683,12 @@ try {
     await evaluate("window.__clock(1000)");
   };
   // Brings the picture to a stable spot in the viewport before coordinates are used for real input events.
-  const settleFrame = () => evaluate("new Promise((resolve) => { const f = document.getElementById('video-frame'); document.getElementById('video-stage').scrollIntoView({ block: 'center', behavior: 'instant' }); let last = null, stable = 0; const tick = () => { const t = f.getBoundingClientRect().top; if (t === last) stable++; else { stable = 0; last = t; } if (stable >= 2) resolve(t); else requestAnimationFrame(tick); }; requestAnimationFrame(tick); })");
+  const settleFrame = () => evaluate("new Promise((resolve, reject) => { const f = document.getElementById('video-frame'); document.getElementById('video-stage').scrollIntoView({ block: 'center', behavior: 'instant' }); let last = null, stable = 0, attempts = 0; const tick = () => { const t = f.getBoundingClientRect().top; if (Math.abs(t-last)<0.5) stable++; else { stable = 0; last = t; } if (stable >= 2) resolve(t); else if (++attempts>100) reject(new Error('Video frame never settled')); else setTimeout(tick,30); }; setTimeout(tick,30); })");
   const resizeTo = async (width, height, mobile) => {
     await page("Emulation.setDeviceMetricsOverride", { width, height, deviceScaleFactor: 1, mobile });
     await waitFor(`innerWidth === ${width} && innerHeight === ${height}`);
     // let the resize handlers (rotation, tooltip placement) run
-    await evaluate("new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)))");
+    await evaluate("new Promise((resolve) => setTimeout(resolve,100))");
   };
   const freshVideo = async () => {
     await navigate("videos", videoCollectionReady);
@@ -1054,6 +1067,7 @@ try {
     }
     console.log("Online video probe: " + JSON.stringify({ playable, ...mediaResult }));
     assert(playable, "The opt-in online video check could not verify two seconds of playback in its single bounded attempt.");
+  }
   }
   assert(browserErrors.length === 0, "Uncaught browser errors: " + browserErrors.join("\n"));
   console.log(`OK: ${passed} browser checks; ${stories.length} stories, ${articles.length} articles.`);

@@ -1,0 +1,593 @@
+{
+  "id": "nasa-water-cycle",
+  "type": "video",
+  "title": "The Water Cycle: Taking the Pulse of Our Planet",
+  "creator": "NASA · Dr. Gail Skofronick Jackson",
+  "year": 2014,
+  "level": "C1",
+  "category": "real",
+  "genre": "documentary",
+  "durationSeconds": 430,
+  "summaryTr": "Yağmur, kar, okyanus ve uydular: Dünya’daki suyun hareketini görsellerle açıklayan kısa bir bilim konuşması. Teknik açıklama ve sunum dilini çalış.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Akademik sunum dili, su döngüsü terimleri, yoğun neden-sonuç açıklamaları ve verilerin sözlü yorumlanması vardır. 2014 tarihli konuşmada sayılar ve görev planları o dönemi yansıtır.",
+  "videoUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Gail_Skofronick_Jackson.2014_ipod_lg.m4v",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Gail_Skofronick_Jackson.2014_ipod_sm.mp4",
+      "sizeMB": 42
+    },
+    {
+      "label": "360p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Gail_Skofronick_Jackson.2014_ipod_lg.m4v",
+      "sizeMB": 85
+    },
+    {
+      "label": "540p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Gail_Skofronick_Jackson.2014_appletv.m4v",
+      "sizeMB": 214
+    }
+  ],
+  "downloadable": false,
+  "source": {
+    "name": "NASA Goddard — The Water Cycle: Taking the Pulse of Our Planet",
+    "url": "https://svs.gsfc.nasa.gov/11668/#media_group_344475",
+    "watchUrl": "https://svs.gsfc.nasa.gov/11668/#media_group_344475",
+    "license": "NASA medya kullanım koşulları · Eğitim amaçlı kullanım",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "credit": "NASA's Goddard Space Flight Center · NASA · Dr. Gail Skofronick Jackson",
+    "creditNoteTr": "Özgün video ve jenerik değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "NASA — resmî İngilizce WebVTT altyazısı",
+    "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Gail_Skofronic_Jackson.en_US.vtt",
+    "license": "NASA medya kullanım koşulları",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "changeNoteTr": "Sözler ve kaynak zamanları korunmuştur; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür. Kaynak altyazıda yazım veya aktarım hataları bulunabilir."
+  },
+  "glossary": {
+    "aquifer": "yeraltı suyu taşıyan tabaka",
+    "aquifers": "yeraltı suyu taşıyan tabakalar",
+    "precipitation": "yağış",
+    "evaporation": "buharlaşma",
+    "condensation": "yoğuşma",
+    "salinity": "tuzluluk",
+    "circulation": "dolaşım",
+    "spaceborne": "uzaydan çalışan; uzaya taşınmış",
+    "constellation": "burada: birlikte çalışan uydu grubu",
+    "blizzard": "tipi; şiddetli kar fırtınası",
+    "biosphere": "biyosfer; canlıların yaşadığı katman"
+  },
+  "captions": [
+    {
+      "start": 0.01,
+      "end": 4.03,
+      "text": "[Applause]"
+    },
+    {
+      "start": 4.03,
+      "end": 8.09,
+      "text": "[Applause]"
+    },
+    {
+      "start": 8.09,
+      "end": 12.11,
+      "text": "Thank you! Our Earth is a water planet"
+    },
+    {
+      "start": 12.11,
+      "end": 16.18,
+      "text": "from the oceans, ice, rivers, lakes"
+    },
+    {
+      "start": 16.18,
+      "end": 20.33,
+      "text": "and aquifers to the water suspend in our atmosphere,"
+    },
+    {
+      "start": 20.33,
+      "end": 24.38,
+      "text": "our Earth is definitely a water planet. Take a look at"
+    },
+    {
+      "start": 24.38,
+      "end": 28.44,
+      "text": "our lovely Earth? Did you know that 99.5% of that water"
+    },
+    {
+      "start": 28.44,
+      "end": 32.47,
+      "text": "is stored in our salty seas or locked up in glaciers"
+    },
+    {
+      "start": 32.47,
+      "end": 36.48,
+      "text": "and other inaccessible locations, leaving precious little fresh water"
+    },
+    {
+      "start": 36.48,
+      "end": 40.52,
+      "text": "available to support our life on Earth?"
+    },
+    {
+      "start": 40.52,
+      "end": 44.58,
+      "text": "So one of the vital signs of our Earth is the water cycle"
+    },
+    {
+      "start": 44.58,
+      "end": 48.61,
+      "text": "and understanding it and knowing it will help us to monitor our"
+    },
+    {
+      "start": 48.61,
+      "end": 52.78,
+      "text": "freshwater resources and we can do this by measuring"
+    },
+    {
+      "start": 52.78,
+      "end": 56.8,
+      "text": "where, how the water moves within our planet"
+    },
+    {
+      "start": 56.8,
+      "end": 60.86,
+      "text": "and I will talk about that today."
+    },
+    {
+      "start": 60.86,
+      "end": 64.92,
+      "text": "This is a cartoon of our water cycle. It shows the"
+    },
+    {
+      "start": 64.92,
+      "end": 68.95,
+      "text": "linkages between the surface water, condensation,"
+    },
+    {
+      "start": 68.95,
+      "end": 72.99,
+      "text": "precipitation, and evaporation. The water cycle is a"
+    },
+    {
+      "start": 72.99,
+      "end": 77.06,
+      "text": "complex system that drives the movement of water and actually"
+    },
+    {
+      "start": 77.06,
+      "end": 81.1,
+      "text": "heat and energy around our planet;"
+    },
+    {
+      "start": 81.1,
+      "end": 85.15,
+      "text": "let's start by exploring the role of our deep and vast oceans"
+    },
+    {
+      "start": 85.15,
+      "end": 89.23,
+      "text": "in the water cycle. As you can see in this visualization"
+    },
+    {
+      "start": 89.23,
+      "end": 93.27000000000001,
+      "text": "of satellite data, the"
+    },
+    {
+      "start": 93.27000000000001,
+      "end": 97.34,
+      "text": "ocean surface temperatures are not uniform around the oceans."
+    },
+    {
+      "start": 97.34,
+      "end": 101.46000000000001,
+      "text": "The warm waters is in red and the cool waters"
+    },
+    {
+      "start": 101.46000000000001,
+      "end": 105.47,
+      "text": "is in blue; drive the movement of water and heat"
+    },
+    {
+      "start": 105.47,
+      "end": 109.57,
+      "text": "throughout the oceans which can in turn then influence our"
+    },
+    {
+      "start": 109.57,
+      "end": 113.59,
+      "text": "weather patterns such as might be saying during El Niño and"
+    },
+    {
+      "start": 113.59,
+      "end": 117.61,
+      "text": "La Niña Years. Also, driving the movement of water"
+    },
+    {
+      "start": 117.61,
+      "end": 121.66,
+      "text": "in our oceans is salinity. As shown in this"
+    },
+    {
+      "start": 121.66,
+      "end": 125.68,
+      "text": "visualization of Aquarius satellite data from NASA"
+    },
+    {
+      "start": 125.68,
+      "end": 129.73,
+      "text": "where evaporation occurs, our oceans get saltier,"
+    },
+    {
+      "start": 129.73,
+      "end": 133.75,
+      "text": "it's shown in red, where precipitation falls, ice melts"
+    },
+    {
+      "start": 133.75,
+      "end": 137.78,
+      "text": "or rivers discharge our oceans get fresher as shown in the"
+    },
+    {
+      "start": 137.78,
+      "end": 141.88,
+      "text": "blue. As your ocean water becomes saltier it"
+    },
+    {
+      "start": 141.88,
+      "end": 145.92000000000002,
+      "text": "becomes more dense and settles down to the bottom of the ocean and"
+    },
+    {
+      "start": 145.92000000000002,
+      "end": 149.99,
+      "text": "vice versa for the less salty water which rises to the top."
+    },
+    {
+      "start": 149.99,
+      "end": 154.06,
+      "text": "Taken together, surface temperatures,"
+    },
+    {
+      "start": 154.06,
+      "end": 158.19,
+      "text": "salinity and also the ocean winds, the winds"
+    },
+    {
+      "start": 158.19,
+      "end": 162.22,
+      "text": "above the ocean, combine in a complex stance"
+    },
+    {
+      "start": 162.22,
+      "end": 166.27,
+      "text": "that drives the ocean circulation patterns as shown here."
+    },
+    {
+      "start": 166.27,
+      "end": 170.37,
+      "text": "The oceans also store massive amounts of heat"
+    },
+    {
+      "start": 170.37,
+      "end": 174.4,
+      "text": "and are very slow to release it which makes them"
+    },
+    {
+      "start": 174.4,
+      "end": 178.43,
+      "text": "a major driver in our Earth's climate system."
+    },
+    {
+      "start": 178.43,
+      "end": 182.47,
+      "text": "The oceans and the atmosphere actually"
+    },
+    {
+      "start": 182.47,
+      "end": 186.5,
+      "text": "work together. Without the oceans, the water stays"
+    },
+    {
+      "start": 186.5,
+      "end": 190.54,
+      "text": "on surface and we need the atmosphere as well."
+    },
+    {
+      "start": 190.54,
+      "end": 194.57,
+      "text": "For example, intense sunlight in the tropics"
+    },
+    {
+      "start": 194.57,
+      "end": 198.64,
+      "text": "causes evaporation from the salty oceans"
+    },
+    {
+      "start": 198.64,
+      "end": 202.75,
+      "text": "and that water forms in to massive clouds. Those"
+    },
+    {
+      "start": 202.75,
+      "end": 206.79,
+      "text": "massive clouds, that are moved by the atmospheric winds to the"
+    },
+    {
+      "start": 206.79,
+      "end": 210.88,
+      "text": "mid-latitudes where precipitation occurs either in the form of rain"
+    },
+    {
+      "start": 210.88,
+      "end": 214.98,
+      "text": "or snow. The only way to get a global perspective"
+    },
+    {
+      "start": 214.98,
+      "end": 219.05,
+      "text": "of precipitation patterns is to measure from spaceborne"
+    },
+    {
+      "start": 219.05,
+      "end": 223.07999999999998,
+      "text": "platforms. Six months ago NASA and the Japan"
+    },
+    {
+      "start": 223.07999999999998,
+      "end": 227.14,
+      "text": "Aerospace Exploration Agency launched our"
+    },
+    {
+      "start": 227.14,
+      "end": 231.23,
+      "text": "joint Global Precipitation Measurement Core Observatory Satellite"
+    },
+    {
+      "start": 231.23,
+      "end": 235.26,
+      "text": "or GPM for short."
+    },
+    {
+      "start": 235.26,
+      "end": 239.32999999999998,
+      "text": "With two advanced instruments, the Core Observatory for the first time is able"
+    },
+    {
+      "start": 239.32999999999998,
+      "end": 243.35,
+      "text": "to measure all phases of precipitation from very, very"
+    },
+    {
+      "start": 243.35,
+      "end": 247.4,
+      "text": "heavy rain to light rain to falling snow."
+    },
+    {
+      "start": 247.4,
+      "end": 251.48,
+      "text": "The GPM spacecraft serves as an anchor"
+    },
+    {
+      "start": 251.48,
+      "end": 255.5,
+      "text": "to a domestic and international constellation of satellite"
+    },
+    {
+      "start": 255.5,
+      "end": 259.54,
+      "text": "partners, which collectively provide precipitation"
+    },
+    {
+      "start": 259.54,
+      "end": 263.6,
+      "text": "estimates everywhere in the world every three hours,"
+    },
+    {
+      "start": 263.6,
+      "end": 267.68,
+      "text": "in essence taking the pulse of the"
+    },
+    {
+      "start": 267.68,
+      "end": 271.72,
+      "text": "planet's precipitation."
+    },
+    {
+      "start": 271.72,
+      "end": 275.78,
+      "text": "This imagery shows one of the very first events"
+    },
+    {
+      "start": 275.78,
+      "end": 279.92,
+      "text": "measured by the GPM spacecraft."
+    },
+    {
+      "start": 279.92,
+      "end": 283.94,
+      "text": "It was one of the late-season falling snow events"
+    },
+    {
+      "start": 283.94,
+      "end": 288.02,
+      "text": "here in East Coast on March 17. The resulting"
+    },
+    {
+      "start": 288.02,
+      "end": 292.13,
+      "text": "7 inches of snow in the Washington DC area may have"
+    },
+    {
+      "start": 292.13,
+      "end": 296.18,
+      "text": "affected your St. Patrick's Day plans this year."
+    },
+    {
+      "start": 296.18,
+      "end": 300.27,
+      "text": "Off the coast of the Carolinas, the high cloud tops"
+    },
+    {
+      "start": 300.27,
+      "end": 304.29,
+      "text": "are icy, down at the surface heavy rains shown in red"
+    },
+    {
+      "start": 304.29,
+      "end": 308.32,
+      "text": "fell in the Atlantic Ocean. Further North, overland,"
+    },
+    {
+      "start": 308.32,
+      "end": 312.44,
+      "text": "the storm has much lower cloud tops and they are composed of snow"
+    },
+    {
+      "start": 312.44,
+      "end": 316.46,
+      "text": "shown in blue which fell at the surface and we can see this information"
+    },
+    {
+      "start": 316.46,
+      "end": 320.53,
+      "text": "because the GPM spacecraft has two advanced instruments;"
+    },
+    {
+      "start": 320.53,
+      "end": 324.64,
+      "text": "one of them which I like to call the x-ray through the clouds"
+    },
+    {
+      "start": 324.64,
+      "end": 328.66,
+      "text": "measures the precipitation all way through the cloud and provides"
+    },
+    {
+      "start": 328.66,
+      "end": 332.73,
+      "text": "what I would call an x-ray at the surface. It's a two-dimensional view of the precipitation."
+    },
+    {
+      "start": 332.73,
+      "end": 336.85,
+      "text": "The other instrument on board is what I like to call"
+    },
+    {
+      "start": 336.85,
+      "end": 340.89,
+      "text": "taking a CAT scan of the clouds and it takes layer by layer"
+    },
+    {
+      "start": 340.89,
+      "end": 344.97,
+      "text": "within the clouds information about the precipitation that's vital for"
+    },
+    {
+      "start": 344.97,
+      "end": 348.99,
+      "text": "helping us to understand precipitation and weather forecasting"
+    },
+    {
+      "start": 348.99,
+      "end": 353.04,
+      "text": "and climate models."
+    },
+    {
+      "start": 353.04,
+      "end": 357.08,
+      "text": "So we're very excited about this data. Where else but"
+    },
+    {
+      "start": 357.08,
+      "end": 361.1,
+      "text": "NASA with our partners, are we able to achieve"
+    },
+    {
+      "start": 361.1,
+      "end": 365.14,
+      "text": "such success so early in the mission. GPM"
+    },
+    {
+      "start": 365.14,
+      "end": 369.23,
+      "text": "also uses this data for applications to provide societal"
+    },
+    {
+      "start": 369.23,
+      "end": 373.33,
+      "text": "benefit. GPM observes hurricanes and blizzards but as"
+    },
+    {
+      "start": 373.33,
+      "end": 377.35,
+      "text": "shown in the top two panels here, we are also able to look at the"
+    },
+    {
+      "start": 377.35,
+      "end": 381.38,
+      "text": "conditions that might lead to landslides and floods. On"
+    },
+    {
+      "start": 381.38,
+      "end": 385.49,
+      "text": "the other hand for trial and water availability maps as"
+    },
+    {
+      "start": 385.49,
+      "end": 389.67,
+      "text": "shown in the bottom two images, we need to know how little it has"
+    },
+    {
+      "start": 389.67,
+      "end": 393.73,
+      "text": "precipitated over time and GPM can tell us that too."
+    },
+    {
+      "start": 393.73,
+      "end": 397.75,
+      "text": "Emergency management then can use this data in near real time"
+    },
+    {
+      "start": 397.75,
+      "end": 401.76,
+      "text": "to make evacuation plans."
+    },
+    {
+      "start": 401.76,
+      "end": 405.87,
+      "text": "Precipitation in the water cycle influences"
+    },
+    {
+      "start": 405.87,
+      "end": 409.90999999999997,
+      "text": "every person, every day, everywhere,"
+    },
+    {
+      "start": 409.90999999999997,
+      "end": 414.05,
+      "text": "may be one of the greatest impacts of NASA's data"
+    },
+    {
+      "start": 414.05,
+      "end": 418.08,
+      "text": "is just used in improving weather forecasting models and climate"
+    },
+    {
+      "start": 418.08,
+      "end": 422.1,
+      "text": "change models for our everyday lives and our long-term future."
+    },
+    {
+      "start": 422.1,
+      "end": 426.18,
+      "text": "Now I would like introduce Lola who is going to talk about"
+    },
+    {
+      "start": 426.18,
+      "end": 429.64300000000003,
+      "text": "the pulse of our planet's biosphere."
+    }
+  ]
+}

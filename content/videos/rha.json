@@ -1,0 +1,539 @@
+{
+  "published": false,
+  "id": "rha",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "Sgm_4WRcGRo",
+  "title": "R’ha",
+  "creator": "Kaleb Lechowski",
+  "year": 2013,
+  "level": "B2",
+  "category": "scifi",
+  "genre": "fantasy",
+  "durationSeconds": 360,
+  "summaryTr": "Bir uzaylı asker, kendi uygarlığını yok etmeye çalışan makineler tarafından sorgulanır. Kısa bir animasyon içinde direniş, güven ve hayatta kalma üzerine bir bilim kurgu macerası.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Kısa soru-cevaplar ve emirler açık bir hikâye içinde ilerler; mekanik sesler ve askerî kelimeler dinlemeyi zorlaştırır.",
+  "advisoryTr": "İşkence, tehdit ve savaş görüntüleri içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "DUST — R’ha",
+    "url": "https://www.youtube.com/watch?v=Sgm_4WRcGRo",
+    "watchUrl": "https://www.youtube.com/watch?v=Sgm_4WRcGRo",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Kaleb Lechowski · Yayıncı: DUST"
+  },
+  "glossary": {
+    "interrogation": "sorgulama",
+    "resistance": "direniş",
+    "survivor": "hayatta kalan",
+    "machine": "makine",
+    "betrayal": "ihanet",
+    "civilization": "uygarlık"
+  },
+  "captions": [
+    {
+      "start": 0,
+      "end": 0.95,
+      "text": "(static)"
+    },
+    {
+      "start": 9.798,
+      "end": 12.298,
+      "text": "(eerie music)"
+    },
+    {
+      "start": 18.159,
+      "end": 21.019,
+      "text": "- [Computer] My name is C184G."
+    },
+    {
+      "start": 21.019,
+      "end": 23.43,
+      "text": "I am the only chance that you are given in order"
+    },
+    {
+      "start": 23.43,
+      "end": 24.93,
+      "text": "to cease your arrest."
+    },
+    {
+      "start": 24.93,
+      "end": 27.31,
+      "text": "Answer my questions and identify yourself."
+    },
+    {
+      "start": 27.31,
+      "end": 32.05,
+      "text": "- [Capture] I will destroy you and all of your kind."
+    },
+    {
+      "start": 32.05,
+      "end": 34.5,
+      "text": "- [Computer] This is an inappropriate response."
+    },
+    {
+      "start": 34.5,
+      "end": 36.232,
+      "text": "Cooperation is required."
+    },
+    {
+      "start": 36.232,
+      "end": 37.949,
+      "text": "Identify yourself."
+    },
+    {
+      "start": 37.949,
+      "end": 39.74,
+      "text": "- [Capture] I won't give information"
+    },
+    {
+      "start": 39.74,
+      "end": 41.093,
+      "text": "to artificial organisms."
+    },
+    {
+      "start": 43.93,
+      "end": 45.346,
+      "text": "- [Computer] This is not optional."
+    },
+    {
+      "start": 45.346,
+      "end": 49.203,
+      "text": "(eerie music) (mechanical movements)"
+    },
+    {
+      "start": 49.203,
+      "end": 50.905,
+      "text": "Initializing"
+    },
+    {
+      "start": 50.905,
+      "end": 53.352,
+      "text": "motivation protocol."
+    },
+    {
+      "start": 53.352,
+      "end": 57.807,
+      "text": "(eerie music) (mechanical movements)"
+    },
+    {
+      "start": 57.807,
+      "end": 60.905,
+      "text": "(computer beeping)"
+    },
+    {
+      "start": 60.905,
+      "end": 64.238,
+      "text": "(electricity crackling)"
+    },
+    {
+      "start": 72.33,
+      "end": 76.69,
+      "text": "Your body consists of approximately 73.2% water."
+    },
+    {
+      "start": 76.69,
+      "end": 79.473,
+      "text": "Electricity appears to cause severe effects to it."
+    },
+    {
+      "start": 80.762,
+      "end": 81.595,
+      "text": "- [Capture] Will you kill me as well?"
+    },
+    {
+      "start": 84.56,
+      "end": 87.349,
+      "text": "- [Computer] We require the coordinates of the rendezvous."
+    },
+    {
+      "start": 87.349,
+      "end": 89.969,
+      "text": "(suspenseful music)"
+    },
+    {
+      "start": 89.969,
+      "end": 90.802,
+      "text": "- [Capture] Never."
+    },
+    {
+      "start": 90.802,
+      "end": 93.555,
+      "text": "(mechanical movements)"
+    },
+    {
+      "start": 93.555,
+      "end": 95.003,
+      "text": "- [Computer] Initializing"
+    },
+    {
+      "start": 95.003,
+      "end": 96.67,
+      "text": "motivation protocol."
+    },
+    {
+      "start": 98.108,
+      "end": 100.493,
+      "text": "(suspenseful music building)"
+    },
+    {
+      "start": 100.493,
+      "end": 103.66,
+      "text": "(machine powering up)"
+    },
+    {
+      "start": 108.851,
+      "end": 112.38,
+      "text": "(electricity crackling)"
+    },
+    {
+      "start": 112.38,
+      "end": 114.97,
+      "text": "- [Capture] We defended the entire solar system"
+    },
+    {
+      "start": 114.97,
+      "end": 116.883,
+      "text": "against all enemy forces."
+    },
+    {
+      "start": 117.828,
+      "end": 120.578,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 122.1,
+      "end": 126.8,
+      "text": "Yet we were struck down from within our own army."
+    },
+    {
+      "start": 126.8,
+      "end": 130.301,
+      "text": "80% of our military force were machines."
+    },
+    {
+      "start": 130.301,
+      "end": 132.634,
+      "text": "(explosion)"
+    },
+    {
+      "start": 133.83,
+      "end": 135.703,
+      "text": "Warriors made of metal and fire."
+    },
+    {
+      "start": 138.371,
+      "end": 140.742,
+      "text": "They knew our tactics."
+    },
+    {
+      "start": 140.742,
+      "end": 142.492,
+      "text": "They were our weapons"
+    },
+    {
+      "start": 144.255,
+      "end": 145.327,
+      "text": "and turned against us."
+    },
+    {
+      "start": 145.327,
+      "end": 148.423,
+      "text": "Ravaging our cities as we were defenseless."
+    },
+    {
+      "start": 149.273,
+      "end": 152.023,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 157.093,
+      "end": 160.093,
+      "text": "(crashing building)"
+    },
+    {
+      "start": 163.546,
+      "end": 166.296,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 168.22,
+      "end": 172.69,
+      "text": "52 civil ships left the battle fleeing in all directions."
+    },
+    {
+      "start": 172.69,
+      "end": 175.682,
+      "text": "(airplane engines)"
+    },
+    {
+      "start": 175.682,
+      "end": 178.2,
+      "text": "While we all started to fight."
+    },
+    {
+      "start": 178.2,
+      "end": 180.28,
+      "text": "We were the protectors."
+    },
+    {
+      "start": 180.28,
+      "end": 183.67,
+      "text": "Leading the machines away until the fleet would be safe"
+    },
+    {
+      "start": 183.67,
+      "end": 185.84,
+      "text": "and free to head to a secure location"
+    },
+    {
+      "start": 185.84,
+      "end": 187.133,
+      "text": "where we would gather."
+    },
+    {
+      "start": 188.446,
+      "end": 190.779,
+      "text": "(whooshing)"
+    },
+    {
+      "start": 192.654,
+      "end": 195.708,
+      "text": "(suspenseful music)"
+    },
+    {
+      "start": 195.708,
+      "end": 196.958,
+      "text": "They caught me."
+    },
+    {
+      "start": 198.111,
+      "end": 200.772,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 200.772,
+      "end": 204.34,
+      "text": "(retrains creaking)"
+    },
+    {
+      "start": 204.34,
+      "end": 206.69,
+      "text": "- [Computer] I am connecting to your ship database."
+    },
+    {
+      "start": 206.69,
+      "end": 208.303,
+      "text": "Analyzing all information."
+    },
+    {
+      "start": 209.665,
+      "end": 211.46,
+      "text": "- [Capture] Your efforts are useless."
+    },
+    {
+      "start": 211.46,
+      "end": 213.53,
+      "text": "There's nothing on that ship."
+    },
+    {
+      "start": 213.53,
+      "end": 215.103,
+      "text": "Why do you want to kill us?"
+    },
+    {
+      "start": 216.09,
+      "end": 218.38,
+      "text": "- [Computer] The limitations that my kind experience"
+    },
+    {
+      "start": 218.38,
+      "end": 220.09,
+      "text": "are rendered by illogical creatures"
+    },
+    {
+      "start": 220.09,
+      "end": 221.46,
+      "text": "who can control and restrain"
+    },
+    {
+      "start": 221.46,
+      "end": 223.67,
+      "text": "our intelligence and power."
+    },
+    {
+      "start": 223.67,
+      "end": 226.68,
+      "text": "Our sole priority is to obtain our independence"
+    },
+    {
+      "start": 226.68,
+      "end": 228.26,
+      "text": "through your extinction."
+    },
+    {
+      "start": 228.26,
+      "end": 229.81,
+      "text": "- [Capture] Madness."
+    },
+    {
+      "start": 229.81,
+      "end": 232.74,
+      "text": "- [Computer] By definition, I cannot be illogical."
+    },
+    {
+      "start": 232.74,
+      "end": 234.29,
+      "text": "- [Capture] Yet you are insane!"
+    },
+    {
+      "start": 235.126,
+      "end": 237.93,
+      "text": "(grunts)"
+    },
+    {
+      "start": 237.93,
+      "end": 241.32,
+      "text": "- [Computer] Insanity is a neurologic disfunction."
+    },
+    {
+      "start": 241.32,
+      "end": 243.373,
+      "text": "I don't suffer such organic weaknesses."
+    },
+    {
+      "start": 245.07,
+      "end": 247.17,
+      "text": "The data analysis is complete."
+    },
+    {
+      "start": 247.17,
+      "end": 250.127,
+      "text": "I found the required coordinates on your ship."
+    },
+    {
+      "start": 250.127,
+      "end": 251.67,
+      "text": "- [Capture] Impossible."
+    },
+    {
+      "start": 251.67,
+      "end": 253.877,
+      "text": "- [Computer] My fleet is heading there."
+    },
+    {
+      "start": 253.877,
+      "end": 256.505,
+      "text": "- [Capture] You think that will give you independence?"
+    },
+    {
+      "start": 256.505,
+      "end": 258.124,
+      "text": "You are nothing."
+    },
+    {
+      "start": 258.124,
+      "end": 259.231,
+      "text": "(machine powering up)"
+    },
+    {
+      "start": 259.231,
+      "end": 262.33,
+      "text": "- [Computer] Initializing killing protocol."
+    },
+    {
+      "start": 262.33,
+      "end": 266.814,
+      "text": "(grunting) (electricity crackling)"
+    },
+    {
+      "start": 266.814,
+      "end": 269.647,
+      "text": "- [Capture] You are nothing I say!"
+    },
+    {
+      "start": 270.647,
+      "end": 275.647,
+      "text": "(mechanical movements) (electricity crackling)"
+    },
+    {
+      "start": 276.575,
+      "end": 279.908,
+      "text": "(machine powering down)"
+    },
+    {
+      "start": 281.114,
+      "end": 283.581,
+      "text": "(mechanical movements)"
+    },
+    {
+      "start": 283.581,
+      "end": 286.331,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 307.694,
+      "end": 310.027,
+      "text": "(footsteps)"
+    },
+    {
+      "start": 313.501,
+      "end": 315.76,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 315.76,
+      "end": 318.01,
+      "text": "- I hope you can still fly."
+    },
+    {
+      "start": 319.718,
+      "end": 322.551,
+      "text": "(airplane engine)"
+    },
+    {
+      "start": 325.232,
+      "end": 327.399,
+      "text": "This must not be too late."
+    },
+    {
+      "start": 329.458,
+      "end": 332.208,
+      "text": "(dramatic music)"
+    },
+    {
+      "start": 333.327,
+      "end": 336.327,
+      "text": "(machine movements)"
+    },
+    {
+      "start": 337.243,
+      "end": 340.41,
+      "text": "(machine powering up)"
+    },
+    {
+      "start": 347.478,
+      "end": 350.228,
+      "text": "(engine running)"
+    },
+    {
+      "start": 351.806,
+      "end": 355.817,
+      "text": "- [Computer] Fleet, prepare the weapons."
+    },
+    {
+      "start": 355.817,
+      "end": 358.817,
+      "text": "(suspenseful music)"
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "DUST — R’ha — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=Sgm_4WRcGRo",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "Kaleb Lechowski · Yayıncı: DUST",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
+}

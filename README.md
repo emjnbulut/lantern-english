@@ -1,6 +1,6 @@
 # Lantern English · Hikâyelerle İngilizce
 
-Tek video denemesi: **Sintel · B1 (İngilizce altyazı destekli tahmini seviye)**, [Videolar](https://lantern-english.github.io/#videos) bölümünde. Resmî CC BY 3.0 film, tam jenerikle dış kaynaktan oynatılır; İngilizce altyazı kelimelerine dokununca Türkçe sözlük açılır ve video durur. Konuşmalar arasında geçiş ve tekrar dinleme vardır. Video oynatma internet gerektirir. Kaynaklar ve lisans: `content/videos/sintel.json`.
+**Videolar:** [Videolar](https://lantern-english.github.io/#videos) bölümünde A2–C2 arası 31 telifsiz/açık lisanslı video (kısa filmler, belgeseller, klasik filmler, VOA ve NASA içerikleri) var. Videolar dış kaynaktan oynatılır; İngilizce altyazı kelimelerine dokununca Türkçe sözlük açılır ve video durur. Konuşmalar arasında geçiş ve tekrar dinleme vardır. Oynatma internet gerektirir. Seviyeler altyazı destekli dinleme tahminidir. Kaynak ve lisanslar: `content/videos/*.json`.
 
 Türkçe konuşanlar için, seviyeli hikâyelerle İngilizce öğreten koyu temalı statik bir web sitesi.
 Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı çıkar.
@@ -8,6 +8,7 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 **Çalıştırmak için:** `index.html` dosyasını tarayıcıda açman yeterli. Sunucu ya da kurulum gerekmez.
 
 ## Özellikler
+- **İçerik:** 38 hikâye, 16 makale ve 31 video.
 - **Hikâyeler:** A1–C2 için ayrı koleksiyon; tür (komedi, gizem, korku, macera, romantik, bilim kurgu, fabl, dram) ve uzunluk filtreleri, arama, sıralama.
 - **Kitaplığım:** kartlardaki Kaydet düğmesi veya her okuma ekranındaki "Kitaplığıma ekle" kutucuğuyla manuel kayıt. Bir metni açmak kitaplığına eklemez; kayıt sayısı sınırı yoktur. Sekmeye girince tüm kayıtlar açılır; arama, içerik türü filtresi ve sıralama kullanılabilir. Okuma ilerlemesi korunur; kayıtlar bu tarayıcıda saklanır.
 - **Önerilenler:** mevcut filtrelere uygun en fazla üç hikâye; Dracula (B1) ve Frankenstein (B2) kısaltılmış klasikleri uygun seçimlerde önceliklidir.
@@ -27,7 +28,7 @@ Herhangi bir kelimenin üzerine gelince (telefonda dokununca) Türkçe anlamı �
 
 ## Eklenecek hikâyeler
 
-12 Ekim 2026 durumu: planlanan 7 hikâyenin **6'sı yazıldı ve yayında** (Kaşağı, Perili Köşk, Pembe İncili Kaftan, Boğaç Han, Bamsı Beyrek, Basat ve Tepegöz). **Pinokyo** (A2) henüz eklenmedi; devam edecek AI `content/stories/pinocchio-retold.json` dosyasını İtalyanca orijinalden (Gutenberg #52484) yazmalıdır. Hepsi `content/stories/` içinde, "Kısaltılmış klasik" rozetiyle Hikâyeler koleksiyonundadır. Seviyeler uyarlamaların düzeyidir, özgün eserlerin CEFR derecesi değildir.
+12 Ekim 2026 durumu: planlanan 7 hikâyenin **tamamı yazıldı** (Kaşağı, Perili Köşk, Pembe İncili Kaftan, Boğaç Han, Bamsı Beyrek, Basat ve Tepegöz, Pinokyo). Pinokyo (A2) İtalyanca özgünden (Gutenberg #52484) `content/stories/pinocchio-retold.json` olarak yazıldı. Hepsi `content/stories/` içinde, "Kısaltılmış klasik" rozetiyle Hikâyeler koleksiyonundadır. Canlı sitede yayın durumu için HOSTING.md'ye bakın. Seviyeler uyarlamaların düzeyidir, özgün eserlerin CEFR derecesi değildir.
 
 | Yazar / kaynak | Eser | Hedef seviye | Seçim gerekçesi |
 |---|---|---|---|

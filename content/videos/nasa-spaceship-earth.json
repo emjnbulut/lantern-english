@@ -1,0 +1,871 @@
+{
+  "id": "nasa-spaceship-earth",
+  "type": "video",
+  "title": "Spaceship Earth: Science, Models and Our Future",
+  "creator": "NASA · Dr. Piers Sellers",
+  "year": 2014,
+  "level": "C2",
+  "category": "real",
+  "genre": "documentary",
+  "durationSeconds": 651,
+  "summaryTr": "Eski bir astronot, Dünya’yı uzaydan görmenin anlamını mizah ve bilimle birleştirir. İklim modelleri, toplumsal kararlar ve gezegenimizin geleceği üzerine bir konuşma.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. C2 için zorlayıcı bir dinleme seçkisidir: bilimsel ve siyasi dil arasında geçiş, deyimler, kültürel göndermeler, ironi ve konuşma dilindeki eksiltiler vardır. 2014 tarihli konuşmada sayılar ve görev planları o dönemi yansıtır.",
+  "videoUrl": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Piers_Sellers.2014_ipod_lg.m4v",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Piers_Sellers.2014_ipod_sm.mp4",
+      "sizeMB": 51
+    },
+    {
+      "label": "360p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Piers_Sellers.2014_ipod_lg.m4v",
+      "sizeMB": 112
+    },
+    {
+      "label": "540p",
+      "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Piers_Sellers.2014_appletv.m4v",
+      "sizeMB": 274
+    }
+  ],
+  "downloadable": false,
+  "source": {
+    "name": "NASA Goddard — Spaceship Earth: Science, Models and Our Future",
+    "url": "https://svs.gsfc.nasa.gov/11668/#media_group_344478",
+    "watchUrl": "https://svs.gsfc.nasa.gov/11668/#media_group_344478",
+    "license": "NASA medya kullanım koşulları · Eğitim amaçlı kullanım",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "credit": "NASA's Goddard Space Flight Center · NASA · Dr. Piers Sellers",
+    "creditNoteTr": "Özgün video ve jenerik değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "NASA — resmî İngilizce WebVTT altyazısı",
+    "url": "https://svs.gsfc.nasa.gov/vis/a010000/a011600/a011668/NASM-Dr.Piers_Sellers.en_US.vtt",
+    "license": "NASA medya kullanım koşulları",
+    "licenseUrl": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "changeNoteTr": "Sözler ve kaynak zamanları korunmuştur; biçim etiketleri kaldırılıp zamanlar saniyeye dönüştürülmüştür. Kaynak altyazıda yazım veya aktarım hataları bulunabilir."
+  },
+  "glossary": {
+    "salinity": "tuzluluk",
+    "circulation": "dolaşım",
+    "biosphere": "biyosfer; canlıların yaşadığı katman",
+    "carbon": "karbon",
+    "fossil": "fosil",
+    "grizzled": "kırlaşmış; deneyimli",
+    "bureaucrat": "bürokrat",
+    "dazzled": "etkiledi; göz kamaştırdı",
+    "timescales": "zaman ölçekleri",
+    "plankton": "plankton; suda sürüklenen küçük canlılar",
+    "ingenuity": "yaratıcılık; çözüm bulma becerisi",
+    "resourcefulness": "beceriklilik",
+    "grit": "azim; yılmama",
+    "sobering": "insanı düşündüren; ayıltıcı",
+    "depletion": "tükenme; azalım",
+    "refrigerants": "soğutucu maddeler",
+    "assessment": "değerlendirme",
+    "gigatonne": "milyar ton",
+    "gigatonnes": "milyarlarca ton"
+  },
+  "captions": [
+    {
+      "start": 0.01,
+      "end": 4.05,
+      "text": "[Applause]"
+    },
+    {
+      "start": 4.05,
+      "end": 8.09,
+      "text": "Thanks. So I have to treat Thorsten with a lot of"
+    },
+    {
+      "start": 8.09,
+      "end": 12.13,
+      "text": "respect because he reminds me of Arnnie Schwarzenegger with a PhD,"
+    },
+    {
+      "start": 12.13,
+      "end": 16.16,
+      "text": "I don't want to get on wrong side of him. So,"
+    },
+    {
+      "start": 16.16,
+      "end": 20.19,
+      "text": "okay, the view from orbit really does put things"
+    },
+    {
+      "start": 20.19,
+      "end": 24.3,
+      "text": "in perspective and as Senator Nelson has seen this with his own eyes,"
+    },
+    {
+      "start": 24.3,
+      "end": 28.34,
+      "text": "so he knows what I am talking about, I have enjoyed seeing the earth too"
+    },
+    {
+      "start": 28.34,
+      "end": 32.41,
+      "text": "with my own eyes through a space supervisor, and I am absolutely fascinated"
+    },
+    {
+      "start": 32.41,
+      "end": 36.52,
+      "text": "by what a satellite instruments can tell us. We, that's"
+    },
+    {
+      "start": 36.52,
+      "end": 40.53,
+      "text": "NASA and all our friends at NASA, are quite literally conducting a health check"
+    },
+    {
+      "start": 40.53,
+      "end": 44.56,
+      "text": "of the planet. Okay, so these hands on working scientists"
+    },
+    {
+      "start": 44.56,
+      "end": 48.59,
+      "text": "have dazzled with facts and data. It's my job, as a grizzled"
+    },
+    {
+      "start": 48.59,
+      "end": 52.61,
+      "text": "bureaucrat to drag this event over the finish line and let you find your cars."
+    },
+    {
+      "start": 52.61,
+      "end": 56.64,
+      "text": "So I will try and be quick. So here are a few"
+    },
+    {
+      "start": 56.64,
+      "end": 60.69,
+      "text": "closing thoughts. What all of this means for science, for policy makers"
+    },
+    {
+      "start": 60.69,
+      "end": 64.7,
+      "text": "and for the crew spaceship Earth, that's all of us."
+    },
+    {
+      "start": 64.7,
+      "end": 68.77,
+      "text": "Okay, this movie shows"
+    },
+    {
+      "start": 68.77,
+      "end": 72.89,
+      "text": "you what happens when we combine the satellite data with computer models"
+    },
+    {
+      "start": 72.89,
+      "end": 76.92,
+      "text": "and use a lot of physics to fill in the gaps between observations."
+    },
+    {
+      "start": 76.92,
+      "end": 80.97,
+      "text": "Here we are on the space, this is not a snow storm, these are solar particles blasting"
+    },
+    {
+      "start": 80.97,
+      "end": 85.02,
+      "text": "by the earth but we are protected by magnetic field. So the particles are diverted."
+    },
+    {
+      "start": 85.02,
+      "end": 89.02,
+      "text": "As we come down deeper, and by the way this is a model"
+    },
+    {
+      "start": 89.02,
+      "end": 93.06,
+      "text": "based on physics and observations so there is fact and mathematics,"
+    },
+    {
+      "start": 93.06,
+      "end": 97.14,
+      "text": "Isaac Newton is hard at work here, here is the atmospheric flows, again"
+    },
+    {
+      "start": 97.14,
+      "end": 101.18,
+      "text": "produced by a model, circulation timescales here"
+    },
+    {
+      "start": 101.18,
+      "end": 105.25999999999999,
+      "text": "are on hours to days, so we come a little bit deeper in to the world,"
+    },
+    {
+      "start": 105.25999999999999,
+      "end": 109.42,
+      "text": "We see the surface winds. Now we are looking at the"
+    },
+    {
+      "start": 109.42,
+      "end": 113.47,
+      "text": "surface, ocean circulation. Ms. Gail said that's forced by heat,"
+    },
+    {
+      "start": 113.47,
+      "end": 117.56,
+      "text": "wind and salinity, timescales of days and months and years."
+    },
+    {
+      "start": 117.56,
+      "end": 121.7,
+      "text": "Deep yet, and now I will talk with the French accent like Jacques Cousteau,"
+    },
+    {
+      "start": 121.7,
+      "end": 125.74,
+      "text": "the sub surface flows down to the deep ocean circulation,"
+    },
+    {
+      "start": 125.74,
+      "end": 129.76,
+      "text": "timescales of a thousand years or more."
+    },
+    {
+      "start": 129.76,
+      "end": 133.79,
+      "text": "It's beautiful and we get all of this for combining the satellite"
+    },
+    {
+      "start": 133.79,
+      "end": 137.82999999999998,
+      "text": "data with what we understand about nature and putting it in to a computer."
+    },
+    {
+      "start": 137.82999999999998,
+      "end": 141.85,
+      "text": "This stuff is based on actual reality. Not"
+    },
+    {
+      "start": 141.85,
+      "end": 145.9,
+      "text": "the Kardashian kind, but let's get back to think about climate."
+    },
+    {
+      "start": 145.9,
+      "end": 149.94,
+      "text": "So here is a computer model simulation of the earth's climate system, this is not"
+    },
+    {
+      "start": 149.94,
+      "end": 154.02,
+      "text": "a picture, this is a simulation. It's a toy world"
+    },
+    {
+      "start": 154.02,
+      "end": 158.05,
+      "text": "based on physics and propelled by satellite data. I guess when you look at"
+    },
+    {
+      "start": 158.05,
+      "end": 162.12,
+      "text": "the detail here, the popcorn clouds, the winds,"
+    },
+    {
+      "start": 162.12,
+      "end": 166.25,
+      "text": "or the planetary scale waves in the atmosphere. The snow,"
+    },
+    {
+      "start": 166.25,
+      "end": 170.28,
+      "text": "the ice, the biosphere, it's all"
+    },
+    {
+      "start": 170.28,
+      "end": 174.37,
+      "text": "right there. It's all being calculated and it's all being faithfully reproduced."
+    },
+    {
+      "start": 174.37,
+      "end": 178.39,
+      "text": "Now what is this all good for? Well, models"
+    },
+    {
+      "start": 178.39,
+      "end": 182.45,
+      "text": "have got to the point of providing weather prediction up to 72 hours"
+    },
+    {
+      "start": 182.45,
+      "end": 186.54,
+      "text": "reliably. You can quite literally bank on it, most days."
+    },
+    {
+      "start": 186.54,
+      "end": 190.56,
+      "text": "This is going to be Hurricane Sandy, this is actually a model prediction"
+    },
+    {
+      "start": 190.56,
+      "end": 194.66,
+      "text": "of Sandy and as you could see the Hurricane wandered around the Atlantic"
+    },
+    {
+      "start": 194.66,
+      "end": 198.67000000000002,
+      "text": "before turning sharply left and whacking New Jersey and New York."
+    },
+    {
+      "start": 198.67000000000002,
+      "end": 202.72,
+      "text": "But accurate warnings were given out 72 hours ahead of time"
+    },
+    {
+      "start": 202.72,
+      "end": 206.82999999999998,
+      "text": "and many lives and a lot of money was saved as a result of these"
+    },
+    {
+      "start": 206.82999999999998,
+      "end": 210.86,
+      "text": "warnings. By the way, speaking for us, that's not counting"
+    },
+    {
+      "start": 210.86,
+      "end": 214.89,
+      "text": "all the people up and down the East Coast who did not have to evacuate,"
+    },
+    {
+      "start": 214.89,
+      "end": 218.91,
+      "text": "because they knew the Hurricane was going to miss them all together, and hat counts for"
+    },
+    {
+      "start": 218.91,
+      "end": 222.95,
+      "text": "something. Now the exact same physics and many of the same observations that we use"
+    },
+    {
+      "start": 222.95,
+      "end": 226.97,
+      "text": "for weather are helping us to understand climate better."
+    },
+    {
+      "start": 226.97,
+      "end": 231.01,
+      "text": "And these climate models allow us to peer in to the future and will help us make"
+    },
+    {
+      "start": 231.01,
+      "end": 235.05,
+      "text": "decisions about energy, water and food resources."
+    },
+    {
+      "start": 235.05,
+      "end": 239.07999999999998,
+      "text": "Okay, this is a simulation of what we think the earth will look like"
+    },
+    {
+      "start": 239.07999999999998,
+      "end": 243.12,
+      "text": "in 20 to 30 years. Actually it's not."
+    },
+    {
+      "start": 243.12,
+      "end": 247.21,
+      "text": "It's the picture of the sun, it's being taken by our heliophysical"
+    },
+    {
+      "start": 247.21,
+      "end": 251.35,
+      "text": "friends using their satellites. Besides being a really cool image,"
+    },
+    {
+      "start": 251.35,
+      "end": 255.4,
+      "text": "it shows that we are keeping a close eye on the sun, again using satellites and guess what,"
+    },
+    {
+      "start": 255.4,
+      "end": 259.44,
+      "text": "we have found the sun to be not guilty for the recent warming trend."
+    },
+    {
+      "start": 259.44,
+      "end": 263.56,
+      "text": "Now as I said we use the same exact physics and many of the same satellite"
+    },
+    {
+      "start": 263.56,
+      "end": 267.57,
+      "text": "data to be used in weather models to build and test our climate models."
+    },
+    {
+      "start": 267.57,
+      "end": 271.59,
+      "text": "Now what these models do tell us is"
+    },
+    {
+      "start": 271.59,
+      "end": 275.62,
+      "text": "the rate of warming depends very largely on how much fossil fuel we use"
+    },
+    {
+      "start": 275.62,
+      "end": 279.64,
+      "text": "and how much carbon dioxide we put in the atmosphere."
+    },
+    {
+      "start": 279.64,
+      "end": 283.65999999999997,
+      "text": "I am now going to show you a graph and it is very bad"
+    },
+    {
+      "start": 283.65999999999997,
+      "end": 287.67,
+      "text": "form for even like this but in compensation it may be the"
+    },
+    {
+      "start": 287.67,
+      "end": 291.69,
+      "text": "most expensive graph ever made and thats not because of the colors."
+    },
+    {
+      "start": 291.69,
+      "end": 295.71,
+      "text": "This cost several years of effort by thousands of scientists"
+    },
+    {
+      "start": 295.71,
+      "end": 299.74,
+      "text": "worldwide to put it together and it tell us something, we didn't know"
+    },
+    {
+      "start": 299.74,
+      "end": 303.75,
+      "text": "until only recently. It's something new and something very,"
+    },
+    {
+      "start": 303.75,
+      "end": 307.78,
+      "text": "very simple. What it says is that the expected rise in"
+    },
+    {
+      "start": 307.78,
+      "end": 311.79,
+      "text": "temperature is directly, linearly related to the amount"
+    },
+    {
+      "start": 311.79,
+      "end": 315.83,
+      "text": "of fossil fuel we burn. The X axis of the bottom"
+    },
+    {
+      "start": 315.83,
+      "end": 319.86,
+      "text": "shows how much fossil fuel we burn which makes the carbon dioxide"
+    },
+    {
+      "start": 319.86,
+      "end": 323.89,
+      "text": "and the y-axis shows the temperature increase that results"
+    },
+    {
+      "start": 323.89,
+      "end": 327.91,
+      "text": "from this extra Co2. The zero point is"
+    },
+    {
+      "start": 327.91,
+      "end": 331.94,
+      "text": "roughly or a bit left to the zero point is roughly when fellow in England"
+    },
+    {
+      "start": 331.94,
+      "end": 335.95,
+      "text": "in 1700 decided it was time to start an industrial revolution"
+    },
+    {
+      "start": 335.95,
+      "end": 339.98,
+      "text": "and dug up the first pit of coal. Now, if you look at the black line"
+    },
+    {
+      "start": 339.98,
+      "end": 344.01,
+      "text": "that ends at 2010, you'll see that we burned about 500"
+    },
+    {
+      "start": 344.01,
+      "end": 348.02,
+      "text": "gigatonnes of carbon since then and a gigatonne of carbon is a brick of"
+    },
+    {
+      "start": 348.02,
+      "end": 352.05,
+      "text": "coal about a kilometer on the side so it is a big piece of coal"
+    },
+    {
+      "start": 352.05,
+      "end": 356.08,
+      "text": "and that's give us about 1° C rise in global temperature"
+    },
+    {
+      "start": 356.08,
+      "end": 360.1,
+      "text": "which is what we have seen and that's led to some changes in the world"
+    },
+    {
+      "start": 360.1,
+      "end": 364.12,
+      "text": "that my good friend I've just shown you. Now we'll"
+    },
+    {
+      "start": 364.12,
+      "end": 368.16,
+      "text": "likely to burn 1000 gigatonnes, that's halfway up the graph,"
+    },
+    {
+      "start": 368.16,
+      "end": 372.18,
+      "text": "that will give us two degree centigrade to two and half centigrade increase"
+    },
+    {
+      "start": 372.18,
+      "end": 376.21,
+      "text": "in global temperature. We definitely don't want"
+    },
+    {
+      "start": 376.21,
+      "end": 380.24,
+      "text": "to be up in the top right-hand corner, four degree centigrade."
+    },
+    {
+      "start": 380.24,
+      "end": 384.26,
+      "text": "This look like a very different planet than the current Earth that we inhabit"
+    },
+    {
+      "start": 384.26,
+      "end": 388.28,
+      "text": "and we don't really know what that planet would look like, how it would work,"
+    },
+    {
+      "start": 388.28,
+      "end": 392.32,
+      "text": "so this is sobering, right? but"
+    },
+    {
+      "start": 392.32,
+      "end": 396.33,
+      "text": "is it necessary going to be grim and nasty to the maximum?"
+    },
+    {
+      "start": 396.33,
+      "end": 400.36,
+      "text": "Is this evening going to be a total down of few you all if we don't count the"
+    },
+    {
+      "start": 400.36,
+      "end": 404.4,
+      "text": "refreshments? I think not and there is some basis for my"
+    },
+    {
+      "start": 404.4,
+      "end": 408.40999999999997,
+      "text": "optimism. Here is a picture of the ozone hole that was"
+    },
+    {
+      "start": 408.40999999999997,
+      "end": 412.46,
+      "text": "discovered in 1979. The blue color shows that ozone is being"
+    },
+    {
+      "start": 412.46,
+      "end": 416.48,
+      "text": "eaten up by manmade chemicals, many refrigerants. We saw"
+    },
+    {
+      "start": 416.48,
+      "end": 420.51,
+      "text": "the hole growing rapidly in the 80s and 90s"
+    },
+    {
+      "start": 420.51,
+      "end": 424.56,
+      "text": "and this was bad news because ozone protects most of life on Earth"
+    },
+    {
+      "start": 424.56,
+      "end": 428.57,
+      "text": "from strong ultraviolet radiation from the sun and that's bad for you."
+    },
+    {
+      "start": 428.57,
+      "end": 432.62,
+      "text": "But here is the good part of the story. Governments"
+    },
+    {
+      "start": 432.62,
+      "end": 436.66,
+      "text": "all around the world took information seriously. Here is a UN meeting"
+    },
+    {
+      "start": 436.66,
+      "end": 440.67,
+      "text": "where they are discussing the problem on what to do about it. It modeled"
+    },
+    {
+      "start": 440.67,
+      "end": 444.69,
+      "text": "on Goddard seminar. Here are all the agreements that they"
+    },
+    {
+      "start": 444.69,
+      "end": 448.73,
+      "text": "cranked out to reduce the chemicals that cause the problem"
+    },
+    {
+      "start": 448.73,
+      "end": 452.74,
+      "text": "and here is two of Goddard's finest scientists in the back"
+    },
+    {
+      "start": 452.74,
+      "end": 456.79,
+      "text": "row providing solid science advice"
+    },
+    {
+      "start": 456.79,
+      "end": 460.81,
+      "text": "and eating chips, there they are."
+    },
+    {
+      "start": 460.81,
+      "end": 464.84000000000003,
+      "text": "Alright, and what happen"
+    },
+    {
+      "start": 464.84000000000003,
+      "end": 468.9,
+      "text": "Here is a picture of two worlds; on the left is world that we are"
+    },
+    {
+      "start": 468.9,
+      "end": 472.92,
+      "text": "likely to see with the ozone depletion leveling off and then slowly"
+    },
+    {
+      "start": 472.92,
+      "end": 476.96,
+      "text": "reversing and on the right is what would have happened if we didn't have"
+    },
+    {
+      "start": 476.96,
+      "end": 481.02,
+      "text": "all those controls and agreements and blue here means no ozone which is"
+    },
+    {
+      "start": 481.02,
+      "end": 485.04,
+      "text": "bad news. On right-hand side is the world we avoided."
+    },
+    {
+      "start": 485.04,
+      "end": 489.08,
+      "text": "hat's the world with thinning ozone, a world with damage"
+    },
+    {
+      "start": 489.08,
+      "end": 493.14,
+      "text": "to all living things exposed to sunlight and that includes the crops that provide our"
+    },
+    {
+      "start": 493.14,
+      "end": 497.17,
+      "text": "food, the ocean plankton that makes our oxygen and damage"
+    },
+    {
+      "start": 497.17,
+      "end": 501.21,
+      "text": "to us, people. And now a news flash"
+    },
+    {
+      "start": 501.21,
+      "end": 505.22,
+      "text": "today at four o'clock United Nations"
+    },
+    {
+      "start": 505.22,
+      "end": 509.26,
+      "text": "released a statement. It reads, the Earth's protective"
+    },
+    {
+      "start": 509.26,
+      "end": 513.28,
+      "text": "ozone layer is well on track to recovery in the next few decades"
+    },
+    {
+      "start": 513.28,
+      "end": 517.32,
+      "text": "thanks concerted international action against ozone depleting"
+    },
+    {
+      "start": 517.32,
+      "end": 521.32,
+      "text": "substances according to a new assessment by 300"
+    },
+    {
+      "start": 521.32,
+      "end": 525.35,
+      "text": "scientists. So it can be done,"
+    },
+    {
+      "start": 525.35,
+      "end": 529.38,
+      "text": "this is proof that people and that's all of us and our"
+    },
+    {
+      "start": 529.38,
+      "end": 533.39,
+      "text": "political representatives can use solid information, facts,"
+    },
+    {
+      "start": 533.39,
+      "end": 537.42,
+      "text": "models, like every thing we have seen tonight"
+    },
+    {
+      "start": 537.42,
+      "end": 541.45,
+      "text": "to make the right decisions. Now sometimes it happens a bit later,"
+    },
+    {
+      "start": 541.45,
+      "end": 545.47,
+      "text": "and it takes bit longer than we would like but generally"
+    },
+    {
+      "start": 545.47,
+      "end": 549.48,
+      "text": "the right decisions get made. Now"
+    },
+    {
+      "start": 549.48,
+      "end": 553.51,
+      "text": "there's are a lot of people on this planet."
+    },
+    {
+      "start": 553.51,
+      "end": 557.53,
+      "text": "This is Christmas 1968"
+    },
+    {
+      "start": 557.53,
+      "end": 561.57,
+      "text": "3 billion people on Earth and there"
+    },
+    {
+      "start": 561.57,
+      "end": 565.62,
+      "text": "they all are, actually we or some of us are,"
+    },
+    {
+      "start": 565.62,
+      "end": 569.64,
+      "text": "minus three because somebody has to take the photo."
+    },
+    {
+      "start": 569.64,
+      "end": 573.68,
+      "text": "Now here is a picture 2013"
+    },
+    {
+      "start": 573.68,
+      "end": 577.7,
+      "text": "put together from satellite data. Now there are 7 billion of us"
+    },
+    {
+      "start": 577.7,
+      "end": 581.72,
+      "text": "plus six on"
+    },
+    {
+      "start": 581.72,
+      "end": 585.75,
+      "text": "space station and we will top out at about 9 billion this century"
+    },
+    {
+      "start": 585.75,
+      "end": 589.8,
+      "text": "But again I think there is reason for optimism here because people are actually"
+    },
+    {
+      "start": 589.8,
+      "end": 593.88,
+      "text": "part of the solution. Every new human born"
+    },
+    {
+      "start": 593.88,
+      "end": 597.9,
+      "text": "is not just an extra stress on the world but brings with"
+    },
+    {
+      "start": 597.9,
+      "end": 601.93,
+      "text": "himself or herself resources and answers."
+    },
+    {
+      "start": 601.93,
+      "end": 605.98,
+      "text": "This is an early picture of Len Fisk. [Laughter]"
+    },
+    {
+      "start": 605.98,
+      "end": 610.02,
+      "text": "So I think, I hope that with the ingenuity,"
+    },
+    {
+      "start": 610.02,
+      "end": 614.04,
+      "text": "the resourcefulness, the grit that has got the human race so far"
+    },
+    {
+      "start": 614.04,
+      "end": 618.06,
+      "text": "we can use these vital signs about the health of our planet"
+    },
+    {
+      "start": 618.06,
+      "end": 622.1,
+      "text": "to figure out how to live long and prosper on this Earth."
+    },
+    {
+      "start": 622.1,
+      "end": 626.12,
+      "text": "Now before I close up I'd like to recognize the great work done by the"
+    },
+    {
+      "start": 626.12,
+      "end": 630.16,
+      "text": "visualization team, Ali Ogden, Wade Sisler, Rani Gran,Horace Mitchell and friends who put"
+    },
+    {
+      "start": 630.16,
+      "end": 634.2,
+      "text": "all these beautiful pictures together and of course a huge thank you for all speakers"
+    },
+    {
+      "start": 634.2,
+      "end": 638.21,
+      "text": "and sponsors so put your hand together please. [Applause]"
+    },
+    {
+      "start": 638.21,
+      "end": 642.28,
+      "text": "[Applause] [Music]"
+    },
+    {
+      "start": 642.28,
+      "end": 650.631,
+      "text": "[Music] end"
+    }
+  ]
+}

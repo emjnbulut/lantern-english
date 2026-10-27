@@ -34,7 +34,9 @@ walk(out);
 const version = hash.digest("hex").slice(0, 10);
 
 const swPath = path.join(out, "sw.js");
-fs.writeFileSync(swPath, fs.readFileSync(swPath, "utf8").replace('const VERSION = "dev";', `const VERSION = "${version}";`));
+const worker = fs.readFileSync(swPath, "utf8");
+if (!/const VERSION = "[^"]*";/.test(worker)) throw new Error("sw.js has no version marker");
+fs.writeFileSync(swPath, worker.replace(/const VERSION = "[^"]*";/, `const VERSION = "${version}";`));
 fs.writeFileSync(path.join(out, ".nojekyll"), "");
 
 const size = (d) => fs.readdirSync(d, { withFileTypes: true }).reduce((n, e) => n + (e.isDirectory() ? size(path.join(d, e.name)) : fs.statSync(path.join(d, e.name)).size), 0);

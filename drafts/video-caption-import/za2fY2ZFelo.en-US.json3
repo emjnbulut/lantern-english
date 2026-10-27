@@ -1,0 +1,889 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 0,
+    "dDurationMs": 1927,
+    "segs": [ {
+      "utf8": "(lively, foreboding music)"
+    } ]
+  }, {
+    "tStartMs": 11608,
+    "dDurationMs": 2917,
+    "segs": [ {
+      "utf8": "(phone vibrating)"
+    } ]
+  }, {
+    "tStartMs": 53270,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- You Charlie?"
+    } ]
+  }, {
+    "tStartMs": 55960,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "Come in."
+    } ]
+  }, {
+    "tStartMs": 60460,
+    "dDurationMs": 1963,
+    "segs": [ {
+      "utf8": "Ah, I'm John."
+    } ]
+  }, {
+    "tStartMs": 63860,
+    "dDurationMs": 1493,
+    "segs": [ {
+      "utf8": "I don't do this very often."
+    } ]
+  }, {
+    "tStartMs": 69390,
+    "dDurationMs": 2108,
+    "segs": [ {
+      "utf8": "- You're prettier than your picture."
+    } ]
+  }, {
+    "tStartMs": 71498,
+    "dDurationMs": 1645,
+    "segs": [ {
+      "utf8": "- Thanks."
+    } ]
+  }, {
+    "tStartMs": 73143,
+    "dDurationMs": 3583,
+    "segs": [ {
+      "utf8": "(lively, foreboding music)"
+    } ]
+  }, {
+    "tStartMs": 104190,
+    "dDurationMs": 1793,
+    "segs": [ {
+      "utf8": "- [John] What are you doing all that for?"
+    } ]
+  }, {
+    "tStartMs": 107352,
+    "dDurationMs": 1750,
+    "segs": [ {
+      "utf8": "- So I don't get any blood on them."
+    } ]
+  }, {
+    "tStartMs": 110296,
+    "dDurationMs": 1167,
+    "segs": [ {
+      "utf8": "- [John] What?"
+    } ]
+  }, {
+    "tStartMs": 117706,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "Oh my god."
+    } ]
+  }, {
+    "tStartMs": 122009,
+    "dDurationMs": 2044,
+    "segs": [ {
+      "utf8": "(menacing music)\n(John screaming)"
+    } ]
+  }, {
+    "tStartMs": 124053,
+    "dDurationMs": 917,
+    "segs": [ {
+      "utf8": "Stop, stop!"
+    } ]
+  }, {
+    "tStartMs": 126191,
+    "dDurationMs": 917,
+    "segs": [ {
+      "utf8": "Help, help!"
+    } ]
+  }, {
+    "tStartMs": 139083,
+    "dDurationMs": 3279,
+    "segs": [ {
+      "utf8": "(Charlie growling)"
+    } ]
+  }, {
+    "tStartMs": 142362,
+    "dDurationMs": 2667,
+    "segs": [ {
+      "utf8": "(heart beating)"
+    } ]
+  }, {
+    "tStartMs": 147112,
+    "dDurationMs": 2917,
+    "segs": [ {
+      "utf8": "(Charlie growling)"
+    } ]
+  }, {
+    "tStartMs": 153334,
+    "dDurationMs": 2383,
+    "segs": [ {
+      "utf8": "(wood creaking)"
+    } ]
+  }, {
+    "tStartMs": 155717,
+    "dDurationMs": 2667,
+    "segs": [ {
+      "utf8": "(ominous music)"
+    } ]
+  }, {
+    "tStartMs": 172765,
+    "dDurationMs": 2583,
+    "segs": [ {
+      "utf8": "(lively music)"
+    } ]
+  }, {
+    "tStartMs": 176535,
+    "dDurationMs": 2667,
+    "segs": [ {
+      "utf8": "- Hey, hey, this is where I sit!"
+    } ]
+  }, {
+    "tStartMs": 184193,
+    "dDurationMs": 2959,
+    "segs": [ {
+      "utf8": "♪ Going (indistinct) ♪"
+    } ]
+  }, {
+    "tStartMs": 187152,
+    "dDurationMs": 3741,
+    "segs": [ {
+      "utf8": "♪ Aching down deep inside, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 190893,
+    "dDurationMs": 2267,
+    "segs": [ {
+      "utf8": "- [Darnell] Everybody around\nhere knows this is my spot!"
+    } ]
+  }, {
+    "tStartMs": 193160,
+    "dDurationMs": 1413,
+    "segs": [ {
+      "utf8": "- [Jamal] Hey, hey, Darnell,\nDarnell, chill, chill."
+    } ]
+  }, {
+    "tStartMs": 194573,
+    "dDurationMs": 1544,
+    "segs": [ {
+      "utf8": "- It's mine!\n- Chill, man."
+    } ]
+  }, {
+    "tStartMs": 196117,
+    "dDurationMs": 1863,
+    "segs": [ {
+      "utf8": "Why don't, why don't you take\nmy spot for a while, huh?"
+    } ]
+  }, {
+    "tStartMs": 197980,
+    "dDurationMs": 1410,
+    "segs": [ {
+      "utf8": "- Yeah, okay.\n- All right,"
+    } ]
+  }, {
+    "tStartMs": 199390,
+    "dDurationMs": 1097,
+    "segs": [ {
+      "utf8": "it's right over there."
+    } ]
+  }, {
+    "tStartMs": 200487,
+    "dDurationMs": 2043,
+    "segs": [ {
+      "utf8": "♪ Inside your mind, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 202530,
+    "dDurationMs": 2290,
+    "segs": [ {
+      "utf8": "- Sorry about that, he's, he's harmless."
+    } ]
+  }, {
+    "tStartMs": 204820,
+    "dDurationMs": 3030,
+    "segs": [ {
+      "utf8": "I promise, he just, he's all bark."
+    } ]
+  }, {
+    "tStartMs": 207850,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "This is my boy, Sean, we're\nabout to go grab some grub."
+    } ]
+  }, {
+    "tStartMs": 211920,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "- Yo, yo, yo, don't even think about it."
+    } ]
+  }, {
+    "tStartMs": 214140,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "She's a whore."
+    } ]
+  }, {
+    "tStartMs": 216600,
+    "dDurationMs": 3330,
+    "segs": [ {
+      "utf8": "♪ It's me ♪"
+    } ]
+  }, {
+    "tStartMs": 219930,
+    "dDurationMs": 1499,
+    "segs": [ {
+      "utf8": "♪ The monster ♪"
+    } ]
+  }, {
+    "tStartMs": 221429,
+    "dDurationMs": 3290,
+    "segs": [ {
+      "utf8": "(women yelling)"
+    } ]
+  }, {
+    "tStartMs": 224719,
+    "dDurationMs": 3877,
+    "segs": [ {
+      "utf8": "♪ In your head, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 228596,
+    "dDurationMs": 3018,
+    "segs": [ {
+      "utf8": "♪ It's me ♪"
+    } ]
+  }, {
+    "tStartMs": 231614,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "♪ It's me, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 237728,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "♪ It's me, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 243749,
+    "dDurationMs": 2917,
+    "segs": [ {
+      "utf8": "♪ It's me, it's me ♪"
+    } ]
+  }, {
+    "tStartMs": 249918,
+    "dDurationMs": 3083,
+    "segs": [ {
+      "utf8": "(spray can rattling)"
+    } ]
+  }, {
+    "tStartMs": 258130,
+    "dDurationMs": 2733,
+    "segs": [ {
+      "utf8": "- Hey, where did you go the other night?"
+    } ]
+  }, {
+    "tStartMs": 265980,
+    "dDurationMs": 1350,
+    "segs": [ {
+      "utf8": "You know, you are making this very hard,"
+    } ]
+  }, {
+    "tStartMs": 267330,
+    "dDurationMs": 1750,
+    "segs": [ {
+      "utf8": "and I'm just trying to be friendly."
+    } ]
+  }, {
+    "tStartMs": 270480,
+    "dDurationMs": 1400,
+    "segs": [ {
+      "utf8": "I don't even know your name."
+    } ]
+  }, {
+    "tStartMs": 280590,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Charlie."
+    } ]
+  }, {
+    "tStartMs": 284060,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Charlie."
+    } ]
+  }, {
+    "tStartMs": 287110,
+    "dDurationMs": 2660,
+    "segs": [ {
+      "utf8": "Oh shit, did you just tell\nme your name (chuckles)?"
+    } ]
+  }, {
+    "tStartMs": 289770,
+    "dDurationMs": 1383,
+    "segs": [ {
+      "utf8": "She speaks, people."
+    } ]
+  }, {
+    "tStartMs": 293209,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "(phone vibrating)"
+    } ]
+  }, {
+    "tStartMs": 294042,
+    "dDurationMs": 1961,
+    "segs": [ {
+      "utf8": "Charlie, like that."
+    } ]
+  }, {
+    "tStartMs": 301750,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "You don't have to go, Charlie."
+    } ]
+  }, {
+    "tStartMs": 305890,
+    "dDurationMs": 1550,
+    "segs": [ {
+      "utf8": "There are other ways to get by."
+    } ]
+  }, {
+    "tStartMs": 310040,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Not for me."
+    } ]
+  }, {
+    "tStartMs": 313414,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "(vehicle passing)"
+    } ]
+  }, {
+    "tStartMs": 318367,
+    "dDurationMs": 3667,
+    "segs": [ {
+      "utf8": "- No, gimme that tree,\nman, gimme that tree."
+    } ]
+  }, {
+    "tStartMs": 323567,
+    "dDurationMs": 1799,
+    "segs": [ {
+      "utf8": "Hey, what's up, baby?"
+    } ]
+  }, {
+    "tStartMs": 325366,
+    "dDurationMs": 1174,
+    "segs": [ {
+      "utf8": "How you doing?"
+    } ]
+  }, {
+    "tStartMs": 326540,
+    "dDurationMs": 2917,
+    "segs": [ {
+      "utf8": "(foreboding music)"
+    } ]
+  }, {
+    "tStartMs": 342048,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "- Your Charlie?"
+    } ]
+  }, {
+    "tStartMs": 345619,
+    "dDurationMs": 2265,
+    "segs": [ {
+      "utf8": "- Can I, can I come in?"
+    } ]
+  }, {
+    "tStartMs": 347884,
+    "dDurationMs": 2583,
+    "segs": [ {
+      "utf8": "- Yeah, please, come in, sorry."
+    } ]
+  }, {
+    "tStartMs": 355717,
+    "dDurationMs": 3417,
+    "segs": [ {
+      "utf8": "(Davis exhaling sharply)"
+    } ]
+  }, {
+    "tStartMs": 360160,
+    "dDurationMs": 3633,
+    "segs": [ {
+      "utf8": "So, how does this usually work?"
+    } ]
+  }, {
+    "tStartMs": 365020,
+    "dDurationMs": 1673,
+    "segs": [ {
+      "utf8": "- You pay me and then we start."
+    } ]
+  }, {
+    "tStartMs": 368950,
+    "dDurationMs": 4570,
+    "segs": [ {
+      "utf8": "- We start what?"
+    } ]
+  }, {
+    "tStartMs": 373520,
+    "dDurationMs": 1000,
+    "segs": [ {
+      "utf8": "- Whatever you want."
+    } ]
+  }, {
+    "tStartMs": 378083,
+    "dDurationMs": 2110,
+    "segs": [ {
+      "utf8": "- Yeah, whatever I want, um."
+    } ]
+  }, {
+    "tStartMs": 385910,
+    "dDurationMs": 1313,
+    "segs": [ {
+      "utf8": "A hundred, right?"
+    } ]
+  }, {
+    "tStartMs": 393060,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- Yeah."
+    } ]
+  }, {
+    "tStartMs": 396050,
+    "dDurationMs": 3873,
+    "segs": [ {
+      "utf8": "- So, what now?"
+    } ]
+  }, {
+    "tStartMs": 410950,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "So that's how you do it."
+    } ]
+  }, {
+    "tStartMs": 414264,
+    "dDurationMs": 4000,
+    "segs": [ {
+      "utf8": "(foreboding music intensifying)"
+    } ]
+  }, {
+    "tStartMs": 419927,
+    "dDurationMs": 1636,
+    "segs": [ {
+      "utf8": "(exciting music)"
+    } ]
+  }, {
+    "tStartMs": 421563,
+    "dDurationMs": 2583,
+    "segs": [ {
+      "utf8": "(men grunting)"
+    } ]
+  }, {
+    "tStartMs": 430509,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "(man yelling)"
+    } ]
+  }, {
+    "tStartMs": 439260,
+    "dDurationMs": 2667,
+    "segs": [ {
+      "utf8": "(man screaming)"
+    } ]
+  }, {
+    "tStartMs": 444472,
+    "dDurationMs": 2474,
+    "segs": [ {
+      "utf8": "(electricity hissing)"
+    } ]
+  }, {
+    "tStartMs": 446946,
+    "dDurationMs": 1678,
+    "segs": [ {
+      "utf8": "Been looking forward to\nmeeting you, Charlie."
+    } ]
+  }, {
+    "tStartMs": 448624,
+    "dDurationMs": 4465,
+    "segs": [ {
+      "utf8": "(electricity hissing)\n(Charlie grunting)"
+    } ]
+  }, {
+    "tStartMs": 453089,
+    "dDurationMs": 2841,
+    "segs": [ {
+      "utf8": "(tense music)"
+    } ]
+  }, {
+    "tStartMs": 455930,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "- Why the hell is she still alive?"
+    } ]
+  }, {
+    "tStartMs": 457410,
+    "dDurationMs": 2903,
+    "segs": [ {
+      "utf8": "He was ordered to eliminate\nher, not to bring her back."
+    } ]
+  }, {
+    "tStartMs": 461630,
+    "dDurationMs": 2550,
+    "segs": [ {
+      "utf8": "- He made a field call."
+    } ]
+  }, {
+    "tStartMs": 464180,
+    "dDurationMs": 1473,
+    "segs": [ {
+      "utf8": "He thinks she has potential."
+    } ]
+  }, {
+    "tStartMs": 466700,
+    "dDurationMs": 1889,
+    "segs": [ {
+      "utf8": "Director's willing to let him run with it."
+    } ]
+  }, {
+    "tStartMs": 468589,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(metal clanging)"
+    } ]
+  }, {
+    "tStartMs": 483746,
+    "dDurationMs": 1394,
+    "segs": [ {
+      "utf8": "- So, what do we got?"
+    } ]
+  }, {
+    "tStartMs": 485140,
+    "dDurationMs": 3770,
+    "segs": [ {
+      "utf8": "- Nothing, no ID, no\nmatches on dental, DNA."
+    } ]
+  }, {
+    "tStartMs": 488910,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "Nothing on her but some\nclothes and an old tape deck."
+    } ]
+  }, {
+    "tStartMs": 491210,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "- A little young to be\nan asset, isn't she?"
+    } ]
+  }, {
+    "tStartMs": 492850,
+    "dDurationMs": 1370,
+    "segs": [ {
+      "utf8": "- Don't let her fool you."
+    } ]
+  }, {
+    "tStartMs": 494220,
+    "dDurationMs": 3200,
+    "segs": [ {
+      "utf8": "She took out six guys in\nsix seconds with no weapons"
+    } ]
+  }, {
+    "tStartMs": 497420,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "and no training."
+    } ]
+  }, {
+    "tStartMs": 499346,
+    "dDurationMs": 3851,
+    "segs": [ {
+      "utf8": "(footsteps approaching)"
+    } ]
+  }, {
+    "tStartMs": 503197,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "(buzzer sounding)"
+    } ]
+  }, {
+    "tStartMs": 510200,
+    "dDurationMs": 1565,
+    "segs": [ {
+      "utf8": "- No!"
+    } ]
+  }, {
+    "tStartMs": 511765,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "No, no!"
+    } ]
+  }, {
+    "tStartMs": 515826,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "(Charlie panting)"
+    } ]
+  }, {
+    "tStartMs": 525290,
+    "dDurationMs": 2153,
+    "segs": [ {
+      "utf8": "Where are we, what is this?"
+    } ]
+  }, {
+    "tStartMs": 527443,
+    "dDurationMs": 2050,
+    "segs": [ {
+      "utf8": "- A place where we bring people like you."
+    } ]
+  }, {
+    "tStartMs": 531410,
+    "dDurationMs": 3460,
+    "segs": [ {
+      "utf8": "Actually, this place was\nbuilt with the express purpose"
+    } ]
+  }, {
+    "tStartMs": 534870,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "of finding and eliminating\npeople with your condition."
+    } ]
+  }, {
+    "tStartMs": 541020,
+    "dDurationMs": 1223,
+    "segs": [ {
+      "utf8": "- Why am I here?"
+    } ]
+  }, {
+    "tStartMs": 543200,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "- You mean, why are you alive?"
+    } ]
+  }, {
+    "tStartMs": 547030,
+    "dDurationMs": 1963,
+    "segs": [ {
+      "utf8": "You are still alive because,"
+    } ]
+  }, {
+    "tStartMs": 550520,
+    "dDurationMs": 1200,
+    "segs": [ {
+      "utf8": "because you are special."
+    } ]
+  }, {
+    "tStartMs": 553010,
+    "dDurationMs": 4630,
+    "segs": [ {
+      "utf8": "You have abilities that we can use."
+    } ]
+  }, {
+    "tStartMs": 557640,
+    "dDurationMs": 1397,
+    "segs": [ {
+      "utf8": "- Use how?"
+    } ]
+  }, {
+    "tStartMs": 559037,
+    "dDurationMs": 2533,
+    "segs": [ {
+      "utf8": "(metal clanging)"
+    } ]
+  }, {
+    "tStartMs": 561570,
+    "dDurationMs": 2163,
+    "segs": [ {
+      "utf8": "- To hunt others down like yourself."
+    } ]
+  }, {
+    "tStartMs": 565910,
+    "dDurationMs": 1550,
+    "segs": [ {
+      "utf8": "Well, we know you're out there."
+    } ]
+  }, {
+    "tStartMs": 568682,
+    "dDurationMs": 917,
+    "segs": [ {
+      "utf8": "Everywhere."
+    } ]
+  }, {
+    "tStartMs": 571434,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "Thousands of you hiding among us,"
+    } ]
+  }, {
+    "tStartMs": 575619,
+    "dDurationMs": 1508,
+    "segs": [ {
+      "utf8": "living among us,"
+    } ]
+  }, {
+    "tStartMs": 577127,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "feeding off us."
+    } ]
+  }, {
+    "tStartMs": 580962,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(metal rattling)"
+    } ]
+  }, {
+    "tStartMs": 584693,
+    "dDurationMs": 1897,
+    "segs": [ {
+      "utf8": "Before you open your mouth,"
+    } ]
+  }, {
+    "tStartMs": 586590,
+    "dDurationMs": 1860,
+    "segs": [ {
+      "utf8": "I want you to think\nvery fucking carefully,"
+    } ]
+  }, {
+    "tStartMs": 588450,
+    "dDurationMs": 1693,
+    "segs": [ {
+      "utf8": "because you get one shot at this."
+    } ]
+  }, {
+    "tStartMs": 591700,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "You have one opportunity for this scenario"
+    } ]
+  }, {
+    "tStartMs": 594020,
+    "dDurationMs": 1470,
+    "segs": [ {
+      "utf8": "in which you have a future."
+    } ]
+  }, {
+    "tStartMs": 595490,
+    "dDurationMs": 3170,
+    "segs": [ {
+      "utf8": "And in that future, you\nare no longer Charlie."
+    } ]
+  }, {
+    "tStartMs": 598660,
+    "dDurationMs": 1083,
+    "segs": [ {
+      "utf8": "You are Six."
+    } ]
+  }, {
+    "tStartMs": 602354,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "(Charlie yelling)"
+    } ]
+  }, {
+    "tStartMs": 607470,
+    "dDurationMs": 1533,
+    "segs": [ {
+      "utf8": "And you will do what we say."
+    } ]
+  }, {
+    "tStartMs": 610730,
+    "dDurationMs": 1107,
+    "segs": [ {
+      "utf8": "When we say it."
+    } ]
+  }, {
+    "tStartMs": 613042,
+    "dDurationMs": 1917,
+    "segs": [ {
+      "utf8": "- And what if I say no?"
+    } ]
+  }, {
+    "tStartMs": 619620,
+    "dDurationMs": 2543,
+    "segs": [ {
+      "utf8": "- We open up that hatch right there,"
+    } ]
+  }, {
+    "tStartMs": 623329,
+    "dDurationMs": 2939,
+    "segs": [ {
+      "utf8": "and you experience daylight."
+    } ]
+  }, {
+    "tStartMs": 626268,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "(alarm sounding)"
+    } ]
+  }, {
+    "tStartMs": 627101,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "For the last time."
+    } ]
+  }, {
+    "tStartMs": 631175,
+    "dDurationMs": 2725,
+    "segs": [ {
+      "utf8": "(lively music)"
+    } ]
+  }, {
+    "tStartMs": 633900,
+    "dDurationMs": 1273,
+    "segs": [ {
+      "utf8": "I'll give you 10 seconds."
+    } ]
+  }, {
+    "tStartMs": 636700,
+    "dDurationMs": 963,
+    "segs": [ {
+      "utf8": "To make a decision."
+    } ]
+  }, {
+    "tStartMs": 641180,
+    "dDurationMs": 3104,
+    "segs": [ {
+      "utf8": "(Charlie yelling)"
+    } ]
+  }, {
+    "tStartMs": 644284,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "Five."
+    } ]
+  }, {
+    "tStartMs": 645996,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(metal shifting)"
+    } ]
+  }, {
+    "tStartMs": 649634,
+    "dDurationMs": 1992,
+    "segs": [ {
+      "utf8": "What is your answer?"
+    } ]
+  }, {
+    "tStartMs": 651626,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "Yes or no?"
+    } ]
+  }, {
+    "tStartMs": 656391,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(exciting music)"
+    } ]
+  } ]
+}

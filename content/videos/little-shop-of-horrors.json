@@ -1,0 +1,6921 @@
+{
+  "id": "little-shop-of-horrors",
+  "type": "video",
+  "title": "The Little Shop of Horrors",
+  "creator": "Roger Corman",
+  "year": 1960,
+  "level": "C1",
+  "category": "fun",
+  "genre": "comedy",
+  "durationSeconds": 4310,
+  "summaryTr": "Seymour’un çiçekçiye getirdiği sıra dışı bitki, dükkânı bir anda popüler yapar. Bitkinin iştahı büyüdükçe işler kontrolden çıkar. Hızlı atışmaları ve absürt mizahı olan bir korku komedisi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Hızlı komedi diyalogları, farklı aksanlar, argo ve söylenenle kastedilen arasındaki farklar C1 için iyi bir dinleme çalışması sunar.",
+  "advisoryTr": "Cinayet, kan, insan yiyen bitki, kara mizah ve yetişkinlere yönelik göndermeler içerir.",
+  "videoUrl": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm.480p.vp9.webm",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm.240p.vp9.webm",
+      "sizeMB": 142
+    },
+    {
+      "label": "480p",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/transcoded/2/20/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm/The_Little_Shop_of_Horrors_%281960%29_by_Roger_Corman.webm.480p.vp9.webm",
+      "sizeMB": 381
+    }
+  ],
+  "source": {
+    "name": "Wikimedia Commons — The Little Shop of Horrors",
+    "url": "https://commons.wikimedia.org/wiki/File:The_Little_Shop_of_Horrors_(1960)_by_Roger_Corman.webm",
+    "watchUrl": "https://commons.wikimedia.org/wiki/File:The_Little_Shop_of_Horrors_(1960)_by_Roger_Corman.webm",
+    "license": "Kamu malı (ABD)",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:The_Little_Shop_of_Horrors_(1960)_by_Roger_Corman.webm",
+    "credit": "Roger Corman · Özgün film; Wikimedia Commons aktarımı",
+    "creditNoteTr": "Video, kaynak sürümüyle ve jeneriğiyle birlikte değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "Wikimedia Commons katkıda bulunanları — İngilizce altyazı",
+    "url": "https://commons.wikimedia.org/wiki/TimedText%3AThe%20Little%20Shop%20of%20Horrors%20(1960)%20by%20Roger%20Corman.webm.en.srt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "credit": "Wikimedia Commons katkıda bulunanları (yazarlar altyazı sayfasının geçmişinde)",
+    "changeNoteTr": "Sözler korunmuştur; biçim etiketleri kaldırılıp satırlar birleştirilerek zamanlar saniyeye dönüştürülmüştür. Bir altyazının bitişi, sonraki altyazıyla çakışmaması için 0,001 saniye kısaltılmıştır."
+  },
+  "glossary": {
+    "chamber": "oda; salon",
+    "homicide": "cinayet",
+    "florist": "çiçekçi",
+    "feed": "beslemek",
+    "customer": "müşteri",
+    "audrey": "Audrey (karakter adı)",
+    "seymour": "Seymour (karakter adı)",
+    "mushnick": "Mushnick (karakter adı)"
+  },
+  "captions": [
+    {
+      "start": 21.079,
+      "end": 22.414,
+      "text": "My name is Sergeant Joe Fink..."
+    },
+    {
+      "start": 22.616,
+      "end": 24.985,
+      "text": "... working a 24 hour shift on a homicide."
+    },
+    {
+      "start": 25.491,
+      "end": 26.624,
+      "text": "And this is my workshop."
+    },
+    {
+      "start": 27.195,
+      "end": 30.226,
+      "text": "The part of town that everybody knows about but that nobody wants to see."
+    },
+    {
+      "start": 30.741,
+      "end": 33.07,
+      "text": "Where the tragedies is a deeper, the ecstasies wilder..."
+    },
+    {
+      "start": 33.095,
+      "end": 35.679,
+      "text": "... and the crime rate consistently higher than anywhere else"
+    },
+    {
+      "start": 36.405,
+      "end": 37.405,
+      "text": "Skid Row"
+    },
+    {
+      "start": 37.523,
+      "end": 38.523,
+      "text": "My beat."
+    },
+    {
+      "start": 111.708,
+      "end": 114.09,
+      "text": "The most terrifying period in the history of my beat..."
+    },
+    {
+      "start": 114.11500000000001,
+      "end": 117.22399999999999,
+      "text": "... began in a little rundown floral shop called Mushnick's."
+    },
+    {
+      "start": 122.115,
+      "end": 124.771,
+      "text": "Ah, good morning Mrs. Shiva, how's things today?"
+    },
+    {
+      "start": 124.796,
+      "end": 127.404,
+      "text": "The same as usual, Mr. Mushnick."
+    },
+    {
+      "start": 127.601,
+      "end": 129.858,
+      "text": "My sister's nephew Stanley died."
+    },
+    {
+      "start": 129.883,
+      "end": 131.257,
+      "text": "In Little Rock, Arkansas."
+    },
+    {
+      "start": 131.282,
+      "end": 132.726,
+      "text": "Aww. What happened?"
+    },
+    {
+      "start": 132.928,
+      "end": 134.856,
+      "text": "He got blown up who knows how."
+    },
+    {
+      "start": 134.881,
+      "end": 135.733,
+      "text": "That's nice."
+    },
+    {
+      "start": 135.81,
+      "end": 139.14600000000002,
+      "text": "Well, you would like, maybe, as usual some flowers for the funural?"
+    },
+    {
+      "start": 139.216,
+      "end": 141.552,
+      "text": "♪ Should auld acquaintance be forgot,..."
+    },
+    {
+      "start": 141.577,
+      "end": 143.732,
+      "text": "♪ ... and never brought to mind?"
+    },
+    {
+      "start": 143.757,
+      "end": 145.288,
+      "text": "I thought, possibly,..."
+    },
+    {
+      "start": 145.47,
+      "end": 148.389,
+      "text": "... because I always give you all my funeral business..."
+    },
+    {
+      "start": 148.421,
+      "end": 151.147,
+      "text": "... and maybe you should possibly give to me, eh..."
+    },
+    {
+      "start": 151.36599999999999,
+      "end": 152.546,
+      "text": "... a little cut today."
+    },
+    {
+      "start": 152.608,
+      "end": 154.439,
+      "text": "Look on me, Mrs. Shiva."
+    },
+    {
+      "start": 154.483,
+      "end": 156.171,
+      "text": "What am I? A philatelist?"
+    },
+    {
+      "start": 156.236,
+      "end": 159.1,
+      "text": "I sell on Skid Row nothing but cheap carnations."
+    },
+    {
+      "start": 159.654,
+      "end": 161.185,
+      "text": "And I should give you a cut rate."
+    },
+    {
+      "start": 161.21,
+      "end": 163.677,
+      "text": "I can't even afford water for the flowers!"
+    },
+    {
+      "start": 163.79399999999998,
+      "end": 165.77100000000002,
+      "text": "To my throat I would be giving a cut."
+    },
+    {
+      "start": 165.959,
+      "end": 170.27100000000002,
+      "text": "♪ I dreamt I dwelt in Marble Halls"
+    },
+    {
+      "start": 170.381,
+      "end": 173.154,
+      "text": "- ♪ With vassals and... - Shut up from the back!"
+    },
+    {
+      "start": 175.357,
+      "end": 176.888,
+      "text": "Excuse me, Mrs. Shiva."
+    },
+    {
+      "start": 176.92000000000002,
+      "end": 179.662,
+      "text": "- That Seymour... - He's a nice boy."
+    },
+    {
+      "start": 179.743,
+      "end": 181.985,
+      "text": "- Why don't you let him sing? - What sing?!"
+    },
+    {
+      "start": 182.01,
+      "end": 183.977,
+      "text": "Look: Here I got a new customer."
+    },
+    {
+      "start": 184.002,
+      "end": 185.321,
+      "text": "Brand new in the yellow vest."
+    },
+    {
+      "start": 185.346,
+      "end": 186.439,
+      "text": "I should let the clean up boy..."
+    },
+    {
+      "start": 186.464,
+      "end": 189.628,
+      "text": "... but I can't even afford chase them out right away."
+    },
+    {
+      "start": 193.915,
+      "end": 196.657,
+      "text": "Flowers fresh as the spring time. Mushnick. Hello?"
+    },
+    {
+      "start": 196.767,
+      "end": 198.142,
+      "text": "Oh, hello Dr. Farb."
+    },
+    {
+      "start": 198.251,
+      "end": 199.423,
+      "text": "What can I do for you today?"
+    },
+    {
+      "start": 199.625,
+      "end": 201.446,
+      "text": "Listen, Mushink, I haven't got much time."
+    },
+    {
+      "start": 201.477,
+      "end": 203.961,
+      "text": "Send me over two gladiolas and a fern."
+    },
+    {
+      "start": 204.4,
+      "end": 207.023,
+      "text": "Excellent, that's two dozen glads, one pottet fern."
+    },
+    {
+      "start": 207.141,
+      "end": 209.094,
+      "text": "No, no, no, Mushnick!"
+    },
+    {
+      "start": 209.119,
+      "end": 211.32999999999998,
+      "text": "Two gladiolas and one fern."
+    },
+    {
+      "start": 213.63400000000001,
+      "end": 216.251,
+      "text": "You want I should put two gladiolas in the pot with the fern."
+    },
+    {
+      "start": 216.53199999999998,
+      "end": 218.50900000000001,
+      "text": "No, one fern, one piece."
+    },
+    {
+      "start": 218.534,
+      "end": 220.564,
+      "text": "Altogether three pieces."
+    },
+    {
+      "start": 220.594,
+      "end": 221.984,
+      "text": "I need it for my waiting room."
+    },
+    {
+      "start": 222.922,
+      "end": 224.461,
+      "text": "- A filling fell out. - What?"
+    },
+    {
+      "start": 224.486,
+      "end": 227.196,
+      "text": "- A filling fell out. - Good, I'll drill a bigger hole."
+    },
+    {
+      "start": 227.632,
+      "end": 230.265,
+      "text": "You mean you want two crummy gladiolas and one crummy fern?"
+    },
+    {
+      "start": 230.29,
+      "end": 232.125,
+      "text": "What kind of a decoration is that?"
+    },
+    {
+      "start": 232.203,
+      "end": 234.335,
+      "text": "This is my flower budget for the week."
+    },
+    {
+      "start": 234.459,
+      "end": 235.982,
+      "text": "Mushnick."
+    },
+    {
+      "start": 236.24,
+      "end": 238.186,
+      "text": "Who can be a dentist on Skid Row?"
+    },
+    {
+      "start": 238.232,
+      "end": 240.654,
+      "text": "Fine, excellent. I'll send Seymour right away."
+    },
+    {
+      "start": 240.865,
+      "end": 242.63,
+      "text": "Who am I to argue with science?"
+    },
+    {
+      "start": 243.146,
+      "end": 244.411,
+      "text": "Make it snappy."
+    },
+    {
+      "start": 245.302,
+      "end": 247.123,
+      "text": "Now you are going to get ..."
+    },
+    {
+      "start": 247.209,
+      "end": 250.209,
+      "text": "...oh, you are going to get it."
+    },
+    {
+      "start": 250.474,
+      "end": 251.709,
+      "text": "Look."
+    },
+    {
+      "start": 254.888,
+      "end": 256.388,
+      "text": "Seymour Krelborn!"
+    },
+    {
+      "start": 257.005,
+      "end": 259.818,
+      "text": "Now, Mrs. Shiva. We were talking from the funeral flowers."
+    },
+    {
+      "start": 259.864,
+      "end": 260.731,
+      "text": "But the little..."
+    },
+    {
+      "start": 264.013,
+      "end": 265.715,
+      "text": "Did you call me, Mr. Mushnick?"
+    },
+    {
+      "start": 265.747,
+      "end": 270.918,
+      "text": "No. I was calling John D. Rockefeller for to make a loan on my Rolls Royce."
+    },
+    {
+      "start": 270.981,
+      "end": 272.18399999999997,
+      "text": "Sorry I said it."
+    },
+    {
+      "start": 272.286,
+      "end": 273.599,
+      "text": "Now look Seymour."
+    },
+    {
+      "start": 275.03499999999997,
+      "end": 276.84000000000003,
+      "text": "You take two gladiolas."
+    },
+    {
+      "start": 276.918,
+      "end": 278.528,
+      "text": "You'll cut them nice and even."
+    },
+    {
+      "start": 278.558,
+      "end": 281.09000000000003,
+      "text": "You'll take one fern. You'll wrap them in a package..."
+    },
+    {
+      "start": 281.115,
+      "end": 283.058,
+      "text": "... and you'll take them to Dr. Farb."
+    },
+    {
+      "start": 283.08299999999997,
+      "end": 284.1,
+      "text": "Right?"
+    },
+    {
+      "start": 285.058,
+      "end": 286.371,
+      "text": "Now go already!"
+    },
+    {
+      "start": 287.368,
+      "end": 288.837,
+      "text": "Now what can I do for you, sir?"
+    },
+    {
+      "start": 288.908,
+      "end": 290.204,
+      "text": "Uh, my name is Burson Fouch."
+    },
+    {
+      "start": 290.251,
+      "end": 292.095,
+      "text": "Excellent! I am Gravis Mushnick."
+    },
+    {
+      "start": 292.12,
+      "end": 292.954,
+      "text": "Oh, that's a good one."
+    },
+    {
+      "start": 293.001,
+      "end": 294.806,
+      "text": "Who is gonna get my roses?"
+    },
+    {
+      "start": 294.831,
+      "end": 296.422,
+      "text": "I'll take care of you, Mrs. Shiva."
+    },
+    {
+      "start": 296.447,
+      "end": 297.548,
+      "text": "Come right over here."
+    },
+    {
+      "start": 298.359,
+      "end": 301.609,
+      "text": "You would like, maybe, some orchids for a nice girl?"
+    },
+    {
+      "start": 301.61,
+      "end": 303.672,
+      "text": "No, I think I'd like a couple of dozen carnations."
+    },
+    {
+      "start": 303.907,
+      "end": 304.907,
+      "text": "Carnations."
+    },
+    {
+      "start": 305.524,
+      "end": 308.852,
+      "text": "A person find a lot of these these that somebody shouldn't drop dead!"
+    },
+    {
+      "start": 309.093,
+      "end": 311.795,
+      "text": "You had more than your share of bad luck, Mrs. Shiva."
+    },
+    {
+      "start": 311.896,
+      "end": 313.256,
+      "text": "Bad luck, she calls it."
+    },
+    {
+      "start": 313.342,
+      "end": 315.405,
+      "text": "You should have so many people kicked off."
+    },
+    {
+      "start": 317.342,
+      "end": 319.104,
+      "text": "About the carnations..."
+    },
+    {
+      "start": 319.474,
+      "end": 320.81,
+      "text": "You said you wanted some roses."
+    },
+    {
+      "start": 320.834,
+      "end": 322.725,
+      "text": "Yeah. For Stanley."
+    },
+    {
+      "start": 325.967,
+      "end": 327.303,
+      "text": "My carnations."
+    },
+    {
+      "start": 330.295,
+      "end": 332.328,
+      "text": "You should see wha-- See, Morris."
+    },
+    {
+      "start": 332.329,
+      "end": 333.938,
+      "text": "Oh, here are your carnations."
+    },
+    {
+      "start": 334.134,
+      "end": 336.954,
+      "text": "- Wait, I'll wrap them for you. - No, it's all right. I'll eat them here."
+    },
+    {
+      "start": 341.985,
+      "end": 342.774,
+      "text": "Why not?"
+    },
+    {
+      "start": 345.977,
+      "end": 347.414,
+      "text": "Of course. What else?"
+    },
+    {
+      "start": 348.604,
+      "end": 349.604,
+      "text": "They are alright?"
+    },
+    {
+      "start": 349.629,
+      "end": 350.54,
+      "text": "Well, I've had better."
+    },
+    {
+      "start": 350.72,
+      "end": 352.416,
+      "text": "Well, this is a small shop."
+    },
+    {
+      "start": 352.44100000000003,
+      "end": 353.439,
+      "text": "That's ok."
+    },
+    {
+      "start": 353.634,
+      "end": 354.658,
+      "text": "You know: These big places..."
+    },
+    {
+      "start": 354.79,
+      "end": 356.759,
+      "text": "...they are full of pretty flowers, expensive flowers."
+    },
+    {
+      "start": 356.923,
+      "end": 359.798,
+      "text": "When you raise them for looks and smell you're bound to lose some food value."
+    },
+    {
+      "start": 359.946,
+      "end": 361.775,
+      "text": "I like these little out-of-the-way places."
+    },
+    {
+      "start": 363.555,
+      "end": 365.173,
+      "text": "Such a thing - eating flowers."
+    },
+    {
+      "start": 365.599,
+      "end": 367.309,
+      "text": "Look: Don't knock it until you try it, huh?"
+    },
+    {
+      "start": 369.341,
+      "end": 370.341,
+      "text": "Look what happened."
+    },
+    {
+      "start": 372.528,
+      "end": 375.234,
+      "text": "This is what I was trying to tell you before"
+    },
+    {
+      "start": 375.294,
+      "end": 376.70799999999997,
+      "text": "Look on him, everybody!"
+    },
+    {
+      "start": 376.841,
+      "end": 378.911,
+      "text": "Look at the quality of his work!"
+    },
+    {
+      "start": 379.034,
+      "end": 381.011,
+      "text": "I ask you: When I fire him..."
+    },
+    {
+      "start": 381.363,
+      "end": 383.348,
+      "text": "... where is he gonna get such another good job?"
+    },
+    {
+      "start": 383.738,
+      "end": 384.738,
+      "text": "You mean I'm fired?"
+    },
+    {
+      "start": 384.762,
+      "end": 387.761,
+      "text": "No, I'm electing you president from the United States."
+    },
+    {
+      "start": 388.24,
+      "end": 389.474,
+      "text": "Yes, you are fired!"
+    },
+    {
+      "start": 389.591,
+      "end": 392.028,
+      "text": "- Gravis, you can't do that. - Who? Who can't?"
+    },
+    {
+      "start": 393.084,
+      "end": 395.029,
+      "text": "- I didn't mean it. - You didn't mean it."
+    },
+    {
+      "start": 395.091,
+      "end": 396.528,
+      "text": "You never mean it."
+    },
+    {
+      "start": 396.529,
+      "end": 400.255,
+      "text": "You didn't mean it the time you put up the bouquet with the get well card..."
+    },
+    {
+      "start": 400.28,
+      "end": 401.396,
+      "text": "... in the funeral parlour."
+    },
+    {
+      "start": 401.421,
+      "end": 403.169,
+      "text": "And send the black lilies..."
+    },
+    {
+      "start": 403.194,
+      "end": 405.819,
+      "text": "... to the old lady in the hospital, you didn't mean it."
+    },
+    {
+      "start": 405.842,
+      "end": 406.967,
+      "text": "But this time..."
+    },
+    {
+      "start": 406.992,
+      "end": 409.929,
+      "text": "... I, Gravis Mushnick, mean it!"
+    },
+    {
+      "start": 411.007,
+      "end": 412.007,
+      "text": "He means it."
+    },
+    {
+      "start": 412.969,
+      "end": 416.344,
+      "text": "But see, Mr. Mushnick, don't I always try to do what's right?"
+    },
+    {
+      "start": 416.421,
+      "end": 417.608,
+      "text": "And i'm crazy about flowers."
+    },
+    {
+      "start": 417.633,
+      "end": 419.921,
+      "text": "I like flowers almost as much as Audrey does."
+    },
+    {
+      "start": 420.178,
+      "end": 421.795,
+      "text": "Excellent. You're fired."
+    },
+    {
+      "start": 421.849,
+      "end": 423.638,
+      "text": "Why don't you give him a chance to resurrect himself?"
+    },
+    {
+      "start": 423.663,
+      "end": 425.349,
+      "text": "I give him a chance to quit."
+    },
+    {
+      "start": 425.374,
+      "end": 427.786,
+      "text": "- I ain't gonna quit. - You're a brave boy. You're fired!"
+    },
+    {
+      "start": 428.591,
+      "end": 430.49,
+      "text": "But that ain't fair, Mr. Mushnick."
+    },
+    {
+      "start": 430.661,
+      "end": 431.746,
+      "text": "You know what I'm doin'?"
+    },
+    {
+      "start": 432.15,
+      "end": 435.179,
+      "text": "I'm working on a special surprise plant just for you."
+    },
+    {
+      "start": 435.247,
+      "end": 437.145,
+      "text": "I'm growing a plant like you ain't never seen before."
+    },
+    {
+      "start": 437.17,
+      "end": 439.817,
+      "text": "Excellent! I can't even sell the plants I got in my shop."
+    },
+    {
+      "start": 439.842,
+      "end": 441.567,
+      "text": "- Out, you! - Now, wait a minute."
+    },
+    {
+      "start": 442.036,
+      "end": 443.755,
+      "text": "If he's got a new kind of plant you'll look at it."
+    },
+    {
+      "start": 443.856,
+      "end": 446.006,
+      "text": "I don't look on flowers, Mr. Yellowvest."
+    },
+    {
+      "start": 446.186,
+      "end": 449.326,
+      "text": "I got ancestors in the flower business for 200 years."
+    },
+    {
+      "start": 449.351,
+      "end": 452.369,
+      "text": "But I got one shop on Skid Row, one stinking shop."
+    },
+    {
+      "start": 452.37,
+      "end": 454.58,
+      "text": "- I don't even like flowers! - Now, you don't understand what I mean."
+    },
+    {
+      "start": 455.276,
+      "end": 457.964,
+      "text": "Look: I've been eating in flower shops all over the world."
+    },
+    {
+      "start": 458.306,
+      "end": 461.524,
+      "text": "And I have noticed that the places that have the mosts weird and unusal plants were the best business."
+    },
+    {
+      "start": 461.549,
+      "end": 462.228,
+      "text": "See?"
+    },
+    {
+      "start": 462.253,
+      "end": 463.479,
+      "text": "- See? - See?"
+    },
+    {
+      "start": 463.729,
+      "end": 465.338,
+      "text": "What is this? A tango?"
+    },
+    {
+      "start": 466.197,
+      "end": 467.197,
+      "text": "Alright."
+    },
+    {
+      "start": 467.931,
+      "end": 469.04,
+      "text": "Explain me more."
+    },
+    {
+      "start": 469.548,
+      "end": 470.548,
+      "text": "Well..."
+    },
+    {
+      "start": 470.719,
+      "end": 473.376,
+      "text": "I remember one place that had a whole wall covered with poison ivy."
+    },
+    {
+      "start": 473.401,
+      "end": 475.173,
+      "text": "And people came from miles around to look at the wall."
+    },
+    {
+      "start": 475.198,
+      "end": 476.259,
+      "text": "And they stayed to buy."
+    },
+    {
+      "start": 476.324,
+      "end": 477.354,
+      "text": "The owner got rich?"
+    },
+    {
+      "start": 477.526,
+      "end": 480.135,
+      "text": "No. He scratched himself to death in an insane asylum."
+    },
+    {
+      "start": 480.16,
+      "end": 481.094,
+      "text": "Oh!"
+    },
+    {
+      "start": 481.119,
+      "end": 482.789,
+      "text": "That was my cousin Harry."
+    },
+    {
+      "start": 483.541,
+      "end": 484.541,
+      "text": "Alright."
+    },
+    {
+      "start": 485.135,
+      "end": 486.135,
+      "text": "Alright."
+    },
+    {
+      "start": 486.714,
+      "end": 489.979,
+      "text": "You go home and you get this fancy schmancy plant and you bring it back here."
+    },
+    {
+      "start": 490.004,
+      "end": 493.414,
+      "text": "And if Mr. Yellowvest Fouch says it's a draw, you still got a job."
+    },
+    {
+      "start": 493.51,
+      "end": 495.989,
+      "text": "If he don't - out you go to Bodeo, right?"
+    },
+    {
+      "start": 495.99,
+      "end": 497.724,
+      "text": "Dont' worry. You'll like it - you'll see."
+    },
+    {
+      "start": 516.428,
+      "end": 518.443,
+      "text": "This is Radio KSIK"
+    },
+    {
+      "start": 518.7090000000001,
+      "end": 521.725,
+      "text": "You've been listening to \"Music for Old Invalids\"."
+    },
+    {
+      "start": 521.967,
+      "end": 523.811,
+      "text": "Our next selection is entitled..."
+    },
+    {
+      "start": 523.9590000000001,
+      "end": 525.162,
+      "text": "... \"Sickroom Serenade\""
+    },
+    {
+      "start": 526.787,
+      "end": 528.295,
+      "text": "Seymour, is that you?"
+    },
+    {
+      "start": 528.467,
+      "end": 529.647,
+      "text": "Yeah, ma."
+    },
+    {
+      "start": 530.006,
+      "end": 531.225,
+      "text": "Get in here. Look at my tongue"
+    },
+    {
+      "start": 532.865,
+      "end": 534.92,
+      "text": "But ma, I've already seen your tongue."
+    },
+    {
+      "start": 536.287,
+      "end": 538.514,
+      "text": "There be no sympathy for your poor mother?"
+    },
+    {
+      "start": 538.568,
+      "end": 540.943,
+      "text": "Laughing at her and mocking her illness..."
+    },
+    {
+      "start": 540.968,
+      "end": 542.974,
+      "text": "... and she's got one foot in the grave."
+    },
+    {
+      "start": 543.154,
+      "end": 545.294,
+      "text": "- I didn't mean it. - Oh, you never mean it."
+    },
+    {
+      "start": 545.319,
+      "end": 547.06,
+      "text": "Oh, come on. Look at my tongue."
+    },
+    {
+      "start": 547.92,
+      "end": 550.397,
+      "text": "That tongue is a tongue, ma. They all look the same to me."
+    },
+    {
+      "start": 551.389,
+      "end": 554.694,
+      "text": "Did you stop at Dr. Mallard and get the results of my tests?"
+    },
+    {
+      "start": 554.943,
+      "end": 556.74,
+      "text": "Yeah,he said there's nothing wrong with you."
+    },
+    {
+      "start": 556.827,
+      "end": 558.256,
+      "text": "Oh, not Dr. Mallard."
+    },
+    {
+      "start": 558.281,
+      "end": 560.862,
+      "text": "He-He is one doctor I thought would tell the truth."
+    },
+    {
+      "start": 560.896,
+      "end": 563.014,
+      "text": "He said you sould be playing fullback for the Rams."
+    },
+    {
+      "start": 563.068,
+      "end": 564.49,
+      "text": "He wants me dead."
+    },
+    {
+      "start": 565.099,
+      "end": 567.021,
+      "text": "I'll bet he is assistant coroner."
+    },
+    {
+      "start": 567.168,
+      "end": 569.324,
+      "text": "Well, I gotta... - A-A-And I know I got..."
+    },
+    {
+      "start": 569.597,
+      "end": 573.378,
+      "text": "My goiter's coming back. I can feel it every morning after breakfast."
+    },
+    {
+      "start": 573.445,
+      "end": 574.781,
+      "text": "Yeah, that's when you take those great..."
+    },
+    {
+      "start": 577.344,
+      "end": 579.312,
+      "text": "What you got? A little surprise for me?"
+    },
+    {
+      "start": 579.734,
+      "end": 581.335,
+      "text": "- Open it up and see. - Alright."
+    },
+    {
+      "start": 587.702,
+      "end": 590.507,
+      "text": "Dr. Slurpsaddle's famous tonic."
+    },
+    {
+      "start": 591.29,
+      "end": 592.493,
+      "text": "Wait here."
+    },
+    {
+      "start": 594.337,
+      "end": 598.267,
+      "text": "To be taken internally or externally for pain and neuritis..."
+    },
+    {
+      "start": 598.462,
+      "end": 601.032,
+      "text": "... neuralgia, headaches, ..."
+    },
+    {
+      "start": 601.447,
+      "end": 604.134,
+      "text": "... i-if hit by a truck, call your physician."
+    },
+    {
+      "start": 604.669,
+      "end": 608.189,
+      "text": "Alcoholic content: 98 percent!"
+    },
+    {
+      "start": 610.091,
+      "end": 611.56,
+      "text": "Oh, Seymour."
+    },
+    {
+      "start": 611.599,
+      "end": 614.599,
+      "text": "You'll never know what it is gonna do for me."
+    },
+    {
+      "start": 621.332,
+      "end": 626.222,
+      "text": "Oh, I can feel that surge of warm health going through me already."
+    },
+    {
+      "start": 627.131,
+      "end": 630.24,
+      "text": "Look, ma. I gotta get my plant and hurry back to the shop."
+    },
+    {
+      "start": 630.381,
+      "end": 632.327,
+      "text": "You mean that lousy weed out in the kitchen?"
+    },
+    {
+      "start": 632.521,
+      "end": 635.092,
+      "text": "Yeah. If Mr. Mushnick doesn't like it, he's gonna fire me."
+    },
+    {
+      "start": 637.4,
+      "end": 640.4,
+      "text": "Apparently, my hearing is goin' out on me."
+    },
+    {
+      "start": 640.963,
+      "end": 642.978,
+      "text": "I just had the faint impression..."
+    },
+    {
+      "start": 643.064,
+      "end": 647.228,
+      "text": "that your job security depends on what Muchnick thanks of that thing."
+    },
+    {
+      "start": 647.338,
+      "end": 650.056,
+      "text": "It looks worse than it did this morning when I went to work."
+    },
+    {
+      "start": 650.189,
+      "end": 651.86,
+      "text": "I wish I knew what to do with it."
+    },
+    {
+      "start": 652.142,
+      "end": 654.759,
+      "text": "Well, if you ask me, I'd pitch it out in the trash."
+    },
+    {
+      "start": 654.76,
+      "end": 657.369,
+      "text": "I don't like my house cluttered up with rotten vegetables."
+    },
+    {
+      "start": 657.394,
+      "end": 659.674,
+      "text": "Look ma, I gotta hurry. Can I bring you anything?"
+    },
+    {
+      "start": 659.705,
+      "end": 662.814,
+      "text": "Oh yeah, yeah. Bring me the Evening News."
+    },
+    {
+      "start": 662.954,
+      "end": 665.836,
+      "text": "They're running a-a self-diagnosis contest."
+    },
+    {
+      "start": 665.861,
+      "end": 668.149,
+      "text": "The winner gets to go to to Mayo Clinic."
+    },
+    {
+      "start": 668.174,
+      "end": 669.835,
+      "text": "- Ha, ha. - Bye, ma."
+    },
+    {
+      "start": 669.86,
+      "end": 673.219,
+      "text": "Bye, son. I'll see you at the rosy edge of dawn!"
+    },
+    {
+      "start": 673.781,
+      "end": 677.383,
+      "text": "♪ Drink to me only with thine eyes"
+    },
+    {
+      "start": 677.408,
+      "end": 679.063,
+      "text": "♪ And I will ..."
+    },
+    {
+      "start": 683.908,
+      "end": 685.43,
+      "text": "And put this on my bill."
+    },
+    {
+      "start": 688.439,
+      "end": 689.705,
+      "text": "Here it is everybody."
+    },
+    {
+      "start": 690.252,
+      "end": 691.666,
+      "text": "What do you think of it?"
+    },
+    {
+      "start": 691.691,
+      "end": 692.861,
+      "text": "Well..."
+    },
+    {
+      "start": 693.165,
+      "end": 694.345,
+      "text": "It sure is different."
+    },
+    {
+      "start": 694.37,
+      "end": 696.531,
+      "text": "It looks delicious but don't you think it's kind of stale?"
+    },
+    {
+      "start": 696.556,
+      "end": 698.389,
+      "text": "I hasn't been feeling too well."
+    },
+    {
+      "start": 698.414,
+      "end": 699.744,
+      "text": "You call that a fancy plant?"
+    },
+    {
+      "start": 699.79,
+      "end": 702.626,
+      "text": "It looks like it never spent an healthy day in its entire life."
+    },
+    {
+      "start": 702.743,
+      "end": 703.766,
+      "text": "I don't care."
+    },
+    {
+      "start": 703.931,
+      "end": 705.079,
+      "text": "I like it anyway."
+    },
+    {
+      "start": 705.22,
+      "end": 707.212,
+      "text": "You, you like even skunk cabbage."
+    },
+    {
+      "start": 707.237,
+      "end": 708.438,
+      "text": "Yeah."
+    },
+    {
+      "start": 708.797,
+      "end": 710.624,
+      "text": "What kind of a plant is this, Seymour?"
+    },
+    {
+      "start": 710.79,
+      "end": 712.055,
+      "text": "Well, I'm not sure."
+    },
+    {
+      "start": 712.172,
+      "end": 715.16,
+      "text": "I got the seeds from a Japanese gardener over on Central Avenue."
+    },
+    {
+      "start": 715.414,
+      "end": 718.82,
+      "text": "He found them in with an order he got from a plantation next to a cranberry farm."
+    },
+    {
+      "start": 718.845,
+      "end": 719.805,
+      "text": "Fine."
+    },
+    {
+      "start": 719.882,
+      "end": 722.468,
+      "text": "Fine. You don't even know what is this plant you're groing."
+    },
+    {
+      "start": 722.703,
+      "end": 724.82,
+      "text": "- Well, I gave it a name. - What name?"
+    },
+    {
+      "start": 726.249,
+      "end": 729.085,
+      "text": "What? You gave it a dirty name you can't even mention it?"
+    },
+    {
+      "start": 729.422,
+      "end": 730.422,
+      "text": "Well..."
+    },
+    {
+      "start": 730.617,
+      "end": 731.812,
+      "text": "I named it Audrey Jr."
+    },
+    {
+      "start": 732.843,
+      "end": 734.757,
+      "text": "You named it after me?"
+    },
+    {
+      "start": 734.782,
+      "end": 735.819,
+      "text": "Oh, really?"
+    },
+    {
+      "start": 736.077,
+      "end": 738.78,
+      "text": "That's the most exiting thing anyone's ever done to me."
+    },
+    {
+      "start": 738.842,
+      "end": 740.088,
+      "text": "You poor kid."
+    },
+    {
+      "start": 740.308,
+      "end": 741.566,
+      "text": "I don't think it's so much..."
+    },
+    {
+      "start": 741.591,
+      "end": 745.135,
+      "text": "... I should keep on spending ten dollars a week on your salary."
+    },
+    {
+      "start": 745.16,
+      "end": 746.011,
+      "text": "But Gravis..."
+    },
+    {
+      "start": 746.0360000000001,
+      "end": 747.462,
+      "text": "... he named it after me!"
+    },
+    {
+      "start": 747.487,
+      "end": 749.844,
+      "text": "I know and if they keep it they'll name it Mushnick's Folly..."
+    },
+    {
+      "start": 749.869,
+      "end": 752.455,
+      "text": "... because I'll be in jail because of non-payment of taxes."
+    },
+    {
+      "start": 752.48,
+      "end": 753.885,
+      "text": "- Are you crazy? - Who? Who?"
+    },
+    {
+      "start": 753.91,
+      "end": 754.91,
+      "text": "You. You."
+    },
+    {
+      "start": 754.946,
+      "end": 757.146,
+      "text": "That's probably the only plant of its kind in the world."
+    },
+    {
+      "start": 757.171,
+      "end": 759.282,
+      "text": "Don't you realize if Seymour can nurse that thing back to health..."
+    },
+    {
+      "start": 759.307,
+      "end": 761.212,
+      "text": "... you have people coming here from all over?"
+    },
+    {
+      "start": 761.275,
+      "end": 763.376,
+      "text": "- You think so, you Fouch? - I know so, you Mushnick?"
+    },
+    {
+      "start": 763.55,
+      "end": 765.05,
+      "text": "That's all I'm saying on the subject."
+    },
+    {
+      "start": 765.3389999999999,
+      "end": 767.8,
+      "text": "Sod, I got to get home. My wife's making gardenias for dinner."
+    },
+    {
+      "start": 769.855,
+      "end": 771.394,
+      "text": "- Good night, sir. - Good night."
+    },
+    {
+      "start": 771.55,
+      "end": 772.55,
+      "text": "I'll see you tomorrow."
+    },
+    {
+      "start": 773.417,
+      "end": 774.909,
+      "text": "Crazy about kosher flowers."
+    },
+    {
+      "start": 776.245,
+      "end": 777.62,
+      "text": "He's a nice man."
+    },
+    {
+      "start": 778.222,
+      "end": 780.144,
+      "text": "Maybe he knows what he's talking about."
+    },
+    {
+      "start": 780.526,
+      "end": 781.881,
+      "text": "Maybe it's not so stupid."
+    },
+    {
+      "start": 782.886,
+      "end": 784.073,
+      "text": "I'll tell you what I'll do."
+    },
+    {
+      "start": 784.776,
+      "end": 786.955,
+      "text": "I'll keep you and this Dumbell Jr. for a week."
+    },
+    {
+      "start": 786.98,
+      "end": 789.354,
+      "text": "If you can nurse it back to health, you both can stay."
+    },
+    {
+      "start": 789.379,
+      "end": 791.3,
+      "text": "If you can't, you're both fired."
+    },
+    {
+      "start": 791.325,
+      "end": 793.236,
+      "text": "Aw, gee. Thank you, Mr. Mushnick."
+    },
+    {
+      "start": 796.856,
+      "end": 799.149,
+      "text": "Don't feel sad, Seymour."
+    },
+    {
+      "start": 799.681,
+      "end": 802.525,
+      "text": "Don't waste your pity on me Audrey, I'm not worth it."
+    },
+    {
+      "start": 802.55,
+      "end": 804.283,
+      "text": "Who says you're not?"
+    },
+    {
+      "start": 804.946,
+      "end": 806.055,
+      "text": "Everybody."
+    },
+    {
+      "start": 806.08,
+      "end": 807.33,
+      "text": "Yeah, I know."
+    },
+    {
+      "start": 807.986,
+      "end": 810.986,
+      "text": "But I think you're a fine figurative of a man, and..."
+    },
+    {
+      "start": 811.533,
+      "end": 816.072,
+      "text": "... and I know that Audrey Jr. will be the sweetest thing in the whole, wide world!"
+    },
+    {
+      "start": 816.306,
+      "end": 817.658,
+      "text": "Well, I don't know."
+    },
+    {
+      "start": 817.993,
+      "end": 822.259,
+      "text": "I've given it every kind of fancy fertilizer and atomic plant food and..."
+    },
+    {
+      "start": 822.284,
+      "end": 825.58,
+      "text": "... distilled mineral water that you can buy but I just gets sicker and sicker."
+    },
+    {
+      "start": 825.9639999999999,
+      "end": 827.097,
+      "text": "Don't worry."
+    },
+    {
+      "start": 827.55,
+      "end": 830.003,
+      "text": "You're gonna be another Luther Glendale."
+    },
+    {
+      "start": 830.065,
+      "end": 831.065,
+      "text": "Pasadena."
+    },
+    {
+      "start": 831.237,
+      "end": 832.237,
+      "text": "Burbank."
+    },
+    {
+      "start": 833.346,
+      "end": 834.557,
+      "text": "Good night, Seymour."
+    },
+    {
+      "start": 834.995,
+      "end": 836.369,
+      "text": "G'night, Audrey."
+    },
+    {
+      "start": 845.465,
+      "end": 847.043,
+      "text": "What's the matter little plant?"
+    },
+    {
+      "start": 847.925,
+      "end": 850.441,
+      "text": "Haven't I done everything I could for you?"
+    },
+    {
+      "start": 850.973,
+      "end": 852.433,
+      "text": "Where did I goof?"
+    },
+    {
+      "start": 854.277,
+      "end": 858.832,
+      "text": "You're the first little plant I ever tried to grow, and if you die, I dunno what I'll do!"
+    },
+    {
+      "start": 858.989,
+      "end": 860.364,
+      "text": "Please don't die."
+    },
+    {
+      "start": 862.528,
+      "end": 864.255,
+      "text": "I'll get you some water, ok?"
+    },
+    {
+      "start": 882.277,
+      "end": 883.613,
+      "text": "Oh, gee."
+    },
+    {
+      "start": 883.738,
+      "end": 887.235,
+      "text": "You opened up just like you do every night at sunset."
+    },
+    {
+      "start": 887.26,
+      "end": 889.417,
+      "text": "I wish I knew how to make you grow."
+    },
+    {
+      "start": 890.465,
+      "end": 892.871,
+      "text": "Here, let me move this out of your way so you can breathe."
+    },
+    {
+      "start": 892.972,
+      "end": 895.2139999999999,
+      "text": "Ow! Ow, ow, ow, ow!"
+    },
+    {
+      "start": 896.98,
+      "end": 898.689,
+      "text": "Hey, what happened?"
+    },
+    {
+      "start": 898.746,
+      "end": 900.15,
+      "text": "How come you woke up?"
+    },
+    {
+      "start": 901.644,
+      "end": 902.644,
+      "text": "Blood?"
+    },
+    {
+      "start": 902.847,
+      "end": 904.23,
+      "text": "You like blood?"
+    },
+    {
+      "start": 907.187,
+      "end": 908.484,
+      "text": "You must be kidding."
+    },
+    {
+      "start": 909.468,
+      "end": 910.468,
+      "text": "Well, we'll see."
+    },
+    {
+      "start": 919.456,
+      "end": 920.871,
+      "text": "You know, what I'm doing for you..."
+    },
+    {
+      "start": 930.46,
+      "end": 932.663,
+      "text": "Aww, who could have thought it?"
+    },
+    {
+      "start": 933.757,
+      "end": 934.757,
+      "text": "Well..."
+    },
+    {
+      "start": 934.782,
+      "end": 937.639,
+      "text": "I guess there's just no accounting for people's taste."
+    },
+    {
+      "start": 949.023,
+      "end": 951.078,
+      "text": "- Seymour! - My boy."
+    },
+    {
+      "start": 951.103,
+      "end": 954.109,
+      "text": "You're the most magnanimous person in the whole world!"
+    },
+    {
+      "start": 954.179,
+      "end": 955.914,
+      "text": "Look on him, Audrey. Isn't he beautiful?"
+    },
+    {
+      "start": 955.992,
+      "end": 957.25,
+      "text": "Isn't he delicious?"
+    },
+    {
+      "start": 957.468,
+      "end": 959.241,
+      "text": "Isn't he got a two dollar raise?"
+    },
+    {
+      "start": 959.32,
+      "end": 960.656,
+      "text": "What happened to your fingers?"
+    },
+    {
+      "start": 960.681,
+      "end": 961.804,
+      "text": "Bee stings."
+    },
+    {
+      "start": 961.874,
+      "end": 963.983,
+      "text": "So how come I'm all of a sudden so wonderful?"
+    },
+    {
+      "start": 964.015,
+      "end": 965.858,
+      "text": "Five bees? One for each finger?"
+    },
+    {
+      "start": 965.921,
+      "end": 967.005,
+      "text": "Ten bees."
+    },
+    {
+      "start": 967.03,
+      "end": 968.796,
+      "text": "Did you say I was getting a two dollar raise?"
+    },
+    {
+      "start": 968.821,
+      "end": 970.71,
+      "text": "Correct, my very excellent Seymour."
+    },
+    {
+      "start": 970.735,
+      "end": 972.826,
+      "text": "- Indeed. - What did I do now?"
+    },
+    {
+      "start": 973.1,
+      "end": 974.733,
+      "text": "Don't you know what you did?"
+    },
+    {
+      "start": 977.725,
+      "end": 979.647,
+      "text": "Oh, boy! Look at that!"
+    },
+    {
+      "start": 980.279,
+      "end": 981.279,
+      "text": "It grew."
+    },
+    {
+      "start": 981.304,
+      "end": 983.013,
+      "text": "It's almost a foot long."
+    },
+    {
+      "start": 983.139,
+      "end": 984.498,
+      "text": "Isn't it empirical?"
+    },
+    {
+      "start": 984.662,
+      "end": 987.201,
+      "text": "It grows like a cold sore from the lips."
+    },
+    {
+      "start": 988.553,
+      "end": 991.975,
+      "text": "Oh, hello young pretty ladies. What can Gravis Mushnick do for you?"
+    },
+    {
+      "start": 992.014,
+      "end": 994.185,
+      "text": "Well, we saw your sign outside. About the Audrey Jr."
+    },
+    {
+      "start": 994.21,
+      "end": 996.159,
+      "text": "So we thought we'd come in and take a look."
+    },
+    {
+      "start": 996.184,
+      "end": 997.184,
+      "text": "Well, give a look."
+    },
+    {
+      "start": 997.2090000000001,
+      "end": 1000.095,
+      "text": "That makes four people today who come in just to look at it."
+    },
+    {
+      "start": 1000.128,
+      "end": 1003.677,
+      "text": "- Oh, dig Shirley. - Is that just too much?"
+    },
+    {
+      "start": 1003.702,
+      "end": 1005.178,
+      "text": "Oh, what kind of plant is it?"
+    },
+    {
+      "start": 1005.203,
+      "end": 1006.474,
+      "text": "It's an Audrey Jr."
+    },
+    {
+      "start": 1006.499,
+      "end": 1008.4639999999999,
+      "text": "How was it you got in trouble with ten bees?!"
+    },
+    {
+      "start": 1008.489,
+      "end": 1010.609,
+      "text": "Is that all? I mean, doesn't it have a scientific name?"
+    },
+    {
+      "start": 1010.634,
+      "end": 1011.804,
+      "text": "Yes, of course."
+    },
+    {
+      "start": 1011.829,
+      "end": 1012.968,
+      "text": "But who could denounce it."
+    },
+    {
+      "start": 1012.993,
+      "end": 1014.969,
+      "text": "You would like maybe to buy something."
+    },
+    {
+      "start": 1014.994,
+      "end": 1016.298,
+      "text": "Well, we don't have any money..."
+    },
+    {
+      "start": 1016.323,
+      "end": 1017.993,
+      "text": "... except 2000 dollars."
+    },
+    {
+      "start": 1018.915,
+      "end": 1020.595,
+      "text": "But that's just to spend on flowers."
+    },
+    {
+      "start": 1020.62,
+      "end": 1022.006,
+      "text": "So we don't have any of our own."
+    },
+    {
+      "start": 1022.199,
+      "end": 1023.199,
+      "text": "Isn't that a drag?"
+    },
+    {
+      "start": 1023.224,
+      "end": 1025.435,
+      "text": "You got t-t-t-two thousand dollars..."
+    },
+    {
+      "start": 1025.46,
+      "end": 1027.489,
+      "text": "... just for to spend on flowers?"
+    },
+    {
+      "start": 1027.514,
+      "end": 1028.777,
+      "text": "- Mhm. - That's right."
+    },
+    {
+      "start": 1028.802,
+      "end": 1030.646,
+      "text": "Who died? The Chamber of Commerce?"
+    },
+    {
+      "start": 1030.671,
+      "end": 1032.005,
+      "text": "We're all from Cucamonga high school."
+    },
+    {
+      "start": 1032.03,
+      "end": 1033.17,
+      "text": "We're building a float."
+    },
+    {
+      "start": 1033.201,
+      "end": 1035.404,
+      "text": "- For the Rose Bowl parade. - Which is made of flowers."
+    },
+    {
+      "start": 1035.429,
+      "end": 1037.301,
+      "text": "- Thousands of them. - And we're on the comittee."
+    },
+    {
+      "start": 1037.326,
+      "end": 1039.817,
+      "text": "- That picks the florist. - And then glues on the flowers."
+    },
+    {
+      "start": 1041.591,
+      "end": 1044.895,
+      "text": "- Gee, that sure is a mad plant. - Wow, yeah."
+    },
+    {
+      "start": 1045.014,
+      "end": 1046.49,
+      "text": "Seymour here invented it."
+    },
+    {
+      "start": 1046.553,
+      "end": 1049.006,
+      "text": "- He didn't! - Oh!"
+    },
+    {
+      "start": 1049.115,
+      "end": 1051.014,
+      "text": "Girls! Girls, girls, girls!"
+    },
+    {
+      "start": 1051.06,
+      "end": 1053.794,
+      "text": "Please don't damage the horticulturalist."
+    },
+    {
+      "start": 1054.52,
+      "end": 1058.645,
+      "text": "Tell me, how come you don't buy all these thousands of flowers from Gravis Mushnick?"
+    },
+    {
+      "start": 1058.958,
+      "end": 1061.509,
+      "text": "My flowers got something the others don't."
+    },
+    {
+      "start": 1061.534,
+      "end": 1062.942,
+      "text": "- What's that? - They're cheap."
+    },
+    {
+      "start": 1062.967,
+      "end": 1063.967,
+      "text": "Well, cheap."
+    },
+    {
+      "start": 1064,
+      "end": 1066.235,
+      "text": "If your shop is good enough to develop the Audrey Jr..."
+    },
+    {
+      "start": 1066.335,
+      "end": 1068.57,
+      "text": "- I guess it can get everything we need. - Yeah."
+    },
+    {
+      "start": 1068.603,
+      "end": 1070.305,
+      "text": "We'll talk it over with the rest of the committee."
+    },
+    {
+      "start": 1070.344,
+      "end": 1072.133,
+      "text": "- Excellent. - We've got to run now. Bye."
+    },
+    {
+      "start": 1072.158,
+      "end": 1073.882,
+      "text": "- Bye! - Bye!"
+    },
+    {
+      "start": 1074.063,
+      "end": 1075.258,
+      "text": "Bye, girls."
+    },
+    {
+      "start": 1079.433,
+      "end": 1080.433,
+      "text": "A son."
+    },
+    {
+      "start": 1081.335,
+      "end": 1082.335,
+      "text": "A son."
+    },
+    {
+      "start": 1082.36,
+      "end": 1083.443,
+      "text": "Look, Audrey!"
+    },
+    {
+      "start": 1083.669,
+      "end": 1085.404,
+      "text": "I got a son."
+    },
+    {
+      "start": 1085.716,
+      "end": 1087.333,
+      "text": "Oh, gee, Mr Mushnick."
+    },
+    {
+      "start": 1087.358,
+      "end": 1088.27,
+      "text": "What, Mr. Mushnick?"
+    },
+    {
+      "start": 1088.295,
+      "end": 1090.709,
+      "text": "I don't want you should call me Mr. Mushnick anymore."
+    },
+    {
+      "start": 1090.734,
+      "end": 1092.686,
+      "text": "I want you should call me dad."
+    },
+    {
+      "start": 1092.858,
+      "end": 1094.296,
+      "text": "Ok, dad."
+    },
+    {
+      "start": 1094.592,
+      "end": 1096.099,
+      "text": "Isn't that beautiful?"
+    },
+    {
+      "start": 1096.124,
+      "end": 1097.647,
+      "text": "Seymour Krelborn..."
+    },
+    {
+      "start": 1097.733,
+      "end": 1099.435,
+      "text": "... come over here, my son."
+    },
+    {
+      "start": 1099.749,
+      "end": 1101.983,
+      "text": "I want to talk on you about the future."
+    },
+    {
+      "start": 1102.35,
+      "end": 1104.205,
+      "text": "Look on this fly trap."
+    },
+    {
+      "start": 1104.23,
+      "end": 1105.23,
+      "text": "Look on it."
+    },
+    {
+      "start": 1105.35,
+      "end": 1107.715,
+      "text": "Soon we got no more Skid Row."
+    },
+    {
+      "start": 1107.865,
+      "end": 1110.068,
+      "text": "We will be rich. Us."
+    },
+    {
+      "start": 1110.271,
+      "end": 1111.896,
+      "text": "I am building for you..."
+    },
+    {
+      "start": 1111.97,
+      "end": 1115.38,
+      "text": "... a giant greenhouse in which you are making impossible flowers..."
+    },
+    {
+      "start": 1115.611,
+      "end": 1118.774,
+      "text": "... which in turn I am selling at ridiculous prices..."
+    },
+    {
+      "start": 1118.799,
+      "end": 1122.338,
+      "text": "... in my giant new flower saloon in Beverly Hills."
+    },
+    {
+      "start": 1123.345,
+      "end": 1125.821,
+      "text": "Do you see that big sign in the sky?"
+    },
+    {
+      "start": 1126.604,
+      "end": 1127.76,
+      "text": "It is saying..."
+    },
+    {
+      "start": 1128.243,
+      "end": 1130.47,
+      "text": "... \"Gravis Mushnick\", in French."
+    },
+    {
+      "start": 1130.618,
+      "end": 1131.97,
+      "text": "Isn't it exciting?"
+    },
+    {
+      "start": 1132.376,
+      "end": 1135.415,
+      "text": "And we'll have an orchestra right by the cash register, ..."
+    },
+    {
+      "start": 1135.56,
+      "end": 1137.412,
+      "text": "... and Gravis will wave his arms..."
+    },
+    {
+      "start": 1137.437,
+      "end": 1140.482,
+      "text": "... and the orchestra will play Mendelssohn's Spring Song."
+    },
+    {
+      "start": 1141.044,
+      "end": 1144.473,
+      "text": "I'll come out in a gown, wrapped by someone expensive and say:"
+    },
+    {
+      "start": 1144.685,
+      "end": 1147.255,
+      "text": "\"The carnations are 600 dollars a dozen,\"..."
+    },
+    {
+      "start": 1147.28,
+      "end": 1148.52,
+      "text": "... \"two dozen for a thousand.\""
+    },
+    {
+      "start": 1148.545,
+      "end": 1151.161,
+      "text": "- It's a bargain! - Get 'em while they last"
+    },
+    {
+      "start": 1151.186,
+      "end": 1152.247,
+      "text": "Stop shouting."
+    },
+    {
+      "start": 1152.356,
+      "end": 1158.75,
+      "text": "My uncle Moishen's brother Yankel just passed away in New Jersey."
+    },
+    {
+      "start": 1159.036,
+      "end": 1160.036,
+      "text": "Tell me..."
+    },
+    {
+      "start": 1160.207,
+      "end": 1162.121,
+      "text": "... how much are the carnations today?"
+    },
+    {
+      "start": 1162.146,
+      "end": 1164.364,
+      "text": "The carnations are 600 dollars a dozen."
+    },
+    {
+      "start": 1164.389,
+      "end": 1166.637,
+      "text": "And why are they letting him run around loose?"
+    },
+    {
+      "start": 1166.677,
+      "end": 1169.168,
+      "text": "Please. Please excuse my son, Mrs. Shiva."
+    },
+    {
+      "start": 1169.215,
+      "end": 1171.56,
+      "text": "Just point anything in the store and it is yours."
+    },
+    {
+      "start": 1171.585,
+      "end": 1172.83,
+      "text": "You mean anything?"
+    },
+    {
+      "start": 1172.855,
+      "end": 1173.855,
+      "text": "That's right."
+    },
+    {
+      "start": 1173.88,
+      "end": 1175.835,
+      "text": "- The cash register, maybe, huh? - Ah."
+    },
+    {
+      "start": 1175.86,
+      "end": 1176.997,
+      "text": "Wait a minute."
+    },
+    {
+      "start": 1177.022,
+      "end": 1178.255,
+      "text": "Here."
+    },
+    {
+      "start": 1178.28,
+      "end": 1181.325,
+      "text": "Here are several dozen carnations..."
+    },
+    {
+      "start": 1181.59,
+      "end": 1185.692,
+      "text": "... on the house courtesey of Gravis Mushnick, the bloom tycoon."
+    },
+    {
+      "start": 1185.724,
+      "end": 1187.808,
+      "text": "- That's my dad. - Thanks."
+    },
+    {
+      "start": 1188.45,
+      "end": 1189.591,
+      "text": "Thanks very much."
+    },
+    {
+      "start": 1190.751,
+      "end": 1191.868,
+      "text": "Only, tell me..."
+    },
+    {
+      "start": 1192.252,
+      "end": 1193.494,
+      "text": "Why are you so happy?"
+    },
+    {
+      "start": 1193.65,
+      "end": 1197.884,
+      "text": "Not only did my uncle Moishe's brother Yankel die..."
+    },
+    {
+      "start": 1198.377,
+      "end": 1200.002,
+      "text": "... in New Jersey..."
+    },
+    {
+      "start": 1201.515,
+      "end": 1204.296,
+      "text": "... we should also give some flowers to that poor dead plant there."
+    },
+    {
+      "start": 1205.71,
+      "end": 1207.218,
+      "text": "Good morning, Mr. Mushnick."
+    },
+    {
+      "start": 1208.271,
+      "end": 1209.271,
+      "text": "Good morning."
+    },
+    {
+      "start": 1209.851,
+      "end": 1210.983,
+      "text": "Good morning, Mrs. Shiva."
+    },
+    {
+      "start": 1211.046,
+      "end": 1213.062,
+      "text": "Look what happened to my plant, dad."
+    },
+    {
+      "start": 1213.087,
+      "end": 1214.726,
+      "text": "Who're you calling dad? Who? Who?"
+    },
+    {
+      "start": 1214.751,
+      "end": 1215.751,
+      "text": "Oh no!"
+    },
+    {
+      "start": 1216.147,
+      "end": 1218.975,
+      "text": "- It was so beautiful just a few seconds ago. - Excellent."
+    },
+    {
+      "start": 1219.021,
+      "end": 1222.107,
+      "text": "Just a few seconds ago I gave away dozens of carnations."
+    },
+    {
+      "start": 1222.132,
+      "end": 1223.482,
+      "text": "Free! To Mrs. Shiva."
+    },
+    {
+      "start": 1223.507,
+      "end": 1224.514,
+      "text": "I didn't mean it."
+    },
+    {
+      "start": 1225.263,
+      "end": 1227.693,
+      "text": "You have perhaps an explanation."
+    },
+    {
+      "start": 1227.904,
+      "end": 1230.319,
+      "text": "No, but if you give me a minute I'll think of one."
+    },
+    {
+      "start": 1230.344,
+      "end": 1231.771,
+      "text": "I can see it all now."
+    },
+    {
+      "start": 1231.951,
+      "end": 1233.631,
+      "text": "We're in the poorhouse."
+    },
+    {
+      "start": 1233.677,
+      "end": 1237.059,
+      "text": "The big sign in the sky it is reading:"
+    },
+    {
+      "start": 1237.16,
+      "end": 1240.434,
+      "text": "\"Seymour Krelborn. Rest in Peace.\""
+    },
+    {
+      "start": 1240.459,
+      "end": 1241.661,
+      "text": "In Arabic!"
+    },
+    {
+      "start": 1241.7,
+      "end": 1243.614,
+      "text": "Oh, you've got to give him another chance."
+    },
+    {
+      "start": 1243.849,
+      "end": 1245.825,
+      "text": "You promised me a week, Mr. Mushnick."
+    },
+    {
+      "start": 1245.982,
+      "end": 1247.614,
+      "text": "I'd sit up all night with that plant."
+    },
+    {
+      "start": 1247.639,
+      "end": 1249.496,
+      "text": "It'll be healthy in the morning, you'll see."
+    },
+    {
+      "start": 1249.599,
+      "end": 1250.654,
+      "text": "I promise."
+    },
+    {
+      "start": 1251.051,
+      "end": 1252.231,
+      "text": "I promise."
+    },
+    {
+      "start": 1261.507,
+      "end": 1264.301,
+      "text": "Feed meeee."
+    },
+    {
+      "start": 1268.497,
+      "end": 1271.52,
+      "text": "Feed meeee."
+    },
+    {
+      "start": 1272.717,
+      "end": 1274.491,
+      "text": "Feed meeee!"
+    },
+    {
+      "start": 1278.288,
+      "end": 1279.381,
+      "text": "Who said that?"
+    },
+    {
+      "start": 1279.538,
+      "end": 1280.538,
+      "text": "You said that."
+    },
+    {
+      "start": 1280.655,
+      "end": 1281.881,
+      "text": "You said that!"
+    },
+    {
+      "start": 1281.99,
+      "end": 1284.661,
+      "text": "Mhm. Feed me!"
+    },
+    {
+      "start": 1286.302,
+      "end": 1287.443,
+      "text": "You said that."
+    },
+    {
+      "start": 1288.334,
+      "end": 1289.529,
+      "text": "You can talk."
+    },
+    {
+      "start": 1289.967,
+      "end": 1291.685,
+      "text": "I got a talking plant."
+    },
+    {
+      "start": 1292.389,
+      "end": 1293.616,
+      "text": "- Say it again. - Feed me."
+    },
+    {
+      "start": 1294.819,
+      "end": 1295.944,
+      "text": "Oh boy!"
+    },
+    {
+      "start": 1296.538,
+      "end": 1298.866,
+      "text": "I've never been to college and I ain't been around much..."
+    },
+    {
+      "start": 1299.381,
+      "end": 1302.557,
+      "text": "... but I would be willing to bet there ain't no such thing as a talking plant!"
+    },
+    {
+      "start": 1303.17,
+      "end": 1304.756,
+      "text": "I'll take your word for it."
+    },
+    {
+      "start": 1305.366,
+      "end": 1307.42,
+      "text": "Gee, Junior, I'd-I'd like to feed you."
+    },
+    {
+      "start": 1307.795,
+      "end": 1309.366,
+      "text": "But I've used up all my fingers."
+    },
+    {
+      "start": 1309.741,
+      "end": 1312.092,
+      "text": "Feeeeeeed."
+    },
+    {
+      "start": 1314.709,
+      "end": 1316.905,
+      "text": "Look at me, I'm all cut to pieces."
+    },
+    {
+      "start": 1317.152,
+      "end": 1320.206,
+      "text": "But maybe I can find another drop here someplace."
+    },
+    {
+      "start": 1326.597,
+      "end": 1328.246,
+      "text": "That's the best I can do."
+    },
+    {
+      "start": 1328.528,
+      "end": 1331.072,
+      "text": "More! More!"
+    },
+    {
+      "start": 1331.097,
+      "end": 1332.778,
+      "text": "But I'm already anaemic."
+    },
+    {
+      "start": 1333.433,
+      "end": 1336.23,
+      "text": "Feed me more!"
+    },
+    {
+      "start": 1336.512,
+      "end": 1337.512,
+      "text": "See, Junior,..."
+    },
+    {
+      "start": 1337.551,
+      "end": 1339.645,
+      "text": "I'd be happy to give you anything I got..."
+    },
+    {
+      "start": 1339.988,
+      "end": 1343.3,
+      "text": "... but I gotta keep a little blood for myself or I'll be in worse shape than ma."
+    },
+    {
+      "start": 1343.335,
+      "end": 1344.553,
+      "text": "Mmm."
+    },
+    {
+      "start": 1345.264,
+      "end": 1346.694,
+      "text": "I'm sorry, Junior."
+    },
+    {
+      "start": 1347.053,
+      "end": 1349.412,
+      "text": "I'll go for a walk. Maybe I'll think of something."
+    },
+    {
+      "start": 1512.828,
+      "end": 1514.828,
+      "text": "Feed me!"
+    },
+    {
+      "start": 1515.781,
+      "end": 1517.765,
+      "text": "Feed me!"
+    },
+    {
+      "start": 1517.859,
+      "end": 1519.031,
+      "text": "Look, chow-hound."
+    },
+    {
+      "start": 1519.859,
+      "end": 1521.961,
+      "text": "Don't bother me. I got problems of my own."
+    },
+    {
+      "start": 1522.328,
+      "end": 1523.539,
+      "text": "Feed me!"
+    },
+    {
+      "start": 1523.999,
+      "end": 1526.953,
+      "text": "I am sorry, pal. I am fresh out of blood. Talk to somebody else."
+    },
+    {
+      "start": 1526.983,
+      "end": 1528.717,
+      "text": "I am hungry!"
+    },
+    {
+      "start": 1528.742,
+      "end": 1530.327,
+      "text": "I don't care what you are."
+    },
+    {
+      "start": 1530.851,
+      "end": 1532.234,
+      "text": "Can't you see I am knocked out?"
+    },
+    {
+      "start": 1532.351,
+      "end": 1533.624,
+      "text": "I just killed a man."
+    },
+    {
+      "start": 1534.202,
+      "end": 1535.374,
+      "text": "I'm a murderer."
+    },
+    {
+      "start": 1535.9279999999999,
+      "end": 1537.631,
+      "text": "Think it's fun to be a murderer?"
+    },
+    {
+      "start": 1537.671,
+      "end": 1538.843,
+      "text": "You think it's fun to..."
+    },
+    {
+      "start": 1538.936,
+      "end": 1540.358,
+      "text": "...haul around a sack full of..."
+    },
+    {
+      "start": 1540.42,
+      "end": 1542.3029999999999,
+      "text": "...fooooood."
+    },
+    {
+      "start": 1542.49,
+      "end": 1545.646,
+      "text": "No, no, Junior! What kind of guy do you think I am?"
+    },
+    {
+      "start": 1545.671,
+      "end": 1547.662,
+      "text": "I'm starved."
+    },
+    {
+      "start": 1551.317,
+      "end": 1552.71,
+      "text": "Maybe just a snack."
+    },
+    {
+      "start": 1562.185,
+      "end": 1563.443,
+      "text": "That looks great."
+    },
+    {
+      "start": 1576.495,
+      "end": 1577.494,
+      "text": "What you call that salad?"
+    },
+    {
+      "start": 1577.519,
+      "end": 1578.519,
+      "text": "Nefarious."
+    },
+    {
+      "start": 1579.57,
+      "end": 1581.117,
+      "text": "Well, before the next course..."
+    },
+    {
+      "start": 1581.601,
+      "end": 1583.255,
+      "text": "... I think I'll have a nice cigar."
+    },
+    {
+      "start": 1583.28,
+      "end": 1584.28,
+      "text": "Alright?"
+    },
+    {
+      "start": 1584.812,
+      "end": 1586.28,
+      "text": "You would like maybe a cigar?"
+    },
+    {
+      "start": 1586.395,
+      "end": 1587.809,
+      "text": "- Ha-ha-ha. - Ha-ha-ha."
+    },
+    {
+      "start": 1587.834,
+      "end": 1589.785,
+      "text": "Ah, you don't smoke cigars, right."
+    },
+    {
+      "start": 1589.949,
+      "end": 1592.207,
+      "text": "What am I thinking about? Where are the matches?"
+    },
+    {
+      "start": 1593.286,
+      "end": 1594.434,
+      "text": "Oh, oi!"
+    },
+    {
+      "start": 1595.285,
+      "end": 1596.332,
+      "text": "You know what I found?"
+    },
+    {
+      "start": 1597.065,
+      "end": 1598.526,
+      "text": "I'm looking for the matches..."
+    },
+    {
+      "start": 1599.244,
+      "end": 1601.329,
+      "text": "And I found I left the money in the red suit."
+    },
+    {
+      "start": 1604.556,
+      "end": 1606.392,
+      "text": "Here's your mock chicken leg."
+    },
+    {
+      "start": 1606.5720000000001,
+      "end": 1607.721,
+      "text": "You don't have any money?"
+    },
+    {
+      "start": 1611.579,
+      "end": 1613.259,
+      "text": "So what else is new?"
+    },
+    {
+      "start": 1613.361,
+      "end": 1614.869,
+      "text": "Alright. Alright!"
+    },
+    {
+      "start": 1614.894,
+      "end": 1616.025,
+      "text": "I made a mistake."
+    },
+    {
+      "start": 1616.15,
+      "end": 1617.986,
+      "text": "After all, a man is entitled."
+    },
+    {
+      "start": 1618.571,
+      "end": 1620.282,
+      "text": "Go on. This is your story."
+    },
+    {
+      "start": 1620.524,
+      "end": 1621.923,
+      "text": "I'll wait for the punch."
+    },
+    {
+      "start": 1622.134,
+      "end": 1624.454,
+      "text": "Don't get smart with me, girlie."
+    },
+    {
+      "start": 1624.578,
+      "end": 1627.46,
+      "text": "I'll have you know that in my shop in the cash register..."
+    },
+    {
+      "start": 1627.485,
+      "end": 1630.079,
+      "text": "... I'm having the total day's receipts..."
+    },
+    {
+      "start": 1630.25,
+      "end": 1632.868,
+      "text": "... which is summing up to more than nine dollars."
+    },
+    {
+      "start": 1633.008,
+      "end": 1634.687,
+      "text": "You'll bring the rest of the food..."
+    },
+    {
+      "start": 1634.712,
+      "end": 1637.031,
+      "text": "... and I'll go the the shop and get the money!"
+    },
+    {
+      "start": 1637.585,
+      "end": 1640.507,
+      "text": "You are playing my favorite song."
+    },
+    {
+      "start": 1641.069,
+      "end": 1642.499,
+      "text": "Now, look here, buster."
+    },
+    {
+      "start": 1642.733,
+      "end": 1645.514,
+      "text": "One of you is gonna go down right now and get the loot..."
+    },
+    {
+      "start": 1645.539,
+      "end": 1649.226,
+      "text": "... while the other one stays here until the first one gets back."
+    },
+    {
+      "start": 1649.531,
+      "end": 1651.367,
+      "text": "If you get what I mean?"
+    },
+    {
+      "start": 1651.392,
+      "end": 1652.421,
+      "text": "Oh, fine."
+    },
+    {
+      "start": 1652.446,
+      "end": 1656.335,
+      "text": "In this fancy schmancy restaurant you are holding hostages, right?"
+    },
+    {
+      "start": 1656.36,
+      "end": 1657.36,
+      "text": "Right."
+    },
+    {
+      "start": 1658.695,
+      "end": 1659.695,
+      "text": "Excellent."
+    },
+    {
+      "start": 1660.772,
+      "end": 1662.299,
+      "text": "You eat up, Audrey."
+    },
+    {
+      "start": 1662.749,
+      "end": 1665.288,
+      "text": "I'll be back in a flash with the cash."
+    },
+    {
+      "start": 1665.313,
+      "end": 1666.313,
+      "text": "Bye, Gravis."
+    },
+    {
+      "start": 1683.689,
+      "end": 1686.486,
+      "text": "♪ 'tis the season to be jolly"
+    },
+    {
+      "start": 1686.869,
+      "end": 1689.994,
+      "text": "♪ Fa-la-la-la-la, la-la-la-la-la-la-la."
+    },
+    {
+      "start": 1690.763,
+      "end": 1694.504,
+      "text": "♪ 'tis the season to be jolly"
+    },
+    {
+      "start": 1694.919,
+      "end": 1696.529,
+      "text": "♪ Fa-la-la-la"
+    },
+    {
+      "start": 1696.99,
+      "end": 1699.521,
+      "text": "♪ La-la-la"
+    },
+    {
+      "start": 1700.068,
+      "end": 1702.295,
+      "text": "♪ 'tis the season"
+    },
+    {
+      "start": 1703.31,
+      "end": 1705.091,
+      "text": "♪ To be jolly"
+    },
+    {
+      "start": 1705.247,
+      "end": 1707.868,
+      "text": "♪ Fa-la-la-la"
+    },
+    {
+      "start": 1707.935,
+      "end": 1709.974,
+      "text": "♪ La-la-la"
+    },
+    {
+      "start": 1713.942,
+      "end": 1715.294,
+      "text": "You're flush now, right?"
+    },
+    {
+      "start": 1716.224,
+      "end": 1719.279,
+      "text": "Bring me whiskey, rum, wine, gin, bourbon."
+    },
+    {
+      "start": 1719.458,
+      "end": 1723.747,
+      "text": "- Why? - Scotch, rye, tequila, sake, manishevitz"
+    },
+    {
+      "start": 1723.772,
+      "end": 1725.061,
+      "text": "Did you bring the money?"
+    },
+    {
+      "start": 1725.086,
+      "end": 1728.32,
+      "text": "Don't mock me with the money. I got to get drunk now."
+    },
+    {
+      "start": 1728.391,
+      "end": 1729.656,
+      "text": "What's with him?"
+    },
+    {
+      "start": 1729.681,
+      "end": 1730.681,
+      "text": "- I don't know. - Look."
+    },
+    {
+      "start": 1730.914,
+      "end": 1732.914,
+      "text": "Here, take it. Bring me anything."
+    },
+    {
+      "start": 1732.953,
+      "end": 1735.326,
+      "text": "Bring everything. Creme de menthe. Everything you've got!"
+    },
+    {
+      "start": 1735.351,
+      "end": 1736.382,
+      "text": "Ok!"
+    },
+    {
+      "start": 1737.742,
+      "end": 1738.742,
+      "text": "Gravis?"
+    },
+    {
+      "start": 1738.93,
+      "end": 1740.563,
+      "text": "- What happened? - Don't ask."
+    },
+    {
+      "start": 1740.774,
+      "end": 1742.172,
+      "text": "You look like you've seen a ghost."
+    },
+    {
+      "start": 1742.227,
+      "end": 1744.461,
+      "text": "Ghosts I could handle. Don't ask."
+    },
+    {
+      "start": 1744.64,
+      "end": 1746.224,
+      "text": "Why don't you tell me? Maybe I could help you."
+    },
+    {
+      "start": 1746.249,
+      "end": 1747.71,
+      "text": "Help, you couldn't."
+    },
+    {
+      "start": 1748.296,
+      "end": 1750.647,
+      "text": "Try and eat something. It'll calm your agrimation."
+    },
+    {
+      "start": 1753.702,
+      "end": 1755.07,
+      "text": "In mine own shop..."
+    },
+    {
+      "start": 1755.851,
+      "end": 1757.367,
+      "text": "Audrey, you wouldn't believe it."
+    },
+    {
+      "start": 1757.889,
+      "end": 1759.318,
+      "text": "I wish you'd break out and tell me."
+    },
+    {
+      "start": 1759.343,
+      "end": 1760.467,
+      "text": "Alright, I'll tell you."
+    },
+    {
+      "start": 1760.492,
+      "end": 1763.334,
+      "text": "Tomorrow. Right after I am telling the police."
+    },
+    {
+      "start": 1766.271,
+      "end": 1768.176,
+      "text": "But Mushnick didn't come to the police."
+    },
+    {
+      "start": 1768.975,
+      "end": 1769.975,
+      "text": "If he had..."
+    },
+    {
+      "start": 1770.154,
+      "end": 1772.471,
+      "text": "... that might have been the finish of the unhappy story."
+    },
+    {
+      "start": 1772.975,
+      "end": 1773.975,
+      "text": "It was not."
+    },
+    {
+      "start": 1791.418,
+      "end": 1792.418,
+      "text": "Hi, Gravis."
+    },
+    {
+      "start": 1792.838,
+      "end": 1796.316,
+      "text": "85 dollars worth of business already, and we've barely opened!"
+    },
+    {
+      "start": 1799.254,
+      "end": 1800.254,
+      "text": "What'd I tell you?"
+    },
+    {
+      "start": 1800.279,
+      "end": 1803.23,
+      "text": "You wouldn't be interested in selling a half-interest to this place, huh?"
+    },
+    {
+      "start": 1803.652,
+      "end": 1805.574,
+      "text": "- Mr. Mushnick. - We talked to the comittee."
+    },
+    {
+      "start": 1805.628,
+      "end": 1808.056,
+      "text": "- And they said we could use your flowers. - On the float."
+    },
+    {
+      "start": 1808.081,
+      "end": 1810.674,
+      "text": "- And guess what? - We're going to feature Audrey Jr."
+    },
+    {
+      "start": 1810.699,
+      "end": 1813.174,
+      "text": "- Right on top. - Can't you just picture it?"
+    },
+    {
+      "start": 1813.199,
+      "end": 1815.846,
+      "text": "- I can picture it. - Oh, won't the people just eat it up?"
+    },
+    {
+      "start": 1815.871,
+      "end": 1817.152,
+      "text": "Eat up the people."
+    },
+    {
+      "start": 1817.245,
+      "end": 1819.113,
+      "text": "And we're gonna have the big part of it open."
+    },
+    {
+      "start": 1819.245,
+      "end": 1820.574,
+      "text": "- Of course she can fit in it. - Who?"
+    },
+    {
+      "start": 1820.599,
+      "end": 1822.832,
+      "text": "- The queen. - With her crown and scepter."
+    },
+    {
+      "start": 1823.099,
+      "end": 1824.434,
+      "text": "She'll be so cute!"
+    },
+    {
+      "start": 1824.459,
+      "end": 1827.052,
+      "text": "- Oh, you could just eat her up. - Eat up the girl."
+    },
+    {
+      "start": 1827.099,
+      "end": 1828.568,
+      "text": "Oh, there's Seymour!"
+    },
+    {
+      "start": 1828.638,
+      "end": 1830.388,
+      "text": "Oh, Seymour!"
+    },
+    {
+      "start": 1830.413,
+      "end": 1831.874,
+      "text": "Ow, ow, ow, ow! I got a toothache."
+    },
+    {
+      "start": 1831.899,
+      "end": 1833.75,
+      "text": "Ow, I got a toothache. Really, I..."
+    },
+    {
+      "start": 1834.492,
+      "end": 1835.492,
+      "text": "You..."
+    },
+    {
+      "start": 1835.531,
+      "end": 1837.851,
+      "text": "- Come with me. - I got a toothache! It hurts!"
+    },
+    {
+      "start": 1837.876,
+      "end": 1839.476,
+      "text": "Ow, let go of my jaw."
+    },
+    {
+      "start": 1840.922,
+      "end": 1842.187,
+      "text": "Ow, my jaw. Ow, ow."
+    },
+    {
+      "start": 1842.398,
+      "end": 1843.664,
+      "text": "Owwww."
+    },
+    {
+      "start": 1843.758,
+      "end": 1844.875,
+      "text": "Now, Seymour."
+    },
+    {
+      "start": 1845.068,
+      "end": 1846.068,
+      "text": "Talk on me!"
+    },
+    {
+      "start": 1846.093,
+      "end": 1848.046,
+      "text": "I got a toothache. What do you wanna talk about?"
+    },
+    {
+      "start": 1848.071,
+      "end": 1850.968,
+      "text": "That plant. Is that a nice subject for to talk?"
+    },
+    {
+      "start": 1851.226,
+      "end": 1852.617,
+      "text": "The plant is great, it's..."
+    },
+    {
+      "start": 1852.642,
+      "end": 1854.163,
+      "text": "... it's it's four times bigger than it was yesterday."
+    },
+    {
+      "start": 1854.188,
+      "end": 1857.257,
+      "text": "I saw, I saw. How come the plant is now so big?"
+    },
+    {
+      "start": 1857.687,
+      "end": 1858.859,
+      "text": "I don't know."
+    },
+    {
+      "start": 1859.639,
+      "end": 1861.42,
+      "text": "But look at them people out there."
+    },
+    {
+      "start": 1861.553,
+      "end": 1864.631,
+      "text": "We only been open a half hour we already done 70 dollars worth of business."
+    },
+    {
+      "start": 1864.756,
+      "end": 1866.592,
+      "text": "85. Now look, Seymour."
+    },
+    {
+      "start": 1867.552,
+      "end": 1870.175,
+      "text": "You gave this plant a fancy name: Audrey Jr."
+    },
+    {
+      "start": 1870.2,
+      "end": 1873.054,
+      "text": "But I want to know right now what do just people call it?"
+    },
+    {
+      "start": 1873.371,
+      "end": 1874.371,
+      "text": "Well..."
+    },
+    {
+      "start": 1874.396,
+      "end": 1876.677,
+      "text": "well it's a cross between a butterworth and a venus flytrap."
+    },
+    {
+      "start": 1876.702,
+      "end": 1878.293,
+      "text": "Venus flytrap!"
+    },
+    {
+      "start": 1878.318,
+      "end": 1880.81,
+      "text": "And what are the habbits of this Venus flytrap?"
+    },
+    {
+      "start": 1881.037,
+      "end": 1882.825,
+      "text": "Well, the book says it eats insects."
+    },
+    {
+      "start": 1882.85,
+      "end": 1884.896,
+      "text": "It eats them three times in it's life..."
+    },
+    {
+      "start": 1884.952,
+      "end": 1886.842,
+      "text": "- ... and then it's full grown. - Excellent!"
+    },
+    {
+      "start": 1886.994,
+      "end": 1889.49,
+      "text": "And how many times is this one eat?"
+    },
+    {
+      "start": 1889.615,
+      "end": 1890.615,
+      "text": "Well..."
+    },
+    {
+      "start": 1891.077,
+      "end": 1892.209,
+      "text": "Once or twice."
+    },
+    {
+      "start": 1892.528,
+      "end": 1893.965,
+      "text": "You don't remember?"
+    },
+    {
+      "start": 1894.402,
+      "end": 1897.082,
+      "text": "Well, this is kind of an unusual type flytrap."
+    },
+    {
+      "start": 1897.207,
+      "end": 1899.309,
+      "text": "That is a possibility."
+    },
+    {
+      "start": 1900.05,
+      "end": 1902.76,
+      "text": "It may never eat again. I don't see how it could get any bigger."
+    },
+    {
+      "start": 1903.355,
+      "end": 1906.324,
+      "text": "Then you think it don't need any more flies?"
+    },
+    {
+      "start": 1907.105,
+      "end": 1908.105,
+      "text": "Yeah."
+    },
+    {
+      "start": 1910.62,
+      "end": 1912.714,
+      "text": "Ow, my tooth is just killing me."
+    },
+    {
+      "start": 1913.565,
+      "end": 1914.565,
+      "text": "Alright. Excellent."
+    },
+    {
+      "start": 1915.296,
+      "end": 1917.007,
+      "text": "You run along to the dentist."
+    },
+    {
+      "start": 1917.397,
+      "end": 1918.829,
+      "text": "I'll take care of things here."
+    },
+    {
+      "start": 1919.381,
+      "end": 1920.381,
+      "text": "Thanks, boss."
+    },
+    {
+      "start": 1921.077,
+      "end": 1924.085,
+      "text": "Gravis! We got to order more flowers."
+    },
+    {
+      "start": 1924.256,
+      "end": 1925.545,
+      "text": "Tons of them."
+    },
+    {
+      "start": 1931.61,
+      "end": 1933.251,
+      "text": "I'm making lots of money."
+    },
+    {
+      "start": 1944.733,
+      "end": 1946.936,
+      "text": "Argh! Argh! Argh!"
+    },
+    {
+      "start": 1947.647,
+      "end": 1949.03,
+      "text": "Please don't hurt!"
+    },
+    {
+      "start": 1949.155,
+      "end": 1950.491,
+      "text": "Please don't hurt me!"
+    },
+    {
+      "start": 1950.804,
+      "end": 1952.475,
+      "text": "Argh! Argh!"
+    },
+    {
+      "start": 1956.444,
+      "end": 1958.967,
+      "text": "That'll teach you to keep your bill up to date, you deadbeat!"
+    },
+    {
+      "start": 1959.022,
+      "end": 1961.296,
+      "text": "Argh! Argh! Argh!"
+    },
+    {
+      "start": 1966.386,
+      "end": 1967.706,
+      "text": "Well, then run, you snivelling dog!"
+    },
+    {
+      "start": 1968.104,
+      "end": 1970.386,
+      "text": "I'm glad, I hurt you. I'm glad. I'm glad."
+    },
+    {
+      "start": 1970.932,
+      "end": 1971.932,
+      "text": "Seymour."
+    },
+    {
+      "start": 1972.065,
+      "end": 1973.862,
+      "text": "Seymore. Got a bad tooth, huh?"
+    },
+    {
+      "start": 1973.887,
+      "end": 1975.385,
+      "text": "No, I thought this was the men's room!"
+    },
+    {
+      "start": 1975.417,
+      "end": 1978.644,
+      "text": "Seymour, come back here, you bad dog. You get in there."
+    },
+    {
+      "start": 1980.23,
+      "end": 1983.823,
+      "text": "So, you are the young man who ruined my gladiolas, huh?"
+    },
+    {
+      "start": 1983.848,
+      "end": 1984.848,
+      "text": "Sit down."
+    },
+    {
+      "start": 1984.873,
+      "end": 1986.23,
+      "text": "Come on."
+    },
+    {
+      "start": 1991.475,
+      "end": 1992.475,
+      "text": "Guess what?"
+    },
+    {
+      "start": 1992.492,
+      "end": 1994.209,
+      "text": "- My tooth stopped hurting. - My tooth stopped hurting."
+    },
+    {
+      "start": 1994.234,
+      "end": 1995.28,
+      "text": "Yes, I know."
+    },
+    {
+      "start": 1995.413,
+      "end": 1996.413,
+      "text": "Let's see."
+    },
+    {
+      "start": 1996.929,
+      "end": 1998.272,
+      "text": "Shut up and open up."
+    },
+    {
+      "start": 1998.569,
+      "end": 1999.569,
+      "text": "Uh-huh."
+    },
+    {
+      "start": 2000.809,
+      "end": 2001.809,
+      "text": "Ah."
+    },
+    {
+      "start": 2004.178,
+      "end": 2005.709,
+      "text": "- Argh! - Does that hurt?"
+    },
+    {
+      "start": 2005.803,
+      "end": 2008.178,
+      "text": "- Yeah! - Good. You haven't felt anything yet."
+    },
+    {
+      "start": 2008.388,
+      "end": 2010.778,
+      "text": "- Ah-ha. - It's this one over here."
+    },
+    {
+      "start": 2010.943,
+      "end": 2013.216,
+      "text": "Seymour. Who is the dentist here, you or me?"
+    },
+    {
+      "start": 2013.482,
+      "end": 2014.849,
+      "text": "I'll find that tooth."
+    },
+    {
+      "start": 2014.92,
+      "end": 2015.92,
+      "text": "M-hm."
+    },
+    {
+      "start": 2015.997,
+      "end": 2016.997,
+      "text": "Ah-ha."
+    },
+    {
+      "start": 2017.785,
+      "end": 2020.66,
+      "text": "Look at that stalagmite."
+    },
+    {
+      "start": 2020.707,
+      "end": 2023.41,
+      "text": "But don't worry. It's going to be an easy one, Seymour."
+    },
+    {
+      "start": 2023.435,
+      "end": 2024.857,
+      "text": "I won't even use Novocaine."
+    },
+    {
+      "start": 2025.061,
+      "end": 2027.232,
+      "text": "Ow, you poked the mirror in my mouth."
+    },
+    {
+      "start": 2027.257,
+      "end": 2029.24,
+      "text": "Well, don't tell me about it, stupid. Just swallow it."
+    },
+    {
+      "start": 2030.591,
+      "end": 2032.929,
+      "text": "Alright. Here's the thing now, Seymour."
+    },
+    {
+      "start": 2033.45,
+      "end": 2035.958,
+      "text": "I think I'll have this one and this one..."
+    },
+    {
+      "start": 2036.169,
+      "end": 2038.169,
+      "text": "... and that one and I have to have this one, Seymour!"
+    },
+    {
+      "start": 2038.194,
+      "end": 2039.443,
+      "text": "It's only one tooth."
+    },
+    {
+      "start": 2039.468,
+      "end": 2040.553,
+      "text": "Seymour, who is the dentist here, ..."
+    },
+    {
+      "start": 2040.578,
+      "end": 2043.132,
+      "text": ".. you or me? Are you practising dentistry without a license?"
+    },
+    {
+      "start": 2044.171,
+      "end": 2045.828,
+      "text": "- Alright - Uh-hu."
+    },
+    {
+      "start": 2045.976,
+      "end": 2047.117,
+      "text": "Let's see."
+    },
+    {
+      "start": 2048.406,
+      "end": 2050.57,
+      "text": "Oh shit! Seymour."
+    },
+    {
+      "start": 2050.859,
+      "end": 2054.062,
+      "text": "- ♪ Seymour, don't be... - Argh!"
+    },
+    {
+      "start": 2054.218,
+      "end": 2055.961,
+      "text": "Argh!"
+    },
+    {
+      "start": 2056.437,
+      "end": 2057.437,
+      "text": "Look at that."
+    },
+    {
+      "start": 2057.569,
+      "end": 2059.468,
+      "text": "Will you look at that, Seymour?"
+    },
+    {
+      "start": 2059.493,
+      "end": 2061.211,
+      "text": "I didn't know you were an elk."
+    },
+    {
+      "start": 2061.353,
+      "end": 2062.353,
+      "text": "Good."
+    },
+    {
+      "start": 2062.853,
+      "end": 2063.853,
+      "text": "You know..."
+    },
+    {
+      "start": 2064.048,
+      "end": 2066.055,
+      "text": "... I can't afford an assistant,..."
+    },
+    {
+      "start": 2066.219,
+      "end": 2069.172,
+      "text": "... so I get this ready instant mix."
+    },
+    {
+      "start": 2069.563,
+      "end": 2071.462,
+      "text": "It doesn't last very long but it tastes good."
+    },
+    {
+      "start": 2071.759,
+      "end": 2072.759,
+      "text": "Mmm."
+    },
+    {
+      "start": 2073.641,
+      "end": 2074.976,
+      "text": "Alright, Seymour."
+    },
+    {
+      "start": 2075.11,
+      "end": 2076.399,
+      "text": "Stay away from me!"
+    },
+    {
+      "start": 2076.437,
+      "end": 2078.578,
+      "text": "See? You're trying to kill me."
+    },
+    {
+      "start": 2078.618,
+      "end": 2080.618,
+      "text": "A duel! Ah-ha!"
+    },
+    {
+      "start": 2093.905,
+      "end": 2095.639,
+      "text": "Is this doctor's office?"
+    },
+    {
+      "start": 2095.671,
+      "end": 2096.975,
+      "text": "Just a minute!"
+    },
+    {
+      "start": 2098.85,
+      "end": 2100.514,
+      "text": "Aww, yes."
+    },
+    {
+      "start": 2102.35,
+      "end": 2103.569,
+      "text": "I see it is."
+    },
+    {
+      "start": 2107.219,
+      "end": 2109.336,
+      "text": "I... you-you can come in now."
+    },
+    {
+      "start": 2117.227,
+      "end": 2119.236,
+      "text": "My name is Wilbur Force."
+    },
+    {
+      "start": 2119.384,
+      "end": 2120.829,
+      "text": "Wilburforce what?"
+    },
+    {
+      "start": 2121.181,
+      "end": 2122.181,
+      "text": "Just..."
+    },
+    {
+      "start": 2122.742,
+      "end": 2123.812,
+      "text": "Wilbur Force."
+    },
+    {
+      "start": 2123.836,
+      "end": 2127.11,
+      "text": "My first name is Wilbur, my last name is Force."
+    },
+    {
+      "start": 2128.008,
+      "end": 2129.539,
+      "text": "I don't have a middle name."
+    },
+    {
+      "start": 2129.641,
+      "end": 2131.453,
+      "text": "Well, you have an appointment, maybe?"
+    },
+    {
+      "start": 2131.842,
+      "end": 2134.889,
+      "text": "I don't have a middle name well you have an appointment may be no but you were"
+    },
+    {
+      "start": 2135.202,
+      "end": 2136.475,
+      "text": "... one of your patients."
+    },
+    {
+      "start": 2136.508,
+      "end": 2138.288,
+      "text": "A Mrs. S. Shiva."
+    },
+    {
+      "start": 2138.313,
+      "end": 2141.093,
+      "text": "I do a lot of undertaking for her relatives."
+    },
+    {
+      "start": 2142.179,
+      "end": 2144.258,
+      "text": "Well, as you could see, I have a customer now..."
+    },
+    {
+      "start": 2144.757,
+      "end": 2148.444,
+      "text": "... and I'm all booked up for the rest of the day, so you have to come back tomorrow."
+    },
+    {
+      "start": 2148.686,
+      "end": 2150.303,
+      "text": "Oh, I couldn't do that."
+    },
+    {
+      "start": 2150.343,
+      "end": 2152.327,
+      "text": "I have three or four abscesses..."
+    },
+    {
+      "start": 2152.352,
+      "end": 2153.739,
+      "text": "... a touch of pyorrhea..."
+    },
+    {
+      "start": 2153.764,
+      "end": 2155.389,
+      "text": "... nine or ten cavities..."
+    },
+    {
+      "start": 2155.414,
+      "end": 2158.365,
+      "text": "I lost my pivot tooth and I'm in terrible pain."
+    },
+    {
+      "start": 2159.409,
+      "end": 2161.174,
+      "text": "Well, I-I can't help you today."
+    },
+    {
+      "start": 2161.511,
+      "end": 2163.292,
+      "text": "Oh, that's alright."
+    },
+    {
+      "start": 2163.323,
+      "end": 2165.339,
+      "text": "I'll go just wait outside."
+    },
+    {
+      "start": 2175.493,
+      "end": 2179.055,
+      "text": "The patient came to me with a large hole in his abdomen..."
+    },
+    {
+      "start": 2179.914,
+      "end": 2183.046,
+      "text": "... caused by a fire poker used on him by his wife."
+    },
+    {
+      "start": 2184.273,
+      "end": 2187.187,
+      "text": "He almost bled to death and gangrene had set in."
+    },
+    {
+      "start": 2187.89,
+      "end": 2189.921,
+      "text": "I didn't give me much of a chance."
+    },
+    {
+      "start": 2190.304,
+      "end": 2191.96,
+      "text": "There were other complications."
+    },
+    {
+      "start": 2192.343,
+      "end": 2196.929,
+      "text": "The man had cancer, tuberculosis, leprosy ..."
+    },
+    {
+      "start": 2197.085,
+      "end": 2198.898,
+      "text": "... and a touch of the grippe."
+    },
+    {
+      "start": 2199.999,
+      "end": 2201.788,
+      "text": "I decided to operate."
+    },
+    {
+      "start": 2201.874,
+      "end": 2204.023,
+      "text": "My... my patient just left."
+    },
+    {
+      "start": 2204.078,
+      "end": 2205.499,
+      "text": "You cou... you could come in now."
+    },
+    {
+      "start": 2206.006,
+      "end": 2207.077,
+      "text": "Oh goodie."
+    },
+    {
+      "start": 2209.694,
+      "end": 2212.343,
+      "text": "- I didn't see the other man leave. - Well..."
+    },
+    {
+      "start": 2212.452,
+      "end": 2214.045,
+      "text": "... he went out the back door"
+    },
+    {
+      "start": 2217.896,
+      "end": 2220.677,
+      "text": "You know, most people don't like to go to the dentist..."
+    },
+    {
+      "start": 2220.709,
+      "end": 2223.878,
+      "text": "... but I rather enjoy it myself, don't you?"
+    },
+    {
+      "start": 2223.911,
+      "end": 2225.09,
+      "text": "I mean there is such..."
+    },
+    {
+      "start": 2225.115,
+      "end": 2227.324,
+      "text": "... there is a real feeling of growth, of ..."
+    },
+    {
+      "start": 2227.699,
+      "end": 2228.699,
+      "text": "... of..."
+    },
+    {
+      "start": 2229.379,
+      "end": 2231.02,
+      "text": "... progress when that..."
+    },
+    {
+      "start": 2231.067,
+      "end": 2232.895,
+      "text": "... that old drill goes in..."
+    },
+    {
+      "start": 2233.068,
+      "end": 2237.059,
+      "text": "... and I'd almost rather go to the dentist than anywhere, wouldn't you?"
+    },
+    {
+      "start": 2237.084,
+      "end": 2238.084,
+      "text": "Yeah."
+    },
+    {
+      "start": 2239.029,
+      "end": 2240.529,
+      "text": "Now, no Novocaine."
+    },
+    {
+      "start": 2240.554,
+      "end": 2241.959,
+      "text": "It dulls the senses."
+    },
+    {
+      "start": 2243.28,
+      "end": 2245.71,
+      "text": "This is gonna hurt you more than it is me."
+    },
+    {
+      "start": 2245.735,
+      "end": 2247.749,
+      "text": "Oh, goodie goodie, here it comes."
+    },
+    {
+      "start": 2249.28,
+      "end": 2250.382,
+      "text": "Argh!"
+    },
+    {
+      "start": 2251.233,
+      "end": 2252.428,
+      "text": "Argh!"
+    },
+    {
+      "start": 2254.194,
+      "end": 2255.139,
+      "text": "Argh!"
+    },
+    {
+      "start": 2255.725,
+      "end": 2258.561,
+      "text": "Oh my god, don't stop now!"
+    },
+    {
+      "start": 2258.967,
+      "end": 2260.279,
+      "text": "Well, I made a lot of holes..."
+    },
+    {
+      "start": 2260.304,
+      "end": 2262.639,
+      "text": "... and now I've gotta fill it with this silver stuff."
+    },
+    {
+      "start": 2262.709,
+      "end": 2264.67,
+      "text": "Well, aren't you gonna pull any?"
+    },
+    {
+      "start": 2265.045,
+      "end": 2267.826,
+      "text": "- Well, uh... - Oh, come on."
+    },
+    {
+      "start": 2269.045,
+      "end": 2270.818,
+      "text": "Well, it's your mouth."
+    },
+    {
+      "start": 2279.198,
+      "end": 2280.261,
+      "text": "Argh!"
+    },
+    {
+      "start": 2281.448,
+      "end": 2282.573,
+      "text": "Argh!"
+    },
+    {
+      "start": 2284.089,
+      "end": 2285.042,
+      "text": "Argh!"
+    },
+    {
+      "start": 2288.409,
+      "end": 2289.698,
+      "text": "Well, Dr. Farb..."
+    },
+    {
+      "start": 2289.885,
+      "end": 2291.839,
+      "text": "... it's been quite an afternoon."
+    },
+    {
+      "start": 2292.028,
+      "end": 2295.494,
+      "text": "I can truly say I've never enjoyed myself so much."
+    },
+    {
+      "start": 2295.573,
+      "end": 2298.279,
+      "text": "I'll recommend you to all my friends."
+    },
+    {
+      "start": 2298.28,
+      "end": 2299.397,
+      "text": "Thank you. Bye."
+    },
+    {
+      "start": 2299.422,
+      "end": 2300.819,
+      "text": "Bye, now."
+    },
+    {
+      "start": 2309.519,
+      "end": 2311.555,
+      "text": "Feed me!"
+    },
+    {
+      "start": 2311.605,
+      "end": 2312.909,
+      "text": "Oh, take it easy, Dracula."
+    },
+    {
+      "start": 2312.934,
+      "end": 2315.214,
+      "text": "What do you think I'm carrying here? My dirty laundry?"
+    },
+    {
+      "start": 2320.325,
+      "end": 2321.434,
+      "text": "Feed!"
+    },
+    {
+      "start": 2321.566,
+      "end": 2323.56,
+      "text": "I'm coming! I'm coming already."
+    },
+    {
+      "start": 2328.869,
+      "end": 2330.29,
+      "text": "This should be enough for anybody."
+    },
+    {
+      "start": 2330.315,
+      "end": 2331.315,
+      "text": "Mhm."
+    },
+    {
+      "start": 2331.34,
+      "end": 2333.057,
+      "text": "Fooood."
+    },
+    {
+      "start": 2338.162,
+      "end": 2340.068,
+      "text": "Well, goodbye Dr. Farb."
+    },
+    {
+      "start": 2340.638,
+      "end": 2343.224,
+      "text": "You may have been a crummy dentist but you were a nice fellow."
+    },
+    {
+      "start": 2343.855,
+      "end": 2346.12,
+      "text": "I never meant to kill anybody in my whole life."
+    },
+    {
+      "start": 2346.175,
+      "end": 2348.57,
+      "text": "Now I killed two in the last two days."
+    },
+    {
+      "start": 2349.62,
+      "end": 2352.448,
+      "text": "Well, he asked for it coming at me with that knife and all."
+    },
+    {
+      "start": 2353.808,
+      "end": 2355.425,
+      "text": "Bon voyage, Dr Farb."
+    },
+    {
+      "start": 2356.19,
+      "end": 2357.237,
+      "text": "Want anything else?"
+    },
+    {
+      "start": 2357.511,
+      "end": 2359.244,
+      "text": "[BURP]"
+    },
+    {
+      "start": 2359.541,
+      "end": 2360.541,
+      "text": "[BURP]"
+    },
+    {
+      "start": 2361.291,
+      "end": 2362.596,
+      "text": "See you in the morning."
+    },
+    {
+      "start": 2382.419,
+      "end": 2383.419,
+      "text": "Come in."
+    },
+    {
+      "start": 2384.857,
+      "end": 2385.857,
+      "text": "It's me, Joe."
+    },
+    {
+      "start": 2386.342,
+      "end": 2387.342,
+      "text": "Good morning, Frank."
+    },
+    {
+      "start": 2388.287,
+      "end": 2389.369,
+      "text": "How's the wife, Frank?"
+    },
+    {
+      "start": 2389.451,
+      "end": 2391.193,
+      "text": "- Not bad, Joe. - Glad to hear it."
+    },
+    {
+      "start": 2391.443,
+      "end": 2393.014,
+      "text": "- The kids? - Lost one yesterday."
+    },
+    {
+      "start": 2393.21,
+      "end": 2394.842,
+      "text": "Awful, eh? How did that happen?"
+    },
+    {
+      "start": 2395.015,
+      "end": 2396.335,
+      "text": "Playing with matches."
+    },
+    {
+      "start": 2396.36,
+      "end": 2397.538,
+      "text": "Well, those are the breaks."
+    },
+    {
+      "start": 2397.749,
+      "end": 2398.749,
+      "text": "Yeah, I guess so."
+    },
+    {
+      "start": 2399.079,
+      "end": 2400.165,
+      "text": "Got a strange one here."
+    },
+    {
+      "start": 2400.352,
+      "end": 2402.938,
+      "text": "Railroad people say the last one of their best detectives the other night."
+    },
+    {
+      "start": 2402.963,
+      "end": 2403.883,
+      "text": "Where?"
+    },
+    {
+      "start": 2403.908,
+      "end": 2404.907,
+      "text": "Down by the yards."
+    },
+    {
+      "start": 2405.039,
+      "end": 2406.562,
+      "text": "He was watching refrigerator cars."
+    },
+    {
+      "start": 2406.905,
+      "end": 2408.109,
+      "text": "Refrigerator cars?"
+    },
+    {
+      "start": 2408.648,
+      "end": 2410.874,
+      "text": "- Ice thieves. - Oh yeah? What happened?"
+    },
+    {
+      "start": 2410.899,
+      "end": 2411.898,
+      "text": "Don't know."
+    },
+    {
+      "start": 2411.898,
+      "end": 2413.796,
+      "text": "- Vanished, right on the tracks. - Clues?"
+    },
+    {
+      "start": 2414.608,
+      "end": 2415.608,
+      "text": "None."
+    },
+    {
+      "start": 2415.633,
+      "end": 2416.633,
+      "text": "Anything else?"
+    },
+    {
+      "start": 2416.781,
+      "end": 2418.211,
+      "text": "Dentist. Farb."
+    },
+    {
+      "start": 2418.351,
+      "end": 2419.796,
+      "text": "- Dead? - Missing."
+    },
+    {
+      "start": 2420.023,
+      "end": 2421.132,
+      "text": "Clues?"
+    },
+    {
+      "start": 2421.234,
+      "end": 2422.632,
+      "text": "- Blood in the office. - Where?"
+    },
+    {
+      "start": 2422.679,
+      "end": 2424.444,
+      "text": "- Skid Row. - Ideas?"
+    },
+    {
+      "start": 2425.171,
+      "end": 2426.296,
+      "text": "- None. - Check it out?"
+    },
+    {
+      "start": 2427.288,
+      "end": 2428.288,
+      "text": "Yeah."
+    },
+    {
+      "start": 2436.421,
+      "end": 2437.882,
+      "text": "Now we were on the case,"
+    },
+    {
+      "start": 2438.273,
+      "end": 2439.851,
+      "text": "... officer Frank Stoolie and me."
+    },
+    {
+      "start": 2440.609,
+      "end": 2441.726,
+      "text": "My name is Fink."
+    },
+    {
+      "start": 2442.617,
+      "end": 2443.726,
+      "text": "Sergeant Joe Fink."
+    },
+    {
+      "start": 2444.773,
+      "end": 2445.773,
+      "text": "I'm a fink."
+    },
+    {
+      "start": 2465.035,
+      "end": 2466.339,
+      "text": "Morning, Mr Mushnick."
+    },
+    {
+      "start": 2467.207,
+      "end": 2469.152,
+      "text": "Oh, boy, look at that!"
+    },
+    {
+      "start": 2469.426,
+      "end": 2470.73,
+      "text": "Hi, everybody."
+    },
+    {
+      "start": 2471.777,
+      "end": 2473.566,
+      "text": "Oh, my god!"
+    },
+    {
+      "start": 2473.652,
+      "end": 2475.511,
+      "text": "- Ain't it something? - It's..."
+    },
+    {
+      "start": 2476.05,
+      "end": 2477.824,
+      "text": "It's monstrositous!"
+    },
+    {
+      "start": 2478.034,
+      "end": 2479.034,
+      "text": "Yeah."
+    },
+    {
+      "start": 2479.542,
+      "end": 2481.886,
+      "text": "And to think that you did it."
+    },
+    {
+      "start": 2483.589,
+      "end": 2485.565,
+      "text": "Gee, Audrey. You don't have to kiss me."
+    },
+    {
+      "start": 2486.081,
+      "end": 2487.699,
+      "text": "Don't you like me to kiss you?"
+    },
+    {
+      "start": 2488.284,
+      "end": 2490.596,
+      "text": "Yeah, but... you don't like to kiss me."
+    },
+    {
+      "start": 2491.05,
+      "end": 2492.128,
+      "text": "Why shouldn't I?"
+    },
+    {
+      "start": 2492.518,
+      "end": 2494.167,
+      "text": "Nobody else ever did."
+    },
+    {
+      "start": 2494.526,
+      "end": 2495.831,
+      "text": "Well, I do like to."
+    },
+    {
+      "start": 2495.994,
+      "end": 2498.274,
+      "text": "You do? You really do? You like to kiss me?"
+    },
+    {
+      "start": 2498.299,
+      "end": 2499.206,
+      "text": "Sure, I do."
+    },
+    {
+      "start": 2499.231,
+      "end": 2500.847,
+      "text": "Would... would you like to kiss me again?"
+    },
+    {
+      "start": 2501.19,
+      "end": 2502.19,
+      "text": "Ok."
+    },
+    {
+      "start": 2502.215,
+      "end": 2503.627,
+      "text": "That plant..."
+    },
+    {
+      "start": 2506.569,
+      "end": 2509.374,
+      "text": "Oh, boy! You kiss good, Audrey."
+    },
+    {
+      "start": 2509.428,
+      "end": 2511.795,
+      "text": "Oh, I guess I just have a good kisser."
+    },
+    {
+      "start": 2511.82,
+      "end": 2513.662,
+      "text": "H-h-h-how d-d-did..."
+    },
+    {
+      "start": 2513.687,
+      "end": 2515.912,
+      "text": "Would you like to go out on a date with me some night?"
+    },
+    {
+      "start": 2516.053,
+      "end": 2518.186,
+      "text": "- When...? - Oh, sure I would, Seymour."
+    },
+    {
+      "start": 2518.211,
+      "end": 2519.906,
+      "text": "- Any time. - Tonight?"
+    },
+    {
+      "start": 2520.224,
+      "end": 2521.255,
+      "text": "Ok."
+    },
+    {
+      "start": 2521.639,
+      "end": 2524.076,
+      "text": "- Oh, boy! - A-a-a-about that plant..."
+    },
+    {
+      "start": 2525.037,
+      "end": 2526.475,
+      "text": "- We got the list. - Of flowers."
+    },
+    {
+      "start": 2526.5,
+      "end": 2528.514,
+      "text": "- For the float. - For the rose parade."
+    },
+    {
+      "start": 2528.561,
+      "end": 2530.514,
+      "text": "I can't talk to you now, girls."
+    },
+    {
+      "start": 2530.764,
+      "end": 2531.879,
+      "text": "Talk on Audrey."
+    },
+    {
+      "start": 2531.88,
+      "end": 2533.662,
+      "text": "- We got the list. - With the float."
+    },
+    {
+      "start": 2533.687,
+      "end": 2535.452,
+      "text": "- It's ok. Let's take a look at it. - Ok."
+    },
+    {
+      "start": 2535.569,
+      "end": 2536.593,
+      "text": "Hi, what's cookin'?"
+    },
+    {
+      "start": 2536.679,
+      "end": 2537.679,
+      "text": "Look at my plant."
+    },
+    {
+      "start": 2537.983,
+      "end": 2540.24,
+      "text": "- My, what a large one. - Yeah."
+    },
+    {
+      "start": 2545.817,
+      "end": 2547.864,
+      "text": "Hello, Mrs. Shiva. What's new?"
+    },
+    {
+      "start": 2548.059,
+      "end": 2550.075,
+      "text": "Oy, I got terrible news."
+    },
+    {
+      "start": 2550.739,
+      "end": 2553.379,
+      "text": "My nephew Frankie just lost his little boy."
+    },
+    {
+      "start": 2553.481,
+      "end": 2554.887,
+      "text": "Oh, that's too bad."
+    },
+    {
+      "start": 2554.912,
+      "end": 2555.927,
+      "text": "How did it happen?"
+    },
+    {
+      "start": 2555.952,
+      "end": 2557.606,
+      "text": "He was playing with matches."
+    },
+    {
+      "start": 2557.757,
+      "end": 2559.553,
+      "text": "Would you like to buy, maybe, some flowers?"
+    },
+    {
+      "start": 2559.811,
+      "end": 2561.967,
+      "text": "Nah... about 50 cents worth."
+    },
+    {
+      "start": 2562.085,
+      "end": 2564.1,
+      "text": "So I'll get the for you. Look at my plant!"
+    },
+    {
+      "start": 2564.202,
+      "end": 2565.608,
+      "text": "I'm looking."
+    },
+    {
+      "start": 2571.584,
+      "end": 2574.568,
+      "text": "- Your name Gravis Mushnick? - M-M-Mushnick, Gravis. That's my name."
+    },
+    {
+      "start": 2574.732,
+      "end": 2575.865,
+      "text": "Just want to ask you a few questions."
+    },
+    {
+      "start": 2575.89,
+      "end": 2578.059,
+      "text": "- Questions ask me why? - Just want to ask a few questions."
+    },
+    {
+      "start": 2578.084,
+      "end": 2579.326,
+      "text": "I-I didn't do it."
+    },
+    {
+      "start": 2579.38,
+      "end": 2580.686,
+      "text": "- Do what? - Whatever."
+    },
+    {
+      "start": 2580.779,
+      "end": 2581.621,
+      "text": "Ever see this man?"
+    },
+    {
+      "start": 2581.646,
+      "end": 2583.021,
+      "text": "Man... see... picture..."
+    },
+    {
+      "start": 2583.209,
+      "end": 2584.208,
+      "text": "Why are you so nervous?"
+    },
+    {
+      "start": 2584.233,
+      "end": 2585.233,
+      "text": "You got a guilty conscience?"
+    },
+    {
+      "start": 2585.278,
+      "end": 2586.575,
+      "text": "No! Why should I?"
+    },
+    {
+      "start": 2586.6,
+      "end": 2587.379,
+      "text": "Ever see this man?"
+    },
+    {
+      "start": 2587.404,
+      "end": 2589.223,
+      "text": "Man... see... this-this picture..."
+    },
+    {
+      "start": 2589.248,
+      "end": 2590.497,
+      "text": "Dr. Farb."
+    },
+    {
+      "start": 2591.363,
+      "end": 2592.933,
+      "text": "- So you know him? - He's my dentist."
+    },
+    {
+      "start": 2592.995,
+      "end": 2595.105,
+      "text": "He... eh... maybe did something?"
+    },
+    {
+      "start": 2595.262,
+      "end": 2596.824,
+      "text": "- He disappeared. - Blood in his office."
+    },
+    {
+      "start": 2596.849,
+      "end": 2597.746,
+      "text": "Another man, too."
+    },
+    {
+      "start": 2597.771,
+      "end": 2599.511,
+      "text": "Blood on the railroad tracks."
+    },
+    {
+      "start": 2600.333,
+      "end": 2602.989,
+      "text": "- Dr. Farb is murdered? - Is he?"
+    },
+    {
+      "start": 2603.091,
+      "end": 2605.13,
+      "text": "Who knows? Not me!"
+    },
+    {
+      "start": 2606.075,
+      "end": 2607.075,
+      "text": "What do you think?"
+    },
+    {
+      "start": 2607.786,
+      "end": 2608.904,
+      "text": "He doesn't know anything."
+    },
+    {
+      "start": 2609.318,
+      "end": 2610.318,
+      "text": "Ok, Mushnick."
+    },
+    {
+      "start": 2610.505,
+      "end": 2612.068,
+      "text": "If you hear anything about these men..."
+    },
+    {
+      "start": 2612.093,
+      "end": 2613.012,
+      "text": "...call our office."
+    },
+    {
+      "start": 2613.067,
+      "end": 2614.683,
+      "text": "Sure, I'll be glad to..."
+    },
+    {
+      "start": 2614.731,
+      "end": 2616.637,
+      "text": "...cooperate with the police."
+    },
+    {
+      "start": 2616.895,
+      "end": 2617.895,
+      "text": "Hello, aunt Siddie."
+    },
+    {
+      "start": 2617.92,
+      "end": 2620.949,
+      "text": "Oh, isn't it terrible what happened to your boy, Frankie?"
+    },
+    {
+      "start": 2620.974,
+      "end": 2622.489,
+      "text": "Those are the breaks."
+    },
+    {
+      "start": 2626.966,
+      "end": 2628.005,
+      "text": "Alright, Seymour."
+    },
+    {
+      "start": 2628.03,
+      "end": 2631.645,
+      "text": "Now you tell me if this plant is finished all grown up."
+    },
+    {
+      "start": 2632.138,
+      "end": 2634.529,
+      "text": "- It's finished all growning up. - You wouldn't kid your father?"
+    },
+    {
+      "start": 2634.591,
+      "end": 2636.364,
+      "text": "- My father came home? - Me, idiot!"
+    },
+    {
+      "start": 2636.389,
+      "end": 2637.864,
+      "text": "It's a finger of speech."
+    },
+    {
+      "start": 2637.989,
+      "end": 2638.989,
+      "text": "Now look..."
+    },
+    {
+      "start": 2639.014,
+      "end": 2641.25,
+      "text": "I can't stand anymore that plant."
+    },
+    {
+      "start": 2641.275,
+      "end": 2643.715,
+      "text": "It's growing me out of house and home."
+    },
+    {
+      "start": 2644.075,
+      "end": 2646.02,
+      "text": "It ain't gonna grow anymore. I promise."
+    },
+    {
+      "start": 2646.059,
+      "end": 2647.637,
+      "text": "How can you be so sure?"
+    },
+    {
+      "start": 2648.028,
+      "end": 2649.629,
+      "text": "It ate three times already."
+    },
+    {
+      "start": 2649.925,
+      "end": 2651.206,
+      "text": "Who... I mean..."
+    },
+    {
+      "start": 2651.386,
+      "end": 2653.425,
+      "text": "...what did it eat this time?"
+    },
+    {
+      "start": 2653.589,
+      "end": 2655.995,
+      "text": "Well, abou... about a million Japanese beetles."
+    },
+    {
+      "start": 2656.48,
+      "end": 2657.948,
+      "text": "So don't eat no more?"
+    },
+    {
+      "start": 2659.159,
+      "end": 2660.159,
+      "text": "It's full."
+    },
+    {
+      "start": 2660.253,
+      "end": 2661.253,
+      "text": "Gravis?"
+    },
+    {
+      "start": 2662.83,
+      "end": 2665.353,
+      "text": "There's a lady from some kind of a committance outside."
+    },
+    {
+      "start": 2665.44,
+      "end": 2666.908,
+      "text": "I think it's important."
+    },
+    {
+      "start": 2668.134,
+      "end": 2669.134,
+      "text": "Excellent."
+    },
+    {
+      "start": 2669.205,
+      "end": 2670.213,
+      "text": "By the by..."
+    },
+    {
+      "start": 2670.791,
+      "end": 2673.384,
+      "text": "...I understand you want to take Audrey out on a date tonight."
+    },
+    {
+      "start": 2673.807,
+      "end": 2675.072,
+      "text": "That's very good with me."
+    },
+    {
+      "start": 2675.384,
+      "end": 2678.556,
+      "text": "Because I am staying to keep an eye on that meshugana plant."
+    },
+    {
+      "start": 2683.158,
+      "end": 2685.002,
+      "text": "So, where are we gonna go tonight, Seymour."
+    },
+    {
+      "start": 2685.494,
+      "end": 2687.781,
+      "text": "I-I-I just remembered: I don't have any money."
+    },
+    {
+      "start": 2688.463,
+      "end": 2689.619,
+      "text": "Well, that's ok."
+    },
+    {
+      "start": 2690.009,
+      "end": 2692.728,
+      "text": "We could take a walk along the ocean or something."
+    },
+    {
+      "start": 2693.681,
+      "end": 2695.978,
+      "text": "I got a great idea. We could eat dinner at my house."
+    },
+    {
+      "start": 2696.063,
+      "end": 2698.493,
+      "text": "- My mom's a great cook. - Oh, that's swell!"
+    },
+    {
+      "start": 2698.532,
+      "end": 2700.423,
+      "text": "Oh, boy, I'll call later and tell her."
+    },
+    {
+      "start": 2700.517,
+      "end": 2701.306,
+      "text": "Ok."
+    },
+    {
+      "start": 2705.359,
+      "end": 2708.195,
+      "text": "Oh, that's remarkable."
+    },
+    {
+      "start": 2708.702,
+      "end": 2709.702,
+      "text": "You like?"
+    },
+    {
+      "start": 2710.829,
+      "end": 2713.69,
+      "text": "I neither like nor dislike anything, my goodness."
+    },
+    {
+      "start": 2715.676,
+      "end": 2718.028,
+      "text": "I happen to represent the society of..."
+    },
+    {
+      "start": 2718.314,
+      "end": 2721.34,
+      "text": "... Silent Flower Observers of Southern California."
+    },
+    {
+      "start": 2721.403,
+      "end": 2722.793,
+      "text": "How about that?"
+    },
+    {
+      "start": 2723.145,
+      "end": 2724.145,
+      "text": "Tell me..."
+    },
+    {
+      "start": 2724.34,
+      "end": 2727.48,
+      "text": "... who created this magnificent bloom?"
+    },
+    {
+      "start": 2728.858,
+      "end": 2730.233,
+      "text": "I did. Me."
+    },
+    {
+      "start": 2730.258,
+      "end": 2731.083,
+      "text": "Oh."
+    },
+    {
+      "start": 2731.108,
+      "end": 2733.303,
+      "text": "A-a-and what might your name be?"
+    },
+    {
+      "start": 2733.421,
+      "end": 2735.272,
+      "text": "Seymour Krelborn, with a K."
+    },
+    {
+      "start": 2735.685,
+      "end": 2737.49,
+      "text": "- Krelboind? - Krelborn."
+    },
+    {
+      "start": 2738.013,
+      "end": 2739.646,
+      "text": "Raised in the coffee can."
+    },
+    {
+      "start": 2740.45,
+      "end": 2741.45,
+      "text": "This..."
+    },
+    {
+      "start": 2741.685,
+      "end": 2742.566,
+      "text": "Well..."
+    },
+    {
+      "start": 2742.591,
+      "end": 2744.349,
+      "text": "Tell me, Mr. Krelboind..."
+    },
+    {
+      "start": 2744.7,
+      "end": 2747.911,
+      "text": "Is this a freak or can more be raised from the seeds?"
+    },
+    {
+      "start": 2747.998,
+      "end": 2749.153,
+      "text": "We should live so long."
+    },
+    {
+      "start": 2749.192,
+      "end": 2751.612,
+      "text": "Well, I don't think there gonna be will be any more, Miss, uh,..."
+    },
+    {
+      "start": 2751.637,
+      "end": 2752.637,
+      "text": "Feuchtwanger."
+    },
+    {
+      "start": 2752.661,
+      "end": 2754.427,
+      "text": "Mrs Hortense Feuchtwanger."
+    },
+    {
+      "start": 2754.551,
+      "end": 2757.746,
+      "text": "I think this is gonna be the only one, Mrs. Fishswinger."
+    },
+    {
+      "start": 2758.316,
+      "end": 2759.316,
+      "text": "Feuchtwanger."
+    },
+    {
+      "start": 2759.965,
+      "end": 2760.981,
+      "text": "Feuchtwanger?"
+    },
+    {
+      "start": 2761.092,
+      "end": 2762.855,
+      "text": "Well, it's probably indigestible anyway."
+    },
+    {
+      "start": 2766.014,
+      "end": 2767.014,
+      "text": "At any rate..."
+    },
+    {
+      "start": 2767.686,
+      "end": 2770.881,
+      "text": "... I have the honour to tell you, Seymour Krelboind,..."
+    },
+    {
+      "start": 2771.381,
+      "end": 2774.881,
+      "text": "... that you have been selected to receive the annual trophy..."
+    },
+    {
+      "start": 2774.906,
+      "end": 2778.638,
+      "text": "of the Society of Silent Flower Observers of Southern California."
+    },
+    {
+      "start": 2778.686,
+      "end": 2780.084,
+      "text": "A trophy? Me?"
+    },
+    {
+      "start": 2780.131,
+      "end": 2782.217,
+      "text": "Such is justice..."
+    },
+    {
+      "start": 2782.443,
+      "end": 2786.175,
+      "text": "But tell me: When do you suppose those large buds will open?"
+    },
+    {
+      "start": 2786.528,
+      "end": 2789.52,
+      "text": "Well according to what the book says about the plants that I crossed..."
+    },
+    {
+      "start": 2789.82,
+      "end": 2792.219,
+      "text": "... they should open the day after tomorrow at sunset."
+    },
+    {
+      "start": 2792.346,
+      "end": 2793.567,
+      "text": "Ah, very well."
+    },
+    {
+      "start": 2793.598,
+      "end": 2795.903,
+      "text": "Then I shall return at that time to present the trophy"
+    },
+    {
+      "start": 2796.115,
+      "end": 2797.115,
+      "text": "Good day."
+    },
+    {
+      "start": 2803.895,
+      "end": 2805.051,
+      "text": "Remarkable."
+    },
+    {
+      "start": 2809.613,
+      "end": 2811.668,
+      "text": "Oh boy! I'm gonna get a trophy!"
+    },
+    {
+      "start": 2811.699,
+      "end": 2813.698,
+      "text": "Oh, Seymour. I'm so proud of you."
+    },
+    {
+      "start": 2813.723,
+      "end": 2816.526,
+      "text": "Oh, a real trophy for Audrey Jr.!"
+    },
+    {
+      "start": 2816.551,
+      "end": 2818.764,
+      "text": "- We'll put it on the float. - In the rose parade."
+    },
+    {
+      "start": 2818.801,
+      "end": 2820.028,
+      "text": "Oh, boy!"
+    },
+    {
+      "start": 2823.8,
+      "end": 2825.847,
+      "text": "Don't look at me. I-I'm a terrible sight."
+    },
+    {
+      "start": 2826.019,
+      "end": 2827.777,
+      "text": "I-I'm a complete sea hag."
+    },
+    {
+      "start": 2827.948,
+      "end": 2829.886,
+      "text": "- She always says that. - O, well, it's true."
+    },
+    {
+      "start": 2829.957,
+      "end": 2832.05,
+      "text": "I haven't been feelin' very well lately."
+    },
+    {
+      "start": 2832.245,
+      "end": 2834.683,
+      "text": "Audrey, this is my ma, Winifred Krelborn."
+    },
+    {
+      "start": 2834.729,
+      "end": 2836.37,
+      "text": "Ma, this is Audrey Fulquard."
+    },
+    {
+      "start": 2836.395,
+      "end": 2837.292,
+      "text": "She's my girl."
+    },
+    {
+      "start": 2837.317,
+      "end": 2839.113,
+      "text": "Hi Audrey. Are you hungry?"
+    },
+    {
+      "start": 2839.138,
+      "end": 2841.145,
+      "text": "I sure am. I could eat a horse."
+    },
+    {
+      "start": 2841.17,
+      "end": 2844.473,
+      "text": "Oh. Well, sit right down, and I'll go get the first course."
+    },
+    {
+      "start": 2848.348,
+      "end": 2849.348,
+      "text": "Sit here, Audrey."
+    },
+    {
+      "start": 2850.598,
+      "end": 2851.785,
+      "text": "You want me to take your sweater?"
+    },
+    {
+      "start": 2852.043,
+      "end": 2853.317,
+      "text": "Well... yeah."
+    },
+    {
+      "start": 2861.732,
+      "end": 2862.803,
+      "text": "Never mind that."
+    },
+    {
+      "start": 2863.069,
+      "end": 2864.569,
+      "text": "Well, now try this."
+    },
+    {
+      "start": 2871.382,
+      "end": 2873.163,
+      "text": "It tastes like cough syrup."
+    },
+    {
+      "start": 2873.265,
+      "end": 2875.273,
+      "text": "Dr. Phlegm's cough syrup"
+    },
+    {
+      "start": 2875.5,
+      "end": 2876.5,
+      "text": "A toast?"
+    },
+    {
+      "start": 2877.794,
+      "end": 2880.42,
+      "text": "- To Audrey Jr.! - No, to Audrey Sr.!"
+    },
+    {
+      "start": 2904.16,
+      "end": 2906.277,
+      "text": "You! You glutton, you!"
+    },
+    {
+      "start": 2906.596,
+      "end": 2908.112,
+      "text": "Tonight I keep an eye on you."
+    },
+    {
+      "start": 2908.137,
+      "end": 2910.761,
+      "text": "I don't let nobody get near you."
+    },
+    {
+      "start": 2921.22,
+      "end": 2922.618,
+      "text": "Coming soup."
+    },
+    {
+      "start": 2924.173,
+      "end": 2926.642,
+      "text": "No, don't touch it till I get a little flavouring."
+    },
+    {
+      "start": 2927.806,
+      "end": 2928.806,
+      "text": "Gee, Audrey."
+    },
+    {
+      "start": 2928.844,
+      "end": 2930.62,
+      "text": "You sure look good by candlelight."
+    },
+    {
+      "start": 2931.079,
+      "end": 2932.665,
+      "text": "Do I really, Seymour?"
+    },
+    {
+      "start": 2932.704,
+      "end": 2934.493,
+      "text": "- Yes. - Here you are."
+    },
+    {
+      "start": 2937.375,
+      "end": 2938.375,
+      "text": "Now try."
+    },
+    {
+      "start": 2939.227,
+      "end": 2940.578,
+      "text": "Sure smells different."
+    },
+    {
+      "start": 2940.664,
+      "end": 2941.836,
+      "text": "It's different."
+    },
+    {
+      "start": 2943.039,
+      "end": 2944.711,
+      "text": "Some kind of oil, isn't it?"
+    },
+    {
+      "start": 2945.045,
+      "end": 2946.248,
+      "text": "Cod liver oil."
+    },
+    {
+      "start": 2946.802,
+      "end": 2948.208,
+      "text": "Wonderful for the colon."
+    },
+    {
+      "start": 2948.326,
+      "end": 2950.349,
+      "text": "And that's sulphur powder on top."
+    },
+    {
+      "start": 2955.669,
+      "end": 2958.888,
+      "text": "Feed me."
+    },
+    {
+      "start": 2962.49,
+      "end": 2965.052,
+      "text": "Feed me!"
+    },
+    {
+      "start": 2966.974,
+      "end": 2969.178,
+      "text": "I'm hungry."
+    },
+    {
+      "start": 2977.647,
+      "end": 2978.647,
+      "text": "Open it is."
+    },
+    {
+      "start": 2978.818,
+      "end": 2980.116,
+      "text": "Feed me!"
+    },
+    {
+      "start": 2983.647,
+      "end": 2984.678,
+      "text": "I didn't hear it."
+    },
+    {
+      "start": 2985.069,
+      "end": 2986.318,
+      "text": "Feed me!"
+    },
+    {
+      "start": 2986.343,
+      "end": 2987.343,
+      "text": "I heard it."
+    },
+    {
+      "start": 2988.256,
+      "end": 2990.647,
+      "text": "I want food."
+    },
+    {
+      "start": 2991.733,
+      "end": 2993.451,
+      "text": "A talking plant we got."
+    },
+    {
+      "start": 2993.592,
+      "end": 2995.608,
+      "text": "I'm hungry."
+    },
+    {
+      "start": 2995.959,
+      "end": 2996.959,
+      "text": "No."
+    },
+    {
+      "start": 2997.358,
+      "end": 2998.358,
+      "text": "Hungry?"
+    },
+    {
+      "start": 2998.865,
+      "end": 3001.108,
+      "text": "And other fine kettle von fish!"
+    },
+    {
+      "start": 3001.974,
+      "end": 3003.974,
+      "text": "Who would you like to have tonight?"
+    },
+    {
+      "start": 3004.669,
+      "end": 3006.427,
+      "text": "You look fat enough."
+    },
+    {
+      "start": 3008.622,
+      "end": 3012.192,
+      "text": "We not only got a talking plant, we got one that makes with smart cracks."
+    },
+    {
+      "start": 3012.849,
+      "end": 3015.903,
+      "text": "Will you listen to me, you botanical bum?"
+    },
+    {
+      "start": 3016.239,
+      "end": 3017.567,
+      "text": "Food you wouldn't get."
+    },
+    {
+      "start": 3017.958,
+      "end": 3019.45,
+      "text": "Not from Gravis Mushnick."
+    },
+    {
+      "start": 3019.583,
+      "end": 3021.184,
+      "text": "I'm starved."
+    },
+    {
+      "start": 3021.3,
+      "end": 3022.411,
+      "text": "Excellent."
+    },
+    {
+      "start": 3022.856,
+      "end": 3025.146,
+      "text": "You would unpopulate all Skid Row."
+    },
+    {
+      "start": 3025.341,
+      "end": 3026.341,
+      "text": "Well..."
+    },
+    {
+      "start": 3027.208,
+      "end": 3028.829,
+      "text": "You can forget about it."
+    },
+    {
+      "start": 3029.223,
+      "end": 3031.83,
+      "text": "You wouldn't get fed from Gravis mushnick tonight."
+    },
+    {
+      "start": 3033.473,
+      "end": 3034.473,
+      "text": "Good night"
+    },
+    {
+      "start": 3035.051,
+      "end": 3036.762,
+      "text": "You'll get yours."
+    },
+    {
+      "start": 3043.949,
+      "end": 3045.644,
+      "text": "I kinda like this chow mein."
+    },
+    {
+      "start": 3045.831,
+      "end": 3047.308,
+      "text": "Uh, if it tastes a little bitter..."
+    },
+    {
+      "start": 3047.333,
+      "end": 3050.316,
+      "text": "... it's because it's made of Chinese herbs and it's..."
+    },
+    {
+      "start": 3050.527,
+      "end": 3052.069,
+      "text": "... flavored with accra myosin."
+    },
+    {
+      "start": 3052.238,
+      "end": 3053.238,
+      "text": "Epsom salt."
+    },
+    {
+      "start": 3053.675,
+      "end": 3056.059,
+      "text": "There ain't another cook in the whole world like my ma."
+    },
+    {
+      "start": 3056.105,
+      "end": 3058.738,
+      "text": "That's what your old man said before the last ran out on me."
+    },
+    {
+      "start": 3058.808,
+      "end": 3061.738,
+      "text": "You know, if you're gonna be married, you gotta be a good cook."
+    },
+    {
+      "start": 3062.239,
+      "end": 3063.942,
+      "text": "Maybe you could teach me."
+    },
+    {
+      "start": 3064.083,
+      "end": 3065.458,
+      "text": "You thinkin' to get married?"
+    },
+    {
+      "start": 3066.31,
+      "end": 3068.638,
+      "text": "- He hasn't asked me yet. - Who hasn't?"
+    },
+    {
+      "start": 3068.865,
+      "end": 3069.865,
+      "text": "Seymour."
+    },
+    {
+      "start": 3070.091,
+      "end": 3071.849,
+      "text": "Seymour's too young to get married."
+    },
+    {
+      "start": 3071.997,
+      "end": 3075.235,
+      "text": "Look here. A boy's got to go and play around a little bit."
+    },
+    {
+      "start": 3075.356,
+      "end": 3076.528,
+      "text": "Go out on the makin'."
+    },
+    {
+      "start": 3076.553,
+      "end": 3077.623,
+      "text": "Have a ball."
+    },
+    {
+      "start": 3077.856,
+      "end": 3080.63,
+      "text": "Gee, ma. I don't wanna have a ball. I wanna be with Audrey."
+    },
+    {
+      "start": 3080.778,
+      "end": 3082.602,
+      "text": "- Now look, Seymour. - Oh, Seymour."
+    },
+    {
+      "start": 3082.689,
+      "end": 3086.252,
+      "text": "You promised you wouldn't get married until you bought me an iron lung."
+    },
+    {
+      "start": 3086.588,
+      "end": 3088.494,
+      "text": "You've been breathing for years, ma."
+    },
+    {
+      "start": 3088.619,
+      "end": 3089.83,
+      "text": "Well, it ain't easy."
+    },
+    {
+      "start": 3090.041,
+      "end": 3091.682,
+      "text": "It ain't easy, son."
+    },
+    {
+      "start": 3113.687,
+      "end": 3114.851,
+      "text": "Nobody's here."
+    },
+    {
+      "start": 3115.32,
+      "end": 3117.398,
+      "text": "Black cats, 13th job..."
+    },
+    {
+      "start": 3117.423,
+      "end": 3119.9,
+      "text": "Friday 13th. Stupid superstition."
+    },
+    {
+      "start": 3124.235,
+      "end": 3125.235,
+      "text": "Alright, you."
+    },
+    {
+      "start": 3125.26,
+      "end": 3126.329,
+      "text": "Come out of there."
+    },
+    {
+      "start": 3126.831,
+      "end": 3128.034,
+      "text": "Don't shoot, Mister."
+    },
+    {
+      "start": 3128.455,
+      "end": 3131.252,
+      "text": "I'm old and sick. I wouldn't hurt even a fly."
+    },
+    {
+      "start": 3132.502,
+      "end": 3134.219,
+      "text": "Come out in the light where I can see you."
+    },
+    {
+      "start": 3135.798,
+      "end": 3136.798,
+      "text": "Come on."
+    },
+    {
+      "start": 3136.823,
+      "end": 3137.979,
+      "text": "Please don't shoot."
+    },
+    {
+      "start": 3138.081,
+      "end": 3139.081,
+      "text": "Please."
+    },
+    {
+      "start": 3139.197,
+      "end": 3141.612,
+      "text": "Please. I'm only Gravis Mushnick. You wouldn't want to kill me."
+    },
+    {
+      "start": 3141.643,
+      "end": 3142.843,
+      "text": "Where would you hide the body?"
+    },
+    {
+      "start": 3143.245,
+      "end": 3145.175,
+      "text": "Don't worry. I'm not gonna shoot you."
+    },
+    {
+      "start": 3145.643,
+      "end": 3147.244,
+      "text": "- Not unless you try something. - Try something?"
+    },
+    {
+      "start": 3147.269,
+      "end": 3148.854,
+      "text": "I never tried anything in my life."
+    },
+    {
+      "start": 3149.167,
+      "end": 3151.526,
+      "text": "I wouldn't try anything now. You want my money? Take it."
+    },
+    {
+      "start": 3151.551,
+      "end": 3154.853,
+      "text": "You want I should go out and steal you some more? That's alright, too. I'll do it."
+    },
+    {
+      "start": 3155.228,
+      "end": 3156.603,
+      "text": "Thank you very much."
+    },
+    {
+      "start": 3157.572,
+      "end": 3159.642,
+      "text": "I like your brand of hospitality."
+    },
+    {
+      "start": 3160.54,
+      "end": 3163.11,
+      "text": "You'll excuse it isn't more. I'm only a poor florist"
+    },
+    {
+      "start": 3163.135,
+      "end": 3164.135,
+      "text": "Yeah, yeah."
+    },
+    {
+      "start": 3165.336,
+      "end": 3166.821,
+      "text": "You got about 30 bucks here."
+    },
+    {
+      "start": 3167.5,
+      "end": 3169.039,
+      "text": "Come on now. Where's the rest of it?"
+    },
+    {
+      "start": 3169.179,
+      "end": 3172.406,
+      "text": "I was in here this afternoon. I saw about 30,000 people in here..."
+    },
+    {
+      "start": 3172.53,
+      "end": 3173.921,
+      "text": "They must have spent some money. Where is it?"
+    },
+    {
+      "start": 3174,
+      "end": 3176.156,
+      "text": "There ain't no more money. They came in to look on the plant."
+    },
+    {
+      "start": 3176.181,
+      "end": 3178.265,
+      "text": "It's a big attraction. Audrey Jr."
+    },
+    {
+      "start": 3178.681,
+      "end": 3179.72,
+      "text": "The plant. Don't try to snow me, Jim."
+    },
+    {
+      "start": 3179.745,
+      "end": 3181.845,
+      "text": "30,000 square didn't come in just to look for a plant."
+    },
+    {
+      "start": 3181.87,
+      "end": 3182.869,
+      "text": "I want it!"
+    },
+    {
+      "start": 3184,
+      "end": 3186.289,
+      "text": "I don't got no more money. Honest. Believe me."
+    },
+    {
+      "start": 3186.336,
+      "end": 3187.414,
+      "text": "Ok, let's try this."
+    },
+    {
+      "start": 3187.656,
+      "end": 3188.656,
+      "text": "One..."
+    },
+    {
+      "start": 3188.867,
+      "end": 3189.867,
+      "text": "Two..."
+    },
+    {
+      "start": 3189.938,
+      "end": 3190.938,
+      "text": "Three..."
+    },
+    {
+      "start": 3191.084,
+      "end": 3193.423,
+      "text": "- Four... - I ain't got no more money, honest!"
+    },
+    {
+      "start": 3193.654,
+      "end": 3195.997,
+      "text": "Alright. Try it the other way around. Five..."
+    },
+    {
+      "start": 3196.053,
+      "end": 3197.053,
+      "text": "Four..."
+    },
+    {
+      "start": 3197.091,
+      "end": 3198.091,
+      "text": "Three..."
+    },
+    {
+      "start": 3198.139,
+      "end": 3199.217,
+      "text": "- Two... - Alright."
+    },
+    {
+      "start": 3199.242,
+      "end": 3200.31,
+      "text": "Alright."
+    },
+    {
+      "start": 3200.429,
+      "end": 3201.757,
+      "text": "Alright, big bad. Where?"
+    },
+    {
+      "start": 3203.515,
+      "end": 3204.718,
+      "text": "In the plant."
+    },
+    {
+      "start": 3205.495,
+      "end": 3206.754,
+      "text": "In the plant?"
+    },
+    {
+      "start": 3207.443,
+      "end": 3209.402,
+      "text": "The big plant, Audrey Jr."
+    },
+    {
+      "start": 3212.791,
+      "end": 3214.299,
+      "text": "I-inside the big leaf?"
+    },
+    {
+      "start": 3214.487,
+      "end": 3216.183,
+      "text": "That's right. Inside."
+    },
+    {
+      "start": 3217.267,
+      "end": 3219.12,
+      "text": "H-h-how do you get it open?"
+    },
+    {
+      "start": 3220.815,
+      "end": 3221.815,
+      "text": "Just knock."
+    },
+    {
+      "start": 3238.274,
+      "end": 3239.274,
+      "text": "In there?"
+    },
+    {
+      "start": 3239.299,
+      "end": 3240.299,
+      "text": "In there."
+    },
+    {
+      "start": 3241.071,
+      "end": 3242.071,
+      "text": "Inside."
+    },
+    {
+      "start": 3242.328,
+      "end": 3243.468,
+      "text": "In the bottom."
+    },
+    {
+      "start": 3243.493,
+      "end": 3244.696,
+      "text": "I don't see anything."
+    },
+    {
+      "start": 3246.249,
+      "end": 3247.609,
+      "text": "Way inside."
+    },
+    {
+      "start": 3248.141,
+      "end": 3249.477,
+      "text": "Right at the bottom."
+    },
+    {
+      "start": 3262.792,
+      "end": 3264.23,
+      "text": "Argh!"
+    },
+    {
+      "start": 3268.927,
+      "end": 3270.502,
+      "text": "Oi, what I did?"
+    },
+    {
+      "start": 3274.425,
+      "end": 3277.198,
+      "text": "I don't care about you got a date with Audrey tonight."
+    },
+    {
+      "start": 3277.223,
+      "end": 3280.175,
+      "text": "I am no more sitting up with that no-goodnik plant."
+    },
+    {
+      "start": 3282.503,
+      "end": 3285.159,
+      "text": "But, see, Mr. Mushnick, you don't have to sit up with it any more."
+    },
+    {
+      "start": 3285.184,
+      "end": 3286.847,
+      "text": "- It's all grown up now. - Excellent."
+    },
+    {
+      "start": 3287.3,
+      "end": 3290.05,
+      "text": "Smart guy. How do you know it don't be hungry no more?"
+    },
+    {
+      "start": 3290.075,
+      "end": 3292.398,
+      "text": "- Well because... - Tonight you are staying!"
+    },
+    {
+      "start": 3292.563,
+      "end": 3295.024,
+      "text": "Then tomorrow they are coming and they are going to give you a trophy..."
+    },
+    {
+      "start": 3295.049,
+      "end": 3299.117,
+      "text": "... and then after that we are getting rid once and for all for that plant!"
+    },
+    {
+      "start": 3299.281,
+      "end": 3302.328,
+      "text": "- Getting rid of it? Why? - Don't ask. Why? Why?"
+    },
+    {
+      "start": 3302.405,
+      "end": 3304.28,
+      "text": "The end. Into the garbage can."
+    },
+    {
+      "start": 3304.305,
+      "end": 3305.757,
+      "text": "Aloha."
+    },
+    {
+      "start": 3305.843,
+      "end": 3308.078,
+      "text": "Oi. Yes, Mrs. Shiva?"
+    },
+    {
+      "start": 3308.14,
+      "end": 3309.32,
+      "text": "Oh, Seymour."
+    },
+    {
+      "start": 3309.351,
+      "end": 3311.029,
+      "text": "Your wonderful plant!"
+    },
+    {
+      "start": 3311.054,
+      "end": 3312.468,
+      "text": "Oh, that's alright, Audrey."
+    },
+    {
+      "start": 3312.546,
+      "end": 3314.898,
+      "text": "I'll grow other plants, even more wonderful ones."
+    },
+    {
+      "start": 3315.171,
+      "end": 3316.499,
+      "text": "I know you will."
+    },
+    {
+      "start": 3317.147,
+      "end": 3319.124,
+      "text": "Did you figure out what we're doing tonight?"
+    },
+    {
+      "start": 3319.64,
+      "end": 3322.467,
+      "text": "Yeah we're going to place full of beautiful flowers."
+    },
+    {
+      "start": 3322.932,
+      "end": 3324.885,
+      "text": "- We have to stay here. - Yeah."
+    },
+    {
+      "start": 3325.205,
+      "end": 3327.598,
+      "text": "Well, never mind. We'll have a picnic."
+    },
+    {
+      "start": 3327.682,
+      "end": 3329.51,
+      "text": "It'll be just like going to the country."
+    },
+    {
+      "start": 3329.611,
+      "end": 3330.925,
+      "text": "- Oh, boy! - ...flowers and..."
+    },
+    {
+      "start": 3330.95,
+      "end": 3332.502,
+      "text": "... and pink azaleas, for the arbour,..."
+    },
+    {
+      "start": 3332.527,
+      "end": 3335.392,
+      "text": "- ... and the 9000 yellow mons for the... - For the border."
+    },
+    {
+      "start": 3335.519,
+      "end": 3338.578,
+      "text": "- And the... the roses - I got them around the back."
+    },
+    {
+      "start": 3339.996,
+      "end": 3343.58,
+      "text": "What do you mean you're going to a picnic at night with that Fulquard girl?"
+    },
+    {
+      "start": 3343.8,
+      "end": 3345.261,
+      "text": "Don't you like Audrey, ma?"
+    },
+    {
+      "start": 3345.339,
+      "end": 3346.788,
+      "text": "She's out after your money."
+    },
+    {
+      "start": 3347.034,
+      "end": 3348.308,
+      "text": "I don't have any money."
+    },
+    {
+      "start": 3348.37,
+      "end": 3350.295,
+      "text": "Oh, she's a smart one."
+    },
+    {
+      "start": 3350.495,
+      "end": 3354.542,
+      "text": "She'll latch onto ya till ya get some and then goodbye, fortune!"
+    },
+    {
+      "start": 3354.761,
+      "end": 3356.636,
+      "text": "But Audrey's honest girl, ma."
+    },
+    {
+      "start": 3356.698,
+      "end": 3359.597,
+      "text": "Yeah, never trust a woman who's too healthy"
+    },
+    {
+      "start": 3359.971,
+      "end": 3362.283,
+      "text": "But Audrey had a bad cold a few weeks ago."
+    },
+    {
+      "start": 3362.354,
+      "end": 3364.698,
+      "text": "Oh, cold, a puny cold."
+    },
+    {
+      "start": 3364.955,
+      "end": 3367.065,
+      "text": "Why don't you get yourself a real female with..."
+    },
+    {
+      "start": 3367.09,
+      "end": 3368.487,
+      "text": "... something decent like..."
+    },
+    {
+      "start": 3368.512,
+      "end": 3371.133,
+      "text": "... pneumonoconiosis, or-or gall stones?"
+    },
+    {
+      "start": 3371.188,
+      "end": 3373.088,
+      "text": "Well, maybe she could catch something like that."
+    },
+    {
+      "start": 3373.113,
+      "end": 3375.598,
+      "text": "The only thing she'll catch is you."
+    },
+    {
+      "start": 3376.23,
+      "end": 3378.98,
+      "text": "And she'll take you off to some shady sanatorium..."
+    },
+    {
+      "start": 3379.005,
+      "end": 3382.334,
+      "text": "... and leave me to chiropractors and faith healers."
+    },
+    {
+      "start": 3382.919,
+      "end": 3384.84,
+      "text": "I know when I'm not wanted."
+    },
+    {
+      "start": 3385.919,
+      "end": 3387.512,
+      "text": "Oh, gee, ma."
+    },
+    {
+      "start": 3387.537,
+      "end": 3389.341,
+      "text": "Don't feel sorry for me."
+    },
+    {
+      "start": 3390.068,
+      "end": 3392.825,
+      "text": "I'll just find a nice, wet alley somewhere..."
+    },
+    {
+      "start": 3392.85,
+      "end": 3394.896,
+      "text": "... and curl up and wait for the end."
+    },
+    {
+      "start": 3395.154,
+      "end": 3397.763,
+      "text": "Oh, please don't die till I get back, will you ma?"
+    },
+    {
+      "start": 3397.841,
+      "end": 3400.333,
+      "text": "I'll take care of you. I'll always take care of you, I promise!"
+    },
+    {
+      "start": 3400.358,
+      "end": 3401.763,
+      "text": "- Yeah. - Bye."
+    },
+    {
+      "start": 3407.99,
+      "end": 3410.404,
+      "text": "Gee, Audrey, I've never tasted food like this before."
+    },
+    {
+      "start": 3410.795,
+      "end": 3413.013,
+      "text": "It's a peanut butter and jelly sandwich"
+    },
+    {
+      "start": 3413.146,
+      "end": 3415.058,
+      "text": "Peanut butter and jelly - what does that cure?"
+    },
+    {
+      "start": 3415.575,
+      "end": 3417.354,
+      "text": "Nothing. It's just a food."
+    },
+    {
+      "start": 3417.441,
+      "end": 3419.331,
+      "text": "What good is it if it doesn't clear up pimples..."
+    },
+    {
+      "start": 3419.356,
+      "end": 3421.348,
+      "text": "... or shrink your sinus tissues or something?"
+    },
+    {
+      "start": 3421.449,
+      "end": 3423.629,
+      "text": "You're just being silly, Seymour."
+    },
+    {
+      "start": 3424.996,
+      "end": 3427.13,
+      "text": "Seymour, what do you wanna be?"
+    },
+    {
+      "start": 3427.902,
+      "end": 3429.582,
+      "text": "Oh, I wanna grow things."
+    },
+    {
+      "start": 3429.963,
+      "end": 3432.019,
+      "text": "If I had a lot of money, I'd go to the South Seas,.."
+    },
+    {
+      "start": 3432.044,
+      "end": 3434.417,
+      "text": "... where they grow the most fabulous plants in the world."
+    },
+    {
+      "start": 3434.511,
+      "end": 3436.065,
+      "text": "That sounds exciting."
+    },
+    {
+      "start": 3436.41,
+      "end": 3437.41,
+      "text": "Yeah."
+    },
+    {
+      "start": 3437.435,
+      "end": 3439.855,
+      "text": "I'd like to go to the South Seas, too."
+    },
+    {
+      "start": 3439.956,
+      "end": 3441.846,
+      "text": "There's no reason why you couldn't go."
+    },
+    {
+      "start": 3442.494,
+      "end": 3444.429,
+      "text": "Would you take me with you, Seymour?"
+    },
+    {
+      "start": 3444.494,
+      "end": 3447.198,
+      "text": "Oh, I couldn't very well go without you, Audrey."
+    },
+    {
+      "start": 3447.456,
+      "end": 3448.456,
+      "text": "Why not?"
+    },
+    {
+      "start": 3448.979,
+      "end": 3449.979,
+      "text": "Because..."
+    },
+    {
+      "start": 3450.214,
+      "end": 3451.768,
+      "text": "Because I'm in love with you, Audrey."
+    },
+    {
+      "start": 3452.026,
+      "end": 3454.135,
+      "text": "Oh, I'm in love with you, too, Seymour."
+    },
+    {
+      "start": 3455.08,
+      "end": 3456.361,
+      "text": "Feed me."
+    },
+    {
+      "start": 3457.345,
+      "end": 3458.345,
+      "text": "What'd you say?"
+    },
+    {
+      "start": 3458.525,
+      "end": 3459.9,
+      "text": "I'm... I'm just kidding."
+    },
+    {
+      "start": 3460.971,
+      "end": 3462.752,
+      "text": "I'm hungry!"
+    },
+    {
+      "start": 3462.784,
+      "end": 3463.784,
+      "text": "Seymour!"
+    },
+    {
+      "start": 3463.955,
+      "end": 3466.369,
+      "text": "- I didn't mean it. - Why did you say it?"
+    },
+    {
+      "start": 3466.525,
+      "end": 3469.088,
+      "text": "Oh. Food."
+    },
+    {
+      "start": 3469.697,
+      "end": 3470.994,
+      "text": "You didn't even say that."
+    },
+    {
+      "start": 3471.019,
+      "end": 3472.744,
+      "text": "Oh yes I did. I said it. I said it."
+    },
+    {
+      "start": 3472.783,
+      "end": 3474.533,
+      "text": "Oh, I'm looking right at you."
+    },
+    {
+      "start": 3474.876,
+      "end": 3476.869,
+      "text": "Well, I'm a ventriloquist."
+    },
+    {
+      "start": 3476.988,
+      "end": 3477.805,
+      "text": "You're what?"
+    },
+    {
+      "start": 3477.83,
+      "end": 3479.946,
+      "text": "- A ventrilo... - Feed me!"
+    },
+    {
+      "start": 3480.774,
+      "end": 3482.47,
+      "text": "Seymour, do you feel all right?"
+    },
+    {
+      "start": 3482.495,
+      "end": 3484.547,
+      "text": "Well, I don't know. I'm not sure."
+    },
+    {
+      "start": 3484.735,
+      "end": 3487.517,
+      "text": "Well, then stop all this nonsense and kiss me."
+    },
+    {
+      "start": 3488.423,
+      "end": 3490.673,
+      "text": "I'm dying from hunger!"
+    },
+    {
+      "start": 3490.698,
+      "end": 3493.344,
+      "text": "Alright, if you're so hungry, eat something but..."
+    },
+    {
+      "start": 3493.547,
+      "end": 3494.649,
+      "text": "... forget about me."
+    },
+    {
+      "start": 3494.817,
+      "end": 3495.817,
+      "text": "Gee, I'm sorry, Audrey."
+    },
+    {
+      "start": 3495.842,
+      "end": 3497.662,
+      "text": "Give me to eat!"
+    },
+    {
+      "start": 3497.701,
+      "end": 3500.185,
+      "text": "If you can't control yourself, I'm going home."
+    },
+    {
+      "start": 3500.21,
+      "end": 3502.334,
+      "text": "I need some chow."
+    },
+    {
+      "start": 3504.468,
+      "end": 3506.827,
+      "text": "Ooh, my empty stomach."
+    },
+    {
+      "start": 3508.109,
+      "end": 3510.414,
+      "text": "Audrey, please wait. Listen to me."
+    },
+    {
+      "start": 3510.508,
+      "end": 3513.43,
+      "text": "I've listened to all the nonsense I wanna hear, Seymour."
+    },
+    {
+      "start": 3513.664,
+      "end": 3514.727,
+      "text": "You're a nut."
+    },
+    {
+      "start": 3514.801,
+      "end": 3518.279,
+      "text": "You tell me that you love me and then you you act like a complete idiot."
+    },
+    {
+      "start": 3518.28,
+      "end": 3519.82,
+      "text": "Please listen, Audrey."
+    },
+    {
+      "start": 3519.883,
+      "end": 3522,
+      "text": "I'll be able to explain everything soon."
+    },
+    {
+      "start": 3522.15,
+      "end": 3524.095,
+      "text": "Why can't you explain now?"
+    },
+    {
+      "start": 3524.697,
+      "end": 3526.806,
+      "text": "Because so many things are so important."
+    },
+    {
+      "start": 3527.283,
+      "end": 3528.423,
+      "text": "I wanna marry you."
+    },
+    {
+      "start": 3528.548,
+      "end": 3530.368,
+      "text": "But I gotta take care of mom."
+    },
+    {
+      "start": 3530.595,
+      "end": 3533.204,
+      "text": "Well, that plant in there is gonna make it all come true."
+    },
+    {
+      "start": 3533.958,
+      "end": 3536.458,
+      "text": "Tomorrow they're gonna give me a trophy and I'll be famous."
+    },
+    {
+      "start": 3536.591,
+      "end": 3538.099,
+      "text": "I'll be a big botanist."
+    },
+    {
+      "start": 3538.552,
+      "end": 3541.231,
+      "text": "And then we can go to the South Seas just like we planned and all."
+    },
+    {
+      "start": 3541.256,
+      "end": 3544.349,
+      "text": "But that doesn't have anything to do with what went on in there."
+    },
+    {
+      "start": 3545.052,
+      "end": 3547.388,
+      "text": "When you're ready to come to your senses, Seymour,..."
+    },
+    {
+      "start": 3547.716,
+      "end": 3549.115,
+      "text": "... then I'll talk to you."
+    },
+    {
+      "start": 3549.778,
+      "end": 3550.949,
+      "text": "Good night, Seymour."
+    },
+    {
+      "start": 3559.662,
+      "end": 3561.271,
+      "text": "Feed."
+    },
+    {
+      "start": 3562.122,
+      "end": 3563.802,
+      "text": "I'm getting pretty tired of you."
+    },
+    {
+      "start": 3564.006,
+      "end": 3565.912,
+      "text": "I need food."
+    },
+    {
+      "start": 3565.951,
+      "end": 3567.224,
+      "text": "I don't care what you need."
+    },
+    {
+      "start": 3567.287,
+      "end": 3568.498,
+      "text": "Look what you've done to me."
+    },
+    {
+      "start": 3568.568,
+      "end": 3571.404,
+      "text": "You not only made a butcher outta me, you drove my girl away."
+    },
+    {
+      "start": 3571.45,
+      "end": 3573.982,
+      "text": "Shut up, and bring on the food!"
+    },
+    {
+      "start": 3574.426,
+      "end": 3576.278,
+      "text": "Don't tell me to shut up - you shut up!"
+    },
+    {
+      "start": 3577.044,
+      "end": 3578.847,
+      "text": "Who raised you from a bunch of little seeds?"
+    },
+    {
+      "start": 3579.004,
+      "end": 3582.859,
+      "text": "Who fed you all them high-class fertilizers and sat up with you when you were sick?"
+    },
+    {
+      "start": 3583.223,
+      "end": 3585.012,
+      "text": "Nodody else would have done that for you."
+    },
+    {
+      "start": 3585.073,
+      "end": 3588.011,
+      "text": "You think anybody else would have brought you human beings to eat?"
+    },
+    {
+      "start": 3588.362,
+      "end": 3589.714,
+      "text": "Darm right, they wouldn't."
+    },
+    {
+      "start": 3590.077,
+      "end": 3592.756,
+      "text": "Well, I've helped you and you've helped me."
+    },
+    {
+      "start": 3592.781,
+      "end": 3595.031,
+      "text": "Now shut your trap and go to sleep. I'm tired."
+    },
+    {
+      "start": 3595.187,
+      "end": 3596.187,
+      "text": "Krelborn!"
+    },
+    {
+      "start": 3596.905,
+      "end": 3597.905,
+      "text": "Turn around!"
+    },
+    {
+      "start": 3600.28,
+      "end": 3601.764,
+      "text": "Close your eyes."
+    },
+    {
+      "start": 3603.538,
+      "end": 3605.21,
+      "text": "You are asleep."
+    },
+    {
+      "start": 3606.444,
+      "end": 3607.78,
+      "text": "Open your eyes."
+    },
+    {
+      "start": 3609.1,
+      "end": 3611.322,
+      "text": "Now you will do as I say."
+    },
+    {
+      "start": 3611.405,
+      "end": 3612.756,
+      "text": "Will you follow me?"
+    },
+    {
+      "start": 3612.842,
+      "end": 3614.038,
+      "text": "Yes, master."
+    },
+    {
+      "start": 3614.318,
+      "end": 3618.646,
+      "text": "You will go out and find me some food!"
+    },
+    {
+      "start": 3618.959,
+      "end": 3620.185,
+      "text": "Yes, master."
+    },
+    {
+      "start": 3620.326,
+      "end": 3621.771,
+      "text": "Now begone."
+    },
+    {
+      "start": 3622.192,
+      "end": 3623.864,
+      "text": "And waste no time."
+    },
+    {
+      "start": 3644.551,
+      "end": 3645.551,
+      "text": "Idiot!"
+    },
+    {
+      "start": 3685.995,
+      "end": 3687.995,
+      "text": "My name is Leonora Clyde."
+    },
+    {
+      "start": 3688.665,
+      "end": 3690.581,
+      "text": "How's the rain on the rhubarb?"
+    },
+    {
+      "start": 3691.88,
+      "end": 3693.706,
+      "text": "Master is hungry."
+    },
+    {
+      "start": 3703.392,
+      "end": 3704.759,
+      "text": "Well, hello there."
+    },
+    {
+      "start": 3735.148,
+      "end": 3737.46,
+      "text": "I gotta find food for master."
+    },
+    {
+      "start": 3738.187,
+      "end": 3740.21,
+      "text": "Food I gotta find for master."
+    },
+    {
+      "start": 3741.147,
+      "end": 3743.716,
+      "text": "For master I gotta find food."
+    },
+    {
+      "start": 3744.897,
+      "end": 3746.42,
+      "text": "Maybe I can help."
+    },
+    {
+      "start": 3747.264,
+      "end": 3749.935,
+      "text": "- Who're you? - My name is Leonora Clyde."
+    },
+    {
+      "start": 3749.96,
+      "end": 3751.365,
+      "text": "I love you."
+    },
+    {
+      "start": 3752.515,
+      "end": 3754.366,
+      "text": "Master wants food."
+    },
+    {
+      "start": 3754.765,
+      "end": 3756.413,
+      "text": "Let the old goat wait."
+    },
+    {
+      "start": 3756.491,
+      "end": 3758.827,
+      "text": "The night is young and so are we."
+    },
+    {
+      "start": 3759.069,
+      "end": 3760.757,
+      "text": "Master doesn't eat goat."
+    },
+    {
+      "start": 3765.308,
+      "end": 3768.089,
+      "text": "Well what kind of food does he like?"
+    },
+    {
+      "start": 3770.855,
+      "end": 3771.987,
+      "text": "Oooh."
+    },
+    {
+      "start": 3772.777,
+      "end": 3774.192,
+      "text": "That's more like it."
+    },
+    {
+      "start": 3774.217,
+      "end": 3775.217,
+      "text": "Kiss me!"
+    },
+    {
+      "start": 3779.122,
+      "end": 3781.059,
+      "text": "What's the matter, don't you like me?"
+    },
+    {
+      "start": 3781.333,
+      "end": 3782.575,
+      "text": "Too bony."
+    },
+    {
+      "start": 3782.613,
+      "end": 3783.719,
+      "text": "Too bony?"
+    },
+    {
+      "start": 3783.72,
+      "end": 3785.292,
+      "text": "Nobody ever told me that before."
+    },
+    {
+      "start": 3785.317,
+      "end": 3787.152,
+      "text": "Beef is better than veal."
+    },
+    {
+      "start": 3787.848,
+      "end": 3788.848,
+      "text": "Ach."
+    },
+    {
+      "start": 3788.91,
+      "end": 3790.395,
+      "text": "You're such a dodo."
+    },
+    {
+      "start": 3790.511,
+      "end": 3792.863,
+      "text": "What do you call this? Chopped liver?"
+    },
+    {
+      "start": 3793.754,
+      "end": 3794.754,
+      "text": "Mmm."
+    },
+    {
+      "start": 3795.339,
+      "end": 3796.738,
+      "text": "Haha."
+    },
+    {
+      "start": 3797.074,
+      "end": 3799.121,
+      "text": "Master would like more fat."
+    },
+    {
+      "start": 3799.394,
+      "end": 3801.315,
+      "text": "Speak for yourself, John."
+    },
+    {
+      "start": 3803.167,
+      "end": 3804.639,
+      "text": "My name is Seymour."
+    },
+    {
+      "start": 3804.752,
+      "end": 3806.393,
+      "text": "\"My name is Seymour.\""
+    },
+    {
+      "start": 3806.651,
+      "end": 3808.003,
+      "text": "That's my name, too."
+    },
+    {
+      "start": 3808.893,
+      "end": 3812.221,
+      "text": "Ach. Are you interested are you just wasting my time?"
+    },
+    {
+      "start": 3812.573,
+      "end": 3814.745,
+      "text": "I never thought anybody would volunteer."
+    },
+    {
+      "start": 3814.886,
+      "end": 3816.05,
+      "text": "Do you volunteer?"
+    },
+    {
+      "start": 3816.144,
+      "end": 3817.48,
+      "text": "Sure I do."
+    },
+    {
+      "start": 3818.042,
+      "end": 3820.674,
+      "text": "Alright, if you're sure you want to... volunteer."
+    },
+    {
+      "start": 3821.057,
+      "end": 3823.159,
+      "text": "Alright. My place or yours?"
+    },
+    {
+      "start": 3823.321,
+      "end": 3824.415,
+      "text": "I don't care."
+    },
+    {
+      "start": 3824.721,
+      "end": 3826.667,
+      "text": "Well,... flip a coin."
+    },
+    {
+      "start": 3827.073,
+      "end": 3828.448,
+      "text": "I don't have a coin."
+    },
+    {
+      "start": 3828.995,
+      "end": 3830.635,
+      "text": "Flip anything, silly."
+    },
+    {
+      "start": 3831.285,
+      "end": 3832.69,
+      "text": "Well, there's a rock."
+    },
+    {
+      "start": 3835.456,
+      "end": 3836.822,
+      "text": "Wet or dry?"
+    },
+    {
+      "start": 3836.901,
+      "end": 3837.901,
+      "text": "Wet."
+    },
+    {
+      "start": 3855.869,
+      "end": 3856.962,
+      "text": "The search was narrowing..."
+    },
+    {
+      "start": 3857.197,
+      "end": 3859.228,
+      "text": "... and we knew that soon we would have the killer."
+    },
+    {
+      "start": 3859.751,
+      "end": 3861.782,
+      "text": "Not that we had any more clues than before."
+    },
+    {
+      "start": 3861.892,
+      "end": 3863.517,
+      "text": "But we had to tell the chief something."
+    },
+    {
+      "start": 3863.726,
+      "end": 3866.765,
+      "text": "I had that feeling in my bones that the mystery was drawing to its climax."
+    },
+    {
+      "start": 3866.852,
+      "end": 3868.665,
+      "text": "And I was determined to be on hand."
+    },
+    {
+      "start": 3869.719,
+      "end": 3871.015,
+      "text": "Alright. Out, out, out."
+    },
+    {
+      "start": 3871.04,
+      "end": 3872.047,
+      "text": "Nobody is in."
+    },
+    {
+      "start": 3872.072,
+      "end": 3874.625,
+      "text": "Today we have a special occasion for Seymour Krelborn..."
+    },
+    {
+      "start": 3874.65,
+      "end": 3876.515,
+      "text": "... which has invented a big plant."
+    },
+    {
+      "start": 3876.54,
+      "end": 3879.001,
+      "text": "So I want everybody just please stay out of the way."
+    },
+    {
+      "start": 3879.026,
+      "end": 3882.258,
+      "text": "We want Seymour! We want Seymour!"
+    },
+    {
+      "start": 3882.282,
+      "end": 3883.978,
+      "text": "We want Seymour!"
+    },
+    {
+      "start": 3889.79,
+      "end": 3894.047,
+      "text": "I tell you, this business is worse than being a conductor in a revoluting door."
+    },
+    {
+      "start": 3894.103,
+      "end": 3896.204,
+      "text": "I'll be glad when this day is finished."
+    },
+    {
+      "start": 3896.229,
+      "end": 3897.385,
+      "text": "But the celebration!"
+    },
+    {
+      "start": 3897.41,
+      "end": 3899.775,
+      "text": "They're presenting my son with a trophy."
+    },
+    {
+      "start": 3899.903,
+      "end": 3901.557,
+      "text": "Yeah? What'd he do - run away from home?"
+    },
+    {
+      "start": 3901.869,
+      "end": 3903.713,
+      "text": "Please don't look at me that way, Audrey."
+    },
+    {
+      "start": 3903.854,
+      "end": 3905.088,
+      "text": "I wanna talk to you."
+    },
+    {
+      "start": 3905.432,
+      "end": 3906.736,
+      "text": "I'm sorry Seymour."
+    },
+    {
+      "start": 3907.401,
+      "end": 3909.057,
+      "text": "I just don't understand you."
+    },
+    {
+      "start": 3909.082,
+      "end": 3911.135,
+      "text": "I'll explain everything after the ceremony."
+    },
+    {
+      "start": 3911.16,
+      "end": 3913.074,
+      "text": "Yo! Police - what are you doing here?"
+    },
+    {
+      "start": 3913.099,
+      "end": 3914.777,
+      "text": "Heard there was something going on here this evening."
+    },
+    {
+      "start": 3914.802,
+      "end": 3916.644,
+      "text": "Just so, we'd keep come by, keep an eye on things"
+    },
+    {
+      "start": 3916.669,
+      "end": 3919.24,
+      "text": "Look we don't need no eyes kept on nothing. Everything..."
+    },
+    {
+      "start": 3919.265,
+      "end": 3922.123,
+      "text": "The Society Of Silent Flower Observers has arrived..."
+    },
+    {
+      "start": 3922.148,
+      "end": 3924.308,
+      "text": "and sunset is almost upon us."
+    },
+    {
+      "start": 3924.53,
+      "end": 3926.288,
+      "text": "Welcome, lady and gentlemen."
+    },
+    {
+      "start": 3926.351,
+      "end": 3928.586,
+      "text": "We are honoured for to have you."
+    },
+    {
+      "start": 3929.476,
+      "end": 3930.976,
+      "text": "Still working on those disappearances."
+    },
+    {
+      "start": 3931.132,
+      "end": 3932.187,
+      "text": "We think they were murdered."
+    },
+    {
+      "start": 3932.212,
+      "end": 3933.578,
+      "text": "Hey, look here young man."
+    },
+    {
+      "start": 3933.603,
+      "end": 3935.462,
+      "text": "That's no way to talk at a time like this."
+    },
+    {
+      "start": 3935.525,
+      "end": 3936.775,
+      "text": "Let me see your tongue."
+    },
+    {
+      "start": 3937.329,
+      "end": 3938.392,
+      "text": "M-hm."
+    },
+    {
+      "start": 3938.422,
+      "end": 3939.494,
+      "text": "You know what you got?"
+    },
+    {
+      "start": 3939.519,
+      "end": 3940.587,
+      "text": "Just the facts, ma'am."
+    },
+    {
+      "start": 3940.652,
+      "end": 3941.452,
+      "text": "Trench mouth."
+    },
+    {
+      "start": 3941.597,
+      "end": 3943.323,
+      "text": "Oh, I know, I had it back in '09."
+    },
+    {
+      "start": 3943.348,
+      "end": 3945.828,
+      "text": "- Better have that looked into, Frank. - Whatever you say, Joe."
+    },
+    {
+      "start": 3947.144,
+      "end": 3948.402,
+      "text": "Mr. Krelborn?"
+    },
+    {
+      "start": 3948.529,
+      "end": 3951.513,
+      "text": "Uh, the sun is going down now and, uh..."
+    },
+    {
+      "start": 3952.208,
+      "end": 3954.64,
+      "text": "... you do think those buds are going to open?"
+    },
+    {
+      "start": 3955.021,
+      "end": 3956.138,
+      "text": "I hope so."
+    },
+    {
+      "start": 3956.184,
+      "end": 3958.825,
+      "text": "Because if they don't, Mr. Krelborn,..."
+    },
+    {
+      "start": 3958.95,
+      "end": 3961.66,
+      "text": "... we shall just have to present the award at another time."
+    },
+    {
+      "start": 3961.832,
+      "end": 3964.16,
+      "text": "Oh! It's starting to open!"
+    },
+    {
+      "start": 3965.707,
+      "end": 3966.707,
+      "text": "Remarkable!"
+    },
+    {
+      "start": 3968.879,
+      "end": 3971.676,
+      "text": "Oh. Well, the first bud is open."
+    },
+    {
+      "start": 3976.917,
+      "end": 3978.519,
+      "text": "- Isn't that... - The railroad cop."
+    },
+    {
+      "start": 3978.745,
+      "end": 3979.761,
+      "text": "Look at the rest."
+    },
+    {
+      "start": 3990,
+      "end": 3991.859,
+      "text": "Aaaah!"
+    },
+    {
+      "start": 3992.968,
+      "end": 3993.968,
+      "text": "What do you think, Frank?"
+    },
+    {
+      "start": 3994.001,
+      "end": 3995.323,
+      "text": "They're all there, Joe."
+    },
+    {
+      "start": 3995.548,
+      "end": 3996.548,
+      "text": "Yes, you're right."
+    },
+    {
+      "start": 3996.672,
+      "end": 3998.703,
+      "text": "Mr. Krelborn, how do you explain this?"
+    },
+    {
+      "start": 3998.728,
+      "end": 4000.251,
+      "text": "I didn't mean it. I didn't mean it!"
+    },
+    {
+      "start": 4000.276,
+      "end": 4002.509,
+      "text": "That's right, officer. He didn't mean to kill them."
+    },
+    {
+      "start": 4002.666,
+      "end": 4003.533,
+      "text": "Oh!"
+    },
+    {
+      "start": 4003.626,
+      "end": 4006.072,
+      "text": "Seymour, you promised you'd explain."
+    },
+    {
+      "start": 4006.532,
+      "end": 4007.821,
+      "text": "He's getting away, Joe."
+    },
+    {
+      "start": 4007.846,
+      "end": 4009.915,
+      "text": "Yes, you're right. Let's catch him."
+    },
+    {
+      "start": 4010.117,
+      "end": 4011.117,
+      "text": "Right."
+    },
+    {
+      "start": 4015.968,
+      "end": 4019.21,
+      "text": "- Oh, now the float will be perfect! - Yeah."
+    },
+    {
+      "start": 4210.56,
+      "end": 4212.99,
+      "text": "You wouldn't find him here with the toilets."
+    },
+    {
+      "start": 4213.155,
+      "end": 4214.561,
+      "text": "Let's go back."
+    },
+    {
+      "start": 4237.005,
+      "end": 4240.065,
+      "text": "You dirty rat plant. You messed up my whole life!"
+    },
+    {
+      "start": 4240.397,
+      "end": 4243.811,
+      "text": "Feed meeeee!"
+    },
+    {
+      "start": 4244.155,
+      "end": 4245.561,
+      "text": "I'll feed you."
+    },
+    {
+      "start": 4249.262,
+      "end": 4251.895,
+      "text": "I'll feed you like you've never been fed before."
+    },
+    {
+      "start": 4274.693,
+      "end": 4276.411,
+      "text": "Better to give up, gentlemen."
+    },
+    {
+      "start": 4277.169,
+      "end": 4278.895,
+      "text": "You wouldn't find him tonight."
+    },
+    {
+      "start": 4278.926,
+      "end": 4280.965,
+      "text": "Look. The door is open, Frank."
+    },
+    {
+      "start": 4287.659,
+      "end": 4289.665,
+      "text": "He was such a good boy."
+    },
+    {
+      "start": 4293.573,
+      "end": 4295.081,
+      "text": "Seymour!"
+    },
+    {
+      "start": 4295.479,
+      "end": 4297.042,
+      "text": "I didn't mean it."
+    }
+  ]
+}

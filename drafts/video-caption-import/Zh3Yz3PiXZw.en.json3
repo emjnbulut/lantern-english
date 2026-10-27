@@ -1,0 +1,805 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 9480,
+    "dDurationMs": 2880,
+    "segs": [ {
+      "utf8": "Oh, hi Danny come on in."
+    } ]
+  }, {
+    "tStartMs": 16160,
+    "dDurationMs": 3040,
+    "segs": [ {
+      "utf8": "Looks like you’re having\nsome trouble with addition."
+    } ]
+  }, {
+    "tStartMs": 19220,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "Now don’t be upset."
+    } ]
+  }, {
+    "tStartMs": 20960,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "You’re here to learn.\nAnd we learn from mistakes."
+    } ]
+  }, {
+    "tStartMs": 24240,
+    "dDurationMs": 1620,
+    "segs": [ {
+      "utf8": "Everybody makes mistakes."
+    } ]
+  }, {
+    "tStartMs": 25860,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "Nuh-uh."
+    } ]
+  }, {
+    "tStartMs": 28640,
+    "dDurationMs": 1740,
+    "segs": [ {
+      "utf8": "Look at this question here."
+    } ]
+  }, {
+    "tStartMs": 30460,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "What is 2 + 2?"
+    } ]
+  }, {
+    "tStartMs": 32620,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "See you wrote 22."
+    } ]
+  }, {
+    "tStartMs": 34800,
+    "dDurationMs": 3220,
+    "segs": [ {
+      "utf8": "But when we do addition we don’t just\nput the numbers next to each other."
+    } ]
+  }, {
+    "tStartMs": 38220,
+    "dDurationMs": 1520,
+    "segs": [ {
+      "utf8": "That’s stupid."
+    } ]
+  }, {
+    "tStartMs": 39740,
+    "dDurationMs": 2860,
+    "segs": [ {
+      "utf8": "Alright, think about it this way."
+    } ]
+  }, {
+    "tStartMs": 42600,
+    "dDurationMs": 3340,
+    "segs": [ {
+      "utf8": "If I have two markers in this hand..."
+    } ]
+  }, {
+    "tStartMs": 45940,
+    "dDurationMs": 3660,
+    "segs": [ {
+      "utf8": "...and then I add the two markers from this hand..."
+    } ]
+  }, {
+    "tStartMs": 49600,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "How many markers do I have now?"
+    } ]
+  }, {
+    "tStartMs": 53080,
+    "dDurationMs": 2400,
+    "segs": [ {
+      "utf8": "Twenty-two!"
+    } ]
+  }, {
+    "tStartMs": 55640,
+    "dDurationMs": 2520,
+    "segs": [ {
+      "utf8": "No, Danny. It’s four."
+    } ]
+  }, {
+    "tStartMs": 66060,
+    "dDurationMs": 1440,
+    "segs": [ {
+      "utf8": "Mrs. Wells?"
+    } ]
+  }, {
+    "tStartMs": 67820,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "We’re Danny’s parents."
+    } ]
+  }, {
+    "tStartMs": 69580,
+    "dDurationMs": 3280,
+    "segs": [ {
+      "utf8": "Oh yes! Hello. Please, come in."
+    } ]
+  }, {
+    "tStartMs": 72900,
+    "dDurationMs": 6620,
+    "segs": [ {
+      "utf8": "Now don’t worry. It’s completely normal for kids to get frustrated when they’re struggling with a subject."
+    } ]
+  }, {
+    "tStartMs": 79520,
+    "dDurationMs": 4540,
+    "segs": [ {
+      "utf8": "So what’s this about Danny getting some\nanswers wrong on this so-called test of yours?"
+    } ]
+  }, {
+    "tStartMs": 84660,
+    "dDurationMs": 5320,
+    "segs": [ {
+      "utf8": "We had a test. One of the questions was what is 2 + 2."
+    } ]
+  }, {
+    "tStartMs": 90020,
+    "dDurationMs": 3260,
+    "segs": [ {
+      "utf8": "Danny answered 22."
+    } ]
+  }, {
+    "tStartMs": 97880,
+    "dDurationMs": 1560,
+    "segs": [ {
+      "utf8": "And?"
+    } ]
+  }, {
+    "tStartMs": 99520,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "And that’s not the right answer."
+    } ]
+  }, {
+    "tStartMs": 101480,
+    "dDurationMs": 1040,
+    "segs": [ {
+      "utf8": "Says who?"
+    } ]
+  }, {
+    "tStartMs": 102520,
+    "dDurationMs": 1100,
+    "segs": [ {
+      "utf8": "Says math."
+    } ]
+  }, {
+    "tStartMs": 103620,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "Are you calling my son stupid?"
+    } ]
+  }, {
+    "tStartMs": 105700,
+    "dDurationMs": 1680,
+    "segs": [ {
+      "utf8": "No, of course not!"
+    } ]
+  }, {
+    "tStartMs": 107380,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "Who are you to say that your\nanswer is right and that his is wrong?"
+    } ]
+  }, {
+    "tStartMs": 110100,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "No no, she’s right."
+    } ]
+  }, {
+    "tStartMs": 111980,
+    "dDurationMs": 1220,
+    "segs": [ {
+      "utf8": "Thank you."
+    } ]
+  }, {
+    "tStartMs": 113200,
+    "dDurationMs": 2000,
+    "segs": [ {
+      "utf8": "Right out of Nazi Germany."
+    } ]
+  }, {
+    "tStartMs": 116340,
+    "dDurationMs": 4680,
+    "segs": [ {
+      "utf8": "You can’t honestly tell me that you\ndon’t know what two plus two equals."
+    } ]
+  }, {
+    "tStartMs": 121060,
+    "dDurationMs": 1820,
+    "segs": [ {
+      "utf8": "So you’ve got it all figured out, don’t you."
+    } ]
+  }, {
+    "tStartMs": 122880,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "You smart-ass little tramp."
+    } ]
+  }, {
+    "tStartMs": 124420,
+    "dDurationMs": 1460,
+    "segs": [ {
+      "utf8": "Uhhhhhh"
+    } ]
+  }, {
+    "tStartMs": 125880,
+    "dDurationMs": 2260,
+    "segs": [ {
+      "utf8": "Uhhhh uhhhhh uhhhhh."
+    } ]
+  }, {
+    "tStartMs": 128140,
+    "dDurationMs": 1300,
+    "segs": [ {
+      "utf8": "What are you? Some kind of retard?"
+    } ]
+  }, {
+    "tStartMs": 129460,
+    "dDurationMs": 5020,
+    "segs": [ {
+      "utf8": "Alright! I’m sorry, I’m not going to\nbe able to continue this conversation."
+    } ]
+  }, {
+    "tStartMs": 134480,
+    "dDurationMs": 2160,
+    "segs": [ {
+      "utf8": "We’re going to complain to the principal about you."
+    } ]
+  }, {
+    "tStartMs": 136640,
+    "dDurationMs": 1580,
+    "segs": [ {
+      "utf8": "Danny is a free thinker!"
+    } ]
+  }, {
+    "tStartMs": 138720,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "I’ll have your job, bitch."
+    } ]
+  }, {
+    "tStartMs": 141560,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "Not if you can’t add two and two together you won’t."
+    } ]
+  }, {
+    "tStartMs": 149860,
+    "dDurationMs": 1480,
+    "segs": [ {
+      "utf8": "Mrs. Wells."
+    } ]
+  }, {
+    "tStartMs": 151340,
+    "dDurationMs": 2740,
+    "segs": [ {
+      "utf8": "Oh, sorry Principal. I didn’t see you."
+    } ]
+  }, {
+    "tStartMs": 154080,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "I understand you had an issue yesterday\nwith the parents of one of our students."
+    } ]
+  }, {
+    "tStartMs": 157500,
+    "dDurationMs": 1920,
+    "segs": [ {
+      "utf8": "It did get a little crazy."
+    } ]
+  }, {
+    "tStartMs": 159420,
+    "dDurationMs": 3180,
+    "segs": [ {
+      "utf8": "When things get out of hand I really\nneed you to let me know about it."
+    } ]
+  }, {
+    "tStartMs": 162600,
+    "dDurationMs": 3680,
+    "segs": [ {
+      "utf8": "Sure. So how do you want to handle it?"
+    } ]
+  }, {
+    "tStartMs": 167100,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "I guess you could apologize."
+    } ]
+  }, {
+    "tStartMs": 168820,
+    "dDurationMs": 2760,
+    "segs": [ {
+      "utf8": "Apol- What? His mom hit me!"
+    } ]
+  }, {
+    "tStartMs": 171860,
+    "dDurationMs": 3020,
+    "segs": [ {
+      "utf8": "I understand you told Danny he had\na wrong answer on his test."
+    } ]
+  }, {
+    "tStartMs": 174880,
+    "dDurationMs": 2360,
+    "segs": [ {
+      "utf8": "He did have a wrong answer on his test."
+    } ]
+  }, {
+    "tStartMs": 177240,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "It’s not our job to tell students\nwhen they’re right and wrong."
+    } ]
+  }, {
+    "tStartMs": 180040,
+    "dDurationMs": 2460,
+    "segs": [ {
+      "utf8": "That is exactly what our job is."
+    } ]
+  }, {
+    "tStartMs": 182500,
+    "dDurationMs": 3560,
+    "segs": [ {
+      "utf8": "Parents don’t want you ramming your\nbiased views down their kids’ throats."
+    } ]
+  }, {
+    "tStartMs": 186060,
+    "dDurationMs": 3600,
+    "segs": [ {
+      "utf8": "That’s not biased. That’s how math works."
+    } ]
+  }, {
+    "tStartMs": 190120,
+    "dDurationMs": 2180,
+    "segs": [ {
+      "utf8": "You know what doesn’t work? Your attitude."
+    } ]
+  }, {
+    "tStartMs": 192300,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "Maybe I can explain this in math terms,\nso you can understand."
+    } ]
+  }, {
+    "tStartMs": 196180,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "If you took all the kids in this classroom,"
+    } ]
+  }, {
+    "tStartMs": 198680,
+    "dDurationMs": 1640,
+    "segs": [ {
+      "utf8": "and divided them by zero,"
+    } ]
+  }, {
+    "tStartMs": 200320,
+    "dDurationMs": 2720,
+    "segs": [ {
+      "utf8": "that’s exactly the amount of respect you’re giving them."
+    } ]
+  }, {
+    "tStartMs": 205160,
+    "dDurationMs": 1660,
+    "segs": [ {
+      "utf8": "Something you’d like to say?"
+    } ]
+  }, {
+    "tStartMs": 206820,
+    "dDurationMs": 4380,
+    "segs": [ {
+      "utf8": "You can’t divide a number by zero and get zero."
+    } ]
+  }, {
+    "tStartMs": 211960,
+    "dDurationMs": 1980,
+    "segs": [ {
+      "utf8": "So now I’m stupid."
+    } ]
+  }, {
+    "tStartMs": 213940,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "Just some crazy administrator doing paper work,"
+    } ]
+  }, {
+    "tStartMs": 216900,
+    "dDurationMs": 2980,
+    "segs": [ {
+      "utf8": "while you superstar teachers change the world!"
+    } ]
+  }, {
+    "tStartMs": 226880,
+    "dDurationMs": 3300,
+    "segs": [ {
+      "utf8": "Students Count! Teachers Divide!"
+    } ]
+  }, {
+    "tStartMs": 233300,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "Stop undermining our kids’ confidence!"
+    } ]
+  }, {
+    "tStartMs": 235520,
+    "dDurationMs": 2220,
+    "segs": [ {
+      "utf8": "Are you going to apologize to the parents?"
+    } ]
+  }, {
+    "tStartMs": 237740,
+    "dDurationMs": 4060,
+    "segs": [ {
+      "utf8": "Why did you even start teaching if you hate children?"
+    } ]
+  }, {
+    "tStartMs": 253780,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "Please have a seat, Mrs. Wells."
+    } ]
+  }, {
+    "tStartMs": 256460,
+    "dDurationMs": 2340,
+    "segs": [ {
+      "utf8": "Thank you."
+    } ]
+  }, {
+    "tStartMs": 260100,
+    "dDurationMs": 5260,
+    "segs": [ {
+      "utf8": "You know, I honestly think this will all\nblow over if we just wait a week or so."
+    } ]
+  }, {
+    "tStartMs": 265480,
+    "dDurationMs": 2320,
+    "segs": [ {
+      "utf8": "I’m afraid we can’t do that."
+    } ]
+  }, {
+    "tStartMs": 267800,
+    "dDurationMs": 1160,
+    "segs": [ {
+      "utf8": "Why not?"
+    } ]
+  }, {
+    "tStartMs": 268960,
+    "dDurationMs": 1320,
+    "segs": [ {
+      "utf8": "They’re suing."
+    } ]
+  }, {
+    "tStartMs": 270280,
+    "dDurationMs": 1120,
+    "segs": [ {
+      "utf8": "For what?"
+    } ]
+  }, {
+    "tStartMs": 271400,
+    "dDurationMs": 1960,
+    "segs": [ {
+      "utf8": "Emotional distress to a minor."
+    } ]
+  }, {
+    "tStartMs": 273360,
+    "dDurationMs": 3540,
+    "segs": [ {
+      "utf8": "Mrs. Wells, can you please tell\nthe members of this board"
+    } ]
+  }, {
+    "tStartMs": 276900,
+    "dDurationMs": 3400,
+    "segs": [ {
+      "utf8": "exactly when you became aware of this fiasco"
+    } ]
+  }, {
+    "tStartMs": 280320,
+    "dDurationMs": 2100,
+    "segs": [ {
+      "utf8": "and the events leading up to the riot."
+    } ]
+  }, {
+    "tStartMs": 282540,
+    "dDurationMs": 1580,
+    "segs": [ {
+      "utf8": "Riot?"
+    } ]
+  }, {
+    "tStartMs": 284540,
+    "dDurationMs": 5340,
+    "segs": [ {
+      "utf8": "I just told a student that two plus two equals four."
+    } ]
+  }, {
+    "tStartMs": 292240,
+    "dDurationMs": 2800,
+    "segs": [ {
+      "utf8": "We need for you to recant that."
+    } ]
+  }, {
+    "tStartMs": 295040,
+    "dDurationMs": 840,
+    "segs": [ {
+      "utf8": "What?"
+    } ]
+  }, {
+    "tStartMs": 295880,
+    "dDurationMs": 6940,
+    "segs": [ {
+      "utf8": "Just say that you’re open to the possibility that\nthere might be multiple correct answers."
+    } ]
+  }, {
+    "tStartMs": 302820,
+    "dDurationMs": 1900,
+    "segs": [ {
+      "utf8": "But that’s not true."
+    } ]
+  }, {
+    "tStartMs": 305720,
+    "dDurationMs": 2680,
+    "segs": [ {
+      "utf8": "We can’t let them bully us."
+    } ]
+  }, {
+    "tStartMs": 308400,
+    "dDurationMs": 1940,
+    "segs": [ {
+      "utf8": "This is so stupid!"
+    } ]
+  }, {
+    "tStartMs": 310360,
+    "dDurationMs": 3920,
+    "segs": [ {
+      "utf8": "Stupid. That’s your problem.\nAnyone who disagrees with you is stupid."
+    } ]
+  }, {
+    "tStartMs": 314280,
+    "dDurationMs": 5820,
+    "segs": [ {
+      "utf8": "There is nothing to disagree with.\nThere is only one correct answer."
+    } ]
+  }, {
+    "tStartMs": 320100,
+    "dDurationMs": 4300,
+    "segs": [ {
+      "utf8": "For your sake, I certainly hope you have that correct answer when the media gets wind of this."
+    } ]
+  }, {
+    "tStartMs": 324440,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "I do. It’s four."
+    } ]
+  }, {
+    "tStartMs": 326500,
+    "dDurationMs": 1880,
+    "segs": [ {
+      "utf8": "I have my own answer."
+    } ]
+  }, {
+    "tStartMs": 328380,
+    "dDurationMs": 3880,
+    "segs": [ {
+      "utf8": "This school minus you equals tomorrow."
+    } ]
+  }, {
+    "tStartMs": 332260,
+    "dDurationMs": 2060,
+    "segs": [ {
+      "utf8": "You’re firing me?"
+    } ]
+  }, {
+    "tStartMs": 334320,
+    "dDurationMs": 4660,
+    "segs": [ {
+      "utf8": "Suspending. While you reconsider your extremist views."
+    } ]
+  }, {
+    "tStartMs": 338980,
+    "dDurationMs": 2460,
+    "segs": [ {
+      "utf8": "You brought this on yourself."
+    } ]
+  }, {
+    "tStartMs": 352100,
+    "dDurationMs": 2660,
+    "segs": [ {
+      "utf8": "TV: Breaking News."
+    } ]
+  }, {
+    "tStartMs": 354760,
+    "dDurationMs": 2100,
+    "segs": [ {
+      "utf8": "In what’s being called Mathgate"
+    } ]
+  }, {
+    "tStartMs": 356860,
+    "dDurationMs": 6980,
+    "segs": [ {
+      "utf8": "an activist elementary school teacher was caught abusing her student’s First Amendment Rights."
+    } ]
+  }, {
+    "tStartMs": 364620,
+    "dDurationMs": 6120,
+    "segs": [ {
+      "utf8": "So this teacher, this liberal elitist,\ntells this innocent little first-grade kid"
+    } ]
+  }, {
+    "tStartMs": 370740,
+    "dDurationMs": 3860,
+    "segs": [ {
+      "utf8": "that his answer is wrong. Only her answer is acceptable."
+    } ]
+  }, {
+    "tStartMs": 374600,
+    "dDurationMs": 3420,
+    "segs": [ {
+      "utf8": "Yeah, from what I hear, she doesn’t even keep\nthese students for more than a year."
+    } ]
+  }, {
+    "tStartMs": 378040,
+    "dDurationMs": 3300,
+    "segs": [ {
+      "utf8": "After that, they all leave her and go to another teacher."
+    } ]
+  }, {
+    "tStartMs": 381600,
+    "dDurationMs": 1840,
+    "segs": [ {
+      "utf8": "It’s called graduating!"
+    } ]
+  }, {
+    "tStartMs": 383840,
+    "dDurationMs": 2660,
+    "segs": [ {
+      "utf8": "It’s creating some good healthy debate in this country."
+    } ]
+  }, {
+    "tStartMs": 386500,
+    "dDurationMs": 3520,
+    "segs": [ {
+      "utf8": "Some experts say that 2 + 2 = 4. Others say that it’s 22."
+    } ]
+  }, {
+    "tStartMs": 391100,
+    "dDurationMs": 2020,
+    "segs": [ {
+      "utf8": "No they don’t!"
+    } ]
+  }, {
+    "tStartMs": 393400,
+    "dDurationMs": 5120,
+    "segs": [ {
+      "utf8": "If you hate America that much,\nwhy don’t you just go teach in Commie France."
+    } ]
+  }, {
+    "tStartMs": 399360,
+    "dDurationMs": 900,
+    "segs": [ {
+      "utf8": "Hello?"
+    } ]
+  }, {
+    "tStartMs": 400260,
+    "dDurationMs": 2140,
+    "segs": [ {
+      "utf8": "(Principal) Hello, Mrs. Wells."
+    } ]
+  }, {
+    "tStartMs": 402400,
+    "dDurationMs": 6080,
+    "segs": [ {
+      "utf8": "The Board decided that for everyone’s benefit,\nyour services will no longer be required."
+    } ]
+  }, {
+    "tStartMs": 408480,
+    "dDurationMs": 3160,
+    "segs": [ {
+      "utf8": "For everyone’s benefit?"
+    } ]
+  }, {
+    "tStartMs": 411640,
+    "dDurationMs": 1540,
+    "segs": [ {
+      "utf8": "How about the kids?"
+    } ]
+  }, {
+    "tStartMs": 413180,
+    "dDurationMs": 2960,
+    "segs": [ {
+      "utf8": "I need you to come by the school tomorrow."
+    } ]
+  }, {
+    "tStartMs": 416140,
+    "dDurationMs": 3300,
+    "segs": [ {
+      "utf8": "We don’t want you radicalizing our students anymore."
+    } ]
+  }, {
+    "tStartMs": 437040,
+    "dDurationMs": 4600,
+    "segs": [ {
+      "utf8": "Mrs. Wells, thank you so much for coming."
+    } ]
+  }, {
+    "tStartMs": 441640,
+    "dDurationMs": 2560,
+    "segs": [ {
+      "utf8": "I’m just so sorry it happened this way."
+    } ]
+  }, {
+    "tStartMs": 444200,
+    "dDurationMs": 3340,
+    "segs": [ {
+      "utf8": "If only you’d been willing to be more open-minded."
+    } ]
+  }, {
+    "tStartMs": 447540,
+    "dDurationMs": 4020,
+    "segs": [ {
+      "utf8": "About math? What about academic integrity?"
+    } ]
+  }, {
+    "tStartMs": 451560,
+    "dDurationMs": 2580,
+    "segs": [ {
+      "utf8": "You were warned. Given an explanation."
+    } ]
+  }, {
+    "tStartMs": 454160,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "And yet you persisted."
+    } ]
+  }, {
+    "tStartMs": 456240,
+    "dDurationMs": 3660,
+    "segs": [ {
+      "utf8": "But we will of course fulfill our financial obligations."
+    } ]
+  }, {
+    "tStartMs": 460260,
+    "dDurationMs": 5740,
+    "segs": [ {
+      "utf8": "Now, that’s $2,000 for your last pay period,\nand $2,000 for this one."
+    } ]
+  }, {
+    "tStartMs": 466000,
+    "dDurationMs": 2300,
+    "segs": [ {
+      "utf8": "So that’s $4,000."
+    } ]
+  }, {
+    "tStartMs": 468300,
+    "dDurationMs": 1720,
+    "segs": [ {
+      "utf8": "Wrong."
+    } ]
+  }, {
+    "tStartMs": 471900,
+    "dDurationMs": 3720,
+    "segs": [ {
+      "utf8": "It’s twenty-two thousand!"
+    } ]
+  }, {
+    "tStartMs": 499620,
+    "dDurationMs": 40940,
+    "segs": [ {
+      "utf8": "to"
+    } ]
+  } ]
+}

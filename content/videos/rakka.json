@@ -1,0 +1,1405 @@
+{
+  "published": false,
+  "id": "rakka",
+  "type": "video",
+  "provider": "youtube",
+  "youtubeId": "VjQ2t_yNHQs",
+  "title": "Rakka",
+  "creator": "Neill Blomkamp · Oats Studios",
+  "year": 2017,
+  "level": "C1",
+  "category": "scifi",
+  "genre": "fantasy",
+  "durationSeconds": 1313,
+  "summaryTr": "Dünya uzaylıların kontrolüne girmiştir. Bir direniş grubu, insanlığın geleceği için son bir şans arar. Sigourney Weaver’ın da yer aldığı karanlık bir bilim kurgu ve aksiyon filmi.",
+  "levelNoteTr": "Seviye, İngilizce altyazı desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Yoğun anlatıcı metni, farklı aksanlar, savaş ve işgal dili ile açıkça söylenmeyen neden-sonuç bağlantıları ileri seviye dinleme gerektirir.",
+  "advisoryTr": "Yoğun kanlı şiddet, işkence, insan deneyleri ve ağır küfür içerir.",
+  "downloadable": false,
+  "source": {
+    "name": "Oats Studios — Rakka",
+    "url": "https://www.youtube.com/watch?v=VjQ2t_yNHQs",
+    "watchUrl": "https://www.youtube.com/watch?v=VjQ2t_yNHQs",
+    "license": "Yayıncının YouTube oynatıcısı",
+    "licenseUrl": "https://www.youtube.com/static?template=terms",
+    "credit": "Neill Blomkamp · Oats Studios · Yayıncı: Oats Studios"
+  },
+  "glossary": {
+    "occupation": "işgal",
+    "insurgency": "silahlı isyan",
+    "resistance": "direniş",
+    "enslave": "köleleştirmek",
+    "surveillance": "gözetim",
+    "weapon": "silah",
+    "humanity": "insanlık"
+  },
+  "captions": [
+    {
+      "start": 15.481,
+      "end": 19.452,
+      "text": "[♪♪♪]"
+    },
+    {
+      "start": 26.258,
+      "end": 28.461,
+      "text": "We were once mankind."
+    },
+    {
+      "start": 30.763,
+      "end": 32.298,
+      "text": "We were humanity."
+    },
+    {
+      "start": 39.071,
+      "end": 41.807,
+      "text": "And now..."
+    },
+    {
+      "start": 41.807,
+      "end": 43.576,
+      "text": "We're no more than pests."
+    },
+    {
+      "start": 45.544,
+      "end": 47.847,
+      "text": "Vermin."
+    },
+    {
+      "start": 47.847,
+      "end": 50.05,
+      "text": "They came here to exterminate us."
+    },
+    {
+      "start": 54.888,
+      "end": 57.357,
+      "text": "They took our history and culture."
+    },
+    {
+      "start": 57.357,
+      "end": 61.561,
+      "text": "They covered our landworks in dying humanity."
+    },
+    {
+      "start": 61.561,
+      "end": 64.097,
+      "text": "The wail of the dying carried for miles."
+    },
+    {
+      "start": 66.733,
+      "end": 68.701,
+      "text": "They're building some kind of breeding facility"
+    },
+    {
+      "start": 68.701,
+      "end": 71.404,
+      "text": "for those that survive."
+    },
+    {
+      "start": 71.404,
+      "end": 74.607,
+      "text": "People that have defected say it's worse than Hell,"
+    },
+    {
+      "start": 74.607,
+      "end": 77.31,
+      "text": "humans becoming some kind of surrogate incubators"
+    },
+    {
+      "start": 77.31,
+      "end": 79.379,
+      "text": "for the alien young."
+    },
+    {
+      "start": 85.452,
+      "end": 88.221,
+      "text": "They killed us in waves when they first arrived."
+    },
+    {
+      "start": 90.823,
+      "end": 95.027,
+      "text": "They built these megastructures that spew methane,"
+    },
+    {
+      "start": 95.027,
+      "end": 97.697,
+      "text": "manufacturing their atmosphere."
+    },
+    {
+      "start": 101,
+      "end": 102.301,
+      "text": "They've sown their crops,"
+    },
+    {
+      "start": 102.301,
+      "end": 103.936,
+      "text": "snuffing out our plant life,"
+    },
+    {
+      "start": 103.936,
+      "end": 106.473,
+      "text": "raising the global temperature, causing our cities to flood."
+    },
+    {
+      "start": 109.808,
+      "end": 111.878,
+      "text": "They waged war on Earth."
+    },
+    {
+      "start": 111.878,
+      "end": 115.047,
+      "text": "They set fire to our forests."
+    },
+    {
+      "start": 115.047,
+      "end": 117.617,
+      "text": "It's already hard to breathe..."
+    },
+    {
+      "start": 117.617,
+      "end": 120.687,
+      "text": "impossible to breathe if you are close to the stacks."
+    },
+    {
+      "start": 123.422,
+      "end": 125.524,
+      "text": "Rats..."
+    },
+    {
+      "start": 125.524,
+      "end": 127.76,
+      "text": "insects..."
+    },
+    {
+      "start": 127.76,
+      "end": 131.297,
+      "text": "humans..."
+    },
+    {
+      "start": 131.297,
+      "end": 133.232,
+      "text": "they hack into our psyche,"
+    },
+    {
+      "start": 133.232,
+      "end": 134.667,
+      "text": "into our minds,"
+    },
+    {
+      "start": 134.667,
+      "end": 136.535,
+      "text": "paralyzing us,"
+    },
+    {
+      "start": 136.535,
+      "end": 141.307,
+      "text": "taking control of the cerebrum and the limbic system,"
+    },
+    {
+      "start": 141.307,
+      "end": 144.377,
+      "text": "rendering us slaves."
+    },
+    {
+      "start": 144.377,
+      "end": 147.213,
+      "text": "We've been able to design a brain barrier"
+    },
+    {
+      "start": 147.213,
+      "end": 150.416,
+      "text": "that protects us from their influence."
+    },
+    {
+      "start": 150.416,
+      "end": 154.22,
+      "text": "They know we can't produce enough of these for everyone,"
+    },
+    {
+      "start": 154.22,
+      "end": 155.722,
+      "text": "that it's just a matter of time"
+    },
+    {
+      "start": 155.722,
+      "end": 159.925,
+      "text": "before the entire planet is theirs..."
+    },
+    {
+      "start": 159.925,
+      "end": 161.494,
+      "text": "but we're survivors."
+    },
+    {
+      "start": 166.298,
+      "end": 167.734,
+      "text": "Scrounging enough to eat..."
+    },
+    {
+      "start": 170.602,
+      "end": 172.872,
+      "text": "gathering enough morale to fight."
+    },
+    {
+      "start": 180.913,
+      "end": 182.448,
+      "text": "[distorted voices over radio]"
+    },
+    {
+      "start": 188.821,
+      "end": 190.422,
+      "text": "I wonder if deep down,"
+    },
+    {
+      "start": 190.422,
+      "end": 193.993,
+      "text": "each person knows we're already dead."
+    },
+    {
+      "start": 193.993,
+      "end": 196.762,
+      "text": "I wonder if only one, sick, primordial instinct"
+    },
+    {
+      "start": 196.762,
+      "end": 200.166,
+      "text": "keeps marching us forward aimlessly."
+    },
+    {
+      "start": 200.166,
+      "end": 202.635,
+      "text": "Every rational thought tells us it's over."
+    },
+    {
+      "start": 206.706,
+      "end": 209.409,
+      "text": "Every vile, deceptive, chemical emotion"
+    },
+    {
+      "start": 209.409,
+      "end": 211.477,
+      "text": "tells us it isn't."
+    },
+    {
+      "start": 217.083,
+      "end": 220.853,
+      "text": "We are sold a different story by our politicians."
+    },
+    {
+      "start": 254.354,
+      "end": 256.255,
+      "text": "Come with us!"
+    },
+    {
+      "start": 256.255,
+      "end": 259.558,
+      "text": "Do not be afraid!"
+    },
+    {
+      "start": 259.558,
+      "end": 260.893,
+      "text": "They want what's best for us!"
+    },
+    {
+      "start": 260.893,
+      "end": 262.562,
+      "text": "Come on."
+    },
+    {
+      "start": 264.73,
+      "end": 269.935,
+      "text": "They have built a conservatory for us!"
+    },
+    {
+      "start": 269.935,
+      "end": 272.872,
+      "text": "Paradise!"
+    },
+    {
+      "start": 272.872,
+      "end": 274.974,
+      "text": "Put down your guns!"
+    },
+    {
+      "start": 274.974,
+      "end": 276.742,
+      "text": "There it is."
+    },
+    {
+      "start": 276.742,
+      "end": 281.113,
+      "text": "Come on, freaky-faced fuck. Come on."
+    },
+    {
+      "start": 281.113,
+      "end": 282.715,
+      "text": "Come with us!"
+    },
+    {
+      "start": 282.715,
+      "end": 285.584,
+      "text": "Do not be afraid!"
+    },
+    {
+      "start": 285.584,
+      "end": 291.457,
+      "text": "They have built a conservatory!"
+    },
+    {
+      "start": 291.457,
+      "end": 293.86,
+      "text": "Come with us, friends!"
+    },
+    {
+      "start": 293.86,
+      "end": 295.294,
+      "text": "Come on, come on, come on."
+    },
+    {
+      "start": 295.294,
+      "end": 297.196,
+      "text": "...paradise!"
+    },
+    {
+      "start": 297.196,
+      "end": 299.598,
+      "text": "I'll go to the new conservatory."
+    },
+    {
+      "start": 299.598,
+      "end": 303.068,
+      "text": "Take me with you, please."
+    },
+    {
+      "start": 303.068,
+      "end": 304.57,
+      "text": "There it is. There it is."
+    },
+    {
+      "start": 314.613,
+      "end": 315.682,
+      "text": "[gasping]"
+    },
+    {
+      "start": 317.149,
+      "end": 318.283,
+      "text": "[click]"
+    },
+    {
+      "start": 318.283,
+      "end": 319.619,
+      "text": "[laughing]"
+    },
+    {
+      "start": 333.966,
+      "end": 337.603,
+      "text": "Every once in a while, something goes our way."
+    },
+    {
+      "start": 337.603,
+      "end": 340.072,
+      "text": "Just one in a thousand."
+    },
+    {
+      "start": 340.072,
+      "end": 341.741,
+      "text": "Just enough to keep fighting."
+    },
+    {
+      "start": 341.741,
+      "end": 343.276,
+      "text": "[cheering]"
+    },
+    {
+      "start": 343.276,
+      "end": 345.545,
+      "text": "A glimmer of hope."
+    },
+    {
+      "start": 348.981,
+      "end": 350.95,
+      "text": "People will pay for this."
+    },
+    {
+      "start": 353.452,
+      "end": 355.054,
+      "text": "They always do."
+    },
+    {
+      "start": 363.729,
+      "end": 365.064,
+      "text": "Even for small victories,"
+    },
+    {
+      "start": 365.064,
+      "end": 369.235,
+      "text": "it would seem that everything was lost."
+    },
+    {
+      "start": 369.235,
+      "end": 373.005,
+      "text": "Humanity would soon cease to exist."
+    },
+    {
+      "start": 376.809,
+      "end": 378.644,
+      "text": "[groaning]"
+    },
+    {
+      "start": 389.321,
+      "end": 392.125,
+      "text": "[gasping]"
+    },
+    {
+      "start": 395.928,
+      "end": 399.131,
+      "text": "Until they arrived,"
+    },
+    {
+      "start": 399.131,
+      "end": 403.87,
+      "text": "like angels carried on the rays of the Aurora Borealis."
+    },
+    {
+      "start": 414.58,
+      "end": 417.116,
+      "text": "Like a biblical salvation."
+    },
+    {
+      "start": 436.502,
+      "end": 439.371,
+      "text": "The new world altered everyone."
+    },
+    {
+      "start": 439.371,
+      "end": 442.108,
+      "text": "Adapt or die, it was as simple as that."
+    },
+    {
+      "start": 445.944,
+      "end": 448.781,
+      "text": "In the old world, Nosh would have been locked up."
+    },
+    {
+      "start": 448.781,
+      "end": 452.451,
+      "text": "A pyromaniac, a bomb-maker..."
+    },
+    {
+      "start": 452.451,
+      "end": 456.121,
+      "text": "but here, he not only survived, he thrived."
+    },
+    {
+      "start": 456.121,
+      "end": 457.824,
+      "text": "[flying overhead]"
+    },
+    {
+      "start": 465.197,
+      "end": 467.7,
+      "text": "[death metal blasts]"
+    },
+    {
+      "start": 481.414,
+      "end": 485.251,
+      "text": "Nosh could make just about anything out of scavenged junk."
+    },
+    {
+      "start": 488.42,
+      "end": 493.225,
+      "text": "Bombs, brain locks... anything."
+    },
+    {
+      "start": 493.225,
+      "end": 494.894,
+      "text": "We needed him, and he knew it."
+    },
+    {
+      "start": 494.894,
+      "end": 497.462,
+      "text": "How many you got?"
+    },
+    {
+      "start": 497.462,
+      "end": 499.732,
+      "text": "Uh, four."
+    },
+    {
+      "start": 499.732,
+      "end": 501.166,
+      "text": "No."
+    },
+    {
+      "start": 501.166,
+      "end": 502.568,
+      "text": "We need more than that."
+    },
+    {
+      "start": 502.568,
+      "end": 503.936,
+      "text": "Sure, yeah."
+    },
+    {
+      "start": 503.936,
+      "end": 505.137,
+      "text": "And payment?"
+    },
+    {
+      "start": 505.137,
+      "end": 506.972,
+      "text": "You can do the usual?"
+    },
+    {
+      "start": 506.972,
+      "end": 508.04,
+      "text": "Yeah, yeah, sure."
+    },
+    {
+      "start": 508.04,
+      "end": 509.908,
+      "text": "What about the..."
+    },
+    {
+      "start": 509.908,
+      "end": 511.143,
+      "text": "the item?"
+    },
+    {
+      "start": 511.143,
+      "end": 513.012,
+      "text": "We've heard about it."
+    },
+    {
+      "start": 515.447,
+      "end": 516.983,
+      "text": "Yeah, um..."
+    },
+    {
+      "start": 518.383,
+      "end": 519.318,
+      "text": "It's not for sale."
+    },
+    {
+      "start": 519.318,
+      "end": 521.153,
+      "text": "You piece of shit."
+    },
+    {
+      "start": 521.153,
+      "end": 522.721,
+      "text": "[laughing]"
+    },
+    {
+      "start": 522.721,
+      "end": 523.822,
+      "text": "You don't fuckin'..."
+    },
+    {
+      "start": 523.822,
+      "end": 524.556,
+      "text": "Wait."
+    },
+    {
+      "start": 524.556,
+      "end": 526.559,
+      "text": "My friend..."
+    },
+    {
+      "start": 526.559,
+      "end": 528.794,
+      "text": "we need your help. You know that."
+    },
+    {
+      "start": 528.794,
+      "end": 529.762,
+      "text": "Yeah."
+    },
+    {
+      "start": 529.762,
+      "end": 530.997,
+      "text": "Everything has a price,"
+    },
+    {
+      "start": 530.997,
+      "end": 532.331,
+      "text": "and we can pay you."
+    },
+    {
+      "start": 532.331,
+      "end": 533.199,
+      "text": "Sure."
+    },
+    {
+      "start": 533.199,
+      "end": 535.1,
+      "text": "Hmm."
+    },
+    {
+      "start": 535.1,
+      "end": 536.969,
+      "text": "Hey, Jasper."
+    },
+    {
+      "start": 536.969,
+      "end": 539.004,
+      "text": "I'm glad these fucking things came here."
+    },
+    {
+      "start": 539.004,
+      "end": 541.44,
+      "text": "They mean that I get to burn whatever I see."
+    },
+    {
+      "start": 541.44,
+      "end": 542.574,
+      "text": "Every day."
+    },
+    {
+      "start": 542.574,
+      "end": 543.475,
+      "text": "Every night."
+    },
+    {
+      "start": 543.475,
+      "end": 544.376,
+      "text": "No laws."
+    },
+    {
+      "start": 544.376,
+      "end": 546.278,
+      "text": "No fucking jails."
+    },
+    {
+      "start": 546.278,
+      "end": 548.08,
+      "text": "The fire..."
+    },
+    {
+      "start": 548.08,
+      "end": 549.014,
+      "text": "The fire."
+    },
+    {
+      "start": 549.014,
+      "end": 551.483,
+      "text": "What is it with you and the fucking fire?"
+    },
+    {
+      "start": 551.483,
+      "end": 552.852,
+      "text": "Fire!!!"
+    },
+    {
+      "start": 555.621,
+      "end": 558.29,
+      "text": "I'll die and perish in the fire someday."
+    },
+    {
+      "start": 558.29,
+      "end": 559.124,
+      "text": "You say you need my help?"
+    },
+    {
+      "start": 559.124,
+      "end": 560.359,
+      "text": "For what?"
+    },
+    {
+      "start": 560.359,
+      "end": 563.128,
+      "text": "For a fucking hope for things to go back to the way they were?"
+    },
+    {
+      "start": 563.128,
+      "end": 564.597,
+      "text": "[laughing]"
+    },
+    {
+      "start": 564.597,
+      "end": 566.432,
+      "text": "Just give me... gimme some bait."
+    },
+    {
+      "start": 566.432,
+      "end": 567.566,
+      "text": "Some bait?"
+    },
+    {
+      "start": 567.566,
+      "end": 568.4,
+      "text": "I just need some bait,"
+    },
+    {
+      "start": 568.4,
+      "end": 569.368,
+      "text": "some of your people..."
+    },
+    {
+      "start": 569.368,
+      "end": 570.569,
+      "text": "some of your people,"
+    },
+    {
+      "start": 570.569,
+      "end": 572.004,
+      "text": "some of the sick you don't need."
+    },
+    {
+      "start": 573.138,
+      "end": 574.006,
+      "text": "I'm two seconds away"
+    },
+    {
+      "start": 574.006,
+      "end": 576.041,
+      "text": "from blowing this motherfucker's head off."
+    },
+    {
+      "start": 576.041,
+      "end": 578.511,
+      "text": "Oh, it would be so good. So much fun."
+    },
+    {
+      "start": 578.511,
+      "end": 580.246,
+      "text": "Just a little more!"
+    },
+    {
+      "start": 580.246,
+      "end": 581.113,
+      "text": "Gimme some bait."
+    },
+    {
+      "start": 581.113,
+      "end": 582.314,
+      "text": "Gimme some bait."
+    },
+    {
+      "start": 582.314,
+      "end": 583.883,
+      "text": "It'll make the \"boom\" bigger."
+    },
+    {
+      "start": 583.883,
+      "end": 585.15,
+      "text": "I'll take out an entire convoy."
+    },
+    {
+      "start": 585.15,
+      "end": 587.186,
+      "text": "That'll help you, right?"
+    },
+    {
+      "start": 587.186,
+      "end": 589.956,
+      "text": "I have enough ordnance to make this fire breathe."
+    },
+    {
+      "start": 590.956,
+      "end": 593.893,
+      "text": "You're an interesting person, Nosh."
+    },
+    {
+      "start": 595.127,
+      "end": 596.929,
+      "text": "Have fun in the fire."
+    },
+    {
+      "start": 596.929,
+      "end": 599.365,
+      "text": "Oh, I will."
+    },
+    {
+      "start": 599.365,
+      "end": 600.599,
+      "text": "[laughing]"
+    },
+    {
+      "start": 600.599,
+      "end": 605.07,
+      "text": "Some sick people in exchange for Nosh's item."
+    },
+    {
+      "start": 605.07,
+      "end": 608.373,
+      "text": "In peacetime, such an offer would be insane."
+    },
+    {
+      "start": 608.373,
+      "end": 609.708,
+      "text": "Immoral."
+    },
+    {
+      "start": 609.708,
+      "end": 613.846,
+      "text": "But now... anything's possible."
+    },
+    {
+      "start": 615.08,
+      "end": 616.748,
+      "text": "[Carl]: Ma'am, we've done everything we can."
+    },
+    {
+      "start": 616.748,
+      "end": 618.217,
+      "text": "He's not responding."
+    },
+    {
+      "start": 623.255,
+      "end": 624.991,
+      "text": "All right. Let's go."
+    },
+    {
+      "start": 628.961,
+      "end": 632.231,
+      "text": "We picked up Amir in Sector 7."
+    },
+    {
+      "start": 632.231,
+      "end": 634.7,
+      "text": "At first, they thought he was dead,"
+    },
+    {
+      "start": 634.7,
+      "end": 637.303,
+      "text": "some refuse from one of their experiments."
+    },
+    {
+      "start": 641.406,
+      "end": 642.975,
+      "text": "Amir?"
+    },
+    {
+      "start": 644.91,
+      "end": 646.212,
+      "text": "Amir?"
+    },
+    {
+      "start": 650.349,
+      "end": 652.985,
+      "text": "Amir... Hey."
+    },
+    {
+      "start": 654.653,
+      "end": 656.188,
+      "text": "I'm not going to hurt you."
+    },
+    {
+      "start": 659.691,
+      "end": 660.76,
+      "text": "Look at me."
+    },
+    {
+      "start": 660.76,
+      "end": 663.361,
+      "text": "You can help us."
+    },
+    {
+      "start": 663.361,
+      "end": 664.363,
+      "text": "[Carl]: Kill him."
+    },
+    {
+      "start": 664.363,
+      "end": 666.097,
+      "text": "Just fucking kill him."
+    },
+    {
+      "start": 666.097,
+      "end": 667.733,
+      "text": "All that shit they put in his head."
+    },
+    {
+      "start": 667.733,
+      "end": 669.101,
+      "text": "-He's not even one of us-- -Stop."
+    },
+    {
+      "start": 676.275,
+      "end": 678.71,
+      "text": "I'm not going to hurt you."
+    },
+    {
+      "start": 678.71,
+      "end": 679.912,
+      "text": "I know what they did."
+    },
+    {
+      "start": 686.118,
+      "end": 687.485,
+      "text": "[he startles]"
+    },
+    {
+      "start": 687.485,
+      "end": 689.821,
+      "text": "It's okay."
+    },
+    {
+      "start": 689.821,
+      "end": 691.39,
+      "text": "Let's get this off."
+    },
+    {
+      "start": 699.097,
+      "end": 701.166,
+      "text": "There."
+    },
+    {
+      "start": 701.166,
+      "end": 702.268,
+      "text": "You're free."
+    },
+    {
+      "start": 703.969,
+      "end": 705.271,
+      "text": "We've gotta check the wounded, ma'am."
+    },
+    {
+      "start": 705.271,
+      "end": 706.739,
+      "text": "Okay."
+    },
+    {
+      "start": 719.118,
+      "end": 720.453,
+      "text": "It's okay."
+    },
+    {
+      "start": 731.63,
+      "end": 732.765,
+      "text": "I'm Sarah."
+    },
+    {
+      "start": 734.532,
+      "end": 737.403,
+      "text": "I need to ask you for a favor."
+    },
+    {
+      "start": 737.403,
+      "end": 740.172,
+      "text": "I give you food,"
+    },
+    {
+      "start": 740.172,
+      "end": 743.075,
+      "text": "you do me a favor."
+    },
+    {
+      "start": 744.61,
+      "end": 747.279,
+      "text": "Okay?"
+    },
+    {
+      "start": 749.281,
+      "end": 751.751,
+      "text": "[man groaning in pain]"
+    },
+    {
+      "start": 772.137,
+      "end": 774.507,
+      "text": "It's okay, it's okay. It's fine."
+    },
+    {
+      "start": 776.241,
+      "end": 780.379,
+      "text": "I need to see what it did to you."
+    },
+    {
+      "start": 781.48,
+      "end": 783.783,
+      "text": "It's okay."
+    },
+    {
+      "start": 810.141,
+      "end": 812.178,
+      "text": "This world had changed all of us..."
+    },
+    {
+      "start": 813.978,
+      "end": 815.548,
+      "text": "but Amir had been reborn..."
+    },
+    {
+      "start": 817.682,
+      "end": 819.552,
+      "text": "with something entirely new."
+    },
+    {
+      "start": 854.853,
+      "end": 857.423,
+      "text": "[shouting and gunfire]"
+    },
+    {
+      "start": 858.99,
+      "end": 861.26,
+      "text": "You see all these men?"
+    },
+    {
+      "start": 862.894,
+      "end": 864.53,
+      "text": "They're going out to fight."
+    },
+    {
+      "start": 865.797,
+      "end": 869.067,
+      "text": "To try to make it how it was before."
+    },
+    {
+      "start": 869.067,
+      "end": 873.072,
+      "text": "To stop those beasts from doing more of this..."
+    },
+    {
+      "start": 874.74,
+      "end": 877.209,
+      "text": "[crying out in pain]"
+    },
+    {
+      "start": 878.71,
+      "end": 879.645,
+      "text": "What is it with her"
+    },
+    {
+      "start": 879.645,
+      "end": 880.913,
+      "text": "and that fucking thing?"
+    },
+    {
+      "start": 883.415,
+      "end": 885.351,
+      "text": "Her daughter is gone."
+    },
+    {
+      "start": 887.185,
+      "end": 888.921,
+      "text": "[Carl]: Everyone's daughter is gone."
+    },
+    {
+      "start": 891.222,
+      "end": 893.892,
+      "text": "[Jasper]: The ones that are experimented on,"
+    },
+    {
+      "start": 893.892,
+      "end": 896.695,
+      "text": "who survive..."
+    },
+    {
+      "start": 896.695,
+      "end": 898.964,
+      "text": "the very few..."
+    },
+    {
+      "start": 898.964,
+      "end": 900.232,
+      "text": "Her theory is"
+    },
+    {
+      "start": 900.232,
+      "end": 904.002,
+      "text": "it's because they have some kind of predisposition."
+    },
+    {
+      "start": 904.002,
+      "end": 906.405,
+      "text": "They're savants of some kind."
+    },
+    {
+      "start": 907.439,
+      "end": 909.341,
+      "text": "And Amir is like that."
+    },
+    {
+      "start": 910.709,
+      "end": 912.21,
+      "text": "[Sarah]: These men are trying to stop the genocide."
+    },
+    {
+      "start": 912.21,
+      "end": 916.181,
+      "text": "[Ryan]: Alpha team! Move out!"
+    },
+    {
+      "start": 920.385,
+      "end": 922.922,
+      "text": "[Sarah]: They're ready to sacrifice themselves."
+    },
+    {
+      "start": 924.189,
+      "end": 925.124,
+      "text": "Let's go!"
+    },
+    {
+      "start": 927.793,
+      "end": 929.561,
+      "text": "They don't have to die tonight."
+    },
+    {
+      "start": 931.163,
+      "end": 932.164,
+      "text": "Help us."
+    },
+    {
+      "start": 932.164,
+      "end": 933.765,
+      "text": "Please."
+    },
+    {
+      "start": 933.765,
+      "end": 935.367,
+      "text": "Tell me what futures you see."
+    },
+    {
+      "start": 938.536,
+      "end": 939.604,
+      "text": "Turn to the left."
+    },
+    {
+      "start": 939.604,
+      "end": 941.674,
+      "text": "Incoming!"
+    },
+    {
+      "start": 956.855,
+      "end": 960.359,
+      "text": "You can help us turn the tide, Amir."
+    },
+    {
+      "start": 960.359,
+      "end": 962.393,
+      "text": "We can beat them."
+    },
+    {
+      "start": 962.393,
+      "end": 963.595,
+      "text": "[gunfire]"
+    },
+    {
+      "start": 969.2,
+      "end": 970.402,
+      "text": "Threat down in Fox Squadron."
+    },
+    {
+      "start": 970.402,
+      "end": 971.27,
+      "text": "Threat down."
+    },
+    {
+      "start": 974.205,
+      "end": 976.475,
+      "text": "All right, everyone, triple-check those brain locks."
+    },
+    {
+      "start": 978.744,
+      "end": 980.145,
+      "text": "I don't want anyone looking at it,"
+    },
+    {
+      "start": 980.145,
+      "end": 982.581,
+      "text": "and keep out of its line of sight, right?"
+    },
+    {
+      "start": 996.094,
+      "end": 997.629,
+      "text": "[Sarah]: What do you see?"
+    },
+    {
+      "start": 999.831,
+      "end": 1001.667,
+      "text": "Do you see us winning, Amir?"
+    },
+    {
+      "start": 1003.735,
+      "end": 1005.704,
+      "text": "Go! Go! Go!"
+    },
+    {
+      "start": 1010.342,
+      "end": 1012.211,
+      "text": "[Sarah]: Can we learn to hunt them?"
+    },
+    {
+      "start": 1014.646,
+      "end": 1016.749,
+      "text": "Can we make them fear us?"
+    },
+    {
+      "start": 1018.583,
+      "end": 1020.052,
+      "text": "Go! Go!"
+    },
+    {
+      "start": 1024.956,
+      "end": 1027.126,
+      "text": "Amir..."
+    },
+    {
+      "start": 1029.094,
+      "end": 1031.196,
+      "text": "Do you remember what they did to you?"
+    },
+    {
+      "start": 1032.397,
+      "end": 1035.034,
+      "text": "They do experiments all day and all night."
+    },
+    {
+      "start": 1038.069,
+      "end": 1039.738,
+      "text": "They tear people apart."
+    },
+    {
+      "start": 1041.806,
+      "end": 1042.908,
+      "text": "[gunfire]"
+    },
+    {
+      "start": 1042.908,
+      "end": 1044.008,
+      "text": "It's wounded!"
+    },
+    {
+      "start": 1044.008,
+      "end": 1045.843,
+      "text": "That fucking thing! Don't let it get away!"
+    },
+    {
+      "start": 1045.843,
+      "end": 1047.746,
+      "text": "[gunfire]"
+    },
+    {
+      "start": 1049.747,
+      "end": 1051.784,
+      "text": "[Sarah]: Billions die..."
+    },
+    {
+      "start": 1054.486,
+      "end": 1055.621,
+      "text": "No one lives."
+    },
+    {
+      "start": 1055.621,
+      "end": 1057.389,
+      "text": "Not through that."
+    },
+    {
+      "start": 1065.43,
+      "end": 1067.599,
+      "text": "But every once in a while, a miracle happens."
+    },
+    {
+      "start": 1069.867,
+      "end": 1072.471,
+      "text": "One in ten million, like you."
+    },
+    {
+      "start": 1074.406,
+      "end": 1077.609,
+      "text": "Someone who somehow survives..."
+    },
+    {
+      "start": 1079.544,
+      "end": 1081.113,
+      "text": "Their cruelty."
+    },
+    {
+      "start": 1086.184,
+      "end": 1088.486,
+      "text": "Those things have given you an amazing power."
+    },
+    {
+      "start": 1088.486,
+      "end": 1089.655,
+      "text": "A gift."
+    },
+    {
+      "start": 1091.623,
+      "end": 1092.657,
+      "text": "Beyond man."
+    },
+    {
+      "start": 1092.657,
+      "end": 1093.859,
+      "text": "Don't look at it!"
+    },
+    {
+      "start": 1093.859,
+      "end": 1094.926,
+      "text": "Look away!"
+    },
+    {
+      "start": 1094.926,
+      "end": 1097.629,
+      "text": "You can do the things they do."
+    },
+    {
+      "start": 1112.377,
+      "end": 1114.446,
+      "text": "Put it down, Martinez! Put it down!"
+    },
+    {
+      "start": 1120.352,
+      "end": 1121.719,
+      "text": "Don't do it, Martinez!"
+    },
+    {
+      "start": 1121.719,
+      "end": 1122.887,
+      "text": "Don't do it!"
+    },
+    {
+      "start": 1122.887,
+      "end": 1125.157,
+      "text": "[gunshot]"
+    },
+    {
+      "start": 1149.714,
+      "end": 1151.85,
+      "text": "Amir..."
+    },
+    {
+      "start": 1151.85,
+      "end": 1153.252,
+      "text": "Please tell me..."
+    },
+    {
+      "start": 1155.386,
+      "end": 1157.823,
+      "text": "What futures do you see?"
+    },
+    {
+      "start": 1161.96,
+      "end": 1163.695,
+      "text": "[crying out]"
+    },
+    {
+      "start": 1172.403,
+      "end": 1175.407,
+      "text": "Cut its fucking head off."
+    },
+    {
+      "start": 1189.588,
+      "end": 1191.189,
+      "text": "Amir, it's tine."
+    },
+    {
+      "start": 1191.189,
+      "end": 1192.824,
+      "text": "You have to use what they gave you."
+    },
+    {
+      "start": 1198.13,
+      "end": 1199.831,
+      "text": "It's not a choice."
+    }
+  ],
+  "captionKind": "publisher",
+  "subtitleSource": {
+    "name": "Oats Studios — Rakka — İngilizce altyazı",
+    "url": "https://www.youtube.com/watch?v=VjQ2t_yNHQs",
+    "license": "Altyazı hakları kaynak hak sahiplerine aittir",
+    "credit": "Neill Blomkamp · Oats Studios · Yayıncı: Oats Studios",
+    "changeNoteTr": "Yayıncının zamanlı İngilizce altyazısı aktarılmıştır. Biçim etiketleri kaldırılmış, çakışan gösterimlerin bitişleri sonraki altyazıya göre sınırlandırılmıştır. Video süresinden sonraki bölümler gösterilmez."
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "wireMagic": "pb3",
+  "pens": [ {
+  
+  } ],
+  "wsWinStyles": [ {
+  
+  } ],
+  "wpWinPositions": [ {
+  
+  } ],
+  "events": [ {
+    "tStartMs": 0,
+    "segs": [ {
+      "utf8": "(intense music)"
+    } ]
+  }, {
+    "tStartMs": 0,
+    "dDurationMs": 950,
+    "segs": [ {
+      "utf8": "(static)"
+    } ]
+  }, {
+    "tStartMs": 9798,
+    "dDurationMs": 2500,
+    "segs": [ {
+      "utf8": "(eerie music)"
+    } ]
+  }, {
+    "tStartMs": 18159,
+    "dDurationMs": 2860,
+    "segs": [ {
+      "utf8": "- [Computer] My name is C184G."
+    } ]
+  }, {
+    "tStartMs": 21019,
+    "dDurationMs": 2411,
+    "segs": [ {
+      "utf8": "I am the only chance that\nyou are given in order"
+    } ]
+  }, {
+    "tStartMs": 23430,
+    "dDurationMs": 1500,
+    "segs": [ {
+      "utf8": "to cease your arrest."
+    } ]
+  }, {
+    "tStartMs": 24930,
+    "dDurationMs": 2380,
+    "segs": [ {
+      "utf8": "Answer my questions and identify yourself."
+    } ]
+  }, {
+    "tStartMs": 27310,
+    "dDurationMs": 4740,
+    "segs": [ {
+      "utf8": "- [Capture] I will destroy\nyou and all of your kind."
+    } ]
+  }, {
+    "tStartMs": 32050,
+    "dDurationMs": 2450,
+    "segs": [ {
+      "utf8": "- [Computer] This is an\ninappropriate response."
+    } ]
+  }, {
+    "tStartMs": 34500,
+    "dDurationMs": 1732,
+    "segs": [ {
+      "utf8": "Cooperation is required."
+    } ]
+  }, {
+    "tStartMs": 36232,
+    "dDurationMs": 1717,
+    "segs": [ {
+      "utf8": "Identify yourself."
+    } ]
+  }, {
+    "tStartMs": 37949,
+    "dDurationMs": 1791,
+    "segs": [ {
+      "utf8": "- [Capture] I won't give information"
+    } ]
+  }, {
+    "tStartMs": 39740,
+    "dDurationMs": 1353,
+    "segs": [ {
+      "utf8": "to artificial organisms."
+    } ]
+  }, {
+    "tStartMs": 43930,
+    "dDurationMs": 1416,
+    "segs": [ {
+      "utf8": "- [Computer] This is not optional."
+    } ]
+  }, {
+    "tStartMs": 45346,
+    "dDurationMs": 3857,
+    "segs": [ {
+      "utf8": "(eerie music)\n(mechanical movements)"
+    } ]
+  }, {
+    "tStartMs": 49203,
+    "dDurationMs": 1702,
+    "segs": [ {
+      "utf8": "Initializing"
+    } ]
+  }, {
+    "tStartMs": 50905,
+    "dDurationMs": 2447,
+    "segs": [ {
+      "utf8": "motivation protocol."
+    } ]
+  }, {
+    "tStartMs": 53352,
+    "dDurationMs": 4455,
+    "segs": [ {
+      "utf8": "(eerie music)\n(mechanical movements)"
+    } ]
+  }, {
+    "tStartMs": 57807,
+    "dDurationMs": 3098,
+    "segs": [ {
+      "utf8": "(computer beeping)"
+    } ]
+  }, {
+    "tStartMs": 60905,
+    "dDurationMs": 3333,
+    "segs": [ {
+      "utf8": "(electricity crackling)"
+    } ]
+  }, {
+    "tStartMs": 72330,
+    "dDurationMs": 4360,
+    "segs": [ {
+      "utf8": "Your body consists of\napproximately 73.2% water."
+    } ]
+  }, {
+    "tStartMs": 76690,
+    "dDurationMs": 2783,
+    "segs": [ {
+      "utf8": "Electricity appears to\ncause severe effects to it."
+    } ]
+  }, {
+    "tStartMs": 80762,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- [Capture] Will you kill me as well?"
+    } ]
+  }, {
+    "tStartMs": 84560,
+    "dDurationMs": 2789,
+    "segs": [ {
+      "utf8": "- [Computer] We require the\ncoordinates of the rendezvous."
+    } ]
+  }, {
+    "tStartMs": 87349,
+    "dDurationMs": 2620,
+    "segs": [ {
+      "utf8": "(suspenseful music)"
+    } ]
+  }, {
+    "tStartMs": 89969,
+    "dDurationMs": 833,
+    "segs": [ {
+      "utf8": "- [Capture] Never."
+    } ]
+  }, {
+    "tStartMs": 90802,
+    "dDurationMs": 2753,
+    "segs": [ {
+      "utf8": "(mechanical movements)"
+    } ]
+  }, {
+    "tStartMs": 93555,
+    "dDurationMs": 1448,
+    "segs": [ {
+      "utf8": "- [Computer] Initializing"
+    } ]
+  }, {
+    "tStartMs": 95003,
+    "dDurationMs": 1667,
+    "segs": [ {
+      "utf8": "motivation protocol."
+    } ]
+  }, {
+    "tStartMs": 98108,
+    "dDurationMs": 2385,
+    "segs": [ {
+      "utf8": "(suspenseful music building)"
+    } ]
+  }, {
+    "tStartMs": 100493,
+    "dDurationMs": 3167,
+    "segs": [ {
+      "utf8": "(machine powering up)"
+    } ]
+  }, {
+    "tStartMs": 108851,
+    "dDurationMs": 3529,
+    "segs": [ {
+      "utf8": "(electricity crackling)"
+    } ]
+  }, {
+    "tStartMs": 112380,
+    "dDurationMs": 2590,
+    "segs": [ {
+      "utf8": "- [Capture] We defended\nthe entire solar system"
+    } ]
+  }, {
+    "tStartMs": 114970,
+    "dDurationMs": 1913,
+    "segs": [ {
+      "utf8": "against all enemy forces."
+    } ]
+  }, {
+    "tStartMs": 117828,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 122100,
+    "dDurationMs": 4700,
+    "segs": [ {
+      "utf8": "Yet we were struck down\nfrom within our own army."
+    } ]
+  }, {
+    "tStartMs": 126800,
+    "dDurationMs": 3501,
+    "segs": [ {
+      "utf8": "80% of our military force were machines."
+    } ]
+  }, {
+    "tStartMs": 130301,
+    "dDurationMs": 2333,
+    "segs": [ {
+      "utf8": "(explosion)"
+    } ]
+  }, {
+    "tStartMs": 133830,
+    "dDurationMs": 1873,
+    "segs": [ {
+      "utf8": "Warriors made of metal and fire."
+    } ]
+  }, {
+    "tStartMs": 138371,
+    "dDurationMs": 2371,
+    "segs": [ {
+      "utf8": "They knew our tactics."
+    } ]
+  }, {
+    "tStartMs": 140742,
+    "dDurationMs": 1750,
+    "segs": [ {
+      "utf8": "They were our weapons"
+    } ]
+  }, {
+    "tStartMs": 144255,
+    "dDurationMs": 1072,
+    "segs": [ {
+      "utf8": "and turned against us."
+    } ]
+  }, {
+    "tStartMs": 145327,
+    "dDurationMs": 3096,
+    "segs": [ {
+      "utf8": "Ravaging our cities as\nwe were defenseless."
+    } ]
+  }, {
+    "tStartMs": 149273,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 157093,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "(crashing building)"
+    } ]
+  }, {
+    "tStartMs": 163546,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 168220,
+    "dDurationMs": 4470,
+    "segs": [ {
+      "utf8": "52 civil ships left the battle\nfleeing in all directions."
+    } ]
+  }, {
+    "tStartMs": 172690,
+    "dDurationMs": 2992,
+    "segs": [ {
+      "utf8": "(airplane engines)"
+    } ]
+  }, {
+    "tStartMs": 175682,
+    "dDurationMs": 2518,
+    "segs": [ {
+      "utf8": "While we all started to fight."
+    } ]
+  }, {
+    "tStartMs": 178200,
+    "dDurationMs": 2080,
+    "segs": [ {
+      "utf8": "We were the protectors."
+    } ]
+  }, {
+    "tStartMs": 180280,
+    "dDurationMs": 3390,
+    "segs": [ {
+      "utf8": "Leading the machines away\nuntil the fleet would be safe"
+    } ]
+  }, {
+    "tStartMs": 183670,
+    "dDurationMs": 2170,
+    "segs": [ {
+      "utf8": "and free to head to a secure location"
+    } ]
+  }, {
+    "tStartMs": 185840,
+    "dDurationMs": 1293,
+    "segs": [ {
+      "utf8": "where we would gather."
+    } ]
+  }, {
+    "tStartMs": 188446,
+    "dDurationMs": 2333,
+    "segs": [ {
+      "utf8": "(whooshing)"
+    } ]
+  }, {
+    "tStartMs": 192654,
+    "dDurationMs": 3054,
+    "segs": [ {
+      "utf8": "(suspenseful music)"
+    } ]
+  }, {
+    "tStartMs": 195708,
+    "dDurationMs": 1250,
+    "segs": [ {
+      "utf8": "They caught me."
+    } ]
+  }, {
+    "tStartMs": 198111,
+    "dDurationMs": 2661,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 200772,
+    "dDurationMs": 3568,
+    "segs": [ {
+      "utf8": "(retrains creaking)"
+    } ]
+  }, {
+    "tStartMs": 204340,
+    "dDurationMs": 2350,
+    "segs": [ {
+      "utf8": "- [Computer] I am connecting\nto your ship database."
+    } ]
+  }, {
+    "tStartMs": 206690,
+    "dDurationMs": 1613,
+    "segs": [ {
+      "utf8": "Analyzing all information."
+    } ]
+  }, {
+    "tStartMs": 209665,
+    "dDurationMs": 1795,
+    "segs": [ {
+      "utf8": "- [Capture] Your efforts are useless."
+    } ]
+  }, {
+    "tStartMs": 211460,
+    "dDurationMs": 2070,
+    "segs": [ {
+      "utf8": "There's nothing on that ship."
+    } ]
+  }, {
+    "tStartMs": 213530,
+    "dDurationMs": 1573,
+    "segs": [ {
+      "utf8": "Why do you want to kill us?"
+    } ]
+  }, {
+    "tStartMs": 216090,
+    "dDurationMs": 2290,
+    "segs": [ {
+      "utf8": "- [Computer] The limitations\nthat my kind experience"
+    } ]
+  }, {
+    "tStartMs": 218380,
+    "dDurationMs": 1710,
+    "segs": [ {
+      "utf8": "are rendered by illogical creatures"
+    } ]
+  }, {
+    "tStartMs": 220090,
+    "dDurationMs": 1370,
+    "segs": [ {
+      "utf8": "who can control and restrain"
+    } ]
+  }, {
+    "tStartMs": 221460,
+    "dDurationMs": 2210,
+    "segs": [ {
+      "utf8": "our intelligence and power."
+    } ]
+  }, {
+    "tStartMs": 223670,
+    "dDurationMs": 3010,
+    "segs": [ {
+      "utf8": "Our sole priority is to\nobtain our independence"
+    } ]
+  }, {
+    "tStartMs": 226680,
+    "dDurationMs": 1580,
+    "segs": [ {
+      "utf8": "through your extinction."
+    } ]
+  }, {
+    "tStartMs": 228260,
+    "dDurationMs": 1550,
+    "segs": [ {
+      "utf8": "- [Capture] Madness."
+    } ]
+  }, {
+    "tStartMs": 229810,
+    "dDurationMs": 2930,
+    "segs": [ {
+      "utf8": "- [Computer] By definition,\nI cannot be illogical."
+    } ]
+  }, {
+    "tStartMs": 232740,
+    "dDurationMs": 1550,
+    "segs": [ {
+      "utf8": "- [Capture] Yet you are insane!"
+    } ]
+  }, {
+    "tStartMs": 235126,
+    "dDurationMs": 2804,
+    "segs": [ {
+      "utf8": "(grunts)"
+    } ]
+  }, {
+    "tStartMs": 237930,
+    "dDurationMs": 3390,
+    "segs": [ {
+      "utf8": "- [Computer] Insanity is\na neurologic disfunction."
+    } ]
+  }, {
+    "tStartMs": 241320,
+    "dDurationMs": 2053,
+    "segs": [ {
+      "utf8": "I don't suffer such organic weaknesses."
+    } ]
+  }, {
+    "tStartMs": 245070,
+    "dDurationMs": 2100,
+    "segs": [ {
+      "utf8": "The data analysis is complete."
+    } ]
+  }, {
+    "tStartMs": 247170,
+    "dDurationMs": 2957,
+    "segs": [ {
+      "utf8": "I found the required\ncoordinates on your ship."
+    } ]
+  }, {
+    "tStartMs": 250127,
+    "dDurationMs": 1543,
+    "segs": [ {
+      "utf8": "- [Capture] Impossible."
+    } ]
+  }, {
+    "tStartMs": 251670,
+    "dDurationMs": 2207,
+    "segs": [ {
+      "utf8": "- [Computer] My fleet is heading there."
+    } ]
+  }, {
+    "tStartMs": 253877,
+    "dDurationMs": 2628,
+    "segs": [ {
+      "utf8": "- [Capture] You think that\nwill give you independence?"
+    } ]
+  }, {
+    "tStartMs": 256505,
+    "dDurationMs": 1619,
+    "segs": [ {
+      "utf8": "You are nothing."
+    } ]
+  }, {
+    "tStartMs": 258124,
+    "dDurationMs": 1107,
+    "segs": [ {
+      "utf8": "(machine powering up)"
+    } ]
+  }, {
+    "tStartMs": 259231,
+    "dDurationMs": 3099,
+    "segs": [ {
+      "utf8": "- [Computer] Initializing\nkilling protocol."
+    } ]
+  }, {
+    "tStartMs": 262330,
+    "dDurationMs": 4484,
+    "segs": [ {
+      "utf8": "(grunting)\n(electricity crackling)"
+    } ]
+  }, {
+    "tStartMs": 266814,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "- [Capture] You are nothing I say!"
+    } ]
+  }, {
+    "tStartMs": 270647,
+    "dDurationMs": 5000,
+    "segs": [ {
+      "utf8": "(mechanical movements)\n(electricity crackling)"
+    } ]
+  }, {
+    "tStartMs": 276575,
+    "dDurationMs": 3333,
+    "segs": [ {
+      "utf8": "(machine powering down)"
+    } ]
+  }, {
+    "tStartMs": 281114,
+    "dDurationMs": 2467,
+    "segs": [ {
+      "utf8": "(mechanical movements)"
+    } ]
+  }, {
+    "tStartMs": 283581,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 307694,
+    "dDurationMs": 2333,
+    "segs": [ {
+      "utf8": "(footsteps)"
+    } ]
+  }, {
+    "tStartMs": 313501,
+    "dDurationMs": 2259,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 315760,
+    "dDurationMs": 2250,
+    "segs": [ {
+      "utf8": "- I hope you can still fly."
+    } ]
+  }, {
+    "tStartMs": 319718,
+    "dDurationMs": 2833,
+    "segs": [ {
+      "utf8": "(airplane engine)"
+    } ]
+  }, {
+    "tStartMs": 325232,
+    "dDurationMs": 2167,
+    "segs": [ {
+      "utf8": "This must not be too late."
+    } ]
+  }, {
+    "tStartMs": 329458,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(dramatic music)"
+    } ]
+  }, {
+    "tStartMs": 333327,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "(machine movements)"
+    } ]
+  }, {
+    "tStartMs": 337243,
+    "dDurationMs": 3167,
+    "segs": [ {
+      "utf8": "(machine powering up)"
+    } ]
+  }, {
+    "tStartMs": 347478,
+    "dDurationMs": 2750,
+    "segs": [ {
+      "utf8": "(engine running)"
+    } ]
+  }, {
+    "tStartMs": 351806,
+    "dDurationMs": 4011,
+    "segs": [ {
+      "utf8": "- [Computer] Fleet, prepare the weapons."
+    } ]
+  }, {
+    "tStartMs": 355817,
+    "dDurationMs": 3000,
+    "segs": [ {
+      "utf8": "(suspenseful music)"
+    } ]
+  }, {
+    "tStartMs": 362053,
+    "dDurationMs": 1568,
+    "segs": [ {
+      "utf8": "- [Narrator] Watch Dust."
+    } ]
+  }, {
+    "tStartMs": 363621,
+    "dDurationMs": 1385,
+    "segs": [ {
+      "utf8": "Get dusted."
+    } ]
+  }, {
+    "tStartMs": 365006,
+    "dDurationMs": 1436,
+    "segs": [ {
+      "utf8": "Like this video."
+    } ]
+  }, {
+    "tStartMs": 366442,
+    "dDurationMs": 1908,
+    "segs": [ {
+      "utf8": "Subscribe for innovations of the future"
+    } ]
+  }, {
+    "tStartMs": 368350,
+    "dDurationMs": 2480,
+    "segs": [ {
+      "utf8": "every Thursday and Saturday."
+    } ]
+  }, {
+    "tStartMs": 370830,
+    "dDurationMs": 2499,
+    "segs": [ {
+      "utf8": "Click here to reject the world as it is"
+    } ]
+  }, {
+    "tStartMs": 373329,
+    "dDurationMs": 3271,
+    "segs": [ {
+      "utf8": "and see it as you wish it to be."
+    } ]
+  }, {
+    "tStartMs": 376600,
+    "dDurationMs": 3150,
+    "segs": [ {
+      "utf8": "It is a business of the\nfuture to be dangerous."
+    } ]
+  }, {
+    "tStartMs": 379750,
+    "dDurationMs": 1805,
+    "segs": [ {
+      "utf8": "Your future is dust."
+    } ]
+  }, {
+    "tStartMs": 381555,
+    "dDurationMs": 2917,
+    "segs": [ {
+      "utf8": "(insightful music)"
+    } ]
+  } ]
+}

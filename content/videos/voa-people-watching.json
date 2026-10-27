@@ -1,0 +1,309 @@
+{
+  "id": "voa-people-watching",
+  "type": "video",
+  "category": "fun",
+  "title": "I Love People-Watching!",
+  "creator": "VOA Learning English",
+  "year": 2021,
+  "level": "A2",
+  "durationSeconds": 300,
+  "genre": "comedy",
+  "summaryTr": "Anna, arkadaşlarıyla parkta insanları gözlemlerken işe dönme saatini unutuyor. Patronu görünce başlayan saklanma çabası, küçük bir sürprizle bitiyor.",
+  "levelNoteTr": "Seviye, altyazı ve kelime desteğiyle dinleme için Lantern English tahminidir; resmî CEFR derecesi değildir. Ana skeçteki ekran altyazıları dokunulabilir olarak hazırlanmıştır. VOA’nın Dinle/Konuş tekrarları ve ara açıklamaları özgün hâliyle korunur; bu bölümlerde her cümle için dokunulabilir altyazı bulunmaz.",
+  "videoUrl": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b0/b07eac5a-cc3a-4f3e-821c-ecae337b5415_720p.mp4",
+  "qualities": [
+    {
+      "label": "240p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b0/b07eac5a-cc3a-4f3e-821c-ecae337b5415_240p.mp4",
+      "sizeMB": 13
+    },
+    {
+      "label": "360p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b0/b07eac5a-cc3a-4f3e-821c-ecae337b5415.mp4",
+      "sizeMB": 22
+    },
+    {
+      "label": "480p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b0/b07eac5a-cc3a-4f3e-821c-ecae337b5415_480p.mp4",
+      "sizeMB": 44
+    },
+    {
+      "label": "720p",
+      "url": "https://voa-video-ns.akamaized.net/pangeavideo/2021/02/b/b0/b07eac5a-cc3a-4f3e-821c-ecae337b5415_720p.mp4",
+      "sizeMB": 66
+    }
+  ],
+  "source": {
+    "name": "VOA Learning English — I Love People-Watching!",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-15-i-love-people-watching/3343720.html",
+    "watchUrl": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-15-i-love-people-watching/3343720.html",
+    "license": "VOA özgün üretimi · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America / VOA Learning English. Özgün video bütünüyle ve değiştirilmeden oynatılır."
+  },
+  "subtitleSource": {
+    "name": "VOA’nın video üzerindeki İngilizce ekran altyazıları",
+    "url": "https://learningenglish.voanews.com/a/lets-learn-english-lesson-15-i-love-people-watching/3343720.html",
+    "license": "VOA özgün metni · Kamu malı",
+    "licenseUrl": "https://learningenglish.voanews.com/p/6021.html",
+    "credit": "Voice of America; metin çıkarımı ve zaman eşlemesi: Lantern English",
+    "changeNoteTr": "Ana skeçteki ekran yazıları aktarılmış, OCR yazım hataları düzeltilmiş ve yaklaşık 0,5 saniye çözünürlükle zamanlanmıştır. Dinle/Konuş alıştırmalarındaki boşluklar korunmuştur."
+  },
+  "glossary": {
+    "people-watch": "insanları gözlemlemek; gelip geçenleri izlemek",
+    "keyana": "Keyana (karakter adı)",
+    "weaver": "Weaver (karakterin soyadı)",
+    "curly": "kıvırcık; saç için",
+    "straight": "saç için: düz",
+    "bench": "bank; oturmak için kullanılan uzun sıra"
+  },
+  "captions": [
+    {
+      "start": 25,
+      "end": 31,
+      "text": "Hello! People from all over the world come to Washington, D.C."
+    },
+    {
+      "start": 31,
+      "end": 34.5,
+      "text": "When I'm at work, I love eating lunch outside."
+    },
+    {
+      "start": 34.5,
+      "end": 39.5,
+      "text": "I like to watch people walking by. They all look very different."
+    },
+    {
+      "start": 39.5,
+      "end": 42.5,
+      "text": "Today, my friend Ashley is eating lunch with me."
+    },
+    {
+      "start": 42.5,
+      "end": 47,
+      "text": "Ashley, today the weather is beautiful, isn't it?"
+    },
+    {
+      "start": 47,
+      "end": 53.5,
+      "text": "Yes, it is. Ahh. Ooh, we have to return to work!"
+    },
+    {
+      "start": 53.5,
+      "end": 59,
+      "text": "No, we have time! Let's people-watch a little more."
+    },
+    {
+      "start": 59,
+      "end": 61.5,
+      "text": "Okay."
+    },
+    {
+      "start": 100,
+      "end": 104.5,
+      "text": "Oh, I know her. She works in my office! Keyana, hi!"
+    },
+    {
+      "start": 104.5,
+      "end": 106,
+      "text": "Come and join us!"
+    },
+    {
+      "start": 106,
+      "end": 107.5,
+      "text": "Hi Anna, how are you?"
+    },
+    {
+      "start": 107.5,
+      "end": 110.5,
+      "text": "I'm doing great! Keyana, this is my friend Ashley."
+    },
+    {
+      "start": 110.5,
+      "end": 111.5,
+      "text": "Hi, Ashley!"
+    },
+    {
+      "start": 111.5,
+      "end": 114,
+      "text": "We need to return to work."
+    },
+    {
+      "start": 114,
+      "end": 118,
+      "text": "But the weather is beautiful and people-watching is fun!"
+    },
+    {
+      "start": 118,
+      "end": 120,
+      "text": "I love people-watching too!"
+    },
+    {
+      "start": 120,
+      "end": 123.5,
+      "text": "Well, have a seat!"
+    },
+    {
+      "start": 123.5,
+      "end": 128,
+      "text": "It is fun to see how people are different or the same."
+    },
+    {
+      "start": 128,
+      "end": 134.5,
+      "text": "It is. For example, Anna, you are tall. But Ashley and I are short."
+    },
+    {
+      "start": 140,
+      "end": 145.5,
+      "text": "And Keyana, you and Ashley have brown eyes; I have blue eyes."
+    },
+    {
+      "start": 145.5,
+      "end": 149.5,
+      "text": "You two have light skin and I have dark skin."
+    },
+    {
+      "start": 149.5,
+      "end": 154,
+      "text": "Ashley, you have straight hair. Keyana and I have curly hair."
+    },
+    {
+      "start": 154,
+      "end": 157,
+      "text": "You have very curly hair, Anna."
+    },
+    {
+      "start": 157,
+      "end": 162,
+      "text": "I need to return to work. See you, Anna! Nice to meet you Ashley!"
+    },
+    {
+      "start": 162,
+      "end": 163.5,
+      "text": "Bye, Keyana!"
+    },
+    {
+      "start": 166,
+      "end": 170.5,
+      "text": "Anna, I have to go, too. Are you returning to work?"
+    },
+    {
+      "start": 170.5,
+      "end": 175.5,
+      "text": "I still have time. And this sun feels so good!"
+    },
+    {
+      "start": 179,
+      "end": 184,
+      "text": "Um, Anna, what does your boss look like?"
+    },
+    {
+      "start": 184,
+      "end": 188,
+      "text": "She is short. She has straight, light hair."
+    },
+    {
+      "start": 188,
+      "end": 190,
+      "text": "Does she wear glasses?"
+    },
+    {
+      "start": 190,
+      "end": 192,
+      "text": "Yes. Yes, she does."
+    },
+    {
+      "start": 192,
+      "end": 195,
+      "text": "Is she wearing a blue sweater today?"
+    },
+    {
+      "start": 232.5,
+      "end": 234,
+      "text": "How do you know that?"
+    },
+    {
+      "start": 234,
+      "end": 236.5,
+      "text": "She's coming this way."
+    },
+    {
+      "start": 236.5,
+      "end": 238,
+      "text": "Oh no! Hide me!"
+    },
+    {
+      "start": 240.5,
+      "end": 245,
+      "text": "Um, bye Anna. Call me later."
+    },
+    {
+      "start": 245,
+      "end": 247,
+      "text": "Bye, Ashley! Talk to you later!"
+    },
+    {
+      "start": 250,
+      "end": 253.5,
+      "text": "Anna? Is that you?"
+    },
+    {
+      "start": 253.5,
+      "end": 256.5,
+      "text": "Ms. Weaver! Hi!"
+    },
+    {
+      "start": 256.5,
+      "end": 259,
+      "text": "What are you doing behind that bench?"
+    },
+    {
+      "start": 259,
+      "end": 264,
+      "text": "I am looking for my, my ... stick. Here it is."
+    },
+    {
+      "start": 264,
+      "end": 269,
+      "text": "I am people-watching. Oh! But it's time to return to work!"
+    },
+    {
+      "start": 269,
+      "end": 274.5,
+      "text": "No need to hurry. I love people-watching too! Let's sit!"
+    },
+    {
+      "start": 274.5,
+      "end": 276.5,
+      "text": "Sure!"
+    },
+    {
+      "start": 279.5,
+      "end": 281.5,
+      "text": "Ahh."
+    },
+    {
+      "start": 284,
+      "end": 286,
+      "text": "It's a beautiful day, isn't it?"
+    },
+    {
+      "start": 286,
+      "end": 288.5,
+      "text": "Yes. Yes, it is, Ms. Weaver."
+    },
+    {
+      "start": 288.5,
+      "end": 294.5,
+      "text": "People-watching in D.C. is fun. It makes me forget the time!"
+    },
+    {
+      "start": 294.5,
+      "end": 297.5,
+      "text": "Until next time! Ahh."
+    }
+  ],
+  "categoryTr": "Komedi skeçi",
+  "captionCoverage": "main-dialogue"
+}
