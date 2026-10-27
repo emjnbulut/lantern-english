@@ -733,7 +733,6 @@
     $main.innerHTML = `
       <section class="hero">
         <div>
-          <p class="eyebrow">Hikâyelerle İngilizce</p>
           <h1>Okudukça öğren. <em>Her kelime</em> bir dokunuş uzağında.</h1>
           <p class="lead">Seviyene uygun hikâyeleri oku; anlamını bilmediğin kelimenin üzerine gel, Türkçesi hemen çıksın. Beğendiklerini defterine kaydet, kartlarla tekrar et.</p>
           <div class="hero-actions">
@@ -742,7 +741,7 @@
           </div>
         </div>
         <div class="demo">
-          <div class="demo-label">Dene</div>
+          <div class="demo-label">Bir kelime seç</div>
           <div class="reader-text" id="demo-text">${renderBody(DEMO)}</div>
           <p class="demo-hint">${hoverDevice ? "Kelimelerin üzerine gel. Tıklarsan kutu sabitlenir: dinle ya da deftere ekle." : "Bir kelimeye dokun: anlamı, telaffuzu ve deftere ekleme düğmesi çıkar."} Cümlenin Türkçesi için kelimeye basılı tut.</p>
         </div>
@@ -750,9 +749,9 @@
 
       <section class="section" aria-label="Okuma bölümleri">
         <div class="collection-grid">
-          <a class="collection-link" href="#library"><span class="eyebrow">A1–C2 · Hikâyeler</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
-          <a class="collection-link articles-link" href="#articles"><span class="eyebrow">B2–C2 · Makaleler</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
-          ${VIDEOS.length ? `<a class="collection-link videos-link" href="#videos"><span class="eyebrow">İzleyerek öğren</span><h2>Videolar</h2><p>Bilim kurgu, fantastik dünyalar, korku ve komedi: altyazı ve kelime desteğiyle İngilizce izle.</p><span class="link">Videolara göz at →</span></a>` : ""}
+          <a class="collection-link" href="#library"><span class="eyebrow">${STORIES.length} metin · A1–C2</span><h2>Hikâyeler</h2><p>Karakterler, olaylar ve farklı dünyalar. Seviyene ve sevdiğin türe göre bir hikâye seç.</p><span class="link">Hikâye kütüphanesine git →</span></a>
+          <a class="collection-link articles-link" href="#articles"><span class="eyebrow">${ARTICLES.length} metin · B2–C2</span><h2>Makaleler</h2><p>Edebiyat ve anlatı üzerine denemeler. Bir fikri daha yakından incelemek için oku.</p><span class="link">Makalelere git →</span></a>
+          ${VIDEOS.length ? `<a class="collection-link videos-link" href="#videos"><span class="eyebrow">${VIDEOS.length} video · altyazı desteği</span><h2>Videolar</h2><p>Bilim kurgu, fantastik dünyalar, korku ve komedi: altyazı ve kelime desteğiyle İngilizce izle.</p><span class="link">Videolara göz at →</span></a>` : ""}
         </div>
       </section>
 
@@ -761,7 +760,7 @@
       <section class="section">
         <div class="section-head"><h2>Hikâye seviyeni seç</h2><a class="link" href="#about">Hangi seviyedeyim?</a></div>
         <div class="ladder">
-          ${LEVELS.map((lv, i) => `<a class="step lvl-${lv.id}" style="--h:${i}" href="#library" data-level="${lv.id}">
+          ${LEVELS.map((lv) => `<a class="step lvl-${lv.id}" href="#library" data-level="${lv.id}">
             <b>${lv.id}</b><span class="name">${lv.name}</span><span class="count">${lv.desc}</span></a>`).join("")}
         </div>
       </section>
@@ -770,7 +769,7 @@
         <div class="section-head"><h2>Hikâye türleri</h2></div>
         <div class="genre-grid">
           ${Object.entries(GENRES).map(([g, v]) => `<a class="genre-tile g-${g}" href="#library" data-genre="${g}">
-            <span class="gname"><span class="dot"></span>${v.name}</span><span class="gdesc">${v.desc}</span></a>`).join("")}
+            <span class="gname">${v.name}</span><span class="gdesc">${v.desc}</span></a>`).join("")}
         </div>
       </section>
 
